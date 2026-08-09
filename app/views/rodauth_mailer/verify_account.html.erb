@@ -1,0 +1,13 @@
+<% content_for :preheader do %><%= t('mailers.verify_account.preheader', default: 'Finish setting up your Amplifa account.') %><% end %>
+
+<h1 style="margin: 0 0 18px; color: #111827; font-size: 24px; line-height: 1.25; font-weight: 700;"><%= t('mailers.verify_account.greeting', default: 'Welcome to Amplifa') %></h1>
+
+<p style="margin: 0 0 16px; color: #374151; font-size: 16px; line-height: 1.6;">
+  <%= t('mailers.verify_account.intro', default: 'Your account has been created. Please activate it to finish setup and start using Amplifa.') %>
+</p>
+
+<%= render 'shared/mailer_button', text: t('mailers.verify_account.cta', default: 'Activate Account'), url: @rodauth.verify_account_email_link %>
+
+<p class="note" style="margin: 0 0 16px; color: #6b7280; font-size: 14px; line-height: 1.6;">
+  <%= t('mailers.verify_account.ignore', default: 'If you did not create this account, you can safely ignore this email.') %>
+</p>

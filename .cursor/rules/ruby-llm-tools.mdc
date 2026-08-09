@@ -1,0 +1,67 @@
+---
+description: RubyLLM tool-calling conventions (https://rubyllm.com/tools/, adjusted to the pinned gem v1.11) + project scoping rules for assistant tools
+globs: app/tools/**/*.rb,app/services/assistant*.rb,app/jobs/assistant*.rb
+alwaysApply: false
+---
+
+# RubyLLM Tools — this repo pins ruby_llm 1.11.0
+
+The docs at https://rubyllm.com/tools/ describe the latest version. **Check `Gemfile.lock` and the
+installed gem source before using an API from the docs.** Known differences in 1.11:
+
+- Use `description '...'` — the `desc` class-method alias does not exist yet.
+- Callbacks are `chat.on_tool_call { |tool_call| }` and `chat.on_tool_result { |result| }`
+  (not `before_tool_call`/`after_tool_result`). `on_tool_result` does NOT receive the tool name.
+- No signature inference: every argument needs a `param` (flat) or `params do ... end` (nested) declaration.
+- No `choice:`/`calls:`/`concurrency:` options on `with_tools`; tools execute sequentially.
+- **`execute_tool` has no rescue**: an exception raised inside a tool propagates out of
+  `chat.complete` and kills the whole turn. Tools must catch their own errors (see below).
+- Tool names derive from the class name with `_tool` suffix stripped, but module namespaces leak in
+  (`Assistant::FooTool` → `assistant--foo`). Override `#name` for namespaced tools.
+- Hash return values are stored via `to_s`; return a JSON string for a clean model-facing payload.
+
+## Defining a tool
+
+```ruby
+class ConversationList < RubyLLM::Tool
+  description 'Lists inbox conversations, filterable by status and interest'
+
+  param :interest_status, desc: 'One of: interested, meeting_request, not_interested, wrong_person',
+        required: false
+  param :limit, type: :integer, desc: 'Max results (default 20, max 50)', required: false
+
+  def execute(interest_status: nil, limit: 20)
+    # ...
+  end
+end
+```
+
+- Tools may define `initialize` for dependencies (account/organization context) —
+  register the *instance*: `chat.with_tool(ConversationList.new(account:))`.
+- Attach with `chat.with_tools(a, b)`; streaming blocks pass through tool rounds, so post-tool
+  text still streams.
+
+## Error handling (per official docs, adapted to this app)
+
+- **Recoverable** (bad arguments, record not found, empty query): return `{ error: '...' }` —
+  the model sees the error and can correct itself or explain to the user.
+- **Unauthorized / cross-org ID**: return the same "not found" error as a missing record.
+  Never reveal that a record exists in another organization.
+- **Infrastructure failures** (`ActiveRecord::ConnectionNotEstablished`, `StatementInvalid`,
+  `PG::Error`): rescue in the shared base tool class, `Rails.logger.error(...)` with class +
+  message, and return `{ error: 'This tool is temporarily unavailable...' }` so the turn completes
+  gracefully instead of crashing the stream (mandatory in 1.11 — see execute_tool note above).
+- Never let a raw exception message or backtrace reach the model or the user.
+
+## Security (mandatory in this repo)
+
+- Treat every `execute` argument as untrusted user input — the LLM generates them.
+- Inject account/organization via `initialize`, NEVER from tool arguments.
+- Every query goes through `Pundit.policy_scope!(account, Model)` AND is scoped to the chat's
+  organization. Mutations call `Pundit.authorize(account, record, :action?)`.
+- Policies read `Current.organization` / `Current.organization_membership` — background jobs must
+  wrap tool-using LLM calls in `Current.set(...)` or every scope fails closed to none.
+- A foreign-org ID must behave as "not found" — use `find_by(id:)` on the scoped relation.
+- No `eval`/`send`/`system`/SQL interpolation with tool arguments. Use
+  `ActiveRecord::Base.sanitize_sql_like` for ILIKE terms. Validate enums against allow-lists.
+- Cap every `limit`/`offset` argument server-side regardless of what the model sends.

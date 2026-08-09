@@ -1,0 +1,12 @@
+<%= t('mailers.playbook.approved.greeting') %>
+
+<%= t('mailers.playbook.approved.body',
+      product: @playbook.product_name,
+      organization: @organization.name,
+      approver: @approved_by.full_name) %>
+
+<%= t('mailers.playbook.approved.cta') %>:
+<%= playbook_url(@playbook) %>
+
+---
+<%= t('mailers.signature') %>

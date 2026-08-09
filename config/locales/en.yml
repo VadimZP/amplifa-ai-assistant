@@ -1,0 +1,4391 @@
+---
+en:
+  hello: Hello world
+  pundit:
+    not_authorized: You are not authorized to perform this action.
+  navigation:
+    dashboard: Dashboard
+    settings: Settings
+    team: Team
+    logout: Log Out
+    admin: Admin
+    activities: Activities
+    organizations: Organizations
+    users: Users
+    invitations: Invitations
+    playbooks: Playbooks
+    leads: Leads
+    people: People
+    agents: Agents
+    imports: Imports
+    campaigns: Campaigns
+    email_accounts: Email Accounts
+    email_domains: Email Domains
+    senders: Senders
+    mailboxes: Mailboxes
+    replies: Replies
+    blacklist: Blacklist
+    language_selector: Language
+    select_language: Select language
+    admin_navigation: Admin Navigation
+    customer_navigation: Customer Navigation
+    admin_badge: AMPLIFA ADMIN
+    app_name: Amplifa
+  workspaces:
+    switcher:
+      label: Workspace
+    no_workspace:
+      page_title: No workspace - Amplifa
+      heading: No active workspace
+      description: Your account is not currently connected to an active workspace.
+        Please contact your administrator or Amplifa support to regain access.
+      logout: Log out
+  org_admin:
+    dashboard:
+      title: Organization Admin
+      heading: Organization Administration
+      manage_description: Manage your organization settings, team members, and more.
+      no_organization: No organization found.
+  invitations:
+    flash:
+      invalid: This invitation link is invalid or has been removed.
+      expired: This invitation has expired. Please contact your administrator for
+        a new invitation.
+      already_used: This invitation has already been used. Please log in.
+      cancelled: This invitation has been cancelled. Please contact your administrator.
+      no_longer_valid: Invitation is no longer valid
+      login_with_invited_email: Please log in with the invited email address to accept
+        this invitation.
+      password_required: Password is required
+      passwords_mismatch: Passwords do not match
+      password_too_short: Password must be at least 8 characters
+      welcome: Welcome to Amplifa, %{name}!
+      welcome_setup: Welcome to Amplifa! Let's get your account set up.
+      create_failed: 'Failed to create account: %{message}'
+      accept_failed: 'Failed to accept invitation: %{message}'
+      unexpected_error: An unexpected error occurred. Please try again or contact
+        support.
+  public_invitations:
+    next_steps_title: What to do next?
+    contact_support: Contact Support
+    go_to_login: Go to Login
+    invalid:
+      page_title: Invalid Invitation - Amplifa
+      title: Invalid Invitation
+      heading: Invalid Invitation
+      subheading: This invitation link cannot be used
+      default_message: This invitation link is invalid or has been removed. The invitation
+        may have been cancelled or already used.
+      why_title: Why is this happening?
+      reasons:
+        incomplete: The invitation link may be incomplete or incorrectly copied
+        used: The invitation has already been used to create an account
+        cancelled: The invitation was cancelled by an administrator
+        deleted: The invitation was deleted from the system
+      next_steps:
+        check_email_title: Check your email
+        check_email_body: for the original invitation and make sure you're using the
+          correct link
+        contact_admin_title: Contact your administrator
+        contact_admin_body: to request a new invitation or verify your invitation
+          status
+        already_account_title: Already have an account?
+        already_account_body: Try logging in instead
+    expired:
+      page_title: Invitation Expired - Amplifa
+      title: Invitation Expired
+      heading: Invitation Expired
+      subheading: This invitation link is no longer valid
+      default_message: This invitation has expired and can no longer be used to create
+        an account.
+      details_title: Invitation Details
+      sent_to: 'Sent to:'
+      expired_on: 'Expired on:'
+      request_new: Request New Invitation
+      next_steps:
+        request_title: Request a new invitation
+        request_body: from your administrator or the person who invited you
+        support_title: Contact support
+        support_body: if you continue to have issues accessing your account
+  dashboard:
+    title: Dashboard
+    welcome_back: Welcome back
+    subtitle_ready: Your campaigns are ready to generate leads
+    subtitle_onboarding: Complete your onboarding to start generating leads
+    stats:
+      team_members: Team Members
+      active_campaigns: Active Campaigns
+      total_leads: Total Leads
+    get_started:
+      title: Get Started
+      description: Create your first campaign to start generating hyper-personalized
+        outbound emails.
+      create_campaign: Create Campaign
+    recent_activity:
+      title: Recent Activity
+      no_activity: No recent activity to display
+  senders:
+    send_window: Send Window
+    timezone: Timezone
+    send_window_start: Send window start
+    send_window_end: Send window end
+  onboarding:
+    title: Get Started with Amplifa
+    subtitle: Complete these steps to start generating leads
+    progress: "%{completed} of %{total} steps completed"
+    progress_of: " of "
+    progress_suffix: " steps completed"
+    complete_message: Onboarding complete! You're ready to start generating leads.
+    complete_title: "\U0001F389 Onboarding Complete!"
+    complete_description: You're all set up and ready to start generating qualified
+      leads with Amplifa.
+    expand_checklist: Expand checklist
+    collapse_checklist: Collapse checklist
+    use_language_selector: Use language selector in top navigation
+    stage_label: 'Stage '
+    duration_label: 'Duration: '
+    steps:
+      profile_completed:
+        title: Complete Company Profile
+        description: Add your website, ACV, and Calendly link
+        action: Complete Profile
+      language_selected:
+        title: Choose Your Language
+        description: Select your preferred language
+        action: Select Language
+    show:
+      page_title: Welcome to Amplifa
+      heading: Welcome to Amplifa
+      subheading: Let's get your organization set up
+      steps:
+        organization_details: Organization Details
+        team_setup: Team Setup
+      errors_title: There were errors with your submission
+      organization_name: Organization Name
+      organization_placeholder: Acme Inc.
+      industry: Industry
+      select_industry: Select an industry
+      company_size: Company Size
+      select_company_size: Select company size
+      continue: Continue
+      invite_team: Invite Your Team
+      invite_later: You can invite team members later from your dashboard settings.
+      whats_next: What's next?
+      next_steps:
+        create_campaign: Create your first email campaign
+        import_leads: Import your leads or prospects
+        configure_ai: Configure AI personalization settings
+      completing: Completing...
+      complete_setup: Complete Setup
+    complete:
+      page_title: Setup Complete - Amplifa
+      need_help: Need Help?
+      all_set: You're all set.
+      heading: We're now reviewing and activating your workspace.
+      process_time: This process may take a few days.
+      update_email: We'll send an update to %{email} when everything is ready.
+    calendly:
+      inactive: Inactive
+      view_profile: View Calendly Profile
+      disconnect: Disconnect Calendly
+      select_default_event_type: Select Default Event Type
+      select_event_type_description: Choose which meeting type to include in your
+        outreach emails.
+      connected_limited_title: Calendar connected with limited tracking.
+      connected_title: Calendar connected successfully!
+      connected_limited_description: Your meeting link will be included in outreach
+        emails. Automatic meeting tracking requires Calendly Standard or higher.
+      connected_description: Your selected meeting link will be automatically included
+        in outreach emails.
+      connection_failed: Connection failed
+      connection_failed_description: Unable to connect to Calendly. Please try again.
+      retry_connection: Retry Connection
+      connect_title: Connect your Calendly account
+      connect_description: Link your Calendly to let prospects book meetings directly
+        from your outreach emails. This increases response rates and makes scheduling
+        effortless.
+      connecting: Connecting...
+      connect_button: Connect with Calendly
+      skip: Skip for now
+      statuses:
+        connected: Connected
+        connected_limited: Connected (Limited)
+        not_connected: Not Connected
+      benefits:
+        save_time:
+          title: Save Time
+          description: No more back-and-forth emails to find a meeting time that works.
+        sync:
+          title: Sync Automatically
+          description: Your availability stays up-to-date with your calendar.
+        conversion:
+          title: Higher Conversion
+          description: Make it easy for prospects to take the next step.
+        experience:
+          title: Professional Experience
+          description: Show prospects a polished, branded booking page.
+    domain:
+      available: Available
+      unavailable: Unavailable
+      why_title: Why use lookalike domains?
+      why_description: 'Cold outreach emails should come from separate domains to
+        protect your main company''s domain reputation. We''ll handle everything for
+        you:'
+      benefits:
+        reputation:
+          title: Reputation Protection
+          description: Keep your main domain safe from spam complaints
+        email_setup:
+          title: Full Email Setup
+          description: We configure SPF, DKIM, and DMARC for you
+        warmup:
+          title: Domain Warmup
+          description: Gradual sending increase for optimal deliverability
+        reply_routing:
+          title: Reply Routing
+          description: All replies are forwarded to your team
+    email:
+      first_name: First Name
+      first_name_placeholder: John
+      last_name: Last Name
+      last_name_placeholder: Doe
+      email_address: Email Address
+      email_placeholder: john.doe@company.com
+      linkedin_url: LinkedIn Profile URL
+      optional: "(optional)"
+      linkedin_placeholder: https://linkedin.com/in/johndoe
+      signature: Email Signature
+      generate_from_name: Generate from name
+      signature_placeholder: |-
+        Best regards,
+        John Doe
+        Senior Account Executive
+      adding: Adding...
+      add_persona: Add Persona
+      add_team_member_persona: Add Team Member Persona
+      persona_required: At least one persona is required to continue
+      errors_title: 'There were some errors:'
+    blacklist:
+      add_entries: Add Entries
+      add_more_entries: Add More Entries
+      entries_label: Domains & Email Addresses
+      entries_description: Enter one domain or email per line. You can also paste
+        a comma-separated list.
+      entries_placeholder: |-
+        example.com
+        client@company.org
+        partner.io
+        contact@enterprise.com
+      valid_count: "%{count} valid"
+      invalid_count: "%{count} invalid"
+      invalid_entries_warning: "%{count} entries are invalid and will be skipped."
+      and_more: "...and %{count} more"
+      add_count: Add %{count} Entries
+      accepted_formats: 'Accepted formats:'
+      domains_label: 'Domains:'
+      emails_label: 'Emails:'
+      auto_detect_help: Entries are automatically detected as domains or emails. Adding
+        a domain will block all emails from that domain.
+      optional_title: This step is optional
+      optional_description: If you don't have any existing customers to add right
+        now, you can proceed to complete your setup. You can always add blacklist
+        entries later from your dashboard settings.
+  auth:
+    login:
+      page_title: Sign in
+      email_label: Email address
+      password_label: Password
+      subtitle: Sign in to continue
+      email_placeholder: name@company.com
+      password_placeholder: "••••••••"
+      remember_me: Remember me
+      submit: Sign in
+      signing_in: Signing in…
+      invalid_credentials: Invalid email or password
+      forgot_password: Forgot your password?
+    layout:
+      tagline: AI-powered sales outreach platform
+      feature_automation: Automated outreach sequences
+      feature_personalization: AI-powered personalization
+      feature_scoring: Intelligent lead scoring
+    register:
+      page_title: Sign Up
+      heading: Join Amplifa
+      subheading: Start your email campaign journey today
+      first_name: First name
+      first_name_placeholder: John
+      last_name: Last name
+      last_name_placeholder: Doe
+      email: Email address
+      email_placeholder: you@company.com
+      organization_name: Organization name
+      organization_placeholder: Acme Corp
+      password: Password
+      password_placeholder: Create a password
+      submit: Create account
+      already_have_account: Already have an account?
+      sign_in_instead: Sign in instead
+    reset_password:
+      page_title: Reset Password
+      heading: Reset your password
+      subheading: Enter your new password below.
+      new_password: New Password
+      new_password_placeholder: Create a new password
+      confirm_password: Confirm Password
+      confirm_password_placeholder: Enter your new password again
+      submit: Reset Password
+      changed_mind: Changed your mind?
+      back_to_sign_in: Back to sign in
+    set_password:
+      page_title: Set Password
+      heading: Set up your new password
+      subheading: Create a secure password to activate your Amplifa account.
+      submit: Set Password
+    forgot_password:
+      page_title: Reset Password
+      heading: Forgot password?
+      subheading: No worries! Enter your email and we'll send you reset instructions.
+      email: Email address
+      email_placeholder: you@example.com
+      submit: Send Reset Link
+      info: Check your inbox (and spam folder) for the reset link. The link will expire
+        in 24 hours.
+      remember_password: Remember your password?
+      email_sent: If an account exists for that email, we sent password reset instructions.
+    verify_account:
+      page_title: Verify Account
+      heading: Check your inbox
+      subheading: We've sent you a verification link. Click it to activate your account!
+      email_sent: Email Sent Successfully!
+      check_inbox: Check your inbox for a verification email from Amplifa.
+      didnt_receive: Didn't receive it? Check your spam folder or resend below.
+      need_resend: Need to resend?
+      email: Email address
+      email_placeholder: you@example.com
+      resend: Resend Verification Email
+      already_verified: Already verified?
+    two_factor_email:
+      page_title: Two-factor authentication
+      heading: Check your email
+      subtitle: Your password was accepted. To finish signing in, open the secure
+        link we sent to your inbox.
+      sent_to: Verification email sent to
+      instructions: The link signs you in from whichever browser opens it. If you
+        did not receive it, you can request another email after the countdown.
+      resend: Resend verification email
+      resend_countdown: Resend verification email in %{count}s
+      resent: Verification email sent again.
+      resend_wait: Please wait before requesting another verification email.
+      expired: Your verification session expired. Please sign in again.
+      invalid: This verification link is invalid or expired. Please sign in again.
+  settings:
+    company:
+      title: Company Settings
+      subtitle: Manage your organization's profile and preferences
+      info_readonly: These settings are currently read-only. Full editing features
+        coming soon.
+      organization_data: Organization Details
+      can_edit: Can Edit
+      read_only: Read Only
+      not_set: Not set
+      validation_errors: Validation Errors
+      fields:
+        name: Company Name
+        website: Website
+        average_contract_value: Average Contract Value
+        calendly_url: Calendly URL
+      website_label: Website URL
+      website_help: Your company's main website
+      website_placeholder: https://www.example.com
+      acv_label: Average Contract Value (ACV)
+      acv_help: Average value of your sales contracts
+      acv_placeholder: '10,000'
+      meeting_price_label: Average Meeting Value
+      meeting_price_help: Value you attribute to each booked meeting
+      meeting_price_placeholder: '500'
+      monthly_subscription_label: Monthly Subscription
+      monthly_subscription_help: Your Amplifa subscription cost (managed by admin)
+      calendly_label: Calendly Scheduling Link
+      calendly_help: Your Calendly link for booking meetings
+      calendly_placeholder: https://calendly.com/your-company/meeting
+      currency_label: Currency
+      currency_help: Your preferred currency for financial metrics
+      locale_label: Default Language
+      locale_help: Default language for your organization
+      save: Save Changes
+      cancel: Cancel
+      saved: Settings saved successfully
+      onboarding_step_completed: Onboarding step completed!
+    email_accounts:
+      title: Email Accounts
+      subtitle: Email accounts require a 3-week warmup period before full sending
+        capacity.
+      add_account: Add Email Account
+      empty: No email accounts configured yet.
+      empty_hint: Add an email account to start sending campaigns.
+      contact_amplifa: Contact Amplifa to set up additional email accounts.
+      table:
+        email: Email Address
+        display_name: Display Name
+        status: Status
+        warmup_progress: Warmup Progress
+        created: Created
+      statuses:
+        pending: Pending
+        warming: Warming Up
+        active: Active
+        paused: Paused
+        suspended: Suspended
+      warmup_days_remaining: "%{days} days remaining"
+      warmup_complete: Complete
+      new:
+        title: Add Email Account
+        subtitle: Add a new email account for outbound campaigns
+        email_label: Email Address
+        email_placeholder: sender@yourcompany.com
+        email_help: The email address that will be used for sending
+        display_name_label: Display Name
+        display_name_placeholder: Sales Team
+        display_name_help: How recipients will see the sender name (optional)
+        display_name_hint: How recipients will see the sender name
+        info_pending: New accounts will be in 'pending' status until reviewed and
+          approved by Amplifa. Once approved, the warmup process will begin.
+        validation_errors: There were errors with your submission
+        submit: Create Email Account
+        cancel: Cancel
+    blacklists:
+      title: Blacklist
+      subtitle: Manage emails and domains that should never be contacted.
+      add_entry: Add Entry
+      import_entries: Import
+      empty: No blacklist entries yet.
+      global_info: "Global entries (marked with \U0001F310) are managed by Amplifa
+        and apply to all organizations."
+      table:
+        value: Email / Domain
+        type: Type
+        source: Source
+        created_by: Created By
+        created: Created
+        actions: Actions
+      types:
+        email: Email
+        domain: Domain
+      sources:
+        manual: Manual
+        import: Import
+        interested: Interested
+        unsubscribe: Unsubscribe
+      global_badge: Global
+      delete_confirm: Are you sure you want to remove this entry?
+      delete_button: Remove
+      form:
+        value_label: Email or Domain
+        value_placeholder: email@example.com or domain.com
+        value_help: Enter an email address or domain to block
+        type_label: Type
+        submit: Add to Blacklist
+      import_form:
+        title: Import Blacklist Entries
+        input_label: Entries
+        input_placeholder: Enter one email or domain per line...
+        input_help: Paste a list of emails or domains (one per line). The system will
+          auto-detect if each is an email or domain.
+        submit: Import
+        cancel: Cancel
+      created: Entry added to blacklist
+      imported: "%{created} entries added, %{skipped} skipped (duplicates)"
+      deleted: Entry removed from blacklist
+      delete_failed: Failed to remove entry
+      cannot_delete_global: Global blacklist entries cannot be removed. Contact Amplifa
+        support.
+      not_found: Blacklist entry not found
+  timeline:
+    title: Your Path to Launch
+    subtitle: Track your progress from onboarding to actively generating leads
+    you_are_here: You are here
+    coming_soon: Coming Soon
+    completed: Completed
+    stage_label: 'Stage '
+    onboarding:
+      title: Onboarding
+      description: Complete your profile and preferences
+    setup:
+      title: Campaign Setup
+      description: Review playbooks and configure campaigns
+    warming:
+      title: Email Warming
+      description: 3-week warmup period for email accounts
+      duration: "~3 weeks"
+    launch:
+      title: Launch
+      description: Start generating qualified leads
+  invitation:
+    accept:
+      title: Welcome to Amplifa!
+      subtitle: You've been invited to join %{organization}
+      account_info_title: Your Account
+      setup_title: Set Up Your Account
+      organization_label: Organization
+      email_label: Email
+      name_label: Name
+      role_label: Role
+      password_label: Password
+      password_placeholder: Create a secure password
+      confirm_password_label: Confirm Password
+      confirm_password_placeholder: Confirm your password
+      language_label: Preferred Language
+      language_help: Choose your preferred language for Amplifa
+      timezone_label: Timezone (Optional)
+      timezone_placeholder: Select your timezone...
+      timezone_help: Select your timezone for accurate time displays
+      terms_label: I accept the Terms of Service and Privacy Policy
+      submit: Complete Setup
+      need_help: Need help?
+      password_requirements: 'Password Requirements:'
+      password_req_length: At least 8 characters
+      password_req_number: At least 1 number
+      password_req_special: At least 1 special character
+      password_req_uppercase: One uppercase letter
+      password_req_lowercase: One lowercase letter
+      password_strength:
+        weak: Weak
+        fair: Fair
+        good: Good
+        strong: Strong
+      password_strength_label: 'Password Strength:'
+      role_admin: Admin
+      show_password: Show password
+      hide_password: Hide password
+      errors:
+        password_required: Password is required
+        password_too_short: Password must be at least 8 characters
+        confirmation_required: Please confirm your password
+        passwords_mismatch: Passwords do not match
+    expired:
+      title: Invitation Expired
+      message: This invitation has expired and can no longer be used.
+      explanation: Invitations expire 7 days after being sent.
+      request_new: Request New Invitation
+      contact_support: Contact Support
+    invalid:
+      title: Invalid Invitation
+      message: This invitation link is not valid.
+      explanation: Please check your email for the correct link, or contact your administrator.
+      contact_support: Contact Support
+    already_accepted:
+      message: This invitation has already been used. Please log in.
+  components:
+    generation_progress:
+      completed: "%{completed} of %{total} completed"
+      errors: "%{count} errors"
+  admin:
+    statuses:
+      onboarded: Onboarded
+      pending: Pending
+      deactivated: Deactivated
+      archived: Archived
+      active: Active
+    roles:
+      org_admin: Org Admin
+      member: Member
+      customer_admin: Customer Admin
+      amplifa_admin: Amplifa Admin
+      customer_user: Customer User
+    password_strength:
+      weak: Weak
+      fair: Fair
+      good: Good
+      strong: Strong
+    common:
+      dashboard: Dashboard
+      back: Back
+      back_to_dashboard: Back to Dashboard
+      back_to_organizations: Back to Organizations
+      back_to_accounts: Back to Accounts
+      back_to_activity_log: Back to Activity Log
+      cancel: Cancel
+      save_changes: Save Changes
+      saving: Saving...
+      error: An error occurred
+      create: Create
+      creating: Creating...
+      edit: Edit
+      view: View
+      delete: Delete
+      login_as: Login As
+      deactivate: Deactivate
+      filters: Filters
+      all: All
+      apply_filters: Apply Filters
+      clear_filters: Clear Filters
+      clear_all: Clear All
+      clear: Clear
+      close: Close
+      reset: Reset
+      required_fields: "* Required fields"
+      na: N/A
+      not_recorded: Not recorded
+      previous: Previous
+      next: Next
+      coming_soon: Coming Soon
+      saved: Saved
+      'yes': 'Yes'
+      'no': 'No'
+      importing: Importing...
+      no_results: No results found
+      search: Search
+      page_info: Page %{current} of %{total}
+      view_all: View All
+      showing: Showing
+      to: to
+      of: of
+      results: results
+      disconnecting: Disconnecting...
+      actions: Actions
+      no_industry: No industry
+      send: Send
+      status: Status
+      organization: Organization
+      created: Created
+      email: Email
+      company: Company
+      name: Name
+      role: Role
+      job_title: Job Title
+      description: Description
+      display_name: Display Name
+      first_name: First Name
+      last_name: Last Name
+      domain: Domain
+      mailboxes: Mailboxes
+      all_organizations: All Organizations
+      all_statuses: All Statuses
+      playbook: Playbook
+      created_at: Created
+      updated_at: Last Updated
+      select_organization: Select an organization...
+      page: Page
+      active: Active
+      inactive: Inactive
+      deleting: Deleting...
+      created_by: Created By
+      form_errors: 'Please fix the following errors:'
+      select_option: Select an option...
+      organizations: Organizations
+    dashboard:
+      title: Admin Dashboard
+      super_title: Super Admin Dashboard
+      subtitle: Platform overview and management
+      stats:
+        total_organizations: Total Organizations
+        total_accounts: Total Accounts
+        pending_onboarding: Pending Onboarding
+      recent_organizations:
+        title: Recent Organizations
+        description: A list of the 10 most recently created organizations
+        view_all: View All Organizations
+        empty: No organizations yet
+      table:
+        industry: Industry
+        size: Size
+    organizations:
+      title: Manage Organizations
+      subtitle: View and manage all organizations in the system
+      create_button: Create
+      search_placeholder: Search organizations by name...
+      empty: No organizations yet
+      table:
+        industry: Industry
+        size: Size
+        accounts: Accounts
+      new:
+        title: Create Organization
+        subtitle: Add a new customer organization to Amplifa
+        name_label: Organization Name
+        name_description: The name of the customer organization
+        name_placeholder: Acme Corporation
+        industry_label: Industry
+        industry_description: What industry does this organization operate in?
+        industry_placeholder: Technology, Healthcare, Finance, etc.
+        size_label: Company Size
+        size_description: Number of employees
+        size_placeholder: Select size...
+        size_suffix: " employees"
+        onboarded_label: Mark as onboarded
+        onboarded_description: Check this if the organization has completed initial
+          setup
+        submit: Create Organization
+        website_integration_section: Website & Integration
+        website_label: Company Website
+        website_description: The organization's main website URL
+        website_placeholder: https://www.example.com
+        calendly_url_label: Calendly Scheduling Link
+        calendly_url_description: Calendly link for booking sales meetings
+        calendly_url_placeholder: https://calendly.com/company/meeting
+        financial_section: Financial Information
+        average_contract_value_label: Average Contract Value (ACV)
+        average_contract_value_description: Average value of the organization's sales
+          contracts
+        average_contract_value_placeholder: '10000'
+        meeting_price_label: Average Meeting Value
+        meeting_price_description: Value attributed to each booked meeting
+        meeting_price_placeholder: '500'
+        monthly_subscription_label: Monthly Subscription
+        monthly_subscription_description: The organization's Amplifa subscription
+          cost
+        monthly_subscription_placeholder: '299'
+        monthly_meeting_limit_label: Max Meetings / Month
+        monthly_meeting_limit_description: Billing cycle meeting cap for this organization
+        localization_section: Localization
+        locale_label: Default Language
+        locale_description: Default language for this organization
+        currency_label: Currency
+        currency_description: Default currency for financial tracking
+        security_section: Security
+        two_factor_authentication_required_label: Require email two-factor authentication
+        two_factor_authentication_required_description: Users in this organization
+          must confirm sign in from an emailed secure link after entering their password.
+      edit:
+        title: Edit Organization
+        subtitle: Update organization details and settings
+        name_label: Organization Name
+        industry_label: Industry
+        size_label: Organization Size
+        size_placeholder: Select a size
+        website_integration_section: Website & Integration
+        website_label: Company Website
+        website_help: The organization's main website URL
+        calendly_url_label: Calendly Scheduling Link
+        calendly_url_help: Your Calendly link for booking sales meetings (must start
+          with https://calendly.com/)
+        financial_section: Financial Information
+        average_contract_value_label: Average Contract Value (ACV)
+        average_contract_value_help: Average value of the organization's sales contracts
+        meeting_price_label: Average Meeting Value
+        meeting_price_help: Value attributed to each booked meeting
+        monthly_subscription_label: Monthly Subscription
+        monthly_subscription_help: The organization's Amplifa subscription cost
+        monthly_meeting_limit_label: Max Meetings / Month
+        monthly_meeting_limit_help: Billing cycle meeting cap for this organization
+        billing_begins_on_label: Billing Begins On
+        billing_begins_on_help: Full date used to anchor recurring billing cycles
+        localization_section: Localization
+        locale_label: Default Language
+        locale_help: Default language for this organization
+        currency_label: Currency
+        currency_help: Default currency for financial tracking
+        security_section: Security
+        two_factor_authentication_required_label: Require email two-factor authentication
+        two_factor_authentication_required_help: Users in this organization must confirm
+          sign in from an emailed secure link after entering their password.
+        onboarded_label: Onboarded
+        associated_accounts: Associated Accounts (%{count})
+        no_accounts: No accounts associated with this organization
+        invite_button: Invite User
+        deactivate_button: Deactivate Organization
+      export:
+        button: Export Configuration
+      import:
+        button: Import
+        title: Import Organization
+        description: Upload a JSON export file to create a new organization with all
+          its configuration (senders, domains, mailboxes, playbooks, agents).
+        select_file: Select JSON file
+        selected: Selected
+        success: Organization '%{name}' imported successfully
+        validation_failed: 'Validation failed: %{errors}'
+        failed: 'Import failed: %{error}'
+        no_file: Please select a file to import
+        invalid_json: Invalid JSON file format
+      back_to_list: Back to Organizations
+      show:
+        subtitle: Organization overview and resources
+      card:
+        agents: Agents
+        playbooks: Playbooks
+        senders: Senders
+        mailboxes: Mailboxes
+        emails_sent: Emails sent
+        emails_total: Total
+        emails_daily_avg: Avg/day
+        daily_capacity: Daily capacity
+        meetings: Meetings
+        reply_rate: Meeting rate
+        click_rate: Click rate
+        time_window: Window
+        time_windows:
+          last_24h: Last 24 hours
+          last_7d: Last 7 days
+          last_30d: Last 30 days
+          last_90d: Last 90 days
+          last_180d: Last 180 days
+          last_365d: Last 365 days
+        emails_today: Today
+        emails_7d: Past 7 days
+        view: View
+        edit: Edit
+        ai_reply_agent_on: AI Reply Agent On
+      overview:
+        stats_title: Key Metrics
+        activity_title: Recent Activity
+        info_title: Organization Info
+        no_activity: No recent activity
+        by: by
+        archive_title: Archive Organization
+        archive_description: Archived organizations are hidden from the Organizations
+          list. This action is permanent for admin visibility.
+        archive_button: Archive Organization
+        archive_confirm: Are you sure you want to archive this organization? Archived
+          organizations no longer appear in the Organizations list.
+      lead_sequence:
+        title: Lead Sequence
+        agent: Agent
+        total_leads: Total Leads
+        not_contacted: Not Contacted
+        all_reached: Step (all reached)
+        all_leads_contacted: All Leads Contacted
+        no_agents: No agents
+        filters:
+          all_agents: All agents
+          all_leads_contacted: All Leads Contacted
+      stats:
+        agents: Agents
+        playbooks: Playbooks
+        senders: Senders
+        mailboxes: Mailboxes
+        leads: Leads
+        emails_sent: Emails Sent
+        meetings: Meetings
+      fields:
+        status: Status
+        created: Created
+        website: Website
+        industry: Industry
+        size: Size
+        locale: Locale
+        currency: Currency
+      tabs:
+        overview: Overview
+        playbooks: Playbooks
+        agents: Agents
+        settings: Settings
+        domains: Domains
+        senders: Senders
+        mailboxes: Mailboxes
+        replies: Replies
+        sent_messages: Sends
+        meetings: Meetings
+        leads: Leads
+        lead_imports: Lead Imports
+        files: Files
+        users: Users
+      replies:
+        interested: Interested
+        meeting_request: Meeting Request
+        not_interested: Not Interested
+        ooo: Out of Office
+        ooo_returns: returns %{date}
+        bounced: Bounced
+        title: Reply Center
+        subtitle: Manage conversations and replies from your leads
+        reply_now: Reply now
+        empty: No conversations yet
+        empty_description: No conversations match your current filters. Try adjusting
+          the status filter or search terms.
+        select_conversation: Select a Conversation
+        select_conversation_desc: Choose a conversation from the list to view the
+          thread, lead details, and send a reply.
+        no_preview: No preview available
+        never: Never
+        just_now: Just now
+        minutes_ago:
+          one: "%{count} minute ago"
+          other: "%{count} minutes ago"
+        hours_ago:
+          one: "%{count} hour ago"
+          other: "%{count} hours ago"
+        days_ago:
+          one: "%{count} day ago"
+          other: "%{count} days ago"
+        last_checked: Last checked
+        check_mail_now: Check Mail Now
+        checking_mail: Checking mail for new replies...
+        mail_check_complete: Mail check complete
+        mail_check_complete_with_errors: Mail check completed with some errors
+        mail_check_failed: Failed to start mail check
+        no_active_mailboxes: No active mailboxes to check
+        ai_agent_enabled: AI Reply Agent enabled
+        ai_agent_disabled: AI Reply Agent disabled
+        ai_agent_toggle_failed: Failed to toggle AI Reply Agent
+        filter_menu:
+          label: Filters
+          title: Inbox filters
+          description: Saved for your account
+          reply_type: Reply Type
+          sender: Sender
+          all_senders: All Senders
+        sent_successfully: Reply sent successfully
+        send_failed: 'Failed to send reply: %{error}'
+        conversation_closed: Conversation closed
+        conversation_reopened: Conversation reopened
+        conversation_snoozed: Conversation snoozed until %{until}
+        confirm_close: Are you sure you want to close this conversation?
+        confirm_snooze: Snooze this conversation?
+        filter:
+          all: All
+          open: Open
+          snoozed: Snoozed
+          closed: Closed
+        status:
+          open: Open
+          snoozed: Snoozed
+          closed: Closed
+          bounced: Bounced
+        stats:
+          total: Total
+          unread: Unread
+          open: Open
+          snoozed: Snoozed
+          closed: Closed
+          unassigned: Unassigned
+          interested: Interested
+          meeting_request: Meeting Request
+          not_interested: Not Interested
+        interest_status:
+          interested: Interested
+          meeting_request: Meeting Request
+          not_interested: Not Interested
+          wrong_person: Wrong Person
+        search_placeholder: Search by lead name, email, or company...
+        tabs:
+          all: All
+          open: Open
+          snoozed: Snoozed
+          closed: Closed
+          unassigned: Unassigned
+        conversation:
+          messages: messages
+          via: via
+        thread:
+          back_to_list: Back to Conversations
+          incoming: Incoming
+          outgoing: Sent
+          bounce_badge: Bounce
+          ooo_badge: Out of Office
+        actions:
+          close: Close
+          reopen: Reopen
+          snooze: Snooze
+        snooze_options:
+          title: Snooze until...
+          tomorrow: Tomorrow morning (9am)
+          next_week: Next week (9am Monday)
+          next_month: Next month (9am)
+        snooze:
+          tomorrow: Tomorrow morning (9am)
+          next_week: Next week (9am Monday)
+          next_month: Next month (9am)
+        composer:
+          placeholder: Write your reply...
+          include_signature: Add signature before send
+          send: Send Reply
+          sending: Sending...
+        compose_placeholder: Write your reply...
+        reply_with_ai: Reply With AI
+        reply_with_ai_generating: Generating reply...
+        reply_all_cc_confirmation: 'Reply all: this will also Cc %{recipients}.'
+        ai_generation_failed: 'Failed to generate reply: %{error}'
+        add_link: Add Link
+        add_cc: Cc
+        cc_input_label: Cc recipients
+        cc_input_placeholder: Add Cc and press Enter
+        edit_link: Edit Link
+        open_link: Open
+        remove_link: Remove
+        save_link: Save Link
+        link_url_label: Link URL
+        link_url_placeholder: https://example.com
+        link_url_help: Paste a full URL or enter a domain name and we will make it
+          clickable.
+        link_url_invalid: Enter a valid URL.
+        include_signature: Add signature before send
+        send_reply: Send Reply
+        lead_sidebar:
+          title: Lead Information
+          email: Email
+          company: Company
+          job_title: Job Title
+          location: Location
+          linkedin: LinkedIn
+          website: Website
+          view_lead: View Full Lead Profile
+        mailbox_info:
+          title: Mailbox
+        sender_info:
+          title: Sender
+          has_signature: Has signature template
+        unassigned:
+          title: Unassigned Replies
+          subtitle: Replies that need to be assigned to a lead
+          empty: No unassigned replies
+          empty_description: All replies have been matched to leads.
+          assign_to: Assign to Lead
+          select_lead: Select a lead...
+          search_leads: Search leads by email, name, or company...
+          assign: Assign
+        lead_assigned: Reply assigned to %{email}
+        reply_not_found: Reply not found or already assigned
+        sidebar:
+          company: Company
+          location: Location
+          view_full_profile: View Full Profile
+          sending_as: Sending As
+          mailbox: Mailbox
+    users:
+      title: All Users
+      subtitle: Manage all user accounts across the platform
+      create_button: Create User
+      empty: No users found
+      roles:
+        org_admin: Org Admin
+        member: Member
+        customer_admin: Customer Admin
+        amplifa_admin: Amplifa Admin
+        customer_user: Customer User
+      statuses:
+        onboarded: Onboarded
+        pending: Pending
+        deactivated: Deactivated
+        active: Active
+        undefined: Unknown
+      table:
+        edit: Edit
+        login_as: Login as
+      filters:
+        search_label: Search users
+        search_placeholder: Search name or email...
+        result_count: "%{count} users"
+        organization_label: Filter by organization
+        organization_all: All organizations
+        role_label: Filter by role
+        role_all: All roles
+        status_label: Filter by status
+        status_all: All statuses
+        clear: Clear
+      new:
+        title: Create User
+        subtitle: Add a new user to the platform
+        email_placeholder: user@example.com
+        first_name_placeholder: John
+        last_name_placeholder: Doe
+        password_label: Password
+        password_placeholder: Minimum 8 characters
+        password_description: At least 8 characters, including 1 number and 1 special
+          character
+        password_strength_label: 'Password strength:'
+        password_confirmation_label: Confirm Password
+        confirm_password_placeholder: Re-enter password
+        organization_placeholder: Select organization...
+        organization_na_message: Amplifa admins do not belong to an organization
+        info_title: User Creation
+        info_message: The user will be created with the provided password and can
+          log in immediately. No email verification is required.
+        submit: Create User
+        password_hint: At least 8 characters, including 1 number and 1 special character
+          recommended
+        select_organization: Select an organization...
+        organization_na: N/A - Amplifa Admins
+        organization_hint: Amplifa admins do not belong to any organization
+        create_button: Create User
+      edit:
+        title: Edit User
+        subtitle: Update user information and permissions
+        email_hint: Email addresses cannot be changed
+        email_readonly: Email addresses cannot be changed
+        organization_placeholder: Select organization...
+        organization_na_message: Amplifa admins do not belong to an organization
+        select_organization: Select an organization...
+        organization_na: N/A - Amplifa Admins
+        organization_hint: Amplifa admins do not belong to any organization
+        security_section: Security
+        two_factor_authentication_required_label: Require email two-factor authentication
+        two_factor_authentication_required_help: When enabled, this Amplifa admin
+          must verify each login by email.
+        role_change_warning_title: Role Change Warning
+        role_change_warning_message: You are changing this user's role from %{old_role}
+          to %{new_role}. This will affect their access permissions.
+        amplifa_admin_promotion_confirm: Activate Amplifa Admin for this user? This
+          gives them access to ALL accounts.
+        amplifa_admin_global_edit_prefix: To promote this user to Amplifa Admin, use
+          the
+        amplifa_admin_global_edit_link: global user admin page
+        amplifa_admin_global_edit_suffix: "."
+      organization_scope_amplifa_admin_forbidden: Use the global user edit page to
+        promote users to Amplifa Admin.
+      platform_access:
+        title: Platform access
+        amplifa_admin_label: Amplifa Admin
+        amplifa_admin_help: Grants platform-wide admin access across all organizations.
+          Organization memberships may remain on the account for future demotion,
+          but admin login uses the global admin dashboard instead of a customer workspace.
+        amplifa_admin_warning: Amplifa Admin access is global and should only be granted
+          to trusted Amplifa staff.
+        demote_help: Removing Amplifa Admin access will convert this account to the
+          first active organization membership role.
+        demote_requires_membership: Add at least one active organization membership
+          before removing Amplifa Admin access.
+        amplifa_admin_enabled: Amplifa Admin activated.
+        amplifa_admin_disabled: Amplifa Admin deactivated.
+        two_factor_enabled: Email two-factor authentication activated.
+        two_factor_disabled: Email two-factor authentication deactivated.
+      memberships:
+        title: Organization memberships
+        empty: This user does not have any active organization memberships.
+        add_title: Add organization membership
+        add_description: Give this user access to another customer workspace without
+          changing their primary organization.
+        organization_label: Organization
+        role_label: Role
+        select_organization: Select an organization...
+        add_button: Add membership
+        add_success: Organization membership added successfully.
+        update_success: Organization membership updated successfully.
+        role_change_success: Role in %{organization} changed to %{role}.
+        update_failed: Failed to update organization membership.
+        remove_success: Organization membership removed successfully.
+        already_assigned: This user already has an active membership for that organization.
+        organization_not_found: Organization could not be found.
+        amplifa_admin_forbidden: Amplifa admins cannot be assigned to customer organizations.
+        last_membership_required: Add another active membership before removing this
+          user's primary membership.
+        no_assignable_organizations: All active organizations are already assigned.
+        available_count: "%{count} organizations available"
+        edit_role_label: Change role for %{organization}
+        remove_button: Remove
+        remove_confirm: Remove membership for %{organization}?
+      password:
+        title: Password Reset
+        send_email_title: Send reset password email
+        send_email_description: Send the user a secure link to reset their own password.
+        send_email_button: Send reset email
+        set_direct_title: Set password directly
+        set_direct_description: Set a new password for this user directly as an admin.
+        set_direct_button: Set password
+        new_password_label: New password
+        new_password_confirmation_label: Confirm new password
+        reset_email_sent: Reset password email sent successfully
+        reset_email_failed: Failed to send reset password email
+        set_success: Password updated successfully
+        new_password_required: New password is required
+        new_password_too_short: New password must be at least 8 characters
+        confirmation_required: Password confirmation is required
+        confirmation_mismatch: Password confirmation does not match
+    accounts:
+      title: Manage Accounts
+      subtitle: View and manage all user accounts in the system
+      empty: No accounts yet
+      impersonate_confirm: Are you sure you want to impersonate this user?
+      edit:
+        title: Edit Account
+        subtitle: Update account details and permissions
+        organization_placeholder: Select an organization
+        deactivate_button: Deactivate Account
+        deactivate_confirm: Are you sure you want to deactivate this account?
+    activities:
+      title: Activity Log
+      subtitle: View all administrative actions and audit trail
+      empty: No activities found for the selected filters
+      filters:
+        title: Filters
+        organization_all: All Organizations
+        action_label: Action Type
+        action_all: All Actions
+        start_date_label: Start Date
+        end_date_label: End Date
+      table:
+        timestamp: Timestamp
+        admin: Admin
+        action: Action
+        details: Details
+        ip_address: IP Address
+      show_details: "▶ Show Details"
+      hide_details: "▼ Hide Details"
+      no_details: No details
+      unknown_admin: Unknown Admin
+      pagination:
+        showing: Showing %{start} to %{end} of %{total} activities
+      show:
+        title: Activity Details
+        subtitle: Detailed information about this administrative action
+        breadcrumb_dashboard: Dashboard
+        breadcrumb_log: Activity Log
+        breadcrumb_activity: 'Activity #%{id}'
+        overview: Overview
+        activity_id: Activity ID
+        timestamp: Timestamp
+        action_type: Action Type
+        ip_address: IP Address
+        performed_by: Performed By
+        related_organization: Related Organization
+        organization_name: Organization Name
+        website: Website
+        action_details: Action Details
+        no_details: No additional details recorded for this activity
+        technical_info: Technical Information
+        user_agent: User Agent
+    invitations:
+      title: Invitations
+      subtitle: Manage customer invitations and track their status
+      create_button: Invite New User
+      empty_with_filter: No invitations found. Try adjusting your filters.
+      empty: Create your first invitation to get started.
+      filters:
+        title: Filters
+        status_all: All Statuses
+        organization_all: All Organizations
+      table:
+        expires: Expires
+        invited_by: Invited By
+      actions:
+        resend: Resend
+        cancel: Cancel
+        delete: Delete
+      confirm:
+        resend: Resend invitation to %{email}?
+        cancel: Cancel invitation for %{email}? This cannot be undone.
+        delete: Permanently delete invitation for %{email}? This cannot be undone.
+      pagination:
+        showing: Showing page %{current} of %{total} (%{count} total invitations)
+      new:
+        title: Invite New User
+        subtitle: Send an invitation email to add a new user to an organization
+        organization_description: The organization this user will belong to
+        organization_placeholder: Select an organization...
+        email_description: The invitation will be sent to this email address
+        email_placeholder: user@example.com
+        first_name_placeholder: John
+        last_name_placeholder: Doe
+        info_title: About Invitations
+        info_messages:
+        - An invitation email will be sent to the provided email address
+        - The recipient can set their own password when accepting
+        - Invitation links expire after 7 days
+        - You can resend or cancel pending invitations from the invitations list
+        submit: Send Invitation
+        submitting: Sending...
+    playbooks:
+      title: Playbooks
+      subtitle: Manage AI-generated playbooks for all organizations
+      generate_button: Generate Playbook
+      create_button: New Playbook
+      generate_title: Generate New Playbook
+      generate_subtitle: Use AI to generate a playbook from a website
+      back_to_list: Back to Playbooks
+      empty: No playbooks yet. Generate your first playbook using AI.
+      ai_generated: AI Generated
+      approved: Playbook has been approved
+      confirm_approve: Approve this playbook? It will be available for use in campaigns.
+      confirm_move_to_draft: Move this playbook back to draft status?
+      confirm_archive: Archive this playbook? It will no longer be visible to customers.
+      confirm_delete: Delete this playbook? This action cannot be undone.
+      delete_modal:
+        title: Delete this playbook?
+        description: This action cannot be undone.
+        affected_agents_title: Affected agents
+        affected_agents_description: These agents will lose this playbook assignment
+          when you delete it.
+        no_affected_agents: No agents are currently assigned to this playbook.
+        pause_notice: Any affected agents that are currently running will be paused
+          before deletion.
+        will_pause: This running agent will be paused.
+        confirm_button: Delete playbook
+      no_value_proposition: No value proposition
+      no_personae: No personae added yet
+      no_use_cases: No use cases added yet
+      no_references: No references added yet
+      no_proof_points: No proof points added yet
+      no_comments: No comments yet
+      statuses:
+        draft: Draft
+        changes_requested: Changes Requested
+        approved: Approved
+        archived: Archived
+      filters:
+        organization: Organization
+        status: Status
+        language: Language
+        all_languages: All Languages
+      table:
+        product: Product
+        agents: Agents
+        language: Language
+        content: Content
+        personae: personae
+        use_cases: use cases
+        references: refs
+        view: View
+        edit: Edit
+      form:
+        organization: Organization
+        select_organization: Select an organization...
+        product_name: Product Name
+        product_name_help: The name of the product or service to generate a playbook
+          for
+        website_url: Website URL
+        website_url_help: The company website to analyze (must include http:// or
+          https://)
+        generate_button: Generate Playbook
+        generating: Generating...
+        generation_info: AI will scrape the website, analyze the content, and generate
+          a strategic playbook with personae and use cases. This typically takes 15-30
+          seconds.
+      generation:
+        in_progress: Generating Playbook...
+        please_wait: This may take 15-30 seconds. Please don't close this page.
+        phases:
+          started: Starting...
+          scraping: Scraping website
+          generating: Generating with AI
+          completed: Completed
+          failed: Failed
+        failed_title: Failed to generate %{product}
+        steps:
+          scraping: Scraping website
+          scraping_desc: Extracting content and structure
+          analyzing: Analyzing business model
+          analyzing_desc: Understanding products and services
+          personas: Identifying target personas
+          personas_desc: Mapping ideal customer profiles
+          use_cases: Generating use cases
+          use_cases_desc: Creating strategic messaging
+          finalizing: Finalizing playbook
+          finalizing_desc: Compiling insights and recommendations
+      sections:
+        value_proposition: Value Proposition
+        personae: Target Personae
+        use_cases: Use Cases
+        references: Reference Customers
+        proof_points: Proof Points
+        comments: Discussion
+        metadata: Details
+        actions: Actions
+      persona:
+        pain_points: Pain Points
+      metadata:
+        status: Status
+        language: Language
+        created: Created
+        updated: Last Updated
+        approved: Approved
+        by: by
+        generation: Generation
+      actions:
+        approve: Approve
+        edit: Edit Playbook
+        move_to_draft: Move to Draft
+        archive: Archive
+        delete: Delete
+      ai_edit:
+        button: AI Edit
+        title: AI Edit Playbook
+        playbook_label: Playbook
+        instruction_label: Instructions
+        instruction_placeholder: e.g., Focus more on objection handling
+        helper: Describe how you want the playbook refined.
+        examples_title: Examples
+        example_one: Focus playbook more on enterprise security concerns
+        example_two: Think more from the perspective of a sales leader
+        example_three: Emphasize objection handling and competitive differentiation
+        submit: Apply AI Edit
+        submitting: Applying...
+        apply_comment: AI Apply
+        apply_all: AI Apply All
+        applied: Applied
+        scope_label: Section
+        success: Playbook updated with AI edits
+        failed: AI edit failed. Please try again.
+        missing_instruction: Please provide instructions for the AI edit.
+        scopes:
+          entire_playbook: All Sections
+          product_description: Product Description
+          value_proposition: Value Proposition
+          personae: Personas
+          use_cases: Use Cases
+          references: Reference Customers
+          proof_points: Proof Points
+      version_navigation:
+        undo: Undo
+        redo: Redo
+        confirm_undo: Undo the last playbook version change?
+        confirm_redo: Redo the next playbook version change?
+        undo_success: Playbook version undone
+        redo_success: Playbook version redone
+        undo_missing: No playbook version is available to undo.
+        redo_missing: No playbook version is available to redo.
+      bulk_approve:
+        button: Approve All (%{count})
+        confirm: Approve all %{count} pending playbooks? They will be available for
+          use in campaigns.
+        success:
+          one: "%{count} playbook has been approved"
+          other: "%{count} playbooks have been approved"
+        partial_success: "%{approved} playbooks approved, %{failed} failed"
+        none_to_approve: No playbooks to approve
+      create_agent:
+        button: Create Agent
+        modal_title: Create Agent
+        sequence_source_label: Sequence Source
+        master_sequence_label: Master Sequence
+        local_sequence_label: Local Sequence (empty)
+        master_sequence_dropdown_label: Master Sequence
+        master_sequence_placeholder: Select a master sequence...
+        master_sequence_description: The new agent will use the selected master sequence.
+        local_sequence_description: The new agent will start with a blank local sequence.
+        global_sequence_not_found: Selected master sequence was not found
+        invalid_llm_model: Selected message generation model is not available
+        llm_model_label: Message Generation Model
+        llm_model_description: The AI model this agent will use when generating messages.
+        success: Agent created successfully from playbook
+        failed: 'Failed to create agent: %{errors}'
+        not_approved: Can only create agents from draft or approved playbooks
+        already_has_agent: This playbook already has an agent
+      edit:
+        title: Edit Playbook
+        tabs:
+          overview: Overview
+          personae: Personae
+          use_cases: Use Cases
+          references: References
+          proof_points: Proof Points
+        product_name: Product Name
+        product_description: Product Description
+        language: Language
+        value_proposition_placeholder: Describe the core value this product delivers
+          to customers...
+        ai_notes_label: AI Generation Notes
+        personae_description: Define the target buyer personae for this playbook
+        add_persona: Add Persona
+        add_first_persona: Add your first target persona
+        new_persona: New Persona
+        no_title: No title
+        persona_name: Persona Name
+        persona_title: Job Title
+        add_pain_point: Add Pain Point
+        pain_point_placeholder: Enter a pain point...
+        use_cases_description: Define the key use cases for this product
+        add_use_case: Add Use Case
+        add_first_use_case: Add your first use case
+        use_case_title: Title
+        use_case_description: Description
+        use_case_description_placeholder: Describe this use case and its value...
+        references_description: Add reference customers who have successfully used
+          this product
+        add_reference: Add Reference
+        add_first_reference: Add your first reference customer
+        reference_name: Customer Name
+        reference_description: Description
+        reference_description_placeholder: Describe the success story or use case...
+        proof_points_description: Add proof points that demonstrate product value
+        add_proof_point: Add Proof Point
+        add_first_proof_point: Add your first proof point
+        proof_point_claim: Claim
+        proof_point_description: Evidence
+        proof_point_description_placeholder: Provide evidence or context for this
+          claim...
+        file_attachment: File Attachment
+        upload_file: Upload File
+        uploading: Uploading...
+        remove_file: Remove file
+        allowed_files: PDF, DOC, DOCX, PNG, JPG, GIF (max 10MB)
+        unsaved_changes: You have unsaved changes
+      comment_types:
+        general: General
+        request_changes: Change Request
+        approval: Approval
+    lead_imports:
+      title: Lead Imports
+      subtitle: Manage CSV lead imports across all organizations
+      new_import: New Import
+      created: Import started successfully. Processing in background.
+      assign_to_agent:
+        success: Assigned %{count} imported leads to %{agent_name}.
+        invalid_status: You can only assign an agent after the import is completed.
+        already_assigned: This import already has an assigned agent.
+        invalid_agent: Please select a valid agent from this organization.
+        failed: Could not assign this import to an agent. Please try again.
+      empty: No imports yet. Upload your first CSV file.
+      remove_from_agent:
+        success: Removed %{count} lead assignments from %{agent_name} and unassigned
+          this import.
+        not_completed: Leads can only be removed from agent after the import is completed.
+        no_agent_assigned: This import is not currently assigned to an agent.
+        has_activity: This lead list already has attached messages and meetings, so
+          it can't be removed from this agent.
+      statuses:
+        pending: Pending
+        processing: Processing
+        completed: Completed
+        failed: Failed
+      filters:
+        organization: Organization
+        status: Status
+      table:
+        filename: File
+        agent: Agent
+        progress: Progress
+        updated: Updated
+        skipped: Skipped
+        blacklisted: Blacklisted
+        errors: Errors
+        view: View
+      new:
+        title: Import Leads
+        subtitle: Upload a CSV file and map columns to lead fields
+        organization_placeholder: Select an organization...
+        agent_label: Agent (optional)
+        agent_placeholder: Select an agent...
+        agent_help: If selected, leads will be automatically assigned to this agent
+        csv_file_label: CSV File *
+        csv_file_help: Upload a CSV file with lead data. Maximum 50MB.
+        upload_button: Upload & Preview
+        uploading: Uploading...
+        download_template: Download Template
+        download_template_help: Email is the only required column. All other fields
+          are optional. full_name is not needed if first_name and last_name are provided.
+      preview:
+        title: Map Columns
+        subtitle: Map CSV columns to lead fields
+        csv_headers: CSV Headers
+        lead_fields: Lead Fields
+        unmapped_columns: Unmapped Columns
+        unmapped_help: Unmapped columns will be stored in custom_fields
+        preview_rows: Preview (first 5 rows)
+        total_rows: "%{count} total rows"
+        email_required: Email column mapping is required
+        start_import: Start Import
+        back: Back
+      show:
+        title: Import Details
+        back_to_list: Back to Imports
+        filename: Filename
+        file_size: File Size
+        status: Status
+        progress: Progress
+        imported_by: Imported By
+        organization: Organization
+        agent: Agent
+        none_assigned: None assigned
+        started: Started
+        completed: Completed
+        duration: Duration
+        column_mapping: Column Mapping
+        results: Import Results
+        total_rows: Total Rows
+        processed: Processed
+        created: Created
+        updated: Updated
+        skipped: Skipped
+        blacklisted: Blacklisted
+        errors: Errors
+        error_details: Error Details
+        row: Row
+        no_errors: No errors
+        refresh: Refresh
+        remove_from_agent:
+          title: Remove Leads From Agent
+          warning: This will remove imported leads from the currently assigned agent
+            and stop any related sequence progress for those leads. People records
+            will remain untouched.
+          button: Remove Leads From Agent
+          confirm: Are you sure you want to remove these leads from the assigned agent?
+            This action cannot be undone.
+        assign_to_agent: Assign to Agent
+        assign_to_agent_help: Select an agent and assign all successfully imported
+          leads from this import.
+        no_agents_available: No agents available for this organization.
+      download:
+        button: Download CSV
+        not_available: The source CSV file is no longer available for download.
+    agents:
+      title: Agents
+      subtitle: Manage all campaigns and agents across organizations
+      global_title: All Agents
+      global_subtitle: View all agents across all organizations
+      new_agent: Create Agent
+      created: Agent created successfully
+      updated: Agent updated successfully
+      deleted: Agent removed successfully
+      delete_failed: Failed to remove agent
+      empty: No agents yet. Create your first agent to get started.
+      confirm_delete: Remove this agent? Conversations and reply history will remain
+        available.
+      sequence_mailbox:
+        title: Sequence mailbox
+        label: Send sequence messages from same mailbox
+        description: When off, any eligible assigned mailbox can send due sequence messages while the original assignment remains unchanged.
+        table_header: Sequence Mailbox
+        same_mailbox_badge: Same mailbox
+        any_mailbox_badge: Any mailbox
+      samples:
+        generation_started: Sample message generation started. You'll be notified
+          when complete.
+        cancel_success: Sample generation cancelled. Existing samples were cleared
+          and generation can be restarted.
+        not_ready_for_generation: Agent is not ready for sample generation. Ensure
+          leads and sequence steps are configured.
+        reset_success: Sample messages have been reset. You can regenerate them now.
+        approve_success: Sample messages approved successfully.
+        approve_not_ready: Cannot approve samples. Ensure samples are generated and
+          not already approved.
+        progress:
+          default_target: this lead
+          default_step: message
+          in_progress: Generating sample messages
+          step: Generating %{step}
+          detail: "%{generated} of %{total} messages"
+          errors: "%{count} errors"
+          generating_button: Generating...
+          start_failed: Could not start sample generation. Please try again.
+          phases:
+            enriching_lead: Enriching lead data for %{target}
+            linkedin_scrape: Scraping LinkedIn for %{target}
+            linkedin_profile_photo: Downloading LinkedIn photo for %{target}
+            linkedin_posts_scrape: Scraping LinkedIn posts for %{target}
+            disc_inference: Inferring DISC profile for %{target}
+            company_website_scrape: Scraping company website for %{target}
+            sync_to_lead: Syncing enrichment for %{target}
+            org_description: Generating organization description for %{target}
+            generating_subject: Generating subject for %{target}
+            generating_message: Generating %{step} for %{target}
+      statuses:
+        draft: Draft
+        ready: Ready
+        active: Active
+        paused: Paused
+        completed: Completed
+      filters:
+        organization: Organization
+        status: Status
+        search_placeholder: Search agents or organizations...
+      table:
+        playbook: Playbook
+        leads: Leads
+        contacted: Contacted
+        replied: Replied
+        meetings: Meetings
+        reply_rate: Reply Rate
+        meeting_rate: Meeting Rate
+        view: View
+        edit: Edit
+      new:
+        title: Create Agent
+        subtitle: Create a new campaign agent
+        organization_placeholder: Select an organization...
+        organization_description: The organization this agent belongs to
+        name_label: Name
+        name_placeholder: Enter agent name...
+        name_description: A descriptive name for this campaign agent
+        description_label: Description
+        description_placeholder: Describe this agent's purpose...
+        description_description: Optional details about this agent's goals and target
+          audience
+        playbook_label: Playbook
+        playbook_placeholder: Select a playbook...
+        playbook_description: The messaging playbook this agent will use
+        playbook_help: Only approved playbooks are available for selection
+        status_description: The current workflow status of this agent
+        locale_label: Locale
+        locale_placeholder: Select a language...
+        locale_description: Language for generated messages. Defaults to organization's
+          locale.
+        default_timezone_label: Default Timezone
+        default_timezone_description: Used when lead timezone can't be resolved from
+          their location
+        llm_model_label: AI Model
+        llm_model_description: The AI model to use for generating messages. Different
+          models have different capabilities and costs.
+        info_title: About Playbooks
+        info_playbook_message: Only approved playbooks from the selected organization
+          are available. Create and approve playbooks before assigning them to agents.
+        submit: Create Agent
+        submitting: Creating...
+      show:
+        title: Agent Details
+        back_to_list: Back to Agents
+        back_to_org_agents: Back to %{org} Agents
+        description: Description
+        no_description: No description provided
+        playbook: Playbook
+        no_playbook: No playbook assigned
+        default_timezone: Default Timezone
+        locale: Locale
+        created_by: Created By
+        created_at: Created
+        updated_at: Last Updated
+        can_launch: Ready to Launch
+        cannot_launch: Not Ready
+        buying_signals: Buying Signals
+        buying_signals_enabled: Enabled
+        buying_signals_disabled: Disabled
+        buying_signals_lookback: Buying Signals Lookback
+        buying_signals_lookback_days: "%{days} days"
+        buying_signals_prompt_usage_tooltip: Number of sequence steps currently using
+          buying signals in the prompt
+        import_leads: Import Leads
+        assign_mailboxes: Assign Mailboxes
+        view_sent_messages: Sent Messages
+        stats:
+          title: Campaign Statistics
+          sent_emails: Sent Emails
+          bounced: Bounced
+          replies: Replies
+          meetings: Meetings
+          total_leads: Total Leads
+          leads_in_sequence: Leads in Sequence
+          contacted: Contacted
+        leads:
+          title: Assigned Leads
+          empty: No leads assigned to this agent yet
+        sequence:
+          title: Sequence
+          active_steps: active steps
+          edit_sequence: Edit Sequence
+          no_steps: No sequence steps configured yet. Add steps to define your outreach
+            sequence.
+          add_first_step: Add First Step
+          immediate: Immediate
+          delay_days: After %{days} days
+          inactive: inactive
+          event_types:
+            email: Email
+            linkedin_message: LinkedIn Message
+            linkedin_visit: LinkedIn Visit
+            linkedin_connect: LinkedIn Connect
+            manual_task: Manual Task
+        samples:
+          title: Sample Messages
+          status:
+            not_generated: Not Generated
+            pending_approval: Pending Approval
+            approved: Approved
+          generated_at: Generated on %{date}
+          approved_by: Approved by %{name} on %{date}
+          sample_count_info: Samples will be generated for the first %{count} leads
+          sample_count_label: Number of sample leads
+          need_email_steps: Add at least one email step to the sequence before generating
+            samples
+          need_leads: Import leads before generating samples
+          generate_button: Generate Samples
+          view_samples: View Samples
+          approve_button: Approve Samples
+          cancel_button: Cancel Generation
+          reset_button: Reset & Regenerate
+          confirm_generate: This will generate sample messages for the first %{count}
+            leads. Continue?
+          confirm_reset: This will delete all sample messages and reset the approval.
+            Continue?
+          confirm_cancel: This will stop sample generation, delete generated samples,
+            and reset progress. Continue?
+          confirm_approve: Approve these sample messages? This will allow the campaign
+            to launch.
+        mailboxes:
+          title: Assigned Mailboxes
+          empty: No mailboxes assigned to this agent
+          assign: Assign Mailboxes
+          warmup_complete: Ready
+          warming_up: Warming Up
+          days_remaining: "%{days} days left"
+          capacity: "%{remaining}/%{total} capacity"
+          capacity_label: capacity
+          provider_google: Google
+          provider_microsoft: Microsoft
+          select_mailboxes: Select mailboxes to assign
+          save_assignment: Save Assignment
+          no_available: No mailboxes available for this organization
+          select_all: Select All
+          deselect_all: Deselect All
+          search_domains: Search domains...
+          no_domains_match: No domains match your search
+        senders:
+          title: Senders
+          empty: No senders in this organization
+          manage: Manage
+          mailbox: mailbox
+          mailboxes: mailboxes
+        buying_signals_modal:
+          missing_highlights_title: Generate only missing highlights + rating
+          missing_highlights_description: Skip full buying-signal generation and update
+            existing summaries that are missing highlights or a rating.
+        campaign_status:
+          title: Campaign Status
+          not_launched: Not Launched
+          launched: Launched
+          launched_at: Launched on %{date}
+          paused: Paused
+          paused_at: Paused on %{date}
+          active: Active
+          launch_button: Launch Campaign
+          pause_button: Pause Campaign
+          resume_button: Resume Campaign
+          confirm_launch: This will start sending emails to leads. Continue?
+          confirm_pause: This will pause all email sends. Scheduled times will be
+            preserved. Continue?
+          confirm_resume: This will resume email sends. Continue?
+          leads_eligible_now: Leads Eligible Now
+          sent_today: Sent Today
+          pending_now: Pending Now
+          in_sequence: In Sequence
+          not_yet_contacted: Not Yet Contacted
+          available_capacity: Available Capacity
+          launch_requirements: Launch Requirements
+          requirement_leads: Leads imported
+          requirement_mailboxes: Mailboxes assigned
+          requirement_mailboxes_have_senders: Mailboxes have senders assigned
+          requirement_samples: Sample messages approved
+          requirement_playbook: Approved playbook
+          requirement_senders: Created sender(s)
+      launch:
+        not_ready: Agent is not ready to launch. Ensure leads, mailboxes, and approved
+          samples are configured.
+        already_launched: This campaign has already been launched.
+        success: Campaign launched successfully! Emails will begin sending according
+          to the schedule.
+      pause:
+        cannot_pause: This campaign cannot be paused. It must be launched and active.
+        success: Campaign paused. All scheduled sends have been held.
+        button: Pause Campaign
+        confirm: This will pause all email sends. Scheduled times will be preserved.
+          Continue?
+      resume:
+        cannot_resume: This campaign cannot be resumed. It must be paused first.
+        success: Campaign resumed. Scheduled sends will continue.
+        button: Resume Campaign
+        confirm: This will resume email sends. Continue?
+      restart_leads:
+        button: Restart Leads
+        confirm: Restart all non-replied, non-blacklisted leads for %{name} from the
+          beginning of the sequence?
+        started: Lead restart started. This may take a few minutes for large agents.
+        success:
+          one: 1 lead was restarted from the beginning of the sequence.
+          other: "%{count} leads were restarted from the beginning of the sequence."
+      sent_messages:
+        title: Sent Messages
+        back_to_agent: Back to Agent
+        view_overview: View Overview
+        filter_status: Status
+        filter_mailbox: Mailbox
+        all_statuses: All Statuses
+        all_mailboxes: All Mailboxes
+        search_placeholder: Search by recipient or subject...
+        messages_count: messages
+        table_title: Message History
+        empty: No messages have been sent yet. Launch the campaign to start sending.
+        column_recipient: Recipient
+        column_mailbox: Mailbox
+        column_subject: Subject
+        column_step: Step
+        column_sent_at: Sent
+        column_status: Status
+        view_message: View message details
+        preview_title: Sent Message
+        preview_subject: Subject
+        preview_to: To
+        preview_from: From
+        preview_sent_at: Sent
+        preview_step: Sequence Step
+        preview_replied_at: Replied
+        preview_bounced_at: Bounced
+        preview_message: Message
+        status:
+          sent: Sent
+          bounced: Bounced
+          replied: Replied
+        replied_at: Replied %{date}
+        bounced_at: Bounced %{date}
+      schedule:
+        title: Send Schedule
+        description: Send times are approximate. Emails are sent when the mailbox
+          is active and the lead becomes eligible.
+        back_to_agent: Back to Agent
+        view_overview: View Overview
+        filter_date: Show
+        leads_scheduled: leads eligible
+        today: Today
+        tomorrow: Tomorrow
+        sends: eligible sends
+        via: via
+        no_mailbox: No mailbox assigned
+        scheduled_today: Eligible Today
+        pending_now: Pending Now
+        sent_today: Sent Today
+        total_scheduled: Total Eligible
+        not_launched: Campaign not launched yet. Launch the campaign to see eligible
+          sends.
+        launch_campaign: Launch Campaign
+        empty: No sends eligible for this time period.
+        empty_hint: The system continuously checks for eligible leads when mailboxes
+          are active.
+        rescheduled_count:
+          one: Rescheduled %{count}x
+          other: Rescheduled %{count}x
+        last_rescheduled_to: Rescheduled to %{time}
+        date_options:
+          today: Today
+          tomorrow: Tomorrow
+          upcoming: Next 7 Days
+          all: All Scheduled
+      regenerate_schedule:
+        title: Regenerate Schedule
+        button: Regenerate Schedule
+        description: Clear and re-plan scheduled sends for the selected date. This
+          will remove all currently scheduled sends for that date and create a fresh
+          schedule based on current settings.
+        date_label: Target Date
+        date_today: Today
+        date_tomorrow: Tomorrow
+        date_custom: Custom Date
+        confirm: This will clear all scheduled sends for %{date} and create a new
+          schedule. Continue?
+        success: Schedule regenerated for %{date}. Cleared %{cleared} sends, scheduled
+          %{scheduled} new sends.
+        error: 'Failed to regenerate schedule: %{errors}'
+        not_active: Cannot regenerate schedule. Campaign must be launched and active.
+        invalid_date: Invalid date provided.
+      mailboxes:
+        updated: Mailbox assignments updated successfully.
+      leads:
+        title: Agent Leads
+        back_to_agent: Back to Agent
+        view_overview: View Overview
+        filter_status: Status
+        all_statuses: All Statuses
+        search_placeholder: Search by email, name, or company...
+        leads_count: leads
+        leads_found: "%{count} leads found"
+        table_title: Leads in Campaign
+        empty: No leads assigned to this agent yet.
+        column_lead: Lead
+        column_company: Company
+        column_status: Status
+        column_progress: Progress
+        column_mailbox: Mailbox
+        column_activity: Activity
+        messages_sent: sent
+        next_send: Eligible From
+        replied: Replied
+        meeting: Meeting
+        last_sent: Last sent
+        added: Added
+        ooo_returns: OOO returns
+        blacklisted: Blacklisted
+        column_actions: Actions
+        view: View
+        view_details: View lead details and generated messages
+        status:
+          not_contacted: Not Contacted
+          in_sequence: In Sequence
+          paused: Paused
+          replied: Replied
+          bounced: Bounced
+          completed: Completed
+          out_of_office: Out of office
+          out_of_office_until: Out of office · back %{date}
+        meeting_actions:
+          mark: Mark Meeting
+          unmark: Unmark Meeting
+          confirm_unmark: Are you sure you want to remove the meeting booking for
+            this lead?
+        meeting_modal:
+          title: Mark Meeting Booked
+          notes_label: Meeting Notes (optional)
+          notes_placeholder: Add any notes about the meeting...
+          confirm: Mark Meeting
+      sample_messages:
+        title: Sample Messages
+        back_to_agent: Back to Agent
+        confirm_generate: This will generate sample messages for the first %{count}
+          leads. Continue?
+        confirm_reset: This will delete all sample messages and reset the approval.
+          Continue?
+        confirm_approve: Approve these sample messages? This will allow the campaign
+          to launch.
+        generated_at: Generated %{date}
+        expand_all: Expand All
+        collapse_all: Collapse All
+        no_messages: No sample messages have been generated yet.
+        generate_button: Generate Samples
+        approve_button: Approve Samples
+        reset_button: Reset & Regenerate
+        total_messages: "%{count} messages"
+        lead_info: Lead Information
+        send_test: Send Test
+        edit: Edit
+        test_sent: Test Sent
+        edited_badge: Edited
+        error_summary:
+          title: "%{count} leads had generation errors"
+        edit_modal:
+          title: Edit Message
+          subject_label: Subject
+          body_label: Body
+          save: Save Changes
+      edit:
+        title: Edit Agent
+        subtitle: Update agent settings and configuration
+        name_label: Name *
+        description_label: Description
+        playbook_label: Playbook
+        locale_label: Locale
+        locale_description: Language for generated messages
+        default_timezone_label: Default Timezone
+        default_timezone_description: Used when lead timezone can't be resolved from
+          their location
+        llm_model_label: AI Model
+        llm_model_description: The AI model to use for generating messages
+        delete_button: Delete Agent
+        delete_warning: This will remove the agent from campaign management while
+          preserving conversations and reply history.
+    sequence_steps:
+      title: Sequence Steps
+      subtitle: Configure the outreach sequence for this agent
+      created: Sequence step created successfully
+      updated: Sequence step updated successfully
+      deleted: Sequence step deleted successfully
+      delete_failed: Failed to delete sequence step
+      empty: No sequence steps yet. Add your first step to define the outreach workflow.
+      add_step: Add Step
+      back_to_agent: Back to Agent
+      confirm_delete: Are you sure you want to remove this step from the sequence?
+      max_steps_reached: Maximum of 15 steps per sequence.
+      reorder:
+        success: Sequence steps reordered successfully
+        invalid_params: Invalid parameters for reordering
+        saving: Saving new order...
+      import:
+        button: Import from Agent
+        title: Import Sequence
+        description: Select an agent to copy its sequence steps. This will replace
+          any existing steps.
+        destructive_warning: This will permanently replace all existing steps in the
+          target agent's sequence. This cannot be undone.
+        select_agent: Select an agent
+        select_target_agent: Select target agent
+        select_source_agent: Select source agent
+        search_placeholder: Search by organization or agent
+        no_agents: No agents available
+        no_matching_agents: No matching agents found
+        steps_count:
+          one: "%{count} step"
+          other: "%{count} steps"
+        confirm_replace: This will replace all existing steps in this agent's sequence.
+          Are you sure?
+        success: Sequence imported successfully
+        agent_not_found: Source agent not found
+        no_steps: Source agent has no sequence steps
+        importing: Importing...
+        cancel: Cancel
+        import_button: Import
+      new:
+        title: Add Sequence Step
+        subtitle: Add a new step to the outreach sequence
+        submit: Create Step
+      edit:
+        title: Edit Sequence Step
+        subtitle: Update step configuration
+      show:
+        title: Sequence Step Details
+      form:
+        position_label: Position
+        position_help: Order in the sequence (1-15)
+        event_type_label: Event Type
+        event_type_help: Type of action for this step
+        name_label: Step Name
+        name_placeholder: e.g., Initial Outreach, First Follow-up
+        name_help: Optional descriptive name for this step
+        name_description: Optional descriptive name for this step
+        delay_days_label: Delay (days)
+        delay_days_help: Days to wait after the previous step
+        active_label: Active
+        active_help: Inactive steps are skipped during generation
+        subject_prompt_label: Subject Prompt
+        subject_prompt_placeholder: Select a subject prompt...
+        subject_prompt_help: AI prompt template for generating email subjects
+        body_prompt_label: Body Prompt
+        body_prompt_placeholder: Select a body prompt...
+        body_prompt_help: AI prompt template for generating email bodies
+        select_prompt: Select a prompt...
+        submit: Save Step
+        submitting: Saving...
+        delete_button: Delete Step
+        deleting_button: Deleting...
+      event_types:
+        email: Email
+        linkedin_message: LinkedIn Message (Coming Soon)
+        linkedin_visit: LinkedIn Profile Visit (Coming Soon)
+        linkedin_connect: LinkedIn Connection (Coming Soon)
+        manual_task: Manual Task (Coming Soon)
+      table:
+        position: Position
+        type: Type
+        delay: Delay
+        days: days
+        immediate: Immediate
+        active: Active
+        inactive: Inactive
+        edit: Edit
+        delete: Delete
+    leads:
+      title: All Leads
+      subtitle: View and manage leads across all organizations
+      empty: No leads found
+      import_leads: Import Leads
+      filters:
+        title: Filters
+        organization_all: All Organizations
+        blacklist_label: Blacklist Status
+        blacklist_all: All
+        blacklist_yes: Blacklisted
+        blacklist_no: Not Blacklisted
+      table:
+        job_title: Job Title
+        view: View
+      status:
+        blacklisted: Blacklisted
+        not_blacklisted: Active
+        active: Active
+      pagination:
+        showing: Showing %{start} to %{end} of %{total} results
+        previous: Previous
+        next: Next
+      show:
+        title: Lead Details
+        back_to_list: Back to Leads
+        contact_info: Contact Information
+        name: Name
+        email: Email
+        first_name: First Name
+        last_name: Last Name
+        job_title: Job Title
+        linkedin: LinkedIn
+        view_profile: View Profile
+        location: Location
+        phone: Phone
+        timezone: Timezone
+        website: Website
+        company_info: Company Information
+        company: Company
+        company_website: Website
+        custom_fields: Additional Information
+        enrichment: Enrichment Data
+        disc_profile: DISC Profile
+        disc_not_analyzed: Not Analyzed
+        linkedin_scraped: LinkedIn Scraped
+        not_scraped: Not yet
+        blacklist_info: Blacklist Information
+        blacklist_reason: Reason
+        blacklisted_at: Blacklisted On
+        agents: Assigned Agents
+        no_agents: Not assigned to any agents
+        added: Added
+        import_info: Import Information
+        import_file: Source File
+        imported_by: Imported By
+        imported_at: Imported On
+        metadata: Metadata
+        email_domain: Email Domain
+        created_at: Created
+        updated_at: Last Updated
+      modal:
+        title: Lead Details
+        close: Close
+        sections:
+          basic_info: Contact Information
+          enrichment: Enrichment Data
+          disc: DISC Profile
+          linkedin: LinkedIn Data
+          company: Company Website Data
+          messages: Message Preview
+        fields:
+          email: Email
+          name: Name
+          company: Company
+          domain: Domain
+          website: Website
+          job_title: Job Title
+          location: Location
+          linkedin_url: LinkedIn
+          view_profile: View Profile
+          custom_fields: Custom Fields
+        disc:
+          title: DISC Profile
+          not_analyzed: Not analyzed
+          D: Dominance
+          I: Influence
+          S: Steadiness
+          C: Conscientiousness
+          DI: Dominance-Influence
+          DC: Dominance-Conscientiousness
+          ID: Influence-Dominance
+          IC: Influence-Conscientiousness
+          SC: Steadiness-Conscientiousness
+          SI: Steadiness-Influence
+        linkedin:
+          headline: Headline
+          summary: Summary
+          experience: Experience
+          education: Education
+          posts: Recent Posts
+          posts_count: "%{count} posts"
+          no_posts: No posts available
+          scraped_at: Analyzed
+          not_scraped: Not scraped
+        company_website:
+          summary: Company Website Summary
+          raw_data: Company Website Data
+          more_characters: "%{count} more characters..."
+          content: Website Content
+          scraped_at: Scraped
+          not_scraped: Not scraped
+        messages:
+          title: Sequence Messages
+          agent: Agent
+          no_agents: Lead not assigned to any agents
+          step: Step %{position}
+          delay_immediate: Immediate
+          delay_days: After %{days} days
+          subject: Subject
+          body: Body
+          generate: Generate
+          generate_all: Generate All
+          generating: Generating...
+          regenerate: Regenerate
+          no_messages: No messages generated yet
+          all_generated: All messages generated
+          status:
+            draft: Draft
+            approved: Approved
+            scheduled: Scheduled
+            sent: Sent
+            failed: Failed
+            bounced: Bounced
+            replied: Replied
+        blacklist:
+          title: Blacklisted
+          reason: Reason
+        enrichment:
+          title: Enrichment
+          linkedin_profile: Scrape LinkedIn Profile
+          linkedin_posts: Scrape LinkedIn Posts
+          disc_profile: Infer DISC Profile
+          company_website: Scrape Company Website
+          scraping: Scraping...
+          inferring: Inferring...
+          success: Success
+          error: Error
+          last_updated: Last updated %{date}
+          never_scraped: Never scraped
+          not_available: Not available
+          requires_linkedin: Requires LinkedIn profile first
+          requires_posts: Requires LinkedIn posts first
+    generated_messages:
+      updated: Message updated successfully
+      test_sent: Test email sent to %{email}
+      update_failed: Failed to update message
+    email_accounts:
+      title: Email Accounts
+      subtitle: Manage email accounts across organizations
+      created: Email account created successfully
+      updated: Email account updated successfully
+      deleted: Email account deleted successfully
+      warmup_started: Warmup started successfully
+      status_updated: Status updated successfully
+      invalid_status: Invalid status specified
+      confirm_delete: Are you sure you want to delete this email account? This action
+        cannot be undone.
+      delete_failed_has_agents: Cannot delete email account that is assigned to agents.
+        Remove agent assignments first.
+      add_account: Add Account
+      import_csv: Import CSV
+      back_to_list: Back to Email Accounts
+      filters:
+        organization: Organization
+        status: Status
+      statuses:
+        pending: Pending
+        warming: Warming Up
+        active: Active
+        paused: Paused
+        suspended: Suspended
+      table:
+        display_name: Display Name
+        connection: Connection
+        connection_error: Error
+        connection_ok: OK
+        not_tested: Not tested
+        warmup_progress: Warmup Progress
+        daily_limit: Daily Limit
+        view: View
+        edit: Edit
+        warmup_complete: Complete
+        days_remaining: "%{days} days left"
+      test_connection:
+        success: Connection test successful! SMTP and IMAP are working.
+        smtp_ok_imap_failed: 'SMTP OK, but IMAP failed: %{error}'
+        imap_ok_smtp_failed: 'IMAP OK, but SMTP failed: %{error}'
+        failed: 'Connection test failed: %{error}'
+      send_test:
+        success: Test email sent to %{email}
+        failed: 'Failed to send test email: %{error}'
+        invalid_email: Please enter a valid email address
+      import:
+        title: Import Email Accounts
+        subtitle: Upload a CSV file to bulk import email accounts
+        upload_title: Upload CSV File
+        upload_description: Import multiple email accounts at once from a CSV file
+        organization: Organization
+        select_organization: Select an organization...
+        csv_file: CSV File
+        drop_file: Drop your CSV file here
+        or_click: or click to browse
+        invalid_file_type: Please select a CSV file
+        download_template: Download Template
+        template_description: Use this template to ensure your CSV has the correct
+          format
+        download: Download
+        import_button: Import Accounts
+        select_file: Please select a CSV file to import
+        success: "%{count} email accounts imported successfully"
+        partial_success: "%{imported} imported, %{failed} failed: %{errors}"
+        columns_title: Column Reference
+        columns_description: Required and optional columns for the CSV file
+        column_name: Column
+        required: Required
+        description: Description
+        provider_settings: Provider Settings Reference
+        provider_settings_description: Common SMTP/IMAP settings for popular email
+          providers
+        google_note: Use App Passwords for Gmail accounts with 2FA enabled
+        microsoft_note: Ensure SMTP/IMAP is enabled in Microsoft 365 admin settings
+        columns:
+          email: The email address for the account
+          first_name: Account holder's first name
+          last_name: Account holder's last name
+          smtp_host: SMTP server hostname
+          smtp_port: SMTP server port (usually 587)
+          smtp_username: SMTP authentication username
+          smtp_password: SMTP authentication password or app password
+          imap_host: IMAP server hostname
+          imap_port: IMAP server port (usually 993)
+          imap_username: IMAP authentication username
+          imap_password: IMAP authentication password or app password
+          smtp_encryption: 'SMTP encryption: tls, ssl, or none (default: tls)'
+          imap_encryption: 'IMAP encryption: ssl, tls, or none (default: ssl)'
+          daily_limit: 'Daily send limit (default: 50)'
+          sending_domain: Optional custom sending domain
+          display_name: Optional display name override
+      show:
+        title: Email Account Details
+        subtitle: View and manage email account settings
+        organization: Organization
+        email: Email Address
+        display_name: Display Name
+        status: Status
+        daily_limit: Daily Send Limit
+        warmup_status: Warmup Status
+        warmup_complete: Warmup Complete
+        warmup_in_progress: Warmup In Progress
+        days_remaining: "%{days} days remaining"
+        warmup_not_started: Not Started
+        notes: Notes
+        created_by: Created By
+        created_at: Created
+        updated_at: Last Updated
+        agents_title: Assigned Agents
+        no_agents: No agents assigned
+        start_warmup: Start Warmup
+        start_warmup_confirm: Start the 21-day warmup period for this account?
+        mark_active: Mark Active
+        pause: Pause
+        suspend: Suspend
+        reactivate: Reactivate
+        warmup_started_on: Started on %{date}
+        back_to_list: Back to Email Accounts
+        account_holder: Account Holder
+        from_address: From Address
+        smtp_configuration: SMTP Configuration
+        imap_configuration: IMAP Configuration
+        connection_status: Connection Status
+        provider: Provider
+        last_test: Last Test
+        never_tested: Never tested
+        connection_error: Connection Error
+        connection_healthy: Connection is healthy
+        test_connection: Test Connection
+      form:
+        first_name: First Name
+        last_name: Last Name
+        smtp_host: SMTP Host
+        smtp_port: SMTP Port
+        smtp_username: SMTP Username
+        smtp_password: SMTP Password
+        smtp_encryption: SMTP Encryption
+        imap_host: IMAP Host
+        imap_port: IMAP Port
+        imap_username: IMAP Username
+        imap_password: IMAP Password
+        imap_encryption: IMAP Encryption
+        sending_domain: Sending Domain
+      new:
+        title: Add Email Account
+        subtitle: Create a new email account for outbound campaigns
+        basic_info: Basic Information
+        select_organization: Select organization...
+        email_placeholder: sender@company.com
+        email_help: The email address that will be used for sending
+        first_name_placeholder: John
+        last_name_placeholder: Smith
+        display_name_placeholder: Sales Team
+        display_name_help: How recipients will see the sender name (optional)
+        daily_limit_label: Daily Send Limit
+        daily_limit_help: Maximum number of emails to send per day
+        smtp_config: SMTP Configuration
+        smtp_host_label: SMTP Host
+        smtp_port_label: Port
+        smtp_username_label: Username
+        smtp_username_placeholder: Usually your email address
+        smtp_password_label: Password
+        smtp_password_placeholder: App password or SMTP password
+        smtp_encryption_label: Encryption
+        imap_config: IMAP Configuration
+        imap_host_label: IMAP Host
+        imap_port_label: Port
+        imap_username_label: Username
+        imap_username_placeholder: Usually your email address
+        imap_password_label: Password
+        imap_password_placeholder: App password or IMAP password
+        imap_encryption_label: Encryption
+        optional_settings: Optional Settings
+        sending_domain_label: Sending Domain
+        sending_domain_placeholder: company.com
+        sending_domain_help: Custom domain for HELO/EHLO identification
+        notes_label: Notes
+        notes_placeholder: Internal notes about this account...
+        info_pending: New accounts will be in 'pending' status. Start the warmup period
+          when ready.
+        create_button: Create Account
+      edit:
+        title: Edit Email Account
+        subtitle: Update email account settings
+        email_readonly: Email address cannot be changed
+        display_name_help: Name shown in sent emails
+        daily_limit_label: Daily Send Limit
+        daily_limit_help: Maximum emails to send per day
+        notes_label: Notes
+        notes_placeholder: Internal notes about this account...
+    email_domains:
+      title: Email Domains
+      subtitle: Manage Google Workspace and Microsoft 365 integrations
+      empty: No email domains configured yet.
+      created: Email domain created successfully
+      created_with_discovery: Email domain created. Discovered %{discovered} users,
+        created %{created} mailboxes.
+      updated: Email domain updated successfully
+      deleted: Email domain deleted successfully
+      delete_failed: Failed to delete email domain
+      has_mailboxes: Cannot delete domain with existing mailboxes. Delete mailboxes
+        first.
+      connection_success: Connection test successful
+      google_not_configured: Google credentials not configured. Set GOOGLE_SERVICE_ACCOUNT_KEY
+        environment variable.
+      microsoft_not_configured: Microsoft credentials not configured. Set MICROSOFT_CLIENT_ID
+        and MICROSOFT_CLIENT_SECRET environment variables.
+      confirm_delete: Do you want to delete this domain & all of its mailboxes?
+      add_domain: Add Domain
+      back_to_list: Back to Email Domains
+      discover_mailboxes: Discover Mailboxes
+      discovery_success: 'Discovery complete: Found %{discovered} users, created %{created}
+        mailboxes, skipped %{skipped} existing'
+      discovery_confirm: This will search for all users in the domain and create mailboxes
+        for them. Continue?
+      sender_assigned: Sender %{sender} assigned to %{mailbox}
+      sender_unassigned: Sender unassigned from %{mailbox}
+      sender_assignment_failed: Failed to assign sender
+      sender_unassignment_failed: Failed to unassign sender
+      bulk_sender_assigned: Assigned %{sender} to %{count} mailboxes
+      test_connection: Test Connection
+      testing_connection: Testing...
+      settings: Settings
+      mailboxes_label: mailboxes
+      capacity_label: capacity
+      no_mailboxes: No mailboxes yet
+      assign_sender: Assign Sender
+      unassign_sender: Unassign
+      no_agents: None
+      warmup_complete: Complete
+      warmup_in_progress: Warming up
+      can_send: Ready
+      cannot_send: Not ready
+      select_all: Select all
+      selected_count: "%{count} selected"
+      bulk_assign: Assign to Sender
+      bulk_delete_confirm: Delete %{count} mailboxes from %{domains}? This action
+        cannot be undone.
+      search_placeholder: Search domains or emails...
+      bulk_assign_title: Assign Sender to %{count} Mailboxes
+      bulk_assign_description: Select a sender to assign to %{count} selected mailboxes.
+      mailbox_table:
+        email: Email
+        sender: Sender
+        agents: Agents
+        status: Status
+        warmup: Warmup
+        capacity: Capacity
+        actions: Actions
+      provider_types:
+        google: Google Workspace
+        microsoft: Microsoft 365
+      statuses:
+        active: Active
+        inactive: Inactive
+        error: Error
+        deleted: Deleted
+        undefined: Unknown
+      filters:
+        title: Filters
+        organization: Organization
+        provider_type: Provider Type
+        all_types: All Types
+        status: Status
+      credentials_status:
+        title: Global Credentials Status
+        google: Google
+        microsoft: Microsoft
+        configured: Configured
+        not_configured: Not Configured
+        google_hint: Set GOOGLE_SERVICE_ACCOUNT_KEY environment variable
+        microsoft_hint: Set MICROSOFT_CLIENT_ID and MICROSOFT_CLIENT_SECRET environment
+          variables
+      table:
+        provider_type: Provider
+        provider: Provider
+        last_verified: Last Verified
+        view: View
+        edit: Edit
+        never_verified: Never
+      new:
+        title: Add Email Domain
+        subtitle: Configure a Google Workspace or Microsoft 365 domain
+        organization_placeholder: Select an organization...
+        provider_type_label: Provider Type
+        provider_type_placeholder: Select provider type...
+        domain_label: Domain
+        domain_placeholder: example.com
+        domain_help: The email domain to configure
+        domain_inferred: inferred from admin email
+        google_admin_email_label: Admin Email
+        google_admin_email_help: Google Workspace admin email for API access. The
+          domain will be extracted from this email.
+        google_client_id_label: Service Account Client ID
+        google_scopes_label: Required Scopes
+        microsoft_tenant_id_label: Microsoft Tenant ID
+        microsoft_tenant_id_placeholder: 12345678-1234-1234-1234-123456789012
+        microsoft_tenant_id_help: Your Azure AD tenant GUID (required for Microsoft)
+        info_google: For Google Workspace, ensure domain-wide delegation is configured
+          for the service account.
+        info_microsoft: For Microsoft 365, ensure admin consent is granted for the
+          Azure AD app.
+        submit: Create Domain
+        submitting: Creating...
+      edit:
+        title: Edit Email Domain
+        subtitle: Update domain configuration
+        domain_label: Domain
+        microsoft_tenant_id_label: Microsoft Tenant ID
+        delete_button: Delete Domain
+      show:
+        title: Email Domain Details
+        back_to_list: Back to Email Domains
+        organization: Organization
+        provider_type: Provider Type
+        domain: Domain
+        microsoft_tenant_id: Microsoft Tenant ID
+        status: Status
+        last_verified: Last Verified
+        verification_error: Verification Error
+        created_at: Created
+        updated_at: Last Updated
+        mailboxes_title: Mailboxes
+        mailboxes_count: "%{count} mailboxes"
+        no_mailboxes: No mailboxes configured for this domain
+        add_mailbox: Add Mailbox
+        test_connection: Test Connection
+        testing: Testing...
+        credentials_status_title: Credentials Status
+    senders:
+      title: Senders
+      subtitle: Manage people who send outreach messages
+      empty: No senders configured yet.
+      created: Sender created successfully
+      updated: Sender updated successfully
+      deleted: Sender deleted successfully
+      confirm_delete: Are you sure you want to delete this sender? Their mailboxes
+        will remain but won't be linked to a sender.
+      add_sender: Add Sender
+      back_to_list: Back to Senders
+      statuses:
+        active: Active
+        inactive: Inactive
+      filters:
+        organization: Organization
+        status: Status
+        search: Search by name or email...
+      table:
+        job_title: Job Title
+        capacity: Daily Capacity
+        view: View
+        edit: Edit
+      new:
+        title: Add Sender
+        subtitle: Add a new person who will send outreach messages
+        organization_placeholder: Select an organization...
+        organization_help: The organization this sender belongs to
+        first_name_placeholder: John
+        last_name_placeholder: Smith
+        nickname_label: Nickname (optional)
+        nickname_placeholder: Johnny
+        nickname_help: Informal name used in {{sender_nickname}} signature variable
+        email_placeholder: john@company.com
+        email_help: Primary contact email for this sender
+        job_title_placeholder: Account Executive
+        linkedin_url_label: LinkedIn URL (optional)
+        linkedin_url_placeholder: https://linkedin.com/in/username
+        linkedin_url_help: For future LinkedIn automation
+        calendly_url_label: Calendly URL (optional)
+        calendly_url_placeholder: https://calendly.com/username
+        calendly_url_help: Per-sender scheduling link for signatures
+        signature_template_label: Signature Template
+        signature_template_placeholder: "<p>Best regards,<br>{{sender_full_name}}<br>{{sender_job_title}}</p>"
+        signature_template_help: 'HTML signature with variables. Available: {{sender_first_name}},
+          {{sender_last_name}}, {{sender_full_name}}, {{sender_nickname}}, {{sender_job_title}},
+          {{sender_email}}, {{sender_calendly_url}}, {{sender_linkedin_url}}, {{sender_company}},
+          {{lead_first_name}}, {{lead_last_name}}, {{lead_full_name}}, {{lead_company}},
+          {{lead_job_title}}, {{lead_email}}, {{lead_location}}, {{lead_linkedin_url}},
+          {{lead_company_website}}'
+        profile_photo_label: Profile Photo (optional)
+        profile_photo_help: JPEG or PNG, max 4MB. Used for provider sync.
+        profile_photo_upload: Upload Photo
+        profile_photo_invalid_type: Invalid file type. Please upload a JPEG or PNG
+          image.
+        profile_photo_too_large: File too large. Maximum size is 4MB.
+        submit: Create Sender
+        submitting: Creating...
+      edit:
+        title: Edit Sender
+        subtitle: Update sender profile and signature
+        delete_button: Delete Sender
+        change_photo: Change Photo
+      signature_editor:
+        mode_richtext: Rich Text
+        mode_html: HTML
+        mode_preview: Preview
+        help_richtext: Copy and paste your signature directly from your email client.
+          Formatting will be preserved.
+        help_html: 'Edit the raw HTML of your signature. Available variables: {{sender_first_name}},
+          {{sender_last_name}}, {{sender_full_name}}, {{sender_nickname}}, {{sender_job_title}},
+          {{sender_email}}, {{sender_calendly_url}}, {{sender_linkedin_url}}, {{sender_company}},
+          {{lead_first_name}}, {{lead_last_name}}, {{lead_full_name}}, {{lead_company}},
+          {{lead_job_title}}, {{lead_email}}, {{lead_location}}, {{lead_linkedin_url}},
+          {{lead_company_website}}'
+        help_preview: This signature contains complex HTML. Switch to HTML mode to
+          edit it.
+        html_warnings_title: HTML Validation Warnings
+        warning_unclosed_tag: 'Unclosed tag: <%{tag}>'
+        warning_unclosed_tags: 'Unclosed tags: %{tags}'
+        warning_script_tags: Script tags are not allowed in signatures
+        complex_html_notice: This signature contains complex HTML (tables, styled
+          elements). Use HTML mode to edit while preserving all formatting.
+      show:
+        title: Sender Details
+        back_to_list: Back to Senders
+        profile_section: Profile
+        email: Email
+        job_title: Job Title
+        linkedin: LinkedIn
+        calendly: Calendly
+        organization: Organization
+        status: Status
+        created_at: Created
+        updated_at: Last Updated
+        capacity_section: Capacity
+        mailboxes_count: Mailboxes
+        active_mailboxes: Active Mailboxes
+        total_daily_capacity: Total Daily Capacity
+        remaining_capacity: Remaining Today
+        signature_section: Signature
+        signature_preview: Signature Preview
+        no_signature: No signature template configured
+        signature_variables: Available Variables
+        mailboxes_section: Assigned Mailboxes
+        no_mailboxes: No mailboxes assigned to this sender
+        edit_sender: Edit Sender
+        select_mailbox: Select a mailbox to assign...
+        search_mailboxes: Search mailboxes...
+        no_mailboxes_found: No mailboxes match your search
+        assign_mailbox: Assign
+        assign_selected: Assign Selected (%{count})
+        unassign_mailbox: Remove from sender
+        calendly_section: Calendly Integration
+        calendly_not_configured: Calendly integration is not configured. Contact your
+          administrator to enable it.
+        calendly_connected_badge: Connected
+        calendly_limited_badge: Connected (Limited)
+        calendly_disconnected_badge: Not Connected
+        calendly_error_badge: Error
+        calendly_scheduling_url: Scheduling Link
+        calendly_view_link: View Scheduling Page
+        calendly_event_type: Meeting Type
+        calendly_select_event_type_placeholder: Select an event type
+        calendly_event_type_required: Select a meeting type to finish Calendly setup.
+        calendly_connected_at: Connected
+        calendly_tracking_info: Meetings booked via this sender's Calendly link are
+          automatically tracked and attributed to leads.
+        calendly_booking_links_enabled: Calendly booking links enabled
+        calendly_limited_tracking_info: Booking links are enabled. Automatic meeting
+          tracking requires Calendly Standard or higher.
+        calendly_help_text: Connect Calendly to automatically track meetings booked
+          via this sender's scheduling link.
+        calendly_connect: Connect Calendly
+        calendly_disconnect: Disconnect Calendly
+        calendly_confirm_disconnect: Disconnect
+        calendly_disconnect_warning: This will stop tracking meetings for this sender.
+          Future bookings won't be automatically attributed to leads.
+        calendly_retry: Retry Connection
+        search_domains: Search domains...
+        select_all: Select All
+        deselect_all: Deselect All
+        warmup_complete: Ready to send
+        warming_up: Warming up
+        capacity_remaining: remaining
+      mailbox_assigned: Mailbox %{email} assigned to this sender
+      mailboxes_assigned: "%{count} mailbox(es) assigned to this sender"
+      mailbox_unassigned: Mailbox %{email} removed from this sender
+      mailbox_different_org: Cannot assign mailbox from a different organization
+      no_mailboxes_selected: No mailboxes selected
+      calendly:
+        title: Calendly Integration
+        not_configured: Calendly integration is not configured. Please contact your
+          administrator.
+        not_connected: This sender is not connected to Calendly.
+        connected: Calendly connected successfully! Meetings booked via this sender's
+          link will now be tracked automatically.
+        connected_limited: Calendly connected successfully. Booking links are enabled.
+        disconnected: Calendly disconnected successfully.
+        connection_failed: 'Failed to connect Calendly: %{error}'
+        event_type_selected: Calendly meeting type updated.
+        event_type_selection_failed: 'Failed to update Calendly meeting type: %{error}'
+        oauth_denied: 'Calendly authorization was denied: %{error}'
+        invalid_state: Invalid OAuth state. Please try connecting again.
+        sender_mismatch: OAuth callback sender mismatch. Please try connecting again.
+        session_expired: OAuth session expired. Please try connecting again.
+        sender_not_found: Sender not found. Please try connecting again.
+    mailboxes:
+      title: Mailboxes
+      subtitle: Manage email sending accounts for API-based delivery
+      empty: No mailboxes configured yet.
+      created: Mailbox created successfully
+      updated: Mailbox updated successfully
+      deleted: Mailbox deleted successfully
+      delete_failed: Failed to delete mailbox
+      has_sent_messages: Cannot delete mailbox with sent messages. Archive the mailbox
+        instead.
+      bulk_delete:
+        no_mailboxes_selected: No mailboxes selected
+        success:
+          one: Deleted 1 mailbox
+          other: Deleted %{count} mailboxes
+        partial_failed:
+          one: Deleted 1 mailbox, but some mailboxes could not be deleted
+          other: Deleted %{count} mailboxes, but some mailboxes could not be deleted
+      test_send_queued: Test email queued for sending
+      test_send_success: Test email sent successfully to %{recipient}
+      test_send_failed: 'Failed to send test email: %{error}'
+      cannot_send: 'Cannot send from this mailbox: %{reasons}'
+      not_active: mailbox is not active
+      no_capacity: daily send limit reached
+      warmup_incomplete: warmup period not complete
+      confirm_delete: Are you sure you want to delete this mailbox?
+      test_email:
+        subject: "[Amplifa Test] Email from %{mailbox}"
+        body: |
+          This is a test email from Amplifa.
+
+          Mailbox: %{mailbox}
+          Domain: %{domain}
+          Provider: %{provider}
+          Sent at: %{timestamp}
+
+          If you received this email, the mailbox is configured correctly and ready to send.
+      add_mailbox: Add Mailbox
+      back_to_list: Back to Mailboxes
+      statuses:
+        active: Active
+        paused: Paused
+        suspended: Suspended
+      warmup_status:
+        complete: Warmup Complete
+        in_progress: Warming Up
+        not_started: Not Started
+        days_remaining: "%{days} days remaining"
+      filters:
+        organization: Organization
+        email_domain: Domain
+        all_domains: All Domains
+        status: Status
+        warmup_status: Warmup Status
+        all_warmup: All
+        warmup_complete: Complete
+        warmup_in_progress: In Progress
+      table:
+        display_name: Display Name
+        provider: Provider
+        sender: Sender
+        warmup: Warmup
+        daily_capacity: Daily Capacity
+        agents: Agents
+        view: View
+        edit: Edit
+      new:
+        title: Add Mailbox
+        subtitle: Add a new email sending account
+        email_domain_label: Email Domain
+        email_domain_placeholder: Select a domain...
+        email_domain_help: The email domain this mailbox belongs to
+        organization_placeholder: Select an organization...
+        organization_help: Will be set automatically based on provider
+        no_domains_for_org: No active email domains available for this organization.
+          Create a domain first.
+        email_placeholder: sender@example.com
+        email_help: Must match the provider's domain
+        first_name_placeholder: John
+        last_name_placeholder: Smith
+        display_name_placeholder: John Smith - Sales
+        display_name_help: How recipients will see the sender name (optional)
+        daily_send_limit_label: Daily Send Limit
+        daily_send_limit_help: 'Maximum emails per day (recommended: 50-200 for warmed
+          accounts)'
+        warmup_started_at_label: Warmup Started
+        warmup_started_at_help: When the 21-day warmup period began (leave blank for
+          new mailboxes)
+        start_warmup_label: Start warmup immediately
+        start_warmup_help: Begin the 21-day warmup period when the mailbox is created
+        info_api_based: This mailbox will send emails via the provider's API (Gmail
+          API or Microsoft Graph). No SMTP credentials are needed.
+        info_message: New mailboxes must complete a 21-day warmup period before reaching
+          full sending capacity. During warmup, send volume is gradually increased
+          to build reputation.
+        submit: Create Mailbox
+        submitting: Creating...
+      edit:
+        title: Edit Mailbox
+        subtitle: Update mailbox settings
+        email_readonly: Email address cannot be changed
+        first_name_placeholder: John
+        last_name_placeholder: Smith
+        display_name_placeholder: John Smith - Sales
+        display_name_help: How recipients will see the sender name (optional)
+        daily_send_limit_label: Daily Send Limit
+        daily_send_limit_help: 'Maximum emails per day (recommended: 50-200 for warmed
+          accounts)'
+        warmup_started_at_label: Warmup Started
+        warmup_started_at_help: Adjust the warmup start date to change the warmup
+          period calculation
+        delete_button: Delete Mailbox
+      show:
+        title: Mailbox Details
+        back_to_list: Back to Mailboxes
+        back_to_details: Back to Mailbox
+        email: Email Address
+        display_name: Display Name
+        full_display_name: Full Display Name
+        domain: Domain
+        provider: Provider
+        provider_type: Provider Type
+        organization: Organization
+        status: Status
+        daily_send_limit: Daily Send Limit
+        warmup_status: Warmup Status
+        warmup_progress: Warmup Progress
+        warmup_started: Warmup Started
+        created_at: Created
+        updated_at: Last Updated
+        capacity_title: Today's Capacity
+        sent_today: Sent Today
+        remaining: Remaining
+        can_send: Can Send
+        agents_title: Assigned Agents
+        no_agents: No agents assigned to this mailbox
+        recent_messages_title: Recent Messages
+        no_recent_messages: No messages sent from this mailbox yet
+        stats_title: Sending Statistics
+        total_sent: Total Sent
+        sent_this_week: This Week
+        sent_this_month: This Month
+        bounced: Bounced
+        replies_received: Replies Received
+        test_send: Send Test Email
+        test_send_help: Send a test email to verify this mailbox can send
+        sender_persona: Sender Persona
+        no_sender_assigned: No sender persona assigned to this mailbox
+      bulk_update:
+        title: Adjust Daily Send Limit
+        selected_count:
+          one: 1 mailbox selected
+          other: "%{count} mailboxes selected"
+        adjust_limit: Adjust Limit
+        description:
+          one: Set a new daily send limit for the selected mailbox.
+          other: Set a new daily send limit for all %{count} selected mailboxes.
+        new_limit_label: New Daily Send Limit
+        limit_help: Enter a value between 1 and 2000 emails per day
+        apply: Apply to Selected
+        no_mailboxes_selected: No mailboxes selected
+        invalid_limit: Daily send limit must be between 1 and 2000
+        success:
+          one: Updated daily send limit to %{limit} for 1 mailbox
+          other: Updated daily send limit to %{limit} for %{count} mailboxes
+    replies:
+      title: Reply Center
+      subtitle: View and manage incoming email replies
+      reply_now: Reply now
+      marked_responded: Reply marked as responded
+      marked_no_response_needed: Reply marked as no response needed
+      confirm_mark_responded: Mark this reply as responded?
+      confirm_no_response: Mark this reply as not requiring a response?
+      sent_successfully: Reply sent successfully
+      send_failed: 'Failed to send reply: %{error}'
+      forward_button: Forward…
+      forward_successfully: Conversation forwarded successfully
+      forward_invalid_email: Please enter a valid email address
+      forward_failed: 'Failed to forward conversation: %{error}'
+      forward_modal:
+        title: Forward conversation
+        description: Send the full thread and lead details to any email address
+        email_label: Forward to
+        email_placeholder: name@company.com
+        add_comment: Add Comment
+        comment_placeholder: Add context for the person receiving this forwarded conversation.
+        submit: Forward
+      conversation_closed: Conversation closed
+      conversation_reopened: Conversation reopened
+      conversation_snoozed: Conversation snoozed until %{until}
+      lead_assigned: Reply assigned to %{email}
+      reply_not_found: Reply not found or already assigned
+      stats:
+        total: Total Replies
+        requires_attention: Needs Attention
+        bounces: Bounces
+        out_of_office: Out of Office
+        responded: Responded
+        unresponded: Unresponded
+      filters:
+        organization: Organization
+        agent: Agent
+        all_agents: All Agents
+        mailbox: Mailbox
+        all_mailboxes: All Mailboxes
+        reply_type: Reply Type
+        all_types: All Types
+        requires_attention: Requires Attention
+        bounces: Bounces
+        out_of_office: Out of Office
+        responded: Responded
+      table:
+        lead: Lead
+        from: From
+        subject: Subject
+        mailbox: Received By
+        agent: Agent
+        type: Type
+        received: Received
+        view: View
+      types:
+        normal: Reply
+        bounce: Bounce
+        hard_bounce: Hard Bounce
+        soft_bounce: Soft Bounce
+        out_of_office: Out of Office
+      statuses:
+        needs_response: Needs Response
+        responded: Responded
+        no_response_needed: No Response Needed
+      show:
+        title: Reply Details
+        back_to_list: Back to Replies
+        from: From
+        to: To (Mailbox)
+        subject: Subject
+        received_at: Received
+        reply_type: Type
+        status: Status
+        message_id: Message ID
+        api_message_id: API Message ID
+        responded_at: Responded At
+        created_at: Created
+        original_message_title: Original Message Sent
+        no_original_message: No original message linked
+        original_subject: Subject
+        original_sent_at: Sent
+        original_agent: Agent
+        original_step: Sequence Step
+        lead_title: Lead Information
+        lead_name: Name
+        lead_email: Email
+        lead_company: Company
+        lead_title_field: Title
+        lead_location: Location
+        body_title: Reply Content
+        body_plain: Plain Text
+        body_html: HTML
+        related_replies_title: Other Replies from Lead
+        no_related_replies: No other replies from this lead
+        actions_title: Actions
+        mark_responded: Mark as Responded
+        mark_no_response: No Response Needed
+        view_lead: View Lead
+        view_mailbox: View Mailbox
+    global_inbox:
+      title: Global Reply Center
+      subtitle: All conversations across all organizations
+      all_organizations: All Organizations
+      filter_organization: Organization
+      check_mail: Checking mail across all organizations...
+      auto_reply:
+        button: Auto-Reply
+        sending: Generating and sending auto-reply...
+        sent: Auto-reply sent successfully
+        sent_successfully: Auto-reply sent successfully
+        failed: Failed to send auto-reply
+        invalid_status: Auto-reply is only available for 'not interested' or 'wrong
+          person' conversations
+    meetings:
+      title: Meetings
+      subtitle: Track and manage scheduled meetings with leads
+      empty: No meetings found
+      no_results: No meetings match your filters
+      stats:
+        total: Total
+        scheduling: Scheduling
+        scheduled: Scheduled
+        completed: Completed
+        positive: Positive
+        neutral: Neutral
+        no_show: No-Show
+        cancelled: Cancelled
+        rescheduled: Rescheduled
+      filters:
+        title: Filters
+        status: Status
+        meeting_type: Meeting Type
+        all_types: All Types
+        outcome: Outcome
+        all_outcomes: All Outcomes
+        organization: Organization
+      table:
+        lead: Lead
+        agent: Agent
+        type: Type
+        scheduled: Scheduled
+        duration: Duration
+        outcome: Outcome
+        view: View
+      types:
+        discovery: Discovery
+        demo: Demo
+        follow_up: Follow-up
+        closing: Closing
+        other: Other
+      statuses:
+        scheduled: Scheduled
+        scheduling: Scheduling
+        completed: Completed
+        positive: Positive
+        neutral: Neutral
+        no_show: No-Show
+        cancelled: Cancelled
+        rescheduled: Rescheduled
+        pending_removal: Pending Removal
+      outcomes:
+        positive: Positive
+        neutral: Neutral
+        negative: Negative
+        no_show: No-Show
+      show:
+        title: Meeting Details
+        back_to_list: Back to Meetings
+        type: Meeting Type
+        scheduled_at: Scheduled For
+        duration: Duration
+        duration_minutes:
+          one: "%{count} minute"
+          other: "%{count} minutes"
+        location: Location
+        status: Status
+        outcome: Outcome
+        notes: Notes
+        outcome_notes: Outcome Notes
+        source: Source
+        source_manual: Manual
+        source_calendly: Calendly
+        attributed_via: Attributed Via
+        created_at: Created
+        completed_at: Completed
+        cancelled_at: Cancelled
+        no_location: No location specified
+        no_notes: No notes
+        lead_title: Lead Information
+        lead_name: Name
+        lead_email: Email
+        lead_company: Company
+        lead_job_title: Job Title
+        view_lead: View Lead
+        agent_title: Agent Information
+        agent_name: Name
+        agent_status: Status
+        agent_organization: Organization
+        view_agent: View Agent
+        actions_title: Actions
+        mark_completed: Mark Completed
+        mark_no_show: Mark No-Show
+        cancel_meeting: Cancel Meeting
+        reschedule: Reschedule
+        select_outcome: Select outcome...
+        outcome_notes_placeholder: Add notes about the meeting outcome...
+        new_time: New Time
+        confirm_no_show: Mark this meeting as no-show?
+        confirm_cancel: Cancel this meeting?
+  replies:
+    ai_reply_agent: AI Reply Agent
+  meetings:
+    title: Meeting
+    subtitle: Track and manage your prospect meetings and outcomes
+    empty: No meetings found
+    search_placeholder: Search meeting by name or company
+    request_removal: Remove meeting
+    pending_removal_requested: Removal requested
+    confirm_request_removal: This will mark the meeting for admin removal. Continue?
+    request_removal_failed: Failed to request meeting removal.
+    mark_no_show: No-show
+    edit_time: Edit meeting time
+    set_time: Set meeting time
+    meeting_time: Meeting time
+    invalid_time: Enter a valid meeting time.
+    no_time_set: Not set
+    duration_minutes_short: "%{count} min"
+    outcome_update_failed: Failed to update meeting status.
+    meeting_time_update_failed: Failed to save meeting time.
+    edit_notes: Edit notes
+    notes_update_failed: Failed to update notes.
+    notes_enter_to_save: Press Enter to save. Shift+Enter adds a line.
+    no_notes: No notes
+    change_outcome: Change meeting outcome
+    select_outcome: Select outcome...
+    preparation:
+      title: Meeting Preparation
+      scheduled_for: Scheduled for
+      booked_at: Booked at
+      duration: Duration
+      location: Location
+      assigned_to: Assigned to
+      notes: Notes
+      removal_comment: Removal request comment
+      lead_snapshot: Lead Snapshot
+      lead_summary: Lead Summary
+      blacklisted: Blacklisted
+      company_summary: Company Summary
+      scraped_content_hidden: "%{count} more characters hidden"
+      linkedin_profile: LinkedIn Profile
+      view_linkedin: View profile
+      no_linkedin: No LinkedIn URL
+      enrichment: Enrichment
+      disc_label: DISC
+      confidence_label: Confidence
+      linkedin_posts_label: LinkedIn posts
+      declined_comments: Removal Review Comments
+      declined_comment_label: Admin comment
+      message_history: Message History
+      message_history_description: Review removal feedback, campaign context, and
+        the full outreach timeline before taking action.
+    assign:
+      label: Assign meeting owner
+      unassigned: Unassigned
+      help: Choose a teammate to own this meeting.
+      failed: Failed to assign meeting.
+    create:
+      button: Create meeting
+      title: Create meeting
+      description: Choose an existing lead or add a new lead with basic details.
+      existing_lead: Existing lead
+      new_lead: New lead
+      search_leads: Search leads
+      search_placeholder: Search by name, email, or company
+      no_leads: Search for a lead to select.
+      no_results: No leads found.
+      see_more: See more...
+      selected_lead: Selected lead
+      not_available: Not available
+      clear_selection: Clear selected lead
+      search_failed: Failed to search leads.
+      failed: Failed to create meeting.
+      name_placeholder: Name
+      email_placeholder: Email
+      company_placeholder: Company
+      role_placeholder: Role
+      meeting_details: Meeting Details
+      agent_placeholder: Choose agent
+      notes_placeholder: Notes
+      submit: Create meeting
+    tabs:
+      all: All
+      positive: Positive
+      neutral: Neutral
+      negative: Negative
+    table:
+      name: Name
+      title: Title
+      company: Company
+      meeting_date: Meeting Date
+      time: Time
+      meeting_outcome: Meeting Outcome
+      agent: Agent
+      meeting_date_time: Date & Time
+      status: Status
+      assign: Assign
+      outcome: Outcome
+    outcomes:
+      positive: Positive
+      neutral: Neutral
+      negative: Negative
+      no_show: No-show
+    remove_modal:
+      title: Remove meeting?
+      description: This meeting will be removed and marked as pending final deletion
+        by an admin.
+      comment_label: Reason for removal (optional)
+      comment_placeholder: Add context for your team about why this meeting should
+        be removed.
+      comment_help: Your comment helps admins understand the removal request.
+      character_count: "%{count}/%{max}"
+    pagination:
+      showing: Showing %{start} to %{end} of %{total} meetings
+      previous: Previous
+      next: Next
+  roi:
+    title: ROI
+    subtitle: Tracking the revenue impact of your automated pipeline.
+    filter_all: All Agents
+    refresh: Refresh
+    create_report: Create Report
+    tabs:
+      overview: ROI Overview
+      funnels: Marketing Funnels
+    metrics:
+      amplifa_roi: Amplifa ROI
+      vs_last_quarter: vs. Last Quarter
+      positive_outcomes: Positive Outcomes
+      acv: Average Contract Value (ACV)
+      meeting_value: Average Meeting Value
+      edit_acv: Edit ACV
+      edit_meeting_value: Edit Meeting Value
+      pipeline_revenue: Pipeline Revenue Driven
+      total_investment: Total Amplifa Investment
+      across_months: Across %{count} months of partnership
+      emails_sent: Emails Sent
+      open_rate: Open Rate
+      reply_rate: Reply Rate
+      meeting_rate: Meeting Rate
+    funnel:
+      title: 'From Campaign to Contract: Your Value Funnel'
+      emails_sent: Emails Sent
+      opened: Opened
+      replied: Replied
+      meetings: Meetings
+      revenue: Revenue
+    funnels_tab:
+      coming_soon: Marketing Funnels coming soon.
+  playbooks:
+    title: Playbooks
+    subtitle: Review and approve playbooks for your organization
+    empty: No playbooks available yet. Your Amplifa team will create playbooks for
+      you.
+    create:
+      button: Create Playbook
+      started: Playbook generation started. Your new draft will appear soon.
+    back_to_list: Back to Playbooks
+    filters:
+      status: Status
+      all_statuses: All Statuses
+      product: Product
+      all_products: All Products
+      apply: Apply Filters
+      clear: Clear
+    table:
+      product: Product
+      status: Status
+      language: Language
+      content: Content
+      updated: Last Updated
+      actions: Actions
+      personae: personae
+      use_cases: use cases
+      view: View
+      review: Review
+    statuses:
+      draft: Draft
+      changes_requested: Changes Requested
+      approved: Approved
+      archived: Archived
+    show:
+      approve: Approve Playbook
+      request_changes: Request Changes
+      archive: Archive
+      approved_by: Approved by
+      on_date: 'on'
+      pending_approval: This playbook is pending your approval
+      changes_pending: Changes have been requested for this playbook
+      already_approved: This playbook has been approved
+    actions:
+      approve_title: Approve Playbook
+      approve_description: By approving, you confirm this playbook accurately represents
+        your products and target audience.
+      approve_comment_label: Comment (optional)
+      approve_comment_placeholder: Add any feedback or notes...
+      approve_button: Approve
+      approving: Approving...
+      request_changes_title: Request Changes
+      request_changes_description: Describe what changes you'd like to see in this
+        playbook.
+      request_changes_comment_label: What changes are needed?
+      request_changes_comment_placeholder: Please describe the changes you need...
+      request_changes_button: Request Changes
+      requesting: Sending...
+      comment_required: Please provide a comment describing the changes needed
+      archive_title: Archive Playbook
+      archive_description: Archived playbooks will no longer be used for campaigns.
+      archive_confirm: Are you sure you want to archive this playbook?
+      archive_button: Archive
+      archiving: Archiving...
+    sections:
+      value_proposition: Value Proposition
+      personae: Target Personae
+      use_cases: Use Cases
+      references: Reference Customers
+      proof_points: Proof Points
+      comments: Discussion
+    edit:
+      product_description: Product Description
+      modal_description: Edit this playbook section and save your changes.
+      confirm_delete_item: Delete this item?
+      new_persona_name: New persona
+      new_persona_title: Persona title
+      new_pain_point: Describe a pain point
+      new_use_case_title: New use case
+      new_use_case_description: Describe this use case
+      new_reference_customer: New reference customer
+      new_reference_description: Describe this reference
+      new_proof_point_claim: New proof point
+      new_proof_point_description: Describe this proof point
+    knowledge_ui:
+      hero_badge: AI-powered playbook layer
+      value_proposition_eyebrow: Core signal
+      personae_eyebrow: Audience map
+      use_cases_eyebrow: Message angles
+      references_eyebrow: Customer proof
+      proof_points_eyebrow: Credibility layer
+      comments_eyebrow: Review trail
+      see_more: See more...
+      see_less: See less
+    files:
+      download: Download
+      upload_failed: Upload failed
+    aria:
+      close_feedback_modal: Close feedback modal
+      close_approve_modal: Close approve modal
+      close_request_changes_modal: Close request changes modal
+      close_archive_modal: Close archive modal
+    import_leads_ui:
+      lead_list_title: Do you have lead lists without emails? Upload them here
+      lead_list_description: Upload your file and we'll make it available to the admin
+        team.
+      uploading: Uploading...
+      upload_file: Upload file
+      uploaded_at: 'Uploaded: %{date}'
+      imported_at: 'Imported: %{date}'
+      completed_at: 'Completed: %{date}'
+      created_count: "%{count} created"
+      updated_count: "%{count} updated"
+      blacklisted_count: "%{count} blacklisted"
+      error_count: "%{count} errors"
+      step_upload_csv: 1. Upload CSV
+      step_map_fields: 2. Map Fields
+      click_to_upload_csv: Click to upload CSV
+      max_file_size: Max 50MB
+      selected_rows: "%{count} rows"
+      next_map_fields: 'Next: Map Fields'
+      skip_column: Skip this column
+      field_email: Email *
+      field_first_name: First Name
+      field_last_name: Last Name
+      field_full_name: Full Name
+      field_job_title: Job Title
+      field_company: Company
+      field_company_website: Company Website
+      field_linkedin_url: LinkedIn URL
+      field_location: Location
+      example_value: e.g. %{value}
+      custom_field: 'Custom: %{field}'
+      import_analysis: Import Analysis
+      analyzing: Analyzing...
+      analysis_summary: "%{new_people} new people · %{new_leads} new leads · %{lead_updates}
+        lead updates · %{invalid} invalid"
+      back: Back
+      starting_import: Starting import...
+    persona:
+      pain_points: Pain Points
+    comments:
+      title: Discussion
+      empty: No comments yet
+      add_comment: Add Comment
+      comment_placeholder: Add a comment or question...
+      submit: Post Comment
+      posting: Posting...
+    comment_types:
+      general: General
+      request_changes: Change Request
+      approval: Approval
+    domains:
+      blank: Please enter a domain name.
+      invalid_format: Please enter a valid domain (e.g. example.com).
+      limit_reached: You can have a maximum of %{max} domains.
+      already_exists: This domain is already configured.
+      created: Domain %{domain} has been requested. An administrator will complete
+        the setup.
+    tabs:
+      training_data: Training Data
+      sample_leads_messages: Sample Leads & Messages
+      knowledge_base: Knowledge Base
+      import_leads: Import Leads
+    knowledge_base:
+      hero_badge: AI-powered knowledge layer
+      title_prefix: Knowledge
+      title_accent: Base
+      hero_description: Drop in documents and the platform will extract, summarize,
+        and structure them into a collective intelligence layer for this playbook.
+      add_knowledge: Add Knowledge
+      untitled: Untitled knowledge
+      ai_summary: AI Summary
+      all_playbooks: All playbooks
+      download: Download
+      search_placeholder: Search title, summary or uploader...
+      no_matches_title: No matching knowledge found
+      no_matches_description: Try a different search term or switch the active filter.
+      summary_pending: AI summary is being prepared. This card will update automatically
+        when extraction finishes.
+      summary_failed: Summary generation failed. Try uploading this source again.
+      empty_title: No knowledge added yet
+      empty_description: Upload a document to turn customer references, product notes,
+        briefs, and research into searchable AI summaries for this playbook.
+      upload_first_source: Upload first source
+      stats:
+        total_entries: Total entries
+        websites: Websites
+        pdfs: PDFs
+        docs: Docs
+      filters:
+        all: All
+        pdfs: PDFs
+        websites: Websites
+        docs: Docs
+      types:
+        pdf: PDF
+        website: Web
+        document: Document
+      statuses:
+        extracting: Extracting
+        summarizing: Summarizing
+        completed: Complete
+        failed: Failed
+        unknown: "%{status}"
+      sort:
+        most_recent: Most recent
+        oldest_first: Oldest first
+        name_az: Name A-Z
+      errors:
+        invalid_response: Invalid server response
+        request_failed: Request failed (%{status})
+        upload_failed: Upload failed
+      relative_time:
+        minutes_ago: "%{count}m ago"
+        hours_ago: "%{count}h ago"
+        yesterday: Yesterday
+        days_ago: "%{count}d ago"
+      modal:
+        title: Add knowledge
+        description: Upload a file or add a web URL for this playbook.
+        close: Close add knowledge modal
+        file: File
+        url: URL
+        dropzone_title: Click to browse or drag a file here
+        dropzone_hint: PDF, DOCX, text, CSV, image, or web document
+        source_url: Source URL
+        url_placeholder: https://example.com/resource
+        url_hint: We’ll extract and summarize the page or linked file.
+        cancel: Cancel
+      slideover:
+        close: Close knowledge details
+        extraction_running: Extraction is still running. Extracted content will appear
+          here when processing completes.
+        no_extracted_content: No extracted content is available for this source yet.
+        tags: Tags
+        source: Source
+        extracted_content: Extracted content
+        download_source: Download source
+    samples:
+      leads_column: Leads
+      lead_details_column: Lead Details
+      messages_column: Messages
+      empty_no_agents: No agents have generated samples yet
+      empty_no_samples: No sample messages available
+      empty_select_lead: Select a lead to view messages
+      linkedin_headline: LinkedIn Headline
+      linkedin_summary: LinkedIn Summary
+      company_info: Company Info
+      disc_profile: DISC Profile
+      custom_fields: Custom Fields
+      subject: Subject
+      agent_name: Agent
+      step: Step %{number}
+    approval_strip:
+      share_feedback: Share Feedback
+      message: To proceed, please approve the playbook or provide feedback.
+  customer:
+    agents:
+      title: Agents
+      subtitle: View your organization's leads and assigned agents
+      empty:
+        title: No agents yet
+        description: No matching leads found
+      companies:
+        title: Agents - Company View
+        view_companies: Company View
+        back_to_leads: Lead View
+        empty:
+          description: No matching companies found
+        filters:
+          search_placeholder: Search companies, leads, or domains
+        table:
+          company: Company
+          last_activity: Last Activity
+          leads: Leads
+          leads_suffix: leads
+          summary_available: Available
+          no_summary: No summary
+        modal:
+          load_error: Could not load company details
+          company: Company
+          company_summary: Company Summary
+          no_company_summary: No company summary available
+          leads_tab: Leads
+          buying_signals_tab: Buying Signals
+          detail_tabs_label: Company detail tabs
+          no_leads: No visible leads at this company
+          no_buying_signals: No buying signals available for this agent
+          view_linkedin: View LinkedIn
+      statuses:
+        draft: Draft
+        ready: Ready
+        active: Active
+        paused: Paused
+        completed: Completed
+      filters:
+        title: Filters
+        agent: Agent
+        lead_status: Lead Status
+        all_agents: All Agents
+        search_placeholder: Search leads by name, email, or company
+      imports:
+        agent_label: Amplifa agent
+        choose_agent: Choose agent
+        importing: Importing…
+        pipedrive:
+          title: Import from Pipedrive
+          description: Import all Pipedrive persons into the selected Amplifa agent.
+          import_contacts: Import contacts
+          started: Importing contacts from Pipedrive. Leads will appear shortly.
+          start_error: Failed to start Pipedrive import
+      campaign_controls:
+        approve_playbook_button: Approve Playbook...
+        pause_button: Pause agent
+        resume_button: Resume agent
+        pause_success: Agent paused.
+        resume_success: Agent resumed.
+        cannot_pause: This agent cannot be paused right now.
+        cannot_resume: This agent cannot be resumed right now.
+      sent_today_badge: "%{count} emails sent today"
+      delivery_statuses:
+        not_contacted: Not contacted
+        in_sequence: In sequence
+        paused: Paused
+        replied: Replied
+        bounced: Bounced
+        completed: Completed
+        out_of_office: Out of office
+        out_of_office_until: Out of office · back %{date}
+      interest_tags:
+        interested: Interested
+        meeting_request: Meeting Request
+        not_interested: Not Interested
+        wrong_person: Wrong Person
+      buying_signals:
+        upgrade: Upgrade your plan to get buying signals
+        notify_success: Your account manager will be in touch shortly.
+        notify_failed: Failed to notify the Amplifa team
+        highlights: Highlights
+        buying_signal_relevance: Buying Signal Relevance
+        relevance_rating: Relevance
+        rating_value: "%{rating}/10"
+      table:
+        date_added: Date Added
+        last_sent: Last Sent
+        lead: Lead
+        agent: Agent
+        relevance: Relevance
+        relevance_tooltip_label: Explain relevance rating
+        relevance_tooltip: Our AI rating of how relevant the buying signals are for
+          this prospect.
+        progress: Progress
+        messages_sent: messages sent
+      activity:
+        replied: Replied %{date}
+        last_sent: Last sent %{date}
+        added: Added %{date}
+      pagination:
+        previous: Previous
+        next: Next
+        showing: Showing %{start} to %{end} of %{total} leads
+        page_of: Page %{current} of %{total}
+      modal:
+        load_error: Could not load lead details
+        active: Active
+        blacklisted: Blacklisted
+        view_linkedin: View LinkedIn
+        lead_status: Lead status
+        not_set: Not set
+        uses_mailbox: Uses mailbox %{email} for this lead.
+        creates_conversation: Creates a conversation for this lead using the campaign
+          mailbox.
+        assigned_agents: Assigned Agents
+        messages_tab: Messages
+        buying_signals_tab: Buying Signals
+        detail_tabs_label: Lead detail tabs
+        interest_actions:
+          mark_interested: Mark As Interested
+          mark_not_interested: Mark As Not Interested
+          confirm_remove_meeting: This will request removal of the meeting. The meeting
+            will be marked Pending Removal for admin review. Continue?
+          confirm_create_meeting: This will create a meeting associated with this
+            lead. Continue?
+          update_success: Lead status updated
+          update_failed: Failed to update interest status
+        enrichment:
+          linkedin_profile: LinkedIn Profile
+          headline: Headline
+          summary: Summary
+          disc_profile: 'DISC Profile: %{profile}'
+          company_summary: Company Summary
+          no_summary: No summary available
+          linkedin_posts: LinkedIn Posts (%{count})
+          post_unavailable: Post content unavailable
+          view_post: View post
+          custom_fields: Custom Fields
+        messages:
+          title: Message Timeline
+          empty: No generated messages or conversation replies yet
+          empty_body: No message body
+          no_subject: "(No subject)"
+          generated_for: Generated for %{agent}
+          generated_label: Generated (%{status})
+          conversation: Conversation
+          bounce: Bounce
+          ooo: Out of office
+          write_reply: Write Reply
+          open_reply_failed: Failed to open reply conversation
+      show:
+        title: Agent Details
+        download_button: Download
+        download_modal:
+          title: Download Leads CSV
+          description: Select an agent to download all lead contact and identity data
+            as CSV.
+          agent_label: Agent
+          choose_agent: Select an agent...
+          confirm_button: Download CSV
+        back_to_list: Back to Agents
+        description_title: Description
+        no_description: No description provided
+        playbook: Playbook
+        no_playbook: No playbook assigned
+        default_timezone: Default Timezone
+        created_at: Created
+        can_launch: Ready to Launch
+        cannot_launch: Not Ready
+        stats:
+          title: Agent Statistics
+          total_leads: Total Leads
+          contacted: Contacted
+          replied: Replied
+          meetings: Meetings
+          reply_rate: Reply Rate
+          meeting_rate: Meeting Rate
+        leads:
+          title: Assigned Leads
+          empty: No leads assigned to this agent yet
+          email: Email
+          name: Name
+          company: Company
+          status: Status
+          created: Created
+          active: Active
+          blacklisted: Blacklisted
+        mailboxes:
+          title: Mailboxes
+          empty: No mailboxes assigned
+          warmup_complete: Ready
+          days_remaining: "%{days} days remaining"
+          statuses:
+            pending: Pending
+            warming: Warming Up
+            active: Active
+            paused: Paused
+            suspended: Suspended
+        samples:
+          title: Sample Messages
+          status:
+            approved: Approved
+            pending_review: Ready for Review
+          generated_at: Generated %{date}
+          approved_by: Approved by %{name} on %{date}
+          view_approved_samples: View Approved Samples
+          review_samples: Review Samples
+          need_email_steps: No active email steps found. Add steps to generate samples.
+          need_leads: No leads found. Add leads to generate samples.
+      review_samples:
+        title: Review Sample Messages
+        intro: Please review the AI-generated sample messages below. These are examples
+          of what will be sent to your leads.
+        not_ready: Sample messages have not been generated yet.
+        no_messages: No sample messages available for review.
+        lead_info: Lead Information
+        leads: Leads
+        lead_details: Lead Details
+        message_preview: Message Preview
+        subject_label: Subject
+        body_label: Body
+        steps_count: "%{count} steps"
+        step: Step %{position}
+        linkedin_headline: LinkedIn headline
+        linkedin_summary: LinkedIn summary
+        company_website_summary: Company website summary
+        detail_tabs_label: Sample detail tabs
+        sharing_feedback_for: 'Sharing feedback for:'
+        generated: Generated %{date}
+        send_test: Send Test to Me
+        test_sent: Test sent
+        expand_all: Expand All
+        collapse_all: Collapse All
+        back_to_agent: Back to Agent
+      approve_samples:
+        button: Approve Messages
+        confirm: Are you sure you want to approve these sample messages? This will
+          allow Amplifa to generate messages for all leads.
+        success: Messages approved! Amplifa will now generate messages for all leads.
+        not_ready: Cannot approve. Please wait for samples to be generated.
+      request_changes:
+        button: Request Changes
+        feedback_label: What changes would you like?
+        feedback_placeholder: Please describe the changes you need...
+        feedback_required: Please provide feedback about the changes you need.
+        success: Change request sent to Amplifa team. They will update the messages
+          and notify you.
+        submit_button: Submit Request
+    generated_messages:
+      send_test:
+        success: Test email sent to your email address.
+        failed: Failed to send test email.
+  mailers:
+    admin_notification:
+      samples_approved:
+        subject: "[Amplifa] Samples Approved - %{agent_name}"
+      samples_changes_requested:
+        subject: "[Amplifa] Changes Requested - %{agent_name}"
+      sample_messages_generated:
+        subject: "[Amplifa] Sample Messages Generated - %{agent_name}"
+      billing_interest:
+        subject: "[Amplifa] Billing Interest - %{organization_name} (%{action_name})"
+      integration_connected:
+        subject: "[Amplifa] Integration Connected - %{organization_name} (%{integration_name})"
+      lead_list_file_uploaded:
+        subject: "[Amplifa] Lead List File Uploaded - %{organization_name} (%{uploader_name})"
+  common:
+    save: Save
+    cancel: Cancel
+    edit: Edit
+    delete: Delete
+    confirm: Confirm
+    loading: Loading...
+    error: An error occurred
+    success: Success
+    true: 'Yes'
+    false: 'No'
+    back: Back
+    previous: Previous
+    next: Next
+    add: Add
+    done: Done
+    submit: Submit
+    search: Search
+    filter: Filter
+    clear: Clear
+    close: Close
+    welcome: Welcome
+    status: Status
+    organization: Organization
+    created: Created
+    name: Name
+    company: Company
+    email: Email
+    view: View
+    apply_filters: Apply Filters
+    all_statuses: All Statuses
+  roles:
+    amplifa_admin: Amplifa Admin
+    customer_admin: Customer Admin
+    customer_user: Customer User
+  currencies:
+    eur: EUR - Euro
+    usd: USD - US Dollar
+    gbp: GBP - British Pound
+    chf: CHF - Swiss Franc
+  languages:
+    en: English
+    de: Deutsch
+    es: Español (EU)
+    pt-BR: Português (Brasil)
+    fr: Français
+    pl: Polski
+    cs: Čeština
+    it: Italiano
+  time:
+    just_now: Just now
+    formats:
+      long: "%B %d, %Y %I:%M %p"
+      short: "%m/%d/%Y %I:%M %p"
+      date_only: "%m/%d/%Y"
+  date:
+    formats:
+      long: "%B %d, %Y"
+      short: "%m/%d/%Y"
+  customer_home:
+    title: Home
+    welcome_back: Welcome back, %{name}!
+    subtitle: Review the core setup behind your outreach workspace, including domains,
+      sender profiles, email accounts, and blacklist coverage.
+    common:
+      not_set: Not set
+      see_all: See all...
+      previous: Previous
+      next: Next
+    company:
+      title: Company
+      description: Your company profile information
+      website: Website
+      website_placeholder: https://example.com
+      industry: Industry
+      industry_placeholder: e.g. SaaS, FinTech, Healthcare
+      average_contract_value: Average Contract Value
+    domains:
+      title: Domains
+      configured: "%{count} domains configured"
+      configured_of: "%{count} of %{max} domains configured"
+      empty: No domains configured yet.
+      pending_setup: Pending Setup
+      mailboxes_count: "%{count} mailboxes"
+      placeholder: example.com
+      request: Request Domain
+    senders:
+      title: Senders
+      description: People who send outreach emails on behalf of your organization
+      empty: No senders configured. Contact your Amplifa administrator.
+      active_mailboxes_count: "%{count} active mailboxes"
+    email_accounts:
+      title: Email Accounts
+      description: Auto-generated from domains and senders
+      empty: Email accounts will appear here once domains and senders are configured.
+      ready: Ready
+      mailboxes_count: "%{count} mailboxes"
+    blacklist:
+      title: Blacklist
+      search_placeholder: Search blacklist...
+      remove_entry: Remove entry
+      empty: No blacklist entries.
+      global: Global
+      entries_match: "%{count} of %{total} entries match"
+      entries_count: "%{count} entries"
+      showing: Showing %{start} to %{end} of %{total}
+      types:
+        email: Email
+        domain: Domain
+  customer_settings:
+    title: Settings
+    subtitle: Manage your account, integrations, and preferences
+    common:
+      actions: Actions
+      save_settings: Save settings
+      saving: Saving...
+    company:
+      title: Company settings
+      description: Manage organization profile and revenue assumptions
+      editable_notice: Company settings apply to your entire organization. Changes
+        are saved immediately after submission.
+      readonly_notice: You can view company settings, but only customer admins can
+        edit ACV/AMV and organization defaults.
+      editable: Editable
+      read_only: Read-only
+      organization_name: Organization name
+      currency: Currency
+      website: Website
+      website_placeholder: https://example.com
+      calendly_url: Calendly URL
+      calendly_placeholder: https://calendly.com/company/demo
+      average_contract_value: Average contract value (ACV)
+      save: Save company settings
+    tabs:
+      billing: Billing
+      company: Company
+      team: Team
+      profile: Profile
+      webhooks: Webhooks
+      blacklists: Blacklist
+      email: Senders & Domains
+    email:
+      sections:
+        auto_forward: Auto-forward
+        senders: Senders
+        domains: Domains
+        email_accounts: Email Accounts
+      auto_forward:
+        title: Auto-forward interested conversations
+        description: Forward newly interested or meeting-request conversations to
+          one email address. Each conversation will only be forwarded once.
+        admin_only: Only customer admins can manage auto-forward settings.
+        enable: Enable auto-forwarding
+        forward_to: Forward to
+        email_placeholder: teammate@example.com
+        comment_options: Comment options
+        without_comment: Forward without comment
+        standard_comment: Add standard comment to all forwarded conversations
+        per_agent_comment: Add standard comment to all forwarded conversations, per-agent
+        comment_placeholder: Add context for the person receiving each forwarded conversation.
+        no_agents: No agents configured yet.
+        save: Save auto-forward settings
+        table:
+          agent: Agent
+          forward_comment: Forward comment
+      senders:
+        description: Configured sender profiles
+        empty: No sender profiles configured yet.
+        admin_only: Only customer admins can update sender signatures or Calendly
+          settings.
+        sender_fallback: Sender
+      schedule:
+        title: Sending Schedule
+        edit: Edit schedule
+        timezone: Timezone
+        start_time: Start Time
+        end_time: End Time
+        save: Save schedule
+      linkedin:
+        view: View LinkedIn
+        connect: Connect LinkedIn
+      signatures:
+        title: Signature
+        edit_confirm: Editing this signature will affect future outgoing emails from
+          this sender. Continue?
+        preview: Preview
+        edit: Edit signature
+        save: Save signature
+        preview_title: Signature preview
+        template: Template
+        empty: No signature configured yet.
+      mailboxes:
+        title_with_count: Mailboxes (%{count})
+        empty_for_sender: No mailboxes assigned to this sender.
+        no_domain: No domain
+        capacity_left: "%{remaining}/%{limit} capacity left"
+        ready: Ready
+        warming_up: Warming up
+      domain_wizard:
+        select_domains: Select Domains
+        confirm_order: Confirm Order
+        processing: Processing
+        select_up_to: Select up to 5 domains to register.
+        refresh: Refresh
+        monthly_price: "%{price}/month"
+        selected_domains: Selected Domains
+        monthly_abbrev: "%{price}/mo"
+        mailboxes_per_domain: Mailboxes per Domain
+        total_mailboxes: 'Total: %{count} mailboxes'
+        total_monthly_cost: Total Monthly Cost
+        registering: Registering domains...
+        processing_help: This may take a few moments. Please don't close this window.
+        confirm_pay: Confirm & Pay
+      domains:
+        description: Manage your sending domains
+        add: Add Domain
+        verified: Verified
+        pending: Pending
+        email_accounts_count: "%{count} email accounts"
+      accounts:
+        configured: "%{count} Accounts configured"
+        sent_today: Sent today
+      statuses:
+        active: Active
+        paused: Paused
+        pending: Pending
+        suspended: Suspended
+    blacklists:
+      sections:
+        email: Email Blacklist
+        domain: Domain Blacklist
+        import_export: Import/Export
+        import: Import
+        export: Export
+      email_title: Email Blacklist
+      domain_title: Domain Blacklist
+      search_emails: Search emails...
+      search_domains: Search domains...
+      remove_entry: Remove entry
+      delete_confirm: Are you sure you want to delete this entry?
+      email_empty: No emails found.
+      domain_empty: No domains found.
+      manual_reason: Manual
+      pagination:
+        emails: Showing %{start} to %{end} of %{total} emails
+        domains: Showing %{start} to %{end} of %{total} domains
+      import:
+        title: Import
+        description: Import emails or domains
+        csv_title: Import Emails and Domains (CSV)
+        csv_description: Upload a CSV file containing emails and domains to blacklist.
+        importing: Importing...
+        select_file: Select File
+        empty_file_error: The selected file does not contain any email or domain values
+          to import.
+        failed_error: Import failed. Please check the file format and try again.
+        read_error: Failed to read file. Please try again with a valid CSV or text
+          file.
+      export:
+        title: Export
+        description: Download this organization's blacklist
+        csv_title: Export Blacklist (CSV)
+        csv_description: Download all organization-specific blacklisted emails and domains as a CSV with value, type, and reason columns.
+        download: Download CSV
+      dialogs:
+        add_emails_title: Add Emails to Blacklist
+        add_domains_title: Add Domains to Blacklist
+        email_addresses: Email Addresses
+        email_description: Enter one email per line.
+        domains: Domains
+        domain_description: Enter one domain per line.
+      table:
+        email: Email
+        domain: Domain
+        added: Added
+        reason: Reason
+    webhooks:
+      remove_confirm: Remove this webhook endpoint?
+      only_authorized: Only authorized users can change this setting.
+      sections:
+        tracking: Click Tracking
+        endpoints: Webhook Endpoints
+        events: Click History
+      click_tracking:
+        title: Click tracking
+        description: Rewrite HTML email links to tracked redirect URLs and emit click
+          events.
+        example: 'Example - links in HTML emails will be rewritten:'
+        enable: Enable click tracking + webhooks
+      endpoints:
+        title: Webhook endpoints
+      events:
+        title: Recorded click events
+        description: Most recent tracked clicks for this organization.
+        empty: No click events recorded yet.
+        table:
+          clicked_at: Clicked at
+          lead: Lead
+          target_url: Target URL
+          referrer: Referrer
+    team:
+      title: Team Members
+      description: People in your organization
+      members_of: Members of %{organization}
+      can_manage: Can manage team
+      read_only: Read-only
+      empty: No team members found.
+      deactivate: Deactivate
+      deactivate_confirm: Deactivate %{name}?
+      cancel_invitation_confirm: Cancel invitation for %{email}?
+      sections:
+        members: Team Members
+        invitations: Invitations
+      roles:
+        customer_admin: Customer Admin
+        customer_user: Customer User
+      statuses:
+        active: Active
+        deactivated: Deactivated
+      invite:
+        title: Invite teammates
+        description: Send invitation links to new users
+        first_name: First name
+        last_name: Last name
+        email: Email
+        role: Role
+        submit: Send invitation
+        admin_only: Only customer admins can invite or deactivate team members.
+      pending:
+        title: Pending invitations
+        empty: No pending invitations.
+        meta: Invited by %{inviter} · Expires %{date}
+      table:
+        name: Name
+        email: Email
+        role: Role
+        joined: Joined
+    profile:
+      sections:
+        personal: Personal Info
+        security: Security
+      personal:
+        title: Personal Information
+        description: Update your personal details and timezone
+        first_name: First Name
+        last_name: Last Name
+        email: Email Address
+        timezone: Timezone
+        language: Language
+        save: Save Changes
+      security:
+        title: Security
+        description: Manage your password and security preferences
+        change_password: Change Password
+        old_password: Old Password
+        new_password: New Password
+        confirm_new_password: Confirm New Password
+        password_help: New password must be at least 8 characters.
+        update_password: Update Password
+    billing:
+      ai_intelligence: AI Intelligence
+      day: Day %{day}
+      usage_alert: You've used %{used} of %{limit} meetings this billing cycle
+      reset_on: AI agents reset on %{date}
+      reset_next_cycle: AI agents reset at your next billing cycle
+      need_more: Need more meetings now?
+      get_more: Get 10 more meetings
+      upgrade_plan: Upgrade plan
+      current_plan: Current Plan
+      active: Active
+      current_plan_description: Manage your subscription and billing details
+      plan: Plan
+      per_month: "/mo"
+      upgrade_annual: Upgrade to Annual - Save 20%
+      meetings_usage: Meetings usage
+      meetings_usage_count: "%{used} / %{limit} meetings this billing cycle"
+      renews_on: Renews on %{date}
+      renewal_unavailable: Renewal date unavailable
+      update_plan: Update Plan
+      update_plan_description: Choose the right plan for your team
+      plan_meetings: Up to %{count} meetings per billing cycle
+      enterprise_contact_description: Contact us
+      enterprise_features:
+        unlimited_appointments: Unlimited appointments
+        custom_integrations: Custom integrations
+        sla_guarantee: SLA guarantee
+        dedicated_support_team: Dedicated support team
+      upgrade: Upgrade
+      contact_sales: Contact Sales
+      optional_addons: Optional Add-ons
+      optional_addons_description: Extend your plan with additional modules
+      buying_signals: Buying Signals
+      buying_signals_description: Real-time intent data & buying-signal triggers as
+        optional add-on
+      buying_signals_features:
+        live_intent_signals: Live intent signals
+        job_change_funding_trigger: Job-change & funding triggers
+        tech_stack_hiring_signals: Tech-stack & hiring signals
+        automatic_workflow_trigger: Automatic workflow triggers
+      activate_addon: Activate add-on
+
+  assistant:
+    nav: Assistant
+    page_title: Assistant
+    new_chat: New chat
+    chats: Chats
+    show_chats: Show chats
+    hide_chats: Hide chats
+    untitled_chat: New chat
+    no_chats: No conversations yet
+    no_chats_hint: Start a new chat to get going.
+    delete_chat: Delete chat
+    delete_chat_confirm: Delete this chat?
+    delete_chat_confirm_named: Delete "%{title}"? This cannot be undone.
+    pin_chat: Pin chat
+    unpin_chat: Unpin chat
+    load_more_chats: Load more
+    loading_more_chats: Loading...
+    load_older: Load earlier messages
+    loading_older: Loading earlier messages...
+    scroll_to_bottom: Scroll to bottom
+    thinking: Thinking...
+    you: You
+    assistant_label: Assistant
+    retry: Try again
+    composer:
+      placeholder: Ask anything about your workspace...
+      send: Send
+      hint: Enter to send, Shift + Enter for a new line
+      stop: Stop
+      remove_reference: Remove quoted text
+    selection:
+      ask: Ask assistant
+    saved_prompts:
+      your_prompts_label: Your prompts
+      manage: Manage saved prompts
+      save: Save prompt
+      save_title: Save this prompt
+      edit_title: Edit saved prompt
+      title_label: Title
+      title_placeholder: Short label for the welcome card
+      prompt_label: Prompt
+      welcome_pinned_label: Show on welcome screen
+      welcome_pinned_help: Pinned prompts appear as quick-start cards when you open the assistant.
+      empty: You have not saved any prompts yet.
+      empty_hint: Save a prompt from the composer to reuse it later.
+      delete: Delete
+      delete_confirm: Delete this saved prompt?
+      saved: Prompt saved
+      updated: Prompt updated
+      deleted: Prompt deleted
+      pin: Pin to welcome screen
+      unpin: Remove from welcome screen
+    welcome:
+      greeting: Hi %{name}
+      title: What can I help you with?
+      description: Ask about your playbooks, leads, replies or results. I answer in
+        plain language and tell you where to look in Amplifa.
+      suggestions_label: Try one of these
+      suggestions:
+        inbox: Which conversations are waiting for my reply?
+        interested: Who replied as interested recently?
+        stats: How is my inbox doing? Give me the numbers.
+        summarize: Summarize my latest conversation for me
+    tools:
+      conversation_list:
+        running: Searching your inbox...
+        done: Searched your inbox
+        failed: Inbox search is unavailable
+      conversation_stats:
+        running: Analyzing your inbox...
+        done: Analyzed your inbox
+        failed: Inbox statistics are unavailable
+      conversation_read:
+        running: Reading the conversation...
+        done: Read the conversation
+        failed: Could not read the conversation
+      conversation_update_interest_status:
+        running: Updating the interest status...
+        done: Interest status updated
+        failed: Could not update the interest status
+      meeting_create:
+        running: Booking the meeting...
+        done: Meeting booked
+        failed: Could not book the meeting
+      meeting_reschedule:
+        running: Rescheduling the meeting...
+        done: Meeting rescheduled
+        failed: Could not reschedule the meeting
+      meeting_cancel:
+        running: Cancelling the meeting...
+        done: Meeting cancelled
+        failed: Could not cancel the meeting
+      meeting_list:
+        running: Looking up your meetings...
+        done: Looked up your meetings
+        failed: Meeting lookup is unavailable
+      meeting_read:
+        running: Reading the meeting...
+        done: Read the meeting
+        failed: Could not read the meeting
+      lead_search:
+        running: Searching leads...
+        done: Searched leads
+        failed: Lead search is unavailable
+      agent_list:
+        running: Looking up your agents...
+        done: Looked up your agents
+        failed: Agent lookup is unavailable
+      agent_stats:
+        running: Analyzing your campaigns...
+        done: Analyzed your campaigns
+        failed: Campaign statistics are unavailable
+      agent_lead_list:
+        running: Looking up campaign leads...
+        done: Looked up campaign leads
+        failed: Campaign lead lookup is unavailable
+      agent_pause_campaign:
+        running: Pausing the agent...
+        done: Agent paused
+        failed: Could not pause the agent
+      agent_resume_campaign:
+        running: Resuming the agent...
+        done: Agent resumed
+        failed: Could not resume the agent
+      generic:
+        running: Working...
+        done: Done
+        failed: This tool is temporarily unavailable
+    flash:
+      chat_deleted: Chat deleted
+    errors:
+      create_chat: Could not start a new chat. Please try again.
+      delete_chat: Could not delete this chat. Please try again.
+      pin_chat: Could not update this chat. Please try again.
+      save_saved_prompt: Could not save this prompt. Please try again.
+      delete_saved_prompt: Could not delete this prompt. Please try again.
+      saved_prompt_not_found: That saved prompt is no longer available.
+      too_many_welcome_prompts: You can pin at most %{count} prompts to the welcome screen.
+      load_more_chats: Could not load more chats. Please try again.
+      chat_not_found: That chat is no longer available.
+      blank_prompt: Type a message before sending.
+      prompt_too_long: Your message is too long. Please keep it under %{count} characters.
+      already_streaming: Wait for the current reply to finish before sending another
+        message.
+      send_failed: Your message could not be sent. Please try again.
+      load_older_failed: Could not load earlier messages. Please try again.
+      llm_unavailable: The assistant is unavailable right now. Please try again in
+        a moment.
+      empty_completion: The assistant did not return an answer. Please try again.
+      unexpected: Something went wrong while answering. Please try again.
+      connection_lost: Connection lost. Reload the page to see the full reply.

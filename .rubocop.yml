@@ -1,0 +1,27 @@
+# Omakase Ruby styling for Rails (see Gemfile: rubocop-rails-omakase).
+inherit_gem:
+  rubocop-rails-omakase: rubocop.yml
+
+# Pre-existing offenses grandfathered per file; fix them opportunistically and remove the entry.
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+
+# WHY these deviations from omakase: the codebase predates this config and consistently uses
+# single quotes and no space inside array brackets. Matching the dominant existing style beats
+# a mass reformat (see .cursor/rules/core-principles.mdc).
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: no_space
+
+# The codebase aligns `end` (and `else`) with the keyword in `x = if ...` assignments.
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: keyword

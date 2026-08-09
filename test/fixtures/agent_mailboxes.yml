@@ -1,0 +1,20 @@
+# Agent mailbox fixtures for testing
+
+# Active agent has two mailboxes assigned
+active_agent_mailbox_one:
+  agent: active_agent
+  mailbox: acme_mailbox_one
+
+active_agent_mailbox_two:
+  agent: active_agent
+  mailbox: acme_mailbox_two
+
+# Ready agent has one mailbox
+ready_agent_mailbox:
+  agent: ready_agent
+  mailbox: acme_mailbox_one
+
+# Other org agent has one mailbox
+other_org_agent_mailbox:
+  agent: other_org_agent
+  mailbox: beta_mailbox

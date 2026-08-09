@@ -1,0 +1,76 @@
+---
+description: Use the existing dark-theme design tokens and UI components; never invent colors
+globs: app/javascript/**/*.tsx,app/javascript/**/*.ts,app/javascript/**/*.css
+alwaysApply: false
+---
+
+# Design System — Use It, Don't Reinvent It
+
+The app is **dark-theme only**. All colors are CSS custom properties in `:root` in
+[app/javascript/entrypoints/application.css](app/javascript/entrypoints/application.css).
+
+## Critical: there are NO semantic Tailwind color utilities
+
+Colors are plain CSS variables, **not** `@theme` tokens. The only `@theme` entry is `--font-sans`.
+So `bg-primary`, `text-foreground`, `border-border` **do not exist and will silently render nothing**.
+
+Reference tokens with Tailwind's arbitrary-value syntax instead:
+
+```tsx
+// BAD — these utilities are not generated
+<div className="bg-card text-foreground border-border">
+<div className="bg-blue-500 text-gray-400">        // raw palette ignores the theme
+<div className="bg-[#1b1f26]">                      // hard-coded hex
+
+// GOOD — the established idiom
+<div className="bg-[var(--card)] text-[var(--foreground)] border border-[var(--border)]">
+<span className="text-[var(--foreground-muted)]">
+<div className="bg-[var(--accent)]/14 border-[var(--accent)]/20">   // opacity suffix is fine
+```
+
+## Available tokens
+
+Surfaces: `--background`, `--background-sidebar`, `--background-secondary`, `--background-subtle`,
+`--background-elevated`, `--card`, `--card-hover`
+Text: `--foreground`, `--foreground-muted`, `--foreground-subtle`
+Brand: `--primary`, `--primary-hover`, `--primary-foreground`, `--accent`, `--accent-hover`
+Secondary: `--secondary`, `--secondary-hover`, `--secondary-foreground`
+Borders/inputs: `--border`, `--border-strong`, `--input-border`, `--input`, `--input-focus`
+Status: `--success`, `--success-muted`, `--success-background`, `--success-text`, `--error`,
+`--error-muted`, `--warning`, `--warning-muted`
+Focus: `--ring`, `--ring-offset` · Shadows: `--shadow-sm`, `--shadow-md`, `--shadow-lg`
+
+If a color you need has no token, **ask before adding one** — don't inline a hex value.
+
+## Reuse components before writing markup
+
+Check [app/javascript/components/ui/index.ts](app/javascript/components/ui/index.ts) first. Existing:
+`Button`, `Input`, `Textarea`, `Card` (+`CardHeader/Content/Footer/Title`), `Badge`, `Table`
+(+`TableHeader/Body/Row/Head/Cell`), `TableEmpty`, `List`/`ListSection`/`ListItem`, `TabBar`,
+`SearchInput`, `SlideOver` (+`Header/Section/CloseButton/FooterButtons`), `FooterActions`,
+`ProgressBar`, `DotPattern`, `PasswordRequirements`.
+
+Use existing variants rather than overriding with `className`:
+
+- `Button`: `variant` `'primary' | 'secondary' | 'ghost' | 'destructive'`, `size` `'sm' | 'md' | 'lg'`,
+  plus `loading`, `icon`, `iconPosition`, `fullWidth`, `asChild`
+- `Badge`: `variant` `'default' | 'draft' | 'approved' | 'success' | 'warning' | 'error' | 'bounced' | 'info' | 'purple' | 'not-started' | 'in-sequence' | 'replied' | 'meeting-set' | 'outline' | 'cyan'`
+- `Input`: `label`, `description`, `error` (`string | string[]`), `icon`, `size`, `containerClassName`
+
+Note there is **no Modal/Dialog** — the established pattern for overlays is `SlideOver`.
+
+## Class composition
+
+There is **no `cn()` helper** and neither `clsx` nor `tailwind-merge` is installed. Components build
+classes with arrays joined by spaces, then append the incoming `className` last:
+
+```tsx
+const allClasses = [baseClasses, variantClasses, sizeClasses, className].filter(Boolean).join(' ')
+```
+
+Don't add a class-merging dependency without asking.
+
+## Radius, scrollbars
+
+Buttons use `rounded-xl`, badges `rounded-full`, cards/inputs `rounded-lg`/`rounded-md`.
+For scrollable regions use the existing `.custom-scrollbar` / `.custom-scrollbar-skinny` classes.

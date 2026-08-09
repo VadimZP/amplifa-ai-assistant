@@ -1,0 +1,30 @@
+# Assistant chats. A chat belongs to one account AND one organization — see ChatPolicy.
+# acme_admin_chat / acme_user_chat share an organization but different owners (used to prove a
+# colleague cannot read your chat). growth_lab_chat is the cross-organization denial case.
+
+acme_admin_chat:
+  account: customer_admin
+  organization: acme
+  title: Inbox triage
+  last_message_at: <%= 1.hour.ago %>
+  summarized_message_count: 0
+  created_at: <%= 2.hours.ago %>
+  updated_at: <%= 1.hour.ago %>
+
+acme_user_chat:
+  account: customer_user
+  organization: acme
+  title: Lead research
+  last_message_at: <%= 30.minutes.ago %>
+  summarized_message_count: 0
+  created_at: <%= 1.hour.ago %>
+  updated_at: <%= 30.minutes.ago %>
+
+growth_lab_chat:
+  account: growth_lab_admin
+  organization: growth_lab
+  title: Campaign review
+  last_message_at: <%= 10.minutes.ago %>
+  summarized_message_count: 0
+  created_at: <%= 20.minutes.ago %>
+  updated_at: <%= 10.minutes.ago %>

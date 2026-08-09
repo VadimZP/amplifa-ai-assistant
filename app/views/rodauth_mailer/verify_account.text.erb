@@ -1,0 +1,7 @@
+<%= t('mailers.verify_account.greeting', default: 'Welcome to Amplifa') %>
+
+<%= t('mailers.verify_account.intro', default: 'Your account has been created. Please activate it to finish setup and start using Amplifa.') %>
+
+<%= @rodauth.verify_account_email_link %>
+
+<%= t('mailers.verify_account.ignore', default: 'If you did not create this account, you can safely ignore this email.') %>

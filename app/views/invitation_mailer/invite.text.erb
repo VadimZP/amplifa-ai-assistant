@@ -1,0 +1,15 @@
+<%= t('mailers.invitation.greeting', name: @invitation.first_name) %>
+
+<%= t('mailers.invitation.intro', admin_name: @invited_by.full_name, organization: @organization.name) %>
+
+<%= t('mailers.invitation.description') %>
+
+<%= t('mailers.invitation.cta') %>:
+<%= @accept_url %>
+
+<%= t('mailers.invitation.expiry', date: l(@invitation.expires_at, format: :long)) %>
+
+<%= t('mailers.invitation.help') %>
+
+---
+<%= t('mailers.signature') %>

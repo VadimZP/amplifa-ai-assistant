@@ -1,0 +1,78 @@
+# Agents fixtures for testing
+
+draft_agent:
+  organization: acme
+  playbook: draft_playbook
+  created_by: customer_admin
+  name: "Test Campaign"
+  description: "A test campaign for demo purposes"
+  status: draft
+  total_leads_count: 0
+  contacted_count: 0
+  replied_count: 0
+  meetings_booked_count: 0
+
+ready_agent:
+  organization: acme
+  playbook: approved_playbook
+  created_by: customer_admin
+  name: "Ready Campaign"
+  description: "A campaign ready to launch"
+  status: ready
+  buying_signals_enabled: true
+  buying_signals_lookback_days: 120
+  total_leads_count: 100
+  contacted_count: 0
+  replied_count: 0
+  meetings_booked_count: 0
+
+active_agent:
+  organization: acme
+  playbook: approved_playbook
+  created_by: customer_admin
+  name: "Active Campaign"
+  description: "An actively running campaign"
+  status: active
+  buying_signals_enabled: true
+  buying_signals_lookback_days: 120
+  total_leads_count: 500
+  contacted_count: 200
+  replied_count: 20
+  meetings_booked_count: 5
+
+other_org_agent:
+  organization: beta
+  playbook: other_org_playbook
+  created_by: beta_user
+  name: "Beta Campaign"
+  description: "A campaign for beta org"
+  status: draft
+  total_leads_count: 0
+  contacted_count: 0
+  replied_count: 0
+  meetings_booked_count: 0
+
+growth_lab_agent:
+  organization: growth_lab
+  playbook: ~
+  created_by: growth_lab_admin
+  name: "Growth Lab Campaign"
+  description: "A campaign for Growth Lab"
+  status: draft
+  total_leads_count: 0
+  contacted_count: 0
+  replied_count: 0
+  meetings_booked_count: 0
+
+global_sequence_agent:
+  organization: acme
+  playbook: approved_playbook
+  created_by: customer_admin
+  global_sequence: shared_global_sequence
+  name: "Shared Sequence Campaign"
+  description: "Campaign using shared global sequence"
+  status: ready
+  total_leads_count: 0
+  contacted_count: 0
+  replied_count: 0
+  meetings_booked_count: 0

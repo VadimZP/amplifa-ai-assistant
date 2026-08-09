@@ -1,0 +1,11 @@
+<%= t('mailers.playbook.archived.greeting') %>
+
+<%= t('mailers.playbook.archived.body',
+      product: @playbook.product_name,
+      archiver: @archived_by.full_name) %>
+
+<%= t('mailers.playbook.archived.cta') %>:
+<%= playbook_url(@playbook) %>
+
+---
+<%= t('mailers.signature') %>

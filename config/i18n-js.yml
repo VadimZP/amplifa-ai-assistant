@@ -1,0 +1,7 @@
+# i18n-js Configuration
+# Exports Rails i18n translations to JSON files for frontend use
+
+translations:
+  - file: "app/javascript/locales/:locale.json"
+    patterns:
+      - "{en,de,es,pt-BR,fr,pl,cs,it}.*"

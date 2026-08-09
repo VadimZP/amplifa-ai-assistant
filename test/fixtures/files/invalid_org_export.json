@@ -1,0 +1,34 @@
+{
+  "export_version": "1.0",
+  "exported_at": "2026-01-11T12:00:00Z",
+  "source_instance": "test",
+  "organization": {
+    "name": "Invalid Test Org"
+  },
+  "senders": [],
+  "email_domains": [],
+  "mailboxes": [],
+  "playbooks": [],
+  "blacklists": [],
+  "agents": [
+    {
+      "_export_ref": "agent_1",
+      "_playbook_ref": null,
+      "name": "Test Agent",
+      "locale": "en"
+    }
+  ],
+  "agent_mailboxes": [],
+  "sequence_steps": [
+    {
+      "_agent_ref": "agent_1",
+      "position": 1,
+      "event_type": "email",
+      "name": "Step with missing prompt",
+      "delay_days": 0,
+      "active": true,
+      "subject_prompt_slug": "nonexistent_prompt_slug",
+      "body_prompt_slug": "another_nonexistent_slug"
+    }
+  ]
+}

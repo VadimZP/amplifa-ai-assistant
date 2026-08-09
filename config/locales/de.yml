@@ -1,0 +1,4449 @@
+---
+de:
+  hello: Hallo Welt
+  pundit:
+    not_authorized: Sie sind nicht berechtigt, diese Aktion auszuführen.
+  navigation:
+    dashboard: Dashboard
+    settings: Einstellungen
+    team: Team
+    logout: Abmelden
+    admin: Admin
+    activities: Aktivitäten
+    organizations: Organisationen
+    users: Benutzer
+    invitations: Einladungen
+    playbooks: Playbooks
+    leads: Leads
+    people: Menschen
+    agents: Agents
+    imports: Importe
+    campaigns: Kampagnen
+    email_accounts: E-Mail-Konten
+    email_domains: E-Mail-Domänen
+    senders: Absender
+    mailboxes: Postfächer
+    replies: Antworten
+    blacklist: Sperrliste
+    language_selector: Sprache
+    select_language: Sprache auswählen
+    admin_navigation: Admin-Navigation
+    customer_navigation: Kunden-Navigation
+    admin_badge: AMPLIFA ADMIN
+    app_name: Amplifa
+  workspaces:
+    switcher:
+      label: Workspace
+    no_workspace:
+      page_title: Kein Workspace - Amplifa
+      heading: Kein aktiver Workspace
+      description: Ihr Konto ist derzeit keinem aktiven Workspace zugeordnet. Bitte wenden Sie sich an Ihren Administrator oder den Amplifa-Support, um wieder Zugriff zu erhalten.
+      logout: Abmelden
+  org_admin:
+    dashboard:
+      title: Organisations-Admin
+      heading: Organisationsverwaltung
+      manage_description: Verwalten Sie Ihre Organisationseinstellungen, Teammitglieder
+        und mehr.
+      no_organization: Keine Organisation gefunden.
+  invitations:
+    flash:
+      invalid: Dieser Einladungslink ist ungültig oder wurde entfernt.
+      expired: Diese Einladung ist abgelaufen. Bitte wenden Sie sich an Ihren Administrator, um eine neue Einladung zu erhalten.
+      already_used: Diese Einladung wurde bereits verwendet. Bitte melden Sie sich an.
+      cancelled: Diese Einladung wurde storniert. Bitte wenden Sie sich an Ihren Administrator.
+      no_longer_valid: Die Einladung ist nicht mehr gültig
+      login_with_invited_email: Bitte melden Sie sich mit der eingeladenen E-Mail-Adresse an, um diese Einladung anzunehmen.
+      password_required: Passwort ist erforderlich
+      passwords_mismatch: Passwörter stimmen nicht überein
+      password_too_short: Das Passwort muss mindestens 8 Zeichen lang sein
+      welcome: Willkommen bei Amplifa, %{name}!
+      welcome_setup: Willkommen bei Amplifa! Lassen Sie uns Ihr Konto einrichten.
+      create_failed: 'Konto konnte nicht erstellt werden: %{message}'
+      accept_failed: 'Einladung konnte nicht angenommen werden: %{message}'
+      unexpected_error: Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder wenden Sie sich an den Support.
+  dashboard:
+    title: Dashboard
+    welcome_back: Willkommen zurück
+    subtitle_ready: Ihre Kampagnen sind bereit, Leads zu generieren
+    subtitle_onboarding: Schließen Sie Ihr Onboarding ab, um Leads zu generieren
+    stats:
+      team_members: Team-Mitglieder
+      active_campaigns: Aktive Kampagnen
+      total_leads: Leads gesamt
+    get_started:
+      title: Erste Schritte
+      description: Erstellen Sie Ihre erste Kampagne, um mit der Generierung hyperpersonalisierter
+        Outbound-E-Mails zu beginnen.
+      create_campaign: Kampagne erstellen
+    recent_activity:
+      title: Letzte Aktivitäten
+      no_activity: Keine aktuellen Aktivitäten anzuzeigen
+  senders:
+    send_window: Fenster senden
+    timezone: Zeitzone
+    send_window_start: Fensterstart senden
+    send_window_end: Fensterende senden
+  onboarding:
+    title: Erste Schritte mit Amplifa
+    subtitle: Schließen Sie diese Schritte ab, um Leads zu generieren
+    progress: "%{completed} von %{total} Schritte abgeschlossen"
+    progress_of: " von "
+    progress_suffix: " Schritten abgeschlossen"
+    complete_message: Onboarding abgeschlossen! Sie können jetzt Leads generieren.
+    complete_title: "\U0001F389 Onboarding abgeschlossen!"
+    complete_description: Sie sind jetzt vollständig eingerichtet und bereit, qualifizierte
+      Leads mit Amplifa zu generieren.
+    expand_checklist: Checkliste erweitern
+    collapse_checklist: Checkliste minimieren
+    use_language_selector: Verwenden Sie die Sprachauswahl in der oberen Navigation
+    stage_label: 'Phase '
+    duration_label: 'Dauer: '
+    steps:
+      profile_completed:
+        title: Firmenprofil vervollständigen
+        description: Fügen Sie Ihre Website, ACV und Calendly-Link hinzu
+        action: Profil vervollständigen
+      language_selected:
+        title: Sprache wählen
+        description: Wählen Sie Ihre bevorzugte Sprache
+        action: Sprache wählen
+    blacklist:
+      accepted_formats: 'Akzeptierte Formate:'
+      add_count: "%{count} Einträge hinzufügen"
+      add_entries: Einträge hinzufügen
+      add_more_entries: Weitere Einträge hinzufügen
+      and_more: "...und %{count} weitere"
+      auto_detect_help: Einträge werden automatisch als Domains oder E-Mails erkannt.
+        Das Hinzufügen einer Domain blockiert alle E-Mails von dieser Domain.
+      domains_label: 'Domains:'
+      emails_label: 'E-Mails:'
+      entries_description: Geben Sie eine Domain oder E-Mail pro Zeile ein. Sie können
+        auch eine durch Kommas getrennte Liste einfügen.
+      entries_label: Domains & E-Mail-Adressen
+      entries_placeholder: |-
+        beispiel.de
+        kunde@firma.org
+        partner.io
+        kontakt@unternehmen.com
+      invalid_count: "%{count} ungültig"
+      invalid_entries_warning: "%{count} Einträge sind ungültig und werden übersprungen."
+      optional_description: Wenn Sie derzeit keine bestehenden Kunden hinzufügen möchten,
+        können Sie mit dem Abschluss Ihrer Einrichtung fortfahren. Sie können jederzeit
+        später in Ihren Dashboard-Einstellungen Sperrlisteneinträge hinzufügen.
+      optional_title: Dieser Schritt ist optional
+      valid_count: "%{count} gültig"
+    calendly:
+      benefits:
+        conversion:
+          description: Machen Sie es Interessenten leicht, den nächsten Schritt zu
+            gehen.
+          title: Höhere Konversion
+        experience:
+          description: Zeigen Sie Interessenten eine professionelle, gebrandete Buchungsseite.
+          title: Professionelle Erfahrung
+        save_time:
+          description: Kein Hin- und Her-E-Mails mehr, um eine passende Besprechungszeit
+            zu finden.
+          title: Zeitersparnis
+        sync:
+          description: Ihre Verfügbarkeit bleibt mit Ihrem Kalender aktuell.
+          title: Automatisch synchronisieren
+      connect_button: Mit Calendly verbinden
+      connect_description: Verknüpfen Sie Ihr Calendly, damit Interessenten direkt
+        aus Ihren Outreach-E-Mails Besprechungen buchen können. Dies erhöht die Antwortraten
+        und macht die Terminplanung mühelos.
+      connect_title: Verbinden Sie Ihr Calendly-Konto
+      connected_description: Ihr ausgewählter Meeting-Link wird automatisch in Outreach-E-Mails
+        eingefügt.
+      connected_limited_description: Ihr Meeting-Link wird in Outreach-E-Mails eingefügt.
+        Automatische Meeting-Verfolgung erfordert Calendly Standard oder höher.
+      connected_limited_title: Kalender mit eingeschränkter Verfolgung verbunden.
+      connected_title: Kalender erfolgreich verbunden!
+      connecting: Verbinden...
+      connection_failed: Verbindung fehlgeschlagen
+      connection_failed_description: Verbindung zu Calendly nicht möglich. Bitte versuchen
+        Sie es erneut.
+      disconnect: Calendly trennen
+      inactive: Inaktiv
+      retry_connection: Verbindung wiederholen
+      select_default_event_type: Standard-Ereignistyp auswählen
+      select_event_type_description: Wählen Sie, welcher Meeting-Typ in Ihre Outreach-E-Mails
+        aufgenommen werden soll.
+      skip: Vorerst überspringen
+      statuses:
+        connected: Verbunden
+        connected_limited: Verbunden (Eingeschränkt)
+        not_connected: Nicht verbunden
+      view_profile: Calendly-Profil ansehen
+    complete:
+      all_set: Sie sind startklar.
+      heading: Wir überprüfen und aktivieren jetzt Ihren Workspace.
+      need_help: Brauchen Sie Hilfe?
+      page_title: Einrichtung abgeschlossen - Amplifa
+      process_time: Dieser Vorgang kann einige Tage dauern.
+      update_email: Wir senden eine Aktualisierung an %{email}, sobald alles bereit
+        ist.
+    domain:
+      available: Verfügbar
+      benefits:
+        email_setup:
+          description: Wir konfigurieren SPF, DKIM und DMARC für Sie
+          title: Vollständige E-Mail-Einrichtung
+        reply_routing:
+          description: Alle Antworten werden an Ihr Team weitergeleitet
+          title: Antwortweiterleitung
+        reputation:
+          description: Schützen Sie Ihre Hauptdomain vor Spam-Beschwerden
+          title: Reputationsschutz
+        warmup:
+          description: Schrittweise Erhöhung des Versandvolumens für optimale Zustellbarkeit
+          title: Domain-Aufwärmphase
+      unavailable: Nicht verfügbar
+      why_description: 'Kaltakquise-E-Mails sollten von separaten Domains versendet
+        werden, um die Reputation Ihrer Hauptdomain zu schützen. Wir kümmern uns um
+        alles für Sie:'
+      why_title: Warum ähnliche Domains verwenden?
+    email:
+      add_persona: Persona hinzufügen
+      add_team_member_persona: Teammitglied-Persona hinzufügen
+      adding: Wird hinzugefügt...
+      email_address: E-Mail-Adresse
+      email_placeholder: max.mustermann@unternehmen.de
+      errors_title: 'Es sind folgende Fehler aufgetreten:'
+      first_name: Vorname
+      first_name_placeholder: Max
+      generate_from_name: Aus Name generieren
+      last_name: Nachname
+      last_name_placeholder: Mustermann
+      linkedin_placeholder: https://linkedin.com/in/maxmustermann
+      linkedin_url: LinkedIn-Profil-URL
+      optional: "(optional)"
+      persona_required: Mindestens eine Persona ist erforderlich, um fortzufahren
+      signature: E-Mail-Signatur
+      signature_placeholder: |-
+        Mit freundlichen Grüßen,
+        John Doe
+        Senior Account Executive
+    show:
+      company_size: Unternehmensgröße
+      complete_setup: Einrichtung abschließen
+      completing: Wird abgeschlossen...
+      continue: Weiter
+      errors_title: Es gab Fehler bei Ihrer Eingabe
+      heading: Willkommen bei Amplifa
+      industry: Branche
+      invite_later: Sie können Teammitglieder später über Ihre Dashboard-Einstellungen
+        einladen.
+      invite_team: Laden Sie Ihr Team ein
+      next_steps:
+        configure_ai: Konfigurieren Sie die KI-Personalisierungseinstellungen
+        create_campaign: Erstellen Sie Ihre erste E-Mail-Kampagne
+        import_leads: Importieren Sie Ihre Leads oder Interessenten
+      organization_name: Name der Organisation
+      organization_placeholder: Acme GmbH
+      page_title: Willkommen bei Amplifa
+      select_company_size: Wählen Sie die Unternehmensgröße
+      select_industry: Wählen Sie eine Branche
+      steps:
+        organization_details: Organisationsdetails
+        team_setup: Team-Einrichtung
+      subheading: Lassen Sie uns Ihre Organisation einrichten
+      whats_next: Wie geht es weiter?
+  auth:
+    login:
+      page_title: Anmelden
+      email_label: E-Mail-Adresse
+      password_label: Passwort
+      subtitle: Melden Sie sich an, um fortzufahren
+      email_placeholder: name@unternehmen.de
+      password_placeholder: "••••••••"
+      remember_me: Angemeldet bleiben
+      submit: Anmelden
+      signing_in: Anmeldung läuft…
+      invalid_credentials: Ungültige E-Mail oder ungültiges Passwort
+      forgot_password: Passwort vergessen?
+    layout:
+      tagline: KI-gestützte Plattform für Vertriebsansprache
+      feature_automation: Automatisierte Outreach-Sequenzen
+      feature_personalization: KI-gestützte Personalisierung
+      feature_scoring: Intelligente Lead-Bewertung
+    forgot_password:
+      email: E-Mail-Adresse
+      email_placeholder: name@domain.de
+      heading: Passwort vergessen?
+      info: Bitte überprüfen Sie Ihren Posteingang (und den Spam-Ordner) auf den Link
+        zum Zurücksetzen. Der Link ist 24 Stunden gültig.
+      page_title: Passwort zurücksetzen
+      remember_password: Erinnern Sie sich an Ihr Passwort?
+      subheading: Kein Problem! Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen
+        eine Anleitung zum Zurücksetzen.
+      submit: Link zum Zurücksetzen senden
+      email_sent: Wenn ein Konto für diese E-Mail-Adresse existiert, haben wir Anweisungen
+        zum Zurücksetzen des Passworts gesendet.
+    register:
+      already_have_account: Haben Sie bereits ein Konto?
+      email: E-Mail-Adresse
+      email_placeholder: name@domain.de
+      first_name: Vorname
+      first_name_placeholder: Max
+      heading: Werden Sie Teil von Amplifa
+      last_name: Nachname
+      last_name_placeholder: Mustermann
+      organization_name: Name der Organisation
+      organization_placeholder: Acme GmbH
+      page_title: Registrieren
+      password: Passwort
+      password_placeholder: Passwort erstellen
+      sign_in_instead: Stattdessen anmelden
+      subheading: Starten Sie noch heute Ihre E-Mail-Kampagnen
+      submit: Konto erstellen
+    reset_password:
+      back_to_sign_in: Zurück zur Anmeldung
+      changed_mind: Anders überlegt?
+      confirm_password: Passwort bestätigen
+      confirm_password_placeholder: Geben Sie Ihr neues Passwort erneut ein
+      heading: Passwort zurücksetzen
+      new_password: Neues Passwort
+      new_password_placeholder: Erstellen Sie ein neues Passwort
+      page_title: Passwort zurücksetzen
+      subheading: Geben Sie unten Ihr neues Passwort ein.
+      submit: Passwort zurücksetzen
+    set_password:
+      heading: Richten Sie Ihr neues Passwort ein
+      page_title: Passwort festlegen
+      subheading: Erstellen Sie ein sicheres Passwort, um Ihr Amplifa-Konto zu aktivieren.
+      submit: Passwort festlegen
+    verify_account:
+      already_verified: Bereits verifiziert?
+      check_inbox: Überprüfen Sie Ihren Posteingang auf eine Verifizierungs-E-Mail
+        von Amplifa.
+      didnt_receive: Nicht erhalten? Überprüfen Sie Ihren Spam-Ordner oder senden
+        Sie sie unten erneut.
+      email: E-Mail-Adresse
+      email_placeholder: sie@beispiel.de
+      email_sent: E-Mail erfolgreich gesendet!
+      heading: Überprüfen Sie Ihren Posteingang
+      need_resend: Erneut senden?
+      page_title: Konto verifizieren
+      resend: Verifizierungs-E-Mail erneut senden
+      subheading: Wir haben Ihnen einen Verifizierungslink gesendet. Klicken Sie darauf,
+        um Ihr Konto zu aktivieren!
+    two_factor_email:
+      page_title: Zwei-Faktor-Authentifizierung
+      heading: E-Mail überprüfen
+      subtitle: Ihr Passwort wurde akzeptiert. Öffnen Sie den sicheren Link, den wir Ihnen gesendet haben, um die Anmeldung abzuschließen.
+      sent_to: Verifizierungs-E-Mail gesendet an
+      instructions: Der Link meldet Sie in dem Browser an, in dem Sie ihn öffnen. Falls Sie keine E-Mail erhalten haben, können Sie nach Ablauf des Countdowns eine neue anfordern.
+      resend: Verifizierungs-E-Mail erneut senden
+      resend_countdown: Verifizierungs-E-Mail in %{count} s erneut senden
+      resent: Die Verifizierungs-E-Mail wurde erneut gesendet.
+      resend_wait: Bitte warten Sie, bevor Sie eine weitere Verifizierungs-E-Mail anfordern.
+      expired: Ihre Verifizierungssitzung ist abgelaufen. Bitte melden Sie sich erneut an.
+      invalid: Dieser Verifizierungslink ist ungültig oder abgelaufen. Bitte melden Sie sich erneut an.
+  settings:
+    company:
+      title: Firmeneinstellungen
+      subtitle: Verwalten Sie das Profil und die Einstellungen Ihrer Organisation
+      info_readonly: Diese Einstellungen sind derzeit schreibgeschützt. Vollständige
+        Bearbeitungsfunktionen kommen bald.
+      organization_data: Organisationsdetails
+      can_edit: Bearbeitbar
+      read_only: Schreibgeschützt
+      not_set: Nicht gesetzt
+      validation_errors: Validierungsfehler
+      fields:
+        name: Firmenname
+        website: Website
+        average_contract_value: Durchschnittlicher Vertragswert
+        calendly_url: Calendly-URL
+      website_label: Website-URL
+      website_help: Die Hauptwebsite Ihres Unternehmens
+      website_placeholder: https://www.beispiel.de
+      acv_label: Durchschnittlicher Vertragswert (ACV)
+      acv_help: Durchschnittlicher Wert Ihrer Verkaufsverträge
+      acv_placeholder: '10.000'
+      meeting_price_label: Durchschnittlicher Meeting-Wert
+      meeting_price_help: Wert, den Sie jedem gebuchten Meeting zuschreiben
+      meeting_price_placeholder: '500'
+      monthly_subscription_label: Monatliches Abonnement
+      monthly_subscription_help: Ihre Amplifa-Abonnementkosten (von Admin verwaltet)
+      calendly_label: Calendly-Terminplanungslink
+      calendly_help: Ihr Calendly-Link zur Buchung von Meetings
+      calendly_placeholder: https://calendly.com/ihre-firma/meeting
+      currency_label: Währung
+      currency_help: Ihre bevorzugte Währung für Finanzkennzahlen
+      locale_label: Standardsprache
+      locale_help: Standardsprache für Ihre Organisation
+      save: Änderungen speichern
+      cancel: Abbrechen
+      saved: Einstellungen erfolgreich gespeichert
+      onboarding_step_completed: Onboarding-Schritt abgeschlossen!
+    email_accounts:
+      title: E-Mail-Konten
+      subtitle: E-Mail-Konten benötigen eine 3-wöchige Aufwärmphase vor voller Sendekapazität.
+      add_account: E-Mail-Konto hinzufügen
+      empty: Noch keine E-Mail-Konten konfiguriert.
+      empty_hint: Fügen Sie ein E-Mail-Konto hinzu, um Kampagnen zu starten.
+      contact_amplifa: Kontaktieren Sie Amplifa, um zusätzliche E-Mail-Konten einzurichten.
+      table:
+        email: E-Mail-Adresse
+        display_name: Anzeigename
+        status: Status
+        warmup_progress: Aufwärmfortschritt
+        created: Erstellt
+      statuses:
+        pending: Ausstehend
+        warming: Wird aufgewärmt
+        active: Aktiv
+        paused: Pausiert
+        suspended: Gesperrt
+      warmup_days_remaining: "%{days} Tage verbleiben"
+      warmup_complete: Abgeschlossen
+      new:
+        title: E-Mail-Konto hinzufügen
+        subtitle: Neues E-Mail-Konto für Outbound-Kampagnen hinzufügen
+        email_label: E-Mail-Adresse
+        email_placeholder: absender@ihrefirma.de
+        email_help: Die E-Mail-Adresse, die zum Senden verwendet wird
+        display_name_label: Anzeigename
+        display_name_placeholder: Vertriebsteam
+        display_name_help: Wie Empfänger den Absendernamen sehen werden (optional)
+        display_name_hint: Wie Empfänger den Absendernamen sehen werden
+        info_pending: Neue Konten haben den Status 'Ausstehend', bis sie von Amplifa
+          geprüft und genehmigt werden. Nach der Genehmigung beginnt der Aufwärmprozess.
+        validation_errors: Es gab Fehler bei Ihrer Eingabe
+        submit: E-Mail-Konto erstellen
+        cancel: Abbrechen
+    blacklists:
+      title: Sperrliste
+      subtitle: Verwalten Sie E-Mails und Domains, die niemals kontaktiert werden
+        sollen.
+      add_entry: Eintrag hinzufügen
+      import_entries: Importieren
+      empty: Noch keine Sperrlisteneinträge.
+      global_info: "Globale Einträge (mit \U0001F310 markiert) werden von Amplifa
+        verwaltet und gelten für alle Organisationen."
+      table:
+        value: E-Mail / Domain
+        type: Typ
+        source: Quelle
+        created_by: Erstellt von
+        created: Erstellt
+        actions: Aktionen
+      types:
+        email: E-Mail
+        domain: Domain
+      sources:
+        manual: Manuell
+        import: Import
+        interested: Interessiert
+        unsubscribe: Abmeldung
+      global_badge: Global
+      delete_confirm: Sind Sie sicher, dass Sie diesen Eintrag entfernen möchten?
+      delete_button: Entfernen
+      form:
+        value_label: E-Mail oder Domain
+        value_placeholder: email@beispiel.de oder domain.de
+        value_help: Geben Sie eine E-Mail-Adresse oder Domain zum Sperren ein
+        type_label: Typ
+        submit: Zur Sperrliste hinzufügen
+      import_form:
+        title: Sperrlisteneinträge importieren
+        input_label: Einträge
+        input_placeholder: Geben Sie eine E-Mail oder Domain pro Zeile ein...
+        input_help: Fügen Sie eine Liste von E-Mails oder Domains ein (eine pro Zeile).
+          Das System erkennt automatisch, ob es sich um eine E-Mail oder Domain handelt.
+        submit: Importieren
+        cancel: Abbrechen
+      created: Eintrag zur Sperrliste hinzugefügt
+      imported: "%{created} Einträge hinzugefügt, %{skipped} übersprungen (Duplikate)"
+      deleted: Eintrag aus der Sperrliste entfernt
+      delete_failed: Eintrag konnte nicht entfernt werden
+      cannot_delete_global: Globale Sperrlisteneinträge können nicht entfernt werden.
+        Kontaktieren Sie den Amplifa Support.
+      not_found: Sperrlisteneintrag nicht gefunden
+  timeline:
+    title: Ihr Weg zum Start
+    subtitle: Verfolgen Sie Ihren Fortschritt vom Onboarding bis zur aktiven Lead-Generierung
+    you_are_here: Sie sind hier
+    coming_soon: Demnächst
+    completed: Abgeschlossen
+    stage_label: 'Phase '
+    onboarding:
+      title: Onboarding
+      description: Vervollständigen Sie Ihr Profil und Ihre Einstellungen
+    setup:
+      title: Kampagnen-Setup
+      description: Überprüfen Sie Playbooks und konfigurieren Sie Kampagnen
+    warming:
+      title: E-Mail-Aufwärmung
+      description: 3-wöchige Aufwärmphase für E-Mail-Konten
+      duration: "~3 Wochen"
+    launch:
+      title: Start
+      description: Beginnen Sie mit der Generierung qualifizierter Leads
+  invitation:
+    accept:
+      title: Willkommen bei Amplifa!
+      subtitle: Sie wurden eingeladen, %{organization} beizutreten.
+      account_info_title: Ihr Konto
+      setup_title: Richten Sie Ihr Konto ein
+      organization_label: Organisation
+      email_label: E-Mail
+      name_label: Name
+      role_label: Rolle
+      password_label: Passwort
+      password_placeholder: Erstellen Sie ein sicheres Passwort
+      confirm_password_label: Passwort bestätigen
+      confirm_password_placeholder: Bestätigen Sie Ihr Passwort
+      language_label: Bevorzugte Sprache
+      language_help: Wählen Sie Ihre bevorzugte Sprache für Amplifa
+      timezone_label: Zeitzone (Optional)
+      timezone_placeholder: Wählen Sie Ihre Zeitzone...
+      timezone_help: Wählen Sie Ihre Zeitzone für genaue Zeitanzeigen
+      terms_label: Ich akzeptiere die Nutzungsbedingungen und Datenschutzrichtlinie
+      submit: Einrichtung abschließen
+      need_help: Brauchen Sie Hilfe?
+      password_requirements: 'Passwort-Anforderungen:'
+      password_req_length: Mindestens 8 Zeichen
+      password_req_number: Mindestens 1 Zahl
+      password_req_special: Mindestens 1 Sonderzeichen
+      password_req_uppercase: Ein Großbuchstabe
+      password_req_lowercase: Ein Kleinbuchstabe
+      password_strength:
+        weak: Schwach
+        fair: Ausreichend
+        good: Gut
+        strong: Stark
+      password_strength_label: 'Passwortstärke:'
+      role_admin: Admin
+      show_password: Passwort anzeigen
+      hide_password: Passwort ausblenden
+      errors:
+        password_required: Passwort ist erforderlich
+        password_too_short: Passwort muss mindestens 8 Zeichen lang sein
+        confirmation_required: Bitte bestätigen Sie Ihr Passwort
+        passwords_mismatch: Passwörter stimmen nicht überein
+    expired:
+      title: Einladung abgelaufen
+      message: Diese Einladung ist abgelaufen und kann nicht mehr verwendet werden.
+      explanation: Einladungen laufen 7 Tage nach dem Versand ab.
+      request_new: Neue Einladung anfordern
+      contact_support: Support kontaktieren
+    invalid:
+      title: Ungültige Einladung
+      message: Dieser Einladungslink ist ungültig.
+      explanation: Bitte überprüfen Sie Ihre E-Mail auf den korrekten Link oder kontaktieren
+        Sie Ihren Administrator.
+      contact_support: Support kontaktieren
+    already_accepted:
+      message: Diese Einladung wurde bereits verwendet. Bitte melden Sie sich an.
+  components:
+    generation_progress:
+      completed: "%{completed} von %{total} abgeschlossen"
+      errors: "%{count} Fehler"
+  admin:
+    statuses:
+      onboarded: Ongeboardet
+      pending: Ausstehend
+      deactivated: Deaktiviert
+      archived: Archiviert
+      active: Aktiv
+    roles:
+      org_admin: Organisations-Admin
+      member: Mitglied
+      customer_admin: Kunden-Admin
+      amplifa_admin: Amplifa-Admin
+      customer_user: Kundenbenutzer
+    password_strength:
+      weak: Schwach
+      fair: Ausreichend
+      good: Gut
+      strong: Stark
+    common:
+      dashboard: Dashboard
+      back: Zurück
+      back_to_dashboard: Zurück zum Dashboard
+      back_to_organizations: Zurück zu Organisationen
+      back_to_accounts: Zurück zu Konten
+      back_to_activity_log: Zurück zum Aktivitätsprotokoll
+      cancel: Abbrechen
+      save_changes: Änderungen speichern
+      saving: Wird gespeichert...
+      create: Erstellen
+      creating: Wird erstellt...
+      error: Ein Fehler ist aufgetreten
+      edit: Bearbeiten
+      view: Ansehen
+      delete: Löschen
+      login_as: Anmelden als
+      deactivate: Deaktivieren
+      filters: Filter
+      all: Alle
+      apply_filters: Filter anwenden
+      clear_filters: Filter löschen
+      clear_all: Alle löschen
+      clear: Klar
+      reset: Zurücksetzen
+      required_fields: "* Pflichtfelder"
+      na: k. A.
+      not_recorded: Nicht erfasst
+      previous: Zurück
+      next: Weiter
+      coming_soon: Demnächst
+      saved: Gespeichert
+      'yes': Ja
+      'no': NEIN
+      importing: Importieren...
+      no_results: Keine Ergebnisse gefunden
+      search: Suchen
+      page_info: Seite %{current} von %{total}
+      view_all: Alle anzeigen
+      showing: Zeigt
+      to: Zu
+      of: von
+      results: Ergebnisse
+      disconnecting: Verbindung trennen...
+      actions: Aktionen
+      no_industry: Keine Branche
+      send: Schicken
+      status: Status
+      organization: Organisation
+      created: Erstellt
+      email: E-Mail
+      company: Unternehmen
+      name: Name
+      role: Rolle
+      job_title: Berufsbezeichnung
+      description: Beschreibung
+      display_name: Anzeigename
+      first_name: Vorname
+      last_name: Nachname
+      domain: Domain
+      mailboxes: Mailboxen
+      all_organizations: Alle Organisationen
+      all_statuses: Alle Status
+      playbook: Playbook
+      created_at: Erstellt
+      updated_at: Zuletzt aktualisiert
+      select_organization: Organisation auswählen...
+      page: Seite
+      active: Aktiv
+      inactive: Inaktiv
+      deleting: Wird gelöscht...
+      created_by: Erstellt von
+      form_errors: 'Bitte beheben Sie die folgenden Fehler:'
+      select_option: Option auswählen...
+      organizations: Organisationen
+      close: Schließen
+    dashboard:
+      title: Admin Dashboard
+      super_title: Super Admin Dashboard
+      subtitle: Plattformübersicht und Verwaltung
+      stats:
+        total_organizations: Organisationen gesamt
+        total_accounts: Konten gesamt
+        pending_onboarding: Onboarding ausstehend
+      recent_organizations:
+        title: Kürzlich erstellte Organisationen
+        description: Eine Liste der 10 zuletzt erstellten Organisationen
+        view_all: Alle Organisationen anzeigen
+        empty: Noch keine Organisationen
+      table:
+        industry: Branche
+        size: Größe
+    organizations:
+      title: Organisationen verwalten
+      subtitle: Alle Organisationen im System anzeigen und verwalten
+      create_button: Organisation erstellen
+      search_placeholder: Organisationen nach Namen suchen...
+      empty: Noch keine Organisationen
+      table:
+        industry: Branche
+        size: Größe
+        accounts: Konten
+      new:
+        title: Organisation erstellen
+        subtitle: Eine neue Kundenorganisation zu Amplifa hinzufügen
+        name_label: Organisationsname
+        name_description: Der Name der Kundenorganisation
+        name_placeholder: Musterfirma GmbH
+        industry_label: Branche
+        industry_description: In welcher Branche ist diese Organisation tätig?
+        industry_placeholder: Technologie, Gesundheitswesen, Finanzen, etc.
+        size_label: Unternehmensgröße
+        size_description: Anzahl der Mitarbeiter
+        size_placeholder: Größe auswählen...
+        size_suffix: " Mitarbeiter"
+        onboarded_label: Als ongeboardet markieren
+        onboarded_description: Aktivieren Sie dies, wenn die Organisation die initiale
+          Einrichtung abgeschlossen hat
+        submit: Organisation erstellen
+        website_integration_section: Website & Integration
+        website_label: Firmen-Website
+        website_description: Die Haupt-Website-URL der Organisation
+        website_placeholder: https://www.beispiel.de
+        calendly_url_label: Calendly-Terminplanungslink
+        calendly_url_description: Calendly-Link für Verkaufstermine
+        calendly_url_placeholder: https://calendly.com/firma/termin
+        financial_section: Finanzinformationen
+        average_contract_value_label: Durchschnittlicher Vertragswert (ACV)
+        average_contract_value_description: Durchschnittlicher Wert der Verkaufsverträge
+          der Organisation
+        average_contract_value_placeholder: '10000'
+        meeting_price_label: Durchschnittlicher Meeting-Wert
+        meeting_price_description: Wert, der jedem gebuchten Meeting zugeordnet wird
+        meeting_price_placeholder: '500'
+        monthly_subscription_label: Monatliches Abonnement
+        monthly_subscription_description: Die Amplifa-Abonnementkosten der Organisation
+        monthly_subscription_placeholder: '299'
+        monthly_meeting_limit_label: Max. Meetings / Monat
+        monthly_meeting_limit_description: Meeting-Limit pro Abrechnungszyklus für diese Organisation
+        localization_section: Lokalisierung
+        locale_label: Standardsprache
+        locale_description: Standardsprache für diese Organisation
+        currency_label: Währung
+        currency_description: Standardwährung für die Finanzverfolgung
+        security_section: Sicherheit
+        two_factor_authentication_required_label: E-Mail-Zwei-Faktor-Authentifizierung erforderlich
+        two_factor_authentication_required_description: Benutzer dieser Organisation müssen ihre Anmeldung nach Eingabe des Passworts über einen sicheren E-Mail-Link bestätigen.
+      edit:
+        title: Organisation bearbeiten
+        subtitle: Organisationsdetails und Einstellungen aktualisieren
+        name_label: Organisationsname
+        industry_label: Branche
+        size_label: Organisationsgröße
+        size_placeholder: Größe auswählen
+        website_integration_section: Website & Integration
+        website_label: Firmen-Website
+        website_help: Die Haupt-Website-URL der Organisation
+        calendly_url_label: Calendly-Terminplanungslink
+        calendly_url_help: Ihr Calendly-Link für Verkaufstermine (muss mit https://calendly.com/
+          beginnen)
+        financial_section: Finanzinformationen
+        average_contract_value_label: Durchschnittlicher Vertragswert (ACV)
+        average_contract_value_help: Durchschnittlicher Wert der Verkaufsverträge
+          der Organisation
+        meeting_price_label: Durchschnittlicher Meeting-Wert
+        meeting_price_help: Wert, der jedem gebuchten Meeting zugeordnet wird
+        monthly_subscription_label: Monatliches Abonnement
+        monthly_subscription_help: Die Amplifa-Abonnementkosten der Organisation
+        monthly_meeting_limit_label: Max. Meetings / Monat
+        monthly_meeting_limit_help: Meeting-Limit pro Abrechnungszyklus für diese Organisation
+        billing_begins_on_label: Abrechnung beginnt am
+        billing_begins_on_help: Vollständiges Datum zur Verankerung wiederkehrender
+          Abrechnungszyklen
+        localization_section: Lokalisierung
+        locale_label: Standardsprache
+        locale_help: Standardsprache für diese Organisation
+        currency_label: Währung
+        currency_help: Standardwährung für die Finanzverfolgung
+        security_section: Sicherheit
+        two_factor_authentication_required_label: E-Mail-Zwei-Faktor-Authentifizierung erforderlich
+        two_factor_authentication_required_help: Benutzer dieser Organisation müssen ihre Anmeldung nach Eingabe des Passworts über einen sicheren E-Mail-Link bestätigen.
+        onboarded_label: Ongeboardet
+        associated_accounts: Zugehörige Konten (%{count})
+        no_accounts: Keine Konten dieser Organisation zugeordnet
+        invite_button: Benutzer einladen
+        deactivate_button: Organisation deaktivieren
+      export:
+        button: Konfiguration exportieren
+      import:
+        button: Organisation importieren
+        title: Organisation importieren
+        description: Laden Sie eine JSON-Exportdatei hoch, um eine neue Organisation
+          mit der gesamten Konfiguration (Absender, Domains, Postfächer, Playbooks,
+          Agenten) zu erstellen.
+        select_file: JSON-Datei auswählen
+        selected: Ausgewählt
+        success: Organisation „%{name}“ erfolgreich importiert
+        validation_failed: 'Validierung fehlgeschlagen: %{errors}'
+        failed: 'Import fehlgeschlagen: %{error}'
+        no_file: Bitte wählen Sie eine Datei zum Importieren
+        invalid_json: Ungültiges JSON-Dateiformat
+      back_to_list: Zurück zu Organisationen
+      show:
+        subtitle: Organisationsübersicht und Ressourcen
+      card:
+        agents: Agenten
+        playbooks: Playbooks
+        senders: Absender
+        mailboxes: Postfächer
+        emails_sent: E-Mails gesendet
+        emails_total: Gesamt
+        emails_daily_avg: Durchschnitt/Tag
+        daily_capacity: Tageskapazität
+        meetings: Treffen
+        reply_rate: Tagungsrate
+        click_rate: Klickrate
+        time_window: Fenster
+        time_windows:
+          last_24h: Letzte 24 Stunden
+          last_7d: Letzte 7 Tage
+          last_30d: Letzte 30 Tage
+          last_90d: Letzte 90 Tage
+          last_180d: Letzte 180 Tage
+          last_365d: Letzte 365 Tage
+        emails_today: Heute
+        emails_7d: Letzte 7 Tage
+        view: Anzeigen
+        edit: Bearbeiten
+        ai_reply_agent_on: KI-Antwortagent An
+      overview:
+        stats_title: Wichtige Kennzahlen
+        activity_title: Letzte Aktivitäten
+        info_title: Organisationsinfo
+        no_activity: Keine aktuellen Aktivitäten
+        by: von
+        archive_title: Archivorganisation
+        archive_description: Archivierte Organisationen werden in der Liste „Organisationen“
+          ausgeblendet. Diese Aktion ist für die Administratorsichtbarkeit dauerhaft.
+        archive_button: Archivorganisation
+        archive_confirm: Sind Sie sicher, dass Sie diese Organisation archivieren
+          möchten? Archivierte Organisationen werden nicht mehr in der Organisationsliste
+          angezeigt.
+      stats:
+        agents: Agenten
+        playbooks: Playbooks
+        senders: Absender
+        mailboxes: Postfächer
+        leads: Leads
+        emails_sent: E-Mails gesendet
+        meetings: Meetings
+      fields:
+        status: Status
+        created: Erstellt
+        website: Website
+        industry: Branche
+        size: Größe
+        locale: Sprache
+        currency: Währung
+      tabs:
+        overview: Übersicht
+        playbooks: Playbooks
+        agents: Agenten
+        settings: Einstellungen
+        domains: Domains
+        senders: Absender
+        mailboxes: Postfächer
+        replies: Antworten
+        sent_messages: Sends
+        meetings: Meetings
+        leads: Leads
+        lead_imports: Lead-Importe
+        files: Dateien
+        users: Benutzer
+      replies:
+        interested: Interessiert
+        meeting_request: Besprechungsanfrage
+        not_interested: Kein Interesse
+        ooo: Abwesenheit
+        ooo_returns: gibt %{date} zurück
+        bounced: Rückläufer
+        title: Antwort-Center
+        subtitle: Konversationen und Antworten von Leads verwalten
+        reply_now: Jetzt antworten
+        empty: Noch keine Konversationen
+        empty_description: Keine Konversationen entsprechen Ihren aktuellen Filtern.
+          Versuchen Sie, den Statusfilter oder die Suchbegriffe anzupassen.
+        select_conversation: Wählen Sie eine Konversation aus
+        select_conversation_desc: Wählen Sie eine Konversation aus der Liste aus,
+          um den Thread und Lead-Details anzuzeigen und eine Antwort zu senden.
+        no_preview: Keine Vorschau verfügbar
+        never: Nie
+        just_now: Gerade eben
+        minutes_ago:
+          one: Vor %{count} Minuten
+          other: Vor %{count} Minuten
+        hours_ago:
+          one: Vor %{count} Stunde
+          other: Vor %{count} Stunden
+        days_ago:
+          one: Vor %{count} Tag
+          other: Vor %{count} Tagen
+        last_checked: Zuletzt geprüft
+        check_mail_now: Jetzt Mails prüfen
+        checking_mail: Prüfe auf neue Antworten...
+        mail_check_complete: E-Mail-Prüfung abgeschlossen
+        mail_check_complete_with_errors: E-Mail-Prüfung mit einigen Fehlern abgeschlossen
+        mail_check_failed: E-Mail-Prüfung konnte nicht gestartet werden
+        no_active_mailboxes: Keine aktiven Postfächer zum Prüfen
+        ai_agent_enabled: KI-Antwortagent aktiviert
+        ai_agent_disabled: KI-Antwortagent deaktiviert
+        ai_agent_toggle_failed: KI-Antwortagent konnte nicht umgeschaltet werden
+        filter_menu:
+          label: Filter
+          title: Posteingangsfilter
+          description: Für Ihr Konto gespeichert
+          reply_type: Antworttyp
+          sender: Absender
+          all_senders: Alle Absender
+        sent_successfully: Antwort erfolgreich gesendet
+        send_failed: 'Antwort konnte nicht gesendet werden: %{error}'
+        conversation_closed: Konversation geschlossen
+        conversation_reopened: Konversation wieder geöffnet
+        conversation_snoozed: Das Gespräch wurde bis zum %{until} unterbrochen.
+        confirm_close: Möchten Sie diese Konversation wirklich schließen?
+        confirm_snooze: Diese Konversation zurückstellen?
+        filter:
+          all: Alle
+          open: Offen
+          snoozed: Zurückgestellt
+          closed: Geschlossen
+        status:
+          open: Offen
+          snoozed: Zurückgestellt
+          closed: Geschlossen
+          bounced: Rückläufer
+        stats:
+          total: Gesamt
+          unread: Ungelesen
+          open: Offen
+          snoozed: Zurückgestellt
+          closed: Geschlossen
+          unassigned: Nicht zugewiesen
+          interested: Interessiert
+          meeting_request: Besprechungsanfrage
+          not_interested: Kein Interesse
+        interest_status:
+          interested: Interessiert
+          meeting_request: Besprechungsanfrage
+          not_interested: Kein Interesse
+          wrong_person: Falsche Person
+        search_placeholder: Nach Lead-Name, E-Mail oder Firma suchen...
+        tabs:
+          all: Alle
+          open: Offen
+          snoozed: Geschlummert
+          closed: Geschlossen
+          unassigned: Nicht zugewiesen
+        conversation:
+          messages: Nachrichten
+          via: über
+        thread:
+          back_to_list: Zurück zu Konversationen
+          incoming: Eingehend
+          outgoing: Gesendet
+          bounce_badge: Rückläufer
+          ooo_badge: Abwesenheit
+        actions:
+          close: Schließen
+          reopen: Wieder öffnen
+          snooze: Zurückstellen
+        snooze_options:
+          title: Zurückstellen bis...
+          tomorrow: Morgen früh (9 Uhr)
+          next_week: Nächste Woche (Montag 9 Uhr)
+          next_month: Nächsten Monat (9 Uhr)
+        snooze:
+          tomorrow: Morgen früh (9 Uhr)
+          next_week: Nächste Woche (Montag 9 Uhr)
+          next_month: Nächsten Monat (9 Uhr)
+        composer:
+          placeholder: Ihre Antwort schreiben...
+          include_signature: Signatur vor dem Senden hinzufügen
+          send: Antwort senden
+          sending: Wird gesendet...
+        compose_placeholder: Ihre Antwort schreiben...
+        reply_with_ai: Mit KI antworten
+        reply_with_ai_generating: Antwort wird generiert...
+        reply_all_cc_confirmation: "Allen antworten: Dadurch wird %{recipients} ebenfalls in Cc gesetzt."
+        ai_generation_failed: 'Antwort konnte nicht generiert werden: %{error}'
+        add_link: Link hinzufügen
+        add_cc: Cc
+        cc_input_label: Cc-Empfänger
+        cc_input_placeholder: Cc hinzufügen und Enter drücken
+        edit_link: Link bearbeiten
+        open_link: Offen
+        remove_link: Entfernen
+        save_link: Link speichern
+        link_url_label: Link-URL
+        link_url_placeholder: https://example.com
+        link_url_help: Fügen Sie eine vollständige URL ein oder geben Sie einen Domainnamen
+          ein und wir machen ihn anklickbar.
+        link_url_invalid: Geben Sie eine gültige URL ein.
+        include_signature: Signatur vor dem Senden hinzufügen
+        send_reply: Antwort senden
+        lead_sidebar:
+          title: Lead-Informationen
+          email: E-Mail
+          company: Firma
+          job_title: Position
+          location: Standort
+          linkedin: LinkedIn
+          website: Website
+          view_lead: Vollständiges Lead-Profil anzeigen
+        mailbox_info:
+          title: Postfach
+        sender_info:
+          title: Absender
+          has_signature: Hat Signaturvorlage
+        unassigned:
+          title: Nicht zugewiesene Antworten
+          subtitle: Antworten, die einem Lead zugewiesen werden müssen
+          empty: Keine nicht zugewiesenen Antworten
+          empty_description: Alle Antworten wurden Leads zugeordnet.
+          assign_to: Lead zuweisen
+          select_lead: Lead auswählen...
+          search_leads: Leads nach E-Mail, Name oder Firma suchen...
+          assign: Zuweisen
+        lead_assigned: Antwort zugewiesen an %{email}
+        reply_not_found: Antwort nicht gefunden oder bereits zugewiesen
+        sidebar:
+          company: Unternehmen
+          location: Standort
+          view_full_profile: Vollständiges Profil anzeigen
+          sending_as: Versand als
+          mailbox: Postfach
+      lead_sequence:
+        agent: Agent
+        all_leads_contacted: Alle Leads kontaktiert
+        all_reached: Schritt (alle erreicht)
+        filters:
+          all_agents: Alle Agenten
+          all_leads_contacted: Alle Leads kontaktiert
+        no_agents: Keine Agenten
+        not_contacted: Nicht kontaktiert
+        title: Lead-Sequenz
+        total_leads: Leads gesamt
+    users:
+      title: Alle Benutzer
+      subtitle: Alle Benutzerkonten auf der Plattform verwalten
+      create_button: Benutzer erstellen
+      empty: Keine Benutzer gefunden
+      roles:
+        org_admin: Organisations-Admin
+        member: Mitglied
+        customer_admin: Kunden-Admin
+        amplifa_admin: Amplifa-Admin
+        customer_user: Kundenbenutzer
+      statuses:
+        onboarded: Ongeboardet
+        pending: Ausstehend
+        deactivated: Deaktiviert
+        active: Aktiv
+        undefined: Unbekannt
+      table:
+        edit: Bearbeiten
+        login_as: Anmelden als
+      filters:
+        search_label: Benutzer suchen
+        search_placeholder: Name oder E-Mail suchen...
+        result_count: "%{count} Benutzer"
+        organization_label: Nach Organisation filtern
+        organization_all: Alle Organisationen
+        role_label: Nach Rolle filtern
+        role_all: Alle Rollen
+        status_label: Nach Status filtern
+        status_all: Alle Status
+        clear: Zurücksetzen
+      new:
+        title: Benutzer erstellen
+        subtitle: Einen neuen Benutzer zur Plattform hinzufügen
+        email_placeholder: benutzer@beispiel.de
+        first_name_placeholder: Max
+        last_name_placeholder: Mustermann
+        password_label: Passwort
+        password_placeholder: Mindestens 8 Zeichen
+        password_description: Mindestens 8 Zeichen, einschließlich 1 Zahl und 1 Sonderzeichen
+        password_strength_label: 'Passwortstärke:'
+        password_confirmation_label: Passwort bestätigen
+        confirm_password_placeholder: Passwort erneut eingeben
+        organization_placeholder: Organisation auswählen...
+        organization_na_message: Amplifa-Admins gehören zu keiner Organisation
+        info_title: Benutzererstellung
+        info_message: Der Benutzer wird mit dem angegebenen Passwort erstellt und
+          kann sich sofort anmelden. Es ist keine E-Mail-Verifizierung erforderlich.
+        submit: Benutzer erstellen
+        password_hint: Mindestens 8 Zeichen, einschließlich 1 Zahl und 1 Sonderzeichen
+          empfohlen
+        select_organization: Organisation auswählen...
+        organization_na: N/V - Amplifa-Admins
+        organization_hint: Amplifa-Admins gehören zu keiner Organisation
+        create_button: Benutzer erstellen
+      organization_scope_amplifa_admin_forbidden: Verwenden Sie die globale Benutzerbearbeitungsseite, um Benutzer zu Amplifa-Admins zu ernennen.
+      platform_access:
+        title: Plattformzugriff
+        amplifa_admin_label: Amplifa Admin
+        amplifa_admin_help: Gewährt plattformweiten Admin-Zugriff auf alle Organisationen. Organisationsmitgliedschaften können für eine spätere Herabstufung am Konto bleiben, aber die Admin-Anmeldung verwendet das globale Admin-Dashboard statt eines Kunden-Workspaces.
+        amplifa_admin_warning: Amplifa-Admin-Zugriff ist global und sollte nur vertrauenswürdigen Amplifa-Mitarbeitern gewährt werden.
+        demote_help: Das Entfernen des Amplifa-Admin-Zugriffs wandelt dieses Konto in die Rolle der ersten aktiven Organisationsmitgliedschaft um.
+        demote_requires_membership: Fügen Sie mindestens eine aktive Organisationsmitgliedschaft hinzu, bevor Sie den Amplifa-Admin-Zugriff entfernen.
+        amplifa_admin_enabled: Amplifa Admin aktiviert.
+        amplifa_admin_disabled: Amplifa Admin deaktiviert.
+        two_factor_enabled: E-Mail-Zwei-Faktor-Authentifizierung aktiviert.
+        two_factor_disabled: E-Mail-Zwei-Faktor-Authentifizierung deaktiviert.
+      memberships:
+        title: Organisationsmitgliedschaften
+        empty: Dieser Benutzer hat keine aktiven Organisationsmitgliedschaften.
+        add_title: Organisationsmitgliedschaft hinzufügen
+        add_description: Geben Sie diesem Benutzer Zugriff auf einen weiteren Kunden-Workspace, ohne seine primäre Organisation zu ändern.
+        organization_label: Organisation
+        role_label: Rolle
+        select_organization: Organisation auswählen...
+        add_button: Mitgliedschaft hinzufügen
+        add_success: Organisationsmitgliedschaft erfolgreich hinzugefügt.
+        update_success: Organisationsmitgliedschaft erfolgreich aktualisiert.
+        role_change_success: Rolle in %{organization} zu %{role} geändert.
+        update_failed: Organisationsmitgliedschaft konnte nicht aktualisiert werden.
+        remove_success: Organisationsmitgliedschaft erfolgreich entfernt.
+        already_assigned: Dieser Benutzer hat bereits eine aktive Mitgliedschaft für diese Organisation.
+        organization_not_found: Organisation konnte nicht gefunden werden.
+        amplifa_admin_forbidden: Amplifa-Admins können keinen Kundenorganisationen zugewiesen werden.
+        last_membership_required: Fügen Sie eine weitere aktive Mitgliedschaft hinzu, bevor Sie die primäre Mitgliedschaft dieses Benutzers entfernen.
+        no_assignable_organizations: Alle aktiven Organisationen sind bereits zugewiesen.
+        available_count: "%{count} Organisationen verfügbar"
+        edit_role_label: "Rolle für %{organization} ändern"
+        remove_button: Entfernen
+        remove_confirm: "Mitgliedschaft für %{organization} entfernen?"
+      edit:
+        title: Benutzer bearbeiten
+        subtitle: Benutzerinformationen und Berechtigungen aktualisieren
+        email_hint: E-Mail-Adressen können nicht geändert werden
+        email_readonly: E-Mail-Adressen können nicht geändert werden
+        organization_placeholder: Organisation auswählen...
+        organization_na_message: Amplifa-Admins gehören zu keiner Organisation
+        select_organization: Organisation auswählen...
+        organization_na: N/V - Amplifa-Admins
+        organization_hint: Amplifa-Admins gehören zu keiner Organisation
+        security_section: Sicherheit
+        two_factor_authentication_required_label: E-Mail-Zwei-Faktor-Authentifizierung erforderlich
+        two_factor_authentication_required_help: Wenn aktiviert, muss dieser Amplifa-Admin jede Anmeldung per E-Mail bestätigen.
+        amplifa_admin_promotion_confirm: Amplifa Admin für diesen Benutzer aktivieren? Dies gibt ihm Zugriff auf ALLE Konten.
+        amplifa_admin_global_edit_prefix: Um diesen Benutzer zum Amplifa-Admin zu ernennen, verwenden Sie die
+        amplifa_admin_global_edit_link: globale Benutzerverwaltung
+        amplifa_admin_global_edit_suffix: .
+        role_change_warning_title: Warnung bei Rollenänderung
+        role_change_warning_message: Sie ändern die Rolle dieses Benutzers von %{old_role}
+          in %{new_role}. Dies wirkt sich auf ihre Zugriffsberechtigungen aus.
+      password:
+        title: Passwort zurücksetzen
+        send_email_title: Senden Sie eine E-Mail zum Zurücksetzen des Passworts
+        send_email_description: Senden Sie dem Benutzer einen sicheren Link, um sein
+          eigenes Passwort zurückzusetzen.
+        send_email_button: Senden Sie eine Reset-E-Mail
+        set_direct_title: Passwort direkt festlegen
+        set_direct_description: Legen Sie für diesen Benutzer direkt als Administrator
+          ein neues Passwort fest.
+        set_direct_button: Passwort festlegen
+        new_password_label: Neues Passwort
+        new_password_confirmation_label: Bestätigen Sie das neue Passwort
+        reset_email_sent: E-Mail zum Zurücksetzen des Passworts erfolgreich gesendet
+        reset_email_failed: E-Mail zum Zurücksetzen des Passworts konnte nicht gesendet
+          werden
+        set_success: Passwort erfolgreich aktualisiert
+        new_password_required: Neues Passwort ist erforderlich
+        new_password_too_short: Das neue Passwort muss mindestens 8 Zeichen lang sein
+        confirmation_required: Eine Passwortbestätigung ist erforderlich
+        confirmation_mismatch: Die Passwortbestätigung stimmt nicht überein
+    accounts:
+      title: Konten verwalten
+      subtitle: Alle Benutzerkonten im System anzeigen und verwalten
+      empty: Noch keine Konten
+      impersonate_confirm: Sind Sie sicher, dass Sie sich als dieser Benutzer ausgeben
+        möchten?
+      edit:
+        title: Konto bearbeiten
+        subtitle: Kontodetails und Berechtigungen aktualisieren
+        organization_placeholder: Organisation auswählen
+        deactivate_button: Konto deaktivieren
+        deactivate_confirm: Sind Sie sicher, dass Sie dieses Konto deaktivieren möchten?
+    activities:
+      title: Aktivitätsprotokoll
+      subtitle: Alle administrativen Aktionen und Audit-Trail anzeigen
+      empty: Keine Aktivitäten für die ausgewählten Filter gefunden
+      filters:
+        title: Filter
+        organization_all: Alle Organisationen
+        action_label: Aktionstyp
+        action_all: Alle Aktionen
+        start_date_label: Startdatum
+        end_date_label: Enddatum
+      table:
+        timestamp: Zeitstempel
+        admin: Admin
+        action: Aktion
+        details: Details
+        ip_address: IP-Adresse
+      show_details: "▶ Details anzeigen"
+      hide_details: "▼ Details verbergen"
+      no_details: Keine Details
+      unknown_admin: Unbekannter Admin
+      pagination:
+        showing: Es werden %{start} bis %{end} von %{total} Aktivitäten angezeigt
+      show:
+        title: Aktivitätsdetails
+        subtitle: Detaillierte Informationen zu dieser administrativen Aktion
+        breadcrumb_dashboard: Dashboard
+        breadcrumb_log: Aktivitätsprotokoll
+        breadcrumb_activity: 'Aktivität #%{id}'
+        overview: Übersicht
+        activity_id: Aktivitäts-ID
+        timestamp: Zeitstempel
+        action_type: Aktionstyp
+        ip_address: IP-Adresse
+        performed_by: Durchgeführt von
+        related_organization: Zugehörige Organisation
+        organization_name: Organisationsname
+        website: Website
+        action_details: Aktionsdetails
+        no_details: Keine zusätzlichen Details für diese Aktivität erfasst
+        technical_info: Technische Informationen
+        user_agent: User Agent
+    invitations:
+      title: Einladungen
+      subtitle: Kundeneinladungen verwalten und deren Status verfolgen
+      create_button: Neuen Benutzer einladen
+      empty_with_filter: Keine Einladungen gefunden. Versuchen Sie, Ihre Filter anzupassen.
+      empty: Erstellen Sie Ihre erste Einladung, um zu beginnen.
+      filters:
+        title: Filter
+        status_all: Alle Status
+        organization_all: Alle Organisationen
+      table:
+        expires: Läuft ab
+        invited_by: Eingeladen von
+      actions:
+        resend: Erneut senden
+        cancel: Abbrechen
+        delete: Löschen
+      confirm:
+        resend: Einladung erneut an %{email} senden?
+        cancel: Einladung für %{email} abbrechen? Dies kann nicht rückgängig gemacht
+          werden.
+        delete: Einladung für %{email} endgültig löschen? Dies kann nicht rückgängig
+          gemacht werden.
+      pagination:
+        showing: Seite %{current} von %{total} wird angezeigt (%{count} Einladungen
+          insgesamt)
+      new:
+        title: Neuen Benutzer einladen
+        subtitle: Eine Einladungs-E-Mail senden, um einen neuen Benutzer zu einer
+          Organisation hinzuzufügen
+        organization_description: Die Organisation, zu der dieser Benutzer gehören
+          wird
+        organization_placeholder: Organisation auswählen...
+        email_description: Die Einladung wird an diese E-Mail-Adresse gesendet
+        email_placeholder: benutzer@beispiel.de
+        first_name_placeholder: Max
+        last_name_placeholder: Mustermann
+        info_title: Über Einladungen
+        info_messages:
+        - Eine Einladungs-E-Mail wird an die angegebene E-Mail-Adresse gesendet
+        - Der Empfänger kann beim Akzeptieren sein eigenes Passwort festlegen
+        - Einladungslinks laufen nach 7 Tagen ab
+        - Sie können ausstehende Einladungen aus der Einladungsliste erneut senden
+          oder abbrechen
+        submit: Einladung senden
+        submitting: Wird gesendet...
+    playbooks:
+      title: Playbooks
+      subtitle: KI-generierte Playbooks für alle Organisationen verwalten
+      generate_button: Playbook generieren
+      create_button: Neues Playbook
+      generate_title: Neues Playbook generieren
+      generate_subtitle: Nutzen Sie KI, um ein Playbook von einer Website zu generieren
+      back_to_list: Zurück zu Playbooks
+      empty: Noch keine Playbooks. Generieren Sie Ihr erstes Playbook mit KI.
+      ai_generated: KI-generiert
+      approved: Playbook wurde genehmigt
+      confirm_approve: Dieses Playbook genehmigen? Es wird für Kampagnen verfügbar
+        sein.
+      confirm_move_to_draft: Dieses Playbook zurück auf Entwurf setzen?
+      confirm_archive: Dieses Playbook archivieren? Es wird für Kunden nicht mehr
+        sichtbar sein.
+      confirm_delete: Dieses Playbook löschen? Diese Aktion kann nicht rückgängig
+        gemacht werden.
+      delete_modal:
+        title: Dieses Playbook löschen?
+        description: Diese Aktion kann nicht rückgängig gemacht werden.
+        affected_agents_title: Betroffene Agenten
+        affected_agents_description: Diese Agenten verlieren diese Playbook-Zuweisung,
+          wenn Sie sie löschen.
+        no_affected_agents: Diesem Playbook sind derzeit keine Agenten zugewiesen.
+        pause_notice: Alle betroffenen Agenten, die derzeit ausgeführt werden, werden
+          vor dem Löschen angehalten.
+        will_pause: Dieser laufende Agent wird angehalten.
+        confirm_button: Playbook löschen
+      no_value_proposition: Kein Wertversprechen
+      no_personae: Noch keine Personas hinzugefügt
+      no_use_cases: Noch keine Anwendungsfälle hinzugefügt
+      no_references: Noch keine Referenzen hinzugefügt
+      no_proof_points: Noch keine Beweispunkte hinzugefügt
+      no_comments: Noch keine Kommentare
+      statuses:
+        draft: Entwurf
+        changes_requested: Änderungen angefordert
+        approved: Genehmigt
+        archived: Archiviert
+      filters:
+        organization: Organisation
+        status: Status
+        language: Sprache
+        all_languages: Alle Sprachen
+      table:
+        product: Produkt
+        agents: Agenten
+        language: Sprache
+        content: Inhalt
+        personae: Personas
+        use_cases: Anwendungsfälle
+        references: Referenzen
+        view: Anzeigen
+        edit: Bearbeiten
+      form:
+        organization: Organisation
+        select_organization: Organisation auswählen...
+        product_name: Produktname
+        product_name_help: Der Name des Produkts oder der Dienstleistung, für das
+          ein Playbook generiert werden soll
+        website_url: Website-URL
+        website_url_help: Die zu analysierende Unternehmenswebsite (muss http:// oder
+          https:// enthalten)
+        generate_button: Playbook generieren
+        generating: Generierung läuft...
+        generation_info: Die KI wird die Website durchsuchen, den Inhalt analysieren
+          und ein strategisches Playbook mit Personas und Anwendungsfällen generieren.
+          Dies dauert in der Regel 15-30 Sekunden.
+      generation:
+        in_progress: Playbook wird generiert...
+        please_wait: Dies kann 15-30 Sekunden dauern. Bitte schließen Sie diese Seite
+          nicht.
+        phases:
+          started: Wird gestartet...
+          scraping: Website durchsuchen
+          generating: KI-Generierung
+          completed: Abgeschlossen
+          failed: Fehlgeschlagen
+        failed_title: Fehler beim Generieren von %{product}
+        steps:
+          scraping: Website durchsuchen
+          scraping_desc: Inhalte und Struktur extrahieren
+          analyzing: Geschäftsmodell analysieren
+          analyzing_desc: Produkte und Dienstleistungen verstehen
+          personas: Ziel-Personas identifizieren
+          personas_desc: Ideale Kundenprofile erstellen
+          use_cases: Anwendungsfälle generieren
+          use_cases_desc: Strategisches Messaging erstellen
+          finalizing: Playbook finalisieren
+          finalizing_desc: Erkenntnisse und Empfehlungen zusammenstellen
+      sections:
+        value_proposition: Wertversprechen
+        personae: Ziel-Personas
+        use_cases: Anwendungsfälle
+        references: Referenzkunden
+        proof_points: Beweispunkte
+        comments: Diskussion
+        metadata: Details
+        actions: Aktionen
+      persona:
+        pain_points: Schmerzpunkte
+      metadata:
+        status: Status
+        language: Sprache
+        created: Erstellt
+        updated: Zuletzt aktualisiert
+        approved: Genehmigt
+        by: von
+        generation: Generierung
+      actions:
+        approve: Genehmigen
+        edit: Playbook bearbeiten
+        move_to_draft: Auf Entwurf setzen
+        archive: Archivieren
+        delete: Löschen
+      ai_edit:
+        button: KI-Edit
+        title: Playbook mit KI bearbeiten
+        playbook_label: Playbook
+        instruction_label: Anweisungen
+        instruction_placeholder: z. B. Fokus stärker auf Einwandbehandlung
+        helper: Beschreiben Sie, wie das Playbook verfeinert werden soll.
+        examples_title: Beispiele
+        example_one: Fokus stärker auf Enterprise-Sicherheitsbedenken
+        example_two: Mehr aus der Sicht eines Vertriebsleiters denken
+        example_three: Einwandbehandlung und Differenzierung hervorheben
+        submit: KI-Edit anwenden
+        submitting: Wird angewendet...
+        success: Playbook mit KI-Edits aktualisiert
+        failed: KI-Edit fehlgeschlagen. Bitte erneut versuchen.
+        missing_instruction: Bitte Anweisungen für den KI-Edit angeben.
+        applied: Angewendet
+        apply_all: KI Alle anwenden
+        apply_comment: KI Anwenden
+        scope_label: Abschnitt
+        scopes:
+          entire_playbook: Alle Abschnitte
+          personae: Personas
+          product_description: Produktbeschreibung
+          proof_points: Beweispunkte
+          references: Referenzkunden
+          use_cases: Anwendungsfälle
+          value_proposition: Wertversprechen
+      bulk_approve:
+        button: Alle genehmigen (%{count})
+        confirm: Alle %{count} ausstehenden Playbooks genehmigen? Sie stehen für den
+          Einsatz in Kampagnen zur Verfügung.
+        success:
+          one: "%{count} Playbook wurde genehmigt"
+          other: "%{count} Playbooks wurden genehmigt"
+        partial_success: "%{approved} Playbooks genehmigt, %{failed} fehlgeschlagen"
+        none_to_approve: Keine Playbooks zu genehmigen
+      create_agent:
+        button: Agent erstellen
+        success: Agent erfolgreich aus Playbook erstellt
+        failed: 'Agent konnte nicht erstellt werden: %{errors}'
+        not_approved: Agenten können nur aus Entwürfen oder genehmigten Playbooks
+          erstellt werden
+        already_has_agent: Dieses Playbook hat bereits einen Agenten
+        invalid_llm_model: Das ausgewählte Modell zur Nachrichtengenerierung ist nicht
+          verfügbar
+        llm_model_description: Das KI-Modell, das dieser Agent bei der Generierung
+          von Nachrichten verwendet.
+        llm_model_label: Modell zur Nachrichtengenerierung
+        modal_title: Agent erstellen
+        sequence_source_label: Sequenzquelle
+        master_sequence_label: Master-Sequenz
+        local_sequence_label: Lokale Sequenz (leer)
+        master_sequence_dropdown_label: Master-Sequenz
+        master_sequence_placeholder: Master-Sequenz auswählen...
+        master_sequence_description: Der neue Agent verwendet die ausgewählte Master-Sequenz.
+        local_sequence_description: Der neue Agent startet mit einer leeren lokalen Sequenz.
+        global_sequence_not_found: Die ausgewählte Master-Sequenz wurde nicht gefunden
+      edit:
+        title: Playbook bearbeiten
+        tabs:
+          overview: Übersicht
+          personae: Zielgruppen
+          use_cases: Anwendungsfälle
+          references: Referenzen
+          proof_points: Erfolgsnachweise
+        product_name: Produktname
+        product_description: Produktbeschreibung
+        language: Sprache
+        value_proposition_placeholder: Beschreiben Sie den Kernwert, den dieses Produkt
+          den Kunden bietet...
+        ai_notes_label: KI-Generierungshinweise
+        personae_description: Definieren Sie die Zielgruppen für dieses Playbook
+        add_persona: Persona hinzufügen
+        add_first_persona: Fügen Sie Ihre erste Zielgruppe hinzu
+        new_persona: Neue Persona
+        no_title: Kein Titel
+        persona_name: Persona-Name
+        persona_title: Berufsbezeichnung
+        add_pain_point: Schmerzpunkt hinzufügen
+        pain_point_placeholder: Geben Sie einen Schmerzpunkt ein...
+        use_cases_description: Definieren Sie die wichtigsten Anwendungsfälle für
+          dieses Produkt
+        add_use_case: Anwendungsfall hinzufügen
+        add_first_use_case: Fügen Sie Ihren ersten Anwendungsfall hinzu
+        use_case_title: Titel
+        use_case_description: Beschreibung
+        use_case_description_placeholder: Beschreiben Sie diesen Anwendungsfall und
+          seinen Wert...
+        references_description: Fügen Sie Referenzkunden hinzu, die dieses Produkt
+          erfolgreich eingesetzt haben
+        add_reference: Referenz hinzufügen
+        add_first_reference: Fügen Sie Ihren ersten Referenzkunden hinzu
+        reference_name: Kundenname
+        reference_description: Beschreibung
+        reference_description_placeholder: Beschreiben Sie die Erfolgsgeschichte oder
+          den Anwendungsfall...
+        proof_points_description: Fügen Sie Erfolgsnachweise hinzu, die den Produktwert
+          belegen
+        add_proof_point: Erfolgsnachweis hinzufügen
+        add_first_proof_point: Fügen Sie Ihren ersten Erfolgsnachweis hinzu
+        proof_point_claim: Behauptung
+        proof_point_description: Beleg
+        proof_point_description_placeholder: Geben Sie Belege oder Kontext für diese
+          Behauptung an...
+        file_attachment: Dateianhang
+        upload_file: Datei hochladen
+        uploading: Wird hochgeladen...
+        remove_file: Datei entfernen
+        allowed_files: PDF, DOC, DOCX, PNG, JPG, GIF (max 10MB)
+        unsaved_changes: Sie haben ungespeicherte Änderungen
+      comment_types:
+        general: Allgemein
+        request_changes: Änderungsanfrage
+        approval: Genehmigung
+      version_navigation:
+        confirm_redo: Die nächste Playbook-Versionsänderung wiederholen?
+        confirm_undo: Die letzte Playbook-Versionsänderung rückgängig machen?
+        redo: Wiederholen
+        redo_missing: Keine Playbook-Version zum Wiederholen verfügbar.
+        redo_success: Playbook-Version wiederholt
+        undo: Rückgängig
+        undo_missing: Keine Playbook-Version zum Rückgängigmachen verfügbar.
+        undo_success: Playbook-Version rückgängig gemacht
+    lead_imports:
+      title: Lead-Importe
+      subtitle: CSV-Lead-Importe für alle Organisationen verwalten
+      new_import: Neuer Import
+      created: Import erfolgreich gestartet. Verarbeitung im Hintergrund.
+      assign_to_agent:
+        success: "%{count} importierte Leads wurden %{agent_name} zugewiesen."
+        invalid_status: Ein Agent kann erst nach Abschluss des Imports zugewiesen
+          werden.
+        already_assigned: Diesem Import ist bereits ein Agent zugewiesen.
+        invalid_agent: Bitte wählen Sie einen gültigen Agenten dieser Organisation.
+        failed: Dieser Import konnte keinem Agenten zugewiesen werden. Bitte versuchen
+          Sie es erneut.
+      empty: Noch keine Importe. Laden Sie Ihre erste CSV-Datei hoch.
+      remove_from_agent:
+        success: "%{count} Lead-Zuweisungen von %{agent_name} entfernt und die Zuweisung
+          dieses Imports aufgehoben."
+        has_activity: Diese Lead-Liste hat bereits zugehörige Nachrichten und Meetings und kann daher nicht von diesem Agenten entfernt werden.
+        not_completed: Leads können erst nach Abschluss des Imports vom Agenten entfernt
+          werden.
+        no_agent_assigned: Diesem Import ist derzeit kein Agent zugewiesen.
+      statuses:
+        pending: Ausstehend
+        processing: Wird verarbeitet
+        completed: Abgeschlossen
+        failed: Fehlgeschlagen
+      filters:
+        organization: Organisation
+        status: Status
+      table:
+        filename: Datei
+        agent: Agent
+        progress: Fortschritt
+        updated: Aktualisiert
+        skipped: Übersprungen
+        blacklisted: Auf der Sperrliste
+        errors: Fehler
+        view: Anzeigen
+      new:
+        title: Leads importieren
+        subtitle: CSV-Datei hochladen und Spalten zu Lead-Feldern zuordnen
+        organization_placeholder: Organisation auswählen...
+        agent_label: Agent (optional)
+        agent_placeholder: Agent auswählen...
+        agent_help: Falls ausgewählt, werden Leads automatisch diesem Agenten zugewiesen
+        csv_file_label: CSV-Datei *
+        csv_file_help: Laden Sie eine CSV-Datei mit Lead-Daten hoch. Maximal 50MB.
+        upload_button: Hochladen & Vorschau
+        uploading: Wird hochgeladen...
+        download_template: Vorlage herunterladen
+        download_template_help: E-Mail ist die einzige erforderliche Spalte. Alle
+          anderen Felder sind optional. full_name ist nicht erforderlich, wenn first_name
+          und last_name angegeben werden.
+      preview:
+        title: Spalten zuordnen
+        subtitle: CSV-Spalten zu Lead-Feldern zuordnen
+        csv_headers: CSV-Überschriften
+        lead_fields: Lead-Felder
+        unmapped_columns: Nicht zugeordnete Spalten
+        unmapped_help: Nicht zugeordnete Spalten werden in custom_fields gespeichert
+        preview_rows: Vorschau (erste 5 Zeilen)
+        total_rows: "%{count} Zeilen insgesamt"
+        email_required: E-Mail-Spalten-Zuordnung ist erforderlich
+        start_import: Import starten
+        back: Zurück
+      show:
+        title: Import-Details
+        back_to_list: Zurück zu Importen
+        filename: Dateiname
+        file_size: Dateigröße
+        status: Status
+        progress: Fortschritt
+        imported_by: Importiert von
+        organization: Organisation
+        agent: Agent
+        none_assigned: Keiner zugewiesen
+        started: Gestartet
+        completed: Abgeschlossen
+        duration: Dauer
+        column_mapping: Spalten-Zuordnung
+        results: Import-Ergebnisse
+        total_rows: Gesamte Zeilen
+        processed: Verarbeitet
+        created: Erstellt
+        updated: Aktualisiert
+        skipped: Übersprungen
+        blacklisted: Auf der Sperrliste
+        errors: Fehler
+        error_details: Fehlerdetails
+        row: Zeile
+        no_errors: Keine Fehler
+        refresh: Aktualisieren
+        remove_from_agent:
+          title: Leads vom Agenten entfernen
+          warning: Dadurch werden importierte Leads vom aktuell zugewiesenen Agenten
+            entfernt und zugehörige Sequenz-Fortschritte für diese Leads gestoppt.
+            Person-Einträge bleiben unverändert.
+          button: Leads vom Agenten entfernen
+          confirm: Möchten Sie diese Leads wirklich vom zugewiesenen Agenten entfernen?
+            Diese Aktion kann nicht rückgängig gemacht werden.
+        assign_to_agent: Agent zuweisen
+        assign_to_agent_help: Wählen Sie einen Agenten aus und weisen Sie alle erfolgreich
+          importierten Leads aus diesem Import zu.
+        no_agents_available: Für diese Organisation sind keine Agenten verfügbar.
+      download:
+        button: CSV herunterladen
+        not_available: Die Quell-CSV-Datei steht nicht mehr zum Download zur Verfügung.
+    agents:
+      title: Agenten
+      subtitle: Alle Kampagnen und Agenten über Organisationen verwalten
+      global_title: Alle Agenten
+      global_subtitle: Zeigen Sie alle Agenten in allen Organisationen an
+      new_agent: Agent erstellen
+      created: Agent erfolgreich erstellt
+      updated: Agent erfolgreich aktualisiert
+      deleted: Agent erfolgreich gelöscht
+      delete_failed: Agent konnte nicht gelöscht werden
+      empty: Noch keine Agenten. Erstellen Sie Ihren ersten Agenten.
+      confirm_delete: Diesen Agenten entfernen? Konversationen und Antwortverlauf
+        bleiben verfügbar.
+      sequence_mailbox:
+        title: Sequenz-Postfach
+        label: Sequenznachrichten aus demselben Postfach senden
+        description: Wenn deaktiviert, kann jedes geeignete zugewiesene Postfach fällige Sequenznachrichten senden, während die ursprüngliche Zuweisung unverändert bleibt.
+        table_header: Sequenz-Postfach
+        same_mailbox_badge: Gleiches Postfach
+        any_mailbox_badge: Beliebiges Postfach
+      samples:
+        generation_started: Die Generierung von Beispielnachrichten wurde gestartet.
+          Du wirst benachrichtigt, wenn sie abgeschlossen ist.
+        cancel_success: Die Beispielgenerierung wurde abgebrochen. Vorhandene Beispiele
+          wurden gelöscht und die Generierung kann neu gestartet werden.
+        not_ready_for_generation: Der Agent ist nicht bereit für die Generierung von
+          Beispielen. Stelle sicher, dass Leads und Sequenzschritte konfiguriert sind.
+        reset_success: Beispielnachrichten wurden zurückgesetzt. Du kannst sie jetzt
+          erneut generieren.
+        approve_success: Beispielnachrichten erfolgreich genehmigt.
+        approve_not_ready: Beispiele können nicht genehmigt werden. Stelle sicher,
+          dass sie generiert wurden und noch nicht genehmigt sind.
+        progress:
+          default_target: diesem Lead
+          default_step: Nachricht
+          in_progress: Beispielnachrichten werden generiert
+          step: Generieren von %{step}
+          detail: "%{generated} von %{total} Nachrichten"
+          errors: "%{count} Fehler"
+          generating_button: Wird generiert...
+          start_failed: Die Beispielgenerierung konnte nicht gestartet werden. Bitte
+            versuche es erneut.
+          phases:
+            enriching_lead: Lead-Daten für %{target} anreichern
+            linkedin_scrape: Durchsuchen von LinkedIn nach %{target}
+            linkedin_profile_photo: LinkedIn-Foto für %{target} wird heruntergeladen
+            linkedin_posts_scrape: Scraping von LinkedIn-Beiträgen für %{target}
+            disc_inference: Ableiten des DISC-Profils für %{target}
+            company_website_scrape: Scraping-Unternehmenswebsite für %{target}
+            sync_to_lead: Synchronisierungsanreicherung für %{target}
+            org_description: Generieren einer Organisationsbeschreibung für %{target}
+            generating_subject: Betreff wird für %{target} generiert
+            generating_message: Generieren von %{step} für %{target}
+      statuses:
+        draft: Entwurf
+        ready: Bereit
+        active: Aktiv
+        paused: Pausiert
+        completed: Abgeschlossen
+      filters:
+        organization: Organisation
+        status: Status
+        search_placeholder: Suchagenten oder Organisationen...
+      table:
+        playbook: Playbook
+        leads: Leads
+        contacted: Kontaktiert
+        replied: Geantwortet
+        meetings: Termine
+        reply_rate: Antwortrate
+        meeting_rate: Terminrate
+        view: Anzeigen
+        edit: Bearbeiten
+      new:
+        title: Agent erstellen
+        subtitle: Neuen Kampagnenagenten erstellen
+        organization_placeholder: Organisation auswählen...
+        organization_description: Die Organisation, zu der dieser Agent gehört
+        name_label: Name
+        name_placeholder: Agentennamen eingeben...
+        name_description: Ein beschreibender Name für diesen Kampagnenagenten
+        description_label: Beschreibung
+        description_placeholder: Zweck dieses Agenten beschreiben...
+        description_description: Optionale Details zu den Zielen und der Zielgruppe
+          dieses Agenten
+        playbook_label: Playbook
+        playbook_placeholder: Playbook auswählen...
+        playbook_description: Das Messaging-Playbook, das dieser Agent verwenden wird
+        playbook_help: Nur genehmigte Playbooks sind zur Auswahl verfügbar
+        status_description: Der aktuelle Workflow-Status dieses Agenten
+        locale_label: Sprache
+        locale_placeholder: Wählen Sie eine Sprache aus...
+        locale_description: Sprache für generierte Nachrichten. Standard ist die Sprache
+          der Organisation.
+        default_timezone_label: Standardzeitzone
+        default_timezone_description: Wird verwendet, wenn die Zeitzone des Leads
+          anhand seines Standorts nicht aufgelöst werden kann
+        llm_model_label: KI-Modell
+        llm_model_description: Das KI-Modell für die Nachrichtengenerierung. Verschiedene
+          Modelle haben unterschiedliche Fähigkeiten und Kosten.
+        info_title: Über Playbooks
+        info_playbook_message: Nur genehmigte Playbooks der ausgewählten Organisation
+          sind verfügbar. Erstellen und genehmigen Sie Playbooks, bevor Sie sie Agenten
+          zuweisen.
+        submit: Agent erstellen
+        submitting: Wird erstellt...
+      show:
+        title: Agentendetails
+        back_to_list: Zurück zu Agenten
+        back_to_org_agents: Zurück zu %{org} Agenten
+        description: Beschreibung
+        no_description: Keine Beschreibung vorhanden
+        playbook: Playbook
+        no_playbook: Kein Playbook zugewiesen
+        default_timezone: Standardzeitzone
+        locale: Gebietsschema
+        created_by: Erstellt von
+        created_at: Erstellt
+        updated_at: Zuletzt aktualisiert
+        can_launch: Startbereit
+        cannot_launch: Nicht bereit
+        buying_signals: Kaufsignale
+        buying_signals_enabled: Aktiviert
+        buying_signals_disabled: Deaktiviert
+        buying_signals_lookback: Kaufsignale-Rückblick
+        buying_signals_lookback_days: "%{days} Tage"
+        buying_signals_prompt_usage_tooltip: Anzahl der Sequenzschritte, die aktuell Kaufsignale im Prompt verwenden
+        import_leads: Leads importieren
+        assign_mailboxes: Postfächer zuweisen
+        view_sent_messages: Gesendete Nachrichten
+        stats:
+          title: Kampagnenstatistiken
+          sent_emails: Gesendete E-Mails
+          bounced: Zurückgewiesen
+          replies: Antworten
+          meetings: Termine
+          total_leads: Gesamt-Leads
+          leads_in_sequence: Leads in Sequenz
+          contacted: Kontaktiert
+        leads:
+          title: Zugewiesene Leads
+          empty: Diesem Agenten sind noch keine Leads zugewiesen
+        sequence:
+          title: Sequenz
+          active_steps: aktive Schritte
+          edit_sequence: Sequenz bearbeiten
+          no_steps: Noch keine Sequenzschritte konfiguriert. Fügen Sie Schritte hinzu,
+            um Ihre Outreach-Sequenz zu definieren.
+          add_first_step: Ersten Schritt hinzufügen
+          immediate: Sofort
+          delay_days: Nach %{days} Tagen
+          inactive: inaktiv
+          event_types:
+            email: E-Mail
+            linkedin_message: LinkedIn-Nachricht
+            linkedin_visit: LinkedIn-Profilbesuch
+            linkedin_connect: LinkedIn-Verbindung
+            manual_task: Manuelle Aufgabe
+        samples:
+          title: Beispielnachrichten
+          status:
+            not_generated: Nicht generiert
+            pending_approval: Ausstehende Genehmigung
+            approved: Genehmigt
+          generated_at: Erstellt am %{date}
+          approved_by: Genehmigt von %{name} am %{date}
+          sample_count_info: Für die ersten %{count} Leads werden Stichproben generiert
+          sample_count_label: Anzahl der Beispiel-Leads
+          need_email_steps: Fügen Sie mindestens einen E-Mail-Schritt zur Sequenz
+            hinzu, bevor Sie Beispiele generieren
+          need_leads: Importieren Sie Leads, bevor Sie Beispiele generieren
+          generate_button: Beispiele generieren
+          view_samples: Beispiele anzeigen
+          approve_button: Proben genehmigen
+          cancel_button: Generierung abbrechen
+          reset_button: Zurücksetzen & neu generieren
+          confirm_generate: Dadurch werden Beispielnachrichten für die ersten %{count}
+            Leads generiert. Weitermachen?
+          confirm_reset: Dies löscht alle Beispielnachrichten und setzt die Genehmigung
+            zurück. Fortfahren?
+          confirm_cancel: Dies stoppt die Beispielgenerierung, löscht generierte Beispiele
+            und setzt den Fortschritt zurück. Fortfahren?
+          confirm_approve: Diese Beispielnachrichten genehmigen? Dadurch kann die
+            Kampagne gestartet werden.
+        mailboxes:
+          title: Zugewiesene Postfächer
+          empty: Diesem Agenten sind keine Postfächer zugewiesen
+          assign: Postfächer zuweisen
+          warmup_complete: Bereit
+          warming_up: Aufwärmen
+          days_remaining: Noch %{days} Tage übrig
+          capacity: "%{remaining}/%{total} Kapazität"
+          capacity_label: Kapazität
+          provider_google: Google
+          provider_microsoft: Microsoft
+          select_mailboxes: Wählen Sie die Postfächer aus, die Sie zuweisen möchten
+          save_assignment: Aufgabe speichern
+          no_available: Für diese Organisation sind keine Postfächer verfügbar
+          select_all: Wählen Sie „Alle“ aus
+          deselect_all: Alle abwählen
+          search_domains: Domains durchsuchen...
+          no_domains_match: Keine Domains entsprechen Ihrer Suche
+        senders:
+          title: Absender
+          empty: Keine Absender in dieser Organisation
+          manage: Verwalten
+          mailbox: Briefkasten
+          mailboxes: Postfächer
+        buying_signals_modal:
+          missing_highlights_title: Nur fehlende Highlights + Relevanz generieren
+          missing_highlights_description: Überspringt die vollständige Kaufsignal-Generierung und aktualisiert vorhandene Zusammenfassungen, denen Highlights oder eine Bewertung fehlen.
+        campaign_status:
+          title: Kampagnenstatus
+          not_launched: Nicht gestartet
+          launched: Gestartet
+          launched_at: Gestartet am %{date}
+          paused: Angehalten
+          paused_at: Pausiert am %{date}
+          active: Aktiv
+          launch_button: Kampagne starten
+          pause_button: Kampagne pausieren
+          resume_button: Kampagne fortsetzen
+          confirm_launch: Dadurch wird mit dem Versenden von E-Mails an Leads begonnen.
+            Weitermachen?
+          confirm_pause: Dadurch werden alle E-Mail-Versendungen angehalten. Geplante
+            Zeiten bleiben erhalten. Weitermachen?
+          confirm_resume: Dadurch wird der E-Mail-Versand fortgesetzt. Weitermachen?
+          leads_eligible_now: Leads jetzt berechtigt
+          sent_today: Heute gesendet
+          pending_now: Jetzt ausstehend
+          in_sequence: Der Reihe nach
+          not_yet_contacted: Noch nicht kontaktiert
+          available_capacity: Verfügbare Kapazität
+          launch_requirements: Startanforderungen
+          requirement_leads: Leads importiert
+          requirement_mailboxes: Postfächer zugewiesen
+          requirement_mailboxes_have_senders: Den Postfächern sind Absender zugewiesen
+          requirement_samples: Beispielnachrichten genehmigt
+          requirement_playbook: Anerkanntes Spielbuch
+          requirement_senders: Erstellte Absender
+      launch:
+        not_ready: Der Agent ist nicht startbereit. Stellen Sie sicher, dass Leads,
+          Postfächer und genehmigte Proben konfiguriert sind.
+        already_launched: Diese Kampagne wurde bereits gestartet.
+        success: Kampagne erfolgreich gestartet! Der Versand der E-Mails beginnt gemäß
+          dem Zeitplan.
+      pause:
+        cannot_pause: Diese Kampagne kann nicht pausiert werden. Es muss gestartet
+          und aktiv sein.
+        success: Kampagne pausiert. Alle geplanten Versendungen wurden zurückgehalten.
+        button: Kampagne pausieren
+        confirm: Dadurch werden alle E-Mail-Versendungen angehalten. Geplante Zeiten
+          bleiben erhalten. Weitermachen?
+      resume:
+        cannot_resume: Diese Kampagne kann nicht fortgesetzt werden. Es muss zuerst
+          pausiert werden.
+        success: Die Kampagne wurde fortgesetzt. Geplante Versendungen werden fortgesetzt.
+        button: Kampagne fortsetzen
+        confirm: Dadurch wird der E-Mail-Versand fortgesetzt. Weitermachen?
+      restart_leads:
+        button: Leads neu starten
+        confirm: Alle Leads ohne Antwort und ohne Blacklist-Eintrag für %{name} vom Anfang der Sequenz neu starten?
+        started: Der Neustart der Leads wurde gestartet. Bei großen Agenten kann dies einige Minuten dauern.
+        success:
+          one: 1 Lead wurde vom Anfang der Sequenz neu gestartet.
+          other: "%{count} Leads wurden vom Anfang der Sequenz neu gestartet."
+      sent_messages:
+        title: Gesendete Nachrichten
+        back_to_agent: Zurück zum Agenten
+        view_overview: Übersicht anzeigen
+        filter_status: Status
+        filter_mailbox: Postfach
+        all_statuses: Alle Status
+        all_mailboxes: Alle Postfächer
+        search_placeholder: Suche nach Empfänger oder Betreff...
+        messages_count: Nachrichten
+        table_title: Nachrichtenverlauf
+        empty: Es wurden noch keine Nachrichten gesendet. Starten Sie die Kampagne,
+          um mit dem Senden zu beginnen.
+        column_recipient: Empfänger
+        column_mailbox: Briefkasten
+        column_subject: Thema
+        column_step: Schritt
+        column_sent_at: Gesendet
+        column_status: Status
+        view_message: Nachrichtendetails anzeigen
+        preview_title: Gesendete Nachricht
+        preview_subject: Thema
+        preview_to: Zu
+        preview_from: Aus
+        preview_sent_at: Gesendet
+        preview_step: Sequenzschritt
+        preview_replied_at: Antwortete
+        preview_bounced_at: Abgeprallt
+        preview_message: Nachricht
+        status:
+          sent: Gesendet
+          bounced: Abgeprallt
+          replied: Antwortete
+        replied_at: Antwortete am %{date}
+        bounced_at: Zurückgewiesen am %{date}
+      schedule:
+        title: Zeitplan senden
+        description: Die Versandzeiten sind ungefähre Angaben. E-Mails werden gesendet,
+          wenn das Postfach aktiv ist und der Lead berechtigt wird.
+        back_to_agent: Zurück zum Agenten
+        view_overview: Übersicht anzeigen
+        filter_date: Zeigen
+        leads_scheduled: berechtigte Leads
+        today: Heute
+        tomorrow: Morgen
+        sends: berechtigte Sendungen
+        via: über
+        no_mailbox: Kein Postfach zugewiesen
+        scheduled_today: Heute berechtigt
+        pending_now: Jetzt ausstehend
+        sent_today: Heute gesendet
+        total_scheduled: Insgesamt förderfähig
+        not_launched: Kampagne noch nicht gestartet. Starten Sie die Kampagne, um
+          geeignete Versendungen anzuzeigen.
+        launch_campaign: Kampagne starten
+        empty: Für diesen Zeitraum sind keine Versendungen möglich.
+        empty_hint: Das System prüft kontinuierlich, ob geeignete Leads vorhanden
+          sind, wenn Postfächer aktiv sind.
+        rescheduled_count:
+          one: Neu geplant %{count}x
+          other: Neu geplant %{count}x
+        last_rescheduled_to: Verschoben auf %{time}
+        date_options:
+          today: Heute
+          tomorrow: Morgen
+          upcoming: Nächste 7 Tage
+          all: Alles geplant
+      regenerate_schedule:
+        title: Zeitplan neu generieren
+        button: Zeitplan neu generieren
+        description: Löschen Sie geplante Versendungen für das ausgewählte Datum und
+          planen Sie sie neu. Dadurch werden alle derzeit geplanten Versendungen für
+          dieses Datum entfernt und ein neuer Zeitplan basierend auf den aktuellen
+          Einstellungen erstellt.
+        date_label: Zieldatum
+        date_today: Heute
+        date_tomorrow: Morgen
+        date_custom: Benutzerdefiniertes Datum
+        confirm: Dadurch werden alle geplanten Versendungen für %{date} gelöscht und
+          ein neuer Zeitplan erstellt. Weitermachen?
+        success: Zeitplan für %{date} neu generiert. %{cleared} Versendungen gelöscht,
+          %{scheduled} neue Versendungen geplant.
+        error: 'Zeitplan konnte nicht neu generiert werden: %{errors}'
+        not_active: Der Zeitplan kann nicht neu generiert werden. Die Kampagne muss
+          gestartet und aktiv sein.
+        invalid_date: Ungültiges Datum angegeben.
+      mailboxes:
+        updated: Postfachzuweisungen erfolgreich aktualisiert.
+      leads:
+        title: Agent führt
+        back_to_agent: Zurück zum Agenten
+        view_overview: Übersicht anzeigen
+        filter_status: Status
+        all_statuses: Alle Status
+        search_placeholder: Suchen Sie nach E-Mail, Name oder Firma...
+        leads_count: führt
+        leads_found: "%{count} Leads gefunden"
+        table_title: Leads in der Kampagne
+        empty: Diesem Agenten sind noch keine Leads zugewiesen.
+        column_lead: Lead
+        column_company: Unternehmen
+        column_status: Status
+        column_progress: Fortschritt
+        column_mailbox: Briefkasten
+        column_activity: Aktivität
+        messages_sent: gesendet
+        next_send: Berechtigt ab
+        replied: Antwortete
+        meeting: Treffen
+        last_sent: Zuletzt gesendet
+        added: Hinzugefügt
+        ooo_returns: OOO kehrt zurück
+        blacklisted: Auf der Sperrliste
+        column_actions: Aktionen
+        view: Sicht
+        view_details: Zeigen Sie Lead-Details und generierte Nachrichten an
+        status:
+          not_contacted: Nicht kontaktiert
+          in_sequence: Der Reihe nach
+          paused: Angehalten
+          replied: Antwortete
+          bounced: Abgeprallt
+          completed: Vollendet
+          out_of_office: Abwesend
+          out_of_office_until: "Abwesend · zurück am %{date}"
+        meeting_actions:
+          mark: Treffen markieren
+          unmark: Markierung für Besprechung aufheben
+          confirm_unmark: Sind Sie sicher, dass Sie die Besprechungsbuchung für diesen
+            Lead entfernen möchten?
+        meeting_modal:
+          title: Treffen als gebucht markieren
+          notes_label: Besprechungsnotizen (optional)
+          notes_placeholder: Fügen Sie Notizen zum Meeting hinzu...
+          confirm: Treffen markieren
+      sample_messages:
+        title: Beispielnachrichten
+        back_to_agent: Zurück zum Agenten
+        confirm_generate: Dadurch werden Beispielnachrichten für die ersten %{count}
+          Leads generiert. Weitermachen?
+        confirm_reset: Dadurch werden alle Beispielnachrichten gelöscht und die Genehmigung
+          zurückgesetzt. Weitermachen?
+        confirm_approve: Diese Beispielnachrichten genehmigen? Dadurch kann die Kampagne
+          gestartet werden.
+        generated_at: Generiert %{date}
+        expand_all: Alles erweitern
+        collapse_all: Alles reduzieren
+        no_messages: Es wurden noch keine Beispielnachrichten generiert.
+        generate_button: Generieren Sie Proben
+        approve_button: Proben genehmigen
+        reset_button: Zurücksetzen und neu generieren
+        total_messages: "%{count} Nachrichten"
+        lead_info: Lead-Informationen
+        send_test: Test senden
+        edit: Bearbeiten
+        test_sent: Test gesendet
+        edited_badge: Bearbeitet
+        error_summary:
+          title: "%{count} Leads hatten Generierungsfehler"
+        edit_modal:
+          title: Nachricht bearbeiten
+          subject_label: Thema
+          body_label: Körper
+          save: Änderungen speichern
+      edit:
+        title: Agent bearbeiten
+        subtitle: Agenteneinstellungen und Konfiguration aktualisieren
+        name_label: Name *
+        description_label: Beschreibung
+        playbook_label: Playbook
+        locale_label: Sprache
+        locale_description: Sprache für generierte Nachrichten
+        default_timezone_label: Standardzeitzone
+        default_timezone_description: Wird verwendet, wenn die Zeitzone des Leads
+          anhand seines Standorts nicht aufgelöst werden kann
+        llm_model_label: KI-Modell
+        llm_model_description: Das KI-Modell für die Nachrichtengenerierung
+        delete_button: Agent löschen
+        delete_warning: Der Agent wird aus der Kampagnenverwaltung entfernt, während
+          Konversationen und Antwortverlauf erhalten bleiben.
+    sequence_steps:
+      title: Sequenzschritte
+      subtitle: Konfigurieren Sie die Outreach-Sequenz für diesen Agent
+      created: Sequenzschritt erfolgreich erstellt
+      updated: Sequenzschritt erfolgreich aktualisiert
+      deleted: Sequenzschritt erfolgreich gelöscht
+      delete_failed: Sequenzschritt konnte nicht gelöscht werden
+      empty: Noch keine Sequenzschritte. Fügen Sie Ihren ersten Schritt hinzu, um
+        den Outreach-Workflow zu definieren.
+      add_step: Schritt hinzufügen
+      back_to_agent: Zurück zum Agent
+      confirm_delete: Möchten Sie diesen Schritt wirklich aus der Sequenz entfernen?
+      max_steps_reached: Maximal 15 Schritte pro Sequenz.
+      reorder:
+        success: Sequenzschritte erfolgreich neu angeordnet
+        invalid_params: Ungültige Parameter für die Neuanordnung
+        saving: Neue Reihenfolge wird gespeichert...
+      import:
+        button: Von Agent importieren
+        title: Sequenz importieren
+        description: Wählen Sie einen Agenten, um dessen Sequenzschritte zu kopieren.
+          Dies ersetzt alle vorhandenen Schritte.
+        destructive_warning: Dadurch werden alle vorhandenen Schritte in der Sequenz
+          des Zielagenten dauerhaft ersetzt. Dies kann nicht rückgängig gemacht werden.
+        select_agent: Agent auswählen
+        select_target_agent: Zielagent auswählen
+        select_source_agent: Quellagent auswählen
+        search_placeholder: Nach Organisation oder Agent suchen
+        no_agents: Keine Agenten verfügbar
+        no_matching_agents: Keine passenden Agenten gefunden
+        steps_count:
+          one: "%{count} Schritt"
+          other: "%{count} Schritte"
+        confirm_replace: Dies ersetzt alle vorhandenen Schritte in der Sequenz dieses
+          Agenten. Sind Sie sicher?
+        success: Sequenz erfolgreich importiert
+        agent_not_found: Quell-Agent nicht gefunden
+        no_steps: Quell-Agent hat keine Sequenzschritte
+        importing: Wird importiert...
+        cancel: Abbrechen
+        import_button: Importieren
+      new:
+        title: Sequenzschritt hinzufügen
+        subtitle: Fügen Sie einen neuen Schritt zur Outreach-Sequenz hinzu
+        submit: Schritt erstellen
+      edit:
+        title: Sequenzschritt bearbeiten
+        subtitle: Schrittkonfiguration aktualisieren
+      show:
+        title: Sequenzschritt-Details
+      form:
+        position_label: Position
+        position_help: Reihenfolge in der Sequenz (1-15)
+        event_type_label: Ereignistyp
+        event_type_help: Art der Aktion für diesen Schritt
+        name_label: Schrittname
+        name_placeholder: z.B. Erstkontakt, Erste Nachfassung
+        name_help: Optionaler beschreibender Name für diesen Schritt
+        name_description: Optionaler beschreibender Name für diesen Schritt
+        delay_days_label: Verzögerung (Tage)
+        delay_days_help: Tage, die nach dem vorherigen Schritt gewartet werden soll
+        active_label: Aktiv
+        active_help: Inaktive Schritte werden bei der Generierung übersprungen
+        subject_prompt_label: Betreff-Prompt
+        subject_prompt_placeholder: Betreff-Prompt auswählen...
+        subject_prompt_help: KI-Prompt-Vorlage für die Generierung von E-Mail-Betreffzeilen
+        body_prompt_label: Text-Prompt
+        body_prompt_placeholder: Text-Prompt auswählen...
+        body_prompt_help: KI-Prompt-Vorlage für die Generierung von E-Mail-Texten
+        select_prompt: Prompt auswählen...
+        submit: Schritt speichern
+        submitting: Wird gespeichert...
+        delete_button: Schritt löschen
+        deleting_button: Wird gelöscht...
+      event_types:
+        email: E-Mail
+        linkedin_message: LinkedIn-Nachricht (Demnächst)
+        linkedin_visit: LinkedIn-Profilbesuch (Demnächst)
+        linkedin_connect: LinkedIn-Verbindung (Demnächst)
+        manual_task: Manuelle Aufgabe (Demnächst)
+      table:
+        position: Position
+        type: Typ
+        delay: Verzögerung
+        days: Tage
+        immediate: Sofort
+        active: Aktiv
+        inactive: Inaktiv
+        edit: Bearbeiten
+        delete: Löschen
+    leads:
+      title: Alle Leads
+      subtitle: Leads aller Organisationen anzeigen und verwalten
+      empty: Keine Leads gefunden
+      import_leads: Leads importieren
+      filters:
+        title: Filter
+        organization_all: Alle Organisationen
+        blacklist_label: Sperrlistenstatus
+        blacklist_all: Alle
+        blacklist_yes: Auf der Sperrliste
+        blacklist_no: Nicht auf der Sperrliste
+      table:
+        job_title: Position
+        view: Ansehen
+      status:
+        blacklisted: Auf der Sperrliste
+        not_blacklisted: Aktiv
+        active: Aktiv
+      pagination:
+        showing: Es werden %{start} bis %{end} von %{total} Ergebnissen angezeigt
+        previous: Zurück
+        next: Weiter
+      show:
+        title: Lead-Details
+        back_to_list: Zurück zu Leads
+        contact_info: Kontaktinformationen
+        name: Name
+        email: E-Mail
+        first_name: Vorname
+        last_name: Nachname
+        job_title: Berufsbezeichnung
+        linkedin: LinkedIn
+        view_profile: Profil anzeigen
+        location: Standort
+        phone: Telefon
+        timezone: Zeitzone
+        website: Website
+        company_info: Unternehmensinformationen
+        company: Unternehmen
+        company_website: Website
+        custom_fields: Zusätzliche Informationen
+        enrichment: Anreicherungsdaten
+        disc_profile: DISC-Profil
+        disc_not_analyzed: Nicht analysiert
+        linkedin_scraped: LinkedIn gescraped
+        not_scraped: Noch nicht
+        blacklist_info: Sperrlisteninformationen
+        blacklist_reason: Grund
+        blacklisted_at: Sperrlistendatum
+        agents: Zugewiesene Agents
+        no_agents: Keinem Agent zugewiesen
+        added: Hinzugefügt
+        import_info: Import-Informationen
+        import_file: Quelldatei
+        imported_by: Importiert von
+        imported_at: Importiert am
+        metadata: Metadaten
+        email_domain: E-Mail-Domain
+        created_at: Erstellt
+        updated_at: Zuletzt aktualisiert
+      modal:
+        title: Lead-Details
+        close: Schließen
+        sections:
+          basic_info: Kontaktinformationen
+          enrichment: Anreicherungsdaten
+          disc: DISC-Profil
+          linkedin: LinkedIn-Daten
+          company: Daten der Unternehmenswebsite
+          messages: Nachrichtenvorschau
+        fields:
+          email: E-Mail
+          name: Name
+          company: Unternehmen
+          domain: Domain
+          website: Webseite
+          job_title: Berufsbezeichnung
+          location: Standort
+          linkedin_url: LinkedIn
+          view_profile: Profil anzeigen
+          custom_fields: Benutzerdefinierte Felder
+        disc:
+          title: DISC-Profil
+          not_analyzed: Nicht analysiert
+          D: Dominanz
+          I: Beeinflussen
+          S: Gleichmäßigkeit
+          C: Gewissenhaftigkeit
+          DI: Dominanz-Einfluss
+          DC: Dominanz-Gewissenhaftigkeit
+          ID: Einfluss-Dominanz
+          IC: Einfluss-Gewissenhaftigkeit
+          SC: Beständigkeit-Gewissenhaftigkeit
+          SI: Stetigkeitseinfluss
+        linkedin:
+          headline: Überschrift
+          summary: Zusammenfassung
+          experience: Erfahrung
+          education: Ausbildung
+          posts: Aktuelle Beiträge
+          posts_count: "%{count} Beiträge"
+          no_posts: Keine Beiträge verfügbar
+          scraped_at: Analysiert
+          not_scraped: Nicht abgekratzt
+        company_website:
+          summary: Zusammenfassung der Unternehmenswebsite
+          raw_data: Daten der Unternehmenswebsite
+          more_characters: "%{count} weitere Zeichen..."
+          content: Website-Inhalt
+          scraped_at: Geschabt
+          not_scraped: Nicht abgekratzt
+        messages:
+          title: Sequenznachrichten
+          agent: Agent
+          no_agents: Der Lead ist keinem Agenten zugewiesen
+          step: Schritt %{position}
+          delay_immediate: Sofort
+          delay_days: Nach %{days} Tagen
+          subject: Thema
+          body: Körper
+          generate: Erzeugen
+          generate_all: Alle generieren
+          generating: Generieren...
+          regenerate: Regenerieren
+          no_messages: Es wurden noch keine Nachrichten generiert
+          all_generated: Alle generierten Nachrichten
+          status:
+            draft: Entwurf
+            approved: Genehmigt
+            scheduled: Geplant
+            sent: Gesendet
+            failed: Fehlgeschlagen
+            bounced: Abgeprallt
+            replied: Antwortete
+        blacklist:
+          title: Auf der Sperrliste
+          reason: Grund
+        enrichment:
+          title: Anreicherung
+          linkedin_profile: LinkedIn-Profil kratzen
+          linkedin_posts: Kratzen Sie LinkedIn-Beiträge
+          disc_profile: DISC-Profil ableiten
+          company_website: Website der Scrape Company
+          scraping: Schaben...
+          inferring: Daraus schließen...
+          success: Erfolg
+          error: Fehler
+          last_updated: Letzte Aktualisierung %{date}
+          never_scraped: Nie abgekratzt
+          not_available: Nicht verfügbar
+          requires_linkedin: Erfordert zunächst ein LinkedIn-Profil
+          requires_posts: Erfordert zuerst LinkedIn-Beiträge
+    generated_messages:
+      updated: Nachricht erfolgreich aktualisiert
+      test_sent: Test-E-Mail an %{email} gesendet
+      update_failed: Nachricht konnte nicht aktualisiert werden
+    email_accounts:
+      title: E-Mail-Konten
+      subtitle: E-Mail-Konten organisationsübergreifend verwalten
+      created: E-Mail-Konto erfolgreich erstellt
+      updated: E-Mail-Konto erfolgreich aktualisiert
+      deleted: E-Mail-Konto erfolgreich gelöscht
+      warmup_started: Aufwärmphase erfolgreich gestartet
+      status_updated: Status erfolgreich aktualisiert
+      invalid_status: Ungültiger Status angegeben
+      confirm_delete: Sind Sie sicher, dass Sie dieses E-Mail-Konto löschen möchten?
+        Diese Aktion kann nicht rückgängig gemacht werden.
+      delete_failed_has_agents: E-Mail-Konto kann nicht gelöscht werden, da es Agenten
+        zugewiesen ist. Entfernen Sie zuerst die Agenten-Zuweisungen.
+      add_account: Konto hinzufügen
+      import_csv: CSV importieren
+      back_to_list: Zurück zu E-Mail-Konten
+      filters:
+        organization: Organisation
+        status: Status
+      statuses:
+        pending: Ausstehend
+        warming: In Aufwärmphase
+        active: Aktiv
+        paused: Pausiert
+        suspended: Gesperrt
+      table:
+        display_name: Anzeigename
+        connection: Verbindung
+        connection_error: Fehler
+        connection_ok: OK
+        not_tested: Nicht getestet
+        warmup_progress: Aufwärm-Fortschritt
+        daily_limit: Tägliches Limit
+        view: Anzeigen
+        edit: Bearbeiten
+        warmup_complete: Abgeschlossen
+        days_remaining: Noch %{days} Tage übrig
+      test_connection:
+        success: Verbindungstest erfolgreich! SMTP und IMAP funktionieren.
+        smtp_ok_imap_failed: 'SMTP OK, aber IMAP fehlgeschlagen: %{error}'
+        imap_ok_smtp_failed: 'IMAP OK, aber SMTP ist fehlgeschlagen: %{error}'
+        failed: 'Verbindungstest fehlgeschlagen: %{error}'
+      send_test:
+        success: Test-E-Mail an %{email} gesendet
+        failed: 'Test-E-Mail konnte nicht gesendet werden: %{error}'
+        invalid_email: Bitte geben Sie eine gültige E-Mail-Adresse ein
+      import:
+        title: E-Mail-Konten importieren
+        subtitle: Laden Sie eine CSV-Datei hoch, um E-Mail-Konten massenimportieren
+          zu können
+        upload_title: CSV-Datei hochladen
+        upload_description: Importieren Sie mehrere E-Mail-Konten gleichzeitig aus
+          einer CSV-Datei
+        organization: Organisation
+        select_organization: Wählen Sie eine Organisation aus...
+        csv_file: CSV-Datei
+        drop_file: Legen Sie Ihre CSV-Datei hier ab
+        or_click: oder klicken Sie zum Durchsuchen
+        invalid_file_type: Bitte wählen Sie eine CSV-Datei aus
+        download_template: Vorlage herunterladen
+        template_description: Verwenden Sie diese Vorlage, um sicherzustellen, dass
+          Ihre CSV-Datei das richtige Format hat
+        download: Herunterladen
+        import_button: Konten importieren
+        select_file: Bitte wählen Sie eine CSV-Datei zum Importieren aus
+        success: "%{count} E-Mail-Konten erfolgreich importiert"
+        partial_success: "%{imported} importiert, %{failed} fehlgeschlagen: %{errors}"
+        columns_title: Spaltenreferenz
+        columns_description: Erforderliche und optionale Spalten für die CSV-Datei
+        column_name: Spalte
+        required: Erforderlich
+        description: Beschreibung
+        provider_settings: Referenz zu Anbietereinstellungen
+        provider_settings_description: Allgemeine SMTP/IMAP-Einstellungen für beliebte
+          E-Mail-Anbieter
+        google_note: Verwenden Sie App-Passwörter für Gmail-Konten mit aktivierter
+          2FA
+        microsoft_note: Stellen Sie sicher, dass SMTP/IMAP in den Microsoft 365-Administratoreinstellungen
+          aktiviert ist
+        columns:
+          email: Die E-Mail-Adresse für das Konto
+          first_name: Vorname des Kontoinhabers
+          last_name: Nachname des Kontoinhabers
+          smtp_host: Hostname des SMTP-Servers
+          smtp_port: SMTP-Server-Port (normalerweise 587)
+          smtp_username: Benutzername für die SMTP-Authentifizierung
+          smtp_password: SMTP-Authentifizierungskennwort oder App-Kennwort
+          imap_host: Hostname des IMAP-Servers
+          imap_port: IMAP-Server-Port (normalerweise 993)
+          imap_username: Benutzername für die IMAP-Authentifizierung
+          imap_password: IMAP-Authentifizierungskennwort oder App-Kennwort
+          smtp_encryption: 'SMTP-Verschlüsselung: TLS, SSL oder keine (Standard: TLS)'
+          imap_encryption: 'IMAP-Verschlüsselung: SSL, TLS oder keine (Standard: SSL)'
+          daily_limit: 'Tägliches Sendelimit (Standard: 50)'
+          sending_domain: Optionale benutzerdefinierte Sendedomäne
+          display_name: Optionale Überschreibung des Anzeigenamens
+      show:
+        title: E-Mail-Konto Details
+        subtitle: E-Mail-Konto-Einstellungen anzeigen und verwalten
+        organization: Organisation
+        email: E-Mail-Adresse
+        display_name: Anzeigename
+        status: Status
+        daily_limit: Tägliches Sendelimit
+        warmup_status: Aufwärm-Status
+        warmup_complete: Aufwärmphase abgeschlossen
+        warmup_in_progress: Aufwärmphase läuft
+        days_remaining: "%{days} Tage verbleiben"
+        warmup_not_started: Nicht gestartet
+        notes: Notizen
+        created_by: Erstellt von
+        created_at: Erstellt am
+        updated_at: Zuletzt aktualisiert
+        agents_title: Zugewiesene Agenten
+        no_agents: Keine Agenten zugewiesen
+        start_warmup: Aufwärmphase starten
+        start_warmup_confirm: Die 21-tägige Aufwärmphase für dieses Konto starten?
+        mark_active: Als aktiv markieren
+        pause: Pausieren
+        suspend: Sperren
+        reactivate: Reaktivieren
+        warmup_started_on: Begonnen am %{date}
+        back_to_list: Zurück zu E-Mail-Konten
+        account_holder: Kontoinhaber
+        from_address: Absenderadresse
+        smtp_configuration: SMTP-Konfiguration
+        imap_configuration: IMAP-Konfiguration
+        connection_status: Verbindungsstatus
+        provider: Anbieter
+        last_test: Letzter Test
+        never_tested: Nie getestet
+        connection_error: Verbindungsfehler
+        connection_healthy: Die Verbindung ist gesund
+        test_connection: Testverbindung
+      form:
+        first_name: Vorname
+        last_name: Nachname
+        smtp_host: SMTP-Host
+        smtp_port: SMTP-Port
+        smtp_username: SMTP-Benutzername
+        smtp_password: SMTP-Passwort
+        smtp_encryption: SMTP-Verschlüsselung
+        imap_host: IMAP-Host
+        imap_port: IMAP-Port
+        imap_username: IMAP-Benutzername
+        imap_password: IMAP-Passwort
+        imap_encryption: IMAP-Verschlüsselung
+        sending_domain: Sendende Domain
+      new:
+        title: E-Mail-Konto hinzufügen
+        subtitle: Neues E-Mail-Konto für Outbound-Kampagnen erstellen
+        basic_info: Grundlegende Informationen
+        select_organization: Organisation auswählen...
+        email_placeholder: absender@unternehmen.de
+        email_help: Die E-Mail-Adresse, die zum Versenden verwendet wird
+        first_name_placeholder: John
+        last_name_placeholder: Schmied
+        display_name_placeholder: Vertriebsteam
+        display_name_help: Wie Empfänger den Absendernamen sehen (optional)
+        daily_limit_label: Tägliches Sendelimit
+        daily_limit_help: Maximale Anzahl von E-Mails pro Tag
+        smtp_config: SMTP-Konfiguration
+        smtp_host_label: SMTP-Host
+        smtp_port_label: Hafen
+        smtp_username_label: Benutzername
+        smtp_username_placeholder: Normalerweise Ihre E-Mail-Adresse
+        smtp_password_label: Passwort
+        smtp_password_placeholder: App-Passwort oder SMTP-Passwort
+        smtp_encryption_label: Verschlüsselung
+        imap_config: IMAP-Konfiguration
+        imap_host_label: IMAP-Host
+        imap_port_label: Hafen
+        imap_username_label: Benutzername
+        imap_username_placeholder: Normalerweise Ihre E-Mail-Adresse
+        imap_password_label: Passwort
+        imap_password_placeholder: App-Passwort oder IMAP-Passwort
+        imap_encryption_label: Verschlüsselung
+        optional_settings: Optionale Einstellungen
+        sending_domain_label: Sendende Domain
+        sending_domain_placeholder: unternehmen.com
+        sending_domain_help: Benutzerdefinierte Domäne zur HELO/EHLO-Identifizierung
+        notes_label: Notizen
+        notes_placeholder: Interne Notizen zu diesem Konto...
+        info_pending: Neue Konten haben den Status 'Ausstehend'. Starten Sie die Aufwärmphase,
+          wenn Sie bereit sind.
+        create_button: Konto erstellen
+      edit:
+        title: E-Mail-Konto bearbeiten
+        subtitle: E-Mail-Konto-Einstellungen aktualisieren
+        email_readonly: E-Mail-Adresse kann nicht geändert werden
+        display_name_help: Name, der in gesendeten E-Mails angezeigt wird
+        daily_limit_label: Tägliches Sendelimit
+        daily_limit_help: Maximale E-Mails pro Tag
+        notes_label: Notizen
+        notes_placeholder: Interne Notizen zu diesem Konto...
+    email_domains:
+      title: E-Mail-Domänen
+      subtitle: Verwalten Sie Google Workspace- und Microsoft 365-Integrationen
+      empty: Noch keine E-Mail-Domänen konfiguriert.
+      created: E-Mail-Domäne erfolgreich erstellt
+      created_with_discovery: E-Mail-Domain erstellt. %{discovered} Benutzer entdeckt,
+        %{created} Postfächer erstellt.
+      updated: E-Mail-Domäne erfolgreich aktualisiert
+      deleted: E-Mail-Domain erfolgreich gelöscht
+      delete_failed: E-Mail-Domäne konnte nicht gelöscht werden
+      has_mailboxes: Die Domäne mit vorhandenen Postfächern kann nicht gelöscht werden.
+        Löschen Sie zuerst Postfächer.
+      connection_success: Verbindungstest erfolgreich
+      google_not_configured: Google-Anmeldeinformationen nicht konfiguriert. Legen
+        Sie die Umgebungsvariable GOOGLE_SERVICE_ACCOUNT_KEY fest.
+      microsoft_not_configured: Microsoft-Anmeldeinformationen nicht konfiguriert.
+        Legen Sie die Umgebungsvariablen MICROSOFT_CLIENT_ID und MICROSOFT_CLIENT_SECRET
+        fest.
+      confirm_delete: Möchten Sie diese Domain und alle ihre Postfächer löschen?
+      add_domain: Domäne hinzufügen
+      back_to_list: Zurück zu E-Mail-Domänen
+      discover_mailboxes: Entdecken Sie Postfächer
+      discovery_success: 'Ermittlung abgeschlossen: %{discovered} Benutzer gefunden,
+        %{created} Postfächer erstellt, %{skipped} vorhandene übersprungen'
+      discovery_confirm: Dadurch wird nach allen Benutzern in der Domäne gesucht und
+        Postfächer für sie erstellt. Weitermachen?
+      sender_assigned: Absender %{sender} zugewiesen an %{mailbox}
+      sender_unassigned: Zuweisung des Absenders von %{mailbox} aufgehoben
+      sender_assignment_failed: Der Absender konnte nicht zugewiesen werden
+      sender_unassignment_failed: Die Zuweisung des Absenders konnte nicht aufgehoben
+        werden
+      bulk_sender_assigned: "%{sender} %{count} Postfächern zugewiesen"
+      test_connection: Testverbindung
+      testing_connection: Testen...
+      settings: Einstellungen
+      mailboxes_label: Postfächer
+      capacity_label: Kapazität
+      no_mailboxes: Noch keine Postfächer
+      assign_sender: Absender zuweisen
+      unassign_sender: Zuweisung aufheben
+      no_agents: Keiner
+      warmup_complete: Vollständig
+      warmup_in_progress: Aufwärmen
+      can_send: Bereit
+      cannot_send: Nicht bereit
+      select_all: Alles auswählen
+      selected_count: "%{count} ausgewählt"
+      bulk_assign: Dem Absender zuweisen
+      search_placeholder: Domains oder E-Mails durchsuchen...
+      bulk_assign_title: Weisen Sie den Absender %{count} Postfächern zu
+      bulk_assign_description: Wählen Sie einen Absender aus, der %{count} ausgewählten
+        Postfächern zugewiesen werden soll.
+      mailbox_table:
+        email: E-Mail
+        sender: Absender
+        agents: Agenten
+        status: Status
+        warmup: Sich warm laufen
+        capacity: Kapazität
+        actions: Aktionen
+      provider_types:
+        google: Google Workspace
+        microsoft: Microsoft 365
+      statuses:
+        active: Aktiv
+        inactive: Inaktiv
+        error: Fehler
+        deleted: Gelöscht
+        undefined: Unbekannt
+      filters:
+        title: Filter
+        organization: Organisation
+        provider_type: Anbietertyp
+        all_types: Alle Typen
+        status: Status
+      credentials_status:
+        title: Globaler Anmeldeinformationsstatus
+        google: Google
+        microsoft: Microsoft
+        configured: Konfiguriert
+        not_configured: Nicht konfiguriert
+        google_hint: Legen Sie die Umgebungsvariable GOOGLE_SERVICE_ACCOUNT_KEY fest
+        microsoft_hint: Legen Sie die Umgebungsvariablen MICROSOFT_CLIENT_ID und MICROSOFT_CLIENT_SECRET
+          fest
+      table:
+        provider_type: Anbieter
+        provider: Anbieter
+        last_verified: Zuletzt überprüft
+        view: Sicht
+        edit: Bearbeiten
+        never_verified: Niemals
+      new:
+        title: E-Mail-Domäne hinzufügen
+        subtitle: Konfigurieren Sie eine Google Workspace- oder Microsoft 365-Domäne
+        organization_placeholder: Wählen Sie eine Organisation aus...
+        provider_type_label: Anbietertyp
+        provider_type_placeholder: Anbietertyp auswählen...
+        domain_label: Domain
+        domain_placeholder: example.com
+        domain_help: Die zu konfigurierende E-Mail-Domäne
+        domain_inferred: Abgeleitet aus der E-Mail des Administrators
+        google_admin_email_label: Admin-E-Mail
+        google_admin_email_help: E-Mail-Adresse des Google Workspace-Administrators
+          für den API-Zugriff. Die Domain wird aus dieser E-Mail extrahiert.
+        google_client_id_label: Dienstkonto-Client-ID
+        google_scopes_label: Erforderliche Bereiche
+        microsoft_tenant_id_label: Microsoft-Mandanten-ID
+        microsoft_tenant_id_placeholder: 12345678-1234-1234-1234-123456789012
+        microsoft_tenant_id_help: Ihre Azure AD-Mandanten-GUID (erforderlich für Microsoft)
+        info_google: Stellen Sie für Google Workspace sicher, dass die domänenweite
+          Delegation für das Dienstkonto konfiguriert ist.
+        info_microsoft: Stellen Sie für Microsoft 365 sicher, dass die Zustimmung
+          des Administrators für die Azure AD-App erteilt wird.
+        submit: Domäne erstellen
+        submitting: Erstellen...
+      edit:
+        title: E-Mail-Domäne bearbeiten
+        subtitle: Domänenkonfiguration aktualisieren
+        domain_label: Domain
+        microsoft_tenant_id_label: Microsoft-Mandanten-ID
+        delete_button: Domain löschen
+      show:
+        title: E-Mail-Domänendetails
+        back_to_list: Zurück zu E-Mail-Domänen
+        organization: Organisation
+        provider_type: Anbietertyp
+        domain: Domain
+        microsoft_tenant_id: Microsoft-Mandanten-ID
+        status: Status
+        last_verified: Zuletzt überprüft
+        verification_error: Verifizierungsfehler
+        created_at: Erstellt
+        updated_at: Zuletzt aktualisiert
+        mailboxes_title: Postfächer
+        mailboxes_count: "%{count} Postfächer"
+        no_mailboxes: Für diese Domäne sind keine Postfächer konfiguriert
+        add_mailbox: Postfach hinzufügen
+        test_connection: Testverbindung
+        testing: Testen...
+        credentials_status_title: Status der Anmeldeinformationen
+      bulk_delete_confirm: "%{count} Postfächer von %{domains} löschen? Diese Aktion
+        kann nicht rückgängig gemacht werden."
+    senders:
+      title: Absender
+      subtitle: Verwalten Sie Personen, die Outreach-Nachrichten senden
+      empty: Noch keine Absender konfiguriert.
+      created: Absender erfolgreich erstellt
+      updated: Der Absender wurde erfolgreich aktualisiert
+      deleted: Absender erfolgreich gelöscht
+      confirm_delete: Sind Sie sicher, dass Sie diesen Absender löschen möchten? Ihre
+        Postfächer bleiben erhalten, werden jedoch nicht mit einem Absender verknüpft.
+      add_sender: Absender hinzufügen
+      back_to_list: Zurück zu den Absendern
+      statuses:
+        active: Aktiv
+        inactive: Inaktiv
+      filters:
+        organization: Organisation
+        status: Status
+        search: Suche nach Name oder E-Mail...
+      table:
+        job_title: Berufsbezeichnung
+        capacity: Tageskapazität
+        view: Sicht
+        edit: Bearbeiten
+      new:
+        title: Absender hinzufügen
+        subtitle: Fügen Sie eine neue Person hinzu, die Outreach-Nachrichten sendet
+        organization_placeholder: Wählen Sie eine Organisation aus...
+        organization_help: Die Organisation, zu der dieser Absender gehört
+        first_name_placeholder: John
+        last_name_placeholder: Schmied
+        nickname_label: Spitzname (optional)
+        nickname_placeholder: Johnny
+        nickname_help: Informeller Name, der in der Signaturvariable {{sender_nickname}}
+          verwendet wird
+        email_placeholder: john@company.com
+        email_help: Primäre Kontakt-E-Mail für diesen Absender
+        job_title_placeholder: Kundenbetreuer
+        linkedin_url_label: LinkedIn-URL (optional)
+        linkedin_url_placeholder: https://linkedin.com/in/username
+        linkedin_url_help: Für die zukünftige LinkedIn-Automatisierung
+        calendly_url_label: Calendly-URL (optional)
+        calendly_url_placeholder: https://calendly.com/username
+        calendly_url_help: Link zur Planung pro Absender für Signaturen
+        signature_template_label: Signaturvorlage
+        signature_template_placeholder: "<p>Mit freundlichen Grüßen<br>{{sender_full_name}}<br>{{sender_job_title}}</p>"
+        signature_template_help: 'HTML-Signatur mit Variablen. Verfügbar: {{sender_first_name}},
+          {{sender_last_name}}, {{sender_full_name}}, {{sender_nickname}}, {{sender_job_title}},
+          {{sender_email}}, {{sender_calendly_url}}, {{sender_linkedin_url}}, {{sender_company}},
+          {{lead_first_name}}, {{lead_last_name}}, {{lead_full_name}}, {{lead_company}},
+          {{lead_job_title}}, {{lead_email}}, {{lead_location}}, {{lead_linkedin_url}},
+          {{lead_company_website}}'
+        profile_photo_label: Profilfoto (optional)
+        profile_photo_help: JPEG oder PNG, maximal 4 MB. Wird für die Anbietersynchronisierung
+          verwendet.
+        profile_photo_upload: Foto hochladen
+        profile_photo_invalid_type: Ungültiger Dateityp. Bitte laden Sie ein JPEG-
+          oder PNG-Bild hoch.
+        profile_photo_too_large: Datei zu groß. Die maximale Größe beträgt 4 MB.
+        submit: Absender erstellen
+        submitting: Erstellen...
+      edit:
+        title: Absender bearbeiten
+        subtitle: Absenderprofil und Signatur aktualisieren
+        delete_button: Absender löschen
+        change_photo: Foto ändern
+      signature_editor:
+        mode_richtext: Rich-Text
+        mode_html: HTML
+        mode_preview: Vorschau
+        help_richtext: Kopieren Sie Ihre Signatur und fügen Sie sie direkt aus Ihrem
+          E-Mail-Client ein. Die Formatierung bleibt erhalten.
+        help_html: 'Bearbeiten Sie den Roh-HTML-Code Ihrer Signatur. Verfügbare Variablen:
+          {{sender_first_name}}, {{sender_last_name}}, {{sender_full_name}}, {{sender_nickname}},
+          {{sender_job_title}}, {{sender_email}}, {{sender_calendly_url}}, {{sender_linkedin_url}},
+          {{sender_company}}, {{lead_first_name}}, {{lead_last_name}}, {{lead_full_name}},
+          {{lead_company}}, {{lead_job_title}}, {{lead_email}}, {{lead_location}},
+          {{lead_linkedin_url}}, {{lead_company_website}}'
+        help_preview: Diese Signatur enthält komplexes HTML. Wechseln Sie in den HTML-Modus,
+          um es zu bearbeiten.
+        html_warnings_title: HTML-Validierungswarnungen
+        warning_unclosed_tag: 'Nicht geschlossenes Tag: <%{tag}>'
+        warning_unclosed_tags: 'Nicht geschlossene Tags: %{tags}'
+        warning_script_tags: Skript-Tags sind in Signaturen nicht zulässig
+        complex_html_notice: Diese Signatur enthält komplexes HTML (Tabellen, gestaltete
+          Elemente). Verwenden Sie zum Bearbeiten den HTML-Modus unter Beibehaltung
+          aller Formatierungen.
+      show:
+        title: Absenderdetails
+        back_to_list: Zurück zu den Absendern
+        profile_section: Profil
+        email: E-Mail
+        job_title: Berufsbezeichnung
+        linkedin: LinkedIn
+        calendly: Kalenderlich
+        organization: Organisation
+        status: Status
+        created_at: Erstellt
+        updated_at: Zuletzt aktualisiert
+        capacity_section: Kapazität
+        mailboxes_count: Postfächer
+        active_mailboxes: Aktive Postfächer
+        total_daily_capacity: Gesamte Tageskapazität
+        remaining_capacity: Heute noch übrig
+        signature_section: Unterschrift
+        signature_preview: Signaturvorschau
+        no_signature: Keine Signaturvorlage konfiguriert
+        signature_variables: Verfügbare Variablen
+        mailboxes_section: Zugewiesene Postfächer
+        no_mailboxes: Diesem Absender sind keine Postfächer zugewiesen
+        edit_sender: Absender bearbeiten
+        select_mailbox: Wählen Sie ein Postfach aus, das Sie zuweisen möchten...
+        search_mailboxes: Postfächer durchsuchen...
+        no_mailboxes_found: Keine Postfächer entsprechen Ihrer Suche
+        assign_mailbox: Zuordnen
+        assign_selected: Ausgewählte zuweisen (%{count})
+        unassign_mailbox: Vom Absender entfernen
+        calendly_section: Kalenderliche Integration
+        calendly_not_configured: Calendly-Integration ist nicht konfiguriert. Wenden
+          Sie sich an Ihren Administrator, um es zu aktivieren.
+        calendly_connected_badge: Verbunden
+        calendly_limited_badge: Verbunden (begrenzt)
+        calendly_disconnected_badge: Nicht verbunden
+        calendly_error_badge: Fehler
+        calendly_scheduling_url: Link zur Planung
+        calendly_view_link: Planungsseite anzeigen
+        calendly_event_type: Besprechungstyp
+        calendly_select_event_type_placeholder: Wählen Sie einen Veranstaltungstyp
+          aus
+        calendly_event_type_required: Wählen Sie einen Besprechungstyp aus, um die
+          Calendly-Einrichtung abzuschließen.
+        calendly_connected_at: Verbunden
+        calendly_tracking_info: Über den Calendly-Link dieses Absenders gebuchte Besprechungen
+          werden automatisch nachverfolgt und Leads zugeordnet.
+        calendly_booking_links_enabled: Calendly-Buchungslinks aktiviert
+        calendly_limited_tracking_info: Buchungslinks sind aktiviert. Für die automatische
+          Besprechungsverfolgung ist Calendly Standard oder höher erforderlich.
+        calendly_help_text: Verbinden Sie Calendly, um über den Planungslink dieses
+          Absenders gebuchte Besprechungen automatisch zu verfolgen.
+        calendly_connect: Calendly verbinden
+        calendly_disconnect: Calendly trennen
+        calendly_confirm_disconnect: Trennen
+        calendly_disconnect_warning: Dadurch wird die Verfolgung von Besprechungen
+          für diesen Absender beendet. Zukünftige Buchungen werden nicht automatisch
+          Leads zugeordnet.
+        calendly_retry: Verbindung erneut versuchen
+        search_domains: Domains durchsuchen...
+        select_all: Wählen Sie „Alle“ aus
+        deselect_all: Alle abwählen
+        warmup_complete: Bereit zum Versenden
+        warming_up: Aufwärmen
+        capacity_remaining: übrig
+      mailbox_assigned: Postfach %{email} ist diesem Absender zugewiesen
+      mailboxes_assigned: "%{count} Postfächer sind diesem Absender zugewiesen"
+      mailbox_unassigned: Postfach %{email} wurde von diesem Absender entfernt
+      mailbox_different_org: Das Postfach einer anderen Organisation kann nicht zugewiesen
+        werden
+      no_mailboxes_selected: Keine Postfächer ausgewählt
+      calendly:
+        title: Kalenderliche Integration
+        not_configured: Calendly-Integration ist nicht konfiguriert. Bitte wenden
+          Sie sich an Ihren Administrator.
+        not_connected: Dieser Absender ist nicht mit Calendly verbunden.
+        connected: Calendly erfolgreich verbunden! Über den Link dieses Absenders
+          gebuchte Meetings werden nun automatisch nachverfolgt.
+        connected_limited: Calendly erfolgreich verbunden. Buchungslinks sind aktiviert.
+        disconnected: Calendly wurde erfolgreich getrennt.
+        connection_failed: 'Calendly konnte nicht verbunden werden: %{error}'
+        event_type_selected: Calendly-Meeting-Typ aktualisiert.
+        event_type_selection_failed: 'Calendly-Besprechungstyp konnte nicht aktualisiert
+          werden: %{error}'
+        oauth_denied: 'Calendly-Autorisierung wurde verweigert: %{error}'
+        invalid_state: Ungültiger OAuth-Status. Bitte versuchen Sie erneut, eine Verbindung
+          herzustellen.
+        sender_mismatch: Nicht übereinstimmender Absender des OAuth-Rückrufs. Bitte
+          versuchen Sie erneut, eine Verbindung herzustellen.
+        session_expired: OAuth-Sitzung abgelaufen. Bitte versuchen Sie erneut, eine
+          Verbindung herzustellen.
+        sender_not_found: Absender nicht gefunden. Bitte versuchen Sie erneut, eine
+          Verbindung herzustellen.
+    mailboxes:
+      title: Postfächer
+      subtitle: Verwalten Sie E-Mail-Versandkonten für die API-basierte Zustellung
+      empty: Noch keine Postfächer konfiguriert.
+      created: Postfach erfolgreich erstellt
+      updated: Postfach erfolgreich aktualisiert
+      deleted: Postfach erfolgreich gelöscht
+      delete_failed: Postfach konnte nicht gelöscht werden
+      has_sent_messages: Postfach mit gesendeten Nachrichten kann nicht gelöscht werden.
+        Archivieren Sie stattdessen das Postfach.
+      test_send_queued: Test-E-Mail zum Senden in der Warteschlange
+      test_send_success: Test-E-Mail erfolgreich an %{recipient} gesendet
+      test_send_failed: 'Test-E-Mail konnte nicht gesendet werden: %{error}'
+      cannot_send: 'Von diesem Postfach aus kann nicht gesendet werden: %{reasons}'
+      not_active: Postfach ist nicht aktiv
+      no_capacity: Tägliches Sendelimit erreicht
+      warmup_incomplete: Aufwärmphase nicht abgeschlossen
+      confirm_delete: Sind Sie sicher, dass Sie dieses Postfach löschen möchten?
+      test_email:
+        subject: "[Amplifa-Test] E-Mail von %{mailbox}"
+        body: |-
+          Dies ist eine Test-E-Mail von Amplifa.
+
+          Postfach: %{mailbox}
+          Domäne: %{domain}
+          Anbieter: %{provider}
+          Gesendet am: %{timestamp}
+
+          Wenn Sie diese E-Mail erhalten haben, ist das Postfach korrekt konfiguriert und zum Senden bereit.
+      add_mailbox: Postfach hinzufügen
+      back_to_list: Zurück zu Postfächern
+      statuses:
+        active: Aktiv
+        paused: Angehalten
+        suspended: Ausgesetzt
+      warmup_status:
+        complete: Aufwärmen abgeschlossen
+        in_progress: Aufwärmen
+        not_started: Nicht gestartet
+        days_remaining: "%{days} Tage verbleiben"
+      filters:
+        organization: Organisation
+        email_domain: Domain
+        all_domains: Alle Domänen
+        status: Status
+        warmup_status: Aufwärmstatus
+        all_warmup: Alle
+        warmup_complete: Vollständig
+        warmup_in_progress: Im Gange
+      table:
+        display_name: Anzeigename
+        provider: Anbieter
+        sender: Absender
+        warmup: Sich warm laufen
+        daily_capacity: Tageskapazität
+        agents: Agenten
+        view: Sicht
+        edit: Bearbeiten
+      new:
+        title: Postfach hinzufügen
+        subtitle: Fügen Sie ein neues E-Mail-Versandkonto hinzu
+        email_domain_label: E-Mail-Domäne
+        email_domain_placeholder: Wählen Sie eine Domain aus...
+        email_domain_help: Die E-Mail-Domäne, zu der dieses Postfach gehört
+        organization_placeholder: Wählen Sie eine Organisation aus...
+        organization_help: Wird je nach Anbieter automatisch eingestellt
+        no_domains_for_org: Für diese Organisation sind keine aktiven E-Mail-Domänen
+          verfügbar. Erstellen Sie zunächst eine Domain.
+        email_placeholder: sender@example.com
+        email_help: Muss mit der Domain des Anbieters übereinstimmen
+        first_name_placeholder: John
+        last_name_placeholder: Schmied
+        display_name_placeholder: John Smith – Vertrieb
+        display_name_help: So sehen Empfänger den Absendernamen (optional)
+        daily_send_limit_label: Tägliches Sendelimit
+        daily_send_limit_help: 'Maximale E-Mails pro Tag (empfohlen: 50–200 für aufgewärmte
+          Konten)'
+        warmup_started_at_label: Aufwärmen gestartet
+        warmup_started_at_help: Wann die 21-tägige Aufwärmphase begann (für neue Postfächer
+          leer lassen)
+        start_warmup_label: Beginnen Sie sofort mit dem Aufwärmen
+        start_warmup_help: Beginnen Sie mit der 21-tägigen Aufwärmphase, wenn das
+          Postfach erstellt wird
+        info_api_based: Dieses Postfach versendet E-Mails über die API des Anbieters
+          (Gmail API oder Microsoft Graph). Es sind keine SMTP-Anmeldeinformationen
+          erforderlich.
+        info_message: Neue Postfächer müssen eine 21-tägige Aufwärmphase durchlaufen,
+          bevor sie ihre volle Sendekapazität erreichen. Während der Aufwärmphase
+          wird das Sendevolumen schrittweise erhöht, um die Reputation aufzubauen.
+        submit: Postfach erstellen
+        submitting: Erstellen...
+      edit:
+        title: Postfach bearbeiten
+        subtitle: Postfacheinstellungen aktualisieren
+        email_readonly: Die E-Mail-Adresse kann nicht geändert werden
+        first_name_placeholder: John
+        last_name_placeholder: Schmied
+        display_name_placeholder: John Smith – Vertrieb
+        display_name_help: So sehen Empfänger den Absendernamen (optional)
+        daily_send_limit_label: Tägliches Sendelimit
+        daily_send_limit_help: 'Maximale E-Mails pro Tag (empfohlen: 50–200 für aufgewärmte
+          Konten)'
+        warmup_started_at_label: Aufwärmen gestartet
+        warmup_started_at_help: Passen Sie das Startdatum des Aufwärmens an, um die
+          Berechnung der Aufwärmzeit zu ändern
+        delete_button: Postfach löschen
+      show:
+        title: Postfachdetails
+        back_to_list: Zurück zu Postfächern
+        back_to_details: Zurück zum Postfach
+        email: E-Mail-Adresse
+        display_name: Anzeigename
+        full_display_name: Vollständiger Anzeigename
+        domain: Domain
+        provider: Anbieter
+        provider_type: Anbietertyp
+        organization: Organisation
+        status: Status
+        daily_send_limit: Tägliches Sendelimit
+        warmup_status: Aufwärmstatus
+        warmup_progress: Aufwärmfortschritt
+        warmup_started: Aufwärmen gestartet
+        created_at: Erstellt
+        updated_at: Zuletzt aktualisiert
+        capacity_title: Heutige Kapazität
+        sent_today: Heute gesendet
+        remaining: Übrig
+        can_send: Kann senden
+        agents_title: Zugewiesene Agenten
+        no_agents: Dieser Mailbox sind keine Agenten zugewiesen
+        recent_messages_title: Aktuelle Nachrichten
+        no_recent_messages: Von diesem Postfach wurden noch keine Nachrichten gesendet
+        stats_title: Senden von Statistiken
+        total_sent: Insgesamt gesendet
+        sent_this_week: Diese Woche
+        sent_this_month: Diesen Monat
+        bounced: Abgeprallt
+        replies_received: Erhaltene Antworten
+        test_send: Test-E-Mail senden
+        test_send_help: Senden Sie eine Test-E-Mail, um zu überprüfen, ob dieses Postfach
+          senden kann
+        sender_persona: Absender-Persona
+        no_sender_assigned: Diesem Postfach ist keine Absenderpersona zugewiesen
+      bulk_update:
+        title: Passen Sie das tägliche Sendelimit an
+        selected_count:
+          one: 1 Postfach ausgewählt
+          other: "%{count} Postfächer ausgewählt"
+        adjust_limit: Limit anpassen
+        description:
+          one: Legen Sie ein neues tägliches Sendelimit für das ausgewählte Postfach
+            fest.
+          other: Legen Sie ein neues tägliches Sendelimit für alle %{count} ausgewählten
+            Postfächer fest.
+        new_limit_label: Neues tägliches Sendelimit
+        limit_help: Geben Sie einen Wert zwischen 1 und 2000 E-Mails pro Tag ein
+        apply: Auf Ausgewählte anwenden
+        no_mailboxes_selected: Keine Postfächer ausgewählt
+        invalid_limit: Das tägliche Sendelimit muss zwischen 1 und 2000 liegen
+        success:
+          one: Das tägliche Sendelimit wurde auf %{limit} für 1 Postfach aktualisiert
+          other: Das tägliche Sendelimit wurde auf %{limit} für %{count} Postfächer
+            aktualisiert
+      bulk_delete:
+        no_mailboxes_selected: Keine Postfächer ausgewählt
+        partial_failed:
+          one: 1 Postfach gelöscht, aber einige Postfächer konnten nicht gelöscht
+            werden
+          other: "%{count} Postfächer gelöscht, aber einige Postfächer konnten nicht
+            gelöscht werden"
+        success:
+          one: 1 Postfach gelöscht
+          other: "%{count} Postfächer gelöscht"
+    replies:
+      title: Antwortcenter
+      subtitle: Eingehende E-Mail-Antworten anzeigen und verwalten
+      reply_now: Jetzt antworten
+      marked_responded: Antwort als beantwortet markiert
+      marked_no_response_needed: Antwort als „Keine Antwort erforderlich“ markiert
+      confirm_mark_responded: Diese Antwort als beantwortet markieren?
+      confirm_no_response: Diese Antwort so markieren, dass keine Antwort erforderlich
+        ist?
+      sent_successfully: Antwort erfolgreich gesendet
+      send_failed: 'Antwort konnte nicht gesendet werden: %{error}'
+      forward_button: Weiterleiten
+      forward_successfully: Konversation erfolgreich weitergeleitet
+      forward_invalid_email: Bitte geben Sie eine gültige E-Mail-Adresse ein
+      forward_failed: 'Konversation konnte nicht weitergeleitet werden: %{error}'
+      forward_modal:
+        title: Gespräch weiterleiten
+        description: Senden Sie den vollständigen Thread und die Lead-Details an eine
+          beliebige E-Mail-Adresse
+        email_label: Weiterleiten an
+        email_placeholder: name@company.com
+        add_comment: Kommentar hinzufügen
+        comment_placeholder: Fügen Sie Kontext für die Person hinzu, die diese weitergeleitete
+          Konversation empfängt.
+        submit: Weiterleiten
+      conversation_closed: Gespräch geschlossen
+      conversation_reopened: Das Gespräch wurde erneut eröffnet
+      conversation_snoozed: Das Gespräch wurde bis zum %{until} unterbrochen.
+      lead_assigned: Antwort zugewiesen an %{email}
+      reply_not_found: Antwort nicht gefunden oder bereits zugewiesen
+      stats:
+        total: Gesamtantworten
+        requires_attention: Braucht Aufmerksamkeit
+        bounces: Springt
+        out_of_office: Außerhalb des Büros
+        responded: Geantwortet
+        unresponded: Unbeantwortet
+      filters:
+        organization: Organisation
+        agent: Agent
+        all_agents: Alle Agenten
+        mailbox: Briefkasten
+        all_mailboxes: Alle Postfächer
+        reply_type: Antworttyp
+        all_types: Alle Typen
+        requires_attention: Erfordert Aufmerksamkeit
+        bounces: Springt
+        out_of_office: Außerhalb des Büros
+        responded: Geantwortet
+      table:
+        lead: Lead
+        from: Aus
+        subject: Thema
+        mailbox: Erhalten von
+        agent: Agent
+        type: Typ
+        received: Erhalten
+        view: Sicht
+      types:
+        normal: Antwort
+        bounce: Prallen
+        hard_bounce: Harter Sprung
+        soft_bounce: Sanfter Sprung
+        out_of_office: Außerhalb des Büros
+      statuses:
+        needs_response: Benötigt Antwort
+        responded: Geantwortet
+        no_response_needed: Keine Antwort erforderlich
+      show:
+        title: Antwortdetails
+        back_to_list: Zurück zu Antworten
+        from: Aus
+        to: An (Postfach)
+        subject: Thema
+        received_at: Erhalten
+        reply_type: Typ
+        status: Status
+        message_id: Nachrichten-ID
+        api_message_id: API-Nachrichten-ID
+        responded_at: Geantwortet unter
+        created_at: Erstellt
+        original_message_title: Ursprüngliche Nachricht gesendet
+        no_original_message: Keine Originalnachricht verlinkt
+        original_subject: Thema
+        original_sent_at: Gesendet
+        original_agent: Agent
+        original_step: Sequenzschritt
+        lead_title: Lead-Informationen
+        lead_name: Name
+        lead_email: E-Mail
+        lead_company: Unternehmen
+        lead_title_field: Titel
+        lead_location: Standort
+        body_title: Antwortinhalt
+        body_plain: Klartext
+        body_html: HTML
+        related_replies_title: Andere Antworten von Lead
+        no_related_replies: Keine weiteren Antworten von diesem Lead
+        actions_title: Aktionen
+        mark_responded: Als beantwortet markieren
+        mark_no_response: Keine Antwort erforderlich
+        view_lead: Lead anzeigen
+        view_mailbox: Postfach anzeigen
+    global_inbox:
+      title: Globales Antwort-Center
+      subtitle: Alle Konversationen über alle Organisationen
+      all_organizations: Alle Organisationen
+      filter_organization: Organisation
+      check_mail: Prüfe E-Mails über alle Organisationen...
+      auto_reply:
+        button: Auto-Antwort
+        sending: Generiere und sende Auto-Antwort...
+        sent: Auto-Antwort erfolgreich gesendet
+        sent_successfully: Auto-Antwort erfolgreich gesendet
+        failed: Auto-Antwort konnte nicht gesendet werden
+        invalid_status: Auto-Antwort ist nur für 'Nicht interessiert' oder 'Falsche
+          Person' Konversationen verfügbar
+    meetings:
+      title: Treffen
+      subtitle: Verfolgen und verwalten Sie geplante Besprechungen mit Leads
+      empty: Keine Treffen gefunden
+      no_results: Keine Besprechungen entsprechen Ihren Filtern
+      stats:
+        total: Gesamt
+        scheduling: Terminplanung
+        scheduled: Geplant
+        completed: Vollendet
+        positive: Positiv
+        neutral: Neutral
+        no_show: No-Show
+        cancelled: Abgesagt
+        rescheduled: Verschoben
+      filters:
+        title: Filter
+        status: Status
+        meeting_type: Besprechungstyp
+        all_types: Alle Typen
+        outcome: Ergebnis
+        all_outcomes: Alle Ergebnisse
+        organization: Organisation
+      table:
+        lead: Lead
+        agent: Agent
+        type: Typ
+        scheduled: Geplant
+        duration: Dauer
+        outcome: Ergebnis
+        view: Sicht
+      types:
+        discovery: Entdeckung
+        demo: Demo
+        follow_up: Nachverfolgen
+        closing: Schließen
+        other: Andere
+      statuses:
+        scheduled: Geplant
+        scheduling: Terminplanung
+        completed: Vollendet
+        positive: Positiv
+        neutral: Neutral
+        no_show: No-Show
+        cancelled: Abgesagt
+        rescheduled: Verschoben
+        pending_removal: Ausstehende Entfernung
+      outcomes:
+        positive: Positiv
+        neutral: Neutral
+        negative: Negativ
+        no_show: No-Show
+      show:
+        title: Besprechungsdetails
+        back_to_list: Zurück zu Meetings
+        type: Besprechungstyp
+        scheduled_at: Geplant für
+        duration: Dauer
+        duration_minutes:
+          one: "%{count} Minute"
+          other: "%{count} Minuten"
+        location: Standort
+        status: Status
+        outcome: Ergebnis
+        notes: Notizen
+        outcome_notes: Ergebnisnotizen
+        source: Quelle
+        source_manual: Handbuch
+        source_calendly: Kalenderlich
+        attributed_via: Zugeschrieben Via
+        created_at: Erstellt
+        completed_at: Vollendet
+        cancelled_at: Abgesagt
+        no_location: Kein Standort angegeben
+        no_notes: Keine Notizen
+        lead_title: Lead-Informationen
+        lead_name: Name
+        lead_email: E-Mail
+        lead_company: Unternehmen
+        lead_job_title: Berufsbezeichnung
+        view_lead: Lead anzeigen
+        agent_title: Agenteninformationen
+        agent_name: Name
+        agent_status: Status
+        agent_organization: Organisation
+        view_agent: Agent anzeigen
+        actions_title: Aktionen
+        mark_completed: Als abgeschlossen markieren
+        mark_no_show: Nichterscheinen markieren
+        cancel_meeting: Besprechung absagen
+        reschedule: Neu planen
+        select_outcome: Ergebnis auswählen...
+        outcome_notes_placeholder: Fügen Sie Notizen zum Besprechungsergebnis hinzu...
+        new_time: Neue Zeit
+        confirm_no_show: Dieses Treffen als Nichterscheinen markieren?
+        confirm_cancel: Dieses Treffen absagen?
+  replies:
+    ai_reply_agent: KI-Antwortagent
+  meetings:
+    title: Meeting
+    subtitle: Verfolgen und verwalten Sie Ihre Interessenten-Meetings und Ergebnisse
+    empty: Keine Meetings gefunden
+    search_placeholder: Meeting nach Name oder Unternehmen suchen
+    request_removal: Besprechung entfernen
+    pending_removal_requested: Entfernung beantragt
+    confirm_request_removal: Dadurch wird die Besprechung für die Entfernung durch
+      den Administrator markiert. Weitermachen?
+    request_removal_failed: Die Entfernung der Besprechung konnte nicht beantragt
+      werden.
+    mark_no_show: No-Show
+    edit_time: Meeting-Zeit bearbeiten
+    set_time: Meeting-Zeit festlegen
+    meeting_time: Meeting-Zeit
+    invalid_time: Geben Sie eine gültige Meeting-Zeit ein.
+    no_time_set: Nicht festgelegt
+    duration_minutes_short: "%{count} Min."
+    outcome_update_failed: Meeting-Status konnte nicht aktualisiert werden.
+    meeting_time_update_failed: Meeting-Zeit konnte nicht gespeichert werden.
+    edit_notes: Notizen bearbeiten
+    notes_update_failed: Notizen konnten nicht aktualisiert werden.
+    notes_enter_to_save: Drücken Sie Enter zum Speichern. Shift+Enter fügt eine neue Zeile hinzu.
+    no_notes: Keine Notizen
+    change_outcome: Meeting-Ergebnis ändern
+    select_outcome: Ergebnis auswählen...
+    preparation:
+      title: Meeting-Vorbereitung
+      scheduled_for: Geplant für
+      booked_at: Gebucht am
+      duration: Dauer
+      location: Ort
+      assigned_to: Zugewiesen an
+      notes: Notizen
+      removal_comment: Kommentar zur Entfernungsanfrage
+      lead_snapshot: Lead-Übersicht
+      lead_summary: Lead-Zusammenfassung
+      blacklisted: Auf der Sperrliste
+      company_summary: Unternehmenszusammenfassung
+      scraped_content_hidden: "%{count} weitere Zeichen ausgeblendet"
+      linkedin_profile: LinkedIn-Profil
+      view_linkedin: Profil ansehen
+      no_linkedin: Keine LinkedIn-URL
+      enrichment: Anreicherung
+      disc_label: DISC
+      confidence_label: Konfidenz
+      linkedin_posts_label: LinkedIn-Beiträge
+      declined_comments: Kommentare zur Entfernungsprüfung
+      declined_comment_label: Admin-Kommentar
+      message_history: Nachrichtenverlauf
+      message_history_description: Prüfen Sie Entfernungsfeedback, Kampagnenkontext und den vollständigen Outreach-Verlauf, bevor Sie handeln.
+    assign:
+      label: Meeting-Besitzer zuweisen
+      unassigned: Nicht zugewiesen
+      help: Wählen Sie ein Teammitglied als Besitzer für dieses Meeting aus.
+      failed: Meeting konnte nicht zugewiesen werden.
+    create:
+      button: Meeting erstellen
+      title: Meeting erstellen
+      description: Wählen Sie einen bestehenden Lead aus oder legen Sie einen neuen Lead mit Basisdaten an.
+      existing_lead: Bestehender Lead
+      new_lead: Neuer Lead
+      search_leads: Leads suchen
+      search_placeholder: Nach Name, E-Mail oder Unternehmen suchen
+      no_leads: Suchen Sie nach einem Lead, um ihn auszuwählen.
+      no_results: Keine Leads gefunden.
+      see_more: Mehr anzeigen...
+      selected_lead: Ausgewählter Lead
+      not_available: Nicht verfügbar
+      clear_selection: Ausgewählten Lead entfernen
+      search_failed: Leads konnten nicht gesucht werden.
+      failed: Meeting konnte nicht erstellt werden.
+      name_placeholder: Name
+      email_placeholder: E-Mail
+      company_placeholder: Unternehmen
+      role_placeholder: Rolle
+      meeting_details: Meeting-Details
+      agent_placeholder: Agent auswählen
+      notes_placeholder: Notizen
+      submit: Meeting erstellen
+    tabs:
+      all: Alle
+      positive: Positiv
+      neutral: Neutral
+      negative: Negativ
+    table:
+      name: Name
+      title: Titel
+      company: Unternehmen
+      meeting_date: Meeting-Datum
+      time: Uhrzeit
+      meeting_outcome: Meeting-Ergebnis
+      agent: Agent
+      meeting_date_time: Datum & Uhrzeit
+      status: Status
+      assign: Zuweisen
+      outcome: Ergebnis
+    outcomes:
+      positive: Positiv
+      neutral: Neutral
+      negative: Negativ
+      no_show: No-Show
+    remove_modal:
+      title: Meeting entfernen?
+      description: Dieses Meeting wird entfernt und für die endgültige Löschung durch einen Admin markiert.
+      comment_label: Grund für die Entfernung (optional)
+      comment_placeholder: Geben Sie Ihrem Team Kontext, warum dieses Meeting entfernt werden sollte.
+      comment_help: Ihr Kommentar hilft Admins, die Entfernungsanfrage zu verstehen.
+      character_count: "%{count}/%{max}"
+    pagination:
+      showing: Es werden %{start} bis %{end} von %{total} Besprechungen angezeigt
+      previous: Zurück
+      next: Weiter
+  roi:
+    title: ROI
+    subtitle: Verfolgen Sie den Umsatzeffekt Ihrer automatisierten Pipeline.
+    filter_all: Gesamt
+    refresh: Aktualisieren
+    create_report: Bericht erstellen
+    tabs:
+      overview: ROI-Übersicht
+      funnels: Marketing-Funnels
+    metrics:
+      amplifa_roi: Amplifa ROI
+      vs_last_quarter: ggü. letztem Quartal
+      positive_outcomes: Positive Ergebnisse
+      acv: Durchschnittlicher Auftragswert (ACV)
+      meeting_value: Durchschnittlicher Meeting-Wert
+      edit_acv: ACV bearbeiten
+      edit_meeting_value: Meeting-Wert bearbeiten
+      pipeline_revenue: Pipeline-Umsatz generiert
+      total_investment: Amplifa-Gesamtinvestition
+      across_months: In %{count} Monaten Partnerschaft
+      emails_sent: E-Mails gesendet
+      open_rate: Öffnungsrate
+      reply_rate: Antwortrate
+      meeting_rate: Meetingrate
+    funnel:
+      title: 'Von der Kampagne zum Vertrag: Ihr Wert-Funnel'
+      emails_sent: E-Mails gesendet
+      opened: Geöffnet
+      replied: Beantwortet
+      meetings: Meetings
+      revenue: Umsatz
+    funnels_tab:
+      coming_soon: Marketing-Funnels kommen bald.
+  playbooks:
+    title: Playbooks
+    subtitle: Playbooks für Ihre Organisation überprüfen und genehmigen
+    empty: Noch keine Playbooks verfügbar. Ihr Amplifa-Team wird Playbooks für Sie
+      erstellen.
+    create:
+      button: Playbook erstellen
+      started: Die Generierung des Playbooks hat begonnen. Ihr neuer Entwurf wird
+        bald erscheinen.
+    back_to_list: Zurück zu Playbooks
+    filters:
+      status: Status
+      all_statuses: Alle Status
+      product: Produkt
+      all_products: Alle Produkte
+      apply: Filter anwenden
+      clear: Löschen
+    table:
+      product: Produkt
+      status: Status
+      language: Sprache
+      content: Inhalt
+      updated: Zuletzt aktualisiert
+      actions: Aktionen
+      personae: Personas
+      use_cases: Anwendungsfälle
+      view: Anzeigen
+      review: Überprüfen
+    statuses:
+      draft: Entwurf
+      changes_requested: Änderungen angefordert
+      approved: Genehmigt
+      archived: Archiviert
+    show:
+      approve: Playbook genehmigen
+      request_changes: Änderungen anfordern
+      archive: Archivieren
+      approved_by: Genehmigt von
+      on_date: am
+      pending_approval: Dieses Playbook wartet auf Ihre Genehmigung
+      changes_pending: Für dieses Playbook wurden Änderungen angefordert
+      already_approved: Dieses Playbook wurde genehmigt
+    actions:
+      approve_title: Playbook genehmigen
+      approve_description: Mit der Genehmigung bestätigen Sie, dass dieses Playbook
+        Ihre Produkte und Zielgruppe korrekt darstellt.
+      approve_comment_label: Kommentar (optional)
+      approve_comment_placeholder: Feedback oder Notizen hinzufügen...
+      approve_button: Genehmigen
+      approving: Wird genehmigt...
+      request_changes_title: Änderungen anfordern
+      request_changes_description: Beschreiben Sie, welche Änderungen Sie in diesem
+        Playbook sehen möchten.
+      request_changes_comment_label: Welche Änderungen werden benötigt?
+      request_changes_comment_placeholder: Bitte beschreiben Sie die benötigten Änderungen...
+      request_changes_button: Änderungen anfordern
+      requesting: Wird gesendet...
+      comment_required: Bitte geben Sie einen Kommentar an, der die benötigten Änderungen
+        beschreibt
+      archive_title: Playbook archivieren
+      archive_description: Archivierte Playbooks werden nicht mehr für Kampagnen verwendet.
+      archive_confirm: Möchten Sie dieses Playbook wirklich archivieren?
+      archive_button: Archivieren
+      archiving: Wird archiviert...
+    sections:
+      value_proposition: Wertversprechen
+      personae: Ziel-Personas
+      use_cases: Anwendungsfälle
+      references: Referenzkunden
+      proof_points: Beweispunkte
+      comments: Diskussion
+    edit:
+      product_description: Produktbeschreibung
+      modal_description: Bearbeiten Sie diesen Playbook-Abschnitt und speichern Sie Ihre Änderungen.
+      confirm_delete_item: Dieses Element löschen?
+      new_persona_name: Neue Persona
+      new_persona_title: Persona-Titel
+      new_pain_point: Beschreiben Sie einen Schmerzpunkt
+      new_use_case_title: Neuer Anwendungsfall
+      new_use_case_description: Beschreiben Sie diesen Anwendungsfall
+      new_reference_customer: Neuer Referenzkunde
+      new_reference_description: Beschreiben Sie diese Referenz
+      new_proof_point_claim: Neuer Beweispunkt
+      new_proof_point_description: Beschreiben Sie diesen Beweispunkt
+    knowledge_ui:
+      hero_badge: KI-gestützte Playbook-Ebene
+      value_proposition_eyebrow: Kernsignal
+      personae_eyebrow: Zielgruppenkarte
+      use_cases_eyebrow: Botschaftsperspektiven
+      references_eyebrow: Kundenbeweis
+      proof_points_eyebrow: Glaubwürdigkeitsebene
+      comments_eyebrow: Prüfverlauf
+      see_more: Mehr anzeigen...
+      see_less: Weniger anzeigen
+    files:
+      download: Herunterladen
+      upload_failed: Upload fehlgeschlagen
+    aria:
+      close_feedback_modal: Feedback-Dialog schließen
+      close_approve_modal: Genehmigungsdialog schließen
+      close_request_changes_modal: Modul „Änderungen anfordern“ schließen
+      close_archive_modal: Archivierungsdialog schließen
+    import_leads_ui:
+      lead_list_title: Haben Sie Lead-Listen ohne E-Mails? Laden Sie sie hier hoch
+      lead_list_description: Laden Sie Ihre Datei hoch und wir stellen sie dem Admin-Team
+        zur Verfügung.
+      uploading: Wird hochgeladen...
+      upload_file: Datei hochladen
+      uploaded_at: 'Hochgeladen: %{date}'
+      imported_at: 'Importiert: %{date}'
+      completed_at: 'Abgeschlossen: %{date}'
+      created_count: "%{count} erstellt"
+      updated_count: "%{count} aktualisiert"
+      blacklisted_count: "%{count} gesperrt"
+      error_count: "%{count} Fehler"
+      step_upload_csv: 1. CSV hochladen
+      step_map_fields: 2. Felder zuordnen
+      click_to_upload_csv: Klicken, um CSV hochzuladen
+      max_file_size: Max. 50 MB
+      selected_rows: "%{count} Zeilen"
+      next_map_fields: 'Weiter: Felder zuordnen'
+      skip_column: Diese Spalte überspringen
+      field_email: E-Mail *
+      field_first_name: Vorname
+      field_last_name: Nachname
+      field_full_name: Vollständiger Name
+      field_job_title: Position
+      field_company: Unternehmen
+      field_company_website: Unternehmenswebsite
+      field_linkedin_url: LinkedIn-URL
+      field_location: Standort
+      example_value: z. B. %{value}
+      custom_field: 'Benutzerdefiniert: %{field}'
+      import_analysis: Importanalyse
+      analyzing: Wird analysiert...
+      analysis_summary: "%{new_people} neue Personen · %{new_leads} neue Leads · %{lead_updates}
+        Lead-Aktualisierungen · %{invalid} ungültig"
+      back: Zurück
+      starting_import: Import wird gestartet...
+    persona:
+      pain_points: Schmerzpunkte
+    comments:
+      title: Diskussion
+      empty: Noch keine Kommentare
+      add_comment: Kommentar hinzufügen
+      comment_placeholder: Kommentar oder Frage hinzufügen...
+      submit: Kommentar veröffentlichen
+      posting: Wird veröffentlicht...
+    comment_types:
+      general: Allgemein
+      request_changes: Änderungsanfrage
+      approval: Genehmigung
+    domains:
+      blank: Bitte geben Sie einen Domainnamen ein.
+      invalid_format: Bitte geben Sie eine gültige Domain ein (z. B. example.com).
+      limit_reached: Sie können maximal %{max} Domains haben.
+      already_exists: Diese Domäne ist bereits konfiguriert.
+      created: Domain %{domain} wurde angefordert. Ein Administrator wird die Einrichtung
+        abschließen.
+    tabs:
+      training_data: Trainingsdaten
+      sample_leads_messages: Beispiel-Leads und -Nachrichten
+      knowledge_base: Wissensdatenbank
+      import_leads: Leads importieren
+    knowledge_base:
+      hero_badge: KI-gestützte Wissensebene
+      title_prefix: Wissensdatenbank
+      title_accent: Datenbank
+      hero_description: Legen Sie Dokumente ab, und die Plattform extrahiert, fasst
+        zusammen und strukturiert sie zu einer gemeinsamen Wissensebene für dieses
+        Playbook.
+      add_knowledge: Wissen hinzufügen
+      untitled: Unbenanntes Wissen
+      ai_summary: KI-Zusammenfassung
+      all_playbooks: Alle Playbooks
+      download: Herunterladen
+      search_placeholder: Titel, Zusammenfassung oder Uploader suchen...
+      no_matches_title: Kein passendes Wissen gefunden
+      no_matches_description: Versuchen Sie einen anderen Suchbegriff oder wechseln
+        Sie den aktiven Filter.
+      summary_pending: Die KI-Zusammenfassung wird vorbereitet. Diese Karte wird automatisch
+        aktualisiert, wenn die Extraktion abgeschlossen ist.
+      summary_failed: Zusammenfassung fehlgeschlagen. Versuchen Sie, diese Quelle
+        erneut hochzuladen.
+      empty_title: Noch kein Wissen hinzugefügt
+      empty_description: Laden Sie ein Dokument hoch, um Kundenreferenzen, Produktnotizen,
+        Briefings und Recherchen in durchsuchbare KI-Zusammenfassungen für dieses
+        Playbook zu verwandeln.
+      upload_first_source: Erste Quelle hochladen
+      stats:
+        total_entries: Einträge gesamt
+        websites: Websites
+        pdfs: PDFs
+        docs: Docs
+      filters:
+        all: Alle
+        pdfs: PDFs
+        websites: Websites
+        docs: Docs
+      types:
+        pdf: PDF
+        website: Web
+        document: Dokument
+      statuses:
+        extracting: Wird extrahiert
+        summarizing: Wird zusammengefasst
+        completed: Abgeschlossen
+        failed: Fehlgeschlagen
+        unknown: "%{status}"
+      sort:
+        most_recent: Neueste zuerst
+        oldest_first: Älteste zuerst
+        name_az: Name A-Z
+      errors:
+        invalid_response: Ungültige Serverantwort
+        request_failed: Anfrage fehlgeschlagen (%{status})
+        upload_failed: Upload fehlgeschlagen
+      relative_time:
+        minutes_ago: Vor %{count} Min.
+        hours_ago: Vor %{count} Std.
+        yesterday: Gestern
+        days_ago: Vor %{count} T.
+      modal:
+        title: Wissen hinzufügen
+        description: Laden Sie eine Datei hoch oder fügen Sie eine Web-URL für dieses
+          Playbook hinzu.
+        close: Modal zum Hinzufügen von Wissen schließen
+        file: Datei
+        url: URL
+        dropzone_title: Klicken Sie zum Durchsuchen oder ziehen Sie eine Datei hierher
+        dropzone_hint: PDF, DOCX, Text, CSV, Bild oder Webdokument
+        source_url: Quell-URL
+        url_placeholder: https://example.com/resource
+        url_hint: Wir extrahieren und fassen die Seite oder verlinkte Datei zusammen.
+        cancel: Abbrechen
+      slideover:
+        close: Wissensdetails schließen
+        extraction_running: Die Extraktion läuft noch. Der extrahierte Inhalt erscheint
+          hier, sobald die Verarbeitung abgeschlossen ist.
+        no_extracted_content: Für diese Quelle ist noch kein extrahierter Inhalt verfügbar.
+        tags: Tags
+        source: Quelle
+        extracted_content: Extrahierter Inhalt
+        download_source: Quelle herunterladen
+    samples:
+      leads_column: Führt
+      lead_details_column: Lead-Details
+      messages_column: Nachrichten
+      empty_no_agents: Bisher haben noch keine Agenten Beispiele generiert
+      empty_no_samples: Keine Beispielnachrichten verfügbar
+      empty_select_lead: Wählen Sie einen Lead aus, um Nachrichten anzuzeigen
+      linkedin_headline: LinkedIn-Überschrift
+      linkedin_summary: LinkedIn-Zusammenfassung
+      company_info: Firmeninformationen
+      disc_profile: DISC-Profil
+      custom_fields: Benutzerdefinierte Felder
+      subject: Thema
+      agent_name: Agent
+      step: Schritt %{number}
+    approval_strip:
+      share_feedback: Feedback teilen
+      message: Um fortzufahren, genehmigen Sie bitte das Playbook oder geben Sie Feedback.
+  customer:
+    agents:
+      title: Agenten
+      subtitle: Sehen Sie die aktiven Kampagnen und Leistungskennzahlen Ihrer Organisation
+      empty:
+        title: Noch keine Kampagnen
+        description: Ihre Kampagnen werden hier angezeigt, sobald sie eingerichtet
+          sind
+      companies:
+        title: Agenten - Unternehmensansicht
+        view_companies: Unternehmensansicht
+        back_to_leads: Lead-Ansicht
+        empty:
+          description: Keine passenden Unternehmen gefunden
+        filters:
+          search_placeholder: Unternehmen, Leads oder Domains suchen
+        table:
+          company: Unternehmen
+          last_activity: Letzte Aktivität
+          leads: Leads
+          leads_suffix: Leads
+          summary_available: Verfügbar
+          no_summary: Keine Zusammenfassung
+        modal:
+          load_error: Unternehmensdetails konnten nicht geladen werden
+          company: Unternehmen
+          company_summary: Unternehmenszusammenfassung
+          no_company_summary: Keine Unternehmenszusammenfassung verfügbar
+          leads_tab: Leads
+          buying_signals_tab: Kaufsignale
+          detail_tabs_label: Tabs mit Unternehmensdetails
+          no_leads: Keine sichtbaren Leads bei diesem Unternehmen
+          no_buying_signals: Für diesen Agenten sind keine Kaufsignale verfügbar
+          view_linkedin: LinkedIn ansehen
+      statuses:
+        draft: Entwurf
+        ready: Bereit
+        active: Aktiv
+        paused: Pausiert
+        completed: Abgeschlossen
+      filters:
+        title: Filter
+        agent: Agent
+        lead_status: Lead-Status
+        all_agents: Alle Agenten
+        search_placeholder: Suchen Sie Leads nach Name, E-Mail oder Unternehmen
+      imports:
+        agent_label: Amplifa-Agent
+        choose_agent: Agent auswählen
+        importing: Importiere…
+        pipedrive:
+          title: Aus Pipedrive importieren
+          description: Importieren Sie alle Pipedrive-Personen in den ausgewählten Amplifa-Agenten.
+          import_contacts: Kontakte importieren
+          started: Kontakte werden aus Pipedrive importiert. Leads erscheinen in Kürze.
+          start_error: Pipedrive-Import konnte nicht gestartet werden
+      campaign_controls:
+        approve_playbook_button: Playbook genehmigen...
+        pause_button: Agent pausieren
+        resume_button: Agent fortsetzen
+        pause_success: Agent pausiert.
+        resume_success: Agent fortgesetzt.
+        cannot_pause: Dieser Agent kann derzeit nicht pausiert werden.
+        cannot_resume: Dieser Agent kann derzeit nicht fortgesetzt werden.
+      sent_today_badge: "%{count} E-Mails wurden heute gesendet"
+      delivery_statuses:
+        not_contacted: Nicht kontaktiert
+        in_sequence: In Sequenz
+        paused: Gestoppt
+        replied: Geantwortet
+        bounced: Bounced
+        completed: Abgeschlossen
+        out_of_office: Abwesend
+        out_of_office_until: "Abwesend · zurück am %{date}"
+      interest_tags:
+        interested: Interessiert
+        meeting_request: Besprechungsanfrage
+        not_interested: Kein Interesse
+        wrong_person: Falsche Person
+      table:
+        date_added: Hinzugefügt am
+        last_sent: Zuletzt gesendet
+        lead: Lead
+        agent: Agent
+        relevance: Relevanz
+        relevance_tooltip_label: Relevanzbewertung erklären
+        relevance_tooltip: Unsere KI-Bewertung, wie relevant die Kaufsignale für diesen potenziellen Kunden sind.
+        progress: Fortschritt
+        messages_sent: gesendete Nachrichten
+      activity:
+        replied: Antwortete am %{date}
+        last_sent: Zuletzt gesendet %{date}
+        added: Hinzugefügt %{date}
+      pagination:
+        previous: Zurück
+        next: Weiter
+        showing: Es werden %{start} bis %{end} von %{total} Leads angezeigt
+        page_of: Seite %{current} von %{total}
+      modal:
+        load_error: Lead-Details konnten nicht geladen werden
+        active: Aktiv
+        blacklisted: Auf der Sperrliste
+        assigned_agents: Zugewiesene Agenten
+        messages:
+          title: Zeitleiste der Nachricht
+          empty: Es wurden noch keine Nachrichten oder Konversationsantworten generiert
+          empty_body: Kein Nachrichtentext
+          no_subject: "(Kein Thema)"
+          generated_for: Generiert für %{agent}
+          generated_label: Generiert (%{status})
+          conversation: Gespräch
+          bounce: Prallen
+          ooo: Außerhalb des Büros
+          open_reply_failed: Antwort-Konversation konnte nicht geöffnet werden
+          write_reply: Antwort verfassen
+        buying_signals_tab: Kaufsignale
+        creates_conversation: Erstellt eine Konversation für diesen Lead über die
+          Kampagnen-Mailbox.
+        detail_tabs_label: Lead-Details
+        enrichment:
+          company_summary: Unternehmenszusammenfassung
+          custom_fields: Benutzerdefinierte Felder
+          disc_profile: 'DISC-Profil: %{profile}'
+          headline: Überschrift
+          linkedin_posts: LinkedIn-Beiträge (%{count})
+          linkedin_profile: LinkedIn-Profil
+          no_summary: Keine Zusammenfassung verfügbar
+          post_unavailable: Beitragsinhalt nicht verfügbar
+          summary: Zusammenfassung
+          view_post: Beitrag ansehen
+        interest_actions:
+          confirm_create_meeting: Dadurch wird ein Meeting erstellt, das mit diesem
+            Lead verknüpft ist. Fortfahren?
+          confirm_remove_meeting: Dadurch wird die Entfernung des Meetings beantragt.
+            Das Meeting wird zur Überprüfung durch den Administrator als „Entfernung
+            ausstehend“ markiert. Fortfahren?
+          mark_interested: Als interessiert markieren
+          mark_not_interested: Als nicht interessiert markieren
+          update_failed: Aktualisierung des Interessenstatus fehlgeschlagen
+          update_success: Lead-Status aktualisiert
+        lead_status: Lead-Status
+        messages_tab: Nachrichten
+        not_set: Nicht festgelegt
+        uses_mailbox: Verwendet Postfach %{email} für diesen Lead.
+        view_linkedin: LinkedIn anzeigen
+      show:
+        title: Kampagnendetails
+        download_button: Herunterladen
+        download_modal:
+          title: Laden Sie Leads CSV herunter
+          description: Wählen Sie einen Agenten aus, um alle Lead-Kontakt- und Identitätsdaten
+            als CSV herunterzuladen.
+          agent_label: Agent
+          choose_agent: Wählen Sie einen Agenten...
+          confirm_button: CSV herunterladen
+        back_to_list: Zurück zu Kampagnen
+        description_title: Beschreibung
+        no_description: Keine Beschreibung angegeben
+        playbook: Playbook
+        no_playbook: Kein Playbook zugewiesen
+        default_timezone: Standardzeitzone
+        created_at: Erstellt
+        can_launch: Startbereit
+        cannot_launch: Nicht bereit
+        stats:
+          title: Kampagnenstatistiken
+          total_leads: Gesamt Leads
+          contacted: Kontaktiert
+          replied: Geantwortet
+          meetings: Meetings
+          reply_rate: Antwortrate
+          meeting_rate: Meeting-Rate
+        leads:
+          title: Zugewiesene Leads
+          empty: Noch keine Leads dieser Kampagne zugewiesen
+          email: E-Mail
+          name: Name
+          company: Unternehmen
+          status: Status
+          created: Erstellt
+          active: Aktiv
+          blacklisted: Gesperrt
+        mailboxes:
+          title: Postfächer
+          empty: Keine Postfächer zugewiesen
+          warmup_complete: Bereit
+          days_remaining: "%{days} Tage verbleiben"
+          statuses:
+            pending: Ausstehend
+            warming: Aufwärmen
+            active: Aktiv
+            paused: Angehalten
+            suspended: Ausgesetzt
+        samples:
+          title: Beispielnachrichten
+          status:
+            approved: Genehmigt
+            pending_review: Bereit zur Überprüfung
+          generated_at: Generiert %{date}
+          approved_by: Genehmigt von %{name} am %{date}
+          view_approved_samples: Genehmigte Beispiele ansehen
+          review_samples: Beispiele überprüfen
+          need_email_steps: Keine aktiven E-Mail-Schritte gefunden. Fügen Sie Schritte
+            hinzu, um Beispiele zu generieren.
+          need_leads: Keine Leads gefunden. Fügen Sie Leads hinzu, um Beispiele zu
+            generieren.
+      review_samples:
+        title: Beispielnachrichten überprüfen
+        intro: Bitte überprüfen Sie die unten stehenden KI-generierten Beispielnachrichten.
+          Dies sind Beispiele dafür, was an Ihre Leads gesendet wird.
+        not_ready: Beispielnachrichten wurden noch nicht generiert.
+        no_messages: Keine Beispielnachrichten zur Überprüfung verfügbar.
+        lead_info: Lead-Informationen
+        message_preview: Nachrichtenvorschau
+        subject_label: Betreff
+        body_label: Inhalt
+        send_test: Test an mich senden
+        test_sent: Test gesendet
+        expand_all: Alle erweitern
+        collapse_all: Alle minimieren
+        back_to_agent: Zurück zum Agent
+        company_website_summary: Zusammenfassung der Unternehmenswebsite
+        detail_tabs_label: Beispiel-Detail-Tabs
+        generated: Erstellt am %{date}
+        lead_details: Lead-Details
+        leads: Leads
+        linkedin_headline: LinkedIn-Überschrift
+        linkedin_summary: LinkedIn-Zusammenfassung
+        sharing_feedback_for: 'Feedback wird geteilt für:'
+        step: Schritt %{position}
+        steps_count: "%{count} Schritte"
+      approve_samples:
+        button: Nachrichten genehmigen
+        confirm: Sind Sie sicher, dass Sie diese Beispielnachrichten genehmigen möchten?
+          Dies erlaubt Amplifa, Nachrichten für alle Leads zu generieren.
+        success: Nachrichten genehmigt! Amplifa wird nun Nachrichten für alle Leads
+          generieren.
+        not_ready: Kann nicht genehmigt werden. Bitte warten Sie, bis die Beispiele
+          generiert wurden.
+      request_changes:
+        button: Änderungen anfordern
+        feedback_label: Welche Änderungen wünschen Sie?
+        feedback_placeholder: Bitte beschreiben Sie die benötigten Änderungen...
+        feedback_required: Bitte geben Sie Feedback zu den benötigten Änderungen.
+        success: Änderungsanfrage an das Amplifa-Team gesendet. Sie werden die Nachrichten
+          aktualisieren und Sie benachrichtigen.
+        submit_button: Anfrage senden
+      buying_signals:
+        highlights: Highlights
+        buying_signal_relevance: Kaufsignal-Relevanz
+        notify_failed: Das Amplifa-Team konnte nicht benachrichtigt werden
+        notify_success: Ihr Account Manager wird sich in Kürze bei Ihnen melden.
+        rating_value: "%{rating}/10"
+        relevance_rating: Relevanz
+        upgrade: Upgraden Sie Ihren Plan, um Kaufsignale zu erhalten
+    generated_messages:
+      send_test:
+        success: Test-E-Mail an Ihre E-Mail-Adresse gesendet.
+        failed: Test-E-Mail konnte nicht gesendet werden.
+  mailers:
+    admin_notification:
+      samples_approved:
+        subject: "[Amplifa] Muster genehmigt – %{agent_name}"
+      samples_changes_requested:
+        subject: "[Amplifa] Angeforderte Änderungen – %{agent_name}"
+      sample_messages_generated:
+        subject: "[Amplifa] Generierte Beispielnachrichten – %{agent_name}"
+      billing_interest:
+        subject: "[Amplifa] Abrechnungszinsen – %{organization_name} (%{action_name})"
+      integration_connected:
+        subject: "[Amplifa] Integration verbunden – %{organization_name} (%{integration_name})"
+      lead_list_file_uploaded:
+        subject: "[Amplifa] Lead-Listendatei hochgeladen – %{organization_name} (%{uploader_name})"
+  common:
+    save: Speichern
+    cancel: Abbrechen
+    edit: Bearbeiten
+    delete: Löschen
+    confirm: Bestätigen
+    loading: Lädt...
+    error: Ein Fehler ist aufgetreten
+    success: Erfolg
+    true: Ja
+    false: Nein
+    back: Zurück
+    next: Weiter
+    submit: Absenden
+    search: Suchen
+    filter: Filtern
+    clear: Löschen
+    close: Schließen
+    welcome: Willkommen
+    status: Status
+    organization: Organisation
+    created: Erstellt
+    name: Name
+    company: Unternehmen
+    email: E-Mail
+    view: Anzeigen
+    apply_filters: Filter anwenden
+    all_statuses: Alle Status
+    add: Hinzufügen
+    done: Fertig
+    previous: Zurück
+  roles:
+    amplifa_admin: Amplifa-Admin
+    customer_admin: Kunden-Admin
+    customer_user: Kunden-Benutzer
+  currencies:
+    eur: EUR - Euro
+    usd: USD - US-Dollar
+    gbp: GBP - Britisches Pfund
+    chf: CHF - Schweizer Franken
+  languages:
+    en: English
+    de: Deutsch
+    es: Spanisch (EU)
+    pt-BR: Portugiesisch (Brasilien)
+    fr: Französisch
+    pl: Polnisch
+    cs: Tschechisch
+    it: Italienisch
+  time:
+    just_now: Gerade eben
+    formats:
+      long: "%d. %B %Y %H:%M"
+      short: "%d.%m.%Y %H:%M"
+      date_only: "%d.%m.%Y"
+  date:
+    formats:
+      long: "%d. %B %Y"
+      short: "%d.%m.%Y"
+  customer_home:
+    title: Startseite
+    welcome_back: Willkommen zurück, %{name}!
+    subtitle: Überprüfen Sie die zentrale Einrichtung Ihres Outreach-Arbeitsbereichs,
+      einschließlich Domains, Absenderprofile, E-Mail-Konten und Sperrlistenabdeckung.
+    common:
+      not_set: Nicht festgelegt
+      next: Weiter
+      previous: Zurück
+      see_all: Alle anzeigen...
+    company:
+      title: Unternehmen
+      description: Informationen zu Ihrem Unternehmensprofil
+      website: Website
+      industry: Branche
+      average_contract_value: Durchschnittlicher Vertragswert
+      industry_placeholder: z. B. SaaS, FinTech, Gesundheitswesen
+      website_placeholder: https://beispiel.de
+    senders:
+      title: Absender
+      description: Personen, die Outreach-E-Mails im Namen Ihrer Organisation senden
+      empty: Keine Absender konfiguriert. Wenden Sie sich an Ihren Amplifa-Administrator.
+      active_mailboxes_count: "%{count} aktive Postfächer"
+    email_accounts:
+      title: E-Mail-Konten
+      description: Automatisch aus Domains und Absendern erstellt
+      empty: E-Mail-Konten werden hier angezeigt, sobald Domains und Absender konfiguriert
+        sind.
+      ready: Bereit
+      mailboxes_count: "%{count} Postfächer"
+    blacklist:
+      title: Sperrliste
+      search_placeholder: Sperrliste durchsuchen...
+      remove_entry: Eintrag entfernen
+      empty: Keine Sperrlisteneinträge.
+      entries_count: "%{count} Einträge"
+      entries_match: "%{count} von %{total} Einträgen stimmen überein"
+      global: Global
+      showing: Zeige %{start} bis %{end} von %{total}
+      types:
+        domain: Domain
+        email: E-Mail
+    domains:
+      configured: "%{count} Domains konfiguriert"
+      configured_of: "%{count} von %{max} Domains konfiguriert"
+      empty: Noch keine Domains konfiguriert.
+      mailboxes_count: "%{count} Postfächer"
+      pending_setup: Einrichtung ausstehend
+      placeholder: beispiel.de
+      request: Domain anfordern
+      title: Domains
+  customer_settings:
+    title: Einstellungen
+    subtitle: Verwalten Sie Ihr Konto, Integrationen und Einstellungen
+    common:
+      actions: Aktionen
+      save_settings: Einstellungen speichern
+      saving: Speichern...
+    tabs:
+      billing: Abrechnung
+      company: Unternehmen
+      team: Team
+      profile: Profil
+      webhooks: Webhooks
+      blacklists: Sperrliste
+      email: Absender & Domains
+    email:
+      sections:
+        auto_forward: Automatische Weiterleitung
+        senders: Absender
+        domains: Domains
+        email_accounts: E-Mail-Konten
+      auto_forward:
+        title: Interessierte Gespräche automatisch weiterleiten
+        description: Leiten Sie neu interessierte oder Meeting-Anfrage-Gespräche an
+          eine E-Mail-Adresse weiter. Jedes Gespräch wird nur einmal weitergeleitet.
+        enable: Automatische Weiterleitung aktivieren
+        forward_to: Weiterleiten an
+        comment_options: Kommentaroptionen
+        without_comment: Ohne Kommentar weiterleiten
+        standard_comment: Standardkommentar zu allen weitergeleiteten Gesprächen hinzufügen
+        per_agent_comment: Standardkommentar zu allen weitergeleiteten Gesprächen
+          pro Agent hinzufügen
+        save: Einstellungen für automatische Weiterleitung speichern
+        table:
+          agent: Agent
+          forward_comment: Weiterleitungskommentar
+        admin_only: Nur Kundenadministratoren können die Einstellungen für die automatische
+          Weiterleitung verwalten.
+        comment_placeholder: Fügen Sie Kontext für die Person hinzu, die jede weitergeleitete
+          Konversation erhält.
+        email_placeholder: kollege@beispiel.de
+        no_agents: Noch keine Agenten konfiguriert.
+      senders:
+        description: Konfigurierte Absenderprofile
+        empty: Noch keine Absenderprofile konfiguriert.
+        admin_only: Nur Kundenadministratoren können Absendersignaturen oder Calendly-Einstellungen
+          aktualisieren.
+        sender_fallback: Absender
+      domains:
+        description: Verwalten Sie Ihre Sendedomains
+        add: Domain hinzufügen
+        verified: Verifiziert
+        pending: Ausstehend
+        email_accounts_count: "%{count} E-Mail-Konten"
+      accounts:
+        configured: "%{count} Konten konfiguriert"
+        sent_today: Heute gesendet
+      statuses:
+        active: Aktiv
+        paused: Pausiert
+        pending: Ausstehend
+        suspended: Ausgesetzt
+      domain_wizard:
+        confirm_order: Bestellung bestätigen
+        confirm_pay: Bestätigen & Bezahlen
+        mailboxes_per_domain: Postfächer pro Domain
+        monthly_abbrev: "%{price}/Monat"
+        monthly_price: "%{price}/Monat"
+        processing: Wird verarbeitet
+        processing_help: Dies kann einen Moment dauern. Bitte schließen Sie dieses
+          Fenster nicht.
+        refresh: Aktualisieren
+        registering: Domains werden registriert...
+        select_domains: Domains auswählen
+        select_up_to: Wählen Sie bis zu 5 Domains zur Registrierung aus.
+        selected_domains: Ausgewählte Domains
+        total_mailboxes: 'Gesamt: %{count} Postfächer'
+        total_monthly_cost: Monatliche Gesamtkosten
+      linkedin:
+        connect: LinkedIn verbinden
+        view: LinkedIn anzeigen
+      mailboxes:
+        capacity_left: "%{remaining}/%{limit} Kapazität übrig"
+        empty_for_sender: Diesem Absender sind keine Postfächer zugewiesen.
+        no_domain: Keine Domain
+        ready: Bereit
+        title_with_count: Postfächer (%{count})
+        warming_up: Wird aufgewärmt
+      schedule:
+        edit: Zeitplan bearbeiten
+        end_time: Endzeit
+        save: Zeitplan speichern
+        start_time: Startzeit
+        timezone: Zeitzone
+        title: Sendezeitplan
+      signatures:
+        edit: Signatur bearbeiten
+        edit_confirm: Das Bearbeiten dieser Signatur wirkt sich auf zukünftige ausgehende
+          E-Mails dieses Absenders aus. Fortfahren?
+        empty: Noch keine Signatur konfiguriert.
+        preview: Vorschau
+        preview_title: Signaturvorschau
+        save: Signatur speichern
+        template: Vorlage
+        title: Signatur
+    blacklists:
+      sections:
+        email: E-Mail-Sperrliste
+        domain: Domain-Sperrliste
+        import_export: Import/Export
+        import: Import
+        export: Export
+      email_title: E-Mail-Sperrliste
+      domain_title: Domain-Sperrliste
+      search_emails: E-Mails suchen...
+      search_domains: Domains suchen...
+      remove_entry: Eintrag entfernen
+      table:
+        email: E-Mail
+        domain: Domain
+        added: Hinzugefügt
+        reason: Grund
+      delete_confirm: Sind Sie sicher, dass Sie diesen Eintrag löschen möchten?
+      dialogs:
+        add_domains_title: Domains zur Sperrliste hinzufügen
+        add_emails_title: E-Mails zur Sperrliste hinzufügen
+        domain_description: Geben Sie eine Domain pro Zeile ein.
+        domains: Domains
+        email_addresses: E-Mail-Adressen
+        email_description: Geben Sie eine E-Mail pro Zeile ein.
+      domain_empty: Keine Domains gefunden.
+      email_empty: Keine E-Mails gefunden.
+      import:
+        csv_description: Laden Sie eine CSV-Datei mit E-Mails und Domains hoch, die
+          gesperrt werden sollen.
+        csv_title: E-Mails und Domains importieren (CSV)
+        description: E-Mails oder Domains importieren
+        empty_file_error: Die ausgewählte Datei enthält keine zu importierenden E-Mail-
+          oder Domain-Werte.
+        failed_error: Import fehlgeschlagen. Bitte überprüfen Sie das Dateiformat
+          und versuchen Sie es erneut.
+        importing: Importiere...
+        read_error: Datei konnte nicht gelesen werden. Bitte versuchen Sie es erneut
+          mit einer gültigen CSV- oder Textdatei.
+        select_file: Datei auswählen
+        title: Import
+      export:
+        title: Export
+        description: Sperrliste dieser Organisation herunterladen
+        csv_title: Sperrliste exportieren (CSV)
+        csv_description: Laden Sie alle organisationsspezifisch gesperrten E-Mails und Domains als CSV mit den Spalten Wert, Typ und Grund herunter.
+        download: CSV herunterladen
+      manual_reason: Manuell
+      pagination:
+        domains: Zeige %{start} bis %{end} von %{total} Domains
+        emails: Zeige %{start} bis %{end} von %{total} E-Mails
+    webhooks:
+      remove_confirm: Diesen Webhook-Endpunkt entfernen?
+      only_authorized: Nur autorisierte Benutzer können diese Einstellung ändern.
+      sections:
+        tracking: Klick-Tracking
+        endpoints: Webhook-Endpunkte
+        events: Klickverlauf
+      click_tracking:
+        title: Klick-Tracking
+        description: HTML-E-Mail-Links zu Tracking-Weiterleitungs-URLs umschreiben
+          und Klickereignisse auslösen.
+        example: 'Beispiel - Links in HTML-E-Mails werden umgeschrieben:'
+        enable: Klick-Tracking + Webhooks aktivieren
+      endpoints:
+        title: Webhook-Endpunkte
+      events:
+        title: Aufgezeichnete Klickereignisse
+        description: Neueste verfolgte Klicks für diese Organisation.
+        empty: Noch keine Klickereignisse aufgezeichnet.
+        table:
+          clicked_at: Geklickt am
+          lead: Lead
+          target_url: Ziel-URL
+          referrer: Referrer
+    team:
+      title: Teammitglieder
+      members_of: Mitglieder von %{organization}
+      sections:
+        members: Teammitglieder
+        invitations: Einladungen
+      roles:
+        customer_admin: Kundenadministrator
+        customer_user: Kundenbenutzer
+      table:
+        name: Name
+        email: E-Mail
+        role: Rolle
+        joined: Beigetreten
+      can_manage: Kann Team verwalten
+      cancel_invitation_confirm: Einladung für %{email} stornieren?
+      deactivate: Deaktivieren
+      deactivate_confirm: "%{name} deaktivieren?"
+      description: Personen in Ihrer Organisation
+      empty: Keine Teammitglieder gefunden.
+      invite:
+        admin_only: Nur Kundenadministratoren können Teammitglieder einladen oder
+          deaktivieren.
+        description: Einladungslinks an neue Benutzer senden
+        email: E-Mail
+        first_name: Vorname
+        last_name: Nachname
+        role: Rolle
+        submit: Einladung senden
+        title: Teammitglieder einladen
+      pending:
+        empty: Keine ausstehenden Einladungen.
+        meta: Eingeladen von %{inviter} · Läuft ab am %{date}
+        title: Ausstehende Einladungen
+      read_only: Nur Lesezugriff
+      statuses:
+        active: Aktiv
+        deactivated: Deaktiviert
+    billing:
+      ai_intelligence: KI-Intelligenz
+      day: Tag %{day}
+      usage_alert: Sie haben %{used} von %{limit} Meetings in diesem Abrechnungszyklus
+        genutzt
+      reset_on: KI-Agenten werden am %{date} zurückgesetzt
+      reset_next_cycle: KI-Agenten werden im nächsten Abrechnungszyklus zurückgesetzt
+      need_more: Benötigen Sie jetzt mehr Meetings?
+      get_more: 10 weitere Meetings erhalten
+      upgrade_plan: Plan upgraden
+      current_plan: Aktueller Plan
+      active: Aktiv
+      current_plan_description: Verwalten Sie Ihr Abonnement und Ihre Abrechnungsdetails
+      plan: Plan
+      per_month: "/Monat"
+      upgrade_annual: Auf jährlich upgraden - 20% sparen
+      meetings_usage: Meeting-Nutzung
+      meetings_usage_count: "%{used} / %{limit} Meetings in diesem Abrechnungszyklus"
+      renews_on: Verlängert sich am %{date}
+      renewal_unavailable: Verlängerungsdatum nicht verfügbar
+      update_plan: Plan aktualisieren
+      update_plan_description: Wählen Sie den passenden Plan für Ihr Team
+      plan_meetings: Bis zu %{count} Meetings pro Abrechnungszyklus
+      enterprise_contact_description: Kontaktieren Sie uns
+      enterprise_features:
+        unlimited_appointments: Unlimited appointments
+        custom_integrations: Custom integrations
+        sla_guarantee: SLA guarantee
+        dedicated_support_team: Dedicated support team
+      upgrade: Upgrade
+      contact_sales: Sales kontaktieren
+      optional_addons: Optionale Add-ons
+      optional_addons_description: Erweitere deinen Plan mit zusätzlichen Modulen
+      buying_signals: Buying Signals
+      buying_signals_description: Echtzeit-Intent-Daten & Buying-Signal-Trigger als optionales Add-on
+      buying_signals_features:
+        live_intent_signals: Live Intent-Signale
+        job_change_funding_trigger: Job-Change & Funding-Trigger
+        tech_stack_hiring_signals: Tech-Stack & Hiring-Signale
+        automatic_workflow_trigger: Automatische Workflow-Trigger
+      activate_addon: Add-on aktivieren
+    company:
+      average_contract_value: Durchschnittlicher Vertragswert (ACV)
+      calendly_placeholder: https://calendly.com/unternehmen/demo
+      calendly_url: Calendly-URL
+      currency: Währung
+      description: Verwalten Sie das Organisationsprofil und die Umsatzannahmen
+      editable: Bearbeitbar
+      editable_notice: Unternehmenseinstellungen gelten für Ihre gesamte Organisation.
+        Änderungen werden sofort nach dem Absenden gespeichert.
+      organization_name: Name der Organisation
+      read_only: Schreibgeschützt
+      readonly_notice: Sie können die Unternehmenseinstellungen einsehen, aber nur
+        Kundenadministratoren können ACV/AMV und Organisationsstandards bearbeiten.
+      save: Unternehmenseinstellungen speichern
+      title: Unternehmenseinstellungen
+      website: Website
+      website_placeholder: https://beispiel.de
+    profile:
+      personal:
+        description: Aktualisieren Sie Ihre persönlichen Daten und Zeitzone
+        email: E-Mail-Adresse
+        first_name: Vorname
+        language: Sprache
+        last_name: Nachname
+        save: Änderungen speichern
+        timezone: Zeitzone
+        title: Persönliche Informationen
+      sections:
+        personal: Persönliche Daten
+        security: Sicherheit
+      security:
+        change_password: Passwort ändern
+        confirm_new_password: Neues Passwort bestätigen
+        description: Verwalten Sie Ihr Passwort und Ihre Sicherheitseinstellungen
+        new_password: Neues Passwort
+        old_password: Altes Passwort
+        password_help: Das neue Passwort muss mindestens 8 Zeichen lang sein.
+        title: Sicherheit
+        update_password: Passwort aktualisieren
+  public_invitations:
+    contact_support: Support kontaktieren
+    expired:
+      default_message: Diese Einladung ist abgelaufen und kann nicht mehr zur Kontoerstellung
+        verwendet werden.
+      details_title: Einladungsdetails
+      expired_on: 'Abgelaufen am:'
+      heading: Einladung abgelaufen
+      next_steps:
+        request_body: von Ihrem Administrator oder der Person, die Sie eingeladen
+          hat
+        request_title: Neue Einladung anfordern
+        support_body: wenn Sie weiterhin Probleme beim Zugriff auf Ihr Konto haben
+        support_title: Support kontaktieren
+      page_title: Einladung abgelaufen - Amplifa
+      request_new: Neue Einladung anfordern
+      sent_to: 'Gesendet an:'
+      subheading: Dieser Einladungslink ist nicht mehr gültig
+      title: Einladung abgelaufen
+    go_to_login: Zum Login
+    invalid:
+      default_message: Dieser Einladungslink ist ungültig oder wurde entfernt. Die
+        Einladung wurde möglicherweise storniert oder bereits verwendet.
+      heading: Ungültige Einladung
+      next_steps:
+        already_account_body: Versuchen Sie, sich stattdessen anzumelden
+        already_account_title: Haben Sie bereits ein Konto?
+        check_email_body: nach der ursprünglichen Einladung und stellen Sie sicher,
+          dass Sie den richtigen Link verwenden
+        check_email_title: Überprüfen Sie Ihre E-Mails
+        contact_admin_body: um eine neue Einladung anzufordern oder Ihren Einladungsstatus
+          zu überprüfen
+        contact_admin_title: Kontaktieren Sie Ihren Administrator
+      page_title: Ungültige Einladung - Amplifa
+      reasons:
+        cancelled: Die Einladung wurde von einem Administrator storniert
+        deleted: Die Einladung wurde aus dem System gelöscht
+        incomplete: Der Einladungslink ist möglicherweise unvollständig oder wurde
+          falsch kopiert.
+        used: Die Einladung wurde bereits zur Erstellung eines Kontos verwendet.
+      subheading: Dieser Einladungslink kann nicht verwendet werden.
+      title: Ungültige Einladung
+      why_title: Warum passiert das?
+    next_steps_title: Was ist als Nächstes zu tun?
+
+  assistant:
+    nav: Assistent
+    page_title: Assistent
+    new_chat: Neuer Chat
+    chats: Chats
+    show_chats: Chats anzeigen
+    hide_chats: Chats ausblenden
+    untitled_chat: Neuer Chat
+    no_chats: Noch keine Unterhaltungen
+    no_chats_hint: Starte einen neuen Chat, um loszulegen.
+    delete_chat: Chat löschen
+    delete_chat_confirm: Diesen Chat löschen?
+    delete_chat_confirm_named: '"%{title}" löschen? Das kann nicht rückgängig gemacht
+      werden.'
+    pin_chat: Chat anheften
+    unpin_chat: Chat lösen
+    load_more_chats: Mehr laden
+    loading_more_chats: Wird geladen...
+    load_older: Frühere Nachrichten laden
+    loading_older: Frühere Nachrichten werden geladen...
+    scroll_to_bottom: Nach unten scrollen
+    thinking: Denkt nach...
+    you: Du
+    assistant_label: Assistent
+    retry: Erneut versuchen
+    composer:
+      placeholder: Frage alles zu deinem Workspace...
+      send: Senden
+      hint: Enter zum Senden, Shift + Enter für eine neue Zeile
+      stop: Stoppen
+      remove_reference: Zitierten Text entfernen
+    selection:
+      ask: Assistenten fragen
+    welcome:
+      greeting: Hallo %{name}
+      title: Wie kann ich helfen?
+      description: Frage nach deinen Playbooks, Leads, Antworten oder Ergebnissen.
+        Ich antworte verständlich und sage dir, wo du in Amplifa nachsehen kannst.
+      suggestions_label: Probiere eines davon
+      suggestions:
+        inbox: Welche Konversationen warten auf meine Antwort?
+        interested: Wer hat zuletzt mit Interesse geantwortet?
+        stats: Wie steht es um mein Postfach? Zeig mir die Zahlen.
+        summarize: Fasse meine neueste Konversation zusammen
+    tools:
+      conversation_list:
+        running: Durchsuche dein Postfach...
+        done: Postfach durchsucht
+        failed: Postfachsuche nicht verfügbar
+      conversation_stats:
+        running: Analysiere dein Postfach...
+        done: Postfach analysiert
+        failed: Postfach-Statistiken nicht verfügbar
+      conversation_read:
+        running: Lese die Konversation...
+        done: Konversation gelesen
+        failed: Konversation konnte nicht gelesen werden
+      conversation_update_interest_status:
+        running: Aktualisiere den Interessenstatus...
+        done: Interessenstatus aktualisiert
+        failed: Interessenstatus konnte nicht aktualisiert werden
+      meeting_create:
+        running: Buche das Meeting...
+        done: Meeting gebucht
+        failed: Meeting konnte nicht gebucht werden
+      meeting_reschedule:
+        running: Verschiebe das Meeting...
+        done: Meeting verschoben
+        failed: Meeting konnte nicht verschoben werden
+      meeting_cancel:
+        running: Sage das Meeting ab...
+        done: Meeting abgesagt
+        failed: Meeting konnte nicht abgesagt werden
+      meeting_list:
+        running: Lade deine Meetings...
+        done: Meetings geladen
+        failed: Meeting-Suche ist nicht verfügbar
+      meeting_read:
+        running: Lese das Meeting...
+        done: Meeting gelesen
+        failed: Meeting konnte nicht gelesen werden
+      lead_search:
+        running: Searching leads...
+        done: Searched leads
+        failed: Lead search is unavailable
+      agent_list:
+        running: Looking up your agents...
+        done: Looked up your agents
+        failed: Agent lookup is unavailable
+      agent_stats:
+        running: Analyzing your campaigns...
+        done: Analyzed your campaigns
+        failed: Campaign statistics are unavailable
+      agent_lead_list:
+        running: Looking up campaign leads...
+        done: Looked up campaign leads
+        failed: Campaign lead lookup is unavailable
+      agent_pause_campaign:
+        running: Pausing the agent...
+        done: Agent paused
+        failed: Could not pause the agent
+      agent_resume_campaign:
+        running: Resuming the agent...
+        done: Agent resumed
+        failed: Could not resume the agent
+      generic:
+        running: Arbeite...
+        done: Fertig
+        failed: Dieses Tool ist vorübergehend nicht verfügbar
+    flash:
+      chat_deleted: Chat gelöscht
+    errors:
+      create_chat: Der neue Chat konnte nicht gestartet werden. Bitte versuche es erneut.
+      delete_chat: Dieser Chat konnte nicht gelöscht werden. Bitte versuche es erneut.
+      pin_chat: Dieser Chat konnte nicht aktualisiert werden. Bitte versuche es erneut.
+      load_more_chats: Weitere Chats konnten nicht geladen werden. Bitte versuche es erneut.
+      chat_not_found: Dieser Chat ist nicht mehr verfügbar.
+      blank_prompt: Schreibe eine Nachricht, bevor du sendest.
+      prompt_too_long: Deine Nachricht ist zu lang. Bitte bleibe unter %{count} Zeichen.
+      already_streaming: Warte, bis die aktuelle Antwort fertig ist, bevor du erneut
+        sendest.
+      send_failed: Deine Nachricht konnte nicht gesendet werden. Bitte versuche es
+        erneut.
+      load_older_failed: Frühere Nachrichten konnten nicht geladen werden. Bitte versuche
+        es erneut.
+      llm_unavailable: Der Assistent ist gerade nicht verfügbar. Bitte versuche es
+        in einem Moment erneut.
+      empty_completion: Der Assistent hat keine Antwort geliefert. Bitte versuche es
+        erneut.
+      unexpected: Bei der Antwort ist etwas schiefgelaufen. Bitte versuche es erneut.
+      connection_lost: Verbindung verloren. Lade die Seite neu, um die vollständige
+        Antwort zu sehen.

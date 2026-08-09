@@ -1,0 +1,106 @@
+---
+description: React/Inertia/TypeScript conventions for pages, props, i18n, forms and icons
+globs: app/javascript/**/*.tsx,app/javascript/**/*.ts
+alwaysApply: false
+---
+
+# Frontend Conventions
+
+## Page structure
+
+Every page in `app/javascript/pages/` uses `export default function <FileName>` (matching the file,
+not the route) with a props interface declared **in the same file**. Props are **snake_case**,
+mirroring Rails serialization:
+
+```tsx
+interface RoiProps {
+  monthly_trends: Array<{ month: string; sent: number }>
+  can_edit_metrics: boolean
+  errors?: Record<string, string[]>
+}
+
+export default function Index({ monthly_trends, can_edit_metrics }: RoiProps) {
+```
+
+## Layouts are wrapper components, NOT Inertia's `Layout` static property
+
+The `page.default.layout` hook is deliberately commented out in
+[app/javascript/entrypoints/inertia.ts](app/javascript/entrypoints/inertia.ts). Each page wraps its
+own JSX. Never write `Page.layout = ...`.
+
+```tsx
+return (
+  <AuthenticatedLayout title={t('roi.title')} account={account} organization={organization} flash={flash}>
+```
+
+`AuthenticatedLayout` requires `title`, `account`, `children`. `SettingsLayout` instead reads
+`auth`/`flash` itself and takes `currentTab` + `sidebarSections`.
+
+Shared Inertia props come from `usePage<SharedProps>().props` — the `[key: string]: unknown` index
+signature is required by Inertia's generic.
+
+## Imports: relative only
+
+**There are no path aliases.** `@/lib/i18n` does not resolve (the docblock in `lib/i18n.ts` claiming
+otherwise is wrong). Use relative paths: `import { t } from '../../lib/i18n'`.
+The `components/ui/index.ts` and `layouts/index.ts` barrels exist but are not imported from in
+practice — import directly from the component file to match surrounding code.
+
+## i18n — never hard-code user-facing strings
+
+```tsx
+t('customer_settings.team.table.name')                          // snake_case, dot-separated
+t('customer_settings.team.members_of', { organization: name })  // interpolation -> %{organization}
+t('roi.metrics.across_months', { count: months })               // pluralization -> one:/other:
+t(`admin.users.statuses.${user.status}`)                        // dynamic key, static prefix
+```
+
+Add keys to `config/locales/en.yml` (plus other locales), then export to the frontend:
+
+```bash
+mise exec -- i18n export --config config/i18n-js.yml
+```
+
+## Forms
+
+Prefer Inertia's `useForm`; surface errors via the `error` prop on `Input`:
+
+```tsx
+const { data, setData, post, processing, errors } = useForm({ email: '' })
+<Input label={t('...')} value={data.email} onChange={e => setData('email', e.target.value)} error={errors.email} />
+<Button type="submit" loading={processing}>{t('common.save')}</Button>
+```
+
+Raw `fetch` is used in a few places for non-navigational mutations and must send
+`'X-CSRF-Token'`. Reach for `router.post/patch` + `useForm` first.
+
+## Toasts
+
+Prefer the local wrapper over importing `sonner` directly (`Toaster.tsx` re-exports `toast`):
+
+```tsx
+import { toast } from '../../components/ui/Toaster'
+toast.success(flash.notice)
+toast.error(t('admin.common.error'))
+```
+
+## Icons
+
+Always `lucide-react` — never inline SVG. Size with classes (`size-4`, or `h-4 w-4`):
+
+```tsx
+import { Inbox, LogOut } from 'lucide-react'
+<LogOut className="size-4" />
+```
+
+## Sidebar navigation
+
+Customer nav lives in `CUSTOMER_NAV_ITEMS` in
+[app/javascript/layouts/AuthenticatedLayout.tsx](app/javascript/layouts/AuthenticatedLayout.tsx):
+`{ id, label, icon, href }`. Add new top-level entries there.
+
+## After changes
+
+```bash
+npm run check
+```

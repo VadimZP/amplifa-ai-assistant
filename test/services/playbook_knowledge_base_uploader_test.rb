@@ -1,0 +1,29 @@
+# frozen_string_literal: true
+
+require 'test_helper'
+
+class PlaybookKnowledgeBaseUploaderTest < ActiveSupport::TestCase
+  setup do
+    @organization = organizations(:acme)
+    @admin = accounts(:amplifa_admin)
+  end
+
+  test 'rejects files larger than 25MB' do
+    uploader = PlaybookKnowledgeBaseUploader.new(@organization, @admin)
+    file = sized_file(26.megabytes)
+
+    error = assert_raises(PlaybookKnowledgeBaseUploader::ValidationError) do
+      uploader.upload(file, applies_to_all_playbooks: true)
+    end
+
+    assert_equal 'File too large (max 25MB)', error.message
+  end
+
+  private
+
+  def sized_file(size)
+    Object.new.tap do |file|
+      file.define_singleton_method(:size) { size }
+    end
+  end
+end

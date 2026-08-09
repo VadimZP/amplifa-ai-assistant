@@ -1,0 +1,14 @@
+<% content_for :preheader do %><%= t('mailers.playbook.new_comment.body', commenter: @commenter.full_name, product: @playbook.product_name) %><% end %>
+
+<h1 style="margin: 0 0 18px; color: #111827; font-size: 24px; line-height: 1.25; font-weight: 700;"><%= t('mailers.playbook.new_comment.greeting') %></h1>
+
+<p style="margin: 0 0 16px; color: #374151; font-size: 16px; line-height: 1.6;">
+  <%= t('mailers.playbook.new_comment.body', commenter: @commenter.full_name, product: @playbook.product_name) %>
+</p>
+
+<div class="quote-box" style="margin: 22px 0; padding: 16px 18px; background-color: #f8fafc; border-left: 4px solid #4f46e5; border-radius: 10px;">
+  <p style="margin: 0 0 8px; color: #111827; font-size: 15px; line-height: 1.5;"><strong><%= @commenter.full_name %></strong></p>
+  <p style="margin: 0; color: #374151; font-size: 16px; line-height: 1.6;"><%= simple_format(@comment.body, {}, wrapper_tag: 'span') %></p>
+</div>
+
+<%= render 'shared/mailer_button', text: t('mailers.playbook.new_comment.cta'), url: playbook_url(@playbook) %>

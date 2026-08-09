@@ -1,0 +1,89 @@
+# Pre-existing offenses at the time RuboCop was adopted, grandfathered per file so the lint gate
+# stays green without a mass reformat. When touching one of these files, fix its offenses and
+# remove it from the list. New files are fully enforced.
+
+Style/StringLiterals:
+  Exclude:
+    - 'Gemfile'
+    - 'app/callbacks/mail_polling_batch_callback.rb'
+    - 'app/controllers/admin/agents_controller.rb'
+    - 'app/controllers/admin/invitations_controller.rb'
+    - 'app/models/admin_activity.rb'
+    - 'app/models/agent_mailbox.rb'
+    - 'app/models/lead_import.rb'
+    - 'app/services/blacklist_import_service.rb'
+    - 'app/services/lead_import_analyzer_service.rb'
+    - 'config/boot.rb'
+    - 'config/ci.rb'
+    - 'config/environment.rb'
+    - 'config/environments/production.rb'
+    - 'config/environments/test.rb'
+    - 'config/importmap.rb'
+    - 'config/initializers/assets.rb'
+    - 'config/initializers/openssl_crl_fix.rb'
+    - 'config/initializers/rodauth.rb'
+    - 'config/puma.rb'
+    - 'lib/tasks/calendly.rake'
+    - 'lib/tasks/seeds.rake'
+    - 'lib/tasks/translations.rake'
+    - 'test/controllers/admin/base_controller_test.rb'
+    - 'test/controllers/admin/organizations_controller_test.rb'
+    - 'test/integration/admin/activities_test.rb'
+    - 'test/integration/api/v1/lead_imports_test.rb'
+    - 'test/integration/csrf_authentication_flow_test.rb'
+    - 'test/integration/customer/team_test.rb'
+    - 'test/integration/impersonation_test.rb'
+    - 'test/mailers/invitation_mailer_test.rb'
+    - 'test/models/admin_activity_test.rb'
+    - 'test/models/agent_mailbox_test.rb'
+    - 'test/models/generated_message_test.rb'
+    - 'test/models/invitation_test.rb'
+    - 'test/models/lead_import_test.rb'
+    - 'test/models/sent_reply_test.rb'
+    - 'test/policies/admin_activity_policy_test.rb'
+    - 'test/policies/agent_lead_policy_test.rb'
+    - 'test/policies/blacklist_policy_test.rb'
+    - 'test/policies/dashboard_policy_test.rb'
+    - 'test/policies/generated_message_policy_test.rb'
+    - 'test/policies/invitation_policy_test.rb'
+    - 'test/policies/lead_import_policy_test.rb'
+    - 'test/policies/lead_policy_test.rb'
+    - 'test/policies/organization_policy_test.rb'
+    - 'test/policies/playbook_comment_policy_test.rb'
+    - 'test/policies/team_policy_test.rb'
+    - 'test/services/blacklist_import_service_test.rb'
+    - 'test/services/column_mapping_service_test.rb'
+    - 'test/services/lead_import_analyzer_service_test.rb'
+
+Layout/EmptyLinesAroundBlockBody:
+  Exclude:
+    - 'Gemfile'
+
+Layout/CommentIndentation:
+  Exclude:
+    - 'Gemfile'
+    - 'config/initializers/content_security_policy.rb'
+
+Layout/LeadingCommentSpace:
+  Exclude:
+    - 'Gemfile'
+
+Layout/EmptyLinesAroundClassBody:
+  Exclude:
+    - 'app/controllers/admin/activities_controller.rb'
+    - 'app/services/mcp/oauth_server.rb'
+    - 'test/controllers/admin/organizations_index_metrics_test.rb'
+    - 'test/integration/playbooks_test.rb'
+    - 'test/mailers/admin_notification_mailer_test.rb'
+    - 'test/mailers/playbook_mailer_test.rb'
+    - 'test/models/agent_lead_test.rb'
+    - 'test/models/company_test.rb'
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  Exclude:
+    - 'config/environments/production.rb'
+    - 'lib/tasks/calendly.rake'
+
+Layout/SpaceInsideHashLiteralBraces:
+  Exclude:
+    - 'test/policies/playbook_comment_policy_test.rb'

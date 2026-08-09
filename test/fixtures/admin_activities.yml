@@ -1,0 +1,73 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# Recent activities for testing filters and pagination
+# WHY: Use Time.zone.now for more reliable test timestamps, with varying ages
+# Note: Activities use days/hours to match test expectations
+impersonation_recent:
+  account: amplifa_admin
+  organization: acme
+  action: impersonate_user
+  details:
+    target_account_id: <%= ActiveRecord::FixtureSet.identify(:customer_user) %>
+    target_email: user@acme.com
+    target_organization: Acme Corporation
+  ip_address: 192.168.1.1
+  user_agent: Mozilla/5.0
+  created_at: <%= Time.zone.now - 1.day %>
+
+user_creation_recent:
+  account: amplifa_admin
+  organization: growth_lab
+  action: create_user
+  details:
+    email: newuser@growthlab.com
+    role: customer_user
+    organization_id: <%= ActiveRecord::FixtureSet.identify(:growth_lab) %>
+  ip_address: 192.168.1.2
+  user_agent: Mozilla/5.0
+  created_at: <%= Time.zone.now - 2.days %>
+
+org_update_recent:
+  account: amplifa_admin
+  organization: beta
+  action: update_organization
+  details:
+    changes:
+      status: ["onboarding", "active"]
+  ip_address: 192.168.1.3
+  user_agent: Mozilla/5.0
+  created_at: <%= Time.zone.now - 3.days %>
+
+impersonation_exit:
+  account: amplifa_admin
+  organization: acme
+  action: exit_impersonation
+  details:
+    customer_account_id: <%= ActiveRecord::FixtureSet.identify(:customer_user) %>
+  ip_address: 192.168.1.4
+  user_agent: Mozilla/5.0
+  created_at: <%= Time.zone.now - 4.days %>
+
+# Older activity for date range filtering
+old_activity:
+  account: amplifa_admin
+  organization: acme
+  action: create_organization
+  details:
+    name: Old Corp
+  ip_address: 192.168.1.5
+  user_agent: Mozilla/5.0
+  created_at: <%= Time.zone.now - 30.days %>
+
+# Activity for a different organization
+growth_lab_activity:
+  account: amplifa_admin
+  organization: growth_lab
+  action: update_user
+  details:
+    email: admin@growthlab.com
+    changes:
+      role: ["customer_user", "customer_admin"]
+  ip_address: 192.168.1.6
+  user_agent: Mozilla/5.0
+  created_at: <%= Time.zone.now - 5.days %>

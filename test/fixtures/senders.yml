@@ -1,0 +1,97 @@
+# Sender fixtures for testing
+
+# Active sender for Acme with full profile
+acme_john:
+  organization: acme
+  first_name: John
+  last_name: Smith
+  nickname: Johnny
+  email: john@acme.com
+  job_title: Account Executive
+  linkedin_url: https://linkedin.com/in/johnsmith
+  calendly_url: https://calendly.com/john-smith
+  signature_template: |
+    <p>Best regards,<br>
+    <strong>{{sender_full_name}}</strong><br>
+    {{sender_job_title}}<br>
+    {{sender_company}}</p>
+    <p><a href="{{sender_calendly_url}}">Schedule a call</a></p>
+  status: active
+  timezone: Europe/Berlin
+  send_window_start_hour: 8
+  send_window_end_hour: 18
+  send_window_start_minute: 0
+  send_window_end_minute: 0
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+# Second sender for Acme without signature
+acme_jane:
+  organization: acme
+  first_name: Jane
+  last_name: Doe
+  email: jane@acme.com
+  job_title: Sales Manager
+  status: active
+  timezone: Europe/Berlin
+  send_window_start_hour: 8
+  send_window_end_hour: 18
+  send_window_start_minute: 0
+  send_window_end_minute: 0
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+# Inactive sender for testing status filtering
+acme_inactive:
+  organization: acme
+  first_name: Bob
+  last_name: Wilson
+  email: bob@acme.com
+  job_title: Former Rep
+  status: inactive
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+# Sender for Beta Industries
+beta_sarah:
+  organization: beta
+  first_name: Sarah
+  last_name: Johnson
+  email: sarah@beta-industries.com
+  job_title: Business Development
+  linkedin_url: https://linkedin.com/in/sarahjohnson
+  status: active
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+# Sender for Growth Lab
+growth_lab_mike:
+  organization: growth_lab
+  first_name: Mike
+  last_name: Brown
+  email: mike@growthlab.com
+  job_title: Sales Director
+  calendly_url: https://calendly.com/mike-brown
+  status: active
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+# Sender with Calendly OAuth connected (for testing webhook processing)
+# Note: encrypted fields (tokens, signing_key) should be set in test setup code
+# since fixtures don't support Rails encryption
+calendly_connected:
+  organization: acme
+  first_name: Sam
+  last_name: Connected
+  email: sam@acme.com
+  job_title: Sales Rep
+  calendly_url: https://calendly.com/sam-connected
+  status: active
+  calendly_token_expires_at: <%= 1.hour.from_now %>
+  calendly_user_uri: https://api.calendly.com/users/test-user-123
+  calendly_organization_uri: https://api.calendly.com/organizations/test-org-123
+  calendly_webhook_uri: https://api.calendly.com/webhook_subscriptions/test-webhook-123
+  calendly_connected_at: <%= 1.day.ago %>
+  calendly_connection_status: connected
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>

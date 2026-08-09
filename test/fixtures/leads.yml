@@ -1,0 +1,90 @@
+# Leads fixtures for testing
+
+john_doe:
+  organization: acme
+  person: john_doe_person
+  lead_import: completed_import
+  email: john.doe@example.com
+  first_name: John
+  last_name: Doe
+  full_name: John Doe
+  job_title: Sales Manager
+  company: Example Corp
+  company_website: https://www.example.com
+  linkedin_url: https://www.linkedin.com/in/johndoe
+  location: New York, NY
+  custom_fields: {"industry": "Technology", "employee_count": "100-500"}
+  blacklisted: false
+  blacklist_reason: ~
+  blacklisted_at: ~
+
+jane_smith:
+  organization: acme
+  person: jane_smith_person
+  lead_import: completed_import
+  email: jane.smith@testcorp.com
+  first_name: Jane
+  last_name: Smith
+  full_name: Jane Smith
+  job_title: Marketing Director
+  company: Test Corp
+  company_website: https://www.testcorp.com
+  linkedin_url: ~
+  location: San Francisco, CA
+  custom_fields: {"industry": "Marketing", "source": "trade_show"}
+  blacklisted: false
+  blacklist_reason: ~
+  blacklisted_at: ~
+
+blacklisted_lead:
+  organization: acme
+  lead_import: completed_import
+  email: spam@blocked.com
+  first_name: Blocked
+  last_name: Person
+  full_name: Blocked Person
+  job_title: ~
+  company: Blocked Inc
+  company_website: ~
+  linkedin_url: ~
+  location: ~
+  custom_fields: {}
+  blacklisted: true
+  blacklist_reason: "Domain on global blacklist"
+  blacklist_reason_category: other
+  blacklisted_at: <%= 1.day.ago %>
+
+beta_lead:
+  organization: beta
+  person: beta_customer_person
+  lead_import: ~
+  email: contact@beta-customer.com
+  first_name: Beta
+  last_name: Customer
+  full_name: Beta Customer
+  job_title: CEO
+  company: Beta Customer Inc
+  company_website: https://www.beta-customer.com
+  linkedin_url: https://www.linkedin.com/in/betacustomer
+  location: Chicago, IL
+  custom_fields: {}
+  blacklisted: false
+  blacklist_reason: ~
+  blacklisted_at: ~
+
+growth_lab_lead:
+  organization: growth_lab
+  lead_import: ~
+  email: prospect@growthprospect.com
+  first_name: Growth
+  last_name: Prospect
+  full_name: Growth Prospect
+  job_title: VP Sales
+  company: Growth Prospect LLC
+  company_website: ~
+  linkedin_url: ~
+  location: Boston, MA
+  custom_fields: {"referral_source": "webinar"}
+  blacklisted: false
+  blacklist_reason: ~
+  blacklisted_at: ~

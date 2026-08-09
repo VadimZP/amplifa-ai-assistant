@@ -1,0 +1,19 @@
+<%= t('mailers.meeting_assignment.greeting', default: 'Hi %{name},', name: @assignee.first_name.presence || @assignee.full_name) %>
+
+<%= t(
+  'mailers.meeting_assignment.body',
+  default: '%{assigned_by} assigned you to a meeting in Amplifa.',
+  assigned_by: @assigned_by.full_name
+) %>
+
+<%= t('mailers.meeting_assignment.lead_label', default: 'Lead') %>: <%= @lead&.full_name || @lead&.email || '-' %>
+<%= t('mailers.meeting_assignment.company_label', default: 'Company') %>: <%= @lead&.company.presence || '-' %>
+<%= t('mailers.meeting_assignment.agent_label', default: 'Agent') %>: <%= @agent&.name || '-' %>
+<%= t('mailers.meeting_assignment.scheduled_at_label', default: 'Meeting time') %>: <%= @meeting.scheduled_at.present? ? l(@meeting.scheduled_at, format: :long) : t('mailers.meeting_assignment.not_scheduled', default: 'Not scheduled yet') %>
+<%= t('mailers.meeting_assignment.location_label', default: 'Location') %>: <%= @meeting.location.presence || '-' %>
+
+<%= t('mailers.meeting_assignment.cta', default: 'Open Meetings') %>:
+<%= @meetings_url %>
+
+---
+<%= t('mailers.signature', default: 'Best regards,\nThe Amplifa Team') %>

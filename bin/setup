@@ -1,0 +1,123 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# ---------------------------------------------------------------------------
+# Amplifa Takehome - development environment setup
+#
+# Idempotent and self-sufficient: running it repeatedly on the same machine
+# always converges to a ready-to-run development environment.
+#
+#   1. Verify PostgreSQL is reachable
+#   2. Ensure the `amplifa` role exists
+#   3. Ensure the three development databases exist
+#   4. Install Ruby gems      (bundle install)
+#   5. Install Node packages  (npm install)
+#   6. Prepare the database   (bin/rails db:prepare)
+#   7. Seed the database      (bin/rails db:seed) - prints login credentials
+#
+# It intentionally does NOT start the development server.
+# ---------------------------------------------------------------------------
+
+cd "$(dirname "$0")/.."
+
+PG_HOST="${PGHOST:-localhost}"
+PG_ROLE="amplifa"
+DEV_DATABASES=(
+  amplifa_takehome_development
+  amplifa_takehome_development_cache
+  amplifa_takehome_development_cable
+)
+
+echo "=== Amplifa Takehome Setup ==="
+echo ""
+
+# ---------------------------------------------------------------------------
+# 1 + 2. PostgreSQL reachability and the `amplifa` role
+# ---------------------------------------------------------------------------
+echo "Checking PostgreSQL..."
+if psql -U "$PG_ROLE" -h "$PG_HOST" -d postgres -c "SELECT 1" >/dev/null 2>&1; then
+  echo "PostgreSQL OK (role '$PG_ROLE' present)"
+else
+  echo "Role '$PG_ROLE' cannot connect; attempting to create it via an admin connection..."
+
+  admin_psql=""
+  for admin in "${PGUSER:-}" "$(whoami)" postgres; do
+    [ -n "$admin" ] || continue
+    if psql -U "$admin" -h "$PG_HOST" -d postgres -c "SELECT 1" >/dev/null 2>&1; then
+      admin_psql="psql -U $admin -h $PG_HOST -d postgres"
+      break
+    fi
+    if psql -U "$admin" -d postgres -c "SELECT 1" >/dev/null 2>&1; then
+      admin_psql="psql -U $admin -d postgres"
+      break
+    fi
+  done
+
+  if [ -z "$admin_psql" ]; then
+    echo "ERROR: Cannot connect to PostgreSQL." >&2
+    echo "Please ensure PostgreSQL is running and the '$PG_ROLE' role exists:" >&2
+    echo "  createuser -s $PG_ROLE   (or: psql -c \"CREATE ROLE $PG_ROLE SUPERUSER LOGIN;\")" >&2
+    exit 1
+  fi
+
+  if ! $admin_psql -tAc "SELECT 1 FROM pg_roles WHERE rolname='$PG_ROLE'" | grep -q 1; then
+    echo "Creating role: $PG_ROLE"
+    $admin_psql -c "CREATE ROLE $PG_ROLE SUPERUSER LOGIN;"
+  fi
+  echo "PostgreSQL OK (role '$PG_ROLE' ensured)"
+fi
+
+# ---------------------------------------------------------------------------
+# 3. Development databases
+# ---------------------------------------------------------------------------
+echo ""
+echo "Ensuring development databases..."
+existing_databases="$(psql -U "$PG_ROLE" -h "$PG_HOST" -d postgres -tAc 'SELECT datname FROM pg_database')"
+for db in "${DEV_DATABASES[@]}"; do
+  if printf '%s\n' "$existing_databases" | grep -qx "$db"; then
+    echo "  exists:   $db"
+  else
+    echo "  creating: $db"
+    createdb -U "$PG_ROLE" -h "$PG_HOST" "$db"
+  fi
+done
+
+# ---------------------------------------------------------------------------
+# 4. Ruby gems
+# ---------------------------------------------------------------------------
+echo ""
+echo "Installing Ruby gems..."
+bundle install
+
+# ---------------------------------------------------------------------------
+# 5. Node packages
+# ---------------------------------------------------------------------------
+echo ""
+echo "Installing Node packages..."
+npm install
+
+# ---------------------------------------------------------------------------
+# 6. Prepare the database (create + load schema / migrate as needed)
+# ---------------------------------------------------------------------------
+echo ""
+echo "Preparing database..."
+bin/rails db:prepare
+
+# ---------------------------------------------------------------------------
+# 7. Seed the database (idempotent; prints login credentials table)
+# ---------------------------------------------------------------------------
+echo ""
+echo "Seeding database..."
+bin/rails db:seed
+
+# ---------------------------------------------------------------------------
+# Done
+# ---------------------------------------------------------------------------
+echo ""
+echo "=== Setup complete! ==="
+echo ""
+echo "Start the app in two terminals:"
+echo "  Terminal 1: PORT=3000 bin/rails server"
+echo "  Terminal 2: bin/vite dev"
+echo ""
+echo "Then visit: http://localhost:3000"

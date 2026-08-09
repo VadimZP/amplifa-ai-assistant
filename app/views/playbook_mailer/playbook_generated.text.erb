@@ -1,0 +1,14 @@
+<%= t('mailers.playbook.generated.greeting') %>
+
+<%= t('mailers.playbook.generated.body',
+      product: @product_name,
+      organization: @organization.name,
+      initiated_by: @initiated_by.full_name,
+      persona_count: @playbook.persona_count,
+      use_case_count: @playbook.use_case_count) %>
+
+<%= t('mailers.playbook.generated.cta') %>:
+<%= admin_organization_url(@playbook.organization) %>
+
+---
+<%= t('mailers.signature') %>

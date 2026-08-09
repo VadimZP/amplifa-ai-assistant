@@ -1,0 +1,235 @@
+@import "tailwindcss";
+@source not "../../../thoughts";
+
+@plugin "@tailwindcss/typography";
+/* Note: @tailwindcss/forms removed - we use custom form styling for dark theme */
+
+/* Geist Font - Variable font for all weights (100-900) */
+@font-face {
+  font-family: 'Geist';
+  src: url('../../../public/fonts/Geist-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Configure Tailwind to use Geist as default sans-serif */
+@theme {
+  --font-sans: var(--font-geist-sans);
+}
+
+:root {
+  /* Font */
+  --font-geist-sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
+
+  --background: #171a1f;
+  --background-sidebar: #0d0d0d;
+  --background-secondary: #12151a;
+  --background-subtle: #1d2128;
+  --background-elevated: #232932;
+  --card: #1b1f26;
+  --card-hover: #232933;
+
+  /* Foregrounds */
+  --foreground: #f7f8fb;
+  --foreground-muted: #c0c9d5;
+  --foreground-subtle: #7d8796;
+
+  --primary: #35cade;
+  --primary-hover: #57d7e8;
+  --primary-foreground: #07181d;
+
+  --accent: #35cade;
+  --accent-hover: #57d7e8;
+
+  /* Secondary */
+  --secondary: #13171d;
+  --secondary-hover: #1b2028;
+  --secondary-foreground: #f7f8fb;
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --input-border: rgba(255, 255, 255, 0.1);
+
+  /* Inputs */
+  --input: rgba(255, 255, 255, 0.035);
+  --input-focus: rgba(255, 255, 255, 0.06);
+
+  /* Status Colors */
+  --success: #22c55e;
+  --success-muted: rgba(34, 197, 94, 0.1);
+  --success-background: #0d542b;
+  --success-text: #05df72;
+  --error: #ef4444;
+  --error-muted: rgba(239, 68, 68, 0.1);
+  --warning: #f59e0b;
+  --warning-muted: rgba(245, 158, 11, 0.1);
+
+  /* Validation (unchecked state for password rules) */
+  --validation-unchecked: #3f3f46;
+
+  /* Focus Ring */
+  --ring: #57d7e8;
+  --ring-offset: #171a1f;
+
+  /* Shadows */
+  --shadow-sm: 0 8px 18px rgba(0, 0, 0, 0.18);
+  --shadow-md: 0 16px 36px rgba(0, 0, 0, 0.22);
+  --shadow-lg: 0 28px 60px rgba(0, 0, 0, 0.28);
+}
+
+/* Global base styles for dark theme */
+html {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  font-family: var(--font-geist-sans);
+  background:
+    radial-gradient(circle at top left, rgba(53, 202, 222, 0.08), transparent 28%),
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.035), transparent 24%),
+    linear-gradient(180deg, #0f1114 0%, #14181d 26%, #171a1f 100%);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(53, 202, 222, 0.28);
+  color: #ffffff;
+}
+
+/* Form defaults for dark theme */
+input, textarea, select {
+  background-color: var(--input);
+  border-color: var(--input-border);
+  color: var(--foreground);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--foreground-muted);
+}
+
+/* Select dropdown options - dark theme */
+select option {
+  background-color: #171717;
+  color: #fafafa;
+  padding: 8px 12px;
+}
+
+select option:hover,
+select option:focus,
+select option:checked {
+  background-color: #0ea5e9;
+  color: #ffffff;
+}
+
+/* Select optgroup headings - dark theme */
+select optgroup {
+  background-color: #171717;
+  color: #fafafa;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Additional styling for select elements */
+select {
+  color-scheme: dark;
+}
+
+/* Focus styles with !important to override Tailwind arbitrary values */
+input:focus, textarea:focus, select:focus {
+  background-color: var(--input-focus) !important;
+  border-color: var(--ring) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 1px var(--ring), 0 0 0 4px rgba(53, 202, 222, 0.12) !important;
+}
+
+/* Assistant composer embedded textarea — inherit shell styling, no input chrome */
+textarea.composer-textarea,
+textarea.composer-textarea:focus,
+textarea.composer-textarea:focus-visible {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Legacy blob animations - kept for backwards compatibility during migration */
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.custom-scrollbar {
+  scrollbar-width: auto;
+  scrollbar-color: rgba(125, 135, 150, 0.72) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: auto;
+  height: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(125, 135, 150, 0.72);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(170, 182, 197, 0.82);
+  background-clip: content-box;
+}
+
+.custom-scrollbar-skinny {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(125, 135, 150, 0.72) transparent;
+}
+
+.custom-scrollbar-skinny::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar-skinny::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar-skinny::-webkit-scrollbar-thumb {
+  background: rgba(125, 135, 150, 0.72);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.custom-scrollbar-skinny::-webkit-scrollbar-thumb:hover {
+  background: rgba(170, 182, 197, 0.82);
+  background-clip: content-box;
+}

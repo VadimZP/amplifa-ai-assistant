@@ -1,0 +1,28 @@
+---
+description: Verification commands — npm run check is the single lint/typecheck gate
+alwaysApply: true
+---
+
+# Verification Commands
+
+`npm run check` is the single verification command for static checks. It runs, in order:
+
+1. `npm run typecheck` — TypeScript (`tsc` over `tsconfig.app.json` + `tsconfig.node.json`)
+2. `npm run lint` — ESLint over `app/javascript` (config: `eslint.config.js`)
+3. `npm run lint:ruby` — RuboCop (config: `.rubocop.yml`, omakase adjusted to repo style)
+
+Run it after any code change — frontend or backend — instead of invoking `tsc`, `eslint`, or
+`rubocop` individually. For behavior, also run the test suite:
+
+```bash
+npm run check     # typecheck + ESLint + RuboCop
+bin/rails test    # backend test suite
+```
+
+Rules:
+
+- Both commands must pass before describing work as complete. Report actual results.
+- `.rubocop_todo.yml` grandfathers pre-existing offenses per file. Never add new entries to it;
+  when touching a listed file, fix its offenses and remove the entry instead.
+- Don't silence lint errors with inline disables (`eslint-disable`, `rubocop:disable`) unless the
+  rule is genuinely wrong for that line — and say so in a comment.

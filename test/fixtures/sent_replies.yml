@@ -1,0 +1,49 @@
+sent_to_john:
+  conversation: acme_john_conversation
+  reply: john_doe_reply
+  mailbox: acme_mailbox_one
+  sent_by: amplifa_admin
+  to_address: john.doe@example.com
+  subject: "Re: Partnership Opportunity"
+  body_plain: "Hi John, thanks for your interest! Let me know when you have time for a quick call."
+  body_html: ~
+  include_signature: true
+  cc_addresses:
+    - observer@example.com
+  status: sent
+  api_message_id: "gmail-sent-001"
+  message_id: "<sent-001@acme.com>"
+  sent_at: <%= 1.hour.ago %>
+  send_error: ~
+
+draft_reply:
+  conversation: growth_lab_conversation
+  reply: responded_reply
+  mailbox: growth_lab_mailbox
+  sent_by: growth_lab_admin
+  to_address: prospect@growthprospect.com
+  subject: "Re: Your Webinar Follow-up"
+  body_plain: "Great! How about Thursday at 2pm?"
+  body_html: ~
+  include_signature: false
+  status: draft
+  api_message_id: ~
+  message_id: ~
+  sent_at: ~
+  send_error: ~
+
+failed_reply:
+  conversation: acme_jane_conversation
+  reply: jane_ooo_reply
+  mailbox: acme_mailbox_one
+  sent_by: customer_admin
+  to_address: jane.smith@testcorp.com
+  subject: "Re: Quick Question"
+  body_plain: "Following up on our conversation..."
+  body_html: ~
+  include_signature: false
+  status: failed
+  api_message_id: ~
+  message_id: ~
+  sent_at: ~
+  send_error: "Gmail API error: Rate limit exceeded"

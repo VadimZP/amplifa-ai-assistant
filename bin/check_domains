@@ -1,0 +1,190 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Domain Availability Checker
+# Usage:
+#   bin/check_domains domain1.com domain2.com ...
+#   bin/check_domains --suggest amplifa    # Generate and check suggestions
+#   bin/check_domains --suggest amplifaai  # Generate and check suggestions
+
+require "open3"
+require "optparse"
+
+class DomainChecker
+  # Common patterns indicating domain is NOT available
+  REGISTERED_PATTERNS = [
+    /Domain Name:/i,
+    /Registry Domain ID:/i,
+    /Registrar:/i,
+    /Creation Date:/i,
+    /Updated Date:/i,
+    /Name Server:/i,
+    /Registrant/i,
+    /Status: ok/i,
+    /Status: clientTransferProhibited/i,
+    /Status: serverTransferProhibited/i,
+  ].freeze
+
+  # Patterns indicating domain IS available
+  AVAILABLE_PATTERNS = [
+    /No match for/i,
+    /NOT FOUND/i,
+    /No entries found/i,
+    /No Data Found/i,
+    /Domain not found/i,
+    /Status: free/i,
+    /is free/i,
+    /AVAILABLE/i,
+    /No information available/i,
+  ].freeze
+
+  # Prefixes for generating domain suggestions
+  PREFIXES = %w[
+    get try use hello meet hi join with my our
+    go run start your the best top pro
+  ].freeze
+
+  # Suffixes for generating domain suggestions
+  SUFFIXES = %w[
+    app hq io now hub team mail ai
+  ].freeze
+
+  # TLDs to check
+  TLDS = %w[com].freeze
+
+  def initialize(verbose: false)
+    @verbose = verbose
+    @results = { available: [], taken: [], error: [] }
+  end
+
+  def check(domain)
+    puts "Checking #{domain}..." if @verbose
+
+    stdout, stderr, status = Open3.capture3("whois", domain)
+    output = stdout + stderr
+
+    if output.empty?
+      @results[:error] << domain
+      return :error
+    end
+
+    # Check for available patterns first
+    if AVAILABLE_PATTERNS.any? { |pattern| output.match?(pattern) }
+      @results[:available] << domain
+      return :available
+    end
+
+    # Check for registered patterns
+    if REGISTERED_PATTERNS.any? { |pattern| output.match?(pattern) }
+      @results[:taken] << domain
+      return :taken
+    end
+
+    # If unclear, assume taken (safer)
+    @results[:taken] << domain
+    :taken
+  end
+
+  def check_multiple(domains)
+    domains.each_with_index do |domain, idx|
+      result = check(domain)
+      status = case result
+               when :available then "\e[32m✓ AVAILABLE\e[0m"
+               when :taken then "\e[31m✗ TAKEN\e[0m"
+               when :error then "\e[33m? ERROR\e[0m"
+               end
+      puts "#{domain.ljust(35)} #{status}"
+
+      # Rate limit to avoid being blocked
+      sleep(1) if idx < domains.length - 1
+    end
+  end
+
+  def generate_suggestions(base_name, count: 30)
+    suggestions = []
+
+    # Prefix variations
+    PREFIXES.each do |prefix|
+      TLDS.each do |tld|
+        suggestions << "#{prefix}#{base_name}.#{tld}"
+      end
+    end
+
+    # Suffix variations
+    SUFFIXES.each do |suffix|
+      TLDS.each do |tld|
+        suggestions << "#{base_name}#{suffix}.#{tld}"
+      end
+    end
+
+    # Base name only
+    TLDS.each do |tld|
+      suggestions << "#{base_name}.#{tld}"
+    end
+
+    suggestions.uniq.first(count)
+  end
+
+  def print_summary
+    puts "\n" + "=" * 50
+    puts "SUMMARY"
+    puts "=" * 50
+
+    if @results[:available].any?
+      puts "\n\e[32mAVAILABLE (#{@results[:available].count}):\e[0m"
+      @results[:available].each { |d| puts "  ✓ #{d}" }
+    end
+
+    if @results[:taken].any?
+      puts "\n\e[31mTAKEN (#{@results[:taken].count}):\e[0m"
+      @results[:taken].each { |d| puts "  ✗ #{d}" }
+    end
+
+    if @results[:error].any?
+      puts "\n\e[33mERROR (#{@results[:error].count}):\e[0m"
+      @results[:error].each { |d| puts "  ? #{d}" }
+    end
+  end
+
+  attr_reader :results
+end
+
+# Main execution
+if __FILE__ == $0
+  options = { verbose: false, suggest: nil }
+
+  OptionParser.new do |opts|
+    opts.banner = "Usage: #{$0} [options] domain1.com domain2.com ..."
+
+    opts.on("-v", "--verbose", "Show verbose output") do
+      options[:verbose] = true
+    end
+
+    opts.on("-s", "--suggest BASE", "Generate and check domain suggestions for BASE name") do |base|
+      options[:suggest] = base
+    end
+
+    opts.on("-h", "--help", "Show this help") do
+      puts opts
+      exit
+    end
+  end.parse!
+
+  checker = DomainChecker.new(verbose: options[:verbose])
+
+  domains = if options[:suggest]
+              puts "Generating suggestions for: #{options[:suggest]}"
+              puts "-" * 50
+              checker.generate_suggestions(options[:suggest])
+            else
+              ARGV
+            end
+
+  if domains.empty?
+    puts "No domains specified. Use -h for help."
+    exit 1
+  end
+
+  checker.check_multiple(domains)
+  checker.print_summary
+end

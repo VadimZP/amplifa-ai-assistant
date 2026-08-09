@@ -1,0 +1,22 @@
+# Assistant chat messages. `role` mirrors ruby_llm's roles (user/assistant/system/tool).
+
+acme_admin_first_user_message:
+  chat: acme_admin_chat
+  role: user
+  content: Which replies in my inbox are still unread?
+  created_at: <%= 2.hours.ago %>
+  updated_at: <%= 2.hours.ago %>
+
+acme_admin_first_assistant_message:
+  chat: acme_admin_chat
+  role: assistant
+  content: You have two unread replies.
+  created_at: <%= 1.hour.ago %>
+  updated_at: <%= 1.hour.ago %>
+
+growth_lab_user_message:
+  chat: growth_lab_chat
+  role: user
+  content: Summarise my active campaigns.
+  created_at: <%= 20.minutes.ago %>
+  updated_at: <%= 20.minutes.ago %>

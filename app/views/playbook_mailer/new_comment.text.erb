@@ -1,0 +1,14 @@
+<%= t('mailers.playbook.new_comment.greeting') %>
+
+<%= t('mailers.playbook.new_comment.body',
+      commenter: @commenter.full_name,
+      product: @playbook.product_name) %>
+
+<%= @commenter.full_name %> commented:
+"<%= @comment.body %>"
+
+<%= t('mailers.playbook.new_comment.cta') %>:
+<%= playbook_url(@playbook) %>
+
+---
+<%= t('mailers.signature') %>

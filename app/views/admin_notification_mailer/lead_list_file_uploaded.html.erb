@@ -1,0 +1,28 @@
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 8px 8px 0 0;">
+  <h1 style="color: white; margin: 0; font-size: 24px;">📁 Lead List File Uploaded</h1>
+</div>
+
+<div style="background: #fff; padding: 30px; border: 1px solid #e0e0e0; border-top: none; border-radius: 0 0 8px 8px;">
+  <p>Hi Team,</p>
+
+  <p>A customer has uploaded a lead list file that may need attention.</p>
+
+  <div style="background: #f8f9fa; border-left: 4px solid #667eea; padding: 15px; margin: 20px 0;">
+    <p style="margin: 0;"><strong>Organization:</strong> <%= @organization.name %></p>
+    <p style="margin: 5px 0 0;"><strong>Uploaded by:</strong> <%= @uploaded_by.full_name %> (<%= @uploaded_by.email %>)</p>
+    <% if @lead_list_file.applies_to_all_playbooks? %>
+      <p style="margin: 5px 0 0;"><strong>Playbooks:</strong> All playbooks</p>
+    <% elsif @playbooks.any? %>
+      <p style="margin: 5px 0 0;"><strong>Playbooks:</strong> <%= @playbooks.map(&:product_name).join(', ') %></p>
+    <% end %>
+    <p style="margin: 5px 0 0;"><strong>File:</strong> <%= @lead_list_file.original_filename %></p>
+    <% if @lead_list_file.file_size_bytes %>
+      <p style="margin: 5px 0 0;"><strong>Size:</strong> <%= number_to_human_size(@lead_list_file.file_size_bytes) %></p>
+    <% end %>
+    <p style="margin: 5px 0 0;"><strong>Uploaded at:</strong> <%= @lead_list_file.created_at.strftime('%B %d, %Y at %I:%M %p') %></p>
+  </div>
+
+  <p style="margin-top: 30px;">
+    <a href="<%= admin_organization_url(@organization) %>" style="display: inline-block; background: #667eea; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 600;">View Files</a>
+  </p>
+</div>

@@ -1,0 +1,22 @@
+default:
+  linkedin_connection_link: https://example.com/connect
+  billing_plans:
+    - identifier: basic
+      name: Basic
+      monthly_meeting_limit: 5
+      monthly_price: 1499
+    - identifier: growth
+      name: Growth
+      monthly_meeting_limit: 15
+      monthly_price: 2499
+    - identifier: scale
+      name: Scale
+      monthly_meeting_limit: 30
+      monthly_price: 3499
+    - identifier: enterprise
+      name: Enterprise
+      monthly_meeting_limit: 100
+      monthly_price: 0
+  buying_signals_monthly_price: 999
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>

@@ -1,0 +1,63 @@
+growth_lab:
+  name: Growth Lab
+  onboarded: true
+  status: active
+  plan_tier: basic
+  monthly_meeting_limit: 5
+  website: https://www.growthlab.com
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+stellar_sales:
+  name: Stellar Sales
+  onboarded: false
+  status: onboarding
+  plan_tier: basic
+  monthly_meeting_limit: 5
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+acme:
+  name: Acme Corporation
+  onboarded: true
+  status: active
+  plan_tier: basic
+  monthly_meeting_limit: 5
+  website: https://www.acme.com
+  industry: Technology
+  size: 51-200
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+beta:
+  name: Beta Industries
+  onboarded: false
+  status: onboarding
+  plan_tier: basic
+  monthly_meeting_limit: 5
+  website: https://www.beta-industries.com
+  industry: Manufacturing
+  size: 201-1000
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+techcorp:
+  name: TechCorp Solutions
+  onboarded: true
+  status: active
+  plan_tier: basic
+  monthly_meeting_limit: 5
+  website: https://www.techcorp.com
+  industry: Technology
+  size: 11-50
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+empty_org:
+  name: Empty Organization
+  onboarded: false
+  status: onboarding
+  plan_tier: basic
+  monthly_meeting_limit: 5
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>

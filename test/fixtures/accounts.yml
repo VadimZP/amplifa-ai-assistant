@@ -1,0 +1,75 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# Amplifa Admin Users (no organization)
+amplifa_admin:
+  email: admin@amplifa.com
+  first_name: Admin
+  last_name: User
+  password_hash: <%= RodauthApp.rodauth.allocate.password_hash("password123") %>
+  status: verified
+  role: amplifa_admin
+  created_at: <%= Time.zone.now %>
+
+# Customer Admin Users (belong to organizations)
+customer_admin:
+  email: org_admin@acme.com
+  first_name: Olivia
+  last_name: Grant
+  password_hash: <%= RodauthApp.rodauth.allocate.password_hash("password") %>
+  status: verified
+  role: customer_admin
+  organization: acme
+  created_at: <%= Time.zone.now %>
+
+growth_lab_admin:
+  email: admin@growthlab.com
+  first_name: Gary
+  last_name: Anderson
+  password_hash: <%= RodauthApp.rodauth.allocate.password_hash("password") %>
+  status: verified
+  role: customer_admin
+  organization: growth_lab
+  created_at: <%= Time.zone.now %>
+
+# Customer Users (regular users in organizations)
+customer_user:
+  email: user@acme.com
+  first_name: Marco
+  last_name: Reed
+  password_hash: <%= RodauthApp.rodauth.allocate.password_hash("password") %>
+  status: verified
+  role: customer_user
+  organization: acme
+  created_at: <%= Time.zone.now %>
+
+growth_lab_user:
+  email: user@growthlab.com
+  first_name: Sarah
+  last_name: Johnson
+  password_hash: <%= RodauthApp.rodauth.allocate.password_hash("password") %>
+  status: verified
+  role: customer_user
+  organization: growth_lab
+  created_at: <%= Time.zone.now %>
+
+beta_user:
+  email: user@beta.com
+  first_name: Bob
+  last_name: Smith
+  password_hash: <%= RodauthApp.rodauth.allocate.password_hash("password") %>
+  status: verified
+  role: customer_user
+  organization: beta
+  created_at: <%= Time.zone.now %>
+
+# Dual-membership consultant used by MCP tests: active memberships in BOTH
+# acme (primary) and growth_lab (decoy). See organization_memberships.yml.
+dana:
+  email: dana@consultants.example
+  first_name: Dana
+  last_name: Dual
+  password_hash: <%= RodauthApp.rodauth.allocate.password_hash("password") %>
+  status: verified
+  role: customer_user
+  organization: acme
+  created_at: <%= Time.zone.now %>

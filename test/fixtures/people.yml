@@ -1,0 +1,88 @@
+# People fixtures for testing
+# Person is the global master contact record, deduplicated by email across all organizations
+
+john_doe_person:
+  email: john.doe@example.com
+  first_name: John
+  last_name: Doe
+  full_name: John Doe
+  job_title: Sales Manager
+  company: Example Corp
+  company_website: https://www.example.com
+  current_company: example_corp
+  location: New York, NY
+  linkedin_url: https://www.linkedin.com/in/johndoe
+  linkedin_scraped_data: {"headline": "Sales Manager at Example Corp", "summary": "Experienced sales professional"}
+  linkedin_scraped_at: <%= 2.days.ago %>
+  linkedin_scrape_error: ~
+  company_website_scraped_data: {"content": "Example Corp is a leading technology company", "title": "Example Corp"}
+  company_website_scraped_at: <%= 12.hours.ago %>
+  company_website_scrape_error: ~
+  disc_profile: D
+  disc_profile_data: {"confidence": 0.85, "reasoning": "Results-oriented language in profile"}
+  disc_profile_assessed_at: <%= 1.day.ago %>
+  disc_profile_source: linkedin_inferred
+
+jane_smith_person:
+  email: jane.smith@testcorp.com
+  first_name: Jane
+  last_name: Smith
+  full_name: Jane Smith
+  job_title: Marketing Director
+  company: Test Corp
+  company_website: https://www.testcorp.com
+  current_company: test_corp
+  location: San Francisco, CA
+  linkedin_url: https://www.linkedin.com/in/janesmith
+  linkedin_scraped_data: {}
+  linkedin_scraped_at: ~
+  linkedin_scrape_error: ~
+  company_website_scraped_data: {}
+  company_website_scraped_at: ~
+  company_website_scrape_error: ~
+  disc_profile: ~
+  disc_profile_data: {}
+  disc_profile_assessed_at: ~
+  disc_profile_source: ~
+
+no_linkedin_person:
+  email: noprofile@example.com
+  first_name: No
+  last_name: Profile
+  full_name: No Profile
+  job_title: Developer
+  company: No LinkedIn Inc
+  company_website: ~
+  location: Remote
+  linkedin_url: ~
+  linkedin_scraped_data: {}
+  linkedin_scraped_at: ~
+  linkedin_scrape_error: ~
+  company_website_scraped_data: {}
+  company_website_scraped_at: ~
+  company_website_scrape_error: ~
+  disc_profile: ~
+  disc_profile_data: {}
+  disc_profile_assessed_at: ~
+  disc_profile_source: ~
+
+beta_customer_person:
+  email: contact@beta-customer.com
+  first_name: Beta
+  last_name: Customer
+  full_name: Beta Customer
+  job_title: CEO
+  company: Beta Customer Inc
+  company_website: https://www.beta-customer.com
+  location: Chicago, IL
+  linkedin_url: https://www.linkedin.com/in/betacustomer
+  linkedin_scraped_data: {}
+  linkedin_scraped_at: ~
+  linkedin_scrape_error: ~
+  company_website_scraped_data: {}
+  company_website_scraped_at: ~
+  company_website_scrape_error: ~
+  disc_profile: I
+  disc_profile_data: {"confidence": 0.75, "reasoning": "Enthusiastic tone"}
+  disc_profile_assessed_at: <%= 3.days.ago %>
+  disc_profile_source: linkedin_inferred

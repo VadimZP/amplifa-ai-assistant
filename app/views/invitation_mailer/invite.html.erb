@@ -1,0 +1,17 @@
+<% content_for :preheader do %><%= t('mailers.invitation.intro', admin_name: @invited_by.full_name, organization: @organization.name) %><% end %>
+
+<h1 style="margin: 0 0 18px; color: #111827; font-size: 24px; line-height: 1.25; font-weight: 700;"><%= t('mailers.invitation.greeting', name: @invitation.first_name) %></h1>
+
+<p style="margin: 0 0 16px; color: #374151; font-size: 16px; line-height: 1.6;">
+  <%= t('mailers.invitation.intro', admin_name: @invited_by.full_name, organization: @organization.name) %>
+</p>
+
+<p style="margin: 0 0 16px; color: #374151; font-size: 16px; line-height: 1.6;"><%= t('mailers.invitation.description') %></p>
+
+<%= render 'shared/mailer_button', text: t('mailers.invitation.cta'), url: @accept_url %>
+
+<p class="note" style="margin: 0 0 16px; color: #6b7280; font-size: 14px; line-height: 1.6;">
+  <%= t('mailers.invitation.expiry', date: l(@invitation.expires_at, format: :long)) %>
+</p>
+
+<p class="note" style="margin: 0 0 16px; color: #6b7280; font-size: 14px; line-height: 1.6;"><%= t('mailers.invitation.help') %></p>

@@ -1,0 +1,58 @@
+customer_admin_acme:
+  account: customer_admin
+  organization: acme
+  role: customer_admin
+  status: active
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+growth_lab_admin_growth_lab:
+  account: growth_lab_admin
+  organization: growth_lab
+  role: customer_admin
+  status: active
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+customer_user_acme:
+  account: customer_user
+  organization: acme
+  role: customer_user
+  status: active
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+growth_lab_user_growth_lab:
+  account: growth_lab_user
+  organization: growth_lab
+  role: customer_user
+  status: active
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+beta_user_beta:
+  account: beta_user
+  organization: beta
+  role: customer_user
+  status: active
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+# Dana has two active memberships. The acme membership is created earlier so
+# it wins switchable_organization_memberships.order(:created_at).first, making
+# acme the consented/primary org bound to her MCP token.
+dana_primary_acme:
+  account: dana
+  organization: acme
+  role: customer_user
+  status: active
+  created_at: <%= 3.days.ago %>
+  updated_at: <%= 3.days.ago %>
+
+dana_secondary_growth_lab:
+  account: dana
+  organization: growth_lab
+  role: customer_user
+  status: active
+  created_at: <%= 1.day.ago %>
+  updated_at: <%= 1.day.ago %>

@@ -1,0 +1,50 @@
+# Meeting fixtures for testing
+
+scheduled_discovery:
+  organization: acme
+  agent_lead: john_in_draft
+  lead: john_doe
+  agent: draft_agent
+  meeting_type: discovery
+  scheduled_at: <%= 2.days.from_now %>
+  duration_minutes: 30
+  location: https://zoom.us/j/123456
+  status: scheduled
+  notes: Initial discovery call
+
+completed_demo:
+  organization: acme
+  agent_lead: jane_in_draft
+  lead: jane_smith
+  agent: draft_agent
+  meeting_type: demo
+  scheduled_at: <%= 3.days.ago %>
+  duration_minutes: 60
+  location: https://zoom.us/j/654321
+  status: completed
+  notes: Product demo
+  outcome: positive
+  outcome_notes: Very interested in pricing
+  completed_at: <%= 3.days.ago %>
+
+no_show_meeting:
+  organization: acme
+  agent_lead: john_in_ready
+  lead: john_doe
+  agent: ready_agent
+  meeting_type: follow_up
+  scheduled_at: <%= 1.day.ago %>
+  duration_minutes: 30
+  status: no_show
+  outcome: no_show
+  completed_at: <%= 1.day.ago %>
+
+cancelled_meeting:
+  organization: acme
+  agent_lead: john_in_draft
+  lead: john_doe
+  agent: draft_agent
+  meeting_type: closing
+  scheduled_at: <%= 1.week.from_now %>
+  status: cancelled
+  cancelled_at: <%= Time.current %>

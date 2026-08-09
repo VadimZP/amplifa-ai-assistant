@@ -1,0 +1,15 @@
+# ConversationRead fixtures for tracking per-user read status
+
+admin_read_john_conversation:
+  conversation: acme_john_conversation
+  account: amplifa_admin
+  last_read_at: <%= 3.hours.ago %>
+  created_at: <%= 3.hours.ago %>
+  updated_at: <%= 3.hours.ago %>
+
+customer_admin_read_jane_conversation:
+  conversation: acme_jane_conversation
+  account: customer_admin
+  last_read_at: <%= 1.hour.ago %>
+  created_at: <%= 1.hour.ago %>
+  updated_at: <%= 1.hour.ago %>

@@ -1,0 +1,4043 @@
+{
+  "cs": {
+    "admin": {
+      "accounts": {
+        "edit": {
+          "deactivate_button": "Deaktivovat účet",
+          "deactivate_confirm": "Opravdu chcete tento účet deaktivovat?",
+          "organization_placeholder": "Vyberte organizaci",
+          "subtitle": "Aktualizujte podrobnosti účtu a oprávnění",
+          "title": "Upravit účet"
+        },
+        "empty": "Zatím žádné účty",
+        "impersonate_confirm": "Opravdu se chcete vydávat za tohoto uživatele?",
+        "subtitle": "Zobrazení a správa všech uživatelských účtů v systému",
+        "title": "Spravovat účty"
+      },
+      "activities": {
+        "empty": "Pro vybrané filtry nebyly nalezeny žádné aktivity",
+        "filters": {
+          "action_all": "Všechny akce",
+          "action_label": "Typ akce",
+          "end_date_label": "Datum ukončení",
+          "organization_all": "Všechny organizace",
+          "start_date_label": "Datum zahájení",
+          "title": "Filtry"
+        },
+        "hide_details": "▼ Skrýt podrobnosti",
+        "no_details": "Žádné podrobnosti",
+        "pagination": {
+          "showing": "Zobrazuje se %{start} až %{end} z %{total} aktivit"
+        },
+        "show": {
+          "action_details": "Podrobnosti akce",
+          "action_type": "Typ akce",
+          "activity_id": "ID aktivity",
+          "breadcrumb_activity": "Aktivita č. %{id}",
+          "breadcrumb_dashboard": "Dashboard",
+          "breadcrumb_log": "Protokol činnosti",
+          "ip_address": "IP adresa",
+          "no_details": "Pro tuto aktivitu nejsou zaznamenány žádné další podrobnosti",
+          "organization_name": "Název organizace",
+          "overview": "Přehled",
+          "performed_by": "Provádí",
+          "related_organization": "Související organizace",
+          "subtitle": "Podrobné informace o této administrativní akci",
+          "technical_info": "Technické informace",
+          "timestamp": "Časové razítko",
+          "title": "Podrobnosti aktivity",
+          "user_agent": "User Agent",
+          "website": "webové stránky"
+        },
+        "show_details": "▶ Zobrazit podrobnosti",
+        "subtitle": "Zobrazit všechny administrativní akce a auditní záznam",
+        "table": {
+          "action": "Akce",
+          "admin": "Admin",
+          "details": "Podrobnosti",
+          "ip_address": "IP adresa",
+          "timestamp": "Časové razítko"
+        },
+        "title": "Protokol činnosti",
+        "unknown_admin": "Neznámý správce"
+      },
+      "agents": {
+        "confirm_delete": "Odebrat tohoto agenta? Konverzace a historie odpovědí zůstanou dostupné.",
+        "created": "Agent byl úspěšně vytvořen",
+        "delete_failed": "Agenta se nepodařilo smazat",
+        "deleted": "Agent byl úspěšně smazán",
+        "edit": {
+          "default_timezone_description": "Používá se, když časové pásmo potenciálního zákazníka nelze vyřešit z jeho polohy",
+          "default_timezone_label": "Výchozí časové pásmo",
+          "delete_button": "Smazat agenta",
+          "delete_warning": "Tím odeberete agenta ze správy kampaní, ale konverzace a historie odpovědí zůstanou dostupné.",
+          "description_label": "Popis",
+          "llm_model_description": "Model umělé inteligence, který se má použít pro generování zpráv",
+          "llm_model_label": "Model AI",
+          "locale_description": "Jazyk pro generované zprávy",
+          "locale_label": "Locale",
+          "name_label": "jméno *",
+          "playbook_label": "Playbook",
+          "subtitle": "Aktualizujte nastavení a konfiguraci agenta",
+          "title": "Edit Agent"
+        },
+        "empty": "Zatím žádní agenti. Začněte vytvořením svého prvního agenta.",
+        "filters": {
+          "organization": "Organizace",
+          "search_placeholder": "Vyhledávací agenti nebo organizace...",
+          "status": "Postavení"
+        },
+        "global_subtitle": "Zobrazit všechny agenty ve všech organizacích",
+        "global_title": "Vše Agents",
+        "launch": {
+          "already_launched": "Tato kampaň již byla spuštěna.",
+          "not_ready": "Agent není připraven ke spuštění. Ujistěte se, že jsou nakonfigurovány elektrody, poštovní schránky a schválené vzorky.",
+          "success": "Kampaň úspěšně spuštěna! E-maily se začnou odesílat podle plánu."
+        },
+        "leads": {
+          "added": "Přidáno",
+          "all_statuses": "Všechny stavy",
+          "back_to_agent": "Zpět k agentovi",
+          "blacklisted": "Na černé listině",
+          "column_actions": "Akce",
+          "column_activity": "Aktivita",
+          "column_company": "Společnost",
+          "column_lead": "Vést",
+          "column_mailbox": "Poštovní schránka",
+          "column_progress": "Pokrok",
+          "column_status": "Postavení",
+          "empty": "K tomuto agentovi zatím nejsou přiřazeni žádní potenciální zákazníci.",
+          "filter_status": "Postavení",
+          "last_sent": "Naposledy odesláno",
+          "leads_count": "vede",
+          "leads_found": "Počet nalezených potenciálních zákazníků: %{count}",
+          "meeting": "Zasedání",
+          "meeting_actions": {
+            "confirm_unmark": "Opravdu chcete odebrat rezervaci schůzky pro tohoto potenciálního zákazníka?",
+            "mark": "Mark Setkání",
+            "unmark": "Zrušit označení schůzky"
+          },
+          "meeting_modal": {
+            "confirm": "Mark Setkání",
+            "notes_label": "Poznámky ze schůzky (volitelné)",
+            "notes_placeholder": "Přidejte nějaké poznámky ke schůzce...",
+            "title": "Označit schůzku zarezervovanou"
+          },
+          "messages_sent": "odesláno",
+          "next_send": "Další",
+          "ooo_returns": "OOO se vrací",
+          "replied": "Odpovězeno",
+          "search_placeholder": "Vyhledávání podle e-mailu, jména nebo společnosti...",
+          "status": {
+            "bounced": "Odražený",
+            "completed": "Dokončeno",
+            "in_sequence": "V sekvenci",
+            "not_contacted": "Nekontaktován",
+            "paused": "Pozastaveno",
+            "replied": "Odpovězeno"
+          },
+          "table_title": "Leads v kampani",
+          "title": "Zástupce Leads",
+          "view": "Pohled",
+          "view_details": "Zobrazit podrobnosti o potenciálním zákazníkovi a generované zprávy",
+          "view_overview": "Zobrazit přehled"
+        },
+        "mailboxes": {
+          "updated": "Přiřazení poštovní schránky úspěšně aktualizováno."
+        },
+        "new": {
+          "default_timezone_description": "Používá se, když časové pásmo potenciálního zákazníka nelze vyřešit z jeho polohy",
+          "default_timezone_label": "Výchozí časové pásmo",
+          "description_description": "Nepovinné podrobnosti o cílech a cílovém publiku tohoto agenta",
+          "description_label": "Popis",
+          "description_placeholder": "Popište účel tohoto agenta...",
+          "info_playbook_message": "K dispozici jsou pouze schválené příručky od vybrané organizace. Vytvářejte a schvalujte playbooky, než je přiřadíte agentům.",
+          "info_title": "O Playbooks",
+          "llm_model_description": "Model umělé inteligence, který se má použít pro generování zpráv. Různé modely mají různé možnosti a náklady.",
+          "llm_model_label": "Model AI",
+          "locale_description": "Jazyk pro generované zprávy. Výchozí nastavení je národní prostředí organizace.",
+          "locale_label": "Locale",
+          "locale_placeholder": "Vyberte jazyk...",
+          "name_description": "Popisný název tohoto agenta kampaně",
+          "name_label": "Jméno",
+          "name_placeholder": "Zadejte jméno agenta...",
+          "organization_description": "Organizace, do které tento agent patří",
+          "organization_placeholder": "Vyberte organizaci...",
+          "playbook_description": "Příručka zasílání zpráv, kterou bude tento agent používat",
+          "playbook_help": "K výběru jsou k dispozici pouze schválené příručky",
+          "playbook_label": "Playbook",
+          "playbook_placeholder": "Vyberte playbook...",
+          "status_description": "Aktuální stav pracovního postupu tohoto agenta",
+          "submit": "Vytvořit agenta",
+          "submitting": "Vytváření...",
+          "subtitle": "Vytvořte nového agenta kampaně",
+          "title": "Vytvořit agenta"
+        },
+        "new_agent": "Vytvořit agenta",
+        "pause": {
+          "button": "Pozastavit kampaň",
+          "cannot_pause": "Tuto kampaň nelze pozastavit. Musí být spuštěn a aktivní.",
+          "confirm": "Tím se pozastaví všechna odesílání e-mailů. Plánované časy budou zachovány. Pokračovat?",
+          "success": "Kampaň pozastavena. Všechna naplánovaná odeslání byla pozastavena."
+        },
+        "regenerate_schedule": {
+          "button": "Obnovit plán",
+          "confirm": "Tím vymažete všechna naplánovaná odeslání na %{date} a vytvoříte nový plán. Pokračovat?",
+          "date_custom": "Vlastní datum",
+          "date_label": "Cílové datum",
+          "date_today": "Dnes",
+          "date_tomorrow": "Zítra",
+          "description": "Vymažte a přeplánujte naplánovaná odeslání na vybrané datum. Tím se odstraní všechna aktuálně naplánovaná odeslání pro dané datum a vytvoří se nový plán založený na aktuálním nastavení.",
+          "error": "Plán regenerace se nezdařil: %{errors}",
+          "invalid_date": "Zadáno neplatné datum.",
+          "not_active": "Plán nelze obnovit. Kampaň musí být spuštěna a aktivní.",
+          "success": "Plán obnoven na %{date}. Vymazáno %{cleared} odeslání, naplánováno %{scheduled} nových odeslání.",
+          "title": "Obnovit plán"
+        },
+        "restart_leads": {
+          "button": "Restartovat leady",
+          "confirm": "Restartovat od začátku sekvence všechny leady bez odpovědi a mimo blacklist pro %{name}?",
+          "started": "Restart leadů byl spuštěn. U velkých agentů to může trvat několik minut.",
+          "success": {
+            "one": "1 lead byl restartován od začátku sekvence.",
+            "other": "%{count} leadů bylo restartováno od začátku sekvence."
+          }
+        },
+        "resume": {
+          "button": "Obnovit kampaň",
+          "cannot_resume": "Tuto kampaň nelze obnovit. Nejprve se musí pozastavit.",
+          "confirm": "Tím se obnoví odesílání e-mailů. Pokračovat?",
+          "success": "Kampaň byla obnovena. Naplánované odesílání bude pokračovat."
+        },
+        "sample_messages": {
+          "approve_button": "Schválit vzorky",
+          "back_to_agent": "Zpět k agentovi",
+          "collapse_all": "Sbalit vše",
+          "confirm_approve": "Schválit tyto vzorové zprávy? To umožní spuštění kampaně.",
+          "confirm_generate": "Tím se vygenerují vzorové zprávy pro prvních %{count} potenciálních zákazníků. Pokračovat?",
+          "confirm_reset": "Tím se odstraní všechny vzorové zpráVy a resetuje se schválení. Pokračovat?",
+          "edit": "Upravit",
+          "edit_modal": {
+            "body_label": "Tělo",
+            "save": "Uložit změny",
+            "subject_label": "Podrobit",
+            "title": "Upravit zprávu"
+          },
+          "edited_badge": "Upraveno",
+          "error_summary": {
+            "title": "U %{count} potenciálních zákazníků došlo k chybám při generování"
+          },
+          "expand_all": "Rozbalit vše",
+          "generate_button": "Generovat vzorky",
+          "generated_at": "Vygenerováno %{date}",
+          "lead_info": "Informace o zájemcích",
+          "no_messages": "Dosud nebyly vygenerovány žádné vzorové zprávy.",
+          "reset_button": "Resetovat a regenerovat",
+          "send_test": "Odeslat test",
+          "test_sent": "Test odeslán",
+          "title": "Vzorové zprávy",
+          "total_messages": "%{count} zpráv"
+        },
+        "samples": {
+          "approve_not_ready": "Vzorky nelze schválit. Ujistěte se, že vzorky jsou vytvořeny a nejsou již schváleny.",
+          "approve_success": "Vzorové zpráVy byly úspěšně schváleny.",
+          "cancel_success": "Generování vzorku zrušeno. Stávající vzorky byly vymazány a generování lze restartovat.",
+          "generation_started": "Bylo zahájeno generování ukázkové zprávy. Po dokončení budete upozorněni.",
+          "not_ready_for_generation": "Agent není připraven na generování vzorků. Ujistěte se, že jsou nakonfigurovány svody a kroky sekvence.",
+          "progress": {
+            "default_step": "zpráva",
+            "default_target": "toto vedení",
+            "detail": "%{generated} z %{total} zpráv",
+            "errors": "%{count} chyb",
+            "generating_button": "Generování...",
+            "in_progress": "Generování vzorových zpráv",
+            "phases": {
+              "company_website_scrape": "Stahování webových stránek společnosti pro %{target}",
+              "disc_inference": "Odvozování profilu DISC pro %{target}",
+              "enriching_lead": "Obohacování údajů o potenciálních zákaznících pro %{target}",
+              "generating_message": "Generování %{step} pro %{target}",
+              "generating_subject": "Generování předmětu pro %{target}",
+              "linkedin_posts_scrape": "Odstraňování příspěvků LinkedIn pro %{target}",
+              "linkedin_profile_photo": "Stahování fotky LinkedIn pro %{target}",
+              "linkedin_scrape": "Odstraňování LinkedIn pro %{target}",
+              "org_description": "Generování popisu organizace pro %{target}",
+              "sync_to_lead": "Synchronizace obohacení pro %{target}"
+            },
+            "start_failed": "Generování vzorku nelze spustit. Zkuste to prosím znovu.",
+            "step": "Generování %{step}"
+          },
+          "reset_success": "Vzorové zpráVy byly resetovány. Nyní je můžete regenerovat."
+        },
+        "schedule": {
+          "back_to_agent": "Zpět k agentovi",
+          "date_options": {
+            "all": "Vše naplánováno",
+            "today": "Dnes",
+            "tomorrow": "Zítra",
+            "upcoming": "Dalších 7 dní"
+          },
+          "description": "Časy odeslání jsou přibližné. E-maily se odesílají, když je poštovní schránka aktivní a potenciální zákazník se stane způsobilým.",
+          "empty": "Na toto časové období nejsou naplánována žádná odeslání.",
+          "empty_hint": "Úloha denního plánování běží v 5:00 UTC, aby bylo možné naplánovat odeslání pro spuštěné kampaně.",
+          "filter_date": "Show",
+          "last_rescheduled_to": "Přeplánováno na %{time}",
+          "launch_campaign": "Spustit kampaň",
+          "leads_scheduled": "potenciálních zákazníků naplánováno",
+          "no_mailbox": "Není přiřazena žádná poštovní schránka",
+          "not_launched": "Kampaň dosud nebyla spuštěna. Spusťte kampaň, abyste viděli plán odeslání.",
+          "pending_now": "Nevyřízeno",
+          "rescheduled_count": {
+            "few": "Přeplánováno %{count}x",
+            "one": "Přeplánováno %{count}x",
+            "other": "Přeplánováno %{count}x"
+          },
+          "scheduled_today": "Naplánováno dnes",
+          "sends": "posílá",
+          "sent_today": "Odesláno dnes",
+          "title": "Odeslat plán",
+          "today": "Dnes",
+          "tomorrow": "Zítra",
+          "total_scheduled": "Celkem naplánováno",
+          "via": "přes",
+          "view_overview": "Zobrazit přehled"
+        },
+        "sent_messages": {
+          "all_mailboxes": "Všechny poštovní schránky",
+          "all_statuses": "Všechny stavy",
+          "back_to_agent": "Zpět k agentovi",
+          "bounced_at": "Vráceno %{date}",
+          "column_mailbox": "Poštovní schránka",
+          "column_recipient": "Příjemce",
+          "column_sent_at": "Odesláno",
+          "column_status": "Postavení",
+          "column_step": "Krok",
+          "column_subject": "Podrobit",
+          "empty": "Zatím nebyly odeslány žádné zprávy. Spusťte kampaň a začněte odesílat.",
+          "filter_mailbox": "Poštovní schránka",
+          "filter_status": "Postavení",
+          "messages_count": "zprávy",
+          "preview_bounced_at": "Odražený",
+          "preview_from": "Z",
+          "preview_message": "Zpráva",
+          "preview_replied_at": "Odpovězeno",
+          "preview_sent_at": "Odesláno",
+          "preview_step": "Krok sekvence",
+          "preview_subject": "Podrobit",
+          "preview_title": "Odeslaná zpráva",
+          "preview_to": "Na",
+          "replied_at": "Odpovězeno %{date}",
+          "search_placeholder": "Hledat podle příjemce nebo předmětu...",
+          "status": {
+            "bounced": "Odražený",
+            "replied": "Odpovězeno",
+            "sent": "Odesláno"
+          },
+          "table_title": "Historie zpráv",
+          "title": "Odeslané zprávy",
+          "view_message": "Zobrazit podrobnosti zprávy",
+          "view_overview": "Zobrazit přehled"
+        },
+        "show": {
+          "assign_mailboxes": "Přiřadit poštovní schránky",
+          "back_to_list": "Zpět na Agents",
+          "back_to_org_agents": "Zpět na zástupce %{org}",
+          "buying_signals": "Nákupní signály",
+          "buying_signals_disabled": "Vypnuto",
+          "buying_signals_enabled": "Zapnuto",
+          "buying_signals_lookback": "Období nákupních signálů",
+          "buying_signals_lookback_days": "%{days} dní",
+          "buying_signals_modal": {
+            "missing_highlights_description": "Přeskočí úplné generování nákupních signálů a aktualizuje existující shrnutí, kterým chybí hlavní body nebo hodnocení.",
+            "missing_highlights_title": "Vygenerovat pouze chybějící hlavní body + relevanci"
+          },
+          "buying_signals_prompt_usage_tooltip": "Počet kroků sekvence, které aktuálně používají nákupní signály v promptu",
+          "campaign_status": {
+            "active": "Aktivní",
+            "available_capacity": "Dostupná kapacita",
+            "confirm_launch": "Tím se začnou odesílat e-maily potenciálním zákazníkům. Pokračovat?",
+            "confirm_pause": "Tím se pozastaví všechna odesílání e-mailů. Plánované časy budou zachovány. Pokračovat?",
+            "confirm_resume": "Tím se obnoví odesílání e-mailů. Pokračovat?",
+            "in_sequence": "V sekvenci",
+            "launch_button": "Spustit kampaň",
+            "launch_requirements": "Požadavky na spuštění",
+            "launched": "Spuštěno",
+            "launched_at": "Spuštěno %{date}",
+            "leads_eligible_now": "Leady způsobilé nyní",
+            "not_launched": "Nespuštěno",
+            "not_yet_contacted": "Dosud nekontaktován",
+            "pause_button": "Pozastavit kampaň",
+            "paused": "Pozastaveno",
+            "paused_at": "Pozastaveno dne %{date}",
+            "pending_now": "Nevyřízeno",
+            "requirement_leads": "Leads importováno",
+            "requirement_mailboxes": "Přiřazeny poštovní schránky",
+            "requirement_mailboxes_have_senders": "Schránky mají přiřazené odesílatele",
+            "requirement_playbook": "Schválená příručka",
+            "requirement_samples": "Vzorové zpráVy schváleny",
+            "requirement_senders": "Vytvořeni odesílatelé",
+            "resume_button": "Obnovit kampaň",
+            "sent_today": "Odesláno dnes",
+            "title": "Stav kampaně"
+          },
+          "can_launch": "Připraveno ke spuštění",
+          "cannot_launch": "Není připraven",
+          "created_at": "Vytvořeno",
+          "created_by": "Vytvořil",
+          "default_timezone": "Výchozí časové pásmo",
+          "description": "Popis",
+          "import_leads": "Importovat Leads",
+          "leads": {
+            "empty": "K tomuto agentovi zatím nejsou přiřazeni žádní potenciální zákazníci",
+            "title": "Přiděleno Leads"
+          },
+          "locale": "Locale",
+          "mailboxes": {
+            "assign": "Přiřadit poštovní schránky",
+            "capacity": "Kapacita %{remaining}/%{total}",
+            "capacity_label": "kapacita",
+            "days_remaining": "Zbývá %{days} dní",
+            "deselect_all": "Zrušte výběr všech",
+            "empty": "Tomuto agentovi nejsou přiřazeny žádné poštovní schránky",
+            "no_available": "Pro tuto organizaci nejsou k dispozici žádné poštovní schránky",
+            "no_domains_match": "Vašemu vyhledávání neodpovídají žádné domény",
+            "provider_google": "Google",
+            "provider_microsoft": "Microsoft",
+            "save_assignment": "Uložit úkol",
+            "search_domains": "Hledat domény...",
+            "select_all": "Vyberte Vše",
+            "select_mailboxes": "Vyberte poštovní schránky, které chcete přiřadit",
+            "title": "Přidělené poštovní schránky",
+            "warming_up": "Zahřívání",
+            "warmup_complete": "Připraveno"
+          },
+          "no_description": "Nebyl poskytnut žádný popis",
+          "no_playbook": "Není přiřazena žádná příručka",
+          "playbook": "Playbook",
+          "samples": {
+            "approve_button": "Schválit vzorky",
+            "approved_by": "Schváleno %{name} dne %{date}",
+            "cancel_button": "Zrušit generování",
+            "confirm_approve": "Schválit tyto vzorové zprávy? To umožní spuštění kampaně.",
+            "confirm_cancel": "Tím zastavíte generování vzorků, vymažete vygenerované vzorky a resetujete postup. Pokračovat?",
+            "confirm_generate": "Tím se vygenerují vzorové zprávy pro prvních %{count} potenciálních zákazníků. Pokračovat?",
+            "confirm_reset": "Tím se odstraní všechny vzorové zpráVy a resetuje se schválení. Pokračovat?",
+            "generate_button": "Generovat vzorky",
+            "generated_at": "Vygenerováno dne %{date}",
+            "need_email_steps": "Před generováním vzorků přidejte do sekvence alespoň jeden e-mailový krok",
+            "need_leads": "Před generováním vzorků importujte elektrody",
+            "reset_button": "Resetovat a regenerovat",
+            "sample_count_info": "Vzorky budou vygenerovány pro prvních %{count} potenciálních zákazníků",
+            "sample_count_label": "Počet svodů vzorků",
+            "status": {
+              "approved": "Schválený",
+              "not_generated": "Nevygenerováno",
+              "pending_approval": "Čeká na schválení"
+            },
+            "title": "Vzorové zprávy",
+            "view_samples": "Zobrazit ukázky"
+          },
+          "senders": {
+            "empty": "V této organizaci nejsou žádní odesílatelé",
+            "mailbox": "poštovní schránka",
+            "mailboxes": "poštovní schránky",
+            "manage": "Spravovat",
+            "title": "Odesílatelé"
+          },
+          "sequence": {
+            "active_steps": "aktivní kroky",
+            "add_first_step": "Přidat první krok",
+            "delay_days": "Po %{days} dnech",
+            "edit_sequence": "Upravit sekvenci",
+            "event_types": {
+              "email": "E-mail",
+              "linkedin_connect": "LinkedIn Připojit",
+              "linkedin_message": "Zpráva LinkedIn",
+              "linkedin_visit": "LinkedIn Navštivte",
+              "manual_task": "Manuální úkol"
+            },
+            "immediate": "Bezprostřední",
+            "inactive": "neaktivní",
+            "no_steps": "Zatím nejsou nakonfigurovány žádné kroky sekvence. Přidejte kroky, které definují vaši posloupnost dosahu.",
+            "title": "Sekvence"
+          },
+          "stats": {
+            "bounced": "Odražený",
+            "contacted": "Kontaktováno",
+            "leads_in_sequence": "Leads v sekvenci",
+            "meetings": "Setkání",
+            "replies": "Odpovědi",
+            "sent_emails": "Odeslané emaily",
+            "title": "Statistiky kampaně",
+            "total_leads": "Celkem Leads"
+          },
+          "title": "Podrobnosti o agentovi",
+          "updated_at": "Poslední aktualizace",
+          "view_sent_messages": "Odeslané zprávy"
+        },
+        "statuses": {
+          "active": "Aktivní",
+          "completed": "Dokončeno",
+          "draft": "Návrh",
+          "paused": "Pozastaveno",
+          "ready": "Připraveno"
+        },
+        "subtitle": "Spravujte všechny kampaně a agenty napříč organizacemi",
+        "table": {
+          "contacted": "Kontaktováno",
+          "edit": "Upravit",
+          "leads": "Leads",
+          "meeting_rate": "Míra setkání",
+          "meetings": "Setkání",
+          "playbook": "Playbook",
+          "replied": "Odpovězeno",
+          "reply_rate": "Míra odpovědi",
+          "view": "Pohled"
+        },
+        "title": "Agents",
+        "updated": "Agent byl úspěšně aktualizován"
+      },
+      "common": {
+        "actions": "Akce",
+        "active": "Aktivní",
+        "all": "Vše",
+        "all_organizations": "Všechny organizace",
+        "all_statuses": "Všechny stavy",
+        "apply_filters": "Použít filtry",
+        "back": "Zadní",
+        "back_to_accounts": "Zpět k Účtům",
+        "back_to_activity_log": "Zpět do Protokolu aktivit",
+        "back_to_dashboard": "Zpět na Dashboard",
+        "back_to_organizations": "Zpět k organizacím",
+        "cancel": "Zrušit",
+        "clear": "Jasný",
+        "clear_all": "Vymazat vše",
+        "clear_filters": "Vymazat filtry",
+        "coming_soon": "Již brzy",
+        "company": "Společnost",
+        "create": "Vytvořit",
+        "created": "Vytvořeno",
+        "created_at": "Vytvořeno",
+        "created_by": "Vytvořil",
+        "creating": "Vytváření...",
+        "dashboard": "Dashboard",
+        "deactivate": "Deaktivovat",
+        "delete": "Vymazat",
+        "deleting": "Mazání...",
+        "description": "Popis",
+        "disconnecting": "Odpojování...",
+        "display_name": "Zobrazovaný název",
+        "domain": "Doména",
+        "edit": "Upravit",
+        "email": "E-mail",
+        "filters": "Filtry",
+        "first_name": "Křestní jméno",
+        "form_errors": "Opravte prosím následující chyby:",
+        "importing": "Import...",
+        "inactive": "Neaktivní",
+        "job_title": "Název práce",
+        "last_name": "Příjmení",
+        "login_as": "Přihlásit se jako",
+        "mailboxes": "Poštovní schránky",
+        "na": "N/A",
+        "name": "Jméno",
+        "next": "Další",
+        "no": "Žádný",
+        "no_industry": "Žádný průmysl",
+        "no_results": "Nebyly nalezeny žádné výsledky",
+        "not_recorded": "Nezaznamenáno",
+        "of": "z",
+        "organization": "Organizace",
+        "organizations": "Organizace",
+        "page": "Strana",
+        "page_info": "Stránka %{current} z %{total}",
+        "playbook": "Playbook",
+        "previous": "Předchozí",
+        "required_fields": "* Povinná pole",
+        "reset": "Resetovat",
+        "results": "výsledky",
+        "role": "Role",
+        "save_changes": "Uložit změny",
+        "saved": "Uloženo",
+        "saving": "Ukládání...",
+        "search": "Vyhledávání",
+        "select_option": "Vyberte možnost...",
+        "select_organization": "Vyberte organizaci...",
+        "send": "Poslat",
+        "showing": "Zobrazení",
+        "status": "Postavení",
+        "to": "na",
+        "updated_at": "Poslední aktualizace",
+        "view": "Pohled",
+        "view_all": "Zobrazit vše",
+        "yes": "Ano"
+      },
+      "dashboard": {
+        "recent_organizations": {
+          "description": "Seznam 10 naposledy vytvořených organizací",
+          "empty": "Zatím žádné organizace",
+          "title": "Nedávné organizace",
+          "view_all": "Zobrazit všechny organizace"
+        },
+        "stats": {
+          "pending_onboarding": "Čeká na registraci",
+          "total_accounts": "Účty celkem",
+          "total_organizations": "Celkem organizací"
+        },
+        "subtitle": "Přehled a správa platformy",
+        "super_title": "Super Admin Dashboard",
+        "table": {
+          "industry": "Průmysl",
+          "size": "Velikost"
+        },
+        "title": "Admin Dashboard"
+      },
+      "email_accounts": {
+        "add_account": "Přidat účet",
+        "back_to_list": "Zpět na E-mailové účty",
+        "confirm_delete": "Opravdu chcete smazat tento e-mailový účet? Tuto akci nelze vrátit zpět.",
+        "created": "E-mailový účet byl úspěšně vytvořen",
+        "delete_failed_has_agents": "E-mailový účet přiřazený agentům nelze smazat. Nejprve odstraňte přiřazení agentů.",
+        "deleted": "E-mailový účet byl úspěšně smazán",
+        "edit": {
+          "daily_limit_help": "Maximální počet e-mailů k odeslání za den",
+          "daily_limit_label": "Denní limit odesílání",
+          "display_name_help": "Jméno zobrazené v odeslaných e-mailech",
+          "email_readonly": "E-mailovou adresu nelze změnit",
+          "notes_label": "Poznámky",
+          "notes_placeholder": "Interní poznámky k tomuto účtu...",
+          "subtitle": "Aktualizujte nastavení e-mailového účtu",
+          "title": "Upravit e-mailový účet"
+        },
+        "filters": {
+          "organization": "Organizace",
+          "status": "Postavení"
+        },
+        "form": {
+          "first_name": "Křestní jméno",
+          "imap_encryption": "IMAP Šifrování",
+          "imap_host": "Hostitel IMAP",
+          "imap_password": "Heslo IMAP",
+          "imap_port": "Port IMAP",
+          "imap_username": "Uživatelské jméno IMAP",
+          "last_name": "Příjmení",
+          "sending_domain": "Odesílání domény",
+          "smtp_encryption": "SMTP Šifrování",
+          "smtp_host": "Hostitel SMTP",
+          "smtp_password": "Heslo SMTP",
+          "smtp_port": "Port SMTP",
+          "smtp_username": "Uživatelské jméno SMTP"
+        },
+        "import": {
+          "column_name": "Sloupec",
+          "columns": {
+            "daily_limit": "Denní limit odesílání (výchozí: 50)",
+            "display_name": "Volitelné přepsání zobrazovaného názvu",
+            "email": "E-mailová adresa účtu",
+            "first_name": "Křestní jméno majitele účtu",
+            "imap_encryption": "IMAP šifrování: ssl, tls nebo none (výchozí: ssl)",
+            "imap_host": "IMAP název hostitele serveru",
+            "imap_password": "IMAP ověřovací heslo nebo heslo aplikace",
+            "imap_port": "IMAP port serveru (obvykle 993)",
+            "imap_username": "IMAP autentizační uživatelské jméno",
+            "last_name": "Příjmení majitele účtu",
+            "sending_domain": "Volitelná vlastní odesílací doména",
+            "smtp_encryption": "SMTP šifrování: tls, ssl nebo none (výchozí: tls)",
+            "smtp_host": "SMTP název hostitele serveru",
+            "smtp_password": "SMTP ověřovací heslo nebo heslo aplikace",
+            "smtp_port": "SMTP port serveru (obvykle 587)",
+            "smtp_username": "SMTP autentizační uživatelské jméno"
+          },
+          "columns_description": "Povinné a volitelné sloupce pro soubor CSV",
+          "columns_title": "Odkaz na sloupec",
+          "csv_file": "Soubor CSV",
+          "description": "Popis",
+          "download": "Stáhnout",
+          "download_template": "Stáhnout šablonu",
+          "drop_file": "Sem přetáhněte svůj soubor CSV",
+          "google_note": "Použijte hesla aplikací pro účty Gmail s povolenou 2FA",
+          "import_button": "Importovat účty",
+          "invalid_file_type": "Vyberte prosím soubor CSV",
+          "microsoft_note": "Ujistěte se, že SMTP/IMAP je povoleno v nastavení správce Microsoft 365",
+          "or_click": "nebo klikněte pro procházení",
+          "organization": "Organizace",
+          "partial_success": "%{imported} importováno, %{failed} se nezdařilo: %{errors}",
+          "provider_settings": "Reference nastavení poskytovatele",
+          "provider_settings_description": "Společná nastavení SMTP/IMAP pro oblíbené poskytovatele e-mailu",
+          "required": "Požadovaný",
+          "select_file": "Vyberte prosím soubor CSV k importu",
+          "select_organization": "Vyberte organizaci...",
+          "subtitle": "Nahrajte soubor CSV pro hromadný import e-mailových účtů",
+          "success": "Počet úspěšně importovaných e-mailových účtů: %{count}",
+          "template_description": "Pomocí této šablony se ujistěte, že váš CSV má správný formát",
+          "title": "Importovat e-mailové účty",
+          "upload_description": "Importujte více e-mailových účtů najednou ze souboru CSV",
+          "upload_title": "Nahrajte soubor CSV"
+        },
+        "import_csv": "Importovat CSV",
+        "invalid_status": "Zadán neplatný stav",
+        "new": {
+          "basic_info": "Základní informace",
+          "create_button": "Vytvořit účet",
+          "daily_limit_help": "Maximální počet e-mailů k odeslání za den",
+          "daily_limit_label": "Denní limit odesílání",
+          "display_name_help": "Jak příjemci uvidí jméno odesílatele (volitelné)",
+          "display_name_placeholder": "Prodejní tým",
+          "email_help": "E-mailová adresa, která bude použita pro odeslání",
+          "email_placeholder": "odesílatel@společnost.com",
+          "first_name_placeholder": "Jan",
+          "imap_config": "Konfigurace IMAP",
+          "imap_encryption_label": "Šifrování",
+          "imap_host_label": "Hostitel IMAP",
+          "imap_password_label": "Heslo",
+          "imap_password_placeholder": "Heslo aplikace nebo heslo IMAP",
+          "imap_port_label": "Přístav",
+          "imap_username_label": "Uživatelské jméno",
+          "imap_username_placeholder": "Obvykle Vaše e-mailová adresa",
+          "info_pending": "Nové účty budou ve stavu „nevyřízeno“. Až budete připraveni, zahajte zahřívací období.",
+          "last_name_placeholder": "Kovář",
+          "notes_label": "Poznámky",
+          "notes_placeholder": "Interní poznámky k tomuto účtu...",
+          "optional_settings": "Volitelná nastavení",
+          "select_organization": "Vyberte organizaci...",
+          "sending_domain_help": "Vlastní doména pro identifikaci HELO/EHLO",
+          "sending_domain_label": "Odesílání domény",
+          "sending_domain_placeholder": "company.com",
+          "smtp_config": "Konfigurace SMTP",
+          "smtp_encryption_label": "Šifrování",
+          "smtp_host_label": "Hostitel SMTP",
+          "smtp_password_label": "Heslo",
+          "smtp_password_placeholder": "Heslo aplikace nebo heslo SMTP",
+          "smtp_port_label": "Přístav",
+          "smtp_username_label": "Uživatelské jméno",
+          "smtp_username_placeholder": "Obvykle Vaše e-mailová adresa",
+          "subtitle": "Vytvořte nový e-mailový účet pro odchozí kampaně",
+          "title": "Přidat e-mailový účet"
+        },
+        "send_test": {
+          "failed": "Nepodařilo se odeslat zkušební e-mail: %{error}",
+          "invalid_email": "Zadejte prosím platnou e-mailovou adresu",
+          "success": "Zkušební e-mail odeslán na adresu %{email}"
+        },
+        "show": {
+          "account_holder": "Majitel účtu",
+          "agents_title": "Přiděleno Agents",
+          "back_to_list": "Zpět na E-mailové účty",
+          "connection_error": "Chyba připojení",
+          "connection_healthy": "Připojení je zdravé",
+          "connection_status": "Stav připojení",
+          "created_at": "Vytvořeno",
+          "created_by": "Vytvořil",
+          "daily_limit": "Denní limit odesílání",
+          "days_remaining": "Zbývá %{days} dní",
+          "display_name": "Zobrazovaný název",
+          "email": "E-mailová adresa",
+          "from_address": "Z adresy",
+          "imap_configuration": "Konfigurace IMAP",
+          "last_test": "Poslední test",
+          "mark_active": "Označit jako aktivní",
+          "never_tested": "Nikdy netestováno",
+          "no_agents": "Nejsou přiděleni žádní agenti",
+          "notes": "Poznámky",
+          "organization": "Organizace",
+          "pause": "Pauza",
+          "provider": "Poskytovatel",
+          "reactivate": "Znovu aktivujte",
+          "smtp_configuration": "Konfigurace SMTP",
+          "start_warmup": "Spusťte zahřívání",
+          "start_warmup_confirm": "Začít 21denní zahřívací období pro tento účet?",
+          "status": "Postavení",
+          "subtitle": "Zobrazení a správa nastavení e-mailového účtu",
+          "suspend": "Pozastavit",
+          "test_connection": "Test připojení",
+          "title": "Podrobnosti o e-mailovém účtu",
+          "updated_at": "Poslední aktualizace",
+          "warmup_complete": "Zahřívání dokončeno",
+          "warmup_in_progress": "Zahřívání probíhá",
+          "warmup_not_started": "Nezahájeno",
+          "warmup_started_on": "Zahájeno %{date}",
+          "warmup_status": "Stav zahřívání"
+        },
+        "status_updated": "Stav úspěšně aktualizován",
+        "statuses": {
+          "active": "Aktivní",
+          "paused": "Pozastaveno",
+          "pending": "Čeká na vyřízení",
+          "suspended": "Pozastaveno",
+          "warming": "Zahřívání"
+        },
+        "subtitle": "Spravujte e-mailové účty napříč organizacemi",
+        "table": {
+          "connection": "Spojení",
+          "connection_error": "Chyba",
+          "connection_ok": "OK",
+          "daily_limit": "Denní limit",
+          "days_remaining": "Zbývá %{days} dní",
+          "display_name": "Zobrazovaný název",
+          "edit": "Upravit",
+          "not_tested": "Netestováno",
+          "view": "Pohled",
+          "warmup_complete": "Kompletní",
+          "warmup_progress": "Průběh zahřívání"
+        },
+        "test_connection": {
+          "failed": "Test připojení se nezdařil: %{error}",
+          "imap_ok_smtp_failed": "IMAP je v pořádku, ale SMTP se nezdařilo: %{error}",
+          "smtp_ok_imap_failed": "SMTP je v pořádku, ale IMAP selhal: %{error}",
+          "success": "Test připojení byl úspěšný! SMTP a IMAP fungují."
+        },
+        "title": "E-mailové účty",
+        "updated": "E-mailový účet byl úspěšně aktualizován",
+        "warmup_started": "Zahřívání začalo úspěšně"
+      },
+      "email_domains": {
+        "add_domain": "Přidat doménu",
+        "assign_sender": "Přiřadit odesílatele",
+        "back_to_list": "Zpět na E-mailové domény",
+        "bulk_assign": "Přiřadit odesílateli",
+        "bulk_assign_description": "Vyberte odesílatele, kterého chcete přiřadit k %{count} vybraným poštovním schránkám.",
+        "bulk_assign_title": "Přiřadit odesílatele k %{count} poštovním schránkám",
+        "bulk_sender_assigned": "Přiřazeno %{sender} k %{count} poštovním schránkám",
+        "can_send": "Připraveno",
+        "cannot_send": "Není připraven",
+        "capacity_label": "kapacita",
+        "confirm_delete": "Opravdu chcete smazat tuto doménu?",
+        "connection_success": "Test připojení byl úspěšný",
+        "created": "E-mailová doména byla úspěšně vytvořena",
+        "created_with_discovery": "E-mailová doména byla vytvořena. Zjištěno %{discovered} uživatelů, vytvořeno %{created} poštovních schránek.",
+        "credentials_status": {
+          "configured": "Nakonfigurováno",
+          "google": "Google",
+          "google_hint": "Nastavit proměnnou prostředí GOOGLE_SERVICE_ACCOUNT_KEY",
+          "microsoft": "Microsoft",
+          "microsoft_hint": "Nastavit proměnné prostředí MICROSOFT_CLIENT_ID a MICROSOFT_CLIENT_SECRET",
+          "not_configured": "Nenakonfigurováno",
+          "title": "Stav globálních přihlašovacích údajů"
+        },
+        "delete_failed": "Smazání e-mailové domény se nezdařilo",
+        "deleted": "E-mailová doména byla úspěšně smazána",
+        "discover_mailboxes": "Objevte poštovní schránky",
+        "discovery_confirm": "Tím vyhledá všechny uživatele v doméně a vytvoří pro ně poštovní schránky. Pokračovat?",
+        "discovery_success": "Objevování dokončeno: Nalezeno %{discovered} uživatelů, vytvořeno %{created} poštovních schránek, přeskočeno %{skipped} existujících",
+        "edit": {
+          "delete_button": "Smazat doménu",
+          "domain_label": "Doména",
+          "microsoft_tenant_id_label": "Microsoft Tenant ID",
+          "subtitle": "Aktualizujte konfiguraci domény",
+          "title": "Upravit e-mailovou doménu"
+        },
+        "empty": "Zatím nejsou nakonfigurovány žádné e-mailové domény.",
+        "filters": {
+          "all_types": "Všechny typy",
+          "organization": "Organizace",
+          "provider_type": "Typ poskytovatele",
+          "status": "Postavení",
+          "title": "Filtry"
+        },
+        "google_not_configured": "Identifikační údaje Google nejsou nakonfigurovány. Nastavit proměnnou prostředí GOOGLE_SERVICE_ACCOUNT_KEY.",
+        "has_mailboxes": "Nelze smazat doménu s existujícími poštovními schránkami. Nejprve smažte poštovní schránky.",
+        "mailbox_table": {
+          "actions": "Akce",
+          "agents": "Agents",
+          "capacity": "Kapacita",
+          "email": "E-mail",
+          "sender": "Odesílatel",
+          "status": "Postavení",
+          "warmup": "Zahřívání"
+        },
+        "mailboxes_label": "poštovní schránky",
+        "microsoft_not_configured": "Přihlašovací údaje společnosti Microsoft nejsou nakonfigurovány. Nastavte proměnné prostředí MICROSOFT_CLIENT_ID a MICROSOFT_CLIENT_SECRET.",
+        "new": {
+          "domain_help": "E-mailová doména, kterou chcete nakonfigurovat",
+          "domain_inferred": "odvozeno z admin emailu",
+          "domain_label": "Doména",
+          "domain_placeholder": "example.com",
+          "google_admin_email_help": "Google Workspace e-mail správce pro přístup k API. Doména bude extrahována z tohoto e-mailu.",
+          "google_admin_email_label": "E-mail správce",
+          "google_client_id_label": "ID klienta servisního účtu",
+          "google_scopes_label": "Požadované rozsahy",
+          "info_google": "Pro Google Workspace se ujistěte, že je pro účet služby nakonfigurováno delegování v rámci celé domény.",
+          "info_microsoft": "Pro Microsoft 365 zajistěte udělení souhlasu správce pro aplikaci Azure AD.",
+          "microsoft_tenant_id_help": "Vaše GUID tenanta Azure AD (požadováno pro Microsoft)",
+          "microsoft_tenant_id_label": "Microsoft Tenant ID",
+          "microsoft_tenant_id_placeholder": "12345678-1234-1234-1234-123456789012",
+          "organization_placeholder": "Vyberte organizaci...",
+          "provider_type_label": "Typ poskytovatele",
+          "provider_type_placeholder": "Vyberte typ poskytovatele...",
+          "submit": "Vytvořit doménu",
+          "submitting": "Vytváření...",
+          "subtitle": "Nakonfigurujte doménu Google Workspace nebo Microsoft 365",
+          "title": "Přidat e-mailovou doménu"
+        },
+        "no_agents": "Žádný",
+        "no_mailboxes": "Zatím žádné poštovní schránky",
+        "provider_types": {
+          "google": "Google Workspace",
+          "microsoft": "Microsoft 365"
+        },
+        "search_placeholder": "Hledat domény nebo e-maily...",
+        "select_all": "Vyberte vše",
+        "selected_count": "Vybráno: %{count}",
+        "sender_assigned": "Odesílatel %{sender} přiřazen k %{mailbox}",
+        "sender_assignment_failed": "Přiřazení odesílatele se nezdařilo",
+        "sender_unassigned": "Přiřazení odesílatele z %{mailbox} zrušeno",
+        "sender_unassignment_failed": "Přiřazení odesílatele se nepodařilo zrušit",
+        "settings": "Nastavení",
+        "show": {
+          "add_mailbox": "Přidat poštovní schránku",
+          "back_to_list": "Zpět na E-mailové domény",
+          "created_at": "Vytvořeno",
+          "credentials_status_title": "Stav pověření",
+          "domain": "Doména",
+          "last_verified": "Naposledy ověřeno",
+          "mailboxes_count": "%{count} poštovních schránek",
+          "mailboxes_title": "Poštovní schránky",
+          "microsoft_tenant_id": "Microsoft Tenant ID",
+          "no_mailboxes": "Pro tuto doménu nejsou nakonfigurovány žádné poštovní schránky",
+          "organization": "Organizace",
+          "provider_type": "Typ poskytovatele",
+          "status": "Postavení",
+          "test_connection": "Test připojení",
+          "testing": "Testování...",
+          "title": "Podrobnosti o e-mailové doméně",
+          "updated_at": "Poslední aktualizace",
+          "verification_error": "Chyba ověření"
+        },
+        "statuses": {
+          "active": "Aktivní",
+          "deleted": "Smazáno",
+          "error": "Chyba",
+          "inactive": "Neaktivní",
+          "undefined": "Neznámý"
+        },
+        "subtitle": "Spravujte integrace Google Workspace a Microsoft 365",
+        "table": {
+          "edit": "Upravit",
+          "last_verified": "Naposledy ověřeno",
+          "never_verified": "Nikdy",
+          "provider": "Poskytovatel",
+          "provider_type": "Poskytovatel",
+          "view": "Pohled"
+        },
+        "test_connection": "Test připojení",
+        "testing_connection": "Testování...",
+        "title": "E-mailové domény",
+        "unassign_sender": "Zrušit přiřazení",
+        "updated": "E-mailová doména byla úspěšně aktualizována",
+        "warmup_complete": "Kompletní",
+        "warmup_in_progress": "Zahřívání"
+      },
+      "generated_messages": {
+        "test_sent": "Zkušební e-mail odeslán na adresu %{email}",
+        "update_failed": "Aktualizace zpráVy se nezdařila",
+        "updated": "Zpráva byla úspěšně aktualizována"
+      },
+      "global_inbox": {
+        "all_organizations": "Všechny organizace",
+        "auto_reply": {
+          "button": "Automatická odpověď",
+          "failed": "Odeslání automatické odpovědi se nezdařilo",
+          "invalid_status": "Automatická odpověď je k dispozici pouze pro konverzace typu „nezajímají mě“ nebo „špatná osoba“.",
+          "sending": "Generování a odesílání automatické odpovědi...",
+          "sent": "Automatická odpověď byla úspěšně odeslána",
+          "sent_successfully": "Automatická odpověď byla úspěšně odeslána"
+        },
+        "check_mail": "Kontrola pošty ve všech organizacích...",
+        "filter_organization": "Organizace",
+        "subtitle": "Všechny konverzace napříč všemi organizacemi",
+        "title": "Globální centrum odpovědí"
+      },
+      "invitations": {
+        "actions": {
+          "cancel": "Zrušit",
+          "delete": "Vymazat",
+          "resend": "Odeslat znovu"
+        },
+        "confirm": {
+          "cancel": "Zrušit pozvánku pro %{email}? Toto nelze vrátit zpět.",
+          "delete": "Trvale smazat pozvánku pro %{email}? Toto nelze vrátit zpět.",
+          "resend": "Znovu odeslat pozvánku na adresu %{email}?"
+        },
+        "create_button": "Pozvat nového uživatele",
+        "empty": "Začněte vytvořením první pozvánky.",
+        "empty_with_filter": "Nebyly nalezeny žádné pozvánky. Zkuste upravit filtry.",
+        "filters": {
+          "organization_all": "Všechny organizace",
+          "status_all": "Všechny stavy",
+          "title": "Filtry"
+        },
+        "new": {
+          "email_description": "Pozvánka bude zaslána na tuto e-mailovou adresu",
+          "email_placeholder": "uživatel@example.com",
+          "first_name_placeholder": "Jan",
+          "info_messages": [
+            "Na zadanou e-mailovou adresu bude zaslán e-mail s pozvánkou",
+            "Příjemce si může při přijímání nastavit vlastní heslo",
+            "Platnost odkazů s pozvánkou vyprší po 7 dnech",
+            "Čekající pozvánky můžete znovu odeslat nebo zrušit ze seznamu pozvánek"
+          ],
+          "info_title": "O pozvánkách",
+          "last_name_placeholder": "Srna",
+          "organization_description": "Organizace, do které bude tento uživatel patřit",
+          "organization_placeholder": "Vyberte organizaci...",
+          "submit": "Odeslat pozvánku",
+          "submitting": "Odesílání...",
+          "subtitle": "Chcete-li přidat nového uživatele do organizace, odešlete e-mail s pozvánkou",
+          "title": "Pozvat nového uživatele"
+        },
+        "pagination": {
+          "showing": "Zobrazuje se stránka %{current} z %{total} (celkem %{count} pozvánek)"
+        },
+        "subtitle": "Spravujte pozvánky zákazníků a sledujte jejich stav",
+        "table": {
+          "expires": "Platnost vyprší",
+          "invited_by": "Pozván od"
+        },
+        "title": "Pozvánky"
+      },
+      "lead_imports": {
+        "assign_to_agent": {
+          "already_assigned": "Tento import již má přiděleného agenta.",
+          "failed": "Tento import nelze přiřadit agentovi. Zkuste to prosím znovu.",
+          "invalid_agent": "Vyberte platného zástupce z této organizace.",
+          "invalid_status": "Agenta můžete přiřadit až po dokončení importu.",
+          "success": "%{count} importovaných potenciálních zákazníků bylo přiřazeno %{agent_name}."
+        },
+        "created": "Import byl úspěšně zahájen. Zpracování na pozadí.",
+        "download": {
+          "button": "Stáhnout CSV",
+          "not_available": "Zdrojový soubor CSV již není k dispozici ke stažení."
+        },
+        "empty": "Zatím žádný dovoz. Nahrajte svůj první soubor CSV.",
+        "filters": {
+          "organization": "Organizace",
+          "status": "Postavení"
+        },
+        "new": {
+          "agent_help": "Pokud je tato možnost vybrána, potenciální zákazníci budou tomuto agentovi automaticky přiřazeni",
+          "agent_label": "Zástupce (volitelné)",
+          "agent_placeholder": "Vyberte agenta...",
+          "csv_file_help": "Nahrajte soubor CSV s daty potenciálních zákazníků. Maximálně 50 MB.",
+          "csv_file_label": "Soubor CSV *",
+          "download_template": "Stáhnout šablonu",
+          "download_template_help": "Email je jediný povinný sloupec. Všechna ostatní pole jsou volitelná. celé_jméno není potřeba, pokud je uvedeno jméno a příjmení.",
+          "organization_placeholder": "Vyberte organizaci...",
+          "subtitle": "Nahrajte soubor CSV a namapujte sloupce do polí potenciálních zákazníků",
+          "title": "Importovat Leads",
+          "upload_button": "Nahrát a zobrazit náhled",
+          "uploading": "Nahrávání..."
+        },
+        "new_import": "Nový import",
+        "preview": {
+          "back": "Zadní",
+          "csv_headers": "CSV Záhlaví",
+          "email_required": "Je vyžadováno mapování sloupců e-mailu",
+          "lead_fields": "Olověná pole",
+          "preview_rows": "Náhled (prvních 5 řádků)",
+          "start_import": "Spusťte import",
+          "subtitle": "Mapujte sloupce CSV na pole potenciálních zákazníků",
+          "title": "Sloupce mapy",
+          "total_rows": "Celkový počet řádků: %{count}",
+          "unmapped_columns": "Nemapované sloupce",
+          "unmapped_help": "Nemapované sloupce budou uloženy v custom_fields"
+        },
+        "remove_from_agent": {
+          "no_agent_assigned": "Tento import není aktuálně přiřazen agentovi.",
+          "not_completed": "Leads lze z agenta odebrat až po dokončení importu.",
+          "success": "Odstranili %{count} přiřazení potenciálních zákazníků z %{agent_name} a zrušili přiřazení tohoto importu."
+        },
+        "show": {
+          "agent": "Činidlo",
+          "assign_to_agent": "Přiřadit agentovi",
+          "assign_to_agent_help": "Vyberte zástupce a přiřaďte všechny úspěšně importované potenciální zákazníky z tohoto importu.",
+          "back_to_list": "Zpět na Importy",
+          "blacklisted": "Na černé listině",
+          "column_mapping": "Mapování sloupců",
+          "completed": "Dokončeno",
+          "created": "Vytvořeno",
+          "duration": "Trvání",
+          "error_details": "Podrobnosti o chybě",
+          "errors": "Chyby",
+          "file_size": "Velikost souboru",
+          "filename": "Název souboru",
+          "imported_by": "Importoval",
+          "no_agents_available": "Pro tuto organizaci nejsou k dispozici žádní zástupci.",
+          "no_errors": "Žádné chyby",
+          "none_assigned": "Žádný přidělený",
+          "organization": "Organizace",
+          "processed": "Zpracováno",
+          "progress": "Pokrok",
+          "refresh": "Obnovit",
+          "remove_from_agent": {
+            "button": "Odebrat Leads z agenta",
+            "confirm": "Opravdu chcete odebrat tyto potenciální zákazníky přidělenému agentovi? Tuto akci nelze vrátit zpět.",
+            "title": "Odebrat Leads z agenta",
+            "warning": "To odstraní importované potenciální zákazníky z aktuálně přiřazeného agenta a zastaví jakýkoli související postup sekvence pro tyto potenciální zákazníky. Záznamy lidí zůstanou nedotčeny."
+          },
+          "results": "Importovat výsledky",
+          "row": "Řádek",
+          "skipped": "Přeskočeno",
+          "started": "Zahájeno",
+          "status": "Postavení",
+          "title": "Podrobnosti importu",
+          "total_rows": "Celkem řádků",
+          "updated": "Aktualizováno"
+        },
+        "statuses": {
+          "completed": "Dokončeno",
+          "failed": "Nepodařilo se",
+          "pending": "Čeká na vyřízení",
+          "processing": "Zpracování"
+        },
+        "subtitle": "Spravujte importy potenciálních zákazníků CSV ve všech organizacích",
+        "table": {
+          "agent": "Činidlo",
+          "blacklisted": "Na černé listině",
+          "errors": "Chyby",
+          "filename": "Soubor",
+          "progress": "Pokrok",
+          "skipped": "Přeskočeno",
+          "updated": "Aktualizováno",
+          "view": "Pohled"
+        },
+        "title": "Dovoz olova"
+      },
+      "leads": {
+        "empty": "Nebyli nalezeni žádní potenciální zákazníci",
+        "filters": {
+          "blacklist_all": "Vše",
+          "blacklist_label": "Stav černé listiny",
+          "blacklist_no": "Není na černé listině",
+          "blacklist_yes": "Na černé listině",
+          "organization_all": "Všechny organizace",
+          "title": "Filtry"
+        },
+        "import_leads": "Importovat Leads",
+        "modal": {
+          "blacklist": {
+            "reason": "Důvod",
+            "title": "Na černé listině"
+          },
+          "close": "Blízko",
+          "company_website": {
+            "content": "Obsah webových stránek",
+            "more_characters": "%{count} dalších znaků...",
+            "not_scraped": "Nepoškrábaný",
+            "raw_data": "Údaje o webových stránkách společnosti",
+            "scraped_at": "Poškrábaný",
+            "summary": "Shrnutí webových stránek společnosti"
+          },
+          "disc": {
+            "C": "Svědomitost",
+            "D": "Dominance",
+            "DC": "Dominance-Svědomitost",
+            "DI": "Dominance-Vliv",
+            "I": "Vliv",
+            "IC": "Vliv-Svědomitost",
+            "ID": "Vliv-Dominance",
+            "S": "Stálost",
+            "SC": "Stálost-Svědomitost",
+            "SI": "Stálost-Vliv",
+            "not_analyzed": "Neanalyzováno",
+            "title": "Profil DISKU"
+          },
+          "enrichment": {
+            "company_website": "Web společnosti Scrape",
+            "disc_profile": "Vyvodit profil DISKU",
+            "error": "Chyba",
+            "inferring": "Odvozování...",
+            "last_updated": "Poslední aktualizace %{date}",
+            "linkedin_posts": "Seškrábněte příspěvky LinkedIn",
+            "linkedin_profile": "Seškrábněte profil LinkedIn",
+            "never_scraped": "Nikdy nepoškrábaný",
+            "not_available": "Není k dispozici",
+            "requires_linkedin": "Nejprve vyžaduje profil LinkedIn",
+            "requires_posts": "Vyžaduje nejprve LinkedIn příspěvků",
+            "scraping": "škrábání...",
+            "success": "Úspěch",
+            "title": "Obohacení"
+          },
+          "fields": {
+            "company": "Společnost",
+            "custom_fields": "Vlastní pole",
+            "domain": "Doména",
+            "email": "E-mail",
+            "job_title": "Název práce",
+            "linkedin_url": "LinkedIn",
+            "location": "Umístění",
+            "name": "Jméno",
+            "view_profile": "Zobrazit profil",
+            "website": "webové stránky"
+          },
+          "linkedin": {
+            "education": "Školství",
+            "experience": "Zažít",
+            "headline": "Titulek",
+            "no_posts": "Nejsou k dispozici žádné příspěvky",
+            "not_scraped": "Nepoškrábaný",
+            "posts": "Poslední příspěvky",
+            "posts_count": "%{count} příspěvků",
+            "scraped_at": "Analyzováno",
+            "summary": "Shrnutí"
+          },
+          "messages": {
+            "agent": "Činidlo",
+            "all_generated": "Všechny zpráVy byly vygenerovány",
+            "body": "Tělo",
+            "delay_days": "Po %{days} dnech",
+            "delay_immediate": "Bezprostřední",
+            "generate": "Generovat",
+            "generate_all": "Generovat vše",
+            "generating": "Generování...",
+            "no_agents": "Potenciální zákazník není přidělen žádným agentům",
+            "no_messages": "Dosud nebyly vygenerovány žádné zprávy",
+            "regenerate": "Regenerovat",
+            "status": {
+              "approved": "Schválený",
+              "bounced": "Odražený",
+              "draft": "Návrh",
+              "failed": "Nepodařilo se",
+              "replied": "Odpovězeno",
+              "scheduled": "Naplánováno",
+              "sent": "Odesláno"
+            },
+            "step": "Krok %{position}",
+            "subject": "Podrobit",
+            "title": "Sekvenční zprávy"
+          },
+          "sections": {
+            "basic_info": "Kontaktní informace",
+            "company": "Údaje o webových stránkách společnosti",
+            "disc": "Profil DISKU",
+            "enrichment": "Údaje o obohacení",
+            "linkedin": "Data LinkedIn",
+            "messages": "Náhled zprávy"
+          },
+          "title": "Podrobnosti o potenciálním zákazníkovi"
+        },
+        "pagination": {
+          "next": "Další",
+          "previous": "Předchozí",
+          "showing": "Zobrazuje se %{start} až %{end} z %{total} výsledků"
+        },
+        "show": {
+          "added": "Přidáno",
+          "agents": "Přiděleno Agents",
+          "back_to_list": "Zpět na Leads",
+          "blacklist_info": "Informace o černé listině",
+          "blacklist_reason": "Důvod",
+          "blacklisted_at": "Zapnuto na černé listině",
+          "company": "Společnost",
+          "company_info": "Informace o společnosti",
+          "company_website": "webové stránky",
+          "contact_info": "Kontaktní informace",
+          "created_at": "Vytvořeno",
+          "custom_fields": "Další informace",
+          "disc_not_analyzed": "Neanalyzováno",
+          "disc_profile": "Profil DISKU",
+          "email": "E-mail",
+          "email_domain": "E-mailová doména",
+          "enrichment": "Údaje o obohacení",
+          "first_name": "Křestní jméno",
+          "import_file": "Zdrojový soubor",
+          "import_info": "Informace o importu",
+          "imported_at": "Importováno dne",
+          "imported_by": "Importoval",
+          "job_title": "Název práce",
+          "last_name": "Příjmení",
+          "linkedin": "LinkedIn",
+          "linkedin_scraped": "LinkedIn Poškrábaný",
+          "location": "Umístění",
+          "metadata": "Metadata",
+          "name": "Jméno",
+          "no_agents": "Nepřiděleno žádnému agentovi",
+          "not_scraped": "Ještě ne",
+          "phone": "Telefon",
+          "timezone": "Časové pásmo",
+          "title": "Podrobnosti o potenciálním zákazníkovi",
+          "updated_at": "Poslední aktualizace",
+          "view_profile": "Zobrazit profil",
+          "website": "webové stránky"
+        },
+        "status": {
+          "active": "Aktivní",
+          "blacklisted": "Na černé listině",
+          "not_blacklisted": "Aktivní"
+        },
+        "subtitle": "Zobrazení a správa potenciálních zákazníků ve všech organizacích",
+        "table": {
+          "job_title": "Název práce",
+          "view": "Pohled"
+        },
+        "title": "Vše Leads"
+      },
+      "mailboxes": {
+        "add_mailbox": "Přidat poštovní schránku",
+        "back_to_list": "Zpět k poštovním schránkám",
+        "bulk_update": {
+          "adjust_limit": "Upravit limit",
+          "apply": "Použít na vybrané",
+          "description": {
+            "few": "Nastavte nový denní limit pro odesílání pro všechny %{count} vybrané poštovní schránky.",
+            "one": "Nastavte nový denní limit odesílání pro vybranou schránku.",
+            "other": "Nastavte nový denní limit odesílání pro všechny %{count} vybrané poštovní schránky."
+          },
+          "invalid_limit": "Denní limit odesílání musí být mezi 1 a 2000",
+          "limit_help": "Zadejte hodnotu mezi 1 a 2000 e-maily za den",
+          "new_limit_label": "Nový denní limit odesílání",
+          "no_mailboxes_selected": "Nejsou vybrány žádné poštovní schránky",
+          "selected_count": {
+            "few": "Vybráno %{count} poštovních schránek",
+            "one": "Je vybrána 1 poštovní schránka",
+            "other": "Počet vybraných poštovních schránek: %{count}"
+          },
+          "success": {
+            "few": "Denní limit odesílání byl aktualizován na %{limit} pro %{count} poštovní schránky",
+            "one": "Denní limit odesílání byl aktualizován na %{limit} pro 1 poštovní schránku",
+            "other": "Denní limit odesílání byl aktualizován na %{limit} pro %{count} poštovní schránky"
+          },
+          "title": "Upravte denní limit odesílání"
+        },
+        "cannot_send": "Nelze odeslat z této poštovní schránky: %{reasons}",
+        "confirm_delete": "Opravdu chcete smazat tuto poštovní schránku?",
+        "created": "Poštovní schránka byla úspěšně vytvořena",
+        "delete_failed": "Smazání poštovní schránky se nezdařilo",
+        "deleted": "Schránka byla úspěšně smazána",
+        "edit": {
+          "daily_send_limit_help": "Maximální počet e-mailů za den (doporučeno: 50–200 pro zahřáté účty)",
+          "daily_send_limit_label": "Denní limit odesílání",
+          "delete_button": "Smazat poštovní schránku",
+          "display_name_help": "Jak příjemci uvidí jméno odesílatele (volitelné)",
+          "display_name_placeholder": "John Smith - Prodej",
+          "email_readonly": "E-mailovou adresu nelze změnit",
+          "first_name_placeholder": "Jan",
+          "last_name_placeholder": "Kovář",
+          "subtitle": "Aktualizujte nastavení poštovní schránky",
+          "title": "Upravit poštovní schránku",
+          "warmup_started_at_help": "Chcete-li změnit výpočet doby zahřívání, upravte datum zahájení zahřívání",
+          "warmup_started_at_label": "Zahřívání zahájeno"
+        },
+        "empty": "Zatím nejsou nakonfigurovány žádné poštovní schránky.",
+        "filters": {
+          "all_domains": "Všechny domény",
+          "all_warmup": "Vše",
+          "email_domain": "Doména",
+          "organization": "Organizace",
+          "status": "Postavení",
+          "warmup_complete": "Kompletní",
+          "warmup_in_progress": "Probíhá",
+          "warmup_status": "Stav zahřívání"
+        },
+        "has_sent_messages": "Nelze smazat schránku s odeslanými zprávami. Místo toho archivujte poštovní schránku.",
+        "new": {
+          "daily_send_limit_help": "Maximální počet e-mailů za den (doporučeno: 50–200 pro zahřáté účty)",
+          "daily_send_limit_label": "Denní limit odesílání",
+          "display_name_help": "Jak příjemci uvidí jméno odesílatele (volitelné)",
+          "display_name_placeholder": "John Smith - Prodej",
+          "email_domain_help": "E-mailová doména, do které tato schránka patří",
+          "email_domain_label": "E-mailová doména",
+          "email_domain_placeholder": "Vyberte doménu...",
+          "email_help": "Musí odpovídat doméně poskytovatele",
+          "email_placeholder": "odesílatel@example.com",
+          "first_name_placeholder": "Jan",
+          "info_api_based": "Tato poštovní schránka bude odesílat e-maily prostřednictvím poskytovatele API (Gmail API nebo Microsoft Graph). Nejsou potřeba žádná pověření SMTP.",
+          "info_message": "Nové poštovní schránky musí před dosažením plné kapacity pro odesílání absolvovat 21denní zahřívací období. Během zahřívání se hlasitost odesílání postupně zvyšuje, aby se vybudovala reputace.",
+          "last_name_placeholder": "Kovář",
+          "no_domains_for_org": "Pro tuto organizaci nejsou k dispozici žádné aktivní e-mailové domény. Nejprve vytvořte doménu.",
+          "organization_help": "Bude nastaveno automaticky podle poskytovatele",
+          "organization_placeholder": "Vyberte organizaci...",
+          "start_warmup_help": "Po vytvoření poštovní schránky začněte 21denní zahřívací období",
+          "start_warmup_label": "Okamžitě spusťte zahřívání",
+          "submit": "Vytvořit poštovní schránku",
+          "submitting": "Vytváření...",
+          "subtitle": "Přidejte nový účet pro odesílání e-mailů",
+          "title": "Přidat poštovní schránku",
+          "warmup_started_at_help": "Kdy začalo 21denní zahřívací období (pro nové poštovní schránky ponechte prázdné)",
+          "warmup_started_at_label": "Zahřívání zahájeno"
+        },
+        "no_capacity": "denní limit odesílání dosažen",
+        "not_active": "schránka není aktivní",
+        "show": {
+          "agents_title": "Přiděleno Agents",
+          "back_to_details": "Zpět k poštovní schránce",
+          "back_to_list": "Zpět k poštovním schránkám",
+          "bounced": "Odražený",
+          "can_send": "Lze odeslat",
+          "capacity_title": "Dnešní kapacita",
+          "created_at": "Vytvořeno",
+          "daily_send_limit": "Denní limit odesílání",
+          "display_name": "Zobrazovaný název",
+          "domain": "Doména",
+          "email": "E-mailová adresa",
+          "full_display_name": "Celé zobrazované jméno",
+          "no_agents": "K této poštovní schránce nejsou přiřazeni žádní agenti",
+          "no_recent_messages": "Z této schránky zatím nebyly odeslány žádné zprávy",
+          "no_sender_assigned": "K této poštovní schránce není přiřazena žádná osoba odesílatele",
+          "organization": "Organizace",
+          "provider": "Poskytovatel",
+          "provider_type": "Typ poskytovatele",
+          "recent_messages_title": "Nedávné zprávy",
+          "remaining": "Zbývající",
+          "replies_received": "Přijaté odpovědi",
+          "sender_persona": "Osoba odesílatele",
+          "sent_this_month": "Tento měsíc",
+          "sent_this_week": "Tento týden",
+          "sent_today": "Odesláno dnes",
+          "stats_title": "Odesílání statistik",
+          "status": "Postavení",
+          "test_send": "Odeslat zkušební e-mail",
+          "test_send_help": "Odesláním zkušebního e-mailu ověřte, že tato poštovní schránka může odesílat",
+          "title": "Podrobnosti o poštovní schránce",
+          "total_sent": "Celkem odesláno",
+          "updated_at": "Poslední aktualizace",
+          "warmup_progress": "Průběh zahřívání",
+          "warmup_started": "Zahřívání zahájeno",
+          "warmup_status": "Stav zahřívání"
+        },
+        "statuses": {
+          "active": "Aktivní",
+          "paused": "Pozastaveno",
+          "suspended": "Pozastaveno"
+        },
+        "subtitle": "Spravujte účty pro odesílání e-mailů pro doručování založené na API",
+        "table": {
+          "agents": "Agents",
+          "daily_capacity": "Denní kapacita",
+          "display_name": "Zobrazovaný název",
+          "edit": "Upravit",
+          "provider": "Poskytovatel",
+          "sender": "Odesílatel",
+          "view": "Pohled",
+          "warmup": "Zahřívání"
+        },
+        "test_email": {
+          "body": "Toto je testovací e-mail od společnosti Amplifa.\n\nPoštovní schránka: %{mailbox}\nDoména: %{domain}\nPoskytovatel: %{provider}\nOdesláno v: %{timestamp}\n\nPokud jste obdrželi tento e-mail, poštovní schránka je správně nakonfigurována a připravena k odeslání.",
+          "subject": "[Amplifa Test] E-mail z %{mailbox}"
+        },
+        "test_send_failed": "Nepodařilo se odeslat zkušební e-mail: %{error}",
+        "test_send_queued": "Testovací e-mail ve frontě k odeslání",
+        "test_send_success": "Zkušební e-mail byl úspěšně odeslán na adresu %{recipient}",
+        "title": "Poštovní schránky",
+        "updated": "Poštovní schránka byla úspěšně aktualizována",
+        "warmup_incomplete": "zahřívací období není dokončeno",
+        "warmup_status": {
+          "complete": "Zahřívání dokončeno",
+          "days_remaining": "Zbývá %{days} dní",
+          "in_progress": "Zahřívání",
+          "not_started": "Nezahájeno"
+        }
+      },
+      "meetings": {
+        "empty": "Nebyly nalezeny žádné schůzky",
+        "filters": {
+          "all_outcomes": "Všechny výsledky",
+          "all_types": "Všechny typy",
+          "meeting_type": "Typ schůzky",
+          "organization": "Organizace",
+          "outcome": "Výsledek",
+          "status": "Postavení",
+          "title": "Filtry"
+        },
+        "no_results": "Vašim filtrům neodpovídají žádné schůzky",
+        "outcomes": {
+          "negative": "Negativní",
+          "neutral": "Neutrální",
+          "no_show": "No-show",
+          "positive": "Pozitivní"
+        },
+        "show": {
+          "actions_title": "Akce",
+          "agent_name": "Jméno",
+          "agent_organization": "Organizace",
+          "agent_status": "Postavení",
+          "agent_title": "Informace o agentovi",
+          "attributed_via": "Přiřazeno Via",
+          "back_to_list": "Zpět na Schůzky",
+          "cancel_meeting": "Zrušit schůzku",
+          "cancelled_at": "Zrušeno",
+          "completed_at": "Dokončeno",
+          "confirm_cancel": "Zrušit tuto schůzku?",
+          "confirm_no_show": "Označit tuto schůzku jako nezobrazenou?",
+          "created_at": "Vytvořeno",
+          "duration": "Trvání",
+          "duration_minutes": {
+            "few": "%{count} minut",
+            "one": "%{count} minuta",
+            "other": "%{count} minut"
+          },
+          "lead_company": "Společnost",
+          "lead_email": "E-mail",
+          "lead_job_title": "Název práce",
+          "lead_name": "Jméno",
+          "lead_title": "Informace o zájemcích",
+          "location": "Umístění",
+          "mark_completed": "Označit dokončeno",
+          "mark_no_show": "Označit No-Show",
+          "new_time": "Nový Čas",
+          "no_location": "Není zadáno žádné umístění",
+          "no_notes": "Žádné poznámky",
+          "notes": "Poznámky",
+          "outcome": "Výsledek",
+          "outcome_notes": "Poznámky k výsledku",
+          "outcome_notes_placeholder": "Přidejte poznámky o výsledku schůzky...",
+          "reschedule": "Přeplánovat",
+          "scheduled_at": "Naplánováno na",
+          "select_outcome": "Vyberte výsledek...",
+          "source": "Zdroj",
+          "source_calendly": "Calendly",
+          "source_manual": "Manuál",
+          "status": "Postavení",
+          "title": "Podrobnosti o schůzce",
+          "type": "Typ schůzky",
+          "view_agent": "Zobrazit agenta",
+          "view_lead": "Zobrazit potenciálního zákazníka"
+        },
+        "stats": {
+          "cancelled": "Zrušeno",
+          "completed": "Dokončeno",
+          "neutral": "Neutrální",
+          "no_show": "No-show",
+          "positive": "Pozitivní",
+          "rescheduled": "Přeplánováno",
+          "scheduled": "Naplánováno",
+          "scheduling": "Plánování",
+          "total": "Celkový"
+        },
+        "statuses": {
+          "cancelled": "Zrušeno",
+          "completed": "Dokončeno",
+          "neutral": "Neutrální",
+          "no_show": "No-show",
+          "pending_removal": "Čeká na odstranění",
+          "positive": "Pozitivní",
+          "rescheduled": "Přeplánováno",
+          "scheduled": "Naplánováno",
+          "scheduling": "Plánování"
+        },
+        "subtitle": "Sledujte a spravujte naplánované schůzky s potenciálními zákazníky",
+        "table": {
+          "agent": "Činidlo",
+          "duration": "Trvání",
+          "lead": "Vést",
+          "outcome": "Výsledek",
+          "scheduled": "Naplánováno",
+          "type": "Typ",
+          "view": "Pohled"
+        },
+        "title": "Setkání",
+        "types": {
+          "closing": "Zavírání",
+          "demo": "Demo",
+          "discovery": "Objev",
+          "follow_up": "Sledování",
+          "other": "Ostatní"
+        }
+      },
+      "organizations": {
+        "back_to_list": "Zpět k organizacím",
+        "card": {
+          "agents": "Agents",
+          "ai_reply_agent_on": "AI Reply Agent zapnuto",
+          "click_rate": "Míra kliknutí",
+          "daily_capacity": "Denní kapacita",
+          "edit": "Upravit",
+          "emails_7d": "Posledních 7 dní",
+          "emails_daily_avg": "Prům./den",
+          "emails_sent": "E-maily odeslány",
+          "emails_today": "Dnes",
+          "emails_total": "Celkem",
+          "mailboxes": "Poštovní schránky",
+          "meetings": "Setkání",
+          "playbooks": "Playbooks",
+          "reply_rate": "Míra setkání",
+          "senders": "Odesílatelé",
+          "time_window": "okno",
+          "time_windows": {
+            "last_180d": "Posledních 180 dní",
+            "last_24h": "Posledních 24 hodin",
+            "last_30d": "Posledních 30 dní",
+            "last_365d": "Posledních 365 dní",
+            "last_7d": "Posledních 7 dní",
+            "last_90d": "Posledních 90 dní"
+          },
+          "view": "Pohled"
+        },
+        "create_button": "Vytvořit organizaci",
+        "edit": {
+          "associated_accounts": "Přidružené účty (%{count})",
+          "average_contract_value_help": "Průměrná hodnota prodejních smluv organizace",
+          "average_contract_value_label": "Průměrná hodnota kontraktu (ACV)",
+          "billing_begins_on_help": "Úplné datum používané k ukotvení opakujících se fakturačních cyklů",
+          "billing_begins_on_label": "Fakturace začíná dne",
+          "calendly_url_help": "Váš odkaz Calendly pro rezervaci prodejních schůzek (musí začínat https://calendly.com/)",
+          "calendly_url_label": "Calendly Odkaz na plánování",
+          "currency_help": "Výchozí měna pro finanční sledování",
+          "currency_label": "Měna",
+          "deactivate_button": "Deaktivovat organizaci",
+          "financial_section": "Finanční informace",
+          "industry_label": "Průmysl",
+          "invite_button": "Pozvat uživatele",
+          "locale_help": "Výchozí jazyk pro tuto organizaci",
+          "locale_label": "Výchozí jazyk",
+          "localization_section": "Lokalizace",
+          "meeting_price_help": "Hodnota přiřazená každé rezervované schůzce",
+          "meeting_price_label": "Průměrná hodnota setkání",
+          "monthly_subscription_help": "Cena předplatného organizace Amplifa",
+          "monthly_subscription_label": "Měsíční předplatné",
+          "name_label": "Název organizace",
+          "no_accounts": "K této organizaci nejsou přidruženy žádné účty",
+          "onboarded_label": "Na palubě",
+          "size_label": "Velikost organizace",
+          "size_placeholder": "Vyberte velikost",
+          "subtitle": "Aktualizujte podrobnosti a nastavení organizace",
+          "title": "Upravit organizaci",
+          "website_help": "Adresa URL hlavního webu organizace",
+          "website_integration_section": "Webové stránky a integrace",
+          "website_label": "Web společnosti"
+        },
+        "empty": "Zatím žádné organizace",
+        "export": {
+          "button": "Export konfigurace"
+        },
+        "fields": {
+          "created": "Vytvořeno",
+          "currency": "Měna",
+          "industry": "Průmysl",
+          "locale": "Locale",
+          "size": "Velikost",
+          "status": "Postavení",
+          "website": "webové stránky"
+        },
+        "import": {
+          "button": "Organizace importu",
+          "description": "Nahrajte soubor exportu JSON a vytvořte novou organizaci s veškerou její konfigurací (odesílatelé, domény, poštovní schránky, příručky, agenti).",
+          "failed": "Import se nezdařil: %{error}",
+          "invalid_json": "Neplatný formát souboru JSON",
+          "no_file": "Vyberte soubor k importu",
+          "select_file": "Vyberte soubor JSON",
+          "selected": "Vybraný",
+          "success": "Organizace %{name} byla úspěšně importována",
+          "title": "Organizace importu",
+          "validation_failed": "Ověření se nezdařilo: %{errors}"
+        },
+        "new": {
+          "average_contract_value_description": "Průměrná hodnota prodejních smluv organizace",
+          "average_contract_value_label": "Průměrná hodnota kontraktu (ACV)",
+          "average_contract_value_placeholder": "10 000",
+          "calendly_url_description": "Calendly odkaz pro rezervaci prodejních schůzek",
+          "calendly_url_label": "Calendly Odkaz na plánování",
+          "calendly_url_placeholder": "https://calendly.com/company/meeting",
+          "currency_description": "Výchozí měna pro finanční sledování",
+          "currency_label": "Měna",
+          "financial_section": "Finanční informace",
+          "industry_description": "V jakém odvětví tato organizace působí?",
+          "industry_label": "Průmysl",
+          "industry_placeholder": "Technologie, zdravotnictví, finance atd.",
+          "locale_description": "Výchozí jazyk pro tuto organizaci",
+          "locale_label": "Výchozí jazyk",
+          "localization_section": "Lokalizace",
+          "meeting_price_description": "Hodnota přiřazená každé rezervované schůzce",
+          "meeting_price_label": "Průměrná hodnota setkání",
+          "meeting_price_placeholder": "500",
+          "monthly_subscription_description": "Cena předplatného organizace Amplifa",
+          "monthly_subscription_label": "Měsíční předplatné",
+          "monthly_subscription_placeholder": "299",
+          "name_description": "Název zákaznické organizace",
+          "name_label": "Název organizace",
+          "name_placeholder": "Acme Corporation",
+          "onboarded_description": "Zkontrolujte toto, pokud organizace dokončila počáteční nastavení",
+          "onboarded_label": "Označit jako přihlášené",
+          "size_description": "Počet zaměstnanců",
+          "size_label": "Velikost společnosti",
+          "size_placeholder": "Vyberte velikost...",
+          "size_suffix": "zaměstnanci",
+          "submit": "Vytvořit organizaci",
+          "subtitle": "Přidat novou zákaznickou organizaci do Amplifa",
+          "title": "Vytvořit organizaci",
+          "website_description": "Adresa URL hlavního webu organizace",
+          "website_integration_section": "Webové stránky a integrace",
+          "website_label": "Web společnosti",
+          "website_placeholder": "https://www.example.com"
+        },
+        "overview": {
+          "activity_title": "Nedávná aktivita",
+          "archive_button": "Organizace archivu",
+          "archive_confirm": "Opravdu chcete tuto organizaci archivovat? Archivované organizace se již nezobrazují v seznamu Organizace.",
+          "archive_description": "Archivované organizace jsou v seznamu Organizace skryté. Tato akce je trvalá pro viditelnost správce.",
+          "archive_title": "Organizace archivu",
+          "by": "podle",
+          "info_title": "Informace o organizaci",
+          "no_activity": "Žádná nedávná aktivita",
+          "stats_title": "Klíčové metriky"
+        },
+        "replies": {
+          "actions": {
+            "close": "Blízko",
+            "reopen": "Znovu otevřít",
+            "snooze": "Podřimovat"
+          },
+          "add_link": "Přidat odkaz",
+          "ai_agent_disabled": "AI Reply Agent deaktivován",
+          "ai_agent_enabled": "AI Reply Agent povolen",
+          "ai_agent_toggle_failed": "Nepodařilo se přepnout agenta odpovědi AI",
+          "ai_generation_failed": "Nepodařilo se vygenerovat odpověď: %{error}",
+          "bounced": "Odražený",
+          "check_mail_now": "Zkontrolujte Mail Now",
+          "checking_mail": "Kontrola pošty na nové odpovědi...",
+          "compose_placeholder": "Napište svou odpověď...",
+          "composer": {
+            "include_signature": "Před odesláním přidejte podpis",
+            "placeholder": "Napište svou odpověď...",
+            "send": "Odeslat odpověď",
+            "sending": "Odesílání..."
+          },
+          "confirm_close": "Opravdu chcete ukončit tuto konverzaci?",
+          "confirm_snooze": "Odložit tuto konverzaci?",
+          "conversation": {
+            "messages": "zprávy",
+            "via": "přes"
+          },
+          "conversation_closed": "Konverzace uzavřena",
+          "conversation_reopened": "Konverzace byla znovu otevřena",
+          "conversation_snoozed": "Konverzace byla odložena do %{until}",
+          "days_ago": {
+            "few": "před %{count} dny",
+            "one": "před %{count} dnem",
+            "other": "před %{count} dny"
+          },
+          "edit_link": "Upravit odkaz",
+          "empty": "Zatím žádné konverzace",
+          "empty_description": "Vašim aktuálním filtrům neodpovídají žádné konverzace. Zkuste upravit stavový filtr nebo hledané výrazy.",
+          "filter": {
+            "all": "Vše",
+            "closed": "ZAVŘENO",
+            "open": "OTEVŘENO",
+            "snoozed": "Odloženo"
+          },
+          "filter_menu": {
+            "all_senders": "Všichni odesílatelé",
+            "description": "Uloženo pro váš účet",
+            "label": "Filtry",
+            "reply_type": "Typ odpovědi",
+            "sender": "Odesílatel",
+            "title": "Filtry doručené pošty"
+          },
+          "hours_ago": {
+            "few": "před %{count} hodinami",
+            "one": "před %{count} hodinou",
+            "other": "před %{count} hodinami"
+          },
+          "include_signature": "Před odesláním přidejte podpis",
+          "interest_status": {
+            "interested": "Zájem",
+            "meeting_request": "Žádost o schůzku",
+            "not_interested": "Nemám zájem",
+            "wrong_person": "Špatná osoba"
+          },
+          "interested": "Zájem",
+          "just_now": "Právě teď",
+          "last_checked": "Naposledy zkontrolováno",
+          "lead_assigned": "Odpověď přiřazena uživateli %{email}",
+          "lead_sidebar": {
+            "company": "Společnost",
+            "email": "E-mail",
+            "job_title": "Název práce",
+            "linkedin": "LinkedIn",
+            "location": "Umístění",
+            "title": "Informace o zájemcích",
+            "view_lead": "Ukázat celý hlavní profil",
+            "website": "webové stránky"
+          },
+          "link_url_help": "Vložte úplnou adresu URL nebo zadejte název domény a my na ni bude možné kliknout.",
+          "link_url_invalid": "Zadejte platnou adresu URL.",
+          "link_url_label": "URL odkazu",
+          "link_url_placeholder": "https://example.com",
+          "mail_check_complete": "Kontrola pošty dokončena",
+          "mail_check_complete_with_errors": "Kontrola pošty dokončena s několika chybami",
+          "mail_check_failed": "Nepodařilo se spustit kontrolu pošty",
+          "mailbox_info": {
+            "title": "Poštovní schránka"
+          },
+          "meeting_request": "Žádost o schůzku",
+          "minutes_ago": {
+            "few": "před %{count} minutami",
+            "one": "před %{count} minutou",
+            "other": "před %{count} minutami"
+          },
+          "never": "Nikdy",
+          "no_active_mailboxes": "Žádné aktivní poštovní schránky ke kontrole",
+          "no_preview": "Náhled není k dispozici",
+          "not_interested": "Nemám zájem",
+          "ooo": "Mimo kancelář",
+          "ooo_returns": "vrací %{date}",
+          "open_link": "Otevřít",
+          "remove_link": "Odebrat",
+          "reply_not_found": "Odpověď nenalezena nebo již přiřazena",
+          "reply_now": "Odpovězte nyní",
+          "reply_with_ai": "Odpovědět pomocí AI",
+          "reply_with_ai_generating": "Generování odpovědi...",
+          "save_link": "Uložit odkaz",
+          "search_placeholder": "Hledejte podle jména potenciálního zákazníka, e-mailu nebo společnosti...",
+          "select_conversation": "Vyberte konverzaci",
+          "select_conversation_desc": "Vyberte konverzaci ze seznamu a zobrazte vlákno, podrobnosti o potenciálním zákazníkovi a odešlete odpověď.",
+          "send_failed": "Nepodařilo se odeslat odpověď: %{error}",
+          "send_reply": "Odeslat odpověď",
+          "sender_info": {
+            "has_signature": "Má šablonu podpisu",
+            "title": "Odesílatel"
+          },
+          "sent_successfully": "Odpověď byla úspěšně odeslána",
+          "sidebar": {
+            "company": "Společnost",
+            "location": "Umístění",
+            "mailbox": "Poštovní schránka",
+            "sending_as": "Odesílání jako",
+            "view_full_profile": "Ukázat celý profil"
+          },
+          "snooze": {
+            "next_month": "Příští měsíc (9:00)",
+            "next_week": "Příští týden (pondělí 9:00)",
+            "tomorrow": "Zítra ráno (9:00)"
+          },
+          "snooze_options": {
+            "next_month": "Příští měsíc (9:00)",
+            "next_week": "Příští týden (pondělí 9:00)",
+            "title": "Odložit, dokud...",
+            "tomorrow": "Zítra ráno (9:00)"
+          },
+          "stats": {
+            "closed": "ZAVŘENO",
+            "interested": "Zájem",
+            "meeting_request": "Žádost o schůzku",
+            "not_interested": "Nemám zájem",
+            "open": "OTEVŘENO",
+            "snoozed": "Odloženo",
+            "total": "Celkový",
+            "unassigned": "Nepřiřazeno",
+            "unread": "Nepřečtený"
+          },
+          "status": {
+            "bounced": "Odražený",
+            "closed": "ZAVŘENO",
+            "open": "OTEVŘENO",
+            "snoozed": "Odloženo"
+          },
+          "subtitle": "Spravujte konverzace a odpovědi od svých potenciálních zákazníků",
+          "tabs": {
+            "all": "Vše",
+            "closed": "ZAVŘENO",
+            "open": "OTEVŘENO",
+            "snoozed": "Odloženo",
+            "unassigned": "Nepřiřazeno"
+          },
+          "thread": {
+            "back_to_list": "Zpět na konverzace",
+            "bounce_badge": "Odskočit",
+            "incoming": "Přicházející",
+            "ooo_badge": "Mimo kancelář",
+            "outgoing": "Odesláno"
+          },
+          "title": "Centrum odpovědí",
+          "unassigned": {
+            "assign": "Přiřadit",
+            "assign_to": "Přiřadit k potenciálnímu zákazníkovi",
+            "empty": "Žádné nepřiřazené odpovědi",
+            "empty_description": "Všechny odpovědi byly přiřazeny potenciálním zákazníkům.",
+            "search_leads": "Hledejte potenciální zákazníky podle e-mailu, jména nebo společnosti...",
+            "select_lead": "Vyberte potenciálního zákazníka...",
+            "subtitle": "Odpovědi, které je třeba přiřadit potenciálnímu zákazníkovi",
+            "title": "Nepřiřazené odpovědi"
+          }
+        },
+        "search_placeholder": "Hledat organizace podle názvu...",
+        "show": {
+          "subtitle": "Přehled organizace a zdroje"
+        },
+        "stats": {
+          "agents": "Agents",
+          "emails_sent": "E-maily odeslány",
+          "leads": "Leads",
+          "mailboxes": "Poštovní schránky",
+          "meetings": "Setkání",
+          "playbooks": "Playbooks",
+          "senders": "Odesílatelé"
+        },
+        "subtitle": "Zobrazení a správa všech organizací v systému",
+        "table": {
+          "accounts": "Účty",
+          "industry": "Průmysl",
+          "size": "Velikost"
+        },
+        "tabs": {
+          "agents": "Agents",
+          "domains": "domény",
+          "files": "Soubory",
+          "lead_imports": "Dovoz olova",
+          "leads": "Leads",
+          "mailboxes": "Poštovní schránky",
+          "meetings": "Setkání",
+          "overview": "Přehled",
+          "playbooks": "Playbooks",
+          "replies": "Odpovědi",
+          "senders": "Odesílatelé",
+          "sent_messages": "Odešle",
+          "settings": "Nastavení",
+          "users": "Uživatelé"
+        },
+        "title": "Správa organizací"
+      },
+      "password_strength": {
+        "fair": "Veletrh",
+        "good": "Dobrý",
+        "strong": "Silný",
+        "weak": "Slabý"
+      },
+      "playbooks": {
+        "actions": {
+          "approve": "Schvalovat",
+          "archive": "Archiv",
+          "delete": "Vymazat",
+          "edit": "Upravit Playbook",
+          "move_to_draft": "Přesunout do konceptu"
+        },
+        "ai_edit": {
+          "button": "Upravit AI",
+          "example_one": "Příručku se více zaměřte na zabezpečení podniku",
+          "example_three": "Zdůrazněte řešení námitek a konkurenční diferenciaci",
+          "example_two": "Přemýšlejte více z pohledu vedoucího prodeje",
+          "examples_title": "Příklady",
+          "failed": "Úprava AI se nezdařila. Zkuste to prosím znovu.",
+          "helper": "Popište, jak chcete příručku vylepšit.",
+          "instruction_label": "Instrukce",
+          "instruction_placeholder": "např. Zaměřte se více na řešení námitek",
+          "missing_instruction": "Uveďte prosím pokyny pro úpravu AI.",
+          "playbook_label": "Playbook",
+          "submit": "Použít AI Edit",
+          "submitting": "Aplikace...",
+          "success": "Příručka aktualizována pomocí úprav AI",
+          "title": "AI Edit Playbook"
+        },
+        "ai_generated": "Generováno AI",
+        "approved": "Příručka byla schválena",
+        "back_to_list": "Zpět na Playbooks",
+        "bulk_approve": {
+          "button": "Schválit vše (%{count})",
+          "confirm": "Schválit všechny %{count} čekající příručky? Budou k dispozici pro použití v kampaních.",
+          "none_to_approve": "Žádné příručky ke schválení",
+          "partial_success": "Schváleno %{approved} příruček, %{failed} se nezdařilo",
+          "success": {
+            "few": "%{count} příruček bylo schváleno",
+            "one": "%{count} příručka byla schválena",
+            "other": "%{count} příruček bylo schváleno"
+          }
+        },
+        "comment_types": {
+          "approval": "Schválení",
+          "general": "Generál",
+          "request_changes": "Žádost o změnu"
+        },
+        "confirm_approve": "Schválit tuto příručku? Bude k dispozici pro použití v kampaních.",
+        "confirm_archive": "Archivovat tuto příručku? Zákazníkům se již nebude zobrazovat.",
+        "confirm_delete": "Smazat tuto příručku? Tuto akci nelze vrátit zpět.",
+        "confirm_move_to_draft": "Přesunout tuto příručku zpět do stavu konceptu?",
+        "create_agent": {
+          "already_has_agent": "Tato příručka již má agenta",
+          "button": "Vytvořit agenta",
+          "failed": "Nepodařilo se vytvořit zástupce: %{errors}",
+          "global_sequence_not_found": "Vybraná hlavní sekvence nebyla nalezena",
+          "local_sequence_description": "Nový agent začne s prázdnou místní sekvencí.",
+          "local_sequence_label": "Místní sekvence (prázdná)",
+          "master_sequence_description": "Nový agent použije vybranou hlavní sekvenci.",
+          "master_sequence_dropdown_label": "Hlavní sekvence",
+          "master_sequence_label": "Hlavní sekvence",
+          "master_sequence_placeholder": "Vyberte hlavní sekvenci...",
+          "not_approved": "Agenty lze vytvářet pouze z konceptů nebo schválených příruček",
+          "sequence_source_label": "Zdroj sekvence",
+          "success": "Agent byl úspěšně vytvořen z příručky"
+        },
+        "create_button": "Nová příručka",
+        "delete_modal": {
+          "affected_agents_description": "Tito agenti ztratí toto přiřazení v příručce, když jej smažete.",
+          "affected_agents_title": "Dotčení agenti",
+          "confirm_button": "Smazat playbook",
+          "description": "Tuto akci nelze vrátit zpět.",
+          "no_affected_agents": "K této příručce nejsou aktuálně přiřazeni žádní agenti.",
+          "pause_notice": "Všichni aktuálně spuštění ovlivnění agenti budou před odstraněním pozastaveni.",
+          "title": "Smazat tuto příručku?",
+          "will_pause": "Tento běžící agent bude pozastaven."
+        },
+        "edit": {
+          "add_first_persona": "Přidejte svou první cílovou osobu",
+          "add_first_proof_point": "Přidejte svůj první důkazní bod",
+          "add_first_reference": "Přidejte svého prvního referenčního zákazníka",
+          "add_first_use_case": "Přidejte svůj první případ použití",
+          "add_pain_point": "Přidejte bod bolesti",
+          "add_persona": "Přidat Personu",
+          "add_proof_point": "Přidat bod důkazu",
+          "add_reference": "Přidat odkaz",
+          "add_use_case": "Přidat případ použití",
+          "ai_notes_label": "Poznámky ke generaci AI",
+          "allowed_files": "PDF, DOC, DOCX, PNG, JPG, GIF (max 10 MB)",
+          "file_attachment": "Příloha souboru",
+          "language": "Jazyk",
+          "new_persona": "Nová Persona",
+          "no_title": "Žádný titul",
+          "pain_point_placeholder": "Zadejte bod bolesti...",
+          "persona_name": "Jméno osoby",
+          "persona_title": "Název práce",
+          "personae_description": "Definujte cílové osoby kupujícího pro tuto příručku",
+          "product_description": "Popis produktu",
+          "product_name": "Název produktu",
+          "proof_point_claim": "Tvrzení",
+          "proof_point_description": "Důkaz",
+          "proof_point_description_placeholder": "Poskytněte důkaz nebo kontext pro toto tvrzení...",
+          "proof_points_description": "Přidejte body důkazu, které prokazují hodnotu produktu",
+          "reference_description": "Popis",
+          "reference_description_placeholder": "Popište příběh úspěchu nebo případ použití...",
+          "reference_name": "Jméno zákazníka",
+          "references_description": "Přidejte referenční zákazníky, kteří tento produkt úspěšně použili",
+          "remove_file": "Odebrat soubor",
+          "tabs": {
+            "overview": "Přehled",
+            "personae": "Personae",
+            "proof_points": "Důkazové body",
+            "references": "Reference",
+            "use_cases": "Případy použití"
+          },
+          "title": "Upravit Playbook",
+          "unsaved_changes": "Máte neuložené změny",
+          "upload_file": "Nahrát soubor",
+          "uploading": "Nahrávání...",
+          "use_case_description": "Popis",
+          "use_case_description_placeholder": "Popište tento případ použití a jeho hodnotu...",
+          "use_case_title": "Titul",
+          "use_cases_description": "Definujte klíčové případy použití tohoto produktu",
+          "value_proposition_placeholder": "Popište základní hodnotu, kterou tento produkt zákazníkům přináší..."
+        },
+        "empty": "Zatím žádné herní knihy. Vytvořte si svou první příručku pomocí umělé inteligence.",
+        "filters": {
+          "all_languages": "Všechny jazyky",
+          "language": "Jazyk",
+          "organization": "Organizace",
+          "status": "Postavení"
+        },
+        "form": {
+          "generate_button": "Generovat Playbook",
+          "generating": "Generování...",
+          "generation_info": "Umělá inteligence seškrábe web, analyzuje obsah a vytvoří strategickou příručku s osobnostmi a případy použití. Obvykle to trvá 15–30 sekund.",
+          "organization": "Organizace",
+          "product_name": "Název produktu",
+          "product_name_help": "Název produktu nebo služby, pro kterou se má vygenerovat příručka",
+          "select_organization": "Vyberte organizaci...",
+          "website_url": "Adresa URL webových stránek",
+          "website_url_help": "Web společnosti k analýze (musí obsahovat http:// nebo https://)"
+        },
+        "generate_button": "Generovat Playbook",
+        "generate_subtitle": "Pomocí umělé inteligence vygenerujte příručku z webu",
+        "generate_title": "Vygenerovat novou příručku",
+        "generation": {
+          "failed_title": "Nepodařilo se vygenerovat %{product}",
+          "in_progress": "Generování příručky...",
+          "phases": {
+            "completed": "Dokončeno",
+            "failed": "Nepodařilo se",
+            "generating": "Generování pomocí AI",
+            "scraping": "Skartování webu",
+            "started": "Spouštění..."
+          },
+          "please_wait": "To může trvat 15–30 sekund. Prosím, nezavírejte tuto stránku.",
+          "steps": {
+            "analyzing": "Analýza obchodního modelu",
+            "analyzing_desc": "Porozumění produktům a službám",
+            "finalizing": "Dokončování playbooku",
+            "finalizing_desc": "Kompilace přehledů a doporučení",
+            "personas": "Identifikace cílových osob",
+            "personas_desc": "Mapování profilů ideálních zákazníků",
+            "scraping": "Skartování webu",
+            "scraping_desc": "Extrahování obsahu a struktury",
+            "use_cases": "Generování případů použití",
+            "use_cases_desc": "Vytváření strategických zpráv"
+          }
+        },
+        "metadata": {
+          "approved": "Schválený",
+          "by": "podle",
+          "created": "Vytvořeno",
+          "generation": "Generace",
+          "language": "Jazyk",
+          "status": "Postavení",
+          "updated": "Poslední aktualizace"
+        },
+        "no_comments": "Zatím žádné komentáře",
+        "no_personae": "Dosud nebyly přidány žádné osoby",
+        "no_proof_points": "Zatím nebyly přidány žádné důkazní body",
+        "no_references": "Zatím nebyly přidány žádné reference",
+        "no_use_cases": "Zatím nebyly přidány žádné případy použití",
+        "no_value_proposition": "Žádná cenová nabídka",
+        "persona": {
+          "pain_points": "Body bolesti"
+        },
+        "sections": {
+          "actions": "Akce",
+          "comments": "Diskuse",
+          "metadata": "Podrobnosti",
+          "personae": "Cílové osoby",
+          "proof_points": "Důkazové body",
+          "references": "Referenční zákazníci",
+          "use_cases": "Případy použití",
+          "value_proposition": "Návrh hodnoty"
+        },
+        "statuses": {
+          "approved": "Schválený",
+          "archived": "Archivováno",
+          "changes_requested": "Požadované změny",
+          "draft": "Návrh"
+        },
+        "subtitle": "Spravujte příručky vytvořené umělou inteligencí pro všechny organizace",
+        "table": {
+          "agents": "Agents",
+          "content": "Obsah",
+          "edit": "Upravit",
+          "language": "Jazyk",
+          "personae": "personae",
+          "product": "Produkt",
+          "references": "ref",
+          "use_cases": "případy použití",
+          "view": "Pohled"
+        },
+        "title": "Playbooks"
+      },
+      "replies": {
+        "confirm_mark_responded": "Označit tuto odpověď jako zodpovězenou?",
+        "confirm_no_response": "Označit tuto odpověď jako nevyžadující odpověď?",
+        "conversation_closed": "Konverzace uzavřena",
+        "conversation_reopened": "Konverzace byla znovu otevřena",
+        "conversation_snoozed": "Konverzace byla odložena do %{until}",
+        "filters": {
+          "agent": "Činidlo",
+          "all_agents": "Vše Agents",
+          "all_mailboxes": "Všechny poštovní schránky",
+          "all_types": "Všechny typy",
+          "bounces": "Odskoky",
+          "mailbox": "Poštovní schránka",
+          "organization": "Organizace",
+          "out_of_office": "Mimo kancelář",
+          "reply_type": "Typ odpovědi",
+          "requires_attention": "Vyžaduje pozornost",
+          "responded": "Odpověděli"
+        },
+        "forward_button": "Vpřed…",
+        "forward_failed": "Konverzaci se nepodařilo přeposlat: %{error}",
+        "forward_invalid_email": "Zadejte prosím platnou e-mailovou adresu",
+        "forward_modal": {
+          "add_comment": "Přidat komentář",
+          "comment_placeholder": "Přidejte kontext pro osobu, která obdrží tuto přeposlanou konverzaci.",
+          "description": "Pošlete celé vlákno a podrobnosti o potenciálním zákazníkovi na jakoukoli e-mailovou adresu",
+          "email_label": "Předat dál",
+          "email_placeholder": "name@company.com",
+          "submit": "Vpřed",
+          "title": "Předat konverzaci"
+        },
+        "forward_successfully": "Konverzace byla úspěšně přeposlána",
+        "lead_assigned": "Odpověď přiřazena uživateli %{email}",
+        "marked_no_response_needed": "Odpověď označena jako není potřeba odpověď",
+        "marked_responded": "Odpověď označena jako zodpovězená",
+        "reply_not_found": "Odpověď nenalezena nebo již přiřazena",
+        "reply_now": "Odpovězte nyní",
+        "send_failed": "Nepodařilo se odeslat odpověď: %{error}",
+        "sent_successfully": "Odpověď byla úspěšně odeslána",
+        "show": {
+          "actions_title": "Akce",
+          "api_message_id": "API ID zprávy",
+          "back_to_list": "Zpět na Odpovědi",
+          "body_html": "HTML",
+          "body_plain": "Prostý text",
+          "body_title": "Obsah odpovědi",
+          "created_at": "Vytvořeno",
+          "from": "Z",
+          "lead_company": "Společnost",
+          "lead_email": "E-mail",
+          "lead_location": "Umístění",
+          "lead_name": "Jméno",
+          "lead_title": "Informace o zájemcích",
+          "lead_title_field": "Titul",
+          "mark_no_response": "Není potřeba žádná odezva",
+          "mark_responded": "Označit jako odpovězené",
+          "message_id": "ID zprávy",
+          "no_original_message": "Žádná původní zpráva není připojena",
+          "no_related_replies": "Žádné další odpovědi od tohoto zájemce",
+          "original_agent": "Činidlo",
+          "original_message_title": "Původní zpráva odeslána",
+          "original_sent_at": "Odesláno",
+          "original_step": "Krok sekvence",
+          "original_subject": "Podrobit",
+          "received_at": "Přijato",
+          "related_replies_title": "Další odpovědi od Lead",
+          "reply_type": "Typ",
+          "responded_at": "Odpověděl v",
+          "status": "Postavení",
+          "subject": "Podrobit",
+          "title": "Podrobnosti odpovědi",
+          "to": "Komu (e-mailová schránka)",
+          "view_lead": "Zobrazit potenciálního zákazníka",
+          "view_mailbox": "Zobrazit poštovní schránku"
+        },
+        "stats": {
+          "bounces": "Odskoky",
+          "out_of_office": "Mimo kancelář",
+          "requires_attention": "Vyžaduje pozornost",
+          "responded": "Odpověděli",
+          "total": "Celkem odpovědí",
+          "unresponded": "Bez odezvy"
+        },
+        "statuses": {
+          "needs_response": "Potřebuje odezvu",
+          "no_response_needed": "Není potřeba žádná odezva",
+          "responded": "Odpověděli"
+        },
+        "subtitle": "Zobrazení a správa příchozích e-mailových odpovědí",
+        "table": {
+          "agent": "Činidlo",
+          "from": "Z",
+          "lead": "Vést",
+          "mailbox": "Přijato uživatelem",
+          "received": "Přijato",
+          "subject": "Podrobit",
+          "type": "Typ",
+          "view": "Pohled"
+        },
+        "title": "Centrum odpovědí",
+        "types": {
+          "bounce": "Odskočit",
+          "hard_bounce": "Hard Bounce",
+          "normal": "Odpověď",
+          "out_of_office": "Mimo kancelář",
+          "soft_bounce": "Soft Bounce"
+        }
+      },
+      "roles": {
+        "amplifa_admin": "Správce Amplifa",
+        "customer_admin": "Správce zákazníka",
+        "customer_user": "Uživatel zákazníka",
+        "member": "Člen",
+        "org_admin": "Správce organizace"
+      },
+      "senders": {
+        "add_sender": "Přidat odesílatele",
+        "back_to_list": "Zpět k Odesílatelům",
+        "calendly": {
+          "connected": "Calendly úspěšně připojeno! Schůzky rezervované přes odkaz tohoto odesílatele budou nyní automaticky sledovány.",
+          "connected_limited": "Calendly úspěšně připojeno. Odkazy na rezervaci jsou povoleny.",
+          "connection_failed": "Nepodařilo se připojit Calendly: %{error}",
+          "disconnected": "Calendly bylo úspěšně odpojeno.",
+          "event_type_selected": "Typ schůzky Calendly byl aktualizován.",
+          "event_type_selection_failed": "Nepodařilo se aktualizovat typ schůzky Calendly: %{error}",
+          "invalid_state": "Neplatný stav OAuth. Zkuste se připojit znovu.",
+          "not_configured": "Integrace Calendly není nakonfigurována. Kontaktujte prosím svého správce.",
+          "not_connected": "Tento odesílatel není připojen k Calendly.",
+          "oauth_denied": "Plánovaná autorizace byla zamítnuta: %{error}",
+          "sender_mismatch": "Neshoda odesílatele zpětného volání OAuth. Zkuste se připojit znovu.",
+          "sender_not_found": "Odesílatel nebyl nalezen. Zkuste se připojit znovu.",
+          "session_expired": "Relace OAuth vypršela. Zkuste se připojit znovu.",
+          "title": "Calendly Integrace"
+        },
+        "confirm_delete": "Opravdu chcete tohoto odesílatele smazat? Jejich poštovní schránky zůstanou, ale nebudou propojeny s odesílatelem.",
+        "created": "Odesílatel byl úspěšně vytvořen",
+        "deleted": "Odesílatel byl úspěšně smazán",
+        "edit": {
+          "change_photo": "Změnit fotku",
+          "delete_button": "Smazat odesílatele",
+          "subtitle": "Aktualizujte profil odesílatele a podpis",
+          "title": "Upravit odesílatele"
+        },
+        "empty": "Zatím nejsou nakonfigurováni žádní odesílatelé.",
+        "filters": {
+          "organization": "Organizace",
+          "search": "Hledat podle jména nebo emailu...",
+          "status": "Postavení"
+        },
+        "mailbox_assigned": "Poštovní schránka %{email} přiřazená tomuto odesílateli",
+        "mailbox_different_org": "Nelze přiřadit poštovní schránku z jiné organizace",
+        "mailbox_unassigned": "Poštovní schránka %{email} byla odebrána tomuto odesílateli",
+        "mailboxes_assigned": "%{count} poštovních schránek přiřazených tomuto odesílateli",
+        "new": {
+          "calendly_url_help": "Odkaz na plánování podpisů podle odesílatele",
+          "calendly_url_label": "Calendly URL (volitelné)",
+          "calendly_url_placeholder": "https://calendly.com/username",
+          "email_help": "Primární kontaktní e-mail tohoto odesílatele",
+          "email_placeholder": "john@company.com",
+          "first_name_placeholder": "Jan",
+          "job_title_placeholder": "Vedoucí účtu",
+          "last_name_placeholder": "Kovář",
+          "linkedin_url_help": "Pro budoucí automatizaci LinkedIn",
+          "linkedin_url_label": "LinkedIn URL (volitelné)",
+          "linkedin_url_placeholder": "https://linkedin.com/in/username",
+          "nickname_help": "Neformální název použitý v proměnné podpisu {{sender_nickname}}",
+          "nickname_label": "Přezdívka (volitelné)",
+          "nickname_placeholder": "Johnny",
+          "organization_help": "Organizace, do které tento odesílatel patří",
+          "organization_placeholder": "Vyberte organizaci...",
+          "profile_photo_help": "JPEG nebo PNG, max. 4 MB. Používá se pro synchronizaci poskytovatele.",
+          "profile_photo_invalid_type": "Neplatný typ souboru. Nahrajte prosím obrázek JPEG nebo PNG.",
+          "profile_photo_label": "Profilová fotka (volitelné)",
+          "profile_photo_too_large": "Soubor je příliš velký. Maximální velikost je 4 MB.",
+          "profile_photo_upload": "Nahrajte fotografii",
+          "signature_template_help": "HTML podpis s proměnnými. Dostupné: {{sender_first_name}}, {{sender_last_name}}, {{sender_full_name}}, {{sender_nickname}}, {{sender_job_title}}, {{sender_email}}, {{sender_calendly_url}}, {{sender_linkedin_url}}, {{sender_company}}, {{lead_first_name}}, {{lead_last_name}}, {{lead_full_name}}, {{lead_company}}, {{lead_job_title}}, {{lead_email}}, {{lead_location}}, {{lead_linkedin_url}}, {{lead_company_website}}",
+          "signature_template_label": "Šablona podpisu",
+          "signature_template_placeholder": "<p>S pozdravem<br>{{sender_full_name}}<br>{{sender_job_title}}</p>",
+          "submit": "Vytvořit odesílatele",
+          "submitting": "Vytváření...",
+          "subtitle": "Přidejte nového člověka, který bude posílat informační zprávy",
+          "title": "Přidat odesílatele"
+        },
+        "no_mailboxes_selected": "Nejsou vybrány žádné poštovní schránky",
+        "show": {
+          "active_mailboxes": "Aktivní poštovní schránky",
+          "assign_mailbox": "Přiřadit",
+          "assign_selected": "Přiřadit vybrané (%{count})",
+          "back_to_list": "Zpět k Odesílatelům",
+          "calendly": "Calendly",
+          "calendly_booking_links_enabled": "Rezervační odkazy jsou aktuálně povoleny",
+          "calendly_confirm_disconnect": "Odpojit",
+          "calendly_connect": "Připojit Calendly",
+          "calendly_connected_at": "Připojeno",
+          "calendly_connected_badge": "Připojeno",
+          "calendly_disconnect": "Odpojit Calendly",
+          "calendly_disconnect_warning": "Tím přestanete sledovat schůzky tohoto odesílatele. Budoucí rezervace nebudou automaticky připisovány potenciálním zákazníkům.",
+          "calendly_disconnected_badge": "Nepřipojeno",
+          "calendly_error_badge": "Chyba",
+          "calendly_event_type": "Typ schůzky",
+          "calendly_event_type_required": "Vyberte typ schůzky pro dokončení nastavení Calendly.",
+          "calendly_help_text": "Připojte Calendly k automatickému sledování schůzek rezervovaných přes odkaz pro plánování tohoto odesílatele.",
+          "calendly_limited_badge": "Připojeno (omezeno)",
+          "calendly_limited_tracking_info": "Odkazy na rezervaci jsou povoleny. Automatické sledování schůzek vyžaduje Calendly Standard nebo vyšší.",
+          "calendly_not_configured": "Integrace Calendly není nakonfigurována. Chcete-li to povolit, kontaktujte svého správce.",
+          "calendly_retry": "Opakovat připojení",
+          "calendly_scheduling_url": "Odkaz na plánování",
+          "calendly_section": "Calendly Integrace",
+          "calendly_select_event_type_placeholder": "Vyberte typ události",
+          "calendly_tracking_info": "Schůzky rezervované prostřednictvím odkazu Calendly tohoto odesílatele jsou automaticky sledovány a přiřazovány potenciálním zákazníkům.",
+          "calendly_view_link": "Zobrazit stránku plánování",
+          "capacity_remaining": "zbývající",
+          "capacity_section": "Kapacita",
+          "created_at": "Vytvořeno",
+          "deselect_all": "Zrušte výběr všech",
+          "edit_sender": "Upravit odesílatele",
+          "email": "E-mail",
+          "job_title": "Název práce",
+          "linkedin": "LinkedIn",
+          "mailboxes_count": "Poštovní schránky",
+          "mailboxes_section": "Přidělené poštovní schránky",
+          "no_mailboxes": "Tomuto odesílateli nejsou přiřazeny žádné poštovní schránky",
+          "no_mailboxes_found": "Vašemu hledání neodpovídají žádné poštovní schránky",
+          "no_signature": "Není nakonfigurována žádná šablona podpisu",
+          "organization": "Organizace",
+          "profile_section": "Profil",
+          "remaining_capacity": "Zbývá dnes",
+          "search_domains": "Hledat domény...",
+          "search_mailboxes": "Prohledat poštovní schránky...",
+          "select_all": "Vyberte Vše",
+          "select_mailbox": "Vyberte poštovní schránku, kterou chcete přiřadit...",
+          "signature_preview": "Náhled podpisu",
+          "signature_section": "Podpis",
+          "signature_variables": "Dostupné proměnné",
+          "status": "Postavení",
+          "title": "Podrobnosti o odesílateli",
+          "total_daily_capacity": "Celková denní kapacita",
+          "unassign_mailbox": "Odebrat od odesílatele",
+          "updated_at": "Poslední aktualizace",
+          "warming_up": "Zahřívání",
+          "warmup_complete": "Připraveno k odeslání"
+        },
+        "signature_editor": {
+          "complex_html_notice": "Tento podpis obsahuje komplexní HTML (tabulky, stylizované prvky). Použijte režim HTML k úpravám při zachování veškerého formátování.",
+          "help_html": "Upravte nezpracovaný kód HTML svého podpisu. Dostupné proměnné: {{sender_first_name}}, {{sender_last_name}}, {{sender_full_name}}, {{sender_nickname}}, {{sender_job_title}}, {{sender_email}}, {{sender_calendly_url}}, {{sender_linkedin_url}}, {{sender_company}}, {{lead_first_name}}, {{lead_last_name}}, {{lead_full_name}}, {{lead_company}}, {{lead_job_title}}, {{lead_email}}, {{lead_location}}, {{lead_linkedin_url}}, {{lead_company_website}}",
+          "help_preview": "Tento podpis obsahuje složité HTML. Chcete-li jej upravit, přepněte do režimu HTML.",
+          "help_richtext": "Zkopírujte a vložte svůj podpis přímo z vašeho e-mailového klienta. Formátování zůstane zachováno.",
+          "html_warnings_title": "Upozornění na ověření HTML",
+          "mode_html": "HTML",
+          "mode_preview": "Náhled",
+          "mode_richtext": "RTF",
+          "warning_script_tags": "Značky skriptu nejsou v podpisech povoleny",
+          "warning_unclosed_tag": "Neuzavřená značka: <%{tag}>",
+          "warning_unclosed_tags": "Neuzavřené značky: %{tags}"
+        },
+        "statuses": {
+          "active": "Aktivní",
+          "inactive": "Neaktivní"
+        },
+        "subtitle": "Spravujte lidi, kteří posílají informační zprávy",
+        "table": {
+          "capacity": "Denní kapacita",
+          "edit": "Upravit",
+          "job_title": "Název práce",
+          "view": "Pohled"
+        },
+        "title": "Odesílatelé",
+        "updated": "Odesílatel byl úspěšně aktualizován"
+      },
+      "sequence_steps": {
+        "add_step": "Přidat krok",
+        "back_to_agent": "Zpět k agentovi",
+        "confirm_delete": "Opravdu chcete tento krok ze sekvence odstranit?",
+        "created": "Krok sekvence byl úspěšně vytvořen",
+        "delete_failed": "Krok sekvence se nepodařilo odstranit",
+        "deleted": "Krok sekvence byl úspěšně odstraněn",
+        "edit": {
+          "subtitle": "Aktualizujte konfiguraci kroku",
+          "title": "Upravit krok sekvence"
+        },
+        "empty": "Zatím žádné sekvenční kroky. Přidejte svůj první krok k definování pracovního postupu.",
+        "event_types": {
+          "email": "E-mail",
+          "linkedin_connect": "Připojení LinkedIn (již brzy)",
+          "linkedin_message": "Zpráva LinkedIn (již brzy)",
+          "linkedin_visit": "Návštěva profilu LinkedIn (již brzy)",
+          "manual_task": "Ruční úloha (již brzy)"
+        },
+        "form": {
+          "active_help": "Neaktivní kroky jsou během generování přeskočeny",
+          "active_label": "Aktivní",
+          "body_prompt_help": "Šablona výzVy AI pro generování e-mailových těl",
+          "body_prompt_label": "Výzva těla",
+          "body_prompt_placeholder": "Vyberte výzvu pro tělo...",
+          "delay_days_help": "Dny čekání po předchozím kroku",
+          "delay_days_label": "Zpoždění (dny)",
+          "delete_button": "Smazat krok",
+          "deleting_button": "Mazání...",
+          "event_type_help": "Typ akce pro tento krok",
+          "event_type_label": "Typ události",
+          "name_description": "Volitelný popisný název pro tento krok",
+          "name_help": "Volitelný popisný název pro tento krok",
+          "name_label": "Název kroku",
+          "name_placeholder": "např. Initial Outreach, First Follow-up",
+          "position_help": "Objednejte v pořadí (1-15)",
+          "position_label": "Pozice",
+          "select_prompt": "Vyberte výzvu...",
+          "subject_prompt_help": "Šablona výzVy AI pro generování předmětů e-mailu",
+          "subject_prompt_label": "Předmětová výzva",
+          "subject_prompt_placeholder": "Vyberte výzvu k předmětu...",
+          "submit": "Uložit krok",
+          "submitting": "Ukládání..."
+        },
+        "import": {
+          "agent_not_found": "Zdrojový agent nebyl nalezen",
+          "button": "Import od agenta",
+          "cancel": "Zrušit",
+          "confirm_replace": "To nahradí všechny existující kroky v sekvenci tohoto agenta. jsi si jistý?",
+          "description": "Vyberte agenta, který chcete zkopírovat jeho kroky sekvence. To nahradí všechny stávající kroky.",
+          "destructive_warning": "To trvale nahradí všechny existující kroky v sekvenci cílového agenta. Toto nelze vrátit zpět.",
+          "import_button": "Importovat",
+          "importing": "Import...",
+          "no_agents": "Nejsou k dispozici žádní zástupci",
+          "no_matching_agents": "Nebyli nalezeni žádní odpovídající agenti",
+          "no_steps": "Zdrojový agent nemá žádné kroky sekvence",
+          "search_placeholder": "Vyhledávání podle organizace nebo agenta",
+          "select_agent": "Vyberte zástupce",
+          "select_source_agent": "Vyberte zdrojového agenta",
+          "select_target_agent": "Vyberte cílového agenta",
+          "steps_count": {
+            "few": "%{count} kroků",
+            "one": "%{count} krok",
+            "other": "%{count} kroků"
+          },
+          "success": "Sekvence byla úspěšně importována",
+          "title": "Import sekvence"
+        },
+        "max_steps_reached": "Maximálně 15 kroků na sekvenci.",
+        "new": {
+          "submit": "Vytvořit krok",
+          "subtitle": "Přidejte nový krok do dosahové sekvence",
+          "title": "Přidat sekvenční krok"
+        },
+        "reorder": {
+          "invalid_params": "Neplatné parametry pro změnu pořadí",
+          "saving": "Ukládání nové objednávky...",
+          "success": "Sekvenční kroky byly úspěšně změněny"
+        },
+        "show": {
+          "title": "Podrobnosti o kroku sekvence"
+        },
+        "subtitle": "Nakonfigurujte pro tohoto agenta sekvenci dosahu",
+        "table": {
+          "active": "Aktivní",
+          "days": "dní",
+          "delay": "Zpoždění",
+          "delete": "Vymazat",
+          "edit": "Upravit",
+          "immediate": "Bezprostřední",
+          "inactive": "Neaktivní",
+          "position": "Pozice",
+          "type": "Typ"
+        },
+        "title": "Kroky sekvence",
+        "updated": "Krok sekvence byl úspěšně aktualizován"
+      },
+      "statuses": {
+        "active": "Aktivní",
+        "archived": "Archivováno",
+        "deactivated": "Deaktivováno",
+        "onboarded": "Na palubě",
+        "pending": "Čeká na vyřízení"
+      },
+      "users": {
+        "create_button": "Vytvořit uživatele",
+        "edit": {
+          "amplifa_admin_promotion_confirm": "Aktivovat Amplifa Admin pro tohoto uživatele? Tím získá přístup ke VŠEM účtům.",
+          "email_hint": "E-mailové adresy nelze změnit",
+          "email_readonly": "E-mailové adresy nelze změnit",
+          "organization_hint": "Správci Amplifa nepatří do žádné organizace",
+          "organization_na": "N/A – Amplifa Správci",
+          "organization_na_message": "Správci Amplifa nepatří do žádné organizace",
+          "organization_placeholder": "Vyberte organizaci...",
+          "role_change_warning_message": "Roli tohoto uživatele měníte z %{old_role} na %{new_role}. To ovlivní jejich přístupová oprávnění.",
+          "role_change_warning_title": "Upozornění na změnu role",
+          "security_section": "Zabezpečení",
+          "select_organization": "Vyberte organizaci...",
+          "subtitle": "Aktualizujte informace o uživateli a oprávnění",
+          "title": "Upravit uživatele",
+          "two_factor_authentication_required_help": "Pokud je zapnuto, tento správce Amplifa musí každé přihlášení ověřit e-mailem.",
+          "two_factor_authentication_required_label": "Vyžadovat dvoufaktorové ověření e-mailem"
+        },
+        "empty": "Nebyli nalezeni žádní uživatelé",
+        "memberships": {
+          "add_button": "Přidat členství",
+          "add_description": "Poskytněte tomuto uživateli přístup k jinému zákaznickému pracovnímu prostoru, aniž byste změnili jeho primární organizaci.",
+          "add_success": "Členství v organizaci bylo úspěšně přidáno.",
+          "add_title": "Přidat členství v organizaci",
+          "already_assigned": "Tento uživatel již má aktivní členství v této organizaci.",
+          "amplifa_admin_forbidden": "Administrátory Amplifa nelze přiřadit k zákaznickým organizacím.",
+          "available_count": "%{count} organizací k dispozici",
+          "edit_role_label": "Změnit roli pro %{organization}",
+          "empty": "Tento uživatel nemá žádná aktivní členství v organizacích.",
+          "last_membership_required": "Před odebráním primárního členství tohoto uživatele přidejte další aktivní členství.",
+          "no_assignable_organizations": "Všechny aktivní organizace jsou již přiřazeny.",
+          "organization_label": "Organizace",
+          "organization_not_found": "Organizaci se nepodařilo najít.",
+          "remove_button": "Odebrat",
+          "remove_confirm": "Odebrat členství pro %{organization}?",
+          "remove_success": "Členství v organizaci bylo úspěšně odebráno.",
+          "role_change_success": "Role v %{organization} změněna na %{role}.",
+          "role_label": "Role",
+          "select_organization": "Vyberte organizaci...",
+          "title": "Členství v organizacích",
+          "update_failed": "Členství v organizaci se nepodařilo aktualizovat.",
+          "update_success": "Členství v organizaci bylo úspěšně aktualizováno."
+        },
+        "new": {
+          "confirm_password_placeholder": "Znovu zadejte heslo",
+          "create_button": "Vytvořit uživatele",
+          "email_placeholder": "uživatel@example.com",
+          "first_name_placeholder": "Jan",
+          "info_message": "Uživatel bude vytvořen pomocí poskytnutého hesla a může se okamžitě přihlásit. Není vyžadováno žádné ověření e-mailem.",
+          "info_title": "Vytvoření uživatele",
+          "last_name_placeholder": "Srna",
+          "organization_hint": "Správci Amplifa nepatří do žádné organizace",
+          "organization_na": "N/A – Amplifa Správci",
+          "organization_na_message": "Správci Amplifa nepatří do žádné organizace",
+          "organization_placeholder": "Vyberte organizaci...",
+          "password_confirmation_label": "Potvrďte heslo",
+          "password_description": "Minimálně 8 znaků, včetně 1 čísla a 1 speciálního znaku",
+          "password_hint": "Minimálně 8 znaků, včetně 1 čísla a 1 speciálního znaku doporučeno",
+          "password_label": "Heslo",
+          "password_placeholder": "Minimálně 8 znaků",
+          "password_strength_label": "Síla hesla:",
+          "select_organization": "Vyberte organizaci...",
+          "submit": "Vytvořit uživatele",
+          "subtitle": "Přidejte na platformu nového uživatele",
+          "title": "Vytvořit uživatele"
+        },
+        "password": {
+          "confirmation_mismatch": "Potvrzení hesla se neshoduje",
+          "confirmation_required": "Je vyžadováno potvrzení hesla",
+          "new_password_confirmation_label": "Potvrďte nové heslo",
+          "new_password_label": "Nové heslo",
+          "new_password_required": "Je vyžadováno nové heslo",
+          "new_password_too_short": "Nové heslo musí mít alespoň 8 znaků",
+          "reset_email_failed": "Odeslání e-mailu pro obnovení hesla se nezdařilo",
+          "reset_email_sent": "E-mail pro resetování hesla byl úspěšně odeslán",
+          "send_email_button": "Odeslat resetovací e-mail",
+          "send_email_description": "Pošlete uživateli zabezpečený odkaz pro resetování vlastního hesla.",
+          "send_email_title": "Odeslat e-mail pro obnovení hesla",
+          "set_direct_button": "Nastavte heslo",
+          "set_direct_description": "Nastavit nové heslo pro tohoto uživatele přímo jako správce.",
+          "set_direct_title": "Nastavte heslo přímo",
+          "set_success": "Heslo bylo úspěšně aktualizováno",
+          "title": "Obnovení hesla"
+        },
+        "platform_access": {
+          "amplifa_admin_disabled": "Amplifa Admin deaktivován.",
+          "amplifa_admin_enabled": "Amplifa Admin aktivován.",
+          "amplifa_admin_help": "Uděluje administrátorský přístup k celé platformě napříč všemi organizacemi. Členství v organizacích mohou na účtu zůstat pro budoucí degradaci, ale administrátorské přihlášení používá globální administrátorský panel místo zákaznického pracovního prostoru.",
+          "amplifa_admin_label": "Administrátor Amplifa",
+          "amplifa_admin_warning": "Přístup administrátora Amplifa je globální a měl by být udělen pouze důvěryhodným zaměstnancům Amplifa.",
+          "demote_help": "Odebráním přístupu administrátora Amplifa se tento účet převede na roli prvního aktivního členství v organizaci.",
+          "demote_requires_membership": "Před odebráním přístupu administrátora Amplifa přidejte alespoň jedno aktivní členství v organizaci.",
+          "title": "Přístup k platformě",
+          "two_factor_disabled": "Dvoufaktorové ověření e-mailem deaktivováno.",
+          "two_factor_enabled": "Dvoufaktorové ověření e-mailem aktivováno."
+        },
+        "roles": {
+          "amplifa_admin": "Správce Amplifa",
+          "customer_admin": "Správce zákazníka",
+          "customer_user": "Uživatel zákazníka",
+          "member": "Člen",
+          "org_admin": "Správce organizace"
+        },
+        "statuses": {
+          "active": "Aktivní",
+          "deactivated": "Deaktivováno",
+          "onboarded": "Na palubě",
+          "pending": "Čeká na vyřízení",
+          "undefined": "Neznámý"
+        },
+        "subtitle": "Spravujte všechny uživatelské účty napříč platformou",
+        "table": {
+          "edit": "Upravit",
+          "login_as": "Přihlásit se jako"
+        },
+        "title": "Všichni uživatelé"
+      }
+    },
+    "assistant": {
+      "assistant_label": "Asistent",
+      "chats": "Chaty",
+      "composer": {
+        "hint": "Enter odešle, Shift + Enter vloží nový řádek",
+        "placeholder": "Zeptejte se na cokoli ve svém pracovním prostoru...",
+        "remove_reference": "Odebrat citovaný text",
+        "send": "Odeslat",
+        "stop": "Zastavit"
+      },
+      "delete_chat": "Smazat chat",
+      "delete_chat_confirm": "Smazat tento chat?",
+      "delete_chat_confirm_named": "Smazat „%{title}“? Tuto akci nelze vzít zpět.",
+      "errors": {
+        "already_streaming": "Než odešlete další zprávu, počkejte na dokončení aktuální odpovědi.",
+        "blank_prompt": "Před odesláním napište zprávu.",
+        "chat_not_found": "Tento chat už není dostupný.",
+        "connection_lost": "Spojení bylo přerušeno. Obnovte stránku, aby se zobrazila celá odpověď.",
+        "create_chat": "Nový chat se nepodařilo vytvořit. Zkuste to znovu.",
+        "delete_chat": "Tento chat se nepodařilo smazat. Zkuste to znovu.",
+        "empty_completion": "Asistent nevrátil žádnou odpověď. Zkuste to znovu.",
+        "llm_unavailable": "Asistent je momentálně nedostupný. Zkuste to za chvíli znovu.",
+        "load_more_chats": "Další chaty se nepodařilo načíst. Zkuste to znovu.",
+        "load_older_failed": "Starší zprávy se nepodařilo načíst. Zkuste to znovu.",
+        "pin_chat": "Tento chat se nepodařilo aktualizovat. Zkuste to znovu.",
+        "prompt_too_long": "Zpráva je příliš dlouhá. Vejděte se do %{count} znaků.",
+        "send_failed": "Zprávu se nepodařilo odeslat. Zkuste to znovu.",
+        "unexpected": "Při odpovídání se něco pokazilo. Zkuste to znovu."
+      },
+      "flash": {
+        "chat_deleted": "Chat smazán"
+      },
+      "hide_chats": "Skrýt chaty",
+      "load_more_chats": "Načíst další",
+      "load_older": "Načíst starší zprávy",
+      "loading_more_chats": "Načítání...",
+      "loading_older": "Načítání starších zpráv...",
+      "nav": "Asistent",
+      "new_chat": "Nový chat",
+      "no_chats": "Zatím žádné konverzace",
+      "no_chats_hint": "Začněte nový chat.",
+      "page_title": "Asistent",
+      "pin_chat": "Připnout chat",
+      "retry": "Zkusit znovu",
+      "scroll_to_bottom": "Posunout dolů",
+      "selection": {
+        "ask": "Zeptat se asistenta"
+      },
+      "show_chats": "Zobrazit chaty",
+      "thinking": "Přemýšlím...",
+      "tools": {
+        "agent_lead_list": {
+          "done": "Looked up campaign leads",
+          "failed": "Campaign lead lookup is unavailable",
+          "running": "Looking up campaign leads..."
+        },
+        "agent_list": {
+          "done": "Looked up your agents",
+          "failed": "Agent lookup is unavailable",
+          "running": "Looking up your agents..."
+        },
+        "agent_pause_campaign": {
+          "done": "Agent paused",
+          "failed": "Could not pause the agent",
+          "running": "Pausing the agent..."
+        },
+        "agent_resume_campaign": {
+          "done": "Agent resumed",
+          "failed": "Could not resume the agent",
+          "running": "Resuming the agent..."
+        },
+        "agent_stats": {
+          "done": "Analyzed your campaigns",
+          "failed": "Campaign statistics are unavailable",
+          "running": "Analyzing your campaigns..."
+        },
+        "conversation_list": {
+          "done": "Schránka prohledána",
+          "failed": "Vyhledávání ve schránce není dostupné",
+          "running": "Prohledávám vaši schránku..."
+        },
+        "conversation_read": {
+          "done": "Konverzace přečtena",
+          "failed": "Konverzaci se nepodařilo přečíst",
+          "running": "Čtu konverzaci..."
+        },
+        "conversation_stats": {
+          "done": "Schránka zanalyzována",
+          "failed": "Statistiky schránky nejsou dostupné",
+          "running": "Analyzuji vaši schránku..."
+        },
+        "conversation_update_interest_status": {
+          "done": "Stav zájmu aktualizován",
+          "failed": "Stav zájmu se nepodařilo aktualizovat",
+          "running": "Aktualizuji stav zájmu..."
+        },
+        "generic": {
+          "done": "Hotovo",
+          "failed": "Tento nástroj je dočasně nedostupný",
+          "running": "Pracuji..."
+        },
+        "lead_search": {
+          "done": "Searched leads",
+          "failed": "Lead search is unavailable",
+          "running": "Searching leads..."
+        },
+        "meeting_cancel": {
+          "done": "Schůzka zrušena",
+          "failed": "Schůzku se nepodařilo zrušit",
+          "running": "Ruším schůzku..."
+        },
+        "meeting_create": {
+          "done": "Schůzka rezervována",
+          "failed": "Schůzku se nepodařilo rezervovat",
+          "running": "Rezervuji schůzku..."
+        },
+        "meeting_list": {
+          "done": "Schůzky načteny",
+          "failed": "Vyhledávání schůzek není k dispozici",
+          "running": "Načítám vaše schůzky..."
+        },
+        "meeting_read": {
+          "done": "Schůzka načtena",
+          "failed": "Schůzku se nepodařilo načíst",
+          "running": "Načítám schůzku..."
+        },
+        "meeting_reschedule": {
+          "done": "Schůzka přesunuta",
+          "failed": "Schůzku se nepodařilo přesunout",
+          "running": "Přesouvám schůzku..."
+        }
+      },
+      "unpin_chat": "Odepnout chat",
+      "untitled_chat": "Nový chat",
+      "welcome": {
+        "description": "Zeptejte se na své playbooky, leady, odpovědi nebo výsledky. Odpovídám srozumitelně a poradím, kde se v Amplifě podívat.",
+        "greeting": "Ahoj %{name}",
+        "suggestions": {
+          "inbox": "Které konverzace čekají na moji odpověď?",
+          "interested": "Kdo nedávno odpověděl, že má zájem?",
+          "stats": "Jak si vede moje schránka? Ukažte mi čísla.",
+          "summarize": "Shrňte mi moji nejnovější konverzaci"
+        },
+        "suggestions_label": "Vyzkoušejte jednu z těchto otázek",
+        "title": "S čím vám mohu pomoci?"
+      },
+      "you": "Vy"
+    },
+    "auth": {
+      "forgot_password": {
+        "email_sent": "Pokud pro tento e-mail existuje účet, odeslali jsme pokyny k obnovení hesla."
+      },
+      "layout": {
+        "feature_automation": "Automatizované outreach sekvence",
+        "feature_personalization": "Personalizace s využitím AI",
+        "feature_scoring": "Inteligentní hodnocení leadů",
+        "tagline": "Platforma pro obchodní outreach s podporou AI"
+      },
+      "login": {
+        "email_label": "E-mailová adresa",
+        "email_placeholder": "jmeno@firma.cz",
+        "forgot_password": "Zapomněli jste heslo?",
+        "invalid_credentials": "Neplatný e-mail nebo heslo",
+        "page_title": "Přihlásit se",
+        "password_label": "Heslo",
+        "password_placeholder": "••••••••",
+        "remember_me": "Zapamatovat si mě",
+        "signing_in": "Přihlašování…",
+        "submit": "Přihlásit se",
+        "subtitle": "Přihlaste se a pokračujte"
+      }
+    },
+    "common": {
+      "all_statuses": "Všechny stavy",
+      "apply_filters": "Použít filtry",
+      "back": "Zadní",
+      "cancel": "Zrušit",
+      "clear": "Jasný",
+      "close": "Blízko",
+      "company": "Společnost",
+      "confirm": "Potvrdit",
+      "created": "Vytvořeno",
+      "delete": "Vymazat",
+      "edit": "Upravit",
+      "email": "E-mail",
+      "error": "Došlo k chybě",
+      "false": "Žádný",
+      "filter": "Filtr",
+      "loading": "Načítání...",
+      "name": "Jméno",
+      "next": "Další",
+      "organization": "Organizace",
+      "save": "Uložit",
+      "search": "Vyhledávání",
+      "status": "Postavení",
+      "submit": "Předložit",
+      "success": "Úspěch",
+      "true": "Ano",
+      "view": "Pohled",
+      "welcome": "Vítejte"
+    },
+    "components": {
+      "generation_progress": {
+        "completed": "%{completed} z %{total} dokončeno",
+        "errors": "%{count} chyb"
+      }
+    },
+    "currencies": {
+      "chf": "CHF - švýcarský frank",
+      "eur": "EUR - Euro",
+      "gbp": "GBP - Britská libra",
+      "usd": "USD – americký dolar"
+    },
+    "customer": {
+      "agents": {
+        "activity": {
+          "added": "Přidáno %{date}",
+          "last_sent": "Naposledy odesláno %{date}",
+          "replied": "Odpovězeno %{date}"
+        },
+        "approve_samples": {
+          "button": "Schvalujte zprávy",
+          "confirm": "Opravdu chcete schválit tyto vzorové zprávy? To umožní Amplifa generovat zpráVy pro všechny potenciální zákazníky.",
+          "not_ready": "Nelze schválit. Počkejte prosím na vygenerování vzorků.",
+          "success": "ZpráVy schváleny! Amplifa nyní bude generovat zpráVy pro všechny potenciální zákazníky."
+        },
+        "buying_signals": {
+          "buying_signal_relevance": "Relevance nákupních signálů",
+          "highlights": "Hlavní body",
+          "notify_failed": "Nepodařilo se upozornit tým Amplifa",
+          "notify_success": "Váš account manager se brzy ozve.",
+          "rating_value": "%{rating}/10",
+          "relevance_rating": "Relevance",
+          "upgrade": "Upgradujte svůj plán a získejte nákupní signály"
+        },
+        "campaign_controls": {
+          "approve_playbook_button": "Schválit příručku...",
+          "cannot_pause": "Tohoto agenta nyní nelze pozastavit.",
+          "cannot_resume": "Tohoto agenta nyní nelze obnovit.",
+          "pause_button": "Pozastavit agenta",
+          "pause_success": "Agent se odmlčel.",
+          "resume_button": "Obnovit agenta",
+          "resume_success": "Agent pokračoval."
+        },
+        "companies": {
+          "back_to_leads": "Zobrazení leadů",
+          "empty": {
+            "description": "Nebyly nalezeny žádné odpovídající společnosti"
+          },
+          "filters": {
+            "search_placeholder": "Hledat společnosti, leady nebo domény"
+          },
+          "modal": {
+            "buying_signals_tab": "Nákupní signály",
+            "company": "Společnost",
+            "company_summary": "Shrnutí společnosti",
+            "detail_tabs_label": "Karty detailů společnosti",
+            "leads_tab": "Leady",
+            "load_error": "Podrobnosti o společnosti nelze načíst",
+            "no_buying_signals": "Pro tohoto agenta nejsou dostupné žádné nákupní signály",
+            "no_company_summary": "Není k dispozici žádné shrnutí společnosti",
+            "no_leads": "V této společnosti nejsou žádné viditelné leady",
+            "view_linkedin": "Zobrazit LinkedIn"
+          },
+          "table": {
+            "company": "Společnost",
+            "last_activity": "Poslední aktivita",
+            "leads": "Leady",
+            "leads_suffix": "leady",
+            "no_summary": "Žádné shrnutí",
+            "summary_available": "Dostupné"
+          },
+          "title": "Agenti - zobrazení společností",
+          "view_companies": "Zobrazení společností"
+        },
+        "delivery_statuses": {
+          "bounced": "Odražený",
+          "completed": "Dokončeno",
+          "in_sequence": "V pořadí",
+          "not_contacted": "Nekontaktován",
+          "paused": "Pozastaveno",
+          "replied": "Odpovězeno"
+        },
+        "empty": {
+          "description": "Nebyli nalezeni žádní odpovídající potenciální zákazníci",
+          "title": "Zatím žádní agenti"
+        },
+        "filters": {
+          "agent": "Činidlo",
+          "all_agents": "Vše Agents",
+          "lead_status": "Stav potenciálního zákazníka",
+          "search_placeholder": "Hledejte potenciální zákazníky podle jména, e-mailu nebo společnosti",
+          "title": "Filtry"
+        },
+        "interest_tags": {
+          "interested": "Zájem",
+          "meeting_request": "Žádost o schůzku",
+          "not_interested": "Nemám zájem",
+          "wrong_person": "Špatná osoba"
+        },
+        "modal": {
+          "active": "Aktivní",
+          "assigned_agents": "Přiděleno Agents",
+          "blacklisted": "Na černé listině",
+          "load_error": "Podrobnosti o potenciálním zákazníkovi nelze načíst",
+          "messages": {
+            "bounce": "Odskočit",
+            "conversation": "Konverzace",
+            "empty": "Zatím žádné vygenerované zpráVy ani odpovědi na konverzaci",
+            "empty_body": "Žádné tělo zprávy",
+            "generated_for": "Vygenerováno pro %{agent}",
+            "generated_label": "Vygenerováno (%{status})",
+            "no_subject": "(žádný předmět)",
+            "ooo": "Mimo kancelář",
+            "title": "Časová osa zprávy"
+          }
+        },
+        "pagination": {
+          "next": "Další",
+          "page_of": "Stránka %{current} z %{total}",
+          "previous": "Předchozí",
+          "showing": "Zobrazuje se %{start} až %{end} z %{total} potenciálních zákazníků"
+        },
+        "request_changes": {
+          "button": "Vyžádejte si změny",
+          "feedback_label": "Jaké změny byste si přáli?",
+          "feedback_placeholder": "Popište prosím změny, které potřebujete...",
+          "feedback_required": "Poskytněte nám zpětnou vazbu ohledně změn, které potřebujete.",
+          "submit_button": "Odeslat žádost",
+          "success": "Požadavek na změnu byl odeslán týmu Amplifa. Budou aktualizovat zpráVy a upozorní vás."
+        },
+        "review_samples": {
+          "back_to_agent": "Zpět k agentovi",
+          "body_label": "Tělo",
+          "collapse_all": "Sbalit vše",
+          "expand_all": "Rozbalit vše",
+          "intro": "Přečtěte si prosím níže uvedené ukázkové zpráVy generované umělou inteligencí. Toto jsou příklady toho, co bude odesláno vašim potenciálním zákazníkům.",
+          "lead_info": "Informace o zájemcích",
+          "message_preview": "Náhled zprávy",
+          "no_messages": "Žádné ukázkové zpráVy nejsou k dispozici ke kontrole.",
+          "not_ready": "Vzorové zpráVy ještě nebyly vygenerovány.",
+          "send_test": "Pošlete mi test",
+          "subject_label": "Podrobit",
+          "test_sent": "Test odeslán",
+          "title": "Zkontrolujte vzorové zprávy"
+        },
+        "sent_today_badge": "Dnes bylo odesláno %{count} e-mailů",
+        "show": {
+          "back_to_list": "Zpět na Agents",
+          "can_launch": "Připraveno ke spuštění",
+          "cannot_launch": "Není připraven",
+          "created_at": "Vytvořeno",
+          "default_timezone": "Výchozí časové pásmo",
+          "description_title": "Popis",
+          "download_button": "Stáhnout",
+          "download_modal": {
+            "agent_label": "Agent",
+            "choose_agent": "Vyberte agenta...",
+            "confirm_button": "Stáhnout CSV",
+            "description": "Vyberte zástupce, chcete-li stáhnout všechny kontaktní údaje a údaje o identitě potenciálního zákazníka jako CSV.",
+            "title": "Stáhnout Potenciální CSV"
+          },
+          "leads": {
+            "active": "Aktivní",
+            "blacklisted": "Na černé listině",
+            "company": "Společnost",
+            "created": "Vytvořeno",
+            "email": "E-mail",
+            "empty": "K tomuto agentovi zatím nejsou přiřazeni žádní potenciální zákazníci",
+            "name": "Jméno",
+            "status": "Postavení",
+            "title": "Přiděleno Leads"
+          },
+          "mailboxes": {
+            "days_remaining": "Zbývá %{days} dní",
+            "empty": "Nejsou přiřazeny žádné poštovní schránky",
+            "statuses": {
+              "active": "Aktivní",
+              "paused": "Pozastaveno",
+              "pending": "Čeká na vyřízení",
+              "suspended": "Pozastaveno",
+              "warming": "Zahřívání"
+            },
+            "title": "Poštovní schránky",
+            "warmup_complete": "Připraveno"
+          },
+          "no_description": "Nebyl poskytnut žádný popis",
+          "no_playbook": "Není přiřazena žádná příručka",
+          "playbook": "Playbook",
+          "samples": {
+            "approved_by": "Schváleno %{name} dne %{date}",
+            "generated_at": "Vygenerováno %{date}",
+            "need_email_steps": "Nebyly nalezeny žádné aktivní kroky e-mailu. Přidejte kroky pro generování vzorků.",
+            "need_leads": "Nebyli nalezeni žádní potenciální zákazníci. Přidáním potenciálních zákazníků vytvoříte vzorky.",
+            "review_samples": "Zkontrolovat vzorky",
+            "status": {
+              "approved": "Schválený",
+              "pending_review": "Připraveno ke kontrole"
+            },
+            "title": "Vzorové zprávy",
+            "view_approved_samples": "Zobrazit schválené vzorky"
+          },
+          "stats": {
+            "contacted": "Kontaktováno",
+            "meeting_rate": "Míra setkání",
+            "meetings": "Setkání",
+            "replied": "Odpovězeno",
+            "reply_rate": "Míra odpovědi",
+            "title": "Statistiky agentů",
+            "total_leads": "Celkem Leads"
+          },
+          "title": "Podrobnosti o agentovi"
+        },
+        "statuses": {
+          "active": "Aktivní",
+          "completed": "Dokončeno",
+          "draft": "Návrh",
+          "paused": "Pozastaveno",
+          "ready": "Připraveno"
+        },
+        "subtitle": "Prohlédněte si potenciální zákazníky a přidělené agenty vaší organizace",
+        "table": {
+          "agent": "Činidlo",
+          "date_added": "Datum přidání",
+          "last_sent": "Naposledy odesláno",
+          "lead": "Vést",
+          "messages_sent": "odeslané zprávy",
+          "progress": "Pokrok",
+          "relevance": "Relevance",
+          "relevance_tooltip": "Naše AI hodnocení toho, jak relevantní jsou nákupní signály pro tohoto potenciálního zákazníka.",
+          "relevance_tooltip_label": "Vysvětlit hodnocení relevance"
+        },
+        "title": "Agenti"
+      },
+      "generated_messages": {
+        "send_test": {
+          "failed": "Odeslání zkušebního e-mailu se nezdařilo.",
+          "success": "Zkušební e-mail byl odeslán na vaši e-mailovou adresu."
+        }
+      }
+    },
+    "customer_home": {
+      "blacklist": {
+        "remove_entry": "Odebrat záznam",
+        "search_placeholder": "Hledat v seznamu blokací...",
+        "title": "Seznam blokací"
+      },
+      "common": {
+        "not_set": "Nenastaveno"
+      },
+      "company": {
+        "description": "Informace o profilu vaší společnosti",
+        "industry": "Odvětví",
+        "title": "Společnost",
+        "website": "Web"
+      },
+      "email_accounts": {
+        "description": "Automaticky vytvořeno z domén a odesílatelů",
+        "empty": "E-mailové účty se zde zobrazí po konfiguraci domén a odesílatelů.",
+        "ready": "Připraveno",
+        "title": "E-mailové účty"
+      },
+      "senders": {
+        "description": "Lidé, kteří odesílají outreach e-maily jménem vaší organizace",
+        "empty": "Nejsou nakonfigurováni žádní odesílatelé. Kontaktujte administrátora Amplifa.",
+        "title": "Odesílatelé"
+      },
+      "subtitle": "Zkontrolujte základní nastavení svého outreach pracovního prostoru, včetně domén, profilů odesílatelů, e-mailových účtů a pokrytí seznamem blokací.",
+      "title": "Domů",
+      "welcome_back": "Vítejte zpět, %{name}!"
+    },
+    "customer_settings": {
+      "billing": {
+        "active": "Aktivní",
+        "ai_intelligence": "AI inteligence",
+        "current_plan": "Aktuální plán",
+        "current_plan_description": "Spravujte předplatné a fakturační údaje",
+        "day": "Den %{day}",
+        "get_more": "Získat dalších 10 schůzek",
+        "meetings_usage": "Využití schůzek",
+        "meetings_usage_count": "%{used} / %{limit} schůzek v tomto fakturačním cyklu",
+        "need_more": "Potřebujete nyní více schůzek?",
+        "per_month": "/měs.",
+        "plan": "Plán",
+        "plan_meetings": "Až %{count} schůzek za fakturační cyklus",
+        "renewal_unavailable": "Datum obnovení není k dispozici",
+        "renews_on": "Obnovuje se %{date}",
+        "reset_next_cycle": "AI agenti se resetují v dalším fakturačním cyklu",
+        "reset_on": "AI agenti se resetují %{date}",
+        "update_plan": "Aktualizovat plán",
+        "update_plan_description": "Vyberte správný plán pro svůj tým",
+        "upgrade": "Upgradovat",
+        "upgrade_annual": "Upgradovat na roční - ušetřete 20%",
+        "upgrade_plan": "Upgradovat plán",
+        "usage_alert": "V tomto fakturačním cyklu jste využili %{used} z %{limit} schůzek"
+      },
+      "blacklists": {
+        "domain_title": "Seznam blokovaných domén",
+        "email_title": "Seznam blokovaných e-mailů",
+        "export": {
+          "csv_description": "Stáhněte všechny e-maily a domény blokované pro tuto organizaci jako CSV se sloupci hodnota, typ a důvod.",
+          "csv_title": "Exportovat seznam blokování (CSV)",
+          "description": "Stáhněte si seznam blokování této organizace",
+          "download": "Stáhnout CSV",
+          "title": "Export"
+        },
+        "remove_entry": "Odebrat záznam",
+        "search_domains": "Hledat domény...",
+        "search_emails": "Hledat e-maily...",
+        "sections": {
+          "domain": "Seznam blokovaných domén",
+          "email": "Seznam blokovaných e-mailů",
+          "export": "Export",
+          "import": "Import",
+          "import_export": "Import/Export"
+        },
+        "table": {
+          "added": "Přidáno",
+          "domain": "Doména",
+          "email": "E-mail",
+          "reason": "Důvod"
+        }
+      },
+      "common": {
+        "actions": "Akce",
+        "save_settings": "Uložit nastavení",
+        "saving": "Ukládání..."
+      },
+      "email": {
+        "accounts": {
+          "configured": "%{count} účtů nakonfigurováno",
+          "sent_today": "Odesláno dnes"
+        },
+        "auto_forward": {
+          "comment_options": "Možnosti komentáře",
+          "description": "Přeposílejte nové zainteresované konverzace nebo žádosti o schůzku na jednu e-mailovou adresu. Každá konverzace bude přeposlána pouze jednou.",
+          "enable": "Povolit automatické přeposílání",
+          "forward_to": "Přeposlat na",
+          "per_agent_comment": "Přidat standardní komentář ke všem přeposlaným konverzacím podle agenta",
+          "save": "Uložit nastavení automatického přeposílání",
+          "standard_comment": "Přidat standardní komentář ke všem přeposlaným konverzacím",
+          "table": {
+            "agent": "Agent",
+            "forward_comment": "Komentář k přeposlání"
+          },
+          "title": "Automaticky přeposílat zainteresované konverzace",
+          "without_comment": "Přeposlat bez komentáře"
+        },
+        "domains": {
+          "add": "Přidat doménu",
+          "description": "Spravujte své odesílací domény",
+          "email_accounts_count": "%{count} e-mailových účtů",
+          "pending": "Čeká na vyřízení",
+          "verified": "Ověřeno"
+        },
+        "sections": {
+          "auto_forward": "Automatické přeposílání",
+          "domains": "Domény",
+          "email_accounts": "E-mailové účty",
+          "senders": "Odesílatelé"
+        },
+        "senders": {
+          "description": "Nakonfigurované profily odesílatelů",
+          "empty": "Zatím nejsou nakonfigurovány žádné profily odesílatelů."
+        },
+        "statuses": {
+          "active": "Aktivní",
+          "paused": "Pozastaveno"
+        }
+      },
+      "subtitle": "Spravujte svůj účet, integrace a předvolby",
+      "tabs": {
+        "billing": "Fakturace",
+        "blacklists": "Seznam blokací",
+        "company": "Společnost",
+        "email": "Odesílatelé a domény",
+        "profile": "Profil",
+        "team": "Tým",
+        "webhooks": "Webhooky"
+      },
+      "team": {
+        "members_of": "Členové %{organization}",
+        "roles": {
+          "customer_admin": "Administrátor zákazníka",
+          "customer_user": "Uživatel zákazníka"
+        },
+        "sections": {
+          "invitations": "Pozvánky",
+          "members": "Členové týmu"
+        },
+        "table": {
+          "email": "E-mail",
+          "joined": "Připojen",
+          "name": "Jméno",
+          "role": "Role"
+        },
+        "title": "Členové týmu"
+      },
+      "title": "Nastavení",
+      "webhooks": {
+        "click_tracking": {
+          "description": "Přepisuje HTML odkazy v e-mailech na sledované přesměrovací URL a vytváří události kliknutí.",
+          "enable": "Povolit sledování kliknutí + webhooky",
+          "example": "Příklad - odkazy v HTML e-mailech budou přepsány:",
+          "title": "Sledování kliknutí"
+        },
+        "endpoints": {
+          "title": "Webhook endpointy"
+        },
+        "events": {
+          "description": "Nejnovější sledovaná kliknutí pro tuto organizaci.",
+          "empty": "Zatím nejsou zaznamenány žádné události kliknutí.",
+          "table": {
+            "clicked_at": "Kliknuto v",
+            "lead": "Lead",
+            "referrer": "Referrer",
+            "target_url": "Cílová URL"
+          },
+          "title": "Zaznamenané události kliknutí"
+        },
+        "only_authorized": "Toto nastavení mohou měnit pouze oprávnění uživatelé.",
+        "remove_confirm": "Odebrat tento webhook endpoint?",
+        "sections": {
+          "endpoints": "Webhook endpointy",
+          "events": "Historie kliknutí",
+          "tracking": "Sledování kliknutí"
+        }
+      }
+    },
+    "dashboard": {
+      "get_started": {
+        "create_campaign": "Vytvořit kampaň",
+        "description": "Vytvořte svou první kampaň a začněte generovat hyperpersonalizované odchozí e-maily.",
+        "title": "Začněte"
+      },
+      "recent_activity": {
+        "no_activity": "Žádná nedávná aktivita k zobrazení",
+        "title": "Nedávná aktivita"
+      },
+      "stats": {
+        "active_campaigns": "Aktivní kampaně",
+        "team_members": "Členové týmu",
+        "total_leads": "Celkem Leads"
+      },
+      "subtitle_onboarding": "Dokončete registraci a začněte generovat potenciální zákazníky",
+      "subtitle_ready": "Vaše kampaně jsou připraveny generovat potenciální zákazníky",
+      "title": "Dashboard",
+      "welcome_back": "Vítejte zpět"
+    },
+    "date": {
+      "formats": {
+        "long": "%B %d, %Y",
+        "short": "%d.%m.%Y"
+      }
+    },
+    "hello": "Ahoj světe",
+    "invitation": {
+      "accept": {
+        "account_info_title": "Váš účet",
+        "confirm_password_label": "Potvrďte heslo",
+        "confirm_password_placeholder": "Potvrďte své heslo",
+        "email_label": "E-mail",
+        "errors": {
+          "confirmation_required": "Potvrďte prosím své heslo",
+          "password_required": "Je vyžadováno heslo",
+          "password_too_short": "Heslo musí mít alespoň 8 znaků",
+          "passwords_mismatch": "Hesla se neshodují"
+        },
+        "hide_password": "Skrýt heslo",
+        "language_help": "Vyberte preferovaný jazyk pro Amplifa",
+        "language_label": "Preferovaný jazyk",
+        "name_label": "Jméno",
+        "need_help": "Potřebujete pomoc?",
+        "organization_label": "Organizace",
+        "password_label": "Heslo",
+        "password_placeholder": "Vytvořte si bezpečné heslo",
+        "password_req_length": "Minimálně 8 znaků",
+        "password_req_lowercase": "Jedno malé písmeno",
+        "password_req_number": "Alespoň 1 číslo",
+        "password_req_special": "Alespoň 1 speciální znak",
+        "password_req_uppercase": "Jedno velké písmeno",
+        "password_requirements": "Požadavky na heslo:",
+        "password_strength": {
+          "fair": "Veletrh",
+          "good": "Dobrý",
+          "strong": "Silný",
+          "weak": "Slabý"
+        },
+        "password_strength_label": "Síla hesla:",
+        "role_admin": "Admin",
+        "role_label": "Role",
+        "setup_title": "Nastavte si svůj účet",
+        "show_password": "Zobrazit heslo",
+        "submit": "Dokončete nastavení",
+        "subtitle": "Byli jste pozváni do organizace %{organization}",
+        "terms_label": "Přijímám podmínky služby a zásady ochrany osobních údajů",
+        "timezone_help": "Pro přesné zobrazení času vyberte své časové pásmo",
+        "timezone_label": "Časové pásmo (volitelné)",
+        "timezone_placeholder": "Vyberte své časové pásmo...",
+        "title": "Vítejte v Amplifa!"
+      },
+      "already_accepted": {
+        "message": "Tato pozvánka již byla použita. Přihlaste se prosím."
+      },
+      "expired": {
+        "contact_support": "Kontaktujte podporu",
+        "explanation": "Platnost pozvánek vyprší 7 dní po odeslání.",
+        "message": "Platnost této pozvánky vypršela a již ji nelze použít.",
+        "request_new": "Vyžádejte si novou pozvánku",
+        "title": "Platnost pozvánky vypršela"
+      },
+      "invalid": {
+        "contact_support": "Kontaktujte podporu",
+        "explanation": "Zkontrolujte prosím svůj e-mail, zda neobsahuje správný odkaz, nebo kontaktujte svého správce.",
+        "message": "Tento odkaz na pozvánku není platný.",
+        "title": "Neplatná pozvánka"
+      }
+    },
+    "invitations": {
+      "flash": {
+        "accept_failed": "Nepodařilo se přijmout pozvánku: %{message}",
+        "already_used": "Tato pozvánka již byla použita. Přihlaste se.",
+        "cancelled": "Tato pozvánka byla zrušena. Obraťte se na svého administrátora.",
+        "create_failed": "Nepodařilo se vytvořit účet: %{message}",
+        "expired": "Platnost této pozvánky vypršela. Požádejte svého administrátora o novou pozvánku.",
+        "invalid": "Tento odkaz na pozvánku je neplatný nebo byl odstraněn.",
+        "login_with_invited_email": "Chcete-li tuto pozvánku přijmout, přihlaste se pomocí pozvané e-mailové adresy.",
+        "no_longer_valid": "Pozvánka již není platná",
+        "password_required": "Heslo je povinné",
+        "password_too_short": "Heslo musí mít alespoň 8 znaků",
+        "passwords_mismatch": "Hesla se neshodují",
+        "unexpected_error": "Došlo k neočekávané chybě. Zkuste to znovu nebo se obraťte na podporu.",
+        "welcome": "Vítejte v Amplifa, %{name}!",
+        "welcome_setup": "Vítejte v Amplifa! Pojďme nastavit váš účet."
+      }
+    },
+    "languages": {
+      "cs": "Čeština",
+      "de": "Němčina",
+      "en": "Angličtina",
+      "es": "Španělština (EU)",
+      "fr": "Francouzština",
+      "it": "Italština",
+      "pl": "Polština",
+      "pt-BR": "Portugalština (Brazílie)"
+    },
+    "mailers": {
+      "admin_notification": {
+        "billing_interest": {
+          "subject": "[Amplifa] Fakturační úrok – %{organization_name} (%{action_name})"
+        },
+        "customer_lead_import_completed": {
+          "subject": "Import potenciálního zákazníka pro organizaci %{organization_name} byl dokončen (%{importer_name})"
+        },
+        "customer_lead_import_failed": {
+          "subject": "Import potenciálního zákazníka pro organizaci %{organization_name} (%{importer_name}) se nezdařil"
+        },
+        "integration_connected": {
+          "subject": "[Amplifa] Integrace připojena – %{organization_name} (%{integration_name})"
+        },
+        "lead_list_file_uploaded": {
+          "subject": "Soubor se seznamem potenciálních zákazníků nahrál %{uploader_name} (%{organization_name})"
+        },
+        "sample_messages_generated": {
+          "subject": "[Amplifa] Ukázkové vygenerované zprávy – %{agent_name}"
+        },
+        "samples_approved": {
+          "subject": "[Amplifa] Vzorky schváleny – %{agent_name}"
+        },
+        "samples_changes_requested": {
+          "subject": "[Amplifa] Požadované změny – %{agent_name}"
+        }
+      },
+      "conversation_forward": {
+        "lead_company": "Společnost"
+      },
+      "invitation": {
+        "cta": "Přijmout pozvání",
+        "description": "Klikněte na tlačítko níže, abyste přijali pozvání a nastavili svůj účet. Budete moci začít generovat kvalifikované leady pro vaše podnikání.",
+        "expiry": "Platnost této pozvánky vyprší %{date}.",
+        "greeting": "Ahoj %{name},",
+        "help": "Pokud máte jakékoli dotazy, kontaktujte prosím svého správce.",
+        "intro": "%{admin_name} vás pozval, abyste se připojili k organizaci %{organization} na Amplifa, platformě pro odchozí automatizaci založenou na umělé inteligenci.",
+        "subject": "Jste pozváni, abyste se připojili k organizaci %{organization} na Amplifa"
+      },
+      "password_reset": {
+        "cta": "Obnovit heslo",
+        "greeting": "Obnovení hesla",
+        "ignore": "Pokud jste tuto žádost nepodali, můžete tento e-mail bezpečně ignorovat.",
+        "instructions": "Klikněte na tlačítko níže a nastavte nové heslo.",
+        "intro": "Obdrželi jsme žádost o obnovení hesla k vašemu účtu.",
+        "subject": "Obnovte své heslo Amplifa"
+      },
+      "playbook": {
+        "approved": {
+          "body": "%{approver} z %{organization} schválil příručku %{product}. Příručka je nyní připravena k použití pro plánování kampaní.",
+          "cta": "Zobrazit Playbook",
+          "greeting": "Playbook schválen!",
+          "subject": "Příručka %{product} schválená organizací %{organization}"
+        },
+        "archived": {
+          "body": "Příručku %{product} archivoval %{archiver}.",
+          "cta": "Zobrazit Playbook",
+          "greeting": "Playbook archivován",
+          "subject": "Příručka %{product} archivována"
+        },
+        "changes_requested": {
+          "body": "%{requester} z %{organization} požádal o změny v příručce %{product}. Jejich zpětná vazba je níže:",
+          "cta": "Zkontrolovat a provést změny",
+          "greeting": "Požadovány změny",
+          "subject": "Požadované změny pro %{product} playbook (%{organization})"
+        },
+        "generated": {
+          "body": "Byla vygenerována nová příručka pro %{product} na %{organization}. Umělá inteligence analyzovala web a vytvořila %{persona_count} personae a %{use_case_count} případů použití. Generováno %{initiated_by}.",
+          "cta": "Zkontrolovat Playbook",
+          "greeting": "Generování playbooku dokončeno",
+          "subject": "Příručka vygenerována pro %{product} (%{organization})"
+        },
+        "generation_failed": {
+          "body": "Generování umělé inteligence pro %{product} v %{organization} selhalo při analýze webu %{website}.",
+          "error_label": "Chyba",
+          "greeting": "Generování playbooku selhalo",
+          "next_steps": "Zkontrolujte prosím URL webové stránky a zkuste to znovu. Pokud problém přetrvává, kontaktujte podporu.",
+          "subject": "Generování příručky pro %{product} (%{organization}) se nezdařilo"
+        },
+        "moved_to_draft": {
+          "body": "Tým Amplifa aktualizoval vaši příručku %{product} na základě vaší zpětné vazby. Zkontrolujte změny.",
+          "cta": "Zkontrolovat Playbook",
+          "greeting": "Playbook připraven ke kontrole",
+          "subject": "Příručka %{product} byla aktualizována a připravena ke kontrole"
+        },
+        "new_comment": {
+          "body": "%{commenter} přidal komentář do příručky %{product}.",
+          "cta": "Zobrazit komentář",
+          "greeting": "Přidán nový komentář",
+          "subject": "Nový komentář k %{product} playbooku"
+        },
+        "ready_for_review": {
+          "body": "Váš tým Amplifa vytvořil příručku pro %{product}. Zkontrolujte jej a schvalte.",
+          "cta": "Zkontrolovat a schválit",
+          "greeting": "Nový playbook připraven",
+          "subject": "Nová příručka připravená ke kontrole: %{product}"
+        }
+      },
+      "signature": "S pozdravem,<br>Tým Amplifa",
+      "verify_account": {
+        "cta": "Aktivovat účet",
+        "greeting": "Vítejte v Amplifa",
+        "ignore": "Pokud jste tento účet nevytvořili, můžete tento e-mail bezpečně ignorovat.",
+        "intro": "Váš účet byl vytvořen. Aktivujte ho prosím, abyste dokončili nastavení a mohli začít používat Amplifa.",
+        "preheader": "Dokončete nastavení svého účtu Amplifa.",
+        "subject": "Aktivujte svůj účet Amplifa"
+      }
+    },
+    "meetings": {
+      "confirm_request_removal": "Tím se schůzka označí k odebrání správce. Pokračovat?",
+      "empty": "Nebyly nalezeny žádné schůzky",
+      "outcomes": {
+        "negative": "Negativní",
+        "neutral": "Neutrální",
+        "positive": "Pozitivní"
+      },
+      "pagination": {
+        "next": "Další",
+        "previous": "Předchozí",
+        "showing": "Zobrazuje se %{start} až %{end} z %{total} schůzek"
+      },
+      "pending_removal_requested": "Požadováno odstranění",
+      "request_removal": "Odebrat schůzku",
+      "request_removal_failed": "Nepodařilo se požádat o odstranění schůzky.",
+      "search_placeholder": "Vyhledejte schůzku podle jména nebo společnosti",
+      "subtitle": "Sledujte a spravujte své potenciální schůzky a výsledky",
+      "table": {
+        "company": "Společnost",
+        "meeting_date": "Datum schůzky",
+        "meeting_outcome": "Výsledek setkání",
+        "name": "Jméno",
+        "time": "Čas",
+        "title": "Titul"
+      },
+      "tabs": {
+        "all": "Vše",
+        "negative": "Negativní",
+        "neutral": "Neutrální",
+        "positive": "Pozitivní"
+      },
+      "title": "Zasedání"
+    },
+    "navigation": {
+      "activities": "Činnosti",
+      "admin": "Admin",
+      "admin_badge": "SPRÁVCE AMPLIFA",
+      "admin_navigation": "Navigace správce",
+      "agents": "Agents",
+      "app_name": "Amplifa",
+      "blacklist": "Černá listina",
+      "campaigns": "Kampaně",
+      "customer_navigation": "Zákaznická navigace",
+      "dashboard": "Dashboard",
+      "email_accounts": "E-mailové účty",
+      "email_domains": "E-mailové domény",
+      "imports": "Dovoz",
+      "invitations": "Pozvánky",
+      "language_selector": "Jazyk",
+      "leads": "Leads",
+      "logout": "Odhlásit se",
+      "mailboxes": "Poštovní schránky",
+      "organizations": "Organizace",
+      "people": "Lidé",
+      "playbooks": "Playbooks",
+      "replies": "Odpovědi",
+      "select_language": "Vyberte jazyk",
+      "senders": "Odesílatelé",
+      "settings": "Nastavení",
+      "team": "Tým",
+      "users": "Uživatelé"
+    },
+    "onboarding": {
+      "collapse_checklist": "Sbalit kontrolní seznam",
+      "complete_description": "Vše je nastaveno a připraveno začít generovat kvalifikované potenciální zákazníky pomocí Amplifa.",
+      "complete_message": "Registrace dokončena! Jste připraveni začít generovat potenciální zákazníky.",
+      "complete_title": "🎉 Registrace dokončena!",
+      "duration_label": "Trvání:",
+      "expand_checklist": "Rozbalte kontrolní seznam",
+      "progress": "%{completed} z %{total} dokončených kroků",
+      "progress_of": "z",
+      "progress_suffix": "kroky dokončeny",
+      "stage_label": "Fáze",
+      "steps": {
+        "language_selected": {
+          "action": "Vyberte Jazyk",
+          "description": "Vyberte preferovaný jazyk",
+          "title": "Vyberte svůj jazyk"
+        },
+        "profile_completed": {
+          "action": "Kompletní profil",
+          "description": "Přidejte svůj web, ACV a odkaz Calendly",
+          "title": "Kompletní profil společnosti"
+        }
+      },
+      "subtitle": "Chcete-li začít generovat potenciální zákazníky, proveďte tyto kroky",
+      "title": "Začněte s Amplifa",
+      "use_language_selector": "Použijte výběr jazyka v horní navigaci"
+    },
+    "org_admin": {
+      "dashboard": {
+        "heading": "Správa organizace",
+        "manage_description": "Spravujte nastavení své organizace, členy týmu a další.",
+        "no_organization": "Nebyla nalezena žádná organizace.",
+        "title": "Správce organizace"
+      }
+    },
+    "playbooks": {
+      "actions": {
+        "approve_button": "Schvalovat",
+        "approve_comment_label": "Komentář (volitelné)",
+        "approve_comment_placeholder": "Přidejte zpětnou vazbu nebo poznámky...",
+        "approve_description": "Schválením potvrzujete, že tato příručka přesně reprezentuje Vaše produkty a cílové publikum.",
+        "approve_title": "Schválit Playbook",
+        "approving": "Schvalování...",
+        "archive_button": "Archiv",
+        "archive_confirm": "Opravdu chcete tuto příručku archivovat?",
+        "archive_description": "Archivované příručky se již nebudou používat pro kampaně.",
+        "archive_title": "Archivovat Playbook",
+        "archiving": "Archivace...",
+        "comment_required": "Uveďte prosím komentář popisující potřebné změny",
+        "request_changes_button": "Vyžádejte si změny",
+        "request_changes_comment_label": "Jaké změny jsou potřeba?",
+        "request_changes_comment_placeholder": "Popište prosím změny, které potřebujete...",
+        "request_changes_description": "Popište, jaké změny byste v této příručce rádi viděli.",
+        "request_changes_title": "Vyžádejte si změny",
+        "requesting": "Odesílání..."
+      },
+      "approval_strip": {
+        "message": "Chcete-li pokračovat, schvalte příručku nebo poskytněte zpětnou vazbu.",
+        "share_feedback": "Sdílejte zpětnou vazbu"
+      },
+      "aria": {
+        "close_approve_modal": "Zavřít modální okno schválení",
+        "close_archive_modal": "Zavřít modální okno archivace",
+        "close_feedback_modal": "Zavřít modální okno zpětné vazby",
+        "close_request_changes_modal": "Zavřít modální okno žádosti o změny"
+      },
+      "back_to_list": "Zpět na Playbooks",
+      "comment_types": {
+        "approval": "Schválení",
+        "general": "Generál",
+        "request_changes": "Žádost o změnu"
+      },
+      "comments": {
+        "add_comment": "Přidat komentář",
+        "comment_placeholder": "Přidejte komentář nebo dotaz...",
+        "empty": "Zatím žádné komentáře",
+        "posting": "Odesílání...",
+        "submit": "Přidat komentář",
+        "title": "Diskuse"
+      },
+      "create": {
+        "button": "Vytvořit Playbook",
+        "started": "Generování příruček začalo. Váš nový koncept se brzy objeví."
+      },
+      "domains": {
+        "already_exists": "Tato doména je již nakonfigurována.",
+        "blank": "Zadejte název domény.",
+        "created": "Byla požadována doména %{domain}. Nastavení dokončí správce.",
+        "invalid_format": "Zadejte platnou doménu (např. example.com).",
+        "limit_reached": "Můžete mít maximálně %{max} domén."
+      },
+      "empty": "Zatím nejsou k dispozici žádné playbooky. Váš tým Amplifa pro vás vytvoří příručky.",
+      "files": {
+        "download": "Stáhnout",
+        "upload_failed": "Nahrání se nezdařilo"
+      },
+      "filters": {
+        "all_products": "Všechny produkty",
+        "all_statuses": "Všechny stavy",
+        "apply": "Použít filtry",
+        "clear": "Jasný",
+        "product": "Produkt",
+        "status": "Postavení"
+      },
+      "import_leads_ui": {
+        "analysis_summary": "%{new_people} nových osob · %{new_leads} nových leadů · %{lead_updates} aktualizací leadů · %{invalid} neplatných",
+        "analyzing": "Analyzuje se...",
+        "back": "Zpět",
+        "blacklisted_count": "%{count} na blacklistu",
+        "click_to_upload_csv": "Klikněte pro nahrání CSV",
+        "completed_at": "Dokončeno: %{date}",
+        "created_count": "%{count} vytvořeno",
+        "custom_field": "Vlastní: %{field}",
+        "error_count": "%{count} chyb",
+        "example_value": "např. %{value}",
+        "field_company": "Společnost",
+        "field_company_website": "Web společnosti",
+        "field_email": "E-mail *",
+        "field_first_name": "Jméno",
+        "field_full_name": "Celé jméno",
+        "field_job_title": "Pracovní pozice",
+        "field_last_name": "Příjmení",
+        "field_linkedin_url": "URL LinkedIn",
+        "field_location": "Lokalita",
+        "import_analysis": "Analýza importu",
+        "imported_at": "Importováno: %{date}",
+        "lead_list_description": "Nahrajte soubor a my ho zpřístupníme administrátorskému týmu.",
+        "lead_list_title": "Máte seznamy leadů bez e-mailů? Nahrajte je sem",
+        "max_file_size": "Max 50 MB",
+        "next_map_fields": "Další: Mapovat pole",
+        "selected_rows": "%{count} řádků",
+        "skip_column": "Přeskočit tento sloupec",
+        "starting_import": "Spouštění importu...",
+        "step_map_fields": "2. Mapovat pole",
+        "step_upload_csv": "1. Nahrát CSV",
+        "updated_count": "%{count} aktualizováno",
+        "upload_file": "Nahrát soubor",
+        "uploaded_at": "Nahráno: %{date}",
+        "uploading": "Nahrávání..."
+      },
+      "knowledge_base": {
+        "add_knowledge": "Přidat znalost",
+        "ai_summary": "Shrnutí AI",
+        "all_playbooks": "Všechny playbooky",
+        "download": "Stáhnout",
+        "empty_description": "Nahrajte dokument a převeďte zákaznické reference, produktové poznámky, briefy a výzkum na vyhledatelná shrnutí AI pro tento playbook.",
+        "empty_title": "Zatím nebyly přidány žádné znalosti",
+        "errors": {
+          "invalid_response": "Neplatná odpověď serveru",
+          "request_failed": "Požadavek selhal (%{status})",
+          "upload_failed": "Nahrání selhalo"
+        },
+        "filters": {
+          "all": "Vše",
+          "docs": "Dokumenty",
+          "pdfs": "PDF",
+          "websites": "Weby"
+        },
+        "hero_badge": "Znalostní vrstva s podporou AI",
+        "hero_description": "Přidejte dokumenty a platforma je extrahuje, shrne a strukturuje do kolektivní znalostní vrstvy pro tento playbook.",
+        "modal": {
+          "cancel": "Zrušit",
+          "close": "Zavřít okno přidání znalosti",
+          "description": "Nahrajte soubor nebo přidejte webovou URL pro tento playbook.",
+          "dropzone_hint": "PDF, DOCX, text, CSV, obrázek nebo webový dokument",
+          "dropzone_title": "Klikněte pro výběr nebo sem přetáhněte soubor",
+          "file": "Soubor",
+          "source_url": "Zdrojová URL",
+          "title": "Přidat znalost",
+          "url": "URL",
+          "url_hint": "Stránku nebo propojený soubor extrahujeme a shrneme.",
+          "url_placeholder": "https://example.com/resource"
+        },
+        "no_matches_description": "Zkuste jiný hledaný výraz nebo změňte aktivní filtr.",
+        "no_matches_title": "Nebyly nalezeny žádné odpovídající znalosti",
+        "relative_time": {
+          "days_ago": "Před %{count} d",
+          "hours_ago": "Před %{count} h",
+          "minutes_ago": "Před %{count} min",
+          "yesterday": "Včera"
+        },
+        "search_placeholder": "Hledat název, shrnutí nebo nahrávajícího...",
+        "slideover": {
+          "close": "Zavřít detaily znalosti",
+          "download_source": "Stáhnout zdroj",
+          "extracted_content": "Extrahovaný obsah",
+          "extraction_running": "Extrakce stále probíhá. Extrahovaný obsah se zde zobrazí po dokončení zpracování.",
+          "no_extracted_content": "Pro tento zdroj zatím není k dispozici žádný extrahovaný obsah.",
+          "source": "Zdroj",
+          "tags": "Štítky"
+        },
+        "sort": {
+          "most_recent": "Nejnovější",
+          "name_az": "Název A-Z",
+          "oldest_first": "Nejstarší první"
+        },
+        "stats": {
+          "docs": "Dokumenty",
+          "pdfs": "PDF",
+          "total_entries": "Celkem položek",
+          "websites": "Weby"
+        },
+        "statuses": {
+          "completed": "Dokončeno",
+          "extracting": "Extrahuje se",
+          "failed": "Selhalo",
+          "summarizing": "Shrnuje se",
+          "unknown": "%{status}"
+        },
+        "summary_failed": "Generování shrnutí selhalo. Zkuste tento zdroj nahrát znovu.",
+        "summary_pending": "Shrnutí AI se připravuje. Tato karta se automaticky aktualizuje po dokončení extrakce.",
+        "title_accent": "báze",
+        "title_prefix": "Znalostní",
+        "types": {
+          "document": "Dokument",
+          "pdf": "PDF",
+          "website": "Web"
+        },
+        "untitled": "Nepojmenovaná znalost",
+        "upload_first_source": "Nahrát první zdroj"
+      },
+      "knowledge_ui": {
+        "comments_eyebrow": "Historie revizí",
+        "hero_badge": "Vrstva playbooku poháněná AI",
+        "personae_eyebrow": "Mapa publika",
+        "proof_points_eyebrow": "Vrstva důvěryhodnosti",
+        "references_eyebrow": "Důkaz od zákazníka",
+        "see_less": "Zobrazit méně",
+        "see_more": "Zobrazit více...",
+        "use_cases_eyebrow": "Úhly sdělení",
+        "value_proposition_eyebrow": "Hlavní signál"
+      },
+      "persona": {
+        "pain_points": "Body bolesti"
+      },
+      "samples": {
+        "agent_name": "Činidlo",
+        "company_info": "Informace o společnosti",
+        "custom_fields": "Vlastní pole",
+        "disc_profile": "Profil DISKU",
+        "empty_no_agents": "Žádní agenti zatím vzorky nevygenerovali",
+        "empty_no_samples": "Nejsou k dispozici žádné vzorové zprávy",
+        "empty_select_lead": "Chcete-li zobrazit zprávy, vyberte potenciálního zákazníka",
+        "lead_details_column": "Podrobnosti o potenciálním zákazníkovi",
+        "leads_column": "Leads",
+        "linkedin_headline": "LinkedIn Titulek",
+        "linkedin_summary": "LinkedIn Shrnutí",
+        "messages_column": "Zprávy",
+        "step": "Krok %{number}",
+        "subject": "Podrobit"
+      },
+      "sections": {
+        "comments": "Diskuse",
+        "personae": "Cílové osoby",
+        "proof_points": "Důkazové body",
+        "references": "Referenční zákazníci",
+        "use_cases": "Případy použití",
+        "value_proposition": "Návrh hodnoty"
+      },
+      "show": {
+        "already_approved": "Tato příručka byla schválena",
+        "approve": "Schválit Playbook",
+        "approved_by": "Schváleno uživatelem",
+        "archive": "Archiv",
+        "changes_pending": "Pro tuto příručku byly požadovány změny",
+        "on_date": "na",
+        "pending_approval": "Tato příručka čeká na Vaše schválení",
+        "request_changes": "Vyžádejte si změny"
+      },
+      "statuses": {
+        "approved": "Schválený",
+        "archived": "Archivováno",
+        "changes_requested": "Požadované změny",
+        "draft": "Návrh"
+      },
+      "subtitle": "Zkontrolujte a schvalujte příručky pro vaši organizaci",
+      "table": {
+        "actions": "Akce",
+        "content": "Obsah",
+        "language": "Jazyk",
+        "personae": "personae",
+        "product": "Produkt",
+        "review": "Recenze",
+        "status": "Postavení",
+        "updated": "Poslední aktualizace",
+        "use_cases": "případy použití",
+        "view": "Pohled"
+      },
+      "tabs": {
+        "import_leads": "Importujte potenciální zákazníky",
+        "knowledge_base": "Znalostní báze",
+        "sample_leads_messages": "Ukázka Leads a zprávy",
+        "training_data": "Údaje o školení"
+      },
+      "title": "Playbooks"
+    },
+    "pundit": {
+      "not_authorized": "K provedení této akce nemáte oprávnění."
+    },
+    "replies": {
+      "ai_reply_agent": "Agent odpovědí AI"
+    },
+    "roi": {
+      "create_report": "Vytvořit zprávu",
+      "filter_all": "Vše Agents",
+      "funnel": {
+        "emails_sent": "E-maily odeslány",
+        "meetings": "Setkání",
+        "opened": "Otevřeno",
+        "replied": "Odpovězeno",
+        "revenue": "Příjmy",
+        "title": "Od kampaně ke smlouvě: Vaše cesta k hodnotě"
+      },
+      "funnels_tab": {
+        "coming_soon": "Marketingové cesty již brzy."
+      },
+      "metrics": {
+        "across_months": "Během %{count} měsíců partnerství",
+        "acv": "Průměrná hodnota kontraktu (ACV)",
+        "amplifa_roi": "Amplifa ROI",
+        "edit_acv": "Upravit ACV",
+        "edit_meeting_value": "Upravit hodnotu schůzky",
+        "emails_sent": "E-maily odeslány",
+        "meeting_rate": "Míra setkání",
+        "meeting_value": "Průměrná hodnota setkání",
+        "open_rate": "Open Rate",
+        "pipeline_revenue": "Řízené výnosy z potrubí",
+        "positive_outcomes": "Pozitivní výsledky",
+        "reply_rate": "Míra odpovědi",
+        "total_investment": "Celková investice Amplifa",
+        "vs_last_quarter": "vs. minulé čtvrtletí"
+      },
+      "refresh": "Obnovit",
+      "subtitle": "Sledování dopadu vašeho automatického kanálu na tržby.",
+      "tabs": {
+        "funnels": "Marketingové cesty",
+        "overview": "Přehled ROI"
+      },
+      "title": "ROI"
+    },
+    "roles": {
+      "amplifa_admin": "Správce Amplifa",
+      "customer_admin": "Správce zákazníka",
+      "customer_user": "Uživatel zákazníka"
+    },
+    "senders": {
+      "send_window": "Odeslat okno",
+      "send_window_end": "Odeslat konec okna",
+      "send_window_start": "Odeslat spuštění okna",
+      "timezone": "Časové pásmo"
+    },
+    "settings": {
+      "blacklists": {
+        "add_entry": "Přidat položku",
+        "cannot_delete_global": "Záznamy globální černé listiny nelze odstranit. Kontaktujte podporu Amplifa.",
+        "created": "Záznam přidán na černou listinu",
+        "delete_button": "Odstranit",
+        "delete_confirm": "Opravdu chcete tento záznam odstranit?",
+        "delete_failed": "Odebrání záznamu se nezdařilo",
+        "deleted": "Záznam byl odstraněn z černé listiny",
+        "empty": "Zatím žádné záznamy na černé listině.",
+        "form": {
+          "submit": "Přidat na černou listinu",
+          "type_label": "Typ",
+          "value_help": "Zadejte e-mailovou adresu nebo doménu, kterou chcete zablokovat",
+          "value_label": "E-mail nebo doména",
+          "value_placeholder": "email@example.com nebo domain.com"
+        },
+        "global_badge": "Globální",
+        "global_info": "Globální záznamy (označené 🌐) spravuje Amplifa a vztahují se na všechny organizace.",
+        "import_entries": "Importovat",
+        "import_form": {
+          "cancel": "Zrušit",
+          "input_help": "Vložte seznam e-mailů nebo domén (jeden na řádek). Systém automaticky zjistí, zda se jedná o e-mail nebo doménu.",
+          "input_label": "Příspěvky",
+          "input_placeholder": "Zadejte jeden e-mail nebo doménu na řádek...",
+          "submit": "Importovat",
+          "title": "Importovat položky černé listiny"
+        },
+        "imported": "%{created} položek přidáno, %{skipped} přeskočeno (duplikáty)",
+        "not_found": "Záznam na černé listině nebyl nalezen",
+        "sources": {
+          "import": "Importovat",
+          "interested": "Zájem",
+          "manual": "Manuál",
+          "unsubscribe": "Odhlásit odběr"
+        },
+        "subtitle": "Spravujte e-maily a domény, které byste nikdy neměli kontaktovat.",
+        "table": {
+          "actions": "Akce",
+          "created": "Vytvořeno",
+          "created_by": "Vytvořil",
+          "source": "Zdroj",
+          "type": "Typ",
+          "value": "E-mail / doména"
+        },
+        "title": "Černá listina",
+        "types": {
+          "domain": "Doména",
+          "email": "E-mail"
+        }
+      },
+      "company": {
+        "acv_help": "Průměrná hodnota vašich prodejních smluv",
+        "acv_label": "Průměrná hodnota kontraktu (ACV)",
+        "acv_placeholder": "10 000",
+        "calendly_help": "Váš odkaz Calendly pro rezervaci schůzek",
+        "calendly_label": "Calendly Odkaz na plánování",
+        "calendly_placeholder": "https://calendly.com/your-company/meeting",
+        "can_edit": "Může Upravit",
+        "cancel": "Zrušit",
+        "currency_help": "Vaše preferovaná měna pro finanční metriky",
+        "currency_label": "Měna",
+        "fields": {
+          "average_contract_value": "Průměrná hodnota kontraktu",
+          "calendly_url": "Calendly URL",
+          "name": "Název společnosti",
+          "website": "webové stránky"
+        },
+        "info_readonly": "Tato nastavení jsou aktuálně pouze pro čtení. Úplné funkce úprav již brzy.",
+        "locale_help": "Výchozí jazyk pro vaši organizaci",
+        "locale_label": "Výchozí jazyk",
+        "meeting_price_help": "Hodnota, kterou připisujete každé rezervované schůzce",
+        "meeting_price_label": "Průměrná hodnota setkání",
+        "meeting_price_placeholder": "500",
+        "monthly_subscription_help": "Vaše cena předplatného Amplifa (spravováno správcem)",
+        "monthly_subscription_label": "Měsíční předplatné",
+        "not_set": "Není nastaveno",
+        "onboarding_step_completed": "Krok registrace dokončen!",
+        "organization_data": "Podrobnosti o organizaci",
+        "read_only": "Pouze pro čtení",
+        "save": "Uložit změny",
+        "saved": "Nastavení byla úspěšně uložena",
+        "subtitle": "Spravujte profil a předvolby své organizace",
+        "title": "Nastavení společnosti",
+        "validation_errors": "Chyby ověření",
+        "website_help": "Hlavní web vaší společnosti",
+        "website_label": "Adresa URL webových stránek",
+        "website_placeholder": "https://www.example.com"
+      },
+      "email_accounts": {
+        "add_account": "Přidat e-mailový účet",
+        "contact_amplifa": "Chcete-li nastavit další e-mailové účty, kontaktujte Amplifa.",
+        "empty": "Zatím nejsou nakonfigurovány žádné e-mailové účty.",
+        "empty_hint": "Přidejte e-mailový účet a začněte odesílat kampaně.",
+        "new": {
+          "cancel": "Zrušit",
+          "display_name_help": "Jak příjemci uvidí jméno odesílatele (volitelné)",
+          "display_name_hint": "Jak příjemci uvidí jméno odesílatele",
+          "display_name_label": "Zobrazovaný název",
+          "display_name_placeholder": "Prodejní tým",
+          "email_help": "E-mailová adresa, která bude použita pro odeslání",
+          "email_label": "E-mailová adresa",
+          "email_placeholder": "odesílatel@vašespolečnost.com",
+          "info_pending": "Nové účty budou ve stavu „nevyřízeno“, dokud nebudou zkontrolovány a schváleny Amplifa. Po schválení začne proces zahřívání.",
+          "submit": "Vytvořit e-mailový účet",
+          "subtitle": "Přidejte nový e-mailový účet pro odchozí kampaně",
+          "title": "Přidat e-mailový účet",
+          "validation_errors": "Ve vašem příspěvku došlo k chybám"
+        },
+        "statuses": {
+          "active": "Aktivní",
+          "paused": "Pozastaveno",
+          "pending": "Čeká na vyřízení",
+          "suspended": "Pozastaveno",
+          "warming": "Zahřívání"
+        },
+        "subtitle": "E-mailové účty vyžadují 3týdenní zahřívací období, než bude plná kapacita odesílání.",
+        "table": {
+          "created": "Vytvořeno",
+          "display_name": "Zobrazovaný název",
+          "email": "E-mailová adresa",
+          "status": "Postavení",
+          "warmup_progress": "Průběh zahřívání"
+        },
+        "title": "E-mailové účty",
+        "warmup_complete": "Kompletní",
+        "warmup_days_remaining": "Zbývá %{days} dní"
+      }
+    },
+    "time": {
+      "formats": {
+        "date_only": "%d.%m.%Y",
+        "long": "%B %d, %Y %I:%M %p",
+        "short": "%d.%m.%Y %H:%M"
+      },
+      "just_now": "Právě teď"
+    },
+    "timeline": {
+      "coming_soon": "Již brzy",
+      "completed": "Dokončeno",
+      "launch": {
+        "description": "Začněte generovat kvalifikované potenciální zákazníky",
+        "title": "Zahájit"
+      },
+      "onboarding": {
+        "description": "Vyplňte svůj profil a preference",
+        "title": "Přihlášení"
+      },
+      "setup": {
+        "description": "Prohlédněte si příručky a nakonfigurujte kampaně",
+        "title": "Nastavení kampaně"
+      },
+      "stage_label": "Fáze",
+      "subtitle": "Sledujte svůj pokrok od registrace k aktivnímu generování potenciálních zákazníků",
+      "title": "Vaše cesta ke spuštění",
+      "warming": {
+        "description": "3týdenní zahřívací období pro e-mailové účty",
+        "duration": "~3 týdny",
+        "title": "Oteplování e-mailů"
+      },
+      "you_are_here": "Jste tady"
+    },
+    "workspaces": {
+      "no_workspace": {
+        "description": "Váš účet momentálně není připojen k žádnému aktivnímu pracovnímu prostoru. Obraťte se na svého administrátora nebo podporu Amplifa, abyste znovu získali přístup.",
+        "heading": "Žádný aktivní pracovní prostor",
+        "logout": "Odhlásit se",
+        "page_title": "Žádný pracovní prostor - Amplifa"
+      },
+      "switcher": {
+        "label": "Pracovní prostor"
+      }
+    }
+  }
+}

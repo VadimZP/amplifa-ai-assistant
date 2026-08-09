@@ -1,0 +1,51 @@
+# Blacklists fixtures for testing
+
+# Global blacklist entries (applies to ALL organizations)
+global_email:
+  organization: ~
+  created_by: amplifa_admin
+  value: spam@global-blocked.com
+  value_type: email
+  source: manual
+  reason: "Known spam sender"
+
+global_domain:
+  organization: ~
+  created_by: amplifa_admin
+  value: spam-domain.com
+  value_type: domain
+  source: manual
+  reason: "Known spam domain"
+
+# Organization-specific blacklist entries
+acme_email_blacklist:
+  organization: acme
+  created_by: customer_admin
+  value: competitor@rival.com
+  value_type: email
+  source: manual
+  reason: "Competitor email"
+
+acme_domain_blacklist:
+  organization: acme
+  created_by: customer_admin
+  value: blocked.com
+  value_type: domain
+  source: import
+  reason: "Requested to be excluded"
+
+beta_unsubscribe:
+  organization: beta
+  created_by: beta_user
+  value: unsubscribed@customer.com
+  value_type: email
+  source: unsubscribe
+  reason: "Customer unsubscribed"
+
+growth_lab_domain:
+  organization: growth_lab
+  created_by: growth_lab_admin
+  value: donotcontact.com
+  value_type: domain
+  source: manual
+  reason: ~

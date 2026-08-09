@@ -1,0 +1,13 @@
+<% content_for :preheader do %><%= t('mailers.email_two_factor.preheader') %><% end %>
+
+<h1 style="margin: 0 0 18px; color: #111827; font-size: 24px; line-height: 1.25; font-weight: 700;"><%= t('mailers.email_two_factor.greeting') %></h1>
+
+<p style="margin: 0 0 16px; color: #374151; font-size: 16px; line-height: 1.6;">
+  <%= t('mailers.email_two_factor.intro') %>
+</p>
+
+<%= render 'shared/mailer_button', text: t('mailers.email_two_factor.cta'), url: @verification_url %>
+
+<p class="note" style="margin: 0 0 16px; color: #6b7280; font-size: 14px; line-height: 1.6;">
+  <%= t('mailers.email_two_factor.ignore') %>
+</p>

@@ -1,0 +1,75 @@
+acme_john_conversation:
+  organization: acme
+  lead: john_doe
+  mailbox: acme_mailbox_one
+  agent: draft_agent
+  status: open
+  replies_count: 1
+  unread_count: 1
+  last_reply_at: <%= 2.hours.ago %>
+  last_reply_preview: "Thanks for reaching out! I'd love to learn more about what you offer."
+  has_bounce: false
+  latest_relevant_reply_is_out_of_office: false
+  ooo_return_date: ~
+  last_sent_reply_at: <%= 1.hour.ago %>
+
+acme_jane_conversation:
+  organization: acme
+  lead: jane_smith
+  mailbox: acme_mailbox_one
+  agent: draft_agent
+  status: closed
+  replies_count: 1
+  unread_count: 0
+  last_reply_at: <%= 1.day.ago %>
+  last_reply_preview: "I am currently out of the office until January 15th."
+  has_bounce: false
+  latest_relevant_reply_is_out_of_office: true
+  ooo_return_date: <%= Date.current + 7.days %>
+  last_sent_reply_at: ~
+
+acme_bounce_conversation:
+  organization: acme
+  lead: blacklisted_lead
+  mailbox: acme_mailbox_one
+  agent: ~
+  status: open
+  replies_count: 1
+  unread_count: 0
+  last_reply_at: <%= 3.hours.ago %>
+  last_reply_preview: "The email account you tried to reach does not exist."
+  has_bounce: true
+  latest_relevant_reply_is_out_of_office: false
+  ooo_return_date: ~
+  last_sent_reply_at: ~
+
+growth_lab_conversation:
+  organization: growth_lab
+  lead: growth_lab_lead
+  mailbox: growth_lab_mailbox
+  agent: growth_lab_agent
+  status: open
+  replies_count: 1
+  unread_count: 0
+  last_reply_at: <%= 1.hour.ago %>
+  last_reply_preview: "Yes, let's schedule a call!"
+  has_bounce: false
+  latest_relevant_reply_is_out_of_office: false
+  ooo_return_date: ~
+  last_sent_reply_at: ~
+
+snoozed_conversation:
+  organization: acme
+  lead: blacklisted_lead
+  mailbox: acme_mailbox_two
+  agent: ~
+  status: snoozed
+  snoozed_until: <%= 1.week.from_now %>
+  replies_count: 0
+  unread_count: 0
+  last_reply_at: ~
+  last_reply_preview: ~
+  has_bounce: false
+  latest_relevant_reply_is_out_of_office: false
+  ooo_return_date: ~
+  last_sent_reply_at: ~

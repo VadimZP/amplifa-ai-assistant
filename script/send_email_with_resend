@@ -1,0 +1,222 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'base64'
+require 'json'
+require 'net/http'
+require 'optparse'
+require 'pathname'
+require 'uri'
+
+RESEND_EMAILS_URI = URI('https://api.resend.com/emails')
+DEFAULT_TEXT_BODY = "Hi,\n\nPlease see the attached file.\n"
+
+options = {
+  attachments: [],
+  bcc: [],
+  cc: [],
+  dry_run: true,
+  subject: nil,
+  to: []
+}
+
+def split_addresses(value)
+  value.to_s.split(',').map(&:strip).reject(&:empty?)
+end
+
+def read_optional_file(path)
+  Pathname.new(path).expand_path.read
+end
+
+def load_rails_environment
+  require_relative '../config/environment'
+rescue LoadError => e
+  warn "Unable to load Rails environment: #{e.message}"
+end
+
+def rails_resend_api_key
+  return unless defined?(Rails)
+
+  Rails.application.credentials.dig(:resend, :api_key).to_s
+end
+
+def rails_mailer_from
+  return unless defined?(Rails)
+
+  email = ENV.fetch('MAILER_FROM', 'noreply@updates.amplifa.eu').to_s.strip
+  return if email.empty?
+
+  email.include?('<') ? email : "Amplifa <#{email}>"
+end
+
+def content_type_for(path)
+  case path.extname.downcase
+  when '.csv' then 'text/csv'
+  when '.doc' then 'application/msword'
+  when '.docx' then 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+  when '.gif' then 'image/gif'
+  when '.html', '.htm' then 'text/html'
+  when '.jpeg', '.jpg' then 'image/jpeg'
+  when '.json' then 'application/json'
+  when '.md', '.markdown' then 'text/markdown'
+  when '.pdf' then 'application/pdf'
+  when '.png' then 'image/png'
+  when '.txt' then 'text/plain'
+  when '.xls' then 'application/vnd.ms-excel'
+  when '.xlsx' then 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+  when '.zip' then 'application/zip'
+  else 'application/octet-stream'
+  end
+end
+
+def build_attachment(path)
+  attachment_path = Pathname.new(path).expand_path
+  abort "Attachment not found: #{attachment_path}" unless attachment_path.file?
+
+  {
+    filename: attachment_path.basename.to_s,
+    content: Base64.strict_encode64(attachment_path.binread),
+    content_type: content_type_for(attachment_path)
+  }
+end
+
+parser = OptionParser.new do |opts|
+  opts.banner = <<~BANNER
+    Usage: script/send_email_with_resend --to EMAIL --subject SUBJECT --file PATH [options]
+
+    Sends a general-purpose email through Resend. Dry-run is enabled by default;
+    pass --send to actually send the message.
+
+    Credentials:
+      RESEND_API_KEY       Resend API key; falls back to Rails credentials resend.api_key
+      RESEND_FROM          Verified sender address; falls back to MAILER_FROM/Rails default
+
+    Examples:
+      script/send_email_with_resend --to person@example.com --subject "Docs" --file ./doc.pdf --text "Attached." --send
+      ruby script/send_email_with_resend --to a@example.com,b@example.com --file ./report.csv --subject "Report"
+  BANNER
+
+  opts.on('--send', 'Actually send the email; default is dry-run') do
+    options[:dry_run] = false
+  end
+
+  opts.on('--to EMAILS', 'Recipient email address(es); comma-separated; repeatable') do |value|
+    options[:to].concat(split_addresses(value))
+  end
+
+  opts.on('--cc EMAILS', 'CC email address(es); comma-separated; repeatable') do |value|
+    options[:cc].concat(split_addresses(value))
+  end
+
+  opts.on('--bcc EMAILS', 'BCC email address(es); comma-separated; repeatable') do |value|
+    options[:bcc].concat(split_addresses(value))
+  end
+
+  opts.on('--from FROM', 'Verified sender address, e.g. "Amplifa <docs@example.com>"') do |value|
+    options[:from] = value.to_s.strip
+  end
+
+  opts.on('--subject SUBJECT', 'Email subject') do |value|
+    options[:subject] = value
+  end
+
+  opts.on('--text TEXT', 'Plain-text email body') do |value|
+    options[:text] = value
+  end
+
+  opts.on('--text-file PATH', 'Read plain-text email body from file') do |path|
+    options[:text] = read_optional_file(path)
+  end
+
+  opts.on('--html HTML', 'HTML email body') do |value|
+    options[:html] = value
+  end
+
+  opts.on('--html-file PATH', 'Read HTML email body from file') do |path|
+    options[:html] = read_optional_file(path)
+  end
+
+  opts.on('--file PATH', 'Attachment path; repeat for multiple attachments') do |path|
+    options[:attachments] << path
+  end
+
+  opts.on('-h', '--help', 'Show this help') do
+    puts opts
+    exit 0
+  end
+end
+
+parser.parse!
+
+api_key = ENV.fetch('RESEND_API_KEY', '').strip
+from = options[:from].to_s.strip
+from = ENV.fetch('RESEND_FROM', '').strip if from.empty?
+
+if (api_key.empty? && !options[:dry_run]) || from.empty?
+  load_rails_environment
+  api_key = rails_resend_api_key.to_s.strip if api_key.empty?
+  from = rails_mailer_from.to_s.strip if from.empty?
+end
+
+text_body = options[:text].to_s.empty? ? DEFAULT_TEXT_BODY : options[:text].to_s
+attachments = options[:attachments].map { |path| build_attachment(path) }
+
+missing = []
+missing << 'RESEND_API_KEY or Rails credentials resend.api_key' if api_key.empty? && !options[:dry_run]
+missing << 'RESEND_FROM, --from, or MAILER_FROM' if from.empty?
+missing << '--to' if options[:to].empty?
+missing << '--subject' if options[:subject].to_s.strip.empty?
+missing << '--file' if attachments.empty?
+abort "Missing required value(s): #{missing.join(', ')}" if missing.any?
+
+payload = {
+  from: from,
+  to: options[:to],
+  subject: options[:subject].to_s,
+  text: text_body,
+  attachments: attachments
+}
+payload[:cc] = options[:cc] if options[:cc].any?
+payload[:bcc] = options[:bcc] if options[:bcc].any?
+payload[:html] = options[:html].to_s unless options[:html].to_s.empty?
+
+if options[:dry_run]
+  puts JSON.pretty_generate(
+    mode: 'dry_run',
+    endpoint: RESEND_EMAILS_URI.to_s,
+    from: from,
+    to: payload[:to],
+    cc: payload[:cc],
+    bcc: payload[:bcc],
+    subject: payload[:subject],
+    has_text: !payload[:text].empty?,
+    has_html: payload.key?(:html),
+    attachments: options[:attachments].zip(attachments).map do |path, attachment|
+      attachment_path = Pathname.new(path).expand_path
+      {
+        path: attachment_path.to_s,
+        filename: attachment[:filename],
+        bytes: attachment_path.size,
+        content_type: attachment[:content_type]
+      }
+    end
+  )
+  exit 0
+end
+
+request = Net::HTTP::Post.new(RESEND_EMAILS_URI)
+request['Authorization'] = "Bearer #{api_key}"
+request['Content-Type'] = 'application/json'
+request.body = JSON.generate(payload)
+
+response = Net::HTTP.start(RESEND_EMAILS_URI.host, RESEND_EMAILS_URI.port, use_ssl: true) do |http|
+  http.request(request)
+end
+
+if response.is_a?(Net::HTTPSuccess)
+  puts response.body
+else
+  warn "Resend request failed: HTTP #{response.code}"
+  warn response.body
+  exit 1
+end

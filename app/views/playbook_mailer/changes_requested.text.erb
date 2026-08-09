@@ -1,0 +1,15 @@
+<%= t('mailers.playbook.changes_requested.greeting') %>
+
+<%= t('mailers.playbook.changes_requested.body',
+      organization: @organization.name,
+      product: @playbook.product_name,
+      requester: @requested_by.full_name) %>
+
+<%= @requested_by.full_name %> commented:
+"<%= @comment.body %>"
+
+<%= t('mailers.playbook.changes_requested.cta') %>:
+<%= admin_organization_url(@playbook.organization) %>
+
+---
+<%= t('mailers.signature') %>

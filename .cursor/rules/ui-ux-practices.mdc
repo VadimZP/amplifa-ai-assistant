@@ -1,0 +1,56 @@
+---
+description: UI/UX best practices for building frontend elements
+globs: app/javascript/**/*.tsx
+alwaysApply: false
+---
+
+# UI/UX Best Practices
+
+Every interactive element needs all of its states designed, not just the happy path.
+
+## Always handle the four states
+
+1. **Loading** — never leave a dead UI. Buttons take `loading` (renders a spinner and disables
+   itself); for lists/panels use a skeleton or spinner, not a blank area.
+2. **Empty** — use `TableEmpty` for tables; elsewhere give a short explanation plus the primary
+   action that resolves it. Never render a bare empty box.
+3. **Error** — surface server errors inline (`<Input error={errors.field} />`) and transient failures
+   via `toast.error(...)`. Never swallow a failure silently.
+4. **Success** — confirm mutations with `toast.success(...)` or a flash message.
+
+## Prevent double submits
+
+Disable the submit control while in flight — `loading={processing}` from `useForm` covers both the
+spinner and the disabled state.
+
+## Destructive and irreversible actions
+
+Use `variant="destructive"`, and require an explicit confirmation step before deleting. Say what will
+be affected in the confirmation copy.
+
+## Accessibility
+
+- Every input needs a real `label` (the `Input` component's `label` prop wires up `id`/`htmlFor`).
+- Icon-only buttons need `aria-label`.
+- Keep keyboard focus visible — don't strip the `focus-visible:` ring classes that components ship with.
+- Convey state with text or an icon in addition to color (colorblind users).
+- Decorative icons get `aria-hidden`; meaningful ones need an accessible name.
+
+## Forms
+
+- Label every field; mark optional/required consistently with the rest of the app.
+- Validate on submit, and show errors adjacent to the offending field, not only as a toast.
+- Preserve user input when a submit fails — never clear the form on error.
+
+## Layout and content
+
+- Long lists need pagination or virtualization plus a search/filter affordance (see `SearchInput`).
+- Text that can overflow needs `truncate` and a `title`, or wrapping — don't let it break the layout.
+- Keep spacing on the existing scale (`gap-2`, `gap-3`, `p-4`, `space-y-4`); don't introduce one-off values.
+- Respect the responsive patterns already used in layouts — check narrow widths before finishing.
+
+## Streaming / async content
+
+For incremental content (like AI responses), render tokens as they arrive, show a clear in-progress
+indicator, and give the user a way to stop. Keep the scroll pinned to the newest content unless the
+user has scrolled up.

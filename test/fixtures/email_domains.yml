@@ -1,0 +1,51 @@
+# Email domain fixtures for testing
+
+# Google Workspace domain for Acme
+acme_google:
+  organization: acme
+  provider_type: google
+  domain: acme.com
+  microsoft_tenant_id: ~
+  status: active
+  last_verified_at: <%= 1.day.ago %>
+  verification_error: ~
+
+# Microsoft domain for Beta Industries
+beta_microsoft:
+  organization: beta
+  provider_type: microsoft
+  domain: beta-industries.com
+  microsoft_tenant_id: "12345678-1234-1234-1234-123456789012"
+  status: active
+  last_verified_at: <%= 2.days.ago %>
+  verification_error: ~
+
+# Google domain for Growth Lab
+growth_lab_google:
+  organization: growth_lab
+  provider_type: google
+  domain: growthlab.com
+  microsoft_tenant_id: ~
+  status: active
+  last_verified_at: <%= 3.days.ago %>
+  verification_error: ~
+
+# Inactive domain for testing
+inactive_domain:
+  organization: techcorp
+  provider_type: google
+  domain: techcorp.com
+  microsoft_tenant_id: ~
+  status: inactive
+  last_verified_at: ~
+  verification_error: ~
+
+# Domain with error for testing
+error_domain:
+  organization: stellar_sales
+  provider_type: microsoft
+  domain: stellarsales.com
+  microsoft_tenant_id: "00000000-0000-0000-0000-000000000000"
+  status: error
+  last_verified_at: ~
+  verification_error: "Invalid tenant ID"

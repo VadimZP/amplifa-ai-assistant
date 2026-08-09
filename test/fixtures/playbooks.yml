@@ -1,0 +1,67 @@
+# Playbooks fixtures for testing
+
+draft_playbook:
+  organization: acme
+  product: {"name": "CRM Platform", "description": "Help sales teams close more deals faster with AI-powered insights", "metadata": {}}
+  status: draft
+  language: en
+  value_proposition: "Help sales teams close more deals faster with AI-powered insights"
+  personae: [{"id": "1", "name": "Sales Manager Sarah", "title": "Sales Manager", "order": 1, "pain_points": ["Long sales cycles", "Low conversion rates", "Poor lead quality"]}]
+  use_cases: [{"id": "1", "title": "Lead Management", "description": "Efficiently manage and track leads through the sales pipeline with automated scoring", "order": 1}]
+  references: []
+  proof_points: []
+  ai_generation_notes: null
+
+approved_playbook:
+  organization: acme
+  product: {"name": "CRM Platform", "description": "Streamline your sales process with intelligent automation", "metadata": {}}
+  status: approved
+  language: en
+  value_proposition: "Streamline your sales process with intelligent automation"
+  personae: [{"id": "2", "name": "Sales Director Sam", "title": "VP Sales", "order": 1, "pain_points": ["Team productivity", "Reporting overhead"]}]
+  use_cases: [{"id": "2", "title": "Sales Analytics", "description": "Get real-time insights into sales performance", "order": 1}]
+  references: []
+  proof_points: []
+  approved_at: <%= 1.day.ago %>
+  approved_by: customer_admin
+  ai_generation_notes: null
+
+other_org_playbook:
+  organization: beta
+  product: {"name": "Analytics Suite", "description": "Advanced analytics for data-driven decisions", "metadata": {}}
+  status: draft
+  language: en
+  value_proposition: "Advanced analytics for data-driven decisions"
+  personae: [{"id": "3", "name": "Data Analyst Dana", "title": "Lead Data Analyst", "order": 1, "pain_points": ["Complex data sources", "Manual reporting"]}]
+  use_cases: [{"id": "3", "title": "Data Visualization", "description": "Create beautiful dashboards", "order": 1}]
+  references: []
+  proof_points: []
+  ai_generation_notes: null
+
+# A playbook with references and proof points for testing
+playbook_with_references:
+  organization: acme
+  product: {"name": "Enterprise CRM", "description": "Enterprise-grade CRM solution", "metadata": {}}
+  status: approved
+  language: en
+  value_proposition: "Transform your enterprise sales with AI-powered CRM"
+  personae: [{"id": "4", "name": "Enterprise Sales Lead", "title": "Head of Sales", "order": 1, "pain_points": ["Complex sales cycles", "Multiple stakeholders"]}]
+  use_cases: [{"id": "4", "title": "Enterprise Sales", "description": "Manage complex B2B sales processes", "order": 1}]
+  references: [{"id": "ref1", "customer_name": "Acme Corp", "description": "Increased sales by 40% in 6 months", "order": 1, "file_url": "https://s3.example.com/case-studies/acme.pdf", "file_name": "acme-case-study.pdf", "file_size": 1024000}, {"id": "ref2", "customer_name": "TechStart Inc", "description": "Reduced sales cycle by 30%", "order": 2}]
+  proof_points: [{"id": "pp1", "claim": "40% increase in conversion", "description": "Based on customer data from 2024", "order": 1, "file_url": "https://s3.example.com/proof/conversion-stats.pdf", "file_name": "conversion-stats.pdf", "file_size": 512000}, {"id": "pp2", "claim": "NPS score of 72", "description": "Customer satisfaction survey results", "order": 2}]
+  approved_at: <%= 1.day.ago %>
+  approved_by: customer_admin
+  ai_generation_notes: null
+
+# A playbook with no agent references (for deletion tests)
+deletable_playbook:
+  organization: acme
+  product: {"name": "Deletable Product", "description": "A product that can be safely deleted", "metadata": {}}
+  status: draft
+  language: en
+  value_proposition: "A deletable playbook for testing"
+  personae: []
+  use_cases: []
+  references: []
+  proof_points: []
+  ai_generation_notes: null

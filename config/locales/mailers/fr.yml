@@ -1,0 +1,95 @@
+---
+fr:
+  mailers:
+    invitation:
+      subject: Vous êtes invité à rejoindre %{organization} sur Amplifa
+      greeting: Bonjour %{name},
+      intro: "%{admin_name} vous a invité à rejoindre %{organization} sur Amplifa,
+        la plateforme d'automatisation sortante basée sur l'IA."
+      description: Cliquez sur le bouton ci-dessous pour accepter votre invitation
+        et configurer votre compte. Vous pourrez commencer à générer des leads qualifiés
+        pour votre entreprise.
+      cta: Accepter l'invitation
+      expiry: Cette invitation expire le %{date}.
+      help: Si vous avez des questions, veuillez contacter votre administrateur.
+    playbook:
+      generated:
+        subject: Playbook généré pour %{product} (%{organization})
+        greeting: Génération du playbook terminée
+        body: Un nouveau playbook a été généré pour %{product} à %{organization}.
+          L'IA a analysé le site Web et créé %{persona_count} personnes et %{use_case_count}
+          cas d'utilisation. Généré par %{initiated_by}.
+        cta: Consulter le Playbook
+      generation_failed:
+        subject: Échec de la génération du playbook pour %{product} (%{organization})
+        greeting: Échec de la génération du playbook
+        body: La génération d'IA pour %{product} sur %{organization} a échoué lors
+          de l'analyse de %{website}.
+        error_label: Erreur
+        next_steps: Veuillez vérifier l'URL du site web et réessayer. Si le problème
+          persiste, contactez le support.
+      changes_requested:
+        subject: Modifications demandées pour le playbook %{product} (%{organization})
+        greeting: Modifications demandées
+        body: "%{requester} de %{organization} a demandé des modifications au playbook
+          %{product}. Leurs commentaires sont ci-dessous :"
+        cta: Consulter et apporter des modifications
+      approved:
+        subject: Playbook %{product} approuvé par %{organization}
+        greeting: Playbook approuvé !
+        body: "%{approver} de %{organization} a approuvé le playbook %{product}. Le
+          playbook est maintenant prêt à être utilisé pour la planification de campagne."
+        cta: Voir le Playbook
+      moved_to_draft:
+        subject: Playbook %{product} mis à jour et prêt à être révisé
+        greeting: Playbook prêt pour révision
+        body: L'équipe Amplifa a mis à jour votre playbook %{product} en fonction
+          de vos commentaires. Veuillez examiner les modifications.
+        cta: Consulter le Playbook
+      ready_for_review:
+        subject: 'Nouveau playbook prêt à être révisé : %{product}'
+        greeting: Nouveau playbook prêt
+        body: Votre équipe Amplifa a créé un playbook pour %{product}. Veuillez l'examiner
+          et l'approuver.
+        cta: Consulter et approuver
+      archived:
+        subject: Playbook %{product} archivé
+        greeting: Playbook archivé
+        body: Le playbook %{product} a été archivé par %{archiver}.
+        cta: Voir le Playbook
+      new_comment:
+        subject: Nouveau commentaire sur le playbook %{product}
+        greeting: Nouveau commentaire ajouté
+        body: "%{commenter} a ajouté un commentaire au playbook %{product}."
+        cta: Voir le commentaire
+    admin_notification:
+      customer_lead_import_completed:
+        subject: Importation de prospects client terminée pour %{organization_name}
+          (%{importer_name})
+      customer_lead_import_failed:
+        subject: Échec de l'importation des prospects client pour %{organization_name}
+          (%{importer_name})
+      lead_list_file_uploaded:
+        subject: Fichier de liste de prospects importé par %{uploader_name} (%{organization_name})
+    password_reset:
+      subject: Réinitialisez votre mot de passe Amplifa
+      greeting: Réinitialiser votre mot de passe
+      intro: Nous avons reçu une demande de réinitialisation du mot de passe de votre
+        compte.
+      instructions: Cliquez sur le bouton ci-dessous pour définir un nouveau mot de
+        passe.
+      cta: Réinitialiser le mot de passe
+      ignore: Si vous n'avez pas fait cette demande, vous pouvez ignorer cet e-mail
+        en toute sécurité.
+    verify_account:
+      subject: Activez votre compte Amplifa
+      preheader: Terminez la configuration de votre compte Amplifa.
+      greeting: Bienvenue sur Amplifa
+      intro: Votre compte a été créé. Veuillez l'activer pour terminer la configuration
+        et commencer à utiliser Amplifa.
+      cta: Activer le compte
+      ignore: Si vous n'avez pas créé ce compte, vous pouvez ignorer cet e-mail en
+        toute sécurité.
+    conversation_forward:
+      lead_company: Entreprise
+    signature: Cordialement,<br>L'équipe Amplifa

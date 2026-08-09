@@ -1,0 +1,65 @@
+# Mailbox fixtures for testing
+
+# Active mailbox for Acme
+acme_mailbox_one:
+  email: sales@acme.com
+  email_domain: acme_google
+  organization: acme
+  sender: acme_john
+  first_name: Sales
+  last_name: Team
+  display_name: Acme Sales
+  status: active
+  daily_send_limit: 200
+  warmup_started_at: <%= 30.days.ago %>
+
+# Second mailbox for Acme (still warming up)
+acme_mailbox_two:
+  email: outreach@acme.com
+  email_domain: acme_google
+  organization: acme
+  sender: acme_jane
+  first_name: Outreach
+  last_name: Team
+  display_name: ~
+  status: active
+  daily_send_limit: 100
+  warmup_started_at: <%= 10.days.ago %>
+
+# Paused mailbox for testing
+acme_paused_mailbox:
+  email: paused@acme.com
+  email_domain: acme_google
+  organization: acme
+  first_name: Paused
+  last_name: Account
+  display_name: ~
+  status: paused
+  daily_send_limit: 200
+  warmup_started_at: <%= 60.days.ago %>
+
+# Beta mailbox
+beta_mailbox:
+  email: contact@beta-industries.com
+  email_domain: beta_microsoft
+  organization: beta
+  sender: beta_sarah
+  first_name: Contact
+  last_name: Team
+  display_name: Beta Contact
+  status: active
+  daily_send_limit: 150
+  warmup_started_at: <%= 25.days.ago %>
+
+# Growth Lab mailbox
+growth_lab_mailbox:
+  email: hello@growthlab.com
+  email_domain: growth_lab_google
+  organization: growth_lab
+  sender: growth_lab_mike
+  first_name: Hello
+  last_name: Team
+  display_name: Growth Lab
+  status: active
+  daily_send_limit: 200
+  warmup_started_at: ~

@@ -1,0 +1,18 @@
+<% lead_name = @lead&.full_name || @lead&.email || '-' %>
+<% content_for :preheader do %><%= t('mailers.meeting_assignment.body', default: '%{assigned_by} assigned you to a meeting in Amplifa.', assigned_by: @assigned_by.full_name) %><% end %>
+
+<h1 style="margin: 0 0 18px; color: #111827; font-size: 24px; line-height: 1.25; font-weight: 700;"><%= t('mailers.meeting_assignment.greeting', default: 'Hi %{name},', name: @assignee.first_name.presence || @assignee.full_name) %></h1>
+
+<p style="margin: 0 0 16px; color: #374151; font-size: 16px; line-height: 1.6;">
+  <%= t('mailers.meeting_assignment.body', default: '%{assigned_by} assigned you to a meeting in Amplifa.', assigned_by: @assigned_by.full_name) %>
+</p>
+
+<%= render 'shared/mailer_details', rows: [
+  [t('mailers.meeting_assignment.lead_label', default: 'Lead'), lead_name],
+  [t('mailers.meeting_assignment.company_label', default: 'Company'), @lead&.company.presence || '-'],
+  [t('mailers.meeting_assignment.agent_label', default: 'Agent'), @agent&.name || '-'],
+  [t('mailers.meeting_assignment.scheduled_at_label', default: 'Meeting time'), @meeting.scheduled_at.present? ? l(@meeting.scheduled_at, format: :long) : t('mailers.meeting_assignment.not_scheduled', default: 'Not scheduled yet')],
+  [t('mailers.meeting_assignment.location_label', default: 'Location'), @meeting.location.presence || '-']
+] %>
+
+<%= render 'shared/mailer_button', text: t('mailers.meeting_assignment.cta', default: 'Open Meetings'), url: @meetings_url %>

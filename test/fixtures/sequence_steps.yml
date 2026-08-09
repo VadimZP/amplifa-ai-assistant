@@ -1,0 +1,77 @@
+# SequenceStep fixtures for testing
+
+# Email step for draft_agent (ACME org)
+step_one_email:
+  agent: draft_agent
+  position: 1
+  event_type: email
+  name: "Initial Outreach"
+  delay_days: 0
+  active: true
+
+step_two_email:
+  agent: draft_agent
+  position: 2
+  event_type: email
+  name: "First Follow-up"
+  delay_days: 3
+  active: true
+
+step_three_inactive:
+  agent: draft_agent
+  position: 3
+  event_type: email
+  name: "Second Follow-up (Inactive)"
+  delay_days: 7
+  active: false
+
+step_four_email:
+  agent: draft_agent
+  position: 4
+  event_type: email
+  name: "Third Follow-up"
+  delay_days: 1
+  active: true
+
+# Email step for ready_agent
+ready_agent_step_one:
+  agent: ready_agent
+  position: 1
+  event_type: email
+  name: "Ready Agent Initial Outreach"
+  delay_days: 0
+  active: true
+
+# LinkedIn placeholder step (for testing future event types)
+linkedin_step:
+  agent: ready_agent
+  position: 2
+  event_type: linkedin_message
+  name: "LinkedIn Outreach"
+  delay_days: 0
+  active: true
+
+# Step for beta org agent (for cross-org testing)
+beta_step:
+  agent: other_org_agent
+  position: 1
+  event_type: email
+  name: "Beta Initial Outreach"
+  delay_days: 0
+  active: true
+
+global_step_one_email:
+  global_sequence: shared_global_sequence
+  position: 1
+  event_type: email
+  name: "Shared Initial Outreach"
+  delay_days: 0
+  active: true
+
+global_step_two_email:
+  global_sequence: shared_global_sequence
+  position: 2
+  event_type: email
+  name: "Shared Follow-up"
+  delay_days: 3
+  active: true

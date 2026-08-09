@@ -1,0 +1,3748 @@
+---
+pt-BR:
+  hello: Olá mundo
+  pundit:
+    not_authorized: Você não está autorizado a realizar esta ação.
+  navigation:
+    dashboard: Painel
+    settings: Configurações
+    team: Equipe
+    logout: Sair
+    admin: Admin
+    activities: Atividades
+    organizations: Organizações
+    users: Usuários
+    invitations: Convites
+    playbooks: Playbooks
+    leads: Leads
+    people: Pessoas
+    agents: Agentes
+    imports: Importações
+    campaigns: Campanhas
+    email_accounts: Contas de E-mail
+    email_domains: Domínios de E-mail
+    senders: Remetentes
+    mailboxes: Caixas de Entrada
+    replies: Respostas
+    blacklist: Lista Negra
+    language_selector: Idioma
+    select_language: Selecionar idioma
+    admin_navigation: Navegação Admin
+    customer_navigation: Navegação do Cliente
+    admin_badge: AMPLIFA ADMIN
+    app_name: Amplifa
+  org_admin:
+    dashboard:
+      title: Admin da Organização
+      heading: Administração da Organização
+      manage_description: Gerencie as configurações da sua organização, membros da
+        equipe e mais.
+      no_organization: Nenhuma organização encontrada.
+  dashboard:
+    title: Painel
+    welcome_back: Bem-vindo de volta
+    subtitle_ready: Suas campanhas estão prontas para gerar leads
+    subtitle_onboarding: Complete seu onboarding para começar a gerar leads
+    stats:
+      team_members: Membros da Equipe
+      active_campaigns: Campanhas Ativas
+      total_leads: Total de Leads
+    get_started:
+      title: Começar
+      description: Crie sua primeira campanha para começar a gerar e-mails de saída
+        hiperpersonalizados.
+      create_campaign: Criar Campanha
+    recent_activity:
+      title: Atividade Recente
+      no_activity: Nenhuma atividade recente para exibir
+  senders:
+    send_window: Janela de envio
+    timezone: Fuso horário
+    send_window_start: Enviar início da janela
+    send_window_end: Enviar final da janela
+  onboarding:
+    title: Comece com o Amplifa
+    subtitle: Complete estas etapas para começar a gerar leads
+    progress: "%{completed} de %{total} etapas concluídas"
+    progress_of: " de "
+    progress_suffix: " etapas concluídas"
+    complete_message: Onboarding concluído! Você está pronto para começar a gerar
+      leads.
+    complete_title: "\U0001F389 Onboarding Concluído!"
+    complete_description: Você está configurado e pronto para começar a gerar leads
+      qualificados com o Amplifa.
+    expand_checklist: Expandir lista de verificação
+    collapse_checklist: Recolher lista de verificação
+    use_language_selector: Use o seletor de idioma na navegação superior
+    stage_label: 'Etapa '
+    duration_label: 'Duração: '
+    steps:
+      profile_completed:
+        title: Completar Perfil da Empresa
+        description: Adicione seu site, ACV e link do Calendly
+        action: Completar Perfil
+      language_selected:
+        title: Escolher Seu Idioma
+        description: Selecione seu idioma preferido
+        action: Selecionar Idioma
+  auth:
+    login:
+      page_title: Entrar
+      email_label: Endereço de e-mail
+      password_label: Senha
+      subtitle: Faça login para continuar
+      email_placeholder: nome@empresa.com
+      password_placeholder: "••••••••"
+      remember_me: Lembrar de mim
+      submit: Entrar
+      signing_in: Entrando…
+      invalid_credentials: E-mail ou senha inválidos
+      forgot_password: Esqueceu sua senha?
+    layout:
+      tagline: Plataforma de prospecção comercial com IA
+      feature_automation: Sequências de prospecção automatizadas
+      feature_personalization: Personalização com IA
+      feature_scoring: Pontuação inteligente de leads
+    forgot_password:
+      email_sent: Se existir uma conta para esse e-mail, enviamos instruções para redefinir
+        a senha.
+  settings:
+    company:
+      title: Configurações da Empresa
+      subtitle: Gerencie o perfil e as preferências da sua organização
+      info_readonly: Estas configurações são atualmente somente leitura. Recursos
+        completos de edição em breve.
+      organization_data: Detalhes da Organização
+      can_edit: Pode Editar
+      read_only: Somente Leitura
+      not_set: Não definido
+      validation_errors: Erros de Validação
+      fields:
+        name: Nome da Empresa
+        website: Site
+        average_contract_value: Valor Médio do Contrato
+        calendly_url: URL do Calendly
+      website_label: URL do Site
+      website_help: O site principal da sua empresa
+      website_placeholder: https://www.exemplo.com
+      acv_label: Valor Médio do Contrato (ACV)
+      acv_help: Valor médio dos seus contratos de vendas
+      acv_placeholder: '10.000'
+      meeting_price_label: Valor Médio da Reunião
+      meeting_price_help: Valor que você atribui a cada reunião agendada
+      meeting_price_placeholder: '500'
+      monthly_subscription_label: Assinatura Mensal
+      monthly_subscription_help: Seu custo de assinatura do Amplifa (gerenciado pelo
+        admin)
+      calendly_label: Link de Agendamento do Calendly
+      calendly_help: Seu link do Calendly para agendar reuniões
+      calendly_placeholder: https://calendly.com/sua-empresa/reuniao
+      currency_label: Moeda
+      currency_help: Sua moeda preferida para métricas financeiras
+      locale_label: Idioma Padrão
+      locale_help: Idioma padrão para sua organização
+      save: Salvar Alterações
+      cancel: Cancelar
+      saved: Configurações salvas com sucesso
+      onboarding_step_completed: Etapa de onboarding concluída!
+    email_accounts:
+      title: Contas de E-mail
+      subtitle: As contas de e-mail requerem um período de aquecimento de 3 semanas
+        antes da capacidade total de envio.
+      add_account: Adicionar Conta de E-mail
+      empty: Nenhuma conta de e-mail configurada ainda.
+      empty_hint: Adicione uma conta de e-mail para começar a enviar campanhas.
+      contact_amplifa: Entre em contato com o Amplifa para configurar contas de e-mail
+        adicionais.
+      table:
+        email: Endereço de E-mail
+        display_name: Nome de Exibição
+        status: Status
+        warmup_progress: Progresso de Aquecimento
+        created: Criado
+      statuses:
+        pending: Pendente
+        warming: Aquecendo
+        active: Ativo
+        paused: Pausado
+        suspended: Suspenso
+      warmup_days_remaining: "%{days} dias restantes"
+      warmup_complete: Completo
+      new:
+        title: Adicionar Conta de E-mail
+        subtitle: Adicionar uma nova conta de e-mail para campanhas de saída
+        email_label: Endereço de E-mail
+        email_placeholder: remetente@suaempresa.com
+        email_help: O endereço de e-mail que será usado para envio
+        display_name_label: Nome de Exibição
+        display_name_placeholder: Equipe de Vendas
+        display_name_help: Como os destinatários verão o nome do remetente (opcional)
+        display_name_hint: Como os destinatários verão o nome do remetente
+        info_pending: Novas contas estarão no status 'pendente' até serem revisadas
+          e aprovadas pelo Amplifa. Uma vez aprovadas, o processo de aquecimento começará.
+        validation_errors: Houve erros no seu envio
+        submit: Criar Conta de E-mail
+        cancel: Cancelar
+    blacklists:
+      title: Lista Negra
+      subtitle: Gerencie e-mails e domínios que nunca devem ser contatados.
+      add_entry: Adicionar Entrada
+      import_entries: Importar
+      empty: Nenhuma entrada na lista negra ainda.
+      global_info: "Entradas globais (marcadas com \U0001F310) são gerenciadas pelo
+        Amplifa e se aplicam a todas as organizações."
+      table:
+        value: E-mail / Domínio
+        type: Tipo
+        source: Fonte
+        created_by: Criado Por
+        created: Criado
+        actions: Ações
+      types:
+        email: E-mail
+        domain: Domínio
+      sources:
+        manual: Manual
+        import: Importação
+        interested: Interessado
+        unsubscribe: Cancelamento de Inscrição
+      global_badge: Global
+      delete_confirm: Tem certeza que deseja remover esta entrada?
+      delete_button: Remover
+      form:
+        value_label: E-mail ou Domínio
+        value_placeholder: email@exemplo.com ou dominio.com
+        value_help: Insira um endereço de e-mail ou domínio para bloquear
+        type_label: Tipo
+        submit: Adicionar à Lista Negra
+      import_form:
+        title: Importar Entradas da Lista Negra
+        input_label: Entradas
+        input_placeholder: Insira um e-mail ou domínio por linha...
+        input_help: Cole uma lista de e-mails ou domínios (um por linha). O sistema
+          detectará automaticamente se cada um é um e-mail ou domínio.
+        submit: Importar
+        cancel: Cancelar
+      created: Entrada adicionada à lista negra
+      imported: "%{created} entradas adicionadas, %{skipped} ignoradas (duplicadas)"
+      deleted: Entrada removida da lista negra
+      delete_failed: Falha ao remover entrada
+      cannot_delete_global: Entradas globais da lista negra não podem ser removidas.
+        Entre em contato com o Amplifa.
+      not_found: Entrada da lista negra não encontrada
+  timeline:
+    title: Seu Caminho para o Lançamento
+    subtitle: Acompanhe seu progresso do onboarding até a geração ativa de leads
+    you_are_here: Você está aqui
+    coming_soon: Em Breve
+    completed: Concluído
+    stage_label: 'Etapa '
+    onboarding:
+      title: Onboarding
+      description: Complete seu perfil e preferências
+    setup:
+      title: Configuração da Campanha
+      description: Revise playbooks e configure campanhas
+    warming:
+      title: Aquecimento de E-mail
+      description: Período de aquecimento de 3 semanas para contas de e-mail
+      duration: "~3 semanas"
+    launch:
+      title: Lançamento
+      description: Comece a gerar leads qualificados
+  invitation:
+    accept:
+      title: Bem-vindo ao Amplifa!
+      subtitle: Você foi convidado para participar de %{organization}
+      account_info_title: Sua Conta
+      setup_title: Configure Sua Conta
+      organization_label: Organização
+      email_label: E-mail
+      name_label: Nome
+      role_label: Função
+      password_label: Senha
+      password_placeholder: Crie uma senha segura
+      confirm_password_label: Confirmar Senha
+      confirm_password_placeholder: Confirme sua senha
+      language_label: Idioma Preferido
+      language_help: Escolha seu idioma preferido para o Amplifa
+      timezone_label: Fuso Horário (Opcional)
+      timezone_placeholder: Selecione seu fuso horário...
+      timezone_help: Selecione seu fuso horário para exibições de hora precisas
+      terms_label: Aceito os Termos de Serviço e a Política de Privacidade
+      submit: Concluir Configuração
+      need_help: Precisa de ajuda?
+      password_requirements: 'Requisitos de Senha:'
+      password_req_length: Pelo menos 8 caracteres
+      password_req_number: Pelo menos 1 número
+      password_req_special: Pelo menos 1 caractere especial
+      password_req_uppercase: Uma letra maiúscula
+      password_req_lowercase: Uma letra minúscula
+      password_strength:
+        weak: Fraca
+        fair: Razoável
+        good: Boa
+        strong: Forte
+      password_strength_label: 'Força da Senha:'
+      role_admin: Admin
+      show_password: Mostrar senha
+      hide_password: Ocultar senha
+      errors:
+        password_required: Senha é obrigatória
+        password_too_short: A senha deve ter pelo menos 8 caracteres
+        confirmation_required: Por favor confirme sua senha
+        passwords_mismatch: As senhas não coincidem
+    expired:
+      title: Convite Expirado
+      message: Este convite expirou e não pode mais ser usado.
+      explanation: Os convites expiram 7 dias após o envio.
+      request_new: Solicitar Novo Convite
+      contact_support: Contatar Suporte
+    invalid:
+      title: Convite Inválido
+      message: Este link de convite não é válido.
+      explanation: Por favor verifique seu e-mail para o link correto, ou entre em
+        contato com seu administrador.
+      contact_support: Contatar Suporte
+    already_accepted:
+      message: Este convite já foi usado. Por favor faça login.
+  components:
+    generation_progress:
+      completed: "%{completed} de %{total} concluído"
+      errors: "%{count} erros"
+  admin:
+    statuses:
+      onboarded: Integrado
+      pending: Pendente
+      deactivated: Desativado
+      archived: Arquivado
+      active: Ativo
+    roles:
+      org_admin: Admin da Org
+      member: Membro
+      customer_admin: Admin do Cliente
+      amplifa_admin: Admin do Amplifa
+      customer_user: Usuário do Cliente
+    password_strength:
+      weak: Fraca
+      fair: Razoável
+      good: Boa
+      strong: Forte
+    common:
+      dashboard: Painel
+      back: Voltar
+      back_to_dashboard: Voltar ao Painel
+      back_to_organizations: Voltar às Organizações
+      back_to_accounts: Voltar às Contas
+      back_to_activity_log: Voltar ao Log de Atividades
+      cancel: Cancelar
+      save_changes: Salvar Alterações
+      saving: Salvando...
+      create: Criar
+      creating: Criando...
+      edit: Editar
+      view: Ver
+      delete: Excluir
+      login_as: Entrar Como
+      deactivate: Desativar
+      filters: Filtros
+      all: Todos
+      apply_filters: Aplicar Filtros
+      clear_filters: Limpar Filtros
+      clear_all: Limpar Tudo
+      clear: Limpar
+      reset: Redefinir
+      required_fields: "* Campos obrigatórios"
+      na: N/D
+      not_recorded: Não registrado
+      previous: Anterior
+      next: Próximo
+      coming_soon: Em Breve
+      saved: Salvo
+      'yes': Sim
+      'no': Não
+      importing: Importando...
+      no_results: Nenhum resultado encontrado
+      search: Pesquisar
+      page_info: Página %{current} de %{total}
+      view_all: Ver Todos
+      showing: Exibindo
+      to: a
+      of: de
+      results: resultados
+      disconnecting: Desconectando...
+      actions: Ações
+      no_industry: Sem setor
+      send: Enviar
+      status: Status
+      organization: Organização
+      created: Criado
+      email: E-mail
+      company: Empresa
+      name: Nome
+      role: Função
+      job_title: Cargo
+      description: Descrição
+      display_name: Nome de Exibição
+      first_name: Nome
+      last_name: Sobrenome
+      domain: Domínio
+      mailboxes: Caixas de Entrada
+      all_organizations: Todas as Organizações
+      all_statuses: Todos os Status
+      playbook: Playbook
+      created_at: Criado
+      updated_at: Última Atualização
+      select_organization: Selecionar uma organização...
+      page: Página
+      active: Ativo
+      inactive: Inativo
+      deleting: Excluindo...
+      created_by: Criado Por
+      form_errors: 'Por favor corrija os seguintes erros:'
+      select_option: Selecione uma opção...
+      organizations: Organizações
+    dashboard:
+      title: Painel Admin
+      super_title: Painel Super Admin
+      subtitle: Visão geral e gerenciamento da plataforma
+      stats:
+        total_organizations: Total de Organizações
+        total_accounts: Total de Contas
+        pending_onboarding: Onboarding Pendente
+      recent_organizations:
+        title: Organizações Recentes
+        description: Uma lista das 10 organizações criadas mais recentemente
+        view_all: Ver Todas as Organizações
+        empty: Nenhuma organização ainda
+      table:
+        industry: Setor
+        size: Tamanho
+    organizations:
+      title: Gerenciar Organizações
+      subtitle: Ver e gerenciar todas as organizações no sistema
+      create_button: Criar Organização
+      search_placeholder: Pesquisar organizações por nome...
+      empty: Nenhuma organização ainda
+      table:
+        industry: Setor
+        size: Tamanho
+        accounts: Contas
+      new:
+        title: Criar Organização
+        subtitle: Adicionar uma nova organização cliente ao Amplifa
+        name_label: Nome da Organização
+        name_description: O nome da organização cliente
+        name_placeholder: Acme Corporation
+        industry_label: Setor
+        industry_description: Em qual setor esta organização opera?
+        industry_placeholder: Tecnologia, Saúde, Finanças, etc.
+        size_label: Tamanho da Empresa
+        size_description: Número de funcionários
+        size_placeholder: Selecionar tamanho...
+        size_suffix: " funcionários"
+        onboarded_label: Marcar como integrado
+        onboarded_description: Marque isso se a organização concluiu a configuração
+          inicial
+        submit: Criar Organização
+        website_integration_section: Site & Integração
+        website_label: Site da Empresa
+        website_description: A URL do site principal da organização
+        website_placeholder: https://www.exemplo.com
+        calendly_url_label: Link de Agendamento do Calendly
+        calendly_url_description: Link do Calendly para agendar reuniões de vendas
+        calendly_url_placeholder: https://calendly.com/empresa/reuniao
+        financial_section: Informações Financeiras
+        average_contract_value_label: Valor Médio do Contrato (ACV)
+        average_contract_value_description: Valor médio dos contratos de vendas da
+          organização
+        average_contract_value_placeholder: '10000'
+        meeting_price_label: Valor Médio da Reunião
+        meeting_price_description: Valor atribuído a cada reunião agendada
+        meeting_price_placeholder: '500'
+        monthly_subscription_label: Assinatura Mensal
+        monthly_subscription_description: O custo de assinatura do Amplifa da organização
+        monthly_subscription_placeholder: '299'
+        localization_section: Localização
+        locale_label: Idioma Padrão
+        locale_description: Idioma padrão para esta organização
+        currency_label: Moeda
+        currency_description: Moeda padrão para rastreamento financeiro
+      edit:
+        title: Editar Organização
+        subtitle: Atualizar detalhes e configurações da organização
+        name_label: Nome da Organização
+        industry_label: Setor
+        size_label: Tamanho da Organização
+        size_placeholder: Selecionar um tamanho
+        website_integration_section: Site & Integração
+        website_label: Site da Empresa
+        website_help: A URL do site principal da organização
+        calendly_url_label: Link de Agendamento do Calendly
+        calendly_url_help: Seu link do Calendly para agendar reuniões de vendas (deve
+          começar com https://calendly.com/)
+        financial_section: Informações Financeiras
+        average_contract_value_label: Valor Médio do Contrato (ACV)
+        average_contract_value_help: Valor médio dos contratos de vendas da organização
+        meeting_price_label: Valor Médio da Reunião
+        meeting_price_help: Valor atribuído a cada reunião agendada
+        monthly_subscription_label: Assinatura Mensal
+        monthly_subscription_help: O custo de assinatura do Amplifa da organização
+        billing_begins_on_label: Faturamento Começa Em
+        billing_begins_on_help: Data completa usada para ancorar ciclos de faturamento
+          recorrentes
+        localization_section: Localização
+        locale_label: Idioma Padrão
+        locale_help: Idioma padrão para esta organização
+        currency_label: Moeda
+        currency_help: Moeda padrão para rastreamento financeiro
+        onboarded_label: Integrado
+        associated_accounts: Contas associadas (%{count})
+        no_accounts: Nenhuma conta associada a esta organização
+        invite_button: Convidar Usuário
+        deactivate_button: Desativar Organização
+      export:
+        button: Exportar Configuração
+      import:
+        button: Importar Organização
+        title: Importar Organização
+        description: Faça upload de um arquivo JSON exportado para criar uma nova
+          organização com toda a sua configuração (remetentes, domínios, caixas de
+          entrada, playbooks, agentes).
+        select_file: Selecionar arquivo JSON
+        selected: Selecionado
+        success: Organização '%{name}' importada com sucesso
+        validation_failed: 'Falha na validação: %{errors}'
+        failed: 'Falha na importação: %{error}'
+        no_file: Por favor selecione um arquivo para importar
+        invalid_json: Formato de arquivo JSON inválido
+      back_to_list: Voltar às Organizações
+      show:
+        subtitle: Visão geral e recursos da organização
+      card:
+        agents: Agentes
+        playbooks: Playbooks
+        senders: Remetentes
+        mailboxes: Caixas de Entrada
+        emails_sent: E-mails enviados
+        emails_total: Total
+        emails_daily_avg: Média/dia
+        daily_capacity: Capacidade diária
+        meetings: Reuniões
+        reply_rate: Taxa de reunião
+        click_rate: Taxa de cliques
+        time_window: Janela
+        time_windows:
+          last_24h: Últimas 24 horas
+          last_7d: Últimos 7 dias
+          last_30d: Últimos 30 dias
+          last_90d: Últimos 90 dias
+          last_180d: Últimos 180 dias
+          last_365d: Últimos 365 dias
+        emails_today: Hoje
+        emails_7d: Últimos 7 dias
+        view: Ver
+        edit: Editar
+        ai_reply_agent_on: Agente de Resposta IA Ativado
+      overview:
+        stats_title: Métricas Principais
+        activity_title: Atividade Recente
+        info_title: Informações da Organização
+        no_activity: Nenhuma atividade recente
+        by: por
+        archive_title: Organização de Arquivo
+        archive_description: As organizações arquivadas ficam ocultas na lista Organizações.
+          Esta ação é permanente para visibilidade do administrador.
+        archive_button: Organização de Arquivo
+        archive_confirm: Tem certeza de que deseja arquivar esta organização? As organizações
+          arquivadas não aparecem mais na lista Organizações.
+      stats:
+        agents: Agentes
+        playbooks: Playbooks
+        senders: Remetentes
+        mailboxes: Caixas de Entrada
+        leads: Leads
+        emails_sent: E-mails Enviados
+        meetings: Reuniões
+      fields:
+        status: Status
+        created: Criado
+        website: Site
+        industry: Setor
+        size: Tamanho
+        locale: Localidade
+        currency: Moeda
+      tabs:
+        overview: Visão Geral
+        playbooks: Playbooks
+        agents: Agentes
+        settings: Configurações
+        domains: Domínios
+        senders: Remetentes
+        mailboxes: Caixas de Entrada
+        replies: Respostas
+        sent_messages: Envios
+        meetings: Reuniões
+        leads: Leads
+        lead_imports: Importações de Leads
+        files: Arquivos
+        users: Usuários
+      replies:
+        interested: Interessado
+        meeting_request: Solicitação de reunião
+        not_interested: Não estou interessado
+        ooo: Fora do Escritório
+        ooo_returns: retorna %{date}
+        bounced: Devolvido
+        title: Central de Respostas
+        subtitle: Gerencie conversas e respostas dos seus leads
+        reply_now: Responder agora
+        empty: Nenhuma conversa ainda
+        empty_description: Nenhuma conversa corresponde aos seus filtros atuais. Tente
+          ajustar o filtro de status ou os termos de pesquisa.
+        select_conversation: Selecionar uma Conversa
+        select_conversation_desc: Escolha uma conversa da lista para ver o histórico,
+          detalhes do lead e enviar uma resposta.
+        no_preview: Nenhuma pré-visualização disponível
+        never: Nunca
+        just_now: Agora mesmo
+        minutes_ago:
+          one: "%{count} minuto atrás"
+          other: "%{count} minutos atrás"
+        hours_ago:
+          one: "%{count} hora atrás"
+          other: "%{count} horas atrás"
+        days_ago:
+          one: "%{count} dia atrás"
+          other: "%{count} dias atrás"
+        last_checked: Última verificação
+        check_mail_now: Verificar E-mail Agora
+        checking_mail: Verificando e-mail para novas respostas...
+        mail_check_complete: Verificação de e-mail concluída
+        mail_check_complete_with_errors: Verificação de e-mail concluída com alguns
+          erros
+        mail_check_failed: Falha ao iniciar verificação de e-mail
+        no_active_mailboxes: Nenhuma caixa de entrada ativa para verificar
+        ai_agent_enabled: Agente de Resposta IA ativado
+        ai_agent_disabled: Agente de Resposta IA desativado
+        ai_agent_toggle_failed: Falha ao alternar Agente de Resposta IA
+        filter_menu:
+          label: Filtros
+          title: Filtros da caixa de entrada
+          description: Salvo para sua conta
+          reply_type: Tipo de resposta
+          sender: Remetente
+          all_senders: Todos os remetentes
+        sent_successfully: Resposta enviada com sucesso
+        send_failed: 'Falha ao enviar resposta: %{error}'
+        conversation_closed: Conversa fechada
+        conversation_reopened: Conversa reaberta
+        conversation_snoozed: A conversa foi adiada até %{until}
+        confirm_close: Tem certeza que deseja fechar esta conversa?
+        confirm_snooze: Adiar esta conversa?
+        filter:
+          all: Todos
+          open: Aberto
+          snoozed: Adiado
+          closed: Fechado
+        status:
+          open: Aberto
+          snoozed: Adiado
+          closed: Fechado
+          bounced: Devolvido
+        stats:
+          total: Total
+          unread: Não lido
+          open: Aberto
+          snoozed: Adiado
+          closed: Fechado
+          unassigned: Não atribuído
+          interested: Interessado
+          meeting_request: Solicitação de reunião
+          not_interested: Não estou interessado
+        interest_status:
+          interested: Interessado
+          meeting_request: Solicitação de reunião
+          not_interested: Não estou interessado
+          wrong_person: Pessoa errada
+        search_placeholder: Pesquisar por nome do lead, e-mail ou empresa...
+        tabs:
+          all: Todos
+          open: Aberto
+          snoozed: Adiado
+          closed: Fechado
+          unassigned: Não atribuído
+        conversation:
+          messages: mensagens
+          via: via
+        thread:
+          back_to_list: Voltar às Conversas
+          incoming: Recebido
+          outgoing: Enviado
+          bounce_badge: Devolução
+          ooo_badge: Fora do Escritório
+        actions:
+          close: Fechar
+          reopen: Reabrir
+          snooze: Adiar
+        snooze_options:
+          title: Adiar até...
+          tomorrow: Amanhã de manhã (9h)
+          next_week: Próxima semana (9h segunda-feira)
+          next_month: Próximo mês (9h)
+        snooze:
+          tomorrow: Amanhã de manhã (9h)
+          next_week: Próxima semana (9h segunda-feira)
+          next_month: Próximo mês (9h)
+        composer:
+          placeholder: Escreva sua resposta...
+          include_signature: Adicionar assinatura antes de enviar
+          send: Enviar Resposta
+          sending: Enviando...
+        compose_placeholder: Escreva sua resposta...
+        reply_with_ai: Responder com IA
+        reply_with_ai_generating: Gerando resposta...
+        ai_generation_failed: 'Falha ao gerar resposta: %{error}'
+        add_link: Adicionar link
+        edit_link: Editar link
+        open_link: Abrir
+        remove_link: Remover
+        save_link: Salvar link
+        link_url_label: URL do link
+        link_url_placeholder: https://example.com
+        link_url_help: Cole um URL completo ou insira um nome de domínio e nós o tornaremos
+          clicável.
+        link_url_invalid: Insira um URL válido.
+        include_signature: Adicionar assinatura antes de enviar
+        send_reply: Enviar Resposta
+        lead_sidebar:
+          title: Informações do Lead
+          email: E-mail
+          company: Empresa
+          job_title: Cargo
+          location: Localização
+          linkedin: LinkedIn
+          website: Site
+          view_lead: Ver Perfil Completo do Lead
+        mailbox_info:
+          title: Caixa de Entrada
+        sender_info:
+          title: Remetente
+          has_signature: Tem modelo de assinatura
+        unassigned:
+          title: Respostas Não Atribuídas
+          subtitle: Respostas que precisam ser atribuídas a um lead
+          empty: Nenhuma resposta não atribuída
+          empty_description: Todas as respostas foram correspondidas a leads.
+          assign_to: Atribuir ao Lead
+          select_lead: Selecionar um lead...
+          search_leads: Pesquisar leads por e-mail, nome ou empresa...
+          assign: Atribuir
+        lead_assigned: Resposta atribuída a %{email}
+        reply_not_found: Resposta não encontrada ou já atribuída
+        sidebar:
+          company: Empresa
+          location: Localização
+          view_full_profile: Ver Perfil Completo
+          sending_as: Enviando Como
+          mailbox: Caixa de Entrada
+    users:
+      title: Todos os Usuários
+      subtitle: Gerenciar todas as contas de usuário na plataforma
+      create_button: Criar Usuário
+      empty: Nenhum usuário encontrado
+      roles:
+        org_admin: Admin da Org
+        member: Membro
+        customer_admin: Admin do Cliente
+        amplifa_admin: Admin do Amplifa
+        customer_user: Usuário do Cliente
+      statuses:
+        onboarded: Integrado
+        pending: Pendente
+        deactivated: Desativado
+        active: Ativo
+        undefined: Desconhecido
+      table:
+        edit: Editar
+        login_as: Entrar como
+      new:
+        title: Criar Usuário
+        subtitle: Adicionar um novo usuário à plataforma
+        email_placeholder: usuario@exemplo.com
+        first_name_placeholder: João
+        last_name_placeholder: Silva
+        password_label: Senha
+        password_placeholder: Mínimo 8 caracteres
+        password_description: Pelo menos 8 caracteres, incluindo 1 número e 1 caractere
+          especial
+        password_strength_label: 'Força da senha:'
+        password_confirmation_label: Confirmar Senha
+        confirm_password_placeholder: Redigite a senha
+        organization_placeholder: Selecionar organização...
+        organization_na_message: Admins do Amplifa não pertencem a uma organização
+        info_title: Criação de Usuário
+        info_message: O usuário será criado com a senha fornecida e pode fazer login
+          imediatamente. Nenhuma verificação de e-mail é necessária.
+        submit: Criar Usuário
+        password_hint: Pelo menos 8 caracteres, incluindo 1 número e 1 caractere especial
+          recomendado
+        select_organization: Selecionar uma organização...
+        organization_na: N/D - Admins do Amplifa
+        organization_hint: Admins do Amplifa não pertencem a nenhuma organização
+        create_button: Criar Usuário
+      edit:
+        title: Editar Usuário
+        subtitle: Atualizar informações e permissões do usuário
+        email_hint: Endereços de e-mail não podem ser alterados
+        email_readonly: Endereços de e-mail não podem ser alterados
+        organization_placeholder: Selecionar organização...
+        organization_na_message: Admins do Amplifa não pertencem a uma organização
+        select_organization: Selecionar uma organização...
+        organization_na: N/D - Admins do Amplifa
+        organization_hint: Admins do Amplifa não pertencem a nenhuma organização
+        security_section: Segurança
+        two_factor_authentication_required_label: Exigir autenticação de dois fatores
+          por e-mail
+        two_factor_authentication_required_help: Quando ativado, este admin do Amplifa
+          deve verificar cada login por e-mail.
+        role_change_warning_title: Aviso de Mudança de Função
+        role_change_warning_message: Você está alterando a função deste usuário de
+          %{old_role} para %{new_role}. Isso afetará suas permissões de acesso.
+        amplifa_admin_promotion_confirm: Ativar Amplifa Admin para este usuário? Isso dá acesso a TODAS as contas.
+      password:
+        title: Redefinição de senha
+        send_email_title: Enviar e-mail de redefinição de senha
+        send_email_description: Envie ao usuário um link seguro para redefinir sua
+          própria senha.
+        send_email_button: Enviar e-mail de redefinição
+        set_direct_title: Defina a senha diretamente
+        set_direct_description: Defina uma nova senha para este usuário diretamente
+          como administrador.
+        set_direct_button: Definir senha
+        new_password_label: Nova senha
+        new_password_confirmation_label: Confirme a nova senha
+        reset_email_sent: E-mail de redefinição de senha enviado com sucesso
+        reset_email_failed: Falha ao enviar e-mail de redefinição de senha
+        set_success: Senha atualizada com sucesso
+        new_password_required: Nova senha é necessária
+        new_password_too_short: A nova senha deve ter pelo menos 8 caracteres
+        confirmation_required: A confirmação da senha é necessária
+        confirmation_mismatch: A confirmação da senha não corresponde
+      platform_access:
+        title: Acesso à plataforma
+        amplifa_admin_label: Administrador da Amplifa
+        amplifa_admin_help: Concede acesso de administrador a toda a plataforma em
+          todas as organizações. As associações a organizações podem permanecer na
+          conta para um rebaixamento futuro, mas o login de administrador usa o painel
+          de administração global em vez de um espaço de trabalho do cliente.
+        amplifa_admin_warning: O acesso de administrador da Amplifa é global e só
+          deve ser concedido a funcionários de confiança da Amplifa.
+        demote_help: Remover o acesso de administrador da Amplifa converterá esta
+          conta para o cargo da primeira associação ativa a uma organização.
+        demote_requires_membership: Adicione pelo menos uma associação ativa a uma
+          organização antes de remover o acesso de administrador da Amplifa.
+        amplifa_admin_enabled: Amplifa Admin ativado.
+        amplifa_admin_disabled: Amplifa Admin desativado.
+        two_factor_enabled: Autenticação de dois fatores por e-mail ativada.
+        two_factor_disabled: Autenticação de dois fatores por e-mail desativada.
+      memberships:
+        title: Associações a organizações
+        empty: Este usuário não tem nenhuma associação ativa a organizações.
+        add_title: Adicionar associação a organização
+        add_description: Dê a este usuário acesso a outro espaço de trabalho do cliente
+          sem alterar sua organização principal.
+        organization_label: Organização
+        role_label: Função
+        select_organization: Selecione uma organização...
+        add_button: Adicionar associação
+        add_success: Associação à organização adicionada com sucesso.
+        update_success: Associação à organização atualizada com sucesso.
+        role_change_success: Função em %{organization} alterada para %{role}.
+        update_failed: Falha ao atualizar a associação à organização.
+        remove_success: Associação à organização removida com sucesso.
+        already_assigned: Este usuário já tem uma associação ativa para essa organização.
+        organization_not_found: Não foi possível encontrar a organização.
+        amplifa_admin_forbidden: Os administradores da Amplifa não podem ser atribuídos
+          a organizações de clientes.
+        last_membership_required: Adicione outra associação ativa antes de remover
+          a associação principal deste usuário.
+        no_assignable_organizations: Todas as organizações ativas já estão atribuídas.
+        available_count: "%{count} organizações disponíveis"
+        edit_role_label: Alterar função de %{organization}
+        remove_button: Remover
+        remove_confirm: Remover a associação de %{organization}?
+    accounts:
+      title: Gerenciar Contas
+      subtitle: Ver e gerenciar todas as contas de usuário no sistema
+      empty: Nenhuma conta ainda
+      impersonate_confirm: Tem certeza que deseja representar este usuário?
+      edit:
+        title: Editar Conta
+        subtitle: Atualizar detalhes e permissões da conta
+        organization_placeholder: Selecionar uma organização
+        deactivate_button: Desativar Conta
+        deactivate_confirm: Tem certeza que deseja desativar esta conta?
+    activities:
+      title: Log de Atividades
+      subtitle: Ver todas as ações administrativas e trilha de auditoria
+      empty: Nenhuma atividade encontrada para os filtros selecionados
+      filters:
+        title: Filtros
+        organization_all: Todas as Organizações
+        action_label: Tipo de Ação
+        action_all: Todas as Ações
+        start_date_label: Data de Início
+        end_date_label: Data de Fim
+      table:
+        timestamp: Timestamp
+        admin: Admin
+        action: Ação
+        details: Detalhes
+        ip_address: Endereço IP
+      show_details: "▶ Mostrar Detalhes"
+      hide_details: "▼ Ocultar Detalhes"
+      no_details: Sem detalhes
+      unknown_admin: Admin Desconhecido
+      pagination:
+        showing: Mostrando %{start} a %{end} de %{total} atividades
+      show:
+        title: Detalhes da Atividade
+        subtitle: Informações detalhadas sobre esta ação administrativa
+        breadcrumb_dashboard: Painel
+        breadcrumb_log: Log de Atividades
+        breadcrumb_activity: 'Atividade #%{id}'
+        overview: Visão Geral
+        activity_id: ID da Atividade
+        timestamp: Timestamp
+        action_type: Tipo de Ação
+        ip_address: Endereço IP
+        performed_by: Realizado Por
+        related_organization: Organização Relacionada
+        organization_name: Nome da Organização
+        website: Site
+        action_details: Detalhes da Ação
+        no_details: Nenhum detalhe adicional registrado para esta atividade
+        technical_info: Informações Técnicas
+        user_agent: User Agent
+    invitations:
+      title: Convites
+      subtitle: Gerenciar convites de clientes e acompanhar seu status
+      create_button: Convidar Novo Usuário
+      empty_with_filter: Nenhum convite encontrado. Tente ajustar seus filtros.
+      empty: Crie seu primeiro convite para começar.
+      filters:
+        title: Filtros
+        status_all: Todos os Status
+        organization_all: Todas as Organizações
+      table:
+        expires: Expira
+        invited_by: Convidado Por
+      actions:
+        resend: Reenviar
+        cancel: Cancelar
+        delete: Excluir
+      confirm:
+        resend: Reenviar convite para %{email}?
+        cancel: Cancelar convite para %{email}? Isto não pode ser desfeito.
+        delete: Excluir permanentemente o convite para %{email}? Isto não pode ser
+          desfeito.
+      pagination:
+        showing: Exibindo página %{current} de %{total} (total de %{count} convites)
+      new:
+        title: Convidar Novo Usuário
+        subtitle: Enviar um e-mail de convite para adicionar um novo usuário a uma
+          organização
+        organization_description: A organização à qual este usuário pertencerá
+        organization_placeholder: Selecionar uma organização...
+        email_description: O convite será enviado para este endereço de e-mail
+        email_placeholder: usuario@exemplo.com
+        first_name_placeholder: João
+        last_name_placeholder: Silva
+        info_title: Sobre Convites
+        info_messages:
+        - Um e-mail de convite será enviado para o endereço de e-mail fornecido
+        - O destinatário pode definir sua própria senha ao aceitar
+        - Os links de convite expiram após 7 dias
+        - Você pode reenviar ou cancelar convites pendentes da lista de convites
+        submit: Enviar Convite
+        submitting: Enviando...
+    playbooks:
+      title: Playbooks
+      subtitle: Gerenciar playbooks gerados por IA para todas as organizações
+      generate_button: Gerar Playbook
+      create_button: Novo Playbook
+      generate_title: Gerar Novo Playbook
+      generate_subtitle: Use IA para gerar um playbook a partir de um site
+      back_to_list: Voltar aos Playbooks
+      empty: Nenhum playbook ainda. Gere seu primeiro playbook usando IA.
+      ai_generated: Gerado por IA
+      approved: Playbook foi aprovado
+      confirm_approve: Aprovar este playbook? Ele estará disponível para uso em campanhas.
+      confirm_move_to_draft: Mover este playbook de volta ao status de rascunho?
+      confirm_archive: Arquivar este playbook? Ele não será mais visível para os clientes.
+      confirm_delete: Excluir este playbook? Esta ação não pode ser desfeita.
+      delete_modal:
+        title: Excluir este manual?
+        description: Esta ação não pode ser desfeita.
+        affected_agents_title: Agentes afetados
+        affected_agents_description: Esses agentes perderão esta atribuição do playbook
+          quando você excluí-lo.
+        no_affected_agents: Nenhum agente está atualmente atribuído a este playbook.
+        pause_notice: Todos os agentes afetados que estiverem em execução serão pausados
+          antes da exclusão.
+        will_pause: Este agente em execução será pausado.
+        confirm_button: Excluir manual
+      no_value_proposition: Sem proposta de valor
+      no_personae: Nenhuma persona adicionada ainda
+      no_use_cases: Nenhum caso de uso adicionado ainda
+      no_references: Nenhuma referência adicionada ainda
+      no_proof_points: Nenhum ponto de prova adicionado ainda
+      no_comments: Nenhum comentário ainda
+      statuses:
+        draft: Rascunho
+        changes_requested: Alterações Solicitadas
+        approved: Aprovado
+        archived: Arquivado
+      filters:
+        organization: Organização
+        status: Status
+        language: Idioma
+        all_languages: Todos os Idiomas
+      table:
+        product: Produto
+        agents: Agentes
+        language: Idioma
+        content: Conteúdo
+        personae: personas
+        use_cases: casos de uso
+        references: refs
+        view: Ver
+        edit: Editar
+      form:
+        organization: Organização
+        select_organization: Selecionar uma organização...
+        product_name: Nome do Produto
+        product_name_help: O nome do produto ou serviço para gerar um playbook
+        website_url: URL do Site
+        website_url_help: O site da empresa para analisar (deve incluir http:// ou
+          https://)
+        generate_button: Gerar Playbook
+        generating: Gerando...
+        generation_info: A IA irá raspar o site, analisar o conteúdo e gerar um playbook
+          estratégico com personas e casos de uso. Isso normalmente leva 15-30 segundos.
+      generation:
+        in_progress: Gerando Playbook...
+        please_wait: Isso pode levar 15-30 segundos. Por favor não feche esta página.
+        phases:
+          started: Iniciando...
+          scraping: Raspando site
+          generating: Gerando com IA
+          completed: Concluído
+          failed: Falhou
+        failed_title: Falha ao gerar %{product}
+        steps:
+          scraping: Raspando site
+          scraping_desc: Extraindo conteúdo e estrutura
+          analyzing: Analisando modelo de negócios
+          analyzing_desc: Entendendo produtos e serviços
+          personas: Identificando personas-alvo
+          personas_desc: Mapeando perfis de clientes ideais
+          use_cases: Gerando casos de uso
+          use_cases_desc: Criando mensagens estratégicas
+          finalizing: Finalizando playbook
+          finalizing_desc: Compilando insights e recomendações
+      sections:
+        value_proposition: Proposta de Valor
+        personae: Personas-Alvo
+        use_cases: Casos de Uso
+        references: Clientes de Referência
+        proof_points: Pontos de Prova
+        comments: Discussão
+        metadata: Detalhes
+        actions: Ações
+      persona:
+        pain_points: Pontos de Dor
+      metadata:
+        status: Status
+        language: Idioma
+        created: Criado
+        updated: Última Atualização
+        approved: Aprovado
+        by: por
+        generation: Geração
+      actions:
+        approve: Aprovar
+        edit: Editar Playbook
+        move_to_draft: Mover para Rascunho
+        archive: Arquivar
+        delete: Excluir
+      ai_edit:
+        button: Edição IA
+        title: Edição IA do Playbook
+        playbook_label: Playbook
+        instruction_label: Instruções
+        instruction_placeholder: ex., Focar mais no tratamento de objeções
+        helper: Descreva como você quer que o playbook seja refinado.
+        examples_title: Exemplos
+        example_one: Focar o playbook mais em preocupações de segurança empresarial
+        example_two: Pensar mais da perspectiva de um líder de vendas
+        example_three: Enfatizar o tratamento de objeções e diferenciação competitiva
+        submit: Aplicar Edição IA
+        submitting: Aplicando...
+        success: Playbook atualizado com edições de IA
+        failed: Edição de IA falhou. Por favor tente novamente.
+        missing_instruction: Por favor forneça instruções para a edição de IA.
+      bulk_approve:
+        button: Aprovar tudo (%{count})
+        confirm: Aprovar todos os %{count} manuais pendentes? Eles estarão disponíveis
+          para uso em campanhas.
+        success:
+          one: "%{count} manual foi aprovado"
+          other: "%{count} manuais foram aprovados"
+        partial_success: "%{approved} manuais aprovados, %{failed} falhou"
+        none_to_approve: Nenhum playbook para aprovar
+      create_agent:
+        button: Criar Agente
+        success: Agente criado com sucesso a partir do playbook
+        failed: 'Falha ao criar agente: %{errors}'
+        not_approved: Só é possível criar agentes a partir de playbooks em rascunho
+          ou aprovados
+        already_has_agent: Este playbook já tem um agente
+        sequence_source_label: Origem da sequência
+        master_sequence_label: Sequência mestre
+        local_sequence_label: Sequência local (vazia)
+        master_sequence_dropdown_label: Sequência mestre
+        master_sequence_placeholder: Selecione uma sequência mestre...
+        master_sequence_description: O novo agente usará a sequência mestre selecionada.
+        local_sequence_description: O novo agente começará com uma sequência local
+          em branco.
+        global_sequence_not_found: A sequência mestre selecionada não foi encontrada
+      edit:
+        title: Editar Playbook
+        tabs:
+          overview: Visão Geral
+          personae: Personas
+          use_cases: Casos de Uso
+          references: Referências
+          proof_points: Pontos de Prova
+        product_name: Nome do Produto
+        product_description: Descrição do Produto
+        language: Idioma
+        value_proposition_placeholder: Descreva o valor central que este produto entrega
+          aos clientes...
+        ai_notes_label: Notas de Geração IA
+        personae_description: Defina as personas de compradores-alvo para este playbook
+        add_persona: Adicionar Persona
+        add_first_persona: Adicione sua primeira persona-alvo
+        new_persona: Nova Persona
+        no_title: Sem título
+        persona_name: Nome da Persona
+        persona_title: Cargo
+        add_pain_point: Adicionar Ponto de Dor
+        pain_point_placeholder: Insira um ponto de dor...
+        use_cases_description: Defina os principais casos de uso para este produto
+        add_use_case: Adicionar Caso de Uso
+        add_first_use_case: Adicione seu primeiro caso de uso
+        use_case_title: Título
+        use_case_description: Descrição
+        use_case_description_placeholder: Descreva este caso de uso e seu valor...
+        references_description: Adicione clientes de referência que usaram este produto
+          com sucesso
+        add_reference: Adicionar Referência
+        add_first_reference: Adicione seu primeiro cliente de referência
+        reference_name: Nome do Cliente
+        reference_description: Descrição
+        reference_description_placeholder: Descreva a história de sucesso ou caso
+          de uso...
+        proof_points_description: Adicione pontos de prova que demonstram o valor
+          do produto
+        add_proof_point: Adicionar Ponto de Prova
+        add_first_proof_point: Adicione seu primeiro ponto de prova
+        proof_point_claim: Afirmação
+        proof_point_description: Evidência
+        proof_point_description_placeholder: Forneça evidências ou contexto para esta
+          afirmação...
+        file_attachment: Anexo de Arquivo
+        upload_file: Fazer Upload de Arquivo
+        uploading: Fazendo upload...
+        remove_file: Remover arquivo
+        allowed_files: PDF, DOC, DOCX, PNG, JPG, GIF (máx 10MB)
+        unsaved_changes: Você tem alterações não salvas
+      comment_types:
+        general: Geral
+        request_changes: Solicitação de Alteração
+        approval: Aprovação
+    lead_imports:
+      title: Importações de Leads
+      subtitle: Gerenciar importações de CSV de leads em todas as organizações
+      new_import: Nova Importação
+      created: Importação iniciada com sucesso. Processando em segundo plano.
+      assign_to_agent:
+        success: Atribuídos %{count} leads importados a %{agent_name}.
+        invalid_status: Você só pode atribuir um agente após a importação ser concluída.
+        already_assigned: Esta importação já tem um agente atribuído.
+        invalid_agent: Por favor selecione um agente válido desta organização.
+        failed: Não foi possível atribuir esta importação a um agente. Por favor tente
+          novamente.
+      empty: Nenhuma importação ainda. Faça upload do seu primeiro arquivo CSV.
+      remove_from_agent:
+        success: "%{count} atribuições de leads foram removidas de %{agent_name} e
+          a atribuição desta importação foi cancelada."
+        not_completed: Os leads só podem ser removidos do agente após a importação
+          ser concluída.
+        no_agent_assigned: Esta importação não está atualmente atribuída a um agente.
+      statuses:
+        pending: Pendente
+        processing: Processando
+        completed: Concluído
+        failed: Falhou
+      filters:
+        organization: Organização
+        status: Status
+      table:
+        filename: Arquivo
+        agent: Agente
+        progress: Progresso
+        updated: Atualizado
+        skipped: Ignorados
+        blacklisted: Lista Negra
+        errors: Erros
+        view: Ver
+      new:
+        title: Importar Leads
+        subtitle: Fazer upload de um arquivo CSV e mapear colunas para campos de lead
+        organization_placeholder: Selecionar uma organização...
+        agent_label: Agente (opcional)
+        agent_placeholder: Selecionar um agente...
+        agent_help: Se selecionado, os leads serão automaticamente atribuídos a este
+          agente
+        csv_file_label: Arquivo CSV *
+        csv_file_help: Faça upload de um arquivo CSV com dados de lead. Máximo 50MB.
+        upload_button: Fazer Upload & Pré-visualizar
+        uploading: Fazendo upload...
+        download_template: Baixar modelo
+        download_template_help: Email é a única coluna obrigatória. Todos os outros
+          campos são opcionais. full_name não será necessário se first_name e last_name
+          forem fornecidos.
+      preview:
+        title: Mapear Colunas
+        subtitle: Mapear colunas CSV para campos de lead
+        csv_headers: Cabeçalhos CSV
+        lead_fields: Campos de Lead
+        unmapped_columns: Colunas Não Mapeadas
+        unmapped_help: Colunas não mapeadas serão armazenadas em campos_personalizados
+        preview_rows: Pré-visualização (primeiras 5 linhas)
+        total_rows: "%{count} linhas totais"
+        email_required: O mapeamento da coluna de e-mail é obrigatório
+        start_import: Iniciar Importação
+        back: Voltar
+      show:
+        title: Detalhes da Importação
+        back_to_list: Voltar às Importações
+        filename: Nome do Arquivo
+        file_size: Tamanho do Arquivo
+        status: Status
+        progress: Progresso
+        imported_by: Importado Por
+        organization: Organização
+        agent: Agente
+        none_assigned: Nenhum atribuído
+        started: Iniciado
+        completed: Concluído
+        duration: Duração
+        column_mapping: Mapeamento de Colunas
+        results: Resultados da Importação
+        total_rows: Total de Linhas
+        processed: Processados
+        created: Criados
+        updated: Atualizados
+        skipped: Ignorados
+        blacklisted: Lista Negra
+        errors: Erros
+        error_details: Detalhes dos Erros
+        row: Linha
+        no_errors: Sem erros
+        refresh: Atualizar
+        remove_from_agent:
+          title: Remover Leads do Agente
+          warning: Isso removerá os leads importados do agente atualmente atribuído
+            e interromperá qualquer progresso de sequência relacionado para esses
+            leads. Os registros de pessoas permanecerão intocados.
+          button: Remover Leads do Agente
+          confirm: Tem certeza que deseja remover esses leads do agente atribuído?
+            Esta ação não pode ser desfeita.
+        assign_to_agent: Atribuir ao Agente
+        assign_to_agent_help: Selecione um agente e atribua todos os leads importados
+          com sucesso desta importação.
+        no_agents_available: Nenhum agente disponível para esta organização.
+      download:
+        button: Baixar CSV
+        not_available: O arquivo CSV de origem não está mais disponível para download.
+    agents:
+      title: Agentes
+      subtitle: Gerenciar todas as campanhas e agentes em todas as organizações
+      global_title: Todos os Agentes
+      global_subtitle: Ver todos os agentes em todas as organizações
+      new_agent: Criar Agente
+      created: Agente criado com sucesso
+      updated: Agente atualizado com sucesso
+      deleted: Agente removido com sucesso
+      delete_failed: Falha ao remover agente
+      empty: Nenhum agente ainda. Crie seu primeiro agente para começar.
+      confirm_delete: Remover este agente? Conversas e histórico de respostas continuarão
+        disponíveis.
+      samples:
+        generation_started: Geração de mensagens de amostra iniciada. Você será notificado
+          quando concluída.
+        cancel_success: Geração de amostras cancelada. As amostras existentes foram
+          limpas e a geração pode ser reiniciada.
+        not_ready_for_generation: O agente não está pronto para geração de amostras.
+          Certifique-se de que leads e etapas de sequência estão configurados.
+        reset_success: Mensagens de amostra foram redefinidas. Você pode regenerá-las
+          agora.
+        approve_success: Mensagens de amostra aprovadas com sucesso.
+        approve_not_ready: Não é possível aprovar amostras. Certifique-se de que as
+          amostras estão geradas e não aprovadas ainda.
+        progress:
+          default_target: este lead
+          default_step: mensagem
+          in_progress: Gerando mensagens de amostra
+          step: Gerando %{step}
+          detail: "%{generated} de %{total} mensagens"
+          errors: "%{count} erros"
+          generating_button: Gerando...
+          start_failed: Não foi possível iniciar a geração de amostras. Por favor
+            tente novamente.
+          phases:
+            enriching_lead: Enriquecendo dados de leads para %{target}
+            linkedin_scrape: Raspando LinkedIn para %{target}
+            linkedin_profile_photo: Baixando foto do LinkedIn para %{target}
+            linkedin_posts_scrape: Raspando postagens do LinkedIn para %{target}
+            disc_inference: Inferindo perfil DISC para %{target}
+            company_website_scrape: Raspando o site da empresa para %{target}
+            sync_to_lead: Sincronizando enriquecimento para %{target}
+            org_description: Gerando descrição da organização para %{target}
+            generating_subject: Gerando assunto para %{target}
+            generating_message: Gerando %{step} para %{target}
+      statuses:
+        draft: Rascunho
+        ready: Pronto
+        active: Ativo
+        paused: Pausado
+        completed: Concluído
+      filters:
+        organization: Organização
+        status: Status
+        search_placeholder: Pesquisar agentes ou organizações...
+      table:
+        playbook: Playbook
+        leads: Leads
+        contacted: Contatados
+        replied: Responderam
+        meetings: Reuniões
+        reply_rate: Taxa de Resposta
+        meeting_rate: Taxa de Reunião
+        view: Ver
+        edit: Editar
+      new:
+        title: Criar Agente
+        subtitle: Criar um novo agente de campanha
+        organization_placeholder: Selecionar uma organização...
+        organization_description: A organização à qual este agente pertence
+        name_label: Nome
+        name_placeholder: Insira o nome do agente...
+        name_description: Um nome descritivo para este agente de campanha
+        description_label: Descrição
+        description_placeholder: Descreva o propósito deste agente...
+        description_description: Detalhes opcionais sobre os objetivos e público-alvo
+          deste agente
+        playbook_label: Playbook
+        playbook_placeholder: Selecionar um playbook...
+        playbook_description: O playbook de mensagens que este agente usará
+        playbook_help: Apenas playbooks aprovados estão disponíveis para seleção
+        status_description: O status atual do fluxo de trabalho deste agente
+        locale_label: Localidade
+        locale_placeholder: Selecionar um idioma...
+        locale_description: Idioma para mensagens geradas. Padrão é a localidade da
+          organização.
+        default_timezone_label: Fuso Horário Padrão
+        default_timezone_description: Usado quando o fuso horário do lead não pode
+          ser resolvido a partir de sua localização
+        llm_model_label: Modelo de IA
+        llm_model_description: O modelo de IA a ser usado para gerar mensagens. Diferentes
+          modelos têm diferentes capacidades e custos.
+        info_title: Sobre Playbooks
+        info_playbook_message: Apenas playbooks aprovados da organização selecionada
+          estão disponíveis. Crie e aprove playbooks antes de atribuí-los a agentes.
+        submit: Criar Agente
+        submitting: Criando...
+      show:
+        title: Detalhes do Agente
+        back_to_list: Voltar aos Agentes
+        back_to_org_agents: Voltar para %{org} Agentes
+        description: Descrição
+        no_description: Nenhuma descrição fornecida
+        playbook: Playbook
+        no_playbook: Nenhum playbook atribuído
+        default_timezone: Fuso Horário Padrão
+        locale: Local
+        created_by: Criado Por
+        created_at: Criado
+        updated_at: Última Atualização
+        can_launch: Pronto para Lançar
+        cannot_launch: Não Pronto
+        buying_signals: Sinais de compra
+        buying_signals_enabled: Ativados
+        buying_signals_disabled: Desativados
+        buying_signals_lookback: Período dos sinais de compra
+        buying_signals_lookback_days: "%{days} dias"
+        buying_signals_prompt_usage_tooltip: Número de etapas da sequência que atualmente
+          usam sinais de compra no prompt
+        import_leads: Importar Leads
+        assign_mailboxes: Atribuir Caixas de Entrada
+        view_sent_messages: Mensagens Enviadas
+        stats:
+          title: Estatísticas da Campanha
+          sent_emails: E-mails Enviados
+          bounced: Devolvidos
+          replies: Respostas
+          meetings: Reuniões
+          total_leads: Total de Leads
+          leads_in_sequence: Leads na Sequência
+          contacted: Contatado
+        leads:
+          title: Leads Atribuídos
+          empty: Nenhum lead atribuído a este agente ainda
+        sequence:
+          title: Sequência
+          active_steps: etapas ativas
+          edit_sequence: Editar Sequência
+          no_steps: Nenhuma etapa de sequência configurada ainda. Adicione etapas
+            para definir sua sequência de contato.
+          add_first_step: Adicionar Primeira Etapa
+          immediate: Imediato
+          delay_days: Após %{days} dias
+          inactive: inativo
+          event_types:
+            email: E-mail
+            linkedin_message: Mensagem LinkedIn
+            linkedin_visit: Visita LinkedIn
+            linkedin_connect: Conexão LinkedIn
+            manual_task: Tarefa Manual
+        samples:
+          title: Mensagens de Amostra
+          status:
+            not_generated: Não Gerado
+            pending_approval: Aprovação Pendente
+            approved: Aprovado
+          generated_at: Gerado em %{date}
+          approved_by: Aprovado por %{name} em %{date}
+          sample_count_info: Serão geradas amostras para os primeiros %{count} leads
+          sample_count_label: Número de leads de amostra
+          need_email_steps: Adicione pelo menos uma etapa de e-mail à sequência antes
+            de gerar amostras
+          need_leads: Importe leads antes de gerar amostras
+          generate_button: Gerar Amostras
+          view_samples: Ver Amostras
+          approve_button: Aprovar Amostras
+          cancel_button: Cancelar Geração
+          reset_button: Redefinir & Regenerar
+          confirm_generate: Isso gerará mensagens de exemplo para os primeiros %{count}
+            leads. Continuar?
+          confirm_reset: Isso excluirá todas as mensagens de amostra e redefinirá
+            a aprovação. Continuar?
+          confirm_cancel: Isso interromperá a geração de amostras, excluirá as amostras
+            geradas e redefinirá o progresso. Continuar?
+          confirm_approve: Aprovar estas mensagens de amostra? Isso permitirá que
+            a campanha seja lançada.
+        mailboxes:
+          title: Caixas de Entrada Atribuídas
+          empty: Nenhuma caixa de entrada atribuída a este agente
+          assign: Atribuir Caixas de Entrada
+          warmup_complete: Pronto
+          warming_up: Aquecendo
+          days_remaining: Faltam %{days} dias
+          capacity: "%{remaining}/%{total} capacidade"
+          capacity_label: capacidade
+          provider_google: Google
+          provider_microsoft: Microsoft
+          select_mailboxes: Selecionar caixas de entrada para atribuir
+          save_assignment: Salvar Atribuição
+          no_available: Nenhuma caixa de entrada disponível para esta organização
+          select_all: Selecionar Todos
+          deselect_all: Desmarcar Todos
+          search_domains: Pesquisar domínios...
+          no_domains_match: Nenhum domínio corresponde à sua pesquisa
+        senders:
+          title: Remetentes
+          empty: Nenhum remetente nesta organização
+          manage: Gerenciar
+          mailbox: caixa de entrada
+          mailboxes: caixas de entrada
+        buying_signals_modal:
+          missing_highlights_title: Gerar apenas destaques + relevância ausentes
+          missing_highlights_description: Pule a geração completa de sinais de compra
+            e atualize resumos existentes sem destaques ou avaliação.
+        campaign_status:
+          title: Status da Campanha
+          not_launched: Não Lançado
+          launched: Lançado
+          launched_at: Lançado em %{date}
+          paused: Pausado
+          paused_at: Pausado em %{date}
+          active: Ativo
+          launch_button: Lançar Campanha
+          pause_button: Pausar Campanha
+          resume_button: Retomar Campanha
+          confirm_launch: Isso começará a enviar e-mails para leads. Continuar?
+          confirm_pause: Isso pausará todos os envios de e-mail. Os horários agendados
+            serão preservados. Continuar?
+          confirm_resume: Isso retomará os envios de e-mail. Continuar?
+          leads_eligible_now: Leads Elegíveis Agora
+          sent_today: Enviados Hoje
+          pending_now: Pendentes Agora
+          in_sequence: Na Sequência
+          not_yet_contacted: Ainda não contatado
+          available_capacity: Capacidade Disponível
+          launch_requirements: Requisitos de Lançamento
+          requirement_leads: Leads importados
+          requirement_mailboxes: Caixas de entrada atribuídas
+          requirement_mailboxes_have_senders: Caixas de entrada têm remetentes atribuídos
+          requirement_samples: Mensagens de amostra aprovadas
+          requirement_playbook: Playbook aprovado
+          requirement_senders: Remetente(s) criado(s)
+      launch:
+        not_ready: O agente não está pronto para lançar. Certifique-se de que leads,
+          caixas de entrada e amostras aprovadas estão configurados.
+        already_launched: Esta campanha já foi lançada.
+        success: Campanha lançada com sucesso! Os e-mails começarão a ser enviados
+          de acordo com o cronograma.
+      pause:
+        cannot_pause: Esta campanha não pode ser pausada. Ela deve estar lançada e
+          ativa.
+        success: Campanha pausada. Todos os envios agendados foram suspensos.
+        button: Pausar Campanha
+        confirm: Isso pausará todos os envios de e-mail. Os horários agendados serão
+          preservados. Continuar?
+      resume:
+        cannot_resume: Esta campanha não pode ser retomada. Ela deve estar pausada
+          primeiro.
+        success: Campanha retomada. Os envios agendados continuarão.
+        button: Retomar Campanha
+        confirm: Isso retomará os envios de e-mail. Continuar?
+      restart_leads:
+        button: Reiniciar leads
+        confirm: Reiniciar desde o início da sequência todos os leads sem resposta
+          e não bloqueados de %{name}?
+        started: A reinicialização dos leads foi iniciada. Isso pode levar alguns
+          minutos para agentes grandes.
+        success:
+          one: 1 lead foi reiniciado desde o início da sequência.
+          other: "%{count} leads foram reiniciados desde o início da sequência."
+      sent_messages:
+        title: Mensagens Enviadas
+        back_to_agent: Voltar ao Agente
+        view_overview: Ver Visão Geral
+        filter_status: Status
+        filter_mailbox: Caixa de Entrada
+        all_statuses: Todos os Status
+        all_mailboxes: Todas as Caixas de Entrada
+        search_placeholder: Pesquisar por destinatário ou assunto...
+        messages_count: mensagens
+        table_title: Histórico de Mensagens
+        empty: Nenhuma mensagem foi enviada ainda. Lance a campanha para começar a
+          enviar.
+        column_recipient: Destinatário
+        column_mailbox: Caixa de Entrada
+        column_subject: Assunto
+        column_step: Etapa
+        column_sent_at: Enviado
+        column_status: Status
+        view_message: Ver detalhes da mensagem
+        preview_title: Mensagem Enviada
+        preview_subject: Assunto
+        preview_to: Para
+        preview_from: De
+        preview_sent_at: Enviado
+        preview_step: Etapa da Sequência
+        preview_replied_at: Respondido
+        preview_bounced_at: Devolvido
+        preview_message: Mensagem
+        status:
+          sent: Enviado
+          bounced: Devolvido
+          replied: Respondido
+        replied_at: Respondeu em %{date}
+        bounced_at: Devolvido em %{date}
+      schedule:
+        title: Cronograma de Envio
+        description: Os horários de envio são aproximados. Os e-mails são enviados
+          quando a caixa de entrada está ativa e o lead se torna elegível.
+        back_to_agent: Voltar ao Agente
+        view_overview: Ver Visão Geral
+        filter_date: Mostrar
+        leads_scheduled: leads elegíveis
+        today: Hoje
+        tomorrow: Amanhã
+        sends: envios elegíveis
+        via: via
+        no_mailbox: Nenhuma caixa de entrada atribuída
+        scheduled_today: Elegíveis Hoje
+        pending_now: Pendentes Agora
+        sent_today: Enviados Hoje
+        total_scheduled: Total Elegível
+        not_launched: Campanha não lançada ainda. Lance a campanha para ver os envios
+          elegíveis.
+        launch_campaign: Lançar Campanha
+        empty: Nenhum envio elegível para este período.
+        empty_hint: O sistema verifica continuamente por leads elegíveis quando as
+          caixas de entrada estão ativas.
+        rescheduled_count:
+          one: Reprogramado %{count}x
+          other: Reprogramado %{count}x
+        last_rescheduled_to: Reprogramado para %{time}
+        date_options:
+          today: Hoje
+          tomorrow: Amanhã
+          upcoming: Próximos 7 Dias
+          all: Todos Agendados
+      regenerate_schedule:
+        title: Regenerar Cronograma
+        button: Regenerar Cronograma
+        description: Limpar e replanejar envios agendados para a data selecionada.
+          Isso removerá todos os envios atualmente agendados para essa data e criará
+          um novo cronograma com base nas configurações atuais.
+        date_label: Data Alvo
+        date_today: Hoje
+        date_tomorrow: Amanhã
+        date_custom: Data Personalizada
+        confirm: Isso limpará todos os envios agendados para %{date} e criará uma
+          nova programação. Continuar?
+        success: Agenda regenerada para %{date}. %{cleared} envios limpos, %{scheduled}
+          novos envios agendados.
+        error: 'Falha ao gerar novamente a programação: %{errors}'
+        not_active: Não é possível regenerar o cronograma. A campanha deve estar lançada
+          e ativa.
+        invalid_date: Data inválida fornecida.
+      mailboxes:
+        updated: Atribuições de caixas de entrada atualizadas com sucesso.
+      leads:
+        title: Leads do Agente
+        back_to_agent: Voltar ao Agente
+        view_overview: Ver Visão Geral
+        filter_status: Status
+        all_statuses: Todos os Status
+        search_placeholder: Pesquisar por e-mail, nome ou empresa...
+        leads_count: leads
+        leads_found: "%{count} leads encontrados"
+        table_title: Leads na Campanha
+        empty: Nenhum lead atribuído a este agente ainda.
+        column_lead: Lead
+        column_company: Empresa
+        column_status: Status
+        column_progress: Progresso
+        column_mailbox: Caixa de Entrada
+        column_activity: Atividade
+        messages_sent: enviados
+        next_send: Elegível A Partir De
+        replied: Respondeu
+        meeting: Reunião
+        last_sent: Último envio
+        added: Adicionado
+        ooo_returns: FE retorna
+        blacklisted: Lista Negra
+        column_actions: Ações
+        view: Ver
+        view_details: Ver detalhes do lead e mensagens geradas
+        status:
+          not_contacted: Não Contatado
+          in_sequence: Na Sequência
+          paused: Pausado
+          replied: Respondeu
+          bounced: Devolvido
+          completed: Concluído
+        meeting_actions:
+          mark: Marcar Reunião
+          unmark: Desmarcar Reunião
+          confirm_unmark: Tem certeza que deseja remover a reserva de reunião para
+            este lead?
+        meeting_modal:
+          title: Marcar Reunião Reservada
+          notes_label: Notas da Reunião (opcional)
+          notes_placeholder: Adicione notas sobre a reunião...
+          confirm: Marcar Reunião
+      sample_messages:
+        title: Mensagens de Amostra
+        back_to_agent: Voltar ao Agente
+        confirm_generate: Isso gerará mensagens de exemplo para os primeiros %{count}
+          leads. Continuar?
+        confirm_reset: Isso excluirá todas as mensagens de amostra e redefinirá a
+          aprovação. Continuar?
+        confirm_approve: Aprovar estas mensagens de amostra? Isso permitirá que a
+          campanha seja lançada.
+        generated_at: Gerado em %{date}
+        expand_all: Expandir Todos
+        collapse_all: Recolher Todos
+        no_messages: Nenhuma mensagem de amostra foi gerada ainda.
+        generate_button: Gerar Amostras
+        approve_button: Aprovar Amostras
+        reset_button: Redefinir & Regenerar
+        total_messages: "%{count} mensagens"
+        lead_info: Informações do Lead
+        send_test: Enviar Teste
+        edit: Editar
+        test_sent: Teste Enviado
+        edited_badge: Editado
+        error_summary:
+          title: "%{count} leads tiveram erros de geração"
+        edit_modal:
+          title: Editar Mensagem
+          subject_label: Assunto
+          body_label: Corpo
+          save: Salvar Alterações
+      edit:
+        title: Editar Agente
+        subtitle: Atualizar configurações e configuração do agente
+        name_label: Nome *
+        description_label: Descrição
+        playbook_label: Playbook
+        locale_label: Localidade
+        locale_description: Idioma para mensagens geradas
+        default_timezone_label: Fuso Horário Padrão
+        default_timezone_description: Usado quando o fuso horário do lead não pode
+          ser resolvido a partir de sua localização
+        llm_model_label: Modelo de IA
+        llm_model_description: O modelo de IA a ser usado para gerar mensagens
+        delete_button: Excluir Agente
+        delete_warning: Isso removerá o agente do gerenciamento de campanhas, preservando
+          conversas e histórico de respostas.
+    sequence_steps:
+      title: Etapas da Sequência
+      subtitle: Configure a sequência de contato para este agente
+      created: Etapa de sequência criada com sucesso
+      updated: Etapa de sequência atualizada com sucesso
+      deleted: Etapa de sequência excluída com sucesso
+      delete_failed: Falha ao excluir etapa de sequência
+      empty: Nenhuma etapa de sequência ainda. Adicione sua primeira etapa para definir
+        o fluxo de trabalho de contato.
+      add_step: Adicionar Etapa
+      back_to_agent: Voltar ao Agente
+      confirm_delete: Tem certeza que deseja remover esta etapa da sequência?
+      max_steps_reached: Máximo de 15 etapas por sequência.
+      reorder:
+        success: Etapas de sequência reordenadas com sucesso
+        invalid_params: Parâmetros inválidos para reordenação
+        saving: Salvando nova ordem...
+      import:
+        button: Importar do Agente
+        title: Importar Sequência
+        description: Selecione um agente para copiar suas etapas de sequência. Isso
+          substituirá quaisquer etapas existentes.
+        destructive_warning: Isso substituirá permanentemente todas as etapas existentes
+          na sequência do agente alvo. Isso não pode ser desfeito.
+        select_agent: Selecionar um agente
+        select_target_agent: Selecionar agente alvo
+        select_source_agent: Selecionar agente fonte
+        search_placeholder: Pesquisar por organização ou agente
+        no_agents: Nenhum agente disponível
+        no_matching_agents: Nenhum agente correspondente encontrado
+        steps_count:
+          one: "%{count} etapa"
+          other: "%{count} etapas"
+        confirm_replace: Isso substituirá todas as etapas existentes na sequência
+          deste agente. Tem certeza?
+        success: Sequência importada com sucesso
+        agent_not_found: Agente fonte não encontrado
+        no_steps: Agente fonte não tem etapas de sequência
+        importing: Importando...
+        cancel: Cancelar
+        import_button: Importar
+      new:
+        title: Adicionar Etapa de Sequência
+        subtitle: Adicionar uma nova etapa à sequência de contato
+        submit: Criar Etapa
+      edit:
+        title: Editar Etapa de Sequência
+        subtitle: Atualizar configuração da etapa
+      show:
+        title: Detalhes da Etapa de Sequência
+      form:
+        position_label: Posição
+        position_help: Ordem na sequência (1-15)
+        event_type_label: Tipo de Evento
+        event_type_help: Tipo de ação para esta etapa
+        name_label: Nome da Etapa
+        name_placeholder: ex., Contato Inicial, Primeiro Acompanhamento
+        name_help: Nome descritivo opcional para esta etapa
+        name_description: Nome descritivo opcional para esta etapa
+        delay_days_label: Atraso (dias)
+        delay_days_help: Dias para aguardar após a etapa anterior
+        active_label: Ativo
+        active_help: Etapas inativas são ignoradas durante a geração
+        subject_prompt_label: Prompt de Assunto
+        subject_prompt_placeholder: Selecionar um prompt de assunto...
+        subject_prompt_help: Modelo de prompt de IA para gerar assuntos de e-mail
+        body_prompt_label: Prompt de Corpo
+        body_prompt_placeholder: Selecionar um prompt de corpo...
+        body_prompt_help: Modelo de prompt de IA para gerar corpos de e-mail
+        select_prompt: Selecionar um prompt...
+        submit: Salvar Etapa
+        submitting: Salvando...
+        delete_button: Excluir Etapa
+        deleting_button: Excluindo...
+      event_types:
+        email: E-mail
+        linkedin_message: Mensagem LinkedIn (Em Breve)
+        linkedin_visit: Visita ao Perfil LinkedIn (Em Breve)
+        linkedin_connect: Conexão LinkedIn (Em Breve)
+        manual_task: Tarefa Manual (Em Breve)
+      table:
+        position: Posição
+        type: Tipo
+        delay: Atraso
+        days: dias
+        immediate: Imediato
+        active: Ativo
+        inactive: Inativo
+        edit: Editar
+        delete: Excluir
+    leads:
+      title: Todos os Leads
+      subtitle: Ver e gerenciar leads em todas as organizações
+      empty: Nenhum lead encontrado
+      import_leads: Importar Leads
+      filters:
+        title: Filtros
+        organization_all: Todas as Organizações
+        blacklist_label: Status da Lista Negra
+        blacklist_all: Todos
+        blacklist_yes: Na Lista Negra
+        blacklist_no: Não na Lista Negra
+      table:
+        job_title: Cargo
+        view: Ver
+      status:
+        blacklisted: Na Lista Negra
+        not_blacklisted: Ativo
+        active: Ativo
+      pagination:
+        showing: Mostrando %{start} a %{end} de %{total} resultados
+        previous: Anterior
+        next: Próximo
+      show:
+        title: Detalhes do Lead
+        back_to_list: Voltar aos Leads
+        contact_info: Informações de Contato
+        name: Nome
+        email: E-mail
+        first_name: Nome
+        last_name: Sobrenome
+        job_title: Cargo
+        linkedin: LinkedIn
+        view_profile: Ver Perfil
+        location: Localização
+        phone: Telefone
+        timezone: Fuso Horário
+        website: Site
+        company_info: Informações da Empresa
+        company: Empresa
+        company_website: Site
+        custom_fields: Informações Adicionais
+        enrichment: Dados de Enriquecimento
+        disc_profile: Perfil DISC
+        disc_not_analyzed: Não Analisado
+        linkedin_scraped: LinkedIn Raspado
+        not_scraped: Ainda não
+        blacklist_info: Informações da Lista Negra
+        blacklist_reason: Motivo
+        blacklisted_at: Na Lista Negra Em
+        agents: Agentes Atribuídos
+        no_agents: Não atribuído a nenhum agente
+        added: Adicionado
+        import_info: Informações de Importação
+        import_file: Arquivo Fonte
+        imported_by: Importado Por
+        imported_at: Importado Em
+        metadata: Metadados
+        email_domain: Domínio de E-mail
+        created_at: Criado
+        updated_at: Última Atualização
+      modal:
+        title: Detalhes do Lead
+        close: Fechar
+        sections:
+          basic_info: Informações de Contato
+          enrichment: Dados de Enriquecimento
+          disc: Perfil DISC
+          linkedin: Dados do LinkedIn
+          company: Dados do Site da Empresa
+          messages: Pré-visualização de Mensagens
+        fields:
+          email: E-mail
+          name: Nome
+          company: Empresa
+          domain: Domínio
+          website: Site
+          job_title: Cargo
+          location: Localização
+          linkedin_url: LinkedIn
+          view_profile: Ver Perfil
+          custom_fields: Campos Personalizados
+        disc:
+          title: Perfil DISC
+          not_analyzed: Não analisado
+          D: Dominância
+          I: Influência
+          S: Estabilidade
+          C: Conscienciosidade
+          DI: Dominância-Influência
+          DC: Dominância-Conscienciosidade
+          ID: Influência-Dominância
+          IC: Influência-Conscienciosidade
+          SC: Estabilidade-Conscienciosidade
+          SI: Estabilidade-Influência
+        linkedin:
+          headline: Título
+          summary: Resumo
+          experience: Experiência
+          education: Educação
+          posts: Posts Recentes
+          posts_count: "%{count} postagens"
+          no_posts: Nenhum post disponível
+          scraped_at: Analisado
+          not_scraped: Não raspado
+        company_website:
+          summary: Resumo do site da empresa
+          raw_data: Dados do site da empresa
+          more_characters: "%{count} caracteres adicionais..."
+          content: Conteúdo do Site
+          scraped_at: Raspado
+          not_scraped: Não raspado
+        messages:
+          title: Mensagens da Sequência
+          agent: Agente
+          no_agents: Lead não atribuído a nenhum agente
+          step: Etapa %{position}
+          delay_immediate: Imediato
+          delay_days: Após %{days} dias
+          subject: Assunto
+          body: Corpo
+          generate: Gerar
+          generate_all: Gerar Todos
+          generating: Gerando...
+          regenerate: Regenerar
+          no_messages: Nenhuma mensagem gerada ainda
+          all_generated: Todas as mensagens geradas
+          status:
+            draft: Rascunho
+            approved: Aprovado
+            scheduled: Agendado
+            sent: Enviado
+            failed: Falhou
+            bounced: Devolvido
+            replied: Respondeu
+        blacklist:
+          title: Na Lista Negra
+          reason: Motivo
+        enrichment:
+          title: Enriquecimento
+          linkedin_profile: Raspar Perfil LinkedIn
+          linkedin_posts: Raspar Posts LinkedIn
+          disc_profile: Inferir Perfil DISC
+          company_website: Raspar Site da Empresa
+          scraping: Raspando...
+          inferring: Inferindo...
+          success: Sucesso
+          error: Erro
+          last_updated: Última atualização em %{date}
+          never_scraped: Nunca raspado
+          not_available: Não disponível
+          requires_linkedin: Requer perfil LinkedIn primeiro
+          requires_posts: Requer posts LinkedIn primeiro
+    generated_messages:
+      updated: Mensagem atualizada com sucesso
+      test_sent: E-mail de teste enviado para %{email}
+      update_failed: Falha ao atualizar mensagem
+    email_accounts:
+      title: Contas de E-mail
+      subtitle: Gerenciar contas de e-mail em todas as organizações
+      created: Conta de e-mail criada com sucesso
+      updated: Conta de e-mail atualizada com sucesso
+      deleted: Conta de e-mail excluída com sucesso
+      warmup_started: Aquecimento iniciado com sucesso
+      status_updated: Status atualizado com sucesso
+      invalid_status: Status inválido especificado
+      confirm_delete: Tem certeza que deseja excluir esta conta de e-mail? Esta ação
+        não pode ser desfeita.
+      delete_failed_has_agents: Não é possível excluir conta de e-mail que está atribuída
+        a agentes. Remova as atribuições de agentes primeiro.
+      add_account: Adicionar Conta
+      import_csv: Importar CSV
+      back_to_list: Voltar às Contas de E-mail
+      filters:
+        organization: Organização
+        status: Status
+      statuses:
+        pending: Pendente
+        warming: Aquecendo
+        active: Ativo
+        paused: Pausado
+        suspended: Suspenso
+      table:
+        display_name: Nome de Exibição
+        connection: Conexão
+        connection_error: Erro
+        connection_ok: OK
+        not_tested: Não testado
+        warmup_progress: Progresso de Aquecimento
+        daily_limit: Limite Diário
+        view: Ver
+        edit: Editar
+        warmup_complete: Completo
+        days_remaining: Faltam %{days} dias
+      test_connection:
+        success: Teste de conexão bem-sucedido! SMTP e IMAP estão funcionando.
+        smtp_ok_imap_failed: 'SMTP OK, mas falha no IMAP: %{error}'
+        imap_ok_smtp_failed: 'IMAP OK, mas falha no SMTP: %{error}'
+        failed: 'Falha no teste de conexão: %{error}'
+      send_test:
+        success: E-mail de teste enviado para %{email}
+        failed: 'Falha ao enviar e-mail de teste: %{error}'
+        invalid_email: Por favor insira um endereço de e-mail válido
+      import:
+        title: Importar Contas de E-mail
+        subtitle: Fazer upload de um arquivo CSV para importar contas de e-mail em
+          massa
+        upload_title: Fazer Upload de Arquivo CSV
+        upload_description: Importar múltiplas contas de e-mail de uma vez a partir
+          de um arquivo CSV
+        organization: Organização
+        select_organization: Selecionar uma organização...
+        csv_file: Arquivo CSV
+        drop_file: Solte seu arquivo CSV aqui
+        or_click: ou clique para navegar
+        invalid_file_type: Por favor selecione um arquivo CSV
+        download_template: Baixar Modelo
+        template_description: Use este modelo para garantir que seu CSV tenha o formato
+          correto
+        download: Baixar
+        import_button: Importar Contas
+        select_file: Por favor selecione um arquivo CSV para importar
+        success: "%{count} contas de e-mail importadas com sucesso"
+        partial_success: "%{imported} importado, %{failed} falhou: %{errors}"
+        columns_title: Referência de Colunas
+        columns_description: Colunas obrigatórias e opcionais para o arquivo CSV
+        column_name: Coluna
+        required: Obrigatório
+        description: Descrição
+        provider_settings: Referência de Configurações do Provedor
+        provider_settings_description: Configurações comuns de SMTP/IMAP para provedores
+          de e-mail populares
+        google_note: Use Senhas de App para contas Gmail com 2FA ativado
+        microsoft_note: Certifique-se de que SMTP/IMAP está ativado nas configurações
+          de admin do Microsoft 365
+        columns:
+          email: O endereço de e-mail da conta
+          first_name: Nome do titular da conta
+          last_name: Sobrenome do titular da conta
+          smtp_host: Nome do host do servidor SMTP
+          smtp_port: Porta do servidor SMTP (geralmente 587)
+          smtp_username: Nome de usuário de autenticação SMTP
+          smtp_password: Senha de autenticação SMTP ou senha de app
+          imap_host: Nome do host do servidor IMAP
+          imap_port: Porta do servidor IMAP (geralmente 993)
+          imap_username: Nome de usuário de autenticação IMAP
+          imap_password: Senha de autenticação IMAP ou senha de app
+          smtp_encryption: 'Criptografia SMTP: tls, ssl ou none (padrão: tls)'
+          imap_encryption: 'Criptografia IMAP: ssl, tls ou none (padrão: ssl)'
+          daily_limit: 'Limite de envio diário (padrão: 50)'
+          sending_domain: Domínio de envio personalizado opcional
+          display_name: Substituição opcional do nome de exibição
+      show:
+        title: Detalhes da Conta de E-mail
+        subtitle: Ver e gerenciar configurações da conta de e-mail
+        organization: Organização
+        email: Endereço de E-mail
+        display_name: Nome de Exibição
+        status: Status
+        daily_limit: Limite de Envio Diário
+        warmup_status: Status de Aquecimento
+        warmup_complete: Aquecimento Completo
+        warmup_in_progress: Aquecimento em Andamento
+        days_remaining: "%{days} dias restantes"
+        warmup_not_started: Não Iniciado
+        notes: Notas
+        created_by: Criado Por
+        created_at: Criado
+        updated_at: Última Atualização
+        agents_title: Agentes Atribuídos
+        no_agents: Nenhum agente atribuído
+        start_warmup: Iniciar Aquecimento
+        start_warmup_confirm: Iniciar o período de aquecimento de 21 dias para esta
+          conta?
+        mark_active: Marcar como Ativo
+        pause: Pausar
+        suspend: Suspender
+        reactivate: Reativar
+        warmup_started_on: Iniciado em %{date}
+        back_to_list: Voltar às Contas de E-mail
+        account_holder: Titular da Conta
+        from_address: Endereço De
+        smtp_configuration: Configuração SMTP
+        imap_configuration: Configuração IMAP
+        connection_status: Status da Conexão
+        provider: Provedor
+        last_test: Último Teste
+        never_tested: Nunca testado
+        connection_error: Erro de Conexão
+        connection_healthy: Conexão está saudável
+        test_connection: Testar Conexão
+      form:
+        first_name: Nome
+        last_name: Sobrenome
+        smtp_host: Host SMTP
+        smtp_port: Porta SMTP
+        smtp_username: Usuário SMTP
+        smtp_password: Senha SMTP
+        smtp_encryption: Criptografia SMTP
+        imap_host: Host IMAP
+        imap_port: Porta IMAP
+        imap_username: Usuário IMAP
+        imap_password: Senha IMAP
+        imap_encryption: Criptografia IMAP
+        sending_domain: Domínio de Envio
+      new:
+        title: Adicionar Conta de E-mail
+        subtitle: Criar uma nova conta de e-mail para campanhas de saída
+        basic_info: Informações Básicas
+        select_organization: Selecionar organização...
+        email_placeholder: remetente@empresa.com
+        email_help: O endereço de e-mail que será usado para envio
+        first_name_placeholder: João
+        last_name_placeholder: Silva
+        display_name_placeholder: Equipe de Vendas
+        display_name_help: Como os destinatários verão o nome do remetente (opcional)
+        daily_limit_label: Limite de Envio Diário
+        daily_limit_help: Número máximo de e-mails a enviar por dia
+        smtp_config: Configuração SMTP
+        smtp_host_label: Host SMTP
+        smtp_port_label: Porta
+        smtp_username_label: Usuário
+        smtp_username_placeholder: Geralmente seu endereço de e-mail
+        smtp_password_label: Senha
+        smtp_password_placeholder: Senha de app ou senha SMTP
+        smtp_encryption_label: Criptografia
+        imap_config: Configuração IMAP
+        imap_host_label: Host IMAP
+        imap_port_label: Porta
+        imap_username_label: Usuário
+        imap_username_placeholder: Geralmente seu endereço de e-mail
+        imap_password_label: Senha
+        imap_password_placeholder: Senha de app ou senha IMAP
+        imap_encryption_label: Criptografia
+        optional_settings: Configurações Opcionais
+        sending_domain_label: Domínio de Envio
+        sending_domain_placeholder: empresa.com
+        sending_domain_help: Domínio personalizado para identificação HELO/EHLO
+        notes_label: Notas
+        notes_placeholder: Notas internas sobre esta conta...
+        info_pending: Novas contas estarão no status 'pendente'. Inicie o período
+          de aquecimento quando estiver pronto.
+        create_button: Criar Conta
+      edit:
+        title: Editar Conta de E-mail
+        subtitle: Atualizar configurações da conta de e-mail
+        email_readonly: O endereço de e-mail não pode ser alterado
+        display_name_help: Nome exibido nos e-mails enviados
+        daily_limit_label: Limite de Envio Diário
+        daily_limit_help: Máximo de e-mails a enviar por dia
+        notes_label: Notas
+        notes_placeholder: Notas internas sobre esta conta...
+    email_domains:
+      title: Domínios de E-mail
+      subtitle: Gerenciar integrações do Google Workspace e Microsoft 365
+      empty: Nenhum domínio de e-mail configurado ainda.
+      created: Domínio de e-mail criado com sucesso
+      created_with_discovery: Domínio de e-mail criado. %{discovered} usuários descobertos,
+        caixas de correio %{created} criadas.
+      updated: Domínio de e-mail atualizado com sucesso
+      deleted: Domínio de e-mail excluído com sucesso
+      delete_failed: Falha ao excluir domínio de e-mail
+      has_mailboxes: Não é possível excluir domínio com caixas de entrada existentes.
+        Exclua as caixas de entrada primeiro.
+      connection_success: Teste de conexão bem-sucedido
+      google_not_configured: Credenciais do Google não configuradas. Defina a variável
+        de ambiente GOOGLE_SERVICE_ACCOUNT_KEY.
+      microsoft_not_configured: Credenciais da Microsoft não configuradas. Defina
+        as variáveis de ambiente MICROSOFT_CLIENT_ID e MICROSOFT_CLIENT_SECRET.
+      confirm_delete: Tem certeza que deseja excluir este domínio?
+      add_domain: Adicionar Domínio
+      back_to_list: Voltar aos Domínios de E-mail
+      discover_mailboxes: Descobrir Caixas de Entrada
+      discovery_success: 'Descoberta concluída: encontrados %{discovered} usuários,
+        criadas %{created} caixas de correio, ignoradas %{skipped} existentes'
+      discovery_confirm: Isso pesquisará todos os usuários no domínio e criará caixas
+        de entrada para eles. Continuar?
+      sender_assigned: Remetente %{sender} atribuído a %{mailbox}
+      sender_unassigned: Remetente não atribuído de %{mailbox}
+      sender_assignment_failed: Falha ao atribuir remetente
+      sender_unassignment_failed: Falha ao desatribuir remetente
+      bulk_sender_assigned: "%{sender} atribuído a %{count} caixas de correio"
+      test_connection: Testar Conexão
+      testing_connection: Testando...
+      settings: Configurações
+      mailboxes_label: caixas de entrada
+      capacity_label: capacidade
+      no_mailboxes: Nenhuma caixa de entrada ainda
+      assign_sender: Atribuir Remetente
+      unassign_sender: Desatribuir
+      no_agents: Nenhum
+      warmup_complete: Completo
+      warmup_in_progress: Aquecendo
+      can_send: Pronto
+      cannot_send: Não pronto
+      select_all: Selecionar todos
+      selected_count: "%{count} selecionado"
+      bulk_assign: Atribuir ao Remetente
+      search_placeholder: Pesquisar domínios ou e-mails...
+      bulk_assign_title: Atribuir remetente a %{count} caixas de correio
+      bulk_assign_description: Selecione um remetente para atribuir a %{count} caixas
+        de correio selecionadas.
+      mailbox_table:
+        email: E-mail
+        sender: Remetente
+        agents: Agentes
+        status: Status
+        warmup: Aquecimento
+        capacity: Capacidade
+        actions: Ações
+      provider_types:
+        google: Google Workspace
+        microsoft: Microsoft 365
+      statuses:
+        active: Ativo
+        inactive: Inativo
+        error: Erro
+        deleted: Excluído
+        undefined: Desconhecido
+      filters:
+        title: Filtros
+        organization: Organização
+        provider_type: Tipo de Provedor
+        all_types: Todos os Tipos
+        status: Status
+      credentials_status:
+        title: Status das Credenciais Globais
+        google: Google
+        microsoft: Microsoft
+        configured: Configurado
+        not_configured: Não Configurado
+        google_hint: Defina a variável de ambiente GOOGLE_SERVICE_ACCOUNT_KEY
+        microsoft_hint: Defina as variáveis de ambiente MICROSOFT_CLIENT_ID e MICROSOFT_CLIENT_SECRET
+      table:
+        provider_type: Provedor
+        provider: Provedor
+        last_verified: Última Verificação
+        view: Ver
+        edit: Editar
+        never_verified: Nunca
+      new:
+        title: Adicionar Domínio de E-mail
+        subtitle: Configurar um domínio do Google Workspace ou Microsoft 365
+        organization_placeholder: Selecionar uma organização...
+        provider_type_label: Tipo de Provedor
+        provider_type_placeholder: Selecionar tipo de provedor...
+        domain_label: Domínio
+        domain_placeholder: exemplo.com
+        domain_help: O domínio de e-mail a configurar
+        domain_inferred: inferido do e-mail do admin
+        google_admin_email_label: E-mail do Admin
+        google_admin_email_help: E-mail do admin do Google Workspace para acesso à
+          API. O domínio será extraído deste e-mail.
+        google_client_id_label: ID do Cliente da Conta de Serviço
+        google_scopes_label: Escopos Necessários
+        microsoft_tenant_id_label: ID do Tenant Microsoft
+        microsoft_tenant_id_placeholder: 12345678-1234-1234-1234-123456789012
+        microsoft_tenant_id_help: Seu GUID de tenant do Azure AD (obrigatório para
+          Microsoft)
+        info_google: Para o Google Workspace, certifique-se de que a delegação em
+          todo o domínio está configurada para a conta de serviço.
+        info_microsoft: Para o Microsoft 365, certifique-se de que o consentimento
+          do admin está concedido para o app do Azure AD.
+        submit: Criar Domínio
+        submitting: Criando...
+      edit:
+        title: Editar Domínio de E-mail
+        subtitle: Atualizar configuração do domínio
+        domain_label: Domínio
+        microsoft_tenant_id_label: ID do Tenant Microsoft
+        delete_button: Excluir Domínio
+      show:
+        title: Detalhes do Domínio de E-mail
+        back_to_list: Voltar aos Domínios de E-mail
+        organization: Organização
+        provider_type: Tipo de Provedor
+        domain: Domínio
+        microsoft_tenant_id: ID do Tenant Microsoft
+        status: Status
+        last_verified: Última Verificação
+        verification_error: Erro de Verificação
+        created_at: Criado
+        updated_at: Última Atualização
+        mailboxes_title: Caixas de Entrada
+        mailboxes_count: "%{count} caixas de correio"
+        no_mailboxes: Nenhuma caixa de entrada configurada para este domínio
+        add_mailbox: Adicionar Caixa de Entrada
+        test_connection: Testar Conexão
+        testing: Testando...
+        credentials_status_title: Status das Credenciais
+    senders:
+      title: Remetentes
+      subtitle: Gerenciar pessoas que enviam mensagens de contato
+      empty: Nenhum remetente configurado ainda.
+      created: Remetente criado com sucesso
+      updated: Remetente atualizado com sucesso
+      deleted: Remetente excluído com sucesso
+      confirm_delete: Tem certeza que deseja excluir este remetente? Suas caixas de
+        entrada permanecerão mas não estarão vinculadas a um remetente.
+      add_sender: Adicionar Remetente
+      back_to_list: Voltar aos Remetentes
+      statuses:
+        active: Ativo
+        inactive: Inativo
+      filters:
+        organization: Organização
+        status: Status
+        search: Pesquisar por nome ou e-mail...
+      table:
+        job_title: Cargo
+        capacity: Capacidade Diária
+        view: Ver
+        edit: Editar
+      new:
+        title: Adicionar Remetente
+        subtitle: Adicionar uma nova pessoa que enviará mensagens de contato
+        organization_placeholder: Selecionar uma organização...
+        organization_help: A organização à qual este remetente pertence
+        first_name_placeholder: João
+        last_name_placeholder: Silva
+        nickname_label: Apelido (opcional)
+        nickname_placeholder: Joãozinho
+        nickname_help: Nome informal usado na variável de assinatura {{sender_nickname}}
+        email_placeholder: joao@empresa.com
+        email_help: E-mail de contato principal para este remetente
+        job_title_placeholder: Executivo de Contas
+        linkedin_url_label: URL do LinkedIn (opcional)
+        linkedin_url_placeholder: https://linkedin.com/in/usuario
+        linkedin_url_help: Para futura automação do LinkedIn
+        calendly_url_label: URL do Calendly (opcional)
+        calendly_url_placeholder: https://calendly.com/usuario
+        calendly_url_help: Link de agendamento por remetente para assinaturas
+        signature_template_label: Modelo de Assinatura
+        signature_template_placeholder: "<p>Atenciosamente,<br>{{sender_full_name}}<br>{{sender_job_title}}</p>"
+        signature_template_help: 'Assinatura HTML com variáveis. Disponíveis: {{sender_first_name}},
+          {{sender_last_name}}, {{sender_full_name}}, {{sender_nickname}}, {{sender_job_title}},
+          {{sender_email}}, {{sender_calendly_url}}, {{sender_linkedin_url}}, {{sender_company}},
+          {{lead_first_name}}, {{lead_last_name}}, {{lead_full_name}}, {{lead_company}},
+          {{lead_job_title}}, {{lead_email}}, {{lead_location}}, {{lead_linkedin_url}},
+          {{lead_company_website}}'
+        profile_photo_label: Foto de Perfil (opcional)
+        profile_photo_help: JPEG ou PNG, máx 4MB. Usado para sincronização com provedor.
+        profile_photo_upload: Fazer Upload de Foto
+        profile_photo_invalid_type: Tipo de arquivo inválido. Por favor faça upload
+          de uma imagem JPEG ou PNG.
+        profile_photo_too_large: Arquivo muito grande. O tamanho máximo é 4MB.
+        submit: Criar Remetente
+        submitting: Criando...
+      edit:
+        title: Editar Remetente
+        subtitle: Atualizar perfil e assinatura do remetente
+        delete_button: Excluir Remetente
+        change_photo: Alterar Foto
+      signature_editor:
+        mode_richtext: Texto Rico
+        mode_html: HTML
+        mode_preview: Pré-visualização
+        help_richtext: Copie e cole sua assinatura diretamente do seu cliente de e-mail.
+          A formatação será preservada.
+        help_html: 'Edite o HTML bruto da sua assinatura. Variáveis disponíveis: {{sender_first_name}},
+          {{sender_last_name}}, {{sender_full_name}}, {{sender_nickname}}, {{sender_job_title}},
+          {{sender_email}}, {{sender_calendly_url}}, {{sender_linkedin_url}}, {{sender_company}},
+          {{lead_first_name}}, {{lead_last_name}}, {{lead_full_name}}, {{lead_company}},
+          {{lead_job_title}}, {{lead_email}}, {{lead_location}}, {{lead_linkedin_url}},
+          {{lead_company_website}}'
+        help_preview: Esta assinatura contém HTML complexo. Mude para o modo HTML
+          para editá-la.
+        html_warnings_title: Avisos de Validação HTML
+        warning_unclosed_tag: 'Tag não fechada: <%{tag}>'
+        warning_unclosed_tags: 'Tags não fechadas: %{tags}'
+        warning_script_tags: Tags de script não são permitidas em assinaturas
+        complex_html_notice: Esta assinatura contém HTML complexo (tabelas, elementos
+          estilizados). Use o modo HTML para editar preservando toda a formatação.
+      show:
+        title: Detalhes do Remetente
+        back_to_list: Voltar aos Remetentes
+        profile_section: Perfil
+        email: E-mail
+        job_title: Cargo
+        linkedin: LinkedIn
+        calendly: Calendly
+        organization: Organização
+        status: Status
+        created_at: Criado
+        updated_at: Última Atualização
+        capacity_section: Capacidade
+        mailboxes_count: Caixas de Entrada
+        active_mailboxes: Caixas de Entrada Ativas
+        total_daily_capacity: Capacidade Diária Total
+        remaining_capacity: Restante Hoje
+        signature_section: Assinatura
+        signature_preview: Pré-visualização da Assinatura
+        no_signature: Nenhum modelo de assinatura configurado
+        signature_variables: Variáveis Disponíveis
+        mailboxes_section: Caixas de Entrada Atribuídas
+        no_mailboxes: Nenhuma caixa de entrada atribuída a este remetente
+        edit_sender: Editar Remetente
+        select_mailbox: Selecionar uma caixa de entrada para atribuir...
+        search_mailboxes: Pesquisar caixas de entrada...
+        no_mailboxes_found: Nenhuma caixa de entrada corresponde à sua pesquisa
+        assign_mailbox: Atribuir
+        assign_selected: Atribuir selecionado (%{count})
+        unassign_mailbox: Remover do remetente
+        calendly_section: Integração Calendly
+        calendly_not_configured: A integração do Calendly não está configurada. Entre
+          em contato com seu administrador para ativá-la.
+        calendly_connected_badge: Conectado
+        calendly_limited_badge: Conectado (limitado)
+        calendly_disconnected_badge: Não Conectado
+        calendly_error_badge: Erro
+        calendly_scheduling_url: Link de Agendamento
+        calendly_view_link: Ver Página de Agendamento
+        calendly_event_type: Tipo de Reunião
+        calendly_select_event_type_placeholder: Selecionar um tipo de evento
+        calendly_event_type_required: Selecione um tipo de reunião para concluir a
+          configuração do Calendly.
+        calendly_connected_at: Conectado
+        calendly_tracking_info: Reuniões agendadas via link do Calendly deste remetente
+          são automaticamente rastreadas e atribuídas a leads.
+        calendly_booking_links_enabled: Links de reserva do Calendly ativados
+        calendly_limited_tracking_info: Os links de reserva estão ativados. O rastreamento
+          automático de reuniões requer o Calendly Standard ou superior.
+        calendly_help_text: Conecte o Calendly para rastrear automaticamente reuniões
+          agendadas via link de agendamento deste remetente.
+        calendly_connect: Conectar Calendly
+        calendly_disconnect: Desconectar Calendly
+        calendly_confirm_disconnect: Desconectar
+        calendly_disconnect_warning: Isso interromperá o rastreamento de reuniões
+          para este remetente. Futuras reservas não serão automaticamente atribuídas
+          a leads.
+        calendly_retry: Tentar Conexão Novamente
+        search_domains: Pesquisar domínios...
+        select_all: Selecionar Todos
+        deselect_all: Desmarcar Todos
+        warmup_complete: Pronto para enviar
+        warming_up: Aquecendo
+        capacity_remaining: restante
+      mailbox_assigned: Caixa de correio %{email} atribuída a este remetente
+      mailboxes_assigned: "%{count} caixas de correio atribuídas a este remetente"
+      mailbox_unassigned: Caixa de correio %{email} removida deste remetente
+      mailbox_different_org: Não é possível atribuir caixa de entrada de uma organização
+        diferente
+      no_mailboxes_selected: Nenhuma caixa de entrada selecionada
+      calendly:
+        title: Integração Calendly
+        not_configured: A integração do Calendly não está configurada. Por favor entre
+          em contato com seu administrador.
+        not_connected: Este remetente não está conectado ao Calendly.
+        connected: Calendly conectado com sucesso! Reuniões agendadas via link deste
+          remetente serão rastreadas automaticamente.
+        connected_limited: Calendly conectado com sucesso. Os links de reserva estão
+          ativados.
+        disconnected: Calendly desconectado com sucesso.
+        connection_failed: 'Falha ao conectar o Calendly: %{error}'
+        event_type_selected: Tipo de reunião do Calendly atualizado.
+        event_type_selection_failed: 'Falha ao atualizar o tipo de reunião do Calendly:
+          %{error}'
+        oauth_denied: 'A autorização do Calendly foi negada: %{error}'
+        invalid_state: Estado OAuth inválido. Por favor tente conectar novamente.
+        sender_mismatch: Incompatibilidade de remetente no callback OAuth. Por favor
+          tente conectar novamente.
+        session_expired: Sessão OAuth expirada. Por favor tente conectar novamente.
+        sender_not_found: Remetente não encontrado. Por favor tente conectar novamente.
+    mailboxes:
+      title: Caixas de Entrada
+      subtitle: Gerenciar contas de envio de e-mail para entrega baseada em API
+      empty: Nenhuma caixa de entrada configurada ainda.
+      created: Caixa de entrada criada com sucesso
+      updated: Caixa de entrada atualizada com sucesso
+      deleted: Caixa de entrada excluída com sucesso
+      delete_failed: Falha ao excluir caixa de entrada
+      has_sent_messages: Não é possível excluir caixa de entrada com mensagens enviadas.
+        Archive a caixa de entrada em vez disso.
+      test_send_queued: E-mail de teste enfileirado para envio
+      test_send_success: E-mail de teste enviado com sucesso para %{recipient}
+      test_send_failed: 'Falha ao enviar e-mail de teste: %{error}'
+      cannot_send: 'Não é possível enviar desta caixa de correio: %{reasons}'
+      not_active: caixa de entrada não está ativa
+      no_capacity: limite de envio diário atingido
+      warmup_incomplete: período de aquecimento não concluído
+      confirm_delete: Tem certeza que deseja excluir esta caixa de entrada?
+      test_email:
+        subject: "[Teste Amplifa] E-mail de %{mailbox}"
+        body: |-
+          Este é um e-mail de teste da Amplifa.
+
+          Caixa de correio: %{mailbox}
+          Domínio: %{domain}
+          Provedor: %{provider}
+          Enviado em: %{timestamp}
+
+          Se você recebeu este e-mail, a caixa de correio está configurada corretamente e pronta para envio.
+      add_mailbox: Adicionar Caixa de Entrada
+      back_to_list: Voltar às Caixas de Entrada
+      statuses:
+        active: Ativo
+        paused: Pausado
+        suspended: Suspenso
+      warmup_status:
+        complete: Aquecimento Completo
+        in_progress: Aquecendo
+        not_started: Não Iniciado
+        days_remaining: "%{days} dias restantes"
+      filters:
+        organization: Organização
+        email_domain: Domínio
+        all_domains: Todos os Domínios
+        status: Status
+        warmup_status: Status de Aquecimento
+        all_warmup: Todos
+        warmup_complete: Completo
+        warmup_in_progress: Em Andamento
+      table:
+        display_name: Nome de Exibição
+        provider: Provedor
+        sender: Remetente
+        warmup: Aquecimento
+        daily_capacity: Capacidade Diária
+        agents: Agentes
+        view: Ver
+        edit: Editar
+      new:
+        title: Adicionar Caixa de Entrada
+        subtitle: Adicionar uma nova conta de envio de e-mail
+        email_domain_label: Domínio de E-mail
+        email_domain_placeholder: Selecionar um domínio...
+        email_domain_help: O domínio de e-mail ao qual esta caixa de entrada pertence
+        organization_placeholder: Selecionar uma organização...
+        organization_help: Será definido automaticamente com base no provedor
+        no_domains_for_org: Nenhum domínio de e-mail ativo disponível para esta organização.
+          Crie um domínio primeiro.
+        email_placeholder: remetente@exemplo.com
+        email_help: Deve corresponder ao domínio do provedor
+        first_name_placeholder: João
+        last_name_placeholder: Silva
+        display_name_placeholder: João Silva - Vendas
+        display_name_help: Como os destinatários verão o nome do remetente (opcional)
+        daily_send_limit_label: Limite de Envio Diário
+        daily_send_limit_help: 'Máximo de e-mails por dia (recomendado: 50-200 para
+          contas aquecidas)'
+        warmup_started_at_label: Aquecimento Iniciado
+        warmup_started_at_help: Quando o período de aquecimento de 21 dias começou
+          (deixe em branco para novas caixas de entrada)
+        start_warmup_label: Iniciar aquecimento imediatamente
+        start_warmup_help: Iniciar o período de aquecimento de 21 dias quando a caixa
+          de entrada for criada
+        info_api_based: Esta caixa de entrada enviará e-mails via API do provedor
+          (Gmail API ou Microsoft Graph). Nenhuma credencial SMTP é necessária.
+        info_message: Novas caixas de entrada devem completar um período de aquecimento
+          de 21 dias antes de atingir a capacidade total de envio. Durante o aquecimento,
+          o volume de envio é gradualmente aumentado para construir reputação.
+        submit: Criar Caixa de Entrada
+        submitting: Criando...
+      edit:
+        title: Editar Caixa de Entrada
+        subtitle: Atualizar configurações da caixa de entrada
+        email_readonly: O endereço de e-mail não pode ser alterado
+        first_name_placeholder: João
+        last_name_placeholder: Silva
+        display_name_placeholder: João Silva - Vendas
+        display_name_help: Como os destinatários verão o nome do remetente (opcional)
+        daily_send_limit_label: Limite de Envio Diário
+        daily_send_limit_help: 'Máximo de e-mails por dia (recomendado: 50-200 para
+          contas aquecidas)'
+        warmup_started_at_label: Aquecimento Iniciado
+        warmup_started_at_help: Ajuste a data de início do aquecimento para alterar
+          o cálculo do período de aquecimento
+        delete_button: Excluir Caixa de Entrada
+      show:
+        title: Detalhes da Caixa de Entrada
+        back_to_list: Voltar às Caixas de Entrada
+        back_to_details: Voltar à Caixa de Entrada
+        email: Endereço de E-mail
+        display_name: Nome de Exibição
+        full_display_name: Nome de Exibição Completo
+        domain: Domínio
+        provider: Provedor
+        provider_type: Tipo de Provedor
+        organization: Organização
+        status: Status
+        daily_send_limit: Limite de Envio Diário
+        warmup_status: Status de Aquecimento
+        warmup_progress: Progresso de Aquecimento
+        warmup_started: Aquecimento Iniciado
+        created_at: Criado
+        updated_at: Última Atualização
+        capacity_title: Capacidade de Hoje
+        sent_today: Enviados Hoje
+        remaining: Restante
+        can_send: Pode Enviar
+        agents_title: Agentes Atribuídos
+        no_agents: Nenhum agente atribuído a esta caixa de entrada
+        recent_messages_title: Mensagens Recentes
+        no_recent_messages: Nenhuma mensagem enviada desta caixa de entrada ainda
+        stats_title: Estatísticas de Envio
+        total_sent: Total Enviado
+        sent_this_week: Esta Semana
+        sent_this_month: Este Mês
+        bounced: Devolvidos
+        replies_received: Respostas Recebidas
+        test_send: Enviar E-mail de Teste
+        test_send_help: Enviar um e-mail de teste para verificar se esta caixa de
+          entrada pode enviar
+        sender_persona: Persona do Remetente
+        no_sender_assigned: Nenhuma persona de remetente atribuída a esta caixa de
+          entrada
+      bulk_update:
+        title: Ajustar Limite de Envio Diário
+        selected_count:
+          one: 1 caixa de entrada selecionada
+          other: "%{count} caixas de correio selecionadas"
+        adjust_limit: Ajustar Limite
+        description:
+          one: Definir um novo limite de envio diário para a caixa de entrada selecionada.
+          other: Defina um novo limite de envio diário para todas as %{count} caixas
+            de correio selecionadas.
+        new_limit_label: Novo Limite de Envio Diário
+        limit_help: Insira um valor entre 1 e 2000 e-mails por dia
+        apply: Aplicar aos Selecionados
+        no_mailboxes_selected: Nenhuma caixa de entrada selecionada
+        invalid_limit: O limite de envio diário deve estar entre 1 e 2000
+        success:
+          one: Limite de envio diário atualizado para %{limit} para 1 caixa de correio
+          other: Limite de envio diário atualizado para %{limit} para %{count} caixas
+            de correio
+    replies:
+      title: Central de Respostas
+      subtitle: Ver e gerenciar respostas de e-mail recebidas
+      reply_now: Responder agora
+      marked_responded: Resposta marcada como respondida
+      marked_no_response_needed: Resposta marcada como sem necessidade de resposta
+      confirm_mark_responded: Marcar esta resposta como respondida?
+      confirm_no_response: Marcar esta resposta como não requerendo resposta?
+      sent_successfully: Resposta enviada com sucesso
+      send_failed: 'Falha ao enviar resposta: %{error}'
+      forward_button: Avançar…
+      forward_successfully: Conversa encaminhada com sucesso
+      forward_invalid_email: Por favor insira um endereço de e-mail válido
+      forward_failed: 'Falha ao encaminhar conversa: %{error}'
+      forward_modal:
+        title: Encaminhar conversa
+        description: Envie o tópico completo e os detalhes do lead para qualquer endereço
+          de e-mail
+        email_label: Encaminhar para
+        email_placeholder: name@company.com
+        add_comment: Adicionar comentário
+        comment_placeholder: Adicione contexto para a pessoa que recebe esta conversa
+          encaminhada.
+        submit: Avançar
+      conversation_closed: Conversa fechada
+      conversation_reopened: Conversa reaberta
+      conversation_snoozed: A conversa foi adiada até %{until}
+      lead_assigned: Resposta atribuída a %{email}
+      reply_not_found: Resposta não encontrada ou já atribuída
+      stats:
+        total: Total de Respostas
+        requires_attention: Precisa de Atenção
+        bounces: Devoluções
+        out_of_office: Fora do Escritório
+        responded: Respondido
+        unresponded: Não Respondido
+      filters:
+        organization: Organização
+        agent: Agente
+        all_agents: Todos os Agentes
+        mailbox: Caixa de Entrada
+        all_mailboxes: Todas as Caixas de Entrada
+        reply_type: Tipo de Resposta
+        all_types: Todos os Tipos
+        requires_attention: Requer Atenção
+        bounces: Devoluções
+        out_of_office: Fora do Escritório
+        responded: Respondido
+      table:
+        lead: Lead
+        from: De
+        subject: Assunto
+        mailbox: Recebido Por
+        agent: Agente
+        type: Tipo
+        received: Recebido
+        view: Ver
+      types:
+        normal: Resposta
+        bounce: Devolução
+        hard_bounce: Devolução Permanente
+        soft_bounce: Devolução Temporária
+        out_of_office: Fora do Escritório
+      statuses:
+        needs_response: Precisa de Resposta
+        responded: Respondido
+        no_response_needed: Sem Necessidade de Resposta
+      show:
+        title: Detalhes da Resposta
+        back_to_list: Voltar às Respostas
+        from: De
+        to: Para (Caixa de Entrada)
+        subject: Assunto
+        received_at: Recebido
+        reply_type: Tipo
+        status: Status
+        message_id: ID da Mensagem
+        api_message_id: ID da Mensagem API
+        responded_at: Respondido Em
+        created_at: Criado
+        original_message_title: Mensagem Original Enviada
+        no_original_message: Nenhuma mensagem original vinculada
+        original_subject: Assunto
+        original_sent_at: Enviado
+        original_agent: Agente
+        original_step: Etapa da Sequência
+        lead_title: Informações do Lead
+        lead_name: Nome
+        lead_email: E-mail
+        lead_company: Empresa
+        lead_title_field: Título
+        lead_location: Localização
+        body_title: Conteúdo da Resposta
+        body_plain: Texto Simples
+        body_html: HTML
+        related_replies_title: Outras Respostas do Lead
+        no_related_replies: Nenhuma outra resposta deste lead
+        actions_title: Ações
+        mark_responded: Marcar como Respondido
+        mark_no_response: Sem Necessidade de Resposta
+        view_lead: Ver Lead
+        view_mailbox: Ver Caixa de Entrada
+    global_inbox:
+      title: Central de Respostas Global
+      subtitle: Todas as conversas em todas as organizações
+      all_organizations: Todas as Organizações
+      filter_organization: Organização
+      check_mail: Verificando e-mail em todas as organizações...
+      auto_reply:
+        button: Resposta Automática
+        sending: Gerando e enviando resposta automática...
+        sent: Resposta automática enviada com sucesso
+        sent_successfully: Resposta automática enviada com sucesso
+        failed: Falha ao enviar resposta automática
+        invalid_status: A resposta automática só está disponível para conversas 'não
+          interessado' ou 'pessoa errada'
+    meetings:
+      title: Reuniões
+      subtitle: Rastrear e gerenciar reuniões agendadas com leads
+      empty: Nenhuma reunião encontrada
+      no_results: Nenhuma reunião corresponde aos seus filtros
+      stats:
+        total: Total
+        scheduling: Agendamento
+        scheduled: Agendado
+        completed: Concluído
+        positive: Positivo
+        neutral: Neutro
+        no_show: Não Compareceu
+        cancelled: Cancelado
+        rescheduled: Reagendado
+      filters:
+        title: Filtros
+        status: Status
+        meeting_type: Tipo de Reunião
+        all_types: Todos os Tipos
+        outcome: Resultado
+        all_outcomes: Todos os Resultados
+        organization: Organização
+      table:
+        lead: Lead
+        agent: Agente
+        type: Tipo
+        scheduled: Agendado
+        duration: Duração
+        outcome: Resultado
+        view: Ver
+      types:
+        discovery: Descoberta
+        demo: Demo
+        follow_up: Acompanhamento
+        closing: Fechamento
+        other: Outro
+      statuses:
+        scheduled: Agendado
+        scheduling: Agendando
+        completed: Concluído
+        positive: Positivo
+        neutral: Neutro
+        no_show: Não Compareceu
+        cancelled: Cancelado
+        rescheduled: Reagendado
+        pending_removal: Remoção pendente
+      outcomes:
+        positive: Positivo
+        neutral: Neutro
+        negative: Negativo
+        no_show: Não Compareceu
+      show:
+        title: Detalhes da Reunião
+        back_to_list: Voltar às Reuniões
+        type: Tipo de Reunião
+        scheduled_at: Agendado Para
+        duration: Duração
+        duration_minutes:
+          one: "%{count} minuto"
+          other: "%{count} minutos"
+        location: Localização
+        status: Status
+        outcome: Resultado
+        notes: Notas
+        outcome_notes: Notas do Resultado
+        source: Fonte
+        source_manual: Manual
+        source_calendly: Calendly
+        attributed_via: Atribuído Via
+        created_at: Criado
+        completed_at: Concluído
+        cancelled_at: Cancelado
+        no_location: Nenhuma localização especificada
+        no_notes: Sem notas
+        lead_title: Informações do Lead
+        lead_name: Nome
+        lead_email: E-mail
+        lead_company: Empresa
+        lead_job_title: Cargo
+        view_lead: Ver Lead
+        agent_title: Informações do Agente
+        agent_name: Nome
+        agent_status: Status
+        agent_organization: Organização
+        view_agent: Ver Agente
+        actions_title: Ações
+        mark_completed: Marcar como Concluído
+        mark_no_show: Marcar como Não Compareceu
+        cancel_meeting: Cancelar Reunião
+        reschedule: Reagendar
+        select_outcome: Selecionar resultado...
+        outcome_notes_placeholder: Adicionar notas sobre o resultado da reunião...
+        new_time: Nova Hora
+        confirm_no_show: Marcar esta reunião como não compareceu?
+        confirm_cancel: Cancelar esta reunião?
+  replies:
+    ai_reply_agent: Agente de Resposta IA
+  meetings:
+    title: Reunião
+    subtitle: Rastrear e gerenciar suas reuniões com prospects e resultados
+    empty: Nenhuma reunião encontrada
+    search_placeholder: Pesquisar reunião por nome ou empresa
+    request_removal: Remover reunião
+    pending_removal_requested: Remoção solicitada
+    confirm_request_removal: Isso marcará a reunião para remoção do administrador.
+      Continuar?
+    request_removal_failed: Falha ao solicitar a remoção da reunião.
+    tabs:
+      all: Todos
+      positive: Positivo
+      neutral: Neutro
+      negative: Negativo
+    table:
+      name: Nome
+      title: Título
+      company: Empresa
+      meeting_date: Data da Reunião
+      time: Hora
+      meeting_outcome: Resultado da Reunião
+    outcomes:
+      positive: Positivo
+      neutral: Neutro
+      negative: Negativo
+    pagination:
+      showing: Mostrando %{start} a %{end} de %{total} reuniões
+      previous: Anterior
+      next: Próximo
+  roi:
+    title: ROI
+    subtitle: Rastreando o impacto de receita do seu pipeline automatizado.
+    filter_all: Todos os Agentes
+    refresh: Atualizar
+    create_report: Criar Relatório
+    tabs:
+      overview: Visão Geral do ROI
+      funnels: Funis de Marketing
+    metrics:
+      amplifa_roi: ROI do Amplifa
+      vs_last_quarter: vs. Último Trimestre
+      positive_outcomes: Resultados Positivos
+      acv: Valor Médio do Contrato (ACV)
+      meeting_value: Valor Médio da Reunião
+      edit_acv: Editar ACV
+      edit_meeting_value: Editar Valor da Reunião
+      pipeline_revenue: Receita de Pipeline Gerada
+      total_investment: Investimento Total no Amplifa
+      across_months: Ao longo de %{count} meses de parceria
+      emails_sent: E-mails Enviados
+      open_rate: Taxa de Abertura
+      reply_rate: Taxa de Resposta
+      meeting_rate: Taxa de Reunião
+    funnel:
+      title: 'Da Campanha ao Contrato: Seu Funil de Valor'
+      emails_sent: E-mails Enviados
+      opened: Abertos
+      replied: Respondidos
+      meetings: Reuniões
+      revenue: Receita
+    funnels_tab:
+      coming_soon: Funis de Marketing em breve.
+  playbooks:
+    title: Playbooks
+    subtitle: Revisar e aprovar playbooks para sua organização
+    empty: Nenhum playbook disponível ainda. Sua equipe do Amplifa criará playbooks
+      para você.
+    create:
+      button: Criar manual
+      started: A geração do manual começou. Seu novo rascunho aparecerá em breve.
+    back_to_list: Voltar aos Playbooks
+    filters:
+      status: Status
+      all_statuses: Todos os Status
+      product: Produto
+      all_products: Todos os Produtos
+      apply: Aplicar Filtros
+      clear: Limpar
+    table:
+      product: Produto
+      status: Status
+      language: Idioma
+      content: Conteúdo
+      updated: Última Atualização
+      actions: Ações
+      personae: personas
+      use_cases: casos de uso
+      view: Ver
+      review: Revisar
+    statuses:
+      draft: Rascunho
+      changes_requested: Alterações Solicitadas
+      approved: Aprovado
+      archived: Arquivado
+    show:
+      approve: Aprovar Playbook
+      request_changes: Solicitar Alterações
+      archive: Arquivar
+      approved_by: Aprovado por
+      on_date: em
+      pending_approval: Este playbook está aguardando sua aprovação
+      changes_pending: Alterações foram solicitadas para este playbook
+      already_approved: Este playbook foi aprovado
+    actions:
+      approve_title: Aprovar Playbook
+      approve_description: Ao aprovar, você confirma que este playbook representa
+        com precisão seus produtos e público-alvo.
+      approve_comment_label: Comentário (opcional)
+      approve_comment_placeholder: Adicione qualquer feedback ou notas...
+      approve_button: Aprovar
+      approving: Aprovando...
+      request_changes_title: Solicitar Alterações
+      request_changes_description: Descreva as alterações que você gostaria de ver
+        neste playbook.
+      request_changes_comment_label: Quais alterações são necessárias?
+      request_changes_comment_placeholder: Por favor descreva as alterações que você
+        precisa...
+      request_changes_button: Solicitar Alterações
+      requesting: Enviando...
+      comment_required: Por favor forneça um comentário descrevendo as alterações
+        necessárias
+      archive_title: Arquivar Playbook
+      archive_description: Playbooks arquivados não serão mais usados para campanhas.
+      archive_confirm: Tem certeza que deseja arquivar este playbook?
+      archive_button: Arquivar
+      archiving: Arquivando...
+    sections:
+      value_proposition: Proposta de Valor
+      personae: Personas-Alvo
+      use_cases: Casos de Uso
+      references: Clientes de Referência
+      proof_points: Pontos de Prova
+      comments: Discussão
+    knowledge_ui:
+      hero_badge: Camada de playbook com IA
+      value_proposition_eyebrow: Sinal principal
+      personae_eyebrow: Mapa de público
+      use_cases_eyebrow: Ângulos de mensagem
+      references_eyebrow: Prova de cliente
+      proof_points_eyebrow: Camada de credibilidade
+      comments_eyebrow: Histórico de revisão
+      see_more: Ver mais...
+      see_less: Ver menos
+    files:
+      download: Baixar
+      upload_failed: Falha no upload
+    aria:
+      close_feedback_modal: Fechar modal de feedback
+      close_approve_modal: Fechar modal de aprovação
+      close_request_changes_modal: Fechar modal de solicitação de alterações
+      close_archive_modal: Fechar modal de arquivamento
+    import_leads_ui:
+      lead_list_title: Tem listas de leads sem e-mails? Envie-as aqui
+      lead_list_description: Envie seu arquivo e nós o disponibilizaremos para a equipe
+        administrativa.
+      uploading: Enviando...
+      upload_file: Enviar arquivo
+      uploaded_at: 'Enviado: %{date}'
+      imported_at: 'Importado: %{date}'
+      completed_at: 'Concluído: %{date}'
+      created_count: "%{count} criados"
+      updated_count: "%{count} atualizados"
+      blacklisted_count: "%{count} bloqueados"
+      error_count: "%{count} erros"
+      step_upload_csv: 1. Enviar CSV
+      step_map_fields: 2. Mapear campos
+      click_to_upload_csv: Clique para enviar CSV
+      max_file_size: Máx. 50 MB
+      selected_rows: "%{count} linhas"
+      next_map_fields: 'Próximo: Mapear campos'
+      skip_column: Ignorar esta coluna
+      field_email: E-mail *
+      field_first_name: Nome
+      field_last_name: Sobrenome
+      field_full_name: Nome completo
+      field_job_title: Cargo
+      field_company: Empresa
+      field_company_website: Site da empresa
+      field_linkedin_url: URL do LinkedIn
+      field_location: Localização
+      example_value: ex. %{value}
+      custom_field: 'Personalizado: %{field}'
+      import_analysis: Análise da importação
+      analyzing: Analisando...
+      analysis_summary: "%{new_people} novas pessoas · %{new_leads} novos leads ·
+        %{lead_updates} atualizações de leads · %{invalid} inválidos"
+      back: Voltar
+      starting_import: Iniciando importação...
+    persona:
+      pain_points: Pontos de Dor
+    comments:
+      title: Discussão
+      empty: Nenhum comentário ainda
+      add_comment: Adicionar Comentário
+      comment_placeholder: Adicione um comentário ou pergunta...
+      submit: Publicar Comentário
+      posting: Publicando...
+    comment_types:
+      general: Geral
+      request_changes: Solicitação de Alteração
+      approval: Aprovação
+    domains:
+      blank: Por favor insira um nome de domínio.
+      invalid_format: Por favor insira um domínio válido (ex. exemplo.com).
+      limit_reached: Você pode ter no máximo %{max} domínios.
+      already_exists: Este domínio já está configurado.
+      created: O domínio %{domain} foi solicitado. Um administrador concluirá a configuração.
+    tabs:
+      training_data: Dados de Treinamento
+      sample_leads_messages: Leads & Mensagens de Amostra
+      knowledge_base: Base de Conhecimento
+      import_leads: Importar leads
+    knowledge_base:
+      hero_badge: Camada de conhecimento com IA
+      title_prefix: Base de
+      title_accent: Conhecimento
+      hero_description: Adicione documentos e a plataforma irá extrair, resumir e
+        estruturá-los em uma camada de inteligência coletiva para este playbook.
+      add_knowledge: Adicionar Conhecimento
+      untitled: Conhecimento sem título
+      ai_summary: Resumo de IA
+      all_playbooks: Todos os playbooks
+      download: Baixar
+      search_placeholder: Buscar título, resumo ou uploader...
+      no_matches_title: Nenhum conhecimento correspondente encontrado
+      no_matches_description: Tente outro termo de busca ou altere o filtro ativo.
+      summary_pending: O resumo de IA está sendo preparado. Este cartão será atualizado
+        automaticamente quando a extração terminar.
+      summary_failed: Falha ao gerar o resumo. Tente enviar esta fonte novamente.
+      empty_title: Nenhum conhecimento adicionado ainda
+      empty_description: Envie um documento para transformar referências de clientes,
+        notas de produto, briefings e pesquisas em resumos de IA pesquisáveis para
+        este playbook.
+      upload_first_source: Enviar primeira fonte
+      stats:
+        total_entries: Total de entradas
+        websites: Sites
+        pdfs: PDFs
+        docs: Docs
+      filters:
+        all: Todos
+        pdfs: PDFs
+        websites: Sites
+        docs: Docs
+      types:
+        pdf: PDF
+        website: Web
+        document: Documento
+      statuses:
+        extracting: Extraindo
+        summarizing: Resumindo
+        completed: Completo
+        failed: Falhou
+        unknown: "%{status}"
+      sort:
+        most_recent: Mais recente
+        oldest_first: Mais antigo primeiro
+        name_az: Nome A-Z
+      errors:
+        invalid_response: Resposta inválida do servidor
+        request_failed: Solicitação falhou (%{status})
+        upload_failed: Falha no envio
+      relative_time:
+        minutes_ago: Há %{count} min
+        hours_ago: Há %{count} h
+        yesterday: Ontem
+        days_ago: Há %{count} d
+      modal:
+        title: Adicionar conhecimento
+        description: Envie um arquivo ou adicione uma URL web para este playbook.
+        close: Fechar modal de adicionar conhecimento
+        file: Arquivo
+        url: URL
+        dropzone_title: Clique para procurar ou arraste um arquivo aqui
+        dropzone_hint: PDF, DOCX, texto, CSV, imagem ou documento web
+        source_url: URL de origem
+        url_placeholder: https://example.com/resource
+        url_hint: Vamos extrair e resumir a página ou arquivo vinculado.
+        cancel: Cancelar
+      slideover:
+        close: Fechar detalhes do conhecimento
+        extraction_running: A extração ainda está em andamento. O conteúdo extraído
+          aparecerá aqui quando o processamento terminar.
+        no_extracted_content: Nenhum conteúdo extraído está disponível para esta fonte
+          ainda.
+        tags: Tags
+        source: Fonte
+        extracted_content: Conteúdo extraído
+        download_source: Baixar fonte
+    samples:
+      leads_column: Leads
+      lead_details_column: Detalhes do Lead
+      messages_column: Mensagens
+      empty_no_agents: Nenhum agente gerou amostras ainda
+      empty_no_samples: Nenhuma mensagem de amostra disponível
+      empty_select_lead: Selecione um lead para ver as mensagens
+      linkedin_headline: Título do LinkedIn
+      linkedin_summary: Resumo do LinkedIn
+      company_info: Informações da Empresa
+      disc_profile: Perfil DISC
+      custom_fields: Campos Personalizados
+      subject: Assunto
+      agent_name: Agente
+      step: Etapa %{number}
+    approval_strip:
+      share_feedback: Compartilhar Feedback
+      message: Para prosseguir, por favor aprove o playbook ou forneça feedback.
+  customer:
+    agents:
+      title: Agentes
+      subtitle: Ver os leads e agentes atribuídos da sua organização
+      empty:
+        title: Nenhum agente ainda
+        description: Nenhum lead correspondente encontrado
+      companies:
+        title: Agentes - Visualização por Empresa
+        view_companies: Visualização por Empresa
+        back_to_leads: Visualização de Leads
+        empty:
+          description: Nenhuma empresa correspondente encontrada
+        filters:
+          search_placeholder: Pesquisar empresas, leads ou domínios
+        table:
+          company: Empresa
+          last_activity: Última Atividade
+          leads: Leads
+          leads_suffix: leads
+          summary_available: Disponível
+          no_summary: Sem resumo
+        modal:
+          load_error: Não foi possível carregar os detalhes da empresa
+          company: Empresa
+          company_summary: Resumo da Empresa
+          no_company_summary: Nenhum resumo da empresa disponível
+          leads_tab: Leads
+          buying_signals_tab: Sinais de Compra
+          detail_tabs_label: Abas de detalhes da empresa
+          no_leads: Nenhum lead visível nesta empresa
+          no_buying_signals: Nenhum sinal de compra disponível para este agente
+          view_linkedin: Ver LinkedIn
+      statuses:
+        draft: Rascunho
+        ready: Pronto
+        active: Ativo
+        paused: Pausado
+        completed: Concluído
+      filters:
+        title: Filtros
+        agent: Agente
+        lead_status: Status do Lead
+        all_agents: Todos os Agentes
+        search_placeholder: Pesquisar leads por nome, e-mail ou empresa
+      campaign_controls:
+        approve_playbook_button: Aprovar Playbook...
+        pause_button: Pausar agente
+        resume_button: Retomar agente
+        pause_success: Agente pausado.
+        resume_success: Agente retomado.
+        cannot_pause: Este agente não pode ser pausado agora.
+        cannot_resume: Este agente não pode ser retomado agora.
+      sent_today_badge: "%{count} e-mails enviados hoje"
+      delivery_statuses:
+        not_contacted: Não contatado
+        in_sequence: Na sequência
+        paused: Pausado
+        replied: Respondeu
+        bounced: Devolvido
+        completed: Concluído
+      interest_tags:
+        interested: Interessado
+        meeting_request: Solicitação de reunião
+        not_interested: Não estou interessado
+        wrong_person: Pessoa errada
+      buying_signals:
+        upgrade: Faça upgrade do seu plano para obter sinais de compra
+        notify_success: Seu gerente de conta entrará em contato em breve.
+        notify_failed: Não foi possível notificar a equipe da Amplifa
+        highlights: Destaques
+        buying_signal_relevance: Relevância dos sinais de compra
+        relevance_rating: Relevância
+        rating_value: "%{rating}/10"
+      table:
+        date_added: Data de Adição
+        last_sent: Último Envio
+        lead: Lead
+        agent: Agente
+        relevance: Relevância
+        relevance_tooltip_label: Explicar avaliação de relevância
+        relevance_tooltip: Nossa avaliação de IA sobre a relevância dos sinais de
+          compra para este prospecto.
+        progress: Progresso
+        messages_sent: mensagens enviadas
+      activity:
+        replied: Respondeu em %{date}
+        last_sent: Último envio em %{date}
+        added: Adicionado %{date}
+      pagination:
+        previous: Anterior
+        next: Próximo
+        showing: Mostrando %{start} a %{end} de %{total} leads
+        page_of: Página %{current} de %{total}
+      modal:
+        load_error: Não foi possível carregar os detalhes do lead
+        active: Ativo
+        blacklisted: Na Lista Negra
+        assigned_agents: Agentes Atribuídos
+        messages:
+          title: Linha do Tempo de Mensagens
+          empty: Nenhuma mensagem gerada ou resposta de conversa ainda
+          empty_body: Sem corpo de mensagem
+          no_subject: "(Sem assunto)"
+          generated_for: Gerado para %{agent}
+          generated_label: Gerado (%{status})
+          conversation: Conversa
+          bounce: Devolução
+          ooo: Fora do escritório
+      show:
+        title: Detalhes do Agente
+        download_button: Baixar
+        download_modal:
+          title: Baixar CSV de leads
+          description: Selecione um agente para baixar todos os dados de contato e
+            identidade do lead como CSV.
+          agent_label: Agente
+          choose_agent: Selecione um agente...
+          confirm_button: Baixar CSV
+        back_to_list: Voltar aos Agentes
+        description_title: Descrição
+        no_description: Nenhuma descrição fornecida
+        playbook: Playbook
+        no_playbook: Nenhum playbook atribuído
+        default_timezone: Fuso Horário Padrão
+        created_at: Criado
+        can_launch: Pronto para Lançar
+        cannot_launch: Não Pronto
+        stats:
+          title: Estatísticas do Agente
+          total_leads: Total de Leads
+          contacted: Contatados
+          replied: Responderam
+          meetings: Reuniões
+          reply_rate: Taxa de Resposta
+          meeting_rate: Taxa de Reunião
+        leads:
+          title: Leads Atribuídos
+          empty: Nenhum lead atribuído a este agente ainda
+          email: E-mail
+          name: Nome
+          company: Empresa
+          status: Status
+          created: Criado
+          active: Ativo
+          blacklisted: Na Lista Negra
+        mailboxes:
+          title: Caixas de Entrada
+          empty: Nenhuma caixa de entrada atribuída
+          warmup_complete: Pronto
+          days_remaining: "%{days} dias restantes"
+          statuses:
+            pending: Pendente
+            warming: Aquecendo
+            active: Ativo
+            paused: Pausado
+            suspended: Suspenso
+        samples:
+          title: Mensagens de Amostra
+          status:
+            approved: Aprovado
+            pending_review: Pronto para Revisão
+          generated_at: Gerado em %{date}
+          approved_by: Aprovado por %{name} em %{date}
+          view_approved_samples: Ver Amostras Aprovadas
+          review_samples: Revisar Amostras
+          need_email_steps: Nenhuma etapa de e-mail ativa encontrada. Adicione etapas
+            para gerar amostras.
+          need_leads: Nenhum lead encontrado. Adicione leads para gerar amostras.
+      review_samples:
+        title: Revisar Mensagens de Amostra
+        intro: Por favor revise as mensagens de amostra geradas por IA abaixo. Estes
+          são exemplos do que será enviado para seus leads.
+        not_ready: Mensagens de amostra ainda não foram geradas.
+        no_messages: Nenhuma mensagem de amostra disponível para revisão.
+        lead_info: Informações do Lead
+        message_preview: Pré-visualização da Mensagem
+        subject_label: Assunto
+        body_label: Corpo
+        send_test: Enviar Teste para Mim
+        test_sent: Teste enviado
+        expand_all: Expandir Todos
+        collapse_all: Recolher Todos
+        back_to_agent: Voltar ao Agente
+      approve_samples:
+        button: Aprovar Mensagens
+        confirm: Tem certeza que deseja aprovar estas mensagens de amostra? Isso permitirá
+          que o Amplifa gere mensagens para todos os leads.
+        success: Mensagens aprovadas! O Amplifa agora gerará mensagens para todos
+          os leads.
+        not_ready: Não é possível aprovar. Por favor aguarde as amostras serem geradas.
+      request_changes:
+        button: Solicitar Alterações
+        feedback_label: Quais alterações você gostaria?
+        feedback_placeholder: Por favor descreva as alterações que você precisa...
+        feedback_required: Por favor forneça feedback sobre as alterações que você
+          precisa.
+        success: Solicitação de alteração enviada para a equipe do Amplifa. Eles atualizarão
+          as mensagens e notificarão você.
+        submit_button: Enviar Solicitação
+    generated_messages:
+      send_test:
+        success: E-mail de teste enviado para seu endereço de e-mail.
+        failed: Falha ao enviar e-mail de teste.
+  mailers:
+    admin_notification:
+      samples_approved:
+        subject: "[Amplifa] Amostras aprovadas - %{agent_name}"
+      samples_changes_requested:
+        subject: "[Amplifa] Alterações solicitadas - %{agent_name}"
+      sample_messages_generated:
+        subject: "[Amplifa] Exemplos de mensagens geradas - %{agent_name}"
+      billing_interest:
+        subject: "[Amplifa] Juros de cobrança - %{organization_name} (%{action_name})"
+      integration_connected:
+        subject: "[Amplifa] Integração conectada - %{organization_name} (%{integration_name})"
+      lead_list_file_uploaded:
+        subject: "[Amplifa] Arquivo de lista de leads enviado - %{organization_name}
+          (%{uploader_name})"
+  common:
+    save: Salvar
+    cancel: Cancelar
+    edit: Editar
+    delete: Excluir
+    confirm: Confirmar
+    loading: Carregando...
+    error: Ocorreu um erro
+    success: Sucesso
+    true: Sim
+    false: Não
+    back: Voltar
+    next: Próximo
+    submit: Enviar
+    search: Pesquisar
+    filter: Filtrar
+    clear: Limpar
+    close: Fechar
+    welcome: Bem-vindo
+    status: Status
+    organization: Organização
+    created: Criado
+    name: Nome
+    company: Empresa
+    email: E-mail
+    view: Ver
+    apply_filters: Aplicar Filtros
+    all_statuses: Todos os Status
+  roles:
+    amplifa_admin: Admin do Amplifa
+    customer_admin: Admin do Cliente
+    customer_user: Usuário do Cliente
+  currencies:
+    eur: EUR - Euro
+    usd: USD - Dólar Americano
+    gbp: GBP - Libra Esterlina
+    chf: CHF - Franco Suíço
+  languages:
+    en: Inglês
+    de: Alemão
+    es: Espanhol (UE)
+    pt-BR: Português (Brasil)
+    fr: Francês
+    pl: Polonês
+    cs: Tcheco
+    it: Italiano
+  time:
+    just_now: Agora mesmo
+    formats:
+      long: "%d/%m/%Y %H:%M"
+      short: "%d/%m/%Y %H:%M"
+      date_only: "%d/%m/%Y"
+  date:
+    formats:
+      long: "%d de %B de %Y"
+      short: "%d/%m/%Y"
+  customer_home:
+    title: Início
+    welcome_back: Bem-vindo de volta, %{name}!
+    subtitle: Revise a configuração principal do seu workspace de prospecção, incluindo
+      domínios, perfis de remetentes, contas de email e cobertura da lista de bloqueio.
+    common:
+      not_set: Não definido
+    company:
+      title: Empresa
+      description: Informações do perfil da sua empresa
+      website: Site
+      industry: Setor
+    senders:
+      title: Remetentes
+      description: Pessoas que enviam emails de prospecção em nome da sua organização
+      empty: Nenhum remetente configurado. Entre em contato com seu administrador
+        da Amplifa.
+    email_accounts:
+      title: Contas de email
+      description: Gerado automaticamente a partir de domínios e remetentes
+      empty: As contas de email aparecerão aqui quando domínios e remetentes forem
+        configurados.
+      ready: Pronto
+    blacklist:
+      title: Lista de bloqueio
+      search_placeholder: Buscar na lista de bloqueio...
+      remove_entry: Remover entrada
+  customer_settings:
+    title: Configurações
+    subtitle: Gerencie sua conta, integrações e preferências
+    common:
+      actions: Ações
+      save_settings: Salvar configurações
+      saving: Salvando...
+    tabs:
+      billing: Cobrança
+      company: Empresa
+      team: Equipe
+      profile: Perfil
+      webhooks: Webhooks
+      blacklists: Lista de bloqueio
+      email: Remetentes e domínios
+    email:
+      sections:
+        auto_forward: Encaminhamento automático
+        senders: Remetentes
+        domains: Domínios
+        email_accounts: Contas de email
+      auto_forward:
+        title: Encaminhar automaticamente conversas interessadas
+        description: Encaminhe novas conversas interessadas ou solicitações de reunião
+          para um endereço de email. Cada conversa será encaminhada apenas uma vez.
+        enable: Ativar encaminhamento automático
+        forward_to: Encaminhar para
+        comment_options: Opções de comentário
+        without_comment: Encaminhar sem comentário
+        standard_comment: Adicionar comentário padrão a todas as conversas encaminhadas
+        per_agent_comment: Adicionar comentário padrão a todas as conversas encaminhadas,
+          por agente
+        save: Salvar configurações de encaminhamento automático
+        table:
+          agent: Agente
+          forward_comment: Comentário de encaminhamento
+      senders:
+        description: Perfis de remetente configurados
+        empty: Nenhum perfil de remetente configurado ainda.
+      domains:
+        description: Gerencie seus domínios de envio
+        add: Adicionar domínio
+        verified: Verificado
+        pending: Pendente
+        email_accounts_count: "%{count} contas de email"
+      accounts:
+        configured: "%{count} contas configuradas"
+        sent_today: Enviados hoje
+      statuses:
+        active: Ativo
+        paused: Pausado
+    blacklists:
+      sections:
+        email: Lista de bloqueio de emails
+        domain: Lista de bloqueio de domínios
+        import_export: Importar/Exportar
+        import: Importar
+        export: Exportar
+      email_title: Lista de bloqueio de emails
+      domain_title: Lista de bloqueio de domínios
+      search_emails: Buscar emails...
+      search_domains: Buscar domínios...
+      remove_entry: Remover entrada
+      export:
+        title: Exportar
+        description: Baixe a lista de bloqueio desta organização
+        csv_title: Exportar lista de bloqueio (CSV)
+        csv_description: Baixe todos os emails e domínios bloqueados específicos da organização como CSV com colunas de valor, tipo e motivo.
+        download: Baixar CSV
+      table:
+        email: Email
+        domain: Domínio
+        added: Adicionado
+        reason: Motivo
+    webhooks:
+      remove_confirm: Remover este endpoint de webhook?
+      only_authorized: Somente usuários autorizados podem alterar esta configuração.
+      sections:
+        tracking: Rastreamento de cliques
+        endpoints: Endpoints de webhook
+        events: Histórico de cliques
+      click_tracking:
+        title: Rastreamento de cliques
+        description: Reescreve links HTML de emails para URLs de redirecionamento
+          rastreadas e emite eventos de clique.
+        example: 'Exemplo - links em emails HTML serão reescritos:'
+        enable: Ativar rastreamento de cliques + webhooks
+      endpoints:
+        title: Endpoints de webhook
+      events:
+        title: Eventos de clique registrados
+        description: Cliques rastreados mais recentes desta organização.
+        empty: Nenhum evento de clique registrado ainda.
+        table:
+          clicked_at: Clicado em
+          lead: Lead
+          target_url: URL de destino
+          referrer: Referenciador
+    team:
+      title: Membros da equipe
+      members_of: Membros de %{organization}
+      sections:
+        members: Membros da equipe
+        invitations: Convites
+      roles:
+        customer_admin: Administrador do cliente
+        customer_user: Usuário do cliente
+      table:
+        name: Nome
+        email: Email
+        role: Função
+        joined: Entrou em
+    billing:
+      ai_intelligence: Inteligência de IA
+      day: Dia %{day}
+      usage_alert: Você usou %{used} de %{limit} reuniões neste ciclo de cobrança
+      reset_on: Agentes de IA reiniciam em %{date}
+      reset_next_cycle: Agentes de IA reiniciam no seu próximo ciclo de cobrança
+      need_more: Precisa de mais reuniões agora?
+      get_more: Obter mais 10 reuniões
+      upgrade_plan: Atualizar plano
+      current_plan: Plano atual
+      active: Ativo
+      current_plan_description: Gerencie sua assinatura e detalhes de cobrança
+      plan: Plano
+      per_month: "/mês"
+      upgrade_annual: Atualizar para anual - Economize 20%
+      meetings_usage: Uso de reuniões
+      meetings_usage_count: "%{used} / %{limit} reuniões neste ciclo de cobrança"
+      renews_on: Renova em %{date}
+      renewal_unavailable: Data de renovação indisponível
+      update_plan: Atualizar plano
+      update_plan_description: Escolha o plano certo para sua equipe
+      plan_meetings: Até %{count} reuniões por ciclo de cobrança
+      upgrade: Atualizar
+  workspaces:
+    switcher:
+      label: Espaço de trabalho
+    no_workspace:
+      page_title: Nenhum espaço de trabalho - Amplifa
+      heading: Nenhum espaço de trabalho ativo
+      description: Sua conta não está conectada a um espaço de trabalho ativo no momento.
+        Entre em contato com seu administrador ou com o suporte da Amplifa para recuperar
+        o acesso.
+      logout: Sair
+  invitations:
+    flash:
+      invalid: Este link de convite é inválido ou foi removido.
+      expired: Este convite expirou. Entre em contato com seu administrador para obter
+        um novo convite.
+      already_used: Este convite já foi utilizado. Faça login.
+      cancelled: Este convite foi cancelado. Entre em contato com seu administrador.
+      no_longer_valid: O convite não é mais válido
+      login_with_invited_email: Faça login com o endereço de e-mail convidado para
+        aceitar este convite.
+      password_required: A senha é obrigatória
+      passwords_mismatch: As senhas não coincidem
+      password_too_short: A senha deve ter pelo menos 8 caracteres
+      welcome: Bem-vindo à Amplifa, %{name}!
+      welcome_setup: Bem-vindo à Amplifa! Vamos configurar sua conta.
+      create_failed: 'Falha ao criar a conta: %{message}'
+      accept_failed: 'Falha ao aceitar o convite: %{message}'
+      unexpected_error: Ocorreu um erro inesperado. Tente novamente ou entre em contato
+        com o suporte.
+
+  assistant:
+    nav: Assistente
+    page_title: Assistente
+    new_chat: Novo chat
+    chats: Chats
+    show_chats: Mostrar chats
+    hide_chats: Ocultar chats
+    untitled_chat: Novo chat
+    no_chats: Nenhuma conversa ainda
+    no_chats_hint: Comece um novo chat para começar.
+    delete_chat: Excluir chat
+    delete_chat_confirm: Excluir este chat?
+    delete_chat_confirm_named: 'Excluir "%{title}"? Isso não pode ser desfeito.'
+    pin_chat: Fixar chat
+    unpin_chat: Desafixar chat
+    load_more_chats: Carregar mais
+    loading_more_chats: Carregando...
+    load_older: Carregar mensagens anteriores
+    loading_older: Carregando mensagens anteriores...
+    scroll_to_bottom: Rolar para baixo
+    thinking: Pensando...
+    you: Você
+    assistant_label: Assistente
+    retry: Tentar novamente
+    composer:
+      placeholder: Pergunte qualquer coisa sobre seu workspace...
+      send: Enviar
+      hint: Enter para enviar, Shift + Enter para nova linha
+      stop: Parar
+      remove_reference: Remover texto citado
+    selection:
+      ask: Perguntar ao assistente
+    welcome:
+      greeting: Olá, %{name}
+      title: Como posso ajudar?
+      description: Pergunte sobre seus playbooks, leads, respostas ou resultados. Respondo
+        em linguagem simples e indico onde olhar no Amplifa.
+      suggestions_label: Experimente uma destas
+      suggestions:
+        inbox: Quais conversas estão aguardando minha resposta?
+        interested: Quem respondeu com interesse recentemente?
+        stats: Como está minha caixa de entrada? Me dê os números.
+        summarize: Resuma minha conversa mais recente
+    tools:
+      conversation_list:
+        running: Buscando na sua caixa de entrada...
+        done: Caixa de entrada consultada
+        failed: A busca na caixa de entrada está indisponível
+      conversation_stats:
+        running: Analisando sua caixa de entrada...
+        done: Caixa de entrada analisada
+        failed: As estatísticas da caixa de entrada estão indisponíveis
+      conversation_read:
+        running: Lendo a conversa...
+        done: Conversa lida
+        failed: Não foi possível ler a conversa
+      conversation_update_interest_status:
+        running: Atualizando o status de interesse...
+        done: Status de interesse atualizado
+        failed: Não foi possível atualizar o status de interesse
+      meeting_create:
+        running: Agendando a reunião...
+        done: Reunião agendada
+        failed: Não foi possível agendar a reunião
+      meeting_reschedule:
+        running: Reagendando a reunião...
+        done: Reunião reagendada
+        failed: Não foi possível reagendar a reunião
+      meeting_cancel:
+        running: Cancelando a reunião...
+        done: Reunião cancelada
+        failed: Não foi possível cancelar a reunião
+      meeting_list:
+        running: Buscando suas reuniões...
+        done: Reuniões consultadas
+        failed: A busca de reuniões está indisponível
+      meeting_read:
+        running: Lendo a reunião...
+        done: Reunião lida
+        failed: Não foi possível ler a reunião
+      lead_search:
+        running: Searching leads...
+        done: Searched leads
+        failed: Lead search is unavailable
+      agent_list:
+        running: Looking up your agents...
+        done: Looked up your agents
+        failed: Agent lookup is unavailable
+      agent_stats:
+        running: Analyzing your campaigns...
+        done: Analyzed your campaigns
+        failed: Campaign statistics are unavailable
+      agent_lead_list:
+        running: Looking up campaign leads...
+        done: Looked up campaign leads
+        failed: Campaign lead lookup is unavailable
+      agent_pause_campaign:
+        running: Pausing the agent...
+        done: Agent paused
+        failed: Could not pause the agent
+      agent_resume_campaign:
+        running: Resuming the agent...
+        done: Agent resumed
+        failed: Could not resume the agent
+      generic:
+        running: Trabalhando...
+        done: Concluído
+        failed: Esta ferramenta está temporariamente indisponível
+    flash:
+      chat_deleted: Chat excluído
+    errors:
+      create_chat: Não foi possível iniciar um novo chat. Tente novamente.
+      delete_chat: Não foi possível excluir este chat. Tente novamente.
+      pin_chat: Não foi possível atualizar este chat. Tente novamente.
+      load_more_chats: Não foi possível carregar mais chats. Tente novamente.
+      chat_not_found: Esse chat não está mais disponível.
+      blank_prompt: Escreva uma mensagem antes de enviar.
+      prompt_too_long: Sua mensagem é muito longa. Mantenha abaixo de %{count} caracteres.
+      already_streaming: Aguarde o fim da resposta atual antes de enviar outra mensagem.
+      send_failed: Não foi possível enviar sua mensagem. Tente novamente.
+      load_older_failed: Não foi possível carregar as mensagens anteriores. Tente novamente.
+      llm_unavailable: O assistente está indisponível agora. Tente novamente em instantes.
+      empty_completion: O assistente não retornou uma resposta. Tente novamente.
+      unexpected: Algo deu errado ao responder. Tente novamente.
+      connection_lost: Conexão perdida. Recarregue a página para ver a resposta completa.

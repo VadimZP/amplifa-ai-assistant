@@ -1,0 +1,115 @@
+---
+description: Rails controller, policy, service, model and test conventions
+globs: app/**/*.rb,test/**/*.rb,config/**/*.rb,db/**/*.rb,lib/**/*.rb
+alwaysApply: false
+---
+
+# Backend Conventions
+
+Style is `rubocop-rails-omakase` adjusted to repo conventions in `.rubocop.yml` (single quotes,
+keyword-aligned `end`). Run it via `npm run check` (or `bin/rubocop` directly).
+Start new files with `# frozen_string_literal: true` followed by a comment explaining the class's purpose.
+
+The codebase uses `# WHY:` comments to explain non-obvious authorization and business decisions —
+follow that convention rather than restating what the code does.
+
+## Controllers
+
+Inertia renders name the page component by path, matching `app/javascript/pages/`:
+
+```ruby
+render inertia: 'Roi/Index', props: roi_props(organization)
+# failure case
+render inertia: 'Roi/Index', props: roi_props(organization, errors: organization.errors.messages),
+       status: :unprocessable_entity
+```
+
+Build props in a private `*_props` method returning a hash, and pass capability flags computed from
+policies so the UI can hide what the user can't do: `can_edit_metrics: policy(:roi).update?`.
+
+[app/controllers/application_controller.rb](app/controllers/application_controller.rb) enforces
+`verify_authorized` and `verify_policy_scoped` via `after_action`. Every action must either
+`authorize ...` / `policy_scope ...` or explicitly `skip_policy_scope`. Strong params go in a private
+`*_params` method using `params.require(...).permit(...)`.
+
+## Multi-tenancy — the single most important rule
+
+`Current.organization` is the tenant, `current_account` is the user (aliased as `pundit_user`).
+**Always scope through Pundit, never query a model unscoped:**
+
+```ruby
+# BAD — leaks across organizations
+Conversation.find(params[:id])
+
+# GOOD
+policy_scope(Conversation).find(params[:id])
+authorize conversation, :update?
+```
+
+A foreign ID must produce "not found", never another org's data.
+
+## Pundit policies
+
+Subclass `ApplicationPolicy`; predicates end in `?`. `ApplicationPolicy` defaults everything to
+amplifa-admin-only, so customer access is granted explicitly. Available helpers: `amplifa_admin?`,
+`customer_account?`, `customer_admin?`, `customer_user?`, `same_current_organization?(org_id)`,
+`current_organization_id`, `current_membership`.
+
+```ruby
+def show?
+  return true if amplifa_admin?
+
+  customer_account? && belongs_to_user_organization?
+end
+
+class Scope < Scope
+  def resolve
+    return scope.all if user&.amplifa_admin?
+
+    if customer_account? && current_organization_id
+      scope.where(organization_id: current_organization_id)
+    else
+      scope.none
+    end
+  end
+end
+```
+
+Roles resolve from `Current.organization_membership`, not the account — a user with no active
+membership gets no customer rights.
+
+## Services
+
+`app/services/` classes take keyword args in `initialize` and expose a single public `#call` that
+returns a hash (or raises). Keep helpers private and memoize derived data with `@x ||=`.
+
+```ruby
+class LeadImportAnalyzerService
+  def initialize(csv_content:, email_column:, organization_id:)
+  def call
+    { summary: build_summary, rows: analyze_rows }
+```
+
+## Tests (Minitest)
+
+Use `test "..." do` blocks with fixtures (`fixtures :all` is global) — no factories.
+Policy tests instantiate the policy directly, set `Current.organization`, and `Current.reset` in `teardown`:
+
+```ruby
+test "show? returns false for customer viewing other org entries" do
+  assert_not BlacklistPolicy.new(@customer_admin, @beta_unsubscribe).show?
+end
+```
+
+Integration tests use the helpers in [test/test_helper.rb](test/test_helper.rb): `login_as(account)`,
+`inertia_headers`, `inertia_props`, `assert_inertia_component`.
+
+```ruby
+get roi_path, headers: inertia_headers
+assert_inertia_component 'Roi/Index'
+```
+
+Note `login_as` uses password `'password123'` for amplifa admins and `'password'` for everyone else
+(this differs from the seed passwords in README.md). WebMock blocks outbound HTTP — stub LLM calls.
+
+Run: `bin/rails test` (or a single file: `bin/rails test test/models/foo_test.rb`).

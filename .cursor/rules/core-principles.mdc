@@ -1,0 +1,56 @@
+---
+description: Core working agreement — match existing code, reuse existing libraries, ask before custom solutions
+alwaysApply: true
+---
+
+# Core Principles
+
+## 1. Match the existing codebase
+
+Before writing code, read the neighbouring files and follow what's already there — naming, file
+layout, error handling, comment style, test style. Consistency with surrounding code outweighs any
+external "best practice" or personal preference. If you spot two competing patterns, follow the one
+dominant in the area you're editing and mention the inconsistency rather than inventing a third.
+
+## 2. Reuse before you build — ask before going custom
+
+Follow this order, and **stop at the first option that works**:
+
+1. Something already in this repo (a component, service, helper, concern, policy)
+2. A library already in [package.json](package.json) or [Gemfile](Gemfile)
+3. Only if neither fits: **propose a custom solution and wait for my explicit approval before
+   implementing it.** Explain what you tried from steps 1-2 and why it didn't fit.
+
+The same applies to adding any new dependency: **propose it and get approval first.**
+
+Already available — check these before reaching for anything new:
+
+- **Backend**: Rails 8.1, Rodauth (auth), Pundit (authorization), `ruby_llm` + `ruby_llm-schema`
+  (LLM calls, with `Chat`/`Message`/`ToolCall`/`Model` persistence), `paper_trail` (versioning),
+  `inertia_rails`, `solid_cache`/`solid_cable`, `pdf-reader`, `docx`, `csv`, `faker`, `jwt`
+- **Frontend**: React 19, Inertia.js, TypeScript, Tailwind CSS v4, `lucide-react` (icons),
+  `sonner` (toasts), `@radix-ui/react-slot`, TipTap (rich text), `i18n-js`, `@rails/actioncable`,
+  `@floating-ui/dom` (positioning)
+- **In-repo**: `app/javascript/components/ui/` (see its `index.ts`), `app/javascript/layouts/`,
+  `app/javascript/hooks/`, `app/services/`, `app/policies/`
+
+## 3. Never hard-code what belongs in a system
+
+- **Strings** → `t()` from `app/javascript/lib/i18n.ts`, with keys in `config/locales/*.yml`
+- **Colors** → the CSS variables in `app/javascript/entrypoints/application.css` (never a raw hex
+  or a Tailwind palette class like `bg-blue-500`)
+- **Icons** → `lucide-react` (never inline SVG)
+
+## 4. Scope every query to the current organization
+
+`Current.organization` is the tenant boundary and Pundit is the gate. Never query a model unscoped;
+a foreign ID must return "not found", never another organization's data.
+
+## 5. Verify before claiming done
+
+```bash
+bin/rails test     # backend
+npm run check      # typecheck + ESLint + RuboCop
+```
+
+Report actual results. Don't describe work as complete if you haven't run these.

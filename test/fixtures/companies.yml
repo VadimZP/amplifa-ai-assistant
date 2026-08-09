@@ -1,0 +1,11 @@
+example_corp:
+  name: Example Corp
+  domain: example.com
+  normalized_domain: example.com
+  website_url: https://www.example.com
+
+test_corp:
+  name: Test Corp
+  domain: testcorp.com
+  normalized_domain: testcorp.com
+  website_url: https://www.testcorp.com

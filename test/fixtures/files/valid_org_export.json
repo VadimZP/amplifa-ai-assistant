@@ -1,0 +1,93 @@
+{
+  "export_version": "1.0",
+  "exported_at": "2026-01-11T12:00:00Z",
+  "source_instance": "test",
+  "organization": {
+    "name": "Imported Test Org",
+    "industry": "Technology",
+    "size": "11-50",
+    "website": "https://imported-test.com",
+    "locale": "en",
+    "currency": "EUR"
+  },
+  "senders": [
+    {
+      "_export_ref": "sender_1",
+      "first_name": "Test",
+      "last_name": "Sender",
+      "email": "test@imported-test.com",
+      "job_title": "Sales Rep",
+      "status": "active",
+      "profile_photo": null
+    }
+  ],
+  "email_domains": [
+    {
+      "_export_ref": "email_domain_1",
+      "provider_type": "google",
+      "domain": "imported-test.com",
+      "status": "active"
+    }
+  ],
+  "mailboxes": [
+    {
+      "_export_ref": "mailbox_1",
+      "_email_domain_ref": "email_domain_1",
+      "_sender_ref": "sender_1",
+      "email": "sales@imported-test.com",
+      "first_name": "Sales",
+      "last_name": "Team",
+      "status": "active",
+      "daily_send_limit": 200
+    }
+  ],
+  "playbooks": [
+    {
+      "_export_ref": "playbook_1",
+      "product": {"name": "Test Product", "description": "A test product"},
+      "status": "draft",
+      "language": "en",
+      "value_proposition": "Test value prop",
+      "personae": [{"id": "1", "name": "Persona", "title": "Title", "order": 1}],
+      "use_cases": [{"id": "1", "title": "Use Case", "description": "Desc", "order": 1}],
+      "references": [],
+      "proof_points": []
+    }
+  ],
+  "blacklists": [
+    {
+      "value": "blocked@test.com",
+      "value_type": "email",
+      "source": "manual",
+      "reason": "Test blacklist"
+    }
+  ],
+  "agents": [
+    {
+      "_export_ref": "agent_1",
+      "_playbook_ref": "playbook_1",
+      "name": "Test Agent",
+      "description": "A test agent",
+      "locale": "en",
+      "sample_count": 5
+    }
+  ],
+  "agent_mailboxes": [
+    {
+      "_agent_ref": "agent_1",
+      "_mailbox_ref": "mailbox_1"
+    }
+  ],
+  "sequence_steps": [
+    {
+      "_agent_ref": "agent_1",
+      "position": 1,
+      "event_type": "email",
+      "name": "Initial Outreach",
+      "delay_days": 0,
+      "active": true,
+      "subject_prompt_slug": "generic_subject",
+      "body_prompt_slug": "generic_body"
+    }
+  ]
+}

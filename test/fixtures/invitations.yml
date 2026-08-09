@@ -1,0 +1,72 @@
+# Invitation fixtures for testing Week 2 invitation system
+# WHY: Fixtures provide test data for invitation mailer and controller tests
+
+pending_acme:
+  organization: acme
+  account:
+  invited_by: amplifa_admin
+  email: 'pending@acme.com'
+  first_name: 'Pending'
+  last_name: 'User'
+  role: 'customer_user'
+  token: 'test_token_pending_acme_12345678'
+  status: 'pending'
+  sent_at: <%= Time.zone.now - 2.hours %>
+  accepted_at:
+  expires_at: <%= Time.zone.now + 5.days %>
+
+pending_beta:
+  organization: beta
+  account:
+  invited_by: amplifa_admin
+  email: 'pending@beta.com'
+  first_name: 'Invited'
+  last_name: 'Person'
+  role: 'customer_admin'
+  token: 'test_token_pending_beta_87654321'
+  status: 'pending'
+  sent_at: <%= Time.zone.now - 1.day %>
+  accepted_at:
+  expires_at: <%= Time.zone.now + 6.days %>
+
+expired_acme:
+  organization: acme
+  account:
+  invited_by: amplifa_admin
+  email: 'expired@acme.com'
+  first_name: 'Expired'
+  last_name: 'User'
+  role: 'customer_user'
+  token: 'test_token_expired_acme_11223344'
+  status: 'pending'
+  sent_at: <%= Time.zone.now - 9.days %>
+  accepted_at:
+  expires_at: <%= Time.zone.now - 2.days %>
+
+accepted_growth_lab:
+  organization: growth_lab
+  account: customer_user
+  invited_by: amplifa_admin
+  email: 'accepted@growthlab.com'
+  first_name: 'Accepted'
+  last_name: 'User'
+  role: 'customer_user'
+  token: 'test_token_accepted_growth_lab_55667788'
+  status: 'accepted'
+  sent_at: <%= Time.zone.now - 10.days %>
+  accepted_at: <%= Time.zone.now - 8.days %>
+  expires_at: <%= Time.zone.now - 3.days %>
+
+cancelled_beta:
+  organization: beta
+  account:
+  invited_by: amplifa_admin
+  email: 'cancelled@beta.com'
+  first_name: 'Cancelled'
+  last_name: 'Person'
+  role: 'customer_admin'
+  token: 'test_token_cancelled_beta_99887766'
+  status: 'cancelled'
+  sent_at: <%= Time.zone.now - 4.days %>
+  accepted_at:
+  expires_at: <%= Time.zone.now + 3.days %>

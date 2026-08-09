@@ -1,0 +1,471 @@
+require "test_helper"
+
+class PlaybooksTest < ActionDispatch::IntegrationTest
+  # WHY: We're testing the customer-facing playbook interface separately from admin
+  # because customers have different permissions and workflow actions than admins.
+  # Customers can view, approve, request changes, and archive playbooks for their org only.
+
+  def setup
+    # WHY: We need both a customer user and an admin to test authorization boundaries
+    @customer_admin = accounts(:customer_admin)
+    @customer_user = accounts(:customer_user)
+    @amplifa_admin = accounts(:amplifa_admin)
+
+    @org = organizations(:acme)
+    @product = products(:crm_platform)
+    @playbook_draft = playbooks(:draft_playbook)
+    @playbook_approved = playbooks(:approved_playbook)
+
+    # WHY: We need an organization that doesn't belong to our test customer
+    # to verify that customers cannot access other organizations' playbooks
+    @other_org = organizations(:beta)
+    @other_playbook = playbooks(:other_org_playbook)
+  end
+
+  # ========================================
+  # INDEX ACTION TESTS
+  # ========================================
+
+  test "customer admin can view playbooks index for their organization" do
+    # WHY: Customer admins should be able to see a list of all playbooks
+    # belonging to their organization
+    sign_in_as(@customer_admin)
+
+    get playbooks_path, headers: inertia_headers
+    assert_response :success
+    assert_inertia_page "Playbooks/Index"
+
+    # WHY: Verify that the response includes playbooks for the customer's org
+    props = inertia_props
+    assert props["playbooks"].is_a?(Array)
+
+    # WHY: Verify all returned playbooks belong to the customer's organization
+    props["playbooks"].each do |pb|
+      refute_nil pb["id"]
+      # Some playbooks may not have organization serialized in minimal list view
+    end
+  end
+
+  test "customer user can view playbooks index for their organization" do
+    # WHY: Customer users (not just admins) should also be able to view playbooks
+    sign_in_as(@customer_user)
+
+    get playbooks_path, headers: inertia_headers
+    assert_response :success
+    assert_inertia_page "Playbooks/Index"
+  end
+
+  test "playbooks index filters by status parameter" do
+    # WHY: Customers should be able to filter playbooks by status
+    # to quickly find draft, approved, or archived playbooks
+    sign_in_as(@customer_admin)
+
+    get playbooks_path, params: { status: "draft" }, headers: inertia_headers
+    assert_response :success
+
+    props = inertia_props
+    assert_equal "draft", props["filters"]["status"]
+  end
+
+  test "playbooks index filters by product parameter" do
+    # WHY: When a customer has multiple products, they should be able to
+    # filter playbooks by specific product
+    sign_in_as(@customer_admin)
+
+    get playbooks_path, params: { product_id: @product.id }, headers: inertia_headers
+    assert_response :success
+
+    props = inertia_props
+    assert_equal @product.id, props["filters"]["product_id"]
+  end
+
+  test "playbooks index only shows customer's organization playbooks" do
+    # WHY: Critical security test - customers must NOT see playbooks
+    # from other organizations
+    sign_in_as(@customer_admin)
+
+    get playbooks_path, headers: inertia_headers
+    assert_response :success
+
+    props = inertia_props
+    playbook_ids = props["playbooks"].map { |pb| pb["id"] }
+
+    # WHY: Verify that other organization's playbook is NOT in the list
+    refute_includes playbook_ids, @other_playbook.id
+  end
+
+  test "unauthenticated user cannot access playbooks index" do
+    # WHY: All playbook actions require authentication
+    get playbooks_path
+    assert_response :redirect
+    assert_redirected_to login_path
+  end
+
+  # ========================================
+  # SHOW ACTION TESTS
+  # ========================================
+
+  test "customer admin can view playbook detail page" do
+    # WHY: Customers should be able to view the full details of their playbooks
+    # including personae, use cases, references, proof points, and comments
+    sign_in_as(@customer_admin)
+
+    get playbook_path(@playbook_draft)
+    assert_response :success
+    assert_inertia_page "Playbooks/Show"
+
+    props = inertia_props
+    assert_equal @playbook_draft.id, props["playbook"]["id"]
+
+    # WHY: Verify all playbook content is included
+    assert props["playbook"]["personae"].is_a?(Array)
+    assert props["playbook"]["use_cases"].is_a?(Array)
+    assert props["playbook"]["references"].is_a?(Array)
+    assert props["playbook"]["proof_points"].is_a?(Array)
+
+    # WHY: Verify comments are included for discussion
+    assert props["comments"].is_a?(Array)
+
+    # WHY: Verify permission flags are set correctly
+    assert_includes props.keys, "canApprove"
+    assert_includes props.keys, "canRequestChanges"
+    assert_includes props.keys, "canArchive"
+  end
+
+  test "customer user can view playbook detail page" do
+    # WHY: Regular customer users should also have read access to playbooks
+    sign_in_as(@customer_user)
+
+    get playbook_path(@playbook_draft)
+    assert_response :success
+    assert_inertia_page "Playbooks/Show"
+  end
+
+  test "customer cannot view other organization's playbook" do
+    # WHY: Critical security test - customers must NOT access playbooks
+    # from other organizations, even if they have the ID
+    sign_in_as(@customer_admin)
+
+    assert_raises(ActiveRecord::RecordNotFound) do
+      get playbook_path(@other_playbook)
+    end
+  end
+
+  test "show action includes permission flags based on user role" do
+    # WHY: The frontend needs to know what actions are available to the user
+    sign_in_as(@customer_admin)
+
+    get playbook_path(@playbook_draft)
+    assert_response :success
+
+    props = inertia_props
+
+    # WHY: Customer admin should be able to approve and request changes
+    assert props["canApprove"], "Customer admin should be able to approve"
+    assert props["canRequestChanges"], "Customer admin should be able to request changes"
+    assert props["canArchive"], "Customer admin should be able to archive"
+  end
+
+  # ========================================
+  # APPROVE ACTION TESTS
+  # ========================================
+
+  test "customer admin can approve a draft playbook" do
+    # WHY: The primary workflow action for customers is approving playbooks
+    # This transitions status to 'approved' and records approval metadata
+    sign_in_as(@customer_admin)
+
+    assert_difference "PlaybookComment.count", 1 do
+      post approve_playbook_path(@playbook_draft), params: {
+        comment: "Looks great, approved!"
+      }
+    end
+
+    assert_redirected_to playbook_path(@playbook_draft)
+    assert_match /approved successfully/i, flash[:notice]
+
+    @playbook_draft.reload
+    assert_equal "approved", @playbook_draft.status
+    assert_not_nil @playbook_draft.approved_at
+    assert_equal @customer_admin.id, @playbook_draft.approved_by_id
+
+    # WHY: Verify an approval comment was created
+    comment = @playbook_draft.playbook_comments.last
+    assert_equal "approval", comment.comment_type
+    assert_equal @customer_admin.id, comment.account_id
+  end
+
+  test "customer user can approve a draft playbook" do
+    # WHY: Regular customer users (not just admins) should be able to approve
+    # playbooks for flexibility in the approval process
+    sign_in_as(@customer_user)
+
+    post approve_playbook_path(@playbook_draft)
+
+    assert_redirected_to playbook_path(@playbook_draft)
+    @playbook_draft.reload
+    assert_equal "approved", @playbook_draft.status
+  end
+
+  test "approve action accepts optional comment" do
+    # WHY: Users should be able to add a comment when approving
+    # to provide context or feedback
+    sign_in_as(@customer_admin)
+
+    post approve_playbook_path(@playbook_draft), params: {
+      comment: "Perfect, exactly what we need!"
+    }
+
+    comment = @playbook_draft.playbook_comments.last
+    assert_equal "Perfect, exactly what we need!", comment.body
+  end
+
+  test "approve action logs admin activity" do
+    # WHY: All significant actions should be logged for audit purposes
+    sign_in_as(@customer_admin)
+
+    assert_difference "AdminActivity.count", 1 do
+      post approve_playbook_path(@playbook_draft)
+    end
+
+    activity = AdminActivity.last
+    assert_equal "playbook_approved", activity.action
+    assert_equal @customer_admin.id, activity.account_id
+    assert_equal @org.id, activity.organization_id
+    assert_equal @playbook_draft.id, activity.details["playbook_id"]
+  end
+
+  test "amplifa admin cannot approve playbook" do
+    # WHY: Only customers can approve their own playbooks.
+    # Admins should not approve on behalf of customers.
+    sign_in_as(@amplifa_admin)
+
+    assert_raises(Pundit::NotAuthorizedError) do
+      post approve_playbook_path(@playbook_draft)
+    end
+  end
+
+  test "customer cannot approve other organization's playbook" do
+    # WHY: Critical security test - customers can only approve
+    # playbooks belonging to their own organization
+    sign_in_as(@customer_admin)
+
+    assert_raises(ActiveRecord::RecordNotFound) do
+      post approve_playbook_path(@other_playbook)
+    end
+  end
+
+  test "customer cannot approve already approved playbook" do
+    # WHY: Playbooks that are already approved cannot be re-approved.
+    # The policy should prevent this action.
+    sign_in_as(@customer_admin)
+
+    # First, ensure the playbook is approved
+    @playbook_draft.approve!(@customer_admin)
+
+    assert_raises(Pundit::NotAuthorizedError) do
+      post approve_playbook_path(@playbook_draft)
+    end
+  end
+
+  # ========================================
+  # REQUEST CHANGES ACTION TESTS
+  # ========================================
+
+  test "customer admin can request changes on draft playbook" do
+    # WHY: Customers should be able to request changes when the playbook
+    # doesn't meet their expectations
+    sign_in_as(@customer_admin)
+
+    assert_difference "PlaybookComment.count", 1 do
+      post request_changes_playbook_path(@playbook_draft), params: {
+        comment: "Please add more personae targeting CTOs"
+      }
+    end
+
+    assert_redirected_to playbook_path(@playbook_draft)
+    assert_match /changes requested/i, flash[:notice]
+
+    @playbook_draft.reload
+    assert_equal "changes_requested", @playbook_draft.status
+
+    # WHY: Verify approval metadata is cleared when requesting changes
+    assert_nil @playbook_draft.approved_at
+    assert_nil @playbook_draft.approved_by_id
+
+    # WHY: Verify a request_changes comment was created
+    comment = @playbook_draft.playbook_comments.last
+    assert_equal "request_changes", comment.comment_type
+    assert_equal "Please add more personae targeting CTOs", comment.body
+  end
+
+  test "customer user can request changes on draft playbook" do
+    # WHY: Regular customer users should also be able to request changes
+    sign_in_as(@customer_user)
+
+    post request_changes_playbook_path(@playbook_draft), params: {
+      comment: "Needs revision"
+    }
+
+    assert_redirected_to playbook_path(@playbook_draft)
+    @playbook_draft.reload
+    assert_equal "changes_requested", @playbook_draft.status
+  end
+
+  test "request changes requires comment" do
+    # WHY: When requesting changes, customers must provide a comment
+    # explaining what needs to be changed
+    sign_in_as(@customer_admin)
+
+    post request_changes_playbook_path(@playbook_draft), params: {
+      comment: ""
+    }
+
+    assert_redirected_to playbook_path(@playbook_draft)
+    assert_match /provide a comment/i, flash[:alert]
+
+    # WHY: Verify status was NOT changed when comment is missing
+    @playbook_draft.reload
+    assert_equal "draft", @playbook_draft.status
+  end
+
+  test "request changes logs admin activity" do
+    # WHY: All significant actions should be logged for audit purposes
+    sign_in_as(@customer_admin)
+
+    assert_difference "AdminActivity.count", 1 do
+      post request_changes_playbook_path(@playbook_draft), params: {
+        comment: "Needs more detail"
+      }
+    end
+
+    activity = AdminActivity.last
+    assert_equal "playbook_changes_requested", activity.action
+    assert_equal @customer_admin.id, activity.account_id
+  end
+
+  test "amplifa admin cannot request changes" do
+    # WHY: Only customers can request changes. Admins should edit directly.
+    sign_in_as(@amplifa_admin)
+
+    assert_raises(Pundit::NotAuthorizedError) do
+      post request_changes_playbook_path(@playbook_draft), params: {
+        comment: "Change this"
+      }
+    end
+  end
+
+  test "customer cannot request changes on other organization's playbook" do
+    # WHY: Critical security test
+    sign_in_as(@customer_admin)
+
+    assert_raises(ActiveRecord::RecordNotFound) do
+      post request_changes_playbook_path(@other_playbook), params: {
+        comment: "Change this"
+      }
+    end
+  end
+
+  # ========================================
+  # ARCHIVE ACTION TESTS
+  # ========================================
+
+  test "customer admin can archive playbook" do
+    # WHY: Customer admins should be able to archive playbooks they no longer need
+    sign_in_as(@customer_admin)
+
+    post archive_playbook_path(@playbook_draft)
+
+    assert_redirected_to playbooks_path
+    assert_match /archived/i, flash[:notice]
+
+    @playbook_draft.reload
+    assert_equal "archived", @playbook_draft.status
+  end
+
+  test "archive action logs admin activity" do
+    # WHY: Archive actions should be logged for audit trail
+    sign_in_as(@customer_admin)
+
+    assert_difference "AdminActivity.count", 1 do
+      post archive_playbook_path(@playbook_draft)
+    end
+
+    activity = AdminActivity.last
+    assert_equal "playbook_archived", activity.action
+  end
+
+  test "customer user cannot archive playbook" do
+    # WHY: Only customer admins (not regular users) can archive playbooks
+    sign_in_as(@customer_user)
+
+    assert_raises(Pundit::NotAuthorizedError) do
+      post archive_playbook_path(@playbook_draft)
+    end
+  end
+
+  test "amplifa admin cannot archive playbook through customer route" do
+    # WHY: Amplifa admins should use the admin route to archive playbooks
+    sign_in_as(@amplifa_admin)
+
+    # This should fail authorization because the policy checks customer admin role
+    assert_raises(Pundit::NotAuthorizedError) do
+      post archive_playbook_path(@playbook_draft)
+    end
+  end
+
+  test "customer cannot archive other organization's playbook" do
+    # WHY: Critical security test
+    sign_in_as(@customer_admin)
+
+    assert_raises(ActiveRecord::RecordNotFound) do
+      post archive_playbook_path(@other_playbook)
+    end
+  end
+
+  # ========================================
+  # AUTHORIZATION TESTS
+  # ========================================
+
+  test "policy scope ensures customers only see their organization's playbooks" do
+    # WHY: This is a critical security test that verifies the Pundit policy
+    # correctly scopes playbooks to the customer's organization
+    sign_in_as(@customer_admin)
+
+    # WHY: Manually invoke the policy scope to test it directly
+    scoped = Pundit.policy_scope(@customer_admin, Playbook)
+
+    # WHY: Verify all returned playbooks belong to customer's org
+    scoped.each do |playbook|
+      assert_equal @org.id, playbook.organization_id,
+        "Policy scope returned playbook from wrong organization"
+    end
+
+    # WHY: Verify other org's playbooks are NOT included
+    refute_includes scoped.ids, @other_playbook.id,
+      "Policy scope should not include other organization's playbooks"
+  end
+
+  private
+
+  def sign_in_as(account)
+    # WHY: Helper method to sign in as different users for testing
+    post login_path, params: {
+      email: account.email,
+      password: "password"
+    }
+  end
+
+  def inertia_props
+    # WHY: Helper to extract Inertia props from the response
+    # This allows us to verify what data is being sent to the frontend
+    JSON.parse(response.body)["props"]
+  end
+
+  def assert_inertia_page(page_name)
+    # WHY: Helper to verify the correct Inertia page component is rendered
+    component = JSON.parse(response.body)["component"]
+    assert_equal page_name, component,
+      "Expected Inertia page '#{page_name}' but got '#{component}'"
+  end
+end

@@ -1,0 +1,3736 @@
+---
+cs:
+  hello: Ahoj světe
+  pundit:
+    not_authorized: K provedení této akce nemáte oprávnění.
+  navigation:
+    dashboard: Dashboard
+    settings: Nastavení
+    team: Tým
+    logout: Odhlásit se
+    admin: Admin
+    activities: Činnosti
+    organizations: Organizace
+    users: Uživatelé
+    invitations: Pozvánky
+    playbooks: Playbooks
+    leads: Leads
+    people: Lidé
+    agents: Agents
+    imports: Dovoz
+    campaigns: Kampaně
+    email_accounts: E-mailové účty
+    email_domains: E-mailové domény
+    senders: Odesílatelé
+    mailboxes: Poštovní schránky
+    replies: Odpovědi
+    blacklist: Černá listina
+    language_selector: Jazyk
+    select_language: Vyberte jazyk
+    admin_navigation: Navigace správce
+    customer_navigation: Zákaznická navigace
+    admin_badge: SPRÁVCE AMPLIFA
+    app_name: Amplifa
+  org_admin:
+    dashboard:
+      title: Správce organizace
+      heading: Správa organizace
+      manage_description: Spravujte nastavení své organizace, členy týmu a další.
+      no_organization: Nebyla nalezena žádná organizace.
+  dashboard:
+    title: Dashboard
+    welcome_back: Vítejte zpět
+    subtitle_ready: Vaše kampaně jsou připraveny generovat potenciální zákazníky
+    subtitle_onboarding: Dokončete registraci a začněte generovat potenciální zákazníky
+    stats:
+      team_members: Členové týmu
+      active_campaigns: Aktivní kampaně
+      total_leads: Celkem Leads
+    get_started:
+      title: Začněte
+      description: Vytvořte svou první kampaň a začněte generovat hyperpersonalizované
+        odchozí e-maily.
+      create_campaign: Vytvořit kampaň
+    recent_activity:
+      title: Nedávná aktivita
+      no_activity: Žádná nedávná aktivita k zobrazení
+  senders:
+    send_window: Odeslat okno
+    timezone: Časové pásmo
+    send_window_start: Odeslat spuštění okna
+    send_window_end: Odeslat konec okna
+  onboarding:
+    title: Začněte s Amplifa
+    subtitle: Chcete-li začít generovat potenciální zákazníky, proveďte tyto kroky
+    progress: "%{completed} z %{total} dokončených kroků"
+    progress_of: z
+    progress_suffix: kroky dokončeny
+    complete_message: Registrace dokončena! Jste připraveni začít generovat potenciální
+      zákazníky.
+    complete_title: "\U0001F389 Registrace dokončena!"
+    complete_description: Vše je nastaveno a připraveno začít generovat kvalifikované
+      potenciální zákazníky pomocí Amplifa.
+    expand_checklist: Rozbalte kontrolní seznam
+    collapse_checklist: Sbalit kontrolní seznam
+    use_language_selector: Použijte výběr jazyka v horní navigaci
+    stage_label: Fáze
+    duration_label: 'Trvání:'
+    steps:
+      profile_completed:
+        title: Kompletní profil společnosti
+        description: Přidejte svůj web, ACV a odkaz Calendly
+        action: Kompletní profil
+      language_selected:
+        title: Vyberte svůj jazyk
+        description: Vyberte preferovaný jazyk
+        action: Vyberte Jazyk
+  auth:
+    login:
+      page_title: Přihlásit se
+      email_label: E-mailová adresa
+      password_label: Heslo
+      subtitle: Přihlaste se a pokračujte
+      email_placeholder: jmeno@firma.cz
+      password_placeholder: "••••••••"
+      remember_me: Zapamatovat si mě
+      submit: Přihlásit se
+      signing_in: Přihlašování…
+      invalid_credentials: Neplatný e-mail nebo heslo
+      forgot_password: Zapomněli jste heslo?
+    layout:
+      tagline: Platforma pro obchodní outreach s podporou AI
+      feature_automation: Automatizované outreach sekvence
+      feature_personalization: Personalizace s využitím AI
+      feature_scoring: Inteligentní hodnocení leadů
+    forgot_password:
+      email_sent: Pokud pro tento e-mail existuje účet, odeslali jsme pokyny k obnovení
+        hesla.
+  settings:
+    company:
+      title: Nastavení společnosti
+      subtitle: Spravujte profil a předvolby své organizace
+      info_readonly: Tato nastavení jsou aktuálně pouze pro čtení. Úplné funkce úprav
+        již brzy.
+      organization_data: Podrobnosti o organizaci
+      can_edit: Může Upravit
+      read_only: Pouze pro čtení
+      not_set: Není nastaveno
+      validation_errors: Chyby ověření
+      fields:
+        name: Název společnosti
+        website: webové stránky
+        average_contract_value: Průměrná hodnota kontraktu
+        calendly_url: Calendly URL
+      website_label: Adresa URL webových stránek
+      website_help: Hlavní web vaší společnosti
+      website_placeholder: https://www.example.com
+      acv_label: Průměrná hodnota kontraktu (ACV)
+      acv_help: Průměrná hodnota vašich prodejních smluv
+      acv_placeholder: 10 000
+      meeting_price_label: Průměrná hodnota setkání
+      meeting_price_help: Hodnota, kterou připisujete každé rezervované schůzce
+      meeting_price_placeholder: '500'
+      monthly_subscription_label: Měsíční předplatné
+      monthly_subscription_help: Vaše cena předplatného Amplifa (spravováno správcem)
+      calendly_label: Calendly Odkaz na plánování
+      calendly_help: Váš odkaz Calendly pro rezervaci schůzek
+      calendly_placeholder: https://calendly.com/your-company/meeting
+      currency_label: Měna
+      currency_help: Vaše preferovaná měna pro finanční metriky
+      locale_label: Výchozí jazyk
+      locale_help: Výchozí jazyk pro vaši organizaci
+      save: Uložit změny
+      cancel: Zrušit
+      saved: Nastavení byla úspěšně uložena
+      onboarding_step_completed: Krok registrace dokončen!
+    email_accounts:
+      title: E-mailové účty
+      subtitle: E-mailové účty vyžadují 3týdenní zahřívací období, než bude plná kapacita
+        odesílání.
+      add_account: Přidat e-mailový účet
+      empty: Zatím nejsou nakonfigurovány žádné e-mailové účty.
+      empty_hint: Přidejte e-mailový účet a začněte odesílat kampaně.
+      contact_amplifa: Chcete-li nastavit další e-mailové účty, kontaktujte Amplifa.
+      table:
+        email: E-mailová adresa
+        display_name: Zobrazovaný název
+        status: Postavení
+        warmup_progress: Průběh zahřívání
+        created: Vytvořeno
+      statuses:
+        pending: Čeká na vyřízení
+        warming: Zahřívání
+        active: Aktivní
+        paused: Pozastaveno
+        suspended: Pozastaveno
+      warmup_days_remaining: Zbývá %{days} dní
+      warmup_complete: Kompletní
+      new:
+        title: Přidat e-mailový účet
+        subtitle: Přidejte nový e-mailový účet pro odchozí kampaně
+        email_label: E-mailová adresa
+        email_placeholder: odesílatel@vašespolečnost.com
+        email_help: E-mailová adresa, která bude použita pro odeslání
+        display_name_label: Zobrazovaný název
+        display_name_placeholder: Prodejní tým
+        display_name_help: Jak příjemci uvidí jméno odesílatele (volitelné)
+        display_name_hint: Jak příjemci uvidí jméno odesílatele
+        info_pending: Nové účty budou ve stavu „nevyřízeno“, dokud nebudou zkontrolovány
+          a schváleny Amplifa. Po schválení začne proces zahřívání.
+        validation_errors: Ve vašem příspěvku došlo k chybám
+        submit: Vytvořit e-mailový účet
+        cancel: Zrušit
+    blacklists:
+      title: Černá listina
+      subtitle: Spravujte e-maily a domény, které byste nikdy neměli kontaktovat.
+      add_entry: Přidat položku
+      import_entries: Importovat
+      empty: Zatím žádné záznamy na černé listině.
+      global_info: "Globální záznamy (označené \U0001F310) spravuje Amplifa a vztahují
+        se na všechny organizace."
+      table:
+        value: E-mail / doména
+        type: Typ
+        source: Zdroj
+        created_by: Vytvořil
+        created: Vytvořeno
+        actions: Akce
+      types:
+        email: E-mail
+        domain: Doména
+      sources:
+        manual: Manuál
+        import: Importovat
+        interested: Zájem
+        unsubscribe: Odhlásit odběr
+      global_badge: Globální
+      delete_confirm: Opravdu chcete tento záznam odstranit?
+      delete_button: Odstranit
+      form:
+        value_label: E-mail nebo doména
+        value_placeholder: email@example.com nebo domain.com
+        value_help: Zadejte e-mailovou adresu nebo doménu, kterou chcete zablokovat
+        type_label: Typ
+        submit: Přidat na černou listinu
+      import_form:
+        title: Importovat položky černé listiny
+        input_label: Příspěvky
+        input_placeholder: Zadejte jeden e-mail nebo doménu na řádek...
+        input_help: Vložte seznam e-mailů nebo domén (jeden na řádek). Systém automaticky
+          zjistí, zda se jedná o e-mail nebo doménu.
+        submit: Importovat
+        cancel: Zrušit
+      created: Záznam přidán na černou listinu
+      imported: "%{created} položek přidáno, %{skipped} přeskočeno (duplikáty)"
+      deleted: Záznam byl odstraněn z černé listiny
+      delete_failed: Odebrání záznamu se nezdařilo
+      cannot_delete_global: Záznamy globální černé listiny nelze odstranit. Kontaktujte
+        podporu Amplifa.
+      not_found: Záznam na černé listině nebyl nalezen
+  timeline:
+    title: Vaše cesta ke spuštění
+    subtitle: Sledujte svůj pokrok od registrace k aktivnímu generování potenciálních
+      zákazníků
+    you_are_here: Jste tady
+    coming_soon: Již brzy
+    completed: Dokončeno
+    stage_label: Fáze
+    onboarding:
+      title: Přihlášení
+      description: Vyplňte svůj profil a preference
+    setup:
+      title: Nastavení kampaně
+      description: Prohlédněte si příručky a nakonfigurujte kampaně
+    warming:
+      title: Oteplování e-mailů
+      description: 3týdenní zahřívací období pro e-mailové účty
+      duration: "~3 týdny"
+    launch:
+      title: Zahájit
+      description: Začněte generovat kvalifikované potenciální zákazníky
+  invitation:
+    accept:
+      title: Vítejte v Amplifa!
+      subtitle: Byli jste pozváni do organizace %{organization}
+      account_info_title: Váš účet
+      setup_title: Nastavte si svůj účet
+      organization_label: Organizace
+      email_label: E-mail
+      name_label: Jméno
+      role_label: Role
+      password_label: Heslo
+      password_placeholder: Vytvořte si bezpečné heslo
+      confirm_password_label: Potvrďte heslo
+      confirm_password_placeholder: Potvrďte své heslo
+      language_label: Preferovaný jazyk
+      language_help: Vyberte preferovaný jazyk pro Amplifa
+      timezone_label: Časové pásmo (volitelné)
+      timezone_placeholder: Vyberte své časové pásmo...
+      timezone_help: Pro přesné zobrazení času vyberte své časové pásmo
+      terms_label: Přijímám podmínky služby a zásady ochrany osobních údajů
+      submit: Dokončete nastavení
+      need_help: Potřebujete pomoc?
+      password_requirements: 'Požadavky na heslo:'
+      password_req_length: Minimálně 8 znaků
+      password_req_number: Alespoň 1 číslo
+      password_req_special: Alespoň 1 speciální znak
+      password_req_uppercase: Jedno velké písmeno
+      password_req_lowercase: Jedno malé písmeno
+      password_strength:
+        weak: Slabý
+        fair: Veletrh
+        good: Dobrý
+        strong: Silný
+      password_strength_label: 'Síla hesla:'
+      role_admin: Admin
+      show_password: Zobrazit heslo
+      hide_password: Skrýt heslo
+      errors:
+        password_required: Je vyžadováno heslo
+        password_too_short: Heslo musí mít alespoň 8 znaků
+        confirmation_required: Potvrďte prosím své heslo
+        passwords_mismatch: Hesla se neshodují
+    expired:
+      title: Platnost pozvánky vypršela
+      message: Platnost této pozvánky vypršela a již ji nelze použít.
+      explanation: Platnost pozvánek vyprší 7 dní po odeslání.
+      request_new: Vyžádejte si novou pozvánku
+      contact_support: Kontaktujte podporu
+    invalid:
+      title: Neplatná pozvánka
+      message: Tento odkaz na pozvánku není platný.
+      explanation: Zkontrolujte prosím svůj e-mail, zda neobsahuje správný odkaz,
+        nebo kontaktujte svého správce.
+      contact_support: Kontaktujte podporu
+    already_accepted:
+      message: Tato pozvánka již byla použita. Přihlaste se prosím.
+  components:
+    generation_progress:
+      completed: "%{completed} z %{total} dokončeno"
+      errors: "%{count} chyb"
+  admin:
+    statuses:
+      onboarded: Na palubě
+      pending: Čeká na vyřízení
+      deactivated: Deaktivováno
+      archived: Archivováno
+      active: Aktivní
+    roles:
+      org_admin: Správce organizace
+      member: Člen
+      customer_admin: Správce zákazníka
+      amplifa_admin: Správce Amplifa
+      customer_user: Uživatel zákazníka
+    password_strength:
+      weak: Slabý
+      fair: Veletrh
+      good: Dobrý
+      strong: Silný
+    common:
+      dashboard: Dashboard
+      back: Zadní
+      back_to_dashboard: Zpět na Dashboard
+      back_to_organizations: Zpět k organizacím
+      back_to_accounts: Zpět k Účtům
+      back_to_activity_log: Zpět do Protokolu aktivit
+      cancel: Zrušit
+      save_changes: Uložit změny
+      saving: Ukládání...
+      create: Vytvořit
+      creating: Vytváření...
+      edit: Upravit
+      view: Pohled
+      delete: Vymazat
+      login_as: Přihlásit se jako
+      deactivate: Deaktivovat
+      filters: Filtry
+      all: Vše
+      apply_filters: Použít filtry
+      clear_filters: Vymazat filtry
+      clear_all: Vymazat vše
+      clear: Jasný
+      reset: Resetovat
+      required_fields: "* Povinná pole"
+      na: N/A
+      not_recorded: Nezaznamenáno
+      previous: Předchozí
+      next: Další
+      coming_soon: Již brzy
+      saved: Uloženo
+      'yes': Ano
+      'no': Žádný
+      importing: Import...
+      no_results: Nebyly nalezeny žádné výsledky
+      search: Vyhledávání
+      page_info: Stránka %{current} z %{total}
+      view_all: Zobrazit vše
+      showing: Zobrazení
+      to: na
+      of: z
+      results: výsledky
+      disconnecting: Odpojování...
+      actions: Akce
+      no_industry: Žádný průmysl
+      send: Poslat
+      status: Postavení
+      organization: Organizace
+      created: Vytvořeno
+      email: E-mail
+      company: Společnost
+      name: Jméno
+      role: Role
+      job_title: Název práce
+      description: Popis
+      display_name: Zobrazovaný název
+      first_name: Křestní jméno
+      last_name: Příjmení
+      domain: Doména
+      mailboxes: Poštovní schránky
+      all_organizations: Všechny organizace
+      all_statuses: Všechny stavy
+      playbook: Playbook
+      created_at: Vytvořeno
+      updated_at: Poslední aktualizace
+      select_organization: Vyberte organizaci...
+      page: Strana
+      active: Aktivní
+      inactive: Neaktivní
+      deleting: Mazání...
+      created_by: Vytvořil
+      form_errors: 'Opravte prosím následující chyby:'
+      select_option: Vyberte možnost...
+      organizations: Organizace
+    dashboard:
+      title: Admin Dashboard
+      super_title: Super Admin Dashboard
+      subtitle: Přehled a správa platformy
+      stats:
+        total_organizations: Celkem organizací
+        total_accounts: Účty celkem
+        pending_onboarding: Čeká na registraci
+      recent_organizations:
+        title: Nedávné organizace
+        description: Seznam 10 naposledy vytvořených organizací
+        view_all: Zobrazit všechny organizace
+        empty: Zatím žádné organizace
+      table:
+        industry: Průmysl
+        size: Velikost
+    organizations:
+      title: Správa organizací
+      subtitle: Zobrazení a správa všech organizací v systému
+      create_button: Vytvořit organizaci
+      search_placeholder: Hledat organizace podle názvu...
+      empty: Zatím žádné organizace
+      table:
+        industry: Průmysl
+        size: Velikost
+        accounts: Účty
+      new:
+        title: Vytvořit organizaci
+        subtitle: Přidat novou zákaznickou organizaci do Amplifa
+        name_label: Název organizace
+        name_description: Název zákaznické organizace
+        name_placeholder: Acme Corporation
+        industry_label: Průmysl
+        industry_description: V jakém odvětví tato organizace působí?
+        industry_placeholder: Technologie, zdravotnictví, finance atd.
+        size_label: Velikost společnosti
+        size_description: Počet zaměstnanců
+        size_placeholder: Vyberte velikost...
+        size_suffix: zaměstnanci
+        onboarded_label: Označit jako přihlášené
+        onboarded_description: Zkontrolujte toto, pokud organizace dokončila počáteční
+          nastavení
+        submit: Vytvořit organizaci
+        website_integration_section: Webové stránky a integrace
+        website_label: Web společnosti
+        website_description: Adresa URL hlavního webu organizace
+        website_placeholder: https://www.example.com
+        calendly_url_label: Calendly Odkaz na plánování
+        calendly_url_description: Calendly odkaz pro rezervaci prodejních schůzek
+        calendly_url_placeholder: https://calendly.com/company/meeting
+        financial_section: Finanční informace
+        average_contract_value_label: Průměrná hodnota kontraktu (ACV)
+        average_contract_value_description: Průměrná hodnota prodejních smluv organizace
+        average_contract_value_placeholder: 10 000
+        meeting_price_label: Průměrná hodnota setkání
+        meeting_price_description: Hodnota přiřazená každé rezervované schůzce
+        meeting_price_placeholder: '500'
+        monthly_subscription_label: Měsíční předplatné
+        monthly_subscription_description: Cena předplatného organizace Amplifa
+        monthly_subscription_placeholder: '299'
+        localization_section: Lokalizace
+        locale_label: Výchozí jazyk
+        locale_description: Výchozí jazyk pro tuto organizaci
+        currency_label: Měna
+        currency_description: Výchozí měna pro finanční sledování
+      edit:
+        title: Upravit organizaci
+        subtitle: Aktualizujte podrobnosti a nastavení organizace
+        name_label: Název organizace
+        industry_label: Průmysl
+        size_label: Velikost organizace
+        size_placeholder: Vyberte velikost
+        website_integration_section: Webové stránky a integrace
+        website_label: Web společnosti
+        website_help: Adresa URL hlavního webu organizace
+        calendly_url_label: Calendly Odkaz na plánování
+        calendly_url_help: Váš odkaz Calendly pro rezervaci prodejních schůzek (musí
+          začínat https://calendly.com/)
+        financial_section: Finanční informace
+        average_contract_value_label: Průměrná hodnota kontraktu (ACV)
+        average_contract_value_help: Průměrná hodnota prodejních smluv organizace
+        meeting_price_label: Průměrná hodnota setkání
+        meeting_price_help: Hodnota přiřazená každé rezervované schůzce
+        monthly_subscription_label: Měsíční předplatné
+        monthly_subscription_help: Cena předplatného organizace Amplifa
+        billing_begins_on_label: Fakturace začíná dne
+        billing_begins_on_help: Úplné datum používané k ukotvení opakujících se fakturačních
+          cyklů
+        localization_section: Lokalizace
+        locale_label: Výchozí jazyk
+        locale_help: Výchozí jazyk pro tuto organizaci
+        currency_label: Měna
+        currency_help: Výchozí měna pro finanční sledování
+        onboarded_label: Na palubě
+        associated_accounts: Přidružené účty (%{count})
+        no_accounts: K této organizaci nejsou přidruženy žádné účty
+        invite_button: Pozvat uživatele
+        deactivate_button: Deaktivovat organizaci
+      export:
+        button: Export konfigurace
+      import:
+        button: Organizace importu
+        title: Organizace importu
+        description: Nahrajte soubor exportu JSON a vytvořte novou organizaci s veškerou
+          její konfigurací (odesílatelé, domény, poštovní schránky, příručky, agenti).
+        select_file: Vyberte soubor JSON
+        selected: Vybraný
+        success: Organizace %{name} byla úspěšně importována
+        validation_failed: 'Ověření se nezdařilo: %{errors}'
+        failed: 'Import se nezdařil: %{error}'
+        no_file: Vyberte soubor k importu
+        invalid_json: Neplatný formát souboru JSON
+      back_to_list: Zpět k organizacím
+      show:
+        subtitle: Přehled organizace a zdroje
+      card:
+        agents: Agents
+        playbooks: Playbooks
+        senders: Odesílatelé
+        mailboxes: Poštovní schránky
+        emails_sent: E-maily odeslány
+        emails_total: Celkem
+        emails_daily_avg: Prům./den
+        daily_capacity: Denní kapacita
+        meetings: Setkání
+        reply_rate: Míra setkání
+        click_rate: Míra kliknutí
+        time_window: okno
+        time_windows:
+          last_24h: Posledních 24 hodin
+          last_7d: Posledních 7 dní
+          last_30d: Posledních 30 dní
+          last_90d: Posledních 90 dní
+          last_180d: Posledních 180 dní
+          last_365d: Posledních 365 dní
+        emails_today: Dnes
+        emails_7d: Posledních 7 dní
+        view: Pohled
+        edit: Upravit
+        ai_reply_agent_on: AI Reply Agent zapnuto
+      overview:
+        stats_title: Klíčové metriky
+        activity_title: Nedávná aktivita
+        info_title: Informace o organizaci
+        no_activity: Žádná nedávná aktivita
+        by: podle
+        archive_title: Organizace archivu
+        archive_description: Archivované organizace jsou v seznamu Organizace skryté.
+          Tato akce je trvalá pro viditelnost správce.
+        archive_button: Organizace archivu
+        archive_confirm: Opravdu chcete tuto organizaci archivovat? Archivované organizace
+          se již nezobrazují v seznamu Organizace.
+      stats:
+        agents: Agents
+        playbooks: Playbooks
+        senders: Odesílatelé
+        mailboxes: Poštovní schránky
+        leads: Leads
+        emails_sent: E-maily odeslány
+        meetings: Setkání
+      fields:
+        status: Postavení
+        created: Vytvořeno
+        website: webové stránky
+        industry: Průmysl
+        size: Velikost
+        locale: Locale
+        currency: Měna
+      tabs:
+        overview: Přehled
+        playbooks: Playbooks
+        agents: Agents
+        settings: Nastavení
+        domains: domény
+        senders: Odesílatelé
+        mailboxes: Poštovní schránky
+        replies: Odpovědi
+        sent_messages: Odešle
+        meetings: Setkání
+        leads: Leads
+        lead_imports: Dovoz olova
+        files: Soubory
+        users: Uživatelé
+      replies:
+        interested: Zájem
+        meeting_request: Žádost o schůzku
+        not_interested: Nemám zájem
+        ooo: Mimo kancelář
+        ooo_returns: vrací %{date}
+        bounced: Odražený
+        title: Centrum odpovědí
+        subtitle: Spravujte konverzace a odpovědi od svých potenciálních zákazníků
+        reply_now: Odpovězte nyní
+        empty: Zatím žádné konverzace
+        empty_description: Vašim aktuálním filtrům neodpovídají žádné konverzace.
+          Zkuste upravit stavový filtr nebo hledané výrazy.
+        select_conversation: Vyberte konverzaci
+        select_conversation_desc: Vyberte konverzaci ze seznamu a zobrazte vlákno,
+          podrobnosti o potenciálním zákazníkovi a odešlete odpověď.
+        no_preview: Náhled není k dispozici
+        never: Nikdy
+        just_now: Právě teď
+        minutes_ago:
+          one: před %{count} minutou
+          other: před %{count} minutami
+          few: před %{count} minutami
+        hours_ago:
+          one: před %{count} hodinou
+          other: před %{count} hodinami
+          few: před %{count} hodinami
+        days_ago:
+          one: před %{count} dnem
+          other: před %{count} dny
+          few: před %{count} dny
+        last_checked: Naposledy zkontrolováno
+        check_mail_now: Zkontrolujte Mail Now
+        checking_mail: Kontrola pošty na nové odpovědi...
+        mail_check_complete: Kontrola pošty dokončena
+        mail_check_complete_with_errors: Kontrola pošty dokončena s několika chybami
+        mail_check_failed: Nepodařilo se spustit kontrolu pošty
+        no_active_mailboxes: Žádné aktivní poštovní schránky ke kontrole
+        ai_agent_enabled: AI Reply Agent povolen
+        ai_agent_disabled: AI Reply Agent deaktivován
+        ai_agent_toggle_failed: Nepodařilo se přepnout agenta odpovědi AI
+        filter_menu:
+          label: Filtry
+          title: Filtry doručené pošty
+          description: Uloženo pro váš účet
+          reply_type: Typ odpovědi
+          sender: Odesílatel
+          all_senders: Všichni odesílatelé
+        sent_successfully: Odpověď byla úspěšně odeslána
+        send_failed: 'Nepodařilo se odeslat odpověď: %{error}'
+        conversation_closed: Konverzace uzavřena
+        conversation_reopened: Konverzace byla znovu otevřena
+        conversation_snoozed: Konverzace byla odložena do %{until}
+        confirm_close: Opravdu chcete ukončit tuto konverzaci?
+        confirm_snooze: Odložit tuto konverzaci?
+        filter:
+          all: Vše
+          open: OTEVŘENO
+          snoozed: Odloženo
+          closed: ZAVŘENO
+        status:
+          open: OTEVŘENO
+          snoozed: Odloženo
+          closed: ZAVŘENO
+          bounced: Odražený
+        stats:
+          total: Celkový
+          unread: Nepřečtený
+          open: OTEVŘENO
+          snoozed: Odloženo
+          closed: ZAVŘENO
+          unassigned: Nepřiřazeno
+          interested: Zájem
+          meeting_request: Žádost o schůzku
+          not_interested: Nemám zájem
+        interest_status:
+          interested: Zájem
+          meeting_request: Žádost o schůzku
+          not_interested: Nemám zájem
+          wrong_person: Špatná osoba
+        search_placeholder: Hledejte podle jména potenciálního zákazníka, e-mailu
+          nebo společnosti...
+        tabs:
+          all: Vše
+          open: OTEVŘENO
+          snoozed: Odloženo
+          closed: ZAVŘENO
+          unassigned: Nepřiřazeno
+        conversation:
+          messages: zprávy
+          via: přes
+        thread:
+          back_to_list: Zpět na konverzace
+          incoming: Přicházející
+          outgoing: Odesláno
+          bounce_badge: Odskočit
+          ooo_badge: Mimo kancelář
+        actions:
+          close: Blízko
+          reopen: Znovu otevřít
+          snooze: Podřimovat
+        snooze_options:
+          title: Odložit, dokud...
+          tomorrow: Zítra ráno (9:00)
+          next_week: Příští týden (pondělí 9:00)
+          next_month: Příští měsíc (9:00)
+        snooze:
+          tomorrow: Zítra ráno (9:00)
+          next_week: Příští týden (pondělí 9:00)
+          next_month: Příští měsíc (9:00)
+        composer:
+          placeholder: Napište svou odpověď...
+          include_signature: Před odesláním přidejte podpis
+          send: Odeslat odpověď
+          sending: Odesílání...
+        compose_placeholder: Napište svou odpověď...
+        reply_with_ai: Odpovědět pomocí AI
+        reply_with_ai_generating: Generování odpovědi...
+        ai_generation_failed: 'Nepodařilo se vygenerovat odpověď: %{error}'
+        add_link: Přidat odkaz
+        edit_link: Upravit odkaz
+        open_link: Otevřít
+        remove_link: Odebrat
+        save_link: Uložit odkaz
+        link_url_label: URL odkazu
+        link_url_placeholder: https://example.com
+        link_url_help: Vložte úplnou adresu URL nebo zadejte název domény a my na
+          ni bude možné kliknout.
+        link_url_invalid: Zadejte platnou adresu URL.
+        include_signature: Před odesláním přidejte podpis
+        send_reply: Odeslat odpověď
+        lead_sidebar:
+          title: Informace o zájemcích
+          email: E-mail
+          company: Společnost
+          job_title: Název práce
+          location: Umístění
+          linkedin: LinkedIn
+          website: webové stránky
+          view_lead: Ukázat celý hlavní profil
+        mailbox_info:
+          title: Poštovní schránka
+        sender_info:
+          title: Odesílatel
+          has_signature: Má šablonu podpisu
+        unassigned:
+          title: Nepřiřazené odpovědi
+          subtitle: Odpovědi, které je třeba přiřadit potenciálnímu zákazníkovi
+          empty: Žádné nepřiřazené odpovědi
+          empty_description: Všechny odpovědi byly přiřazeny potenciálním zákazníkům.
+          assign_to: Přiřadit k potenciálnímu zákazníkovi
+          select_lead: Vyberte potenciálního zákazníka...
+          search_leads: Hledejte potenciální zákazníky podle e-mailu, jména nebo společnosti...
+          assign: Přiřadit
+        lead_assigned: Odpověď přiřazena uživateli %{email}
+        reply_not_found: Odpověď nenalezena nebo již přiřazena
+        sidebar:
+          company: Společnost
+          location: Umístění
+          view_full_profile: Ukázat celý profil
+          sending_as: Odesílání jako
+          mailbox: Poštovní schránka
+    users:
+      title: Všichni uživatelé
+      subtitle: Spravujte všechny uživatelské účty napříč platformou
+      create_button: Vytvořit uživatele
+      empty: Nebyli nalezeni žádní uživatelé
+      roles:
+        org_admin: Správce organizace
+        member: Člen
+        customer_admin: Správce zákazníka
+        amplifa_admin: Správce Amplifa
+        customer_user: Uživatel zákazníka
+      statuses:
+        onboarded: Na palubě
+        pending: Čeká na vyřízení
+        deactivated: Deaktivováno
+        active: Aktivní
+        undefined: Neznámý
+      table:
+        edit: Upravit
+        login_as: Přihlásit se jako
+      new:
+        title: Vytvořit uživatele
+        subtitle: Přidejte na platformu nového uživatele
+        email_placeholder: uživatel@example.com
+        first_name_placeholder: Jan
+        last_name_placeholder: Srna
+        password_label: Heslo
+        password_placeholder: Minimálně 8 znaků
+        password_description: Minimálně 8 znaků, včetně 1 čísla a 1 speciálního znaku
+        password_strength_label: 'Síla hesla:'
+        password_confirmation_label: Potvrďte heslo
+        confirm_password_placeholder: Znovu zadejte heslo
+        organization_placeholder: Vyberte organizaci...
+        organization_na_message: Správci Amplifa nepatří do žádné organizace
+        info_title: Vytvoření uživatele
+        info_message: Uživatel bude vytvořen pomocí poskytnutého hesla a může se okamžitě
+          přihlásit. Není vyžadováno žádné ověření e-mailem.
+        submit: Vytvořit uživatele
+        password_hint: Minimálně 8 znaků, včetně 1 čísla a 1 speciálního znaku doporučeno
+        select_organization: Vyberte organizaci...
+        organization_na: N/A – Amplifa Správci
+        organization_hint: Správci Amplifa nepatří do žádné organizace
+        create_button: Vytvořit uživatele
+      edit:
+        title: Upravit uživatele
+        subtitle: Aktualizujte informace o uživateli a oprávnění
+        email_hint: E-mailové adresy nelze změnit
+        email_readonly: E-mailové adresy nelze změnit
+        organization_placeholder: Vyberte organizaci...
+        organization_na_message: Správci Amplifa nepatří do žádné organizace
+        select_organization: Vyberte organizaci...
+        organization_na: N/A – Amplifa Správci
+        organization_hint: Správci Amplifa nepatří do žádné organizace
+        security_section: Zabezpečení
+        two_factor_authentication_required_label: Vyžadovat dvoufaktorové ověření
+          e-mailem
+        two_factor_authentication_required_help: Pokud je zapnuto, tento správce Amplifa
+          musí každé přihlášení ověřit e-mailem.
+        role_change_warning_title: Upozornění na změnu role
+        role_change_warning_message: Roli tohoto uživatele měníte z %{old_role} na
+          %{new_role}. To ovlivní jejich přístupová oprávnění.
+        amplifa_admin_promotion_confirm: Aktivovat Amplifa Admin pro tohoto uživatele? Tím získá přístup ke VŠEM účtům.
+      password:
+        title: Obnovení hesla
+        send_email_title: Odeslat e-mail pro obnovení hesla
+        send_email_description: Pošlete uživateli zabezpečený odkaz pro resetování
+          vlastního hesla.
+        send_email_button: Odeslat resetovací e-mail
+        set_direct_title: Nastavte heslo přímo
+        set_direct_description: Nastavit nové heslo pro tohoto uživatele přímo jako
+          správce.
+        set_direct_button: Nastavte heslo
+        new_password_label: Nové heslo
+        new_password_confirmation_label: Potvrďte nové heslo
+        reset_email_sent: E-mail pro resetování hesla byl úspěšně odeslán
+        reset_email_failed: Odeslání e-mailu pro obnovení hesla se nezdařilo
+        set_success: Heslo bylo úspěšně aktualizováno
+        new_password_required: Je vyžadováno nové heslo
+        new_password_too_short: Nové heslo musí mít alespoň 8 znaků
+        confirmation_required: Je vyžadováno potvrzení hesla
+        confirmation_mismatch: Potvrzení hesla se neshoduje
+      platform_access:
+        title: Přístup k platformě
+        amplifa_admin_label: Administrátor Amplifa
+        amplifa_admin_help: Uděluje administrátorský přístup k celé platformě napříč
+          všemi organizacemi. Členství v organizacích mohou na účtu zůstat pro budoucí
+          degradaci, ale administrátorské přihlášení používá globální administrátorský
+          panel místo zákaznického pracovního prostoru.
+        amplifa_admin_warning: Přístup administrátora Amplifa je globální a měl by
+          být udělen pouze důvěryhodným zaměstnancům Amplifa.
+        demote_help: Odebráním přístupu administrátora Amplifa se tento účet převede
+          na roli prvního aktivního členství v organizaci.
+        demote_requires_membership: Před odebráním přístupu administrátora Amplifa
+          přidejte alespoň jedno aktivní členství v organizaci.
+        amplifa_admin_enabled: Amplifa Admin aktivován.
+        amplifa_admin_disabled: Amplifa Admin deaktivován.
+        two_factor_enabled: Dvoufaktorové ověření e-mailem aktivováno.
+        two_factor_disabled: Dvoufaktorové ověření e-mailem deaktivováno.
+      memberships:
+        title: Členství v organizacích
+        empty: Tento uživatel nemá žádná aktivní členství v organizacích.
+        add_title: Přidat členství v organizaci
+        add_description: Poskytněte tomuto uživateli přístup k jinému zákaznickému
+          pracovnímu prostoru, aniž byste změnili jeho primární organizaci.
+        organization_label: Organizace
+        role_label: Role
+        select_organization: Vyberte organizaci...
+        add_button: Přidat členství
+        add_success: Členství v organizaci bylo úspěšně přidáno.
+        update_success: Členství v organizaci bylo úspěšně aktualizováno.
+        role_change_success: Role v %{organization} změněna na %{role}.
+        update_failed: Členství v organizaci se nepodařilo aktualizovat.
+        remove_success: Členství v organizaci bylo úspěšně odebráno.
+        already_assigned: Tento uživatel již má aktivní členství v této organizaci.
+        organization_not_found: Organizaci se nepodařilo najít.
+        amplifa_admin_forbidden: Administrátory Amplifa nelze přiřadit k zákaznickým
+          organizacím.
+        last_membership_required: Před odebráním primárního členství tohoto uživatele
+          přidejte další aktivní členství.
+        no_assignable_organizations: Všechny aktivní organizace jsou již přiřazeny.
+        available_count: "%{count} organizací k dispozici"
+        edit_role_label: Změnit roli pro %{organization}
+        remove_button: Odebrat
+        remove_confirm: Odebrat členství pro %{organization}?
+    accounts:
+      title: Spravovat účty
+      subtitle: Zobrazení a správa všech uživatelských účtů v systému
+      empty: Zatím žádné účty
+      impersonate_confirm: Opravdu se chcete vydávat za tohoto uživatele?
+      edit:
+        title: Upravit účet
+        subtitle: Aktualizujte podrobnosti účtu a oprávnění
+        organization_placeholder: Vyberte organizaci
+        deactivate_button: Deaktivovat účet
+        deactivate_confirm: Opravdu chcete tento účet deaktivovat?
+    activities:
+      title: Protokol činnosti
+      subtitle: Zobrazit všechny administrativní akce a auditní záznam
+      empty: Pro vybrané filtry nebyly nalezeny žádné aktivity
+      filters:
+        title: Filtry
+        organization_all: Všechny organizace
+        action_label: Typ akce
+        action_all: Všechny akce
+        start_date_label: Datum zahájení
+        end_date_label: Datum ukončení
+      table:
+        timestamp: Časové razítko
+        admin: Admin
+        action: Akce
+        details: Podrobnosti
+        ip_address: IP adresa
+      show_details: "▶ Zobrazit podrobnosti"
+      hide_details: "▼ Skrýt podrobnosti"
+      no_details: Žádné podrobnosti
+      unknown_admin: Neznámý správce
+      pagination:
+        showing: Zobrazuje se %{start} až %{end} z %{total} aktivit
+      show:
+        title: Podrobnosti aktivity
+        subtitle: Podrobné informace o této administrativní akci
+        breadcrumb_dashboard: Dashboard
+        breadcrumb_log: Protokol činnosti
+        breadcrumb_activity: Aktivita č. %{id}
+        overview: Přehled
+        activity_id: ID aktivity
+        timestamp: Časové razítko
+        action_type: Typ akce
+        ip_address: IP adresa
+        performed_by: Provádí
+        related_organization: Související organizace
+        organization_name: Název organizace
+        website: webové stránky
+        action_details: Podrobnosti akce
+        no_details: Pro tuto aktivitu nejsou zaznamenány žádné další podrobnosti
+        technical_info: Technické informace
+        user_agent: User Agent
+    invitations:
+      title: Pozvánky
+      subtitle: Spravujte pozvánky zákazníků a sledujte jejich stav
+      create_button: Pozvat nového uživatele
+      empty_with_filter: Nebyly nalezeny žádné pozvánky. Zkuste upravit filtry.
+      empty: Začněte vytvořením první pozvánky.
+      filters:
+        title: Filtry
+        status_all: Všechny stavy
+        organization_all: Všechny organizace
+      table:
+        expires: Platnost vyprší
+        invited_by: Pozván od
+      actions:
+        resend: Odeslat znovu
+        cancel: Zrušit
+        delete: Vymazat
+      confirm:
+        resend: Znovu odeslat pozvánku na adresu %{email}?
+        cancel: Zrušit pozvánku pro %{email}? Toto nelze vrátit zpět.
+        delete: Trvale smazat pozvánku pro %{email}? Toto nelze vrátit zpět.
+      pagination:
+        showing: Zobrazuje se stránka %{current} z %{total} (celkem %{count} pozvánek)
+      new:
+        title: Pozvat nového uživatele
+        subtitle: Chcete-li přidat nového uživatele do organizace, odešlete e-mail
+          s pozvánkou
+        organization_description: Organizace, do které bude tento uživatel patřit
+        organization_placeholder: Vyberte organizaci...
+        email_description: Pozvánka bude zaslána na tuto e-mailovou adresu
+        email_placeholder: uživatel@example.com
+        first_name_placeholder: Jan
+        last_name_placeholder: Srna
+        info_title: O pozvánkách
+        info_messages:
+        - Na zadanou e-mailovou adresu bude zaslán e-mail s pozvánkou
+        - Příjemce si může při přijímání nastavit vlastní heslo
+        - Platnost odkazů s pozvánkou vyprší po 7 dnech
+        - Čekající pozvánky můžete znovu odeslat nebo zrušit ze seznamu pozvánek
+        submit: Odeslat pozvánku
+        submitting: Odesílání...
+    playbooks:
+      title: Playbooks
+      subtitle: Spravujte příručky vytvořené umělou inteligencí pro všechny organizace
+      generate_button: Generovat Playbook
+      create_button: Nová příručka
+      generate_title: Vygenerovat novou příručku
+      generate_subtitle: Pomocí umělé inteligence vygenerujte příručku z webu
+      back_to_list: Zpět na Playbooks
+      empty: Zatím žádné herní knihy. Vytvořte si svou první příručku pomocí umělé
+        inteligence.
+      ai_generated: Generováno AI
+      approved: Příručka byla schválena
+      confirm_approve: Schválit tuto příručku? Bude k dispozici pro použití v kampaních.
+      confirm_move_to_draft: Přesunout tuto příručku zpět do stavu konceptu?
+      confirm_archive: Archivovat tuto příručku? Zákazníkům se již nebude zobrazovat.
+      confirm_delete: Smazat tuto příručku? Tuto akci nelze vrátit zpět.
+      delete_modal:
+        title: Smazat tuto příručku?
+        description: Tuto akci nelze vrátit zpět.
+        affected_agents_title: Dotčení agenti
+        affected_agents_description: Tito agenti ztratí toto přiřazení v příručce,
+          když jej smažete.
+        no_affected_agents: K této příručce nejsou aktuálně přiřazeni žádní agenti.
+        pause_notice: Všichni aktuálně spuštění ovlivnění agenti budou před odstraněním
+          pozastaveni.
+        will_pause: Tento běžící agent bude pozastaven.
+        confirm_button: Smazat playbook
+      no_value_proposition: Žádná cenová nabídka
+      no_personae: Dosud nebyly přidány žádné osoby
+      no_use_cases: Zatím nebyly přidány žádné případy použití
+      no_references: Zatím nebyly přidány žádné reference
+      no_proof_points: Zatím nebyly přidány žádné důkazní body
+      no_comments: Zatím žádné komentáře
+      statuses:
+        draft: Návrh
+        changes_requested: Požadované změny
+        approved: Schválený
+        archived: Archivováno
+      filters:
+        organization: Organizace
+        status: Postavení
+        language: Jazyk
+        all_languages: Všechny jazyky
+      table:
+        product: Produkt
+        agents: Agents
+        language: Jazyk
+        content: Obsah
+        personae: personae
+        use_cases: případy použití
+        references: ref
+        view: Pohled
+        edit: Upravit
+      form:
+        organization: Organizace
+        select_organization: Vyberte organizaci...
+        product_name: Název produktu
+        product_name_help: Název produktu nebo služby, pro kterou se má vygenerovat
+          příručka
+        website_url: Adresa URL webových stránek
+        website_url_help: Web společnosti k analýze (musí obsahovat http:// nebo https://)
+        generate_button: Generovat Playbook
+        generating: Generování...
+        generation_info: Umělá inteligence seškrábe web, analyzuje obsah a vytvoří
+          strategickou příručku s osobnostmi a případy použití. Obvykle to trvá 15–30
+          sekund.
+      generation:
+        in_progress: Generování příručky...
+        please_wait: To může trvat 15–30 sekund. Prosím, nezavírejte tuto stránku.
+        phases:
+          started: Spouštění...
+          scraping: Skartování webu
+          generating: Generování pomocí AI
+          completed: Dokončeno
+          failed: Nepodařilo se
+        failed_title: Nepodařilo se vygenerovat %{product}
+        steps:
+          scraping: Skartování webu
+          scraping_desc: Extrahování obsahu a struktury
+          analyzing: Analýza obchodního modelu
+          analyzing_desc: Porozumění produktům a službám
+          personas: Identifikace cílových osob
+          personas_desc: Mapování profilů ideálních zákazníků
+          use_cases: Generování případů použití
+          use_cases_desc: Vytváření strategických zpráv
+          finalizing: Dokončování playbooku
+          finalizing_desc: Kompilace přehledů a doporučení
+      sections:
+        value_proposition: Návrh hodnoty
+        personae: Cílové osoby
+        use_cases: Případy použití
+        references: Referenční zákazníci
+        proof_points: Důkazové body
+        comments: Diskuse
+        metadata: Podrobnosti
+        actions: Akce
+      persona:
+        pain_points: Body bolesti
+      metadata:
+        status: Postavení
+        language: Jazyk
+        created: Vytvořeno
+        updated: Poslední aktualizace
+        approved: Schválený
+        by: podle
+        generation: Generace
+      actions:
+        approve: Schvalovat
+        edit: Upravit Playbook
+        move_to_draft: Přesunout do konceptu
+        archive: Archiv
+        delete: Vymazat
+      ai_edit:
+        button: Upravit AI
+        title: AI Edit Playbook
+        playbook_label: Playbook
+        instruction_label: Instrukce
+        instruction_placeholder: např. Zaměřte se více na řešení námitek
+        helper: Popište, jak chcete příručku vylepšit.
+        examples_title: Příklady
+        example_one: Příručku se více zaměřte na zabezpečení podniku
+        example_two: Přemýšlejte více z pohledu vedoucího prodeje
+        example_three: Zdůrazněte řešení námitek a konkurenční diferenciaci
+        submit: Použít AI Edit
+        submitting: Aplikace...
+        success: Příručka aktualizována pomocí úprav AI
+        failed: Úprava AI se nezdařila. Zkuste to prosím znovu.
+        missing_instruction: Uveďte prosím pokyny pro úpravu AI.
+      bulk_approve:
+        button: Schválit vše (%{count})
+        confirm: Schválit všechny %{count} čekající příručky? Budou k dispozici pro
+          použití v kampaních.
+        success:
+          one: "%{count} příručka byla schválena"
+          other: "%{count} příruček bylo schváleno"
+          few: "%{count} příruček bylo schváleno"
+        partial_success: Schváleno %{approved} příruček, %{failed} se nezdařilo
+        none_to_approve: Žádné příručky ke schválení
+      create_agent:
+        button: Vytvořit agenta
+        success: Agent byl úspěšně vytvořen z příručky
+        failed: 'Nepodařilo se vytvořit zástupce: %{errors}'
+        not_approved: Agenty lze vytvářet pouze z konceptů nebo schválených příruček
+        already_has_agent: Tato příručka již má agenta
+        sequence_source_label: Zdroj sekvence
+        master_sequence_label: Hlavní sekvence
+        local_sequence_label: Místní sekvence (prázdná)
+        master_sequence_dropdown_label: Hlavní sekvence
+        master_sequence_placeholder: Vyberte hlavní sekvenci...
+        master_sequence_description: Nový agent použije vybranou hlavní sekvenci.
+        local_sequence_description: Nový agent začne s prázdnou místní sekvencí.
+        global_sequence_not_found: Vybraná hlavní sekvence nebyla nalezena
+      edit:
+        title: Upravit Playbook
+        tabs:
+          overview: Přehled
+          personae: Personae
+          use_cases: Případy použití
+          references: Reference
+          proof_points: Důkazové body
+        product_name: Název produktu
+        product_description: Popis produktu
+        language: Jazyk
+        value_proposition_placeholder: Popište základní hodnotu, kterou tento produkt
+          zákazníkům přináší...
+        ai_notes_label: Poznámky ke generaci AI
+        personae_description: Definujte cílové osoby kupujícího pro tuto příručku
+        add_persona: Přidat Personu
+        add_first_persona: Přidejte svou první cílovou osobu
+        new_persona: Nová Persona
+        no_title: Žádný titul
+        persona_name: Jméno osoby
+        persona_title: Název práce
+        add_pain_point: Přidejte bod bolesti
+        pain_point_placeholder: Zadejte bod bolesti...
+        use_cases_description: Definujte klíčové případy použití tohoto produktu
+        add_use_case: Přidat případ použití
+        add_first_use_case: Přidejte svůj první případ použití
+        use_case_title: Titul
+        use_case_description: Popis
+        use_case_description_placeholder: Popište tento případ použití a jeho hodnotu...
+        references_description: Přidejte referenční zákazníky, kteří tento produkt
+          úspěšně použili
+        add_reference: Přidat odkaz
+        add_first_reference: Přidejte svého prvního referenčního zákazníka
+        reference_name: Jméno zákazníka
+        reference_description: Popis
+        reference_description_placeholder: Popište příběh úspěchu nebo případ použití...
+        proof_points_description: Přidejte body důkazu, které prokazují hodnotu produktu
+        add_proof_point: Přidat bod důkazu
+        add_first_proof_point: Přidejte svůj první důkazní bod
+        proof_point_claim: Tvrzení
+        proof_point_description: Důkaz
+        proof_point_description_placeholder: Poskytněte důkaz nebo kontext pro toto
+          tvrzení...
+        file_attachment: Příloha souboru
+        upload_file: Nahrát soubor
+        uploading: Nahrávání...
+        remove_file: Odebrat soubor
+        allowed_files: PDF, DOC, DOCX, PNG, JPG, GIF (max 10 MB)
+        unsaved_changes: Máte neuložené změny
+      comment_types:
+        general: Generál
+        request_changes: Žádost o změnu
+        approval: Schválení
+    lead_imports:
+      title: Dovoz olova
+      subtitle: Spravujte importy potenciálních zákazníků CSV ve všech organizacích
+      new_import: Nový import
+      created: Import byl úspěšně zahájen. Zpracování na pozadí.
+      assign_to_agent:
+        success: "%{count} importovaných potenciálních zákazníků bylo přiřazeno %{agent_name}."
+        invalid_status: Agenta můžete přiřadit až po dokončení importu.
+        already_assigned: Tento import již má přiděleného agenta.
+        invalid_agent: Vyberte platného zástupce z této organizace.
+        failed: Tento import nelze přiřadit agentovi. Zkuste to prosím znovu.
+      empty: Zatím žádný dovoz. Nahrajte svůj první soubor CSV.
+      remove_from_agent:
+        success: Odstranili %{count} přiřazení potenciálních zákazníků z %{agent_name}
+          a zrušili přiřazení tohoto importu.
+        not_completed: Leads lze z agenta odebrat až po dokončení importu.
+        no_agent_assigned: Tento import není aktuálně přiřazen agentovi.
+      statuses:
+        pending: Čeká na vyřízení
+        processing: Zpracování
+        completed: Dokončeno
+        failed: Nepodařilo se
+      filters:
+        organization: Organizace
+        status: Postavení
+      table:
+        filename: Soubor
+        agent: Činidlo
+        progress: Pokrok
+        updated: Aktualizováno
+        skipped: Přeskočeno
+        blacklisted: Na černé listině
+        errors: Chyby
+        view: Pohled
+      new:
+        title: Importovat Leads
+        subtitle: Nahrajte soubor CSV a namapujte sloupce do polí potenciálních zákazníků
+        organization_placeholder: Vyberte organizaci...
+        agent_label: Zástupce (volitelné)
+        agent_placeholder: Vyberte agenta...
+        agent_help: Pokud je tato možnost vybrána, potenciální zákazníci budou tomuto
+          agentovi automaticky přiřazeni
+        csv_file_label: Soubor CSV *
+        csv_file_help: Nahrajte soubor CSV s daty potenciálních zákazníků. Maximálně
+          50 MB.
+        upload_button: Nahrát a zobrazit náhled
+        uploading: Nahrávání...
+        download_template: Stáhnout šablonu
+        download_template_help: Email je jediný povinný sloupec. Všechna ostatní pole
+          jsou volitelná. celé_jméno není potřeba, pokud je uvedeno jméno a příjmení.
+      preview:
+        title: Sloupce mapy
+        subtitle: Mapujte sloupce CSV na pole potenciálních zákazníků
+        csv_headers: CSV Záhlaví
+        lead_fields: Olověná pole
+        unmapped_columns: Nemapované sloupce
+        unmapped_help: Nemapované sloupce budou uloženy v custom_fields
+        preview_rows: Náhled (prvních 5 řádků)
+        total_rows: 'Celkový počet řádků: %{count}'
+        email_required: Je vyžadováno mapování sloupců e-mailu
+        start_import: Spusťte import
+        back: Zadní
+      show:
+        title: Podrobnosti importu
+        back_to_list: Zpět na Importy
+        filename: Název souboru
+        file_size: Velikost souboru
+        status: Postavení
+        progress: Pokrok
+        imported_by: Importoval
+        organization: Organizace
+        agent: Činidlo
+        none_assigned: Žádný přidělený
+        started: Zahájeno
+        completed: Dokončeno
+        duration: Trvání
+        column_mapping: Mapování sloupců
+        results: Importovat výsledky
+        total_rows: Celkem řádků
+        processed: Zpracováno
+        created: Vytvořeno
+        updated: Aktualizováno
+        skipped: Přeskočeno
+        blacklisted: Na černé listině
+        errors: Chyby
+        error_details: Podrobnosti o chybě
+        row: Řádek
+        no_errors: Žádné chyby
+        refresh: Obnovit
+        remove_from_agent:
+          title: Odebrat Leads z agenta
+          warning: To odstraní importované potenciální zákazníky z aktuálně přiřazeného
+            agenta a zastaví jakýkoli související postup sekvence pro tyto potenciální
+            zákazníky. Záznamy lidí zůstanou nedotčeny.
+          button: Odebrat Leads z agenta
+          confirm: Opravdu chcete odebrat tyto potenciální zákazníky přidělenému agentovi?
+            Tuto akci nelze vrátit zpět.
+        assign_to_agent: Přiřadit agentovi
+        assign_to_agent_help: Vyberte zástupce a přiřaďte všechny úspěšně importované
+          potenciální zákazníky z tohoto importu.
+        no_agents_available: Pro tuto organizaci nejsou k dispozici žádní zástupci.
+      download:
+        button: Stáhnout CSV
+        not_available: Zdrojový soubor CSV již není k dispozici ke stažení.
+    agents:
+      title: Agents
+      subtitle: Spravujte všechny kampaně a agenty napříč organizacemi
+      global_title: Vše Agents
+      global_subtitle: Zobrazit všechny agenty ve všech organizacích
+      new_agent: Vytvořit agenta
+      created: Agent byl úspěšně vytvořen
+      updated: Agent byl úspěšně aktualizován
+      deleted: Agent byl úspěšně smazán
+      delete_failed: Agenta se nepodařilo smazat
+      empty: Zatím žádní agenti. Začněte vytvořením svého prvního agenta.
+      confirm_delete: Odebrat tohoto agenta? Konverzace a historie odpovědí zůstanou
+        dostupné.
+      samples:
+        generation_started: Bylo zahájeno generování ukázkové zprávy. Po dokončení
+          budete upozorněni.
+        cancel_success: Generování vzorku zrušeno. Stávající vzorky byly vymazány
+          a generování lze restartovat.
+        not_ready_for_generation: Agent není připraven na generování vzorků. Ujistěte
+          se, že jsou nakonfigurovány svody a kroky sekvence.
+        reset_success: Vzorové zpráVy byly resetovány. Nyní je můžete regenerovat.
+        approve_success: Vzorové zpráVy byly úspěšně schváleny.
+        approve_not_ready: Vzorky nelze schválit. Ujistěte se, že vzorky jsou vytvořeny
+          a nejsou již schváleny.
+        progress:
+          default_target: toto vedení
+          default_step: zpráva
+          in_progress: Generování vzorových zpráv
+          step: Generování %{step}
+          detail: "%{generated} z %{total} zpráv"
+          errors: "%{count} chyb"
+          generating_button: Generování...
+          start_failed: Generování vzorku nelze spustit. Zkuste to prosím znovu.
+          phases:
+            enriching_lead: Obohacování údajů o potenciálních zákaznících pro %{target}
+            linkedin_scrape: Odstraňování LinkedIn pro %{target}
+            linkedin_profile_photo: Stahování fotky LinkedIn pro %{target}
+            linkedin_posts_scrape: Odstraňování příspěvků LinkedIn pro %{target}
+            disc_inference: Odvozování profilu DISC pro %{target}
+            company_website_scrape: Stahování webových stránek společnosti pro %{target}
+            sync_to_lead: Synchronizace obohacení pro %{target}
+            org_description: Generování popisu organizace pro %{target}
+            generating_subject: Generování předmětu pro %{target}
+            generating_message: Generování %{step} pro %{target}
+      statuses:
+        draft: Návrh
+        ready: Připraveno
+        active: Aktivní
+        paused: Pozastaveno
+        completed: Dokončeno
+      filters:
+        organization: Organizace
+        status: Postavení
+        search_placeholder: Vyhledávací agenti nebo organizace...
+      table:
+        playbook: Playbook
+        leads: Leads
+        contacted: Kontaktováno
+        replied: Odpovězeno
+        meetings: Setkání
+        reply_rate: Míra odpovědi
+        meeting_rate: Míra setkání
+        view: Pohled
+        edit: Upravit
+      new:
+        title: Vytvořit agenta
+        subtitle: Vytvořte nového agenta kampaně
+        organization_placeholder: Vyberte organizaci...
+        organization_description: Organizace, do které tento agent patří
+        name_label: Jméno
+        name_placeholder: Zadejte jméno agenta...
+        name_description: Popisný název tohoto agenta kampaně
+        description_label: Popis
+        description_placeholder: Popište účel tohoto agenta...
+        description_description: Nepovinné podrobnosti o cílech a cílovém publiku
+          tohoto agenta
+        playbook_label: Playbook
+        playbook_placeholder: Vyberte playbook...
+        playbook_description: Příručka zasílání zpráv, kterou bude tento agent používat
+        playbook_help: K výběru jsou k dispozici pouze schválené příručky
+        status_description: Aktuální stav pracovního postupu tohoto agenta
+        locale_label: Locale
+        locale_placeholder: Vyberte jazyk...
+        locale_description: Jazyk pro generované zprávy. Výchozí nastavení je národní
+          prostředí organizace.
+        default_timezone_label: Výchozí časové pásmo
+        default_timezone_description: Používá se, když časové pásmo potenciálního
+          zákazníka nelze vyřešit z jeho polohy
+        llm_model_label: Model AI
+        llm_model_description: Model umělé inteligence, který se má použít pro generování
+          zpráv. Různé modely mají různé možnosti a náklady.
+        info_title: O Playbooks
+        info_playbook_message: K dispozici jsou pouze schválené příručky od vybrané
+          organizace. Vytvářejte a schvalujte playbooky, než je přiřadíte agentům.
+        submit: Vytvořit agenta
+        submitting: Vytváření...
+      show:
+        title: Podrobnosti o agentovi
+        back_to_list: Zpět na Agents
+        back_to_org_agents: Zpět na zástupce %{org}
+        description: Popis
+        no_description: Nebyl poskytnut žádný popis
+        playbook: Playbook
+        no_playbook: Není přiřazena žádná příručka
+        default_timezone: Výchozí časové pásmo
+        locale: Locale
+        created_by: Vytvořil
+        created_at: Vytvořeno
+        updated_at: Poslední aktualizace
+        can_launch: Připraveno ke spuštění
+        cannot_launch: Není připraven
+        buying_signals: Nákupní signály
+        buying_signals_enabled: Zapnuto
+        buying_signals_disabled: Vypnuto
+        buying_signals_lookback: Období nákupních signálů
+        buying_signals_lookback_days: "%{days} dní"
+        buying_signals_prompt_usage_tooltip: Počet kroků sekvence, které aktuálně
+          používají nákupní signály v promptu
+        import_leads: Importovat Leads
+        assign_mailboxes: Přiřadit poštovní schránky
+        view_sent_messages: Odeslané zprávy
+        stats:
+          title: Statistiky kampaně
+          sent_emails: Odeslané emaily
+          bounced: Odražený
+          replies: Odpovědi
+          meetings: Setkání
+          total_leads: Celkem Leads
+          leads_in_sequence: Leads v sekvenci
+          contacted: Kontaktováno
+        leads:
+          title: Přiděleno Leads
+          empty: K tomuto agentovi zatím nejsou přiřazeni žádní potenciální zákazníci
+        sequence:
+          title: Sekvence
+          active_steps: aktivní kroky
+          edit_sequence: Upravit sekvenci
+          no_steps: Zatím nejsou nakonfigurovány žádné kroky sekvence. Přidejte kroky,
+            které definují vaši posloupnost dosahu.
+          add_first_step: Přidat první krok
+          immediate: Bezprostřední
+          delay_days: Po %{days} dnech
+          inactive: neaktivní
+          event_types:
+            email: E-mail
+            linkedin_message: Zpráva LinkedIn
+            linkedin_visit: LinkedIn Navštivte
+            linkedin_connect: LinkedIn Připojit
+            manual_task: Manuální úkol
+        samples:
+          title: Vzorové zprávy
+          status:
+            not_generated: Nevygenerováno
+            pending_approval: Čeká na schválení
+            approved: Schválený
+          generated_at: Vygenerováno dne %{date}
+          approved_by: Schváleno %{name} dne %{date}
+          sample_count_info: Vzorky budou vygenerovány pro prvních %{count} potenciálních
+            zákazníků
+          sample_count_label: Počet svodů vzorků
+          need_email_steps: Před generováním vzorků přidejte do sekvence alespoň jeden
+            e-mailový krok
+          need_leads: Před generováním vzorků importujte elektrody
+          generate_button: Generovat vzorky
+          view_samples: Zobrazit ukázky
+          approve_button: Schválit vzorky
+          cancel_button: Zrušit generování
+          reset_button: Resetovat a regenerovat
+          confirm_generate: Tím se vygenerují vzorové zprávy pro prvních %{count}
+            potenciálních zákazníků. Pokračovat?
+          confirm_reset: Tím se odstraní všechny vzorové zpráVy a resetuje se schválení.
+            Pokračovat?
+          confirm_cancel: Tím zastavíte generování vzorků, vymažete vygenerované vzorky
+            a resetujete postup. Pokračovat?
+          confirm_approve: Schválit tyto vzorové zprávy? To umožní spuštění kampaně.
+        mailboxes:
+          title: Přidělené poštovní schránky
+          empty: Tomuto agentovi nejsou přiřazeny žádné poštovní schránky
+          assign: Přiřadit poštovní schránky
+          warmup_complete: Připraveno
+          warming_up: Zahřívání
+          days_remaining: Zbývá %{days} dní
+          capacity: Kapacita %{remaining}/%{total}
+          capacity_label: kapacita
+          provider_google: Google
+          provider_microsoft: Microsoft
+          select_mailboxes: Vyberte poštovní schránky, které chcete přiřadit
+          save_assignment: Uložit úkol
+          no_available: Pro tuto organizaci nejsou k dispozici žádné poštovní schránky
+          select_all: Vyberte Vše
+          deselect_all: Zrušte výběr všech
+          search_domains: Hledat domény...
+          no_domains_match: Vašemu vyhledávání neodpovídají žádné domény
+        senders:
+          title: Odesílatelé
+          empty: V této organizaci nejsou žádní odesílatelé
+          manage: Spravovat
+          mailbox: poštovní schránka
+          mailboxes: poštovní schránky
+        buying_signals_modal:
+          missing_highlights_title: Vygenerovat pouze chybějící hlavní body + relevanci
+          missing_highlights_description: Přeskočí úplné generování nákupních signálů
+            a aktualizuje existující shrnutí, kterým chybí hlavní body nebo hodnocení.
+        campaign_status:
+          title: Stav kampaně
+          not_launched: Nespuštěno
+          launched: Spuštěno
+          launched_at: Spuštěno %{date}
+          paused: Pozastaveno
+          paused_at: Pozastaveno dne %{date}
+          active: Aktivní
+          launch_button: Spustit kampaň
+          pause_button: Pozastavit kampaň
+          resume_button: Obnovit kampaň
+          confirm_launch: Tím se začnou odesílat e-maily potenciálním zákazníkům.
+            Pokračovat?
+          confirm_pause: Tím se pozastaví všechna odesílání e-mailů. Plánované časy
+            budou zachovány. Pokračovat?
+          confirm_resume: Tím se obnoví odesílání e-mailů. Pokračovat?
+          leads_eligible_now: Leady způsobilé nyní
+          sent_today: Odesláno dnes
+          pending_now: Nevyřízeno
+          in_sequence: V sekvenci
+          not_yet_contacted: Dosud nekontaktován
+          available_capacity: Dostupná kapacita
+          launch_requirements: Požadavky na spuštění
+          requirement_leads: Leads importováno
+          requirement_mailboxes: Přiřazeny poštovní schránky
+          requirement_mailboxes_have_senders: Schránky mají přiřazené odesílatele
+          requirement_samples: Vzorové zpráVy schváleny
+          requirement_playbook: Schválená příručka
+          requirement_senders: Vytvořeni odesílatelé
+      launch:
+        not_ready: Agent není připraven ke spuštění. Ujistěte se, že jsou nakonfigurovány
+          elektrody, poštovní schránky a schválené vzorky.
+        already_launched: Tato kampaň již byla spuštěna.
+        success: Kampaň úspěšně spuštěna! E-maily se začnou odesílat podle plánu.
+      pause:
+        cannot_pause: Tuto kampaň nelze pozastavit. Musí být spuštěn a aktivní.
+        success: Kampaň pozastavena. Všechna naplánovaná odeslání byla pozastavena.
+        button: Pozastavit kampaň
+        confirm: Tím se pozastaví všechna odesílání e-mailů. Plánované časy budou
+          zachovány. Pokračovat?
+      resume:
+        cannot_resume: Tuto kampaň nelze obnovit. Nejprve se musí pozastavit.
+        success: Kampaň byla obnovena. Naplánované odesílání bude pokračovat.
+        button: Obnovit kampaň
+        confirm: Tím se obnoví odesílání e-mailů. Pokračovat?
+      restart_leads:
+        button: Restartovat leady
+        confirm: Restartovat od začátku sekvence všechny leady bez odpovědi a mimo
+          blacklist pro %{name}?
+        started: Restart leadů byl spuštěn. U velkých agentů to může trvat několik
+          minut.
+        success:
+          one: 1 lead byl restartován od začátku sekvence.
+          other: "%{count} leadů bylo restartováno od začátku sekvence."
+      sent_messages:
+        title: Odeslané zprávy
+        back_to_agent: Zpět k agentovi
+        view_overview: Zobrazit přehled
+        filter_status: Postavení
+        filter_mailbox: Poštovní schránka
+        all_statuses: Všechny stavy
+        all_mailboxes: Všechny poštovní schránky
+        search_placeholder: Hledat podle příjemce nebo předmětu...
+        messages_count: zprávy
+        table_title: Historie zpráv
+        empty: Zatím nebyly odeslány žádné zprávy. Spusťte kampaň a začněte odesílat.
+        column_recipient: Příjemce
+        column_mailbox: Poštovní schránka
+        column_subject: Podrobit
+        column_step: Krok
+        column_sent_at: Odesláno
+        column_status: Postavení
+        view_message: Zobrazit podrobnosti zprávy
+        preview_title: Odeslaná zpráva
+        preview_subject: Podrobit
+        preview_to: Na
+        preview_from: Z
+        preview_sent_at: Odesláno
+        preview_step: Krok sekvence
+        preview_replied_at: Odpovězeno
+        preview_bounced_at: Odražený
+        preview_message: Zpráva
+        status:
+          sent: Odesláno
+          bounced: Odražený
+          replied: Odpovězeno
+        replied_at: Odpovězeno %{date}
+        bounced_at: Vráceno %{date}
+      schedule:
+        title: Odeslat plán
+        description: Časy odeslání jsou přibližné. E-maily se odesílají, když je poštovní
+          schránka aktivní a potenciální zákazník se stane způsobilým.
+        back_to_agent: Zpět k agentovi
+        view_overview: Zobrazit přehled
+        filter_date: Show
+        leads_scheduled: potenciálních zákazníků naplánováno
+        today: Dnes
+        tomorrow: Zítra
+        sends: posílá
+        via: přes
+        no_mailbox: Není přiřazena žádná poštovní schránka
+        scheduled_today: Naplánováno dnes
+        pending_now: Nevyřízeno
+        sent_today: Odesláno dnes
+        total_scheduled: Celkem naplánováno
+        not_launched: Kampaň dosud nebyla spuštěna. Spusťte kampaň, abyste viděli
+          plán odeslání.
+        launch_campaign: Spustit kampaň
+        empty: Na toto časové období nejsou naplánována žádná odeslání.
+        empty_hint: Úloha denního plánování běží v 5:00 UTC, aby bylo možné naplánovat
+          odeslání pro spuštěné kampaně.
+        rescheduled_count:
+          one: Přeplánováno %{count}x
+          other: Přeplánováno %{count}x
+          few: Přeplánováno %{count}x
+        last_rescheduled_to: Přeplánováno na %{time}
+        date_options:
+          today: Dnes
+          tomorrow: Zítra
+          upcoming: Dalších 7 dní
+          all: Vše naplánováno
+      regenerate_schedule:
+        title: Obnovit plán
+        button: Obnovit plán
+        description: Vymažte a přeplánujte naplánovaná odeslání na vybrané datum.
+          Tím se odstraní všechna aktuálně naplánovaná odeslání pro dané datum a vytvoří
+          se nový plán založený na aktuálním nastavení.
+        date_label: Cílové datum
+        date_today: Dnes
+        date_tomorrow: Zítra
+        date_custom: Vlastní datum
+        confirm: Tím vymažete všechna naplánovaná odeslání na %{date} a vytvoříte
+          nový plán. Pokračovat?
+        success: Plán obnoven na %{date}. Vymazáno %{cleared} odeslání, naplánováno
+          %{scheduled} nových odeslání.
+        error: 'Plán regenerace se nezdařil: %{errors}'
+        not_active: Plán nelze obnovit. Kampaň musí být spuštěna a aktivní.
+        invalid_date: Zadáno neplatné datum.
+      mailboxes:
+        updated: Přiřazení poštovní schránky úspěšně aktualizováno.
+      leads:
+        title: Zástupce Leads
+        back_to_agent: Zpět k agentovi
+        view_overview: Zobrazit přehled
+        filter_status: Postavení
+        all_statuses: Všechny stavy
+        search_placeholder: Vyhledávání podle e-mailu, jména nebo společnosti...
+        leads_count: vede
+        leads_found: 'Počet nalezených potenciálních zákazníků: %{count}'
+        table_title: Leads v kampani
+        empty: K tomuto agentovi zatím nejsou přiřazeni žádní potenciální zákazníci.
+        column_lead: Vést
+        column_company: Společnost
+        column_status: Postavení
+        column_progress: Pokrok
+        column_mailbox: Poštovní schránka
+        column_activity: Aktivita
+        messages_sent: odesláno
+        next_send: Další
+        replied: Odpovězeno
+        meeting: Zasedání
+        last_sent: Naposledy odesláno
+        added: Přidáno
+        ooo_returns: OOO se vrací
+        blacklisted: Na černé listině
+        column_actions: Akce
+        view: Pohled
+        view_details: Zobrazit podrobnosti o potenciálním zákazníkovi a generované
+          zprávy
+        status:
+          not_contacted: Nekontaktován
+          in_sequence: V sekvenci
+          paused: Pozastaveno
+          replied: Odpovězeno
+          bounced: Odražený
+          completed: Dokončeno
+        meeting_actions:
+          mark: Mark Setkání
+          unmark: Zrušit označení schůzky
+          confirm_unmark: Opravdu chcete odebrat rezervaci schůzky pro tohoto potenciálního
+            zákazníka?
+        meeting_modal:
+          title: Označit schůzku zarezervovanou
+          notes_label: Poznámky ze schůzky (volitelné)
+          notes_placeholder: Přidejte nějaké poznámky ke schůzce...
+          confirm: Mark Setkání
+      sample_messages:
+        title: Vzorové zprávy
+        back_to_agent: Zpět k agentovi
+        confirm_generate: Tím se vygenerují vzorové zprávy pro prvních %{count} potenciálních
+          zákazníků. Pokračovat?
+        confirm_reset: Tím se odstraní všechny vzorové zpráVy a resetuje se schválení.
+          Pokračovat?
+        confirm_approve: Schválit tyto vzorové zprávy? To umožní spuštění kampaně.
+        generated_at: Vygenerováno %{date}
+        expand_all: Rozbalit vše
+        collapse_all: Sbalit vše
+        no_messages: Dosud nebyly vygenerovány žádné vzorové zprávy.
+        generate_button: Generovat vzorky
+        approve_button: Schválit vzorky
+        reset_button: Resetovat a regenerovat
+        total_messages: "%{count} zpráv"
+        lead_info: Informace o zájemcích
+        send_test: Odeslat test
+        edit: Upravit
+        test_sent: Test odeslán
+        edited_badge: Upraveno
+        error_summary:
+          title: U %{count} potenciálních zákazníků došlo k chybám při generování
+        edit_modal:
+          title: Upravit zprávu
+          subject_label: Podrobit
+          body_label: Tělo
+          save: Uložit změny
+      edit:
+        title: Edit Agent
+        subtitle: Aktualizujte nastavení a konfiguraci agenta
+        name_label: jméno *
+        description_label: Popis
+        playbook_label: Playbook
+        locale_label: Locale
+        locale_description: Jazyk pro generované zprávy
+        default_timezone_label: Výchozí časové pásmo
+        default_timezone_description: Používá se, když časové pásmo potenciálního
+          zákazníka nelze vyřešit z jeho polohy
+        llm_model_label: Model AI
+        llm_model_description: Model umělé inteligence, který se má použít pro generování
+          zpráv
+        delete_button: Smazat agenta
+        delete_warning: Tím odeberete agenta ze správy kampaní, ale konverzace a
+          historie odpovědí zůstanou dostupné.
+    sequence_steps:
+      title: Kroky sekvence
+      subtitle: Nakonfigurujte pro tohoto agenta sekvenci dosahu
+      created: Krok sekvence byl úspěšně vytvořen
+      updated: Krok sekvence byl úspěšně aktualizován
+      deleted: Krok sekvence byl úspěšně odstraněn
+      delete_failed: Krok sekvence se nepodařilo odstranit
+      empty: Zatím žádné sekvenční kroky. Přidejte svůj první krok k definování pracovního
+        postupu.
+      add_step: Přidat krok
+      back_to_agent: Zpět k agentovi
+      confirm_delete: Opravdu chcete tento krok ze sekvence odstranit?
+      max_steps_reached: Maximálně 15 kroků na sekvenci.
+      reorder:
+        success: Sekvenční kroky byly úspěšně změněny
+        invalid_params: Neplatné parametry pro změnu pořadí
+        saving: Ukládání nové objednávky...
+      import:
+        button: Import od agenta
+        title: Import sekvence
+        description: Vyberte agenta, který chcete zkopírovat jeho kroky sekvence.
+          To nahradí všechny stávající kroky.
+        destructive_warning: To trvale nahradí všechny existující kroky v sekvenci
+          cílového agenta. Toto nelze vrátit zpět.
+        select_agent: Vyberte zástupce
+        select_target_agent: Vyberte cílového agenta
+        select_source_agent: Vyberte zdrojového agenta
+        search_placeholder: Vyhledávání podle organizace nebo agenta
+        no_agents: Nejsou k dispozici žádní zástupci
+        no_matching_agents: Nebyli nalezeni žádní odpovídající agenti
+        steps_count:
+          one: "%{count} krok"
+          other: "%{count} kroků"
+          few: "%{count} kroků"
+        confirm_replace: To nahradí všechny existující kroky v sekvenci tohoto agenta.
+          jsi si jistý?
+        success: Sekvence byla úspěšně importována
+        agent_not_found: Zdrojový agent nebyl nalezen
+        no_steps: Zdrojový agent nemá žádné kroky sekvence
+        importing: Import...
+        cancel: Zrušit
+        import_button: Importovat
+      new:
+        title: Přidat sekvenční krok
+        subtitle: Přidejte nový krok do dosahové sekvence
+        submit: Vytvořit krok
+      edit:
+        title: Upravit krok sekvence
+        subtitle: Aktualizujte konfiguraci kroku
+      show:
+        title: Podrobnosti o kroku sekvence
+      form:
+        position_label: Pozice
+        position_help: Objednejte v pořadí (1-15)
+        event_type_label: Typ události
+        event_type_help: Typ akce pro tento krok
+        name_label: Název kroku
+        name_placeholder: např. Initial Outreach, First Follow-up
+        name_help: Volitelný popisný název pro tento krok
+        name_description: Volitelný popisný název pro tento krok
+        delay_days_label: Zpoždění (dny)
+        delay_days_help: Dny čekání po předchozím kroku
+        active_label: Aktivní
+        active_help: Neaktivní kroky jsou během generování přeskočeny
+        subject_prompt_label: Předmětová výzva
+        subject_prompt_placeholder: Vyberte výzvu k předmětu...
+        subject_prompt_help: Šablona výzVy AI pro generování předmětů e-mailu
+        body_prompt_label: Výzva těla
+        body_prompt_placeholder: Vyberte výzvu pro tělo...
+        body_prompt_help: Šablona výzVy AI pro generování e-mailových těl
+        select_prompt: Vyberte výzvu...
+        submit: Uložit krok
+        submitting: Ukládání...
+        delete_button: Smazat krok
+        deleting_button: Mazání...
+      event_types:
+        email: E-mail
+        linkedin_message: Zpráva LinkedIn (již brzy)
+        linkedin_visit: Návštěva profilu LinkedIn (již brzy)
+        linkedin_connect: Připojení LinkedIn (již brzy)
+        manual_task: Ruční úloha (již brzy)
+      table:
+        position: Pozice
+        type: Typ
+        delay: Zpoždění
+        days: dní
+        immediate: Bezprostřední
+        active: Aktivní
+        inactive: Neaktivní
+        edit: Upravit
+        delete: Vymazat
+    leads:
+      title: Vše Leads
+      subtitle: Zobrazení a správa potenciálních zákazníků ve všech organizacích
+      empty: Nebyli nalezeni žádní potenciální zákazníci
+      import_leads: Importovat Leads
+      filters:
+        title: Filtry
+        organization_all: Všechny organizace
+        blacklist_label: Stav černé listiny
+        blacklist_all: Vše
+        blacklist_yes: Na černé listině
+        blacklist_no: Není na černé listině
+      table:
+        job_title: Název práce
+        view: Pohled
+      status:
+        blacklisted: Na černé listině
+        not_blacklisted: Aktivní
+        active: Aktivní
+      pagination:
+        showing: Zobrazuje se %{start} až %{end} z %{total} výsledků
+        previous: Předchozí
+        next: Další
+      show:
+        title: Podrobnosti o potenciálním zákazníkovi
+        back_to_list: Zpět na Leads
+        contact_info: Kontaktní informace
+        name: Jméno
+        email: E-mail
+        first_name: Křestní jméno
+        last_name: Příjmení
+        job_title: Název práce
+        linkedin: LinkedIn
+        view_profile: Zobrazit profil
+        location: Umístění
+        phone: Telefon
+        timezone: Časové pásmo
+        website: webové stránky
+        company_info: Informace o společnosti
+        company: Společnost
+        company_website: webové stránky
+        custom_fields: Další informace
+        enrichment: Údaje o obohacení
+        disc_profile: Profil DISKU
+        disc_not_analyzed: Neanalyzováno
+        linkedin_scraped: LinkedIn Poškrábaný
+        not_scraped: Ještě ne
+        blacklist_info: Informace o černé listině
+        blacklist_reason: Důvod
+        blacklisted_at: Zapnuto na černé listině
+        agents: Přiděleno Agents
+        no_agents: Nepřiděleno žádnému agentovi
+        added: Přidáno
+        import_info: Informace o importu
+        import_file: Zdrojový soubor
+        imported_by: Importoval
+        imported_at: Importováno dne
+        metadata: Metadata
+        email_domain: E-mailová doména
+        created_at: Vytvořeno
+        updated_at: Poslední aktualizace
+      modal:
+        title: Podrobnosti o potenciálním zákazníkovi
+        close: Blízko
+        sections:
+          basic_info: Kontaktní informace
+          enrichment: Údaje o obohacení
+          disc: Profil DISKU
+          linkedin: Data LinkedIn
+          company: Údaje o webových stránkách společnosti
+          messages: Náhled zprávy
+        fields:
+          email: E-mail
+          name: Jméno
+          company: Společnost
+          domain: Doména
+          website: webové stránky
+          job_title: Název práce
+          location: Umístění
+          linkedin_url: LinkedIn
+          view_profile: Zobrazit profil
+          custom_fields: Vlastní pole
+        disc:
+          title: Profil DISKU
+          not_analyzed: Neanalyzováno
+          D: Dominance
+          I: Vliv
+          S: Stálost
+          C: Svědomitost
+          DI: Dominance-Vliv
+          DC: Dominance-Svědomitost
+          ID: Vliv-Dominance
+          IC: Vliv-Svědomitost
+          SC: Stálost-Svědomitost
+          SI: Stálost-Vliv
+        linkedin:
+          headline: Titulek
+          summary: Shrnutí
+          experience: Zažít
+          education: Školství
+          posts: Poslední příspěvky
+          posts_count: "%{count} příspěvků"
+          no_posts: Nejsou k dispozici žádné příspěvky
+          scraped_at: Analyzováno
+          not_scraped: Nepoškrábaný
+        company_website:
+          summary: Shrnutí webových stránek společnosti
+          raw_data: Údaje o webových stránkách společnosti
+          more_characters: "%{count} dalších znaků..."
+          content: Obsah webových stránek
+          scraped_at: Poškrábaný
+          not_scraped: Nepoškrábaný
+        messages:
+          title: Sekvenční zprávy
+          agent: Činidlo
+          no_agents: Potenciální zákazník není přidělen žádným agentům
+          step: Krok %{position}
+          delay_immediate: Bezprostřední
+          delay_days: Po %{days} dnech
+          subject: Podrobit
+          body: Tělo
+          generate: Generovat
+          generate_all: Generovat vše
+          generating: Generování...
+          regenerate: Regenerovat
+          no_messages: Dosud nebyly vygenerovány žádné zprávy
+          all_generated: Všechny zpráVy byly vygenerovány
+          status:
+            draft: Návrh
+            approved: Schválený
+            scheduled: Naplánováno
+            sent: Odesláno
+            failed: Nepodařilo se
+            bounced: Odražený
+            replied: Odpovězeno
+        blacklist:
+          title: Na černé listině
+          reason: Důvod
+        enrichment:
+          title: Obohacení
+          linkedin_profile: Seškrábněte profil LinkedIn
+          linkedin_posts: Seškrábněte příspěvky LinkedIn
+          disc_profile: Vyvodit profil DISKU
+          company_website: Web společnosti Scrape
+          scraping: škrábání...
+          inferring: Odvozování...
+          success: Úspěch
+          error: Chyba
+          last_updated: Poslední aktualizace %{date}
+          never_scraped: Nikdy nepoškrábaný
+          not_available: Není k dispozici
+          requires_linkedin: Nejprve vyžaduje profil LinkedIn
+          requires_posts: Vyžaduje nejprve LinkedIn příspěvků
+    generated_messages:
+      updated: Zpráva byla úspěšně aktualizována
+      test_sent: Zkušební e-mail odeslán na adresu %{email}
+      update_failed: Aktualizace zpráVy se nezdařila
+    email_accounts:
+      title: E-mailové účty
+      subtitle: Spravujte e-mailové účty napříč organizacemi
+      created: E-mailový účet byl úspěšně vytvořen
+      updated: E-mailový účet byl úspěšně aktualizován
+      deleted: E-mailový účet byl úspěšně smazán
+      warmup_started: Zahřívání začalo úspěšně
+      status_updated: Stav úspěšně aktualizován
+      invalid_status: Zadán neplatný stav
+      confirm_delete: Opravdu chcete smazat tento e-mailový účet? Tuto akci nelze
+        vrátit zpět.
+      delete_failed_has_agents: E-mailový účet přiřazený agentům nelze smazat. Nejprve
+        odstraňte přiřazení agentů.
+      add_account: Přidat účet
+      import_csv: Importovat CSV
+      back_to_list: Zpět na E-mailové účty
+      filters:
+        organization: Organizace
+        status: Postavení
+      statuses:
+        pending: Čeká na vyřízení
+        warming: Zahřívání
+        active: Aktivní
+        paused: Pozastaveno
+        suspended: Pozastaveno
+      table:
+        display_name: Zobrazovaný název
+        connection: Spojení
+        connection_error: Chyba
+        connection_ok: OK
+        not_tested: Netestováno
+        warmup_progress: Průběh zahřívání
+        daily_limit: Denní limit
+        view: Pohled
+        edit: Upravit
+        warmup_complete: Kompletní
+        days_remaining: Zbývá %{days} dní
+      test_connection:
+        success: Test připojení byl úspěšný! SMTP a IMAP fungují.
+        smtp_ok_imap_failed: 'SMTP je v pořádku, ale IMAP selhal: %{error}'
+        imap_ok_smtp_failed: 'IMAP je v pořádku, ale SMTP se nezdařilo: %{error}'
+        failed: 'Test připojení se nezdařil: %{error}'
+      send_test:
+        success: Zkušební e-mail odeslán na adresu %{email}
+        failed: 'Nepodařilo se odeslat zkušební e-mail: %{error}'
+        invalid_email: Zadejte prosím platnou e-mailovou adresu
+      import:
+        title: Importovat e-mailové účty
+        subtitle: Nahrajte soubor CSV pro hromadný import e-mailových účtů
+        upload_title: Nahrajte soubor CSV
+        upload_description: Importujte více e-mailových účtů najednou ze souboru CSV
+        organization: Organizace
+        select_organization: Vyberte organizaci...
+        csv_file: Soubor CSV
+        drop_file: Sem přetáhněte svůj soubor CSV
+        or_click: nebo klikněte pro procházení
+        invalid_file_type: Vyberte prosím soubor CSV
+        download_template: Stáhnout šablonu
+        template_description: Pomocí této šablony se ujistěte, že váš CSV má správný
+          formát
+        download: Stáhnout
+        import_button: Importovat účty
+        select_file: Vyberte prosím soubor CSV k importu
+        success: 'Počet úspěšně importovaných e-mailových účtů: %{count}'
+        partial_success: "%{imported} importováno, %{failed} se nezdařilo: %{errors}"
+        columns_title: Odkaz na sloupec
+        columns_description: Povinné a volitelné sloupce pro soubor CSV
+        column_name: Sloupec
+        required: Požadovaný
+        description: Popis
+        provider_settings: Reference nastavení poskytovatele
+        provider_settings_description: Společná nastavení SMTP/IMAP pro oblíbené poskytovatele
+          e-mailu
+        google_note: Použijte hesla aplikací pro účty Gmail s povolenou 2FA
+        microsoft_note: Ujistěte se, že SMTP/IMAP je povoleno v nastavení správce
+          Microsoft 365
+        columns:
+          email: E-mailová adresa účtu
+          first_name: Křestní jméno majitele účtu
+          last_name: Příjmení majitele účtu
+          smtp_host: SMTP název hostitele serveru
+          smtp_port: SMTP port serveru (obvykle 587)
+          smtp_username: SMTP autentizační uživatelské jméno
+          smtp_password: SMTP ověřovací heslo nebo heslo aplikace
+          imap_host: IMAP název hostitele serveru
+          imap_port: IMAP port serveru (obvykle 993)
+          imap_username: IMAP autentizační uživatelské jméno
+          imap_password: IMAP ověřovací heslo nebo heslo aplikace
+          smtp_encryption: 'SMTP šifrování: tls, ssl nebo none (výchozí: tls)'
+          imap_encryption: 'IMAP šifrování: ssl, tls nebo none (výchozí: ssl)'
+          daily_limit: 'Denní limit odesílání (výchozí: 50)'
+          sending_domain: Volitelná vlastní odesílací doména
+          display_name: Volitelné přepsání zobrazovaného názvu
+      show:
+        title: Podrobnosti o e-mailovém účtu
+        subtitle: Zobrazení a správa nastavení e-mailového účtu
+        organization: Organizace
+        email: E-mailová adresa
+        display_name: Zobrazovaný název
+        status: Postavení
+        daily_limit: Denní limit odesílání
+        warmup_status: Stav zahřívání
+        warmup_complete: Zahřívání dokončeno
+        warmup_in_progress: Zahřívání probíhá
+        days_remaining: Zbývá %{days} dní
+        warmup_not_started: Nezahájeno
+        notes: Poznámky
+        created_by: Vytvořil
+        created_at: Vytvořeno
+        updated_at: Poslední aktualizace
+        agents_title: Přiděleno Agents
+        no_agents: Nejsou přiděleni žádní agenti
+        start_warmup: Spusťte zahřívání
+        start_warmup_confirm: Začít 21denní zahřívací období pro tento účet?
+        mark_active: Označit jako aktivní
+        pause: Pauza
+        suspend: Pozastavit
+        reactivate: Znovu aktivujte
+        warmup_started_on: Zahájeno %{date}
+        back_to_list: Zpět na E-mailové účty
+        account_holder: Majitel účtu
+        from_address: Z adresy
+        smtp_configuration: Konfigurace SMTP
+        imap_configuration: Konfigurace IMAP
+        connection_status: Stav připojení
+        provider: Poskytovatel
+        last_test: Poslední test
+        never_tested: Nikdy netestováno
+        connection_error: Chyba připojení
+        connection_healthy: Připojení je zdravé
+        test_connection: Test připojení
+      form:
+        first_name: Křestní jméno
+        last_name: Příjmení
+        smtp_host: Hostitel SMTP
+        smtp_port: Port SMTP
+        smtp_username: Uživatelské jméno SMTP
+        smtp_password: Heslo SMTP
+        smtp_encryption: SMTP Šifrování
+        imap_host: Hostitel IMAP
+        imap_port: Port IMAP
+        imap_username: Uživatelské jméno IMAP
+        imap_password: Heslo IMAP
+        imap_encryption: IMAP Šifrování
+        sending_domain: Odesílání domény
+      new:
+        title: Přidat e-mailový účet
+        subtitle: Vytvořte nový e-mailový účet pro odchozí kampaně
+        basic_info: Základní informace
+        select_organization: Vyberte organizaci...
+        email_placeholder: odesílatel@společnost.com
+        email_help: E-mailová adresa, která bude použita pro odeslání
+        first_name_placeholder: Jan
+        last_name_placeholder: Kovář
+        display_name_placeholder: Prodejní tým
+        display_name_help: Jak příjemci uvidí jméno odesílatele (volitelné)
+        daily_limit_label: Denní limit odesílání
+        daily_limit_help: Maximální počet e-mailů k odeslání za den
+        smtp_config: Konfigurace SMTP
+        smtp_host_label: Hostitel SMTP
+        smtp_port_label: Přístav
+        smtp_username_label: Uživatelské jméno
+        smtp_username_placeholder: Obvykle Vaše e-mailová adresa
+        smtp_password_label: Heslo
+        smtp_password_placeholder: Heslo aplikace nebo heslo SMTP
+        smtp_encryption_label: Šifrování
+        imap_config: Konfigurace IMAP
+        imap_host_label: Hostitel IMAP
+        imap_port_label: Přístav
+        imap_username_label: Uživatelské jméno
+        imap_username_placeholder: Obvykle Vaše e-mailová adresa
+        imap_password_label: Heslo
+        imap_password_placeholder: Heslo aplikace nebo heslo IMAP
+        imap_encryption_label: Šifrování
+        optional_settings: Volitelná nastavení
+        sending_domain_label: Odesílání domény
+        sending_domain_placeholder: company.com
+        sending_domain_help: Vlastní doména pro identifikaci HELO/EHLO
+        notes_label: Poznámky
+        notes_placeholder: Interní poznámky k tomuto účtu...
+        info_pending: Nové účty budou ve stavu „nevyřízeno“. Až budete připraveni,
+          zahajte zahřívací období.
+        create_button: Vytvořit účet
+      edit:
+        title: Upravit e-mailový účet
+        subtitle: Aktualizujte nastavení e-mailového účtu
+        email_readonly: E-mailovou adresu nelze změnit
+        display_name_help: Jméno zobrazené v odeslaných e-mailech
+        daily_limit_label: Denní limit odesílání
+        daily_limit_help: Maximální počet e-mailů k odeslání za den
+        notes_label: Poznámky
+        notes_placeholder: Interní poznámky k tomuto účtu...
+    email_domains:
+      title: E-mailové domény
+      subtitle: Spravujte integrace Google Workspace a Microsoft 365
+      empty: Zatím nejsou nakonfigurovány žádné e-mailové domény.
+      created: E-mailová doména byla úspěšně vytvořena
+      created_with_discovery: E-mailová doména byla vytvořena. Zjištěno %{discovered}
+        uživatelů, vytvořeno %{created} poštovních schránek.
+      updated: E-mailová doména byla úspěšně aktualizována
+      deleted: E-mailová doména byla úspěšně smazána
+      delete_failed: Smazání e-mailové domény se nezdařilo
+      has_mailboxes: Nelze smazat doménu s existujícími poštovními schránkami. Nejprve
+        smažte poštovní schránky.
+      connection_success: Test připojení byl úspěšný
+      google_not_configured: Identifikační údaje Google nejsou nakonfigurovány. Nastavit
+        proměnnou prostředí GOOGLE_SERVICE_ACCOUNT_KEY.
+      microsoft_not_configured: Přihlašovací údaje společnosti Microsoft nejsou nakonfigurovány.
+        Nastavte proměnné prostředí MICROSOFT_CLIENT_ID a MICROSOFT_CLIENT_SECRET.
+      confirm_delete: Opravdu chcete smazat tuto doménu?
+      add_domain: Přidat doménu
+      back_to_list: Zpět na E-mailové domény
+      discover_mailboxes: Objevte poštovní schránky
+      discovery_success: 'Objevování dokončeno: Nalezeno %{discovered} uživatelů,
+        vytvořeno %{created} poštovních schránek, přeskočeno %{skipped} existujících'
+      discovery_confirm: Tím vyhledá všechny uživatele v doméně a vytvoří pro ně poštovní
+        schránky. Pokračovat?
+      sender_assigned: Odesílatel %{sender} přiřazen k %{mailbox}
+      sender_unassigned: Přiřazení odesílatele z %{mailbox} zrušeno
+      sender_assignment_failed: Přiřazení odesílatele se nezdařilo
+      sender_unassignment_failed: Přiřazení odesílatele se nepodařilo zrušit
+      bulk_sender_assigned: Přiřazeno %{sender} k %{count} poštovním schránkám
+      test_connection: Test připojení
+      testing_connection: Testování...
+      settings: Nastavení
+      mailboxes_label: poštovní schránky
+      capacity_label: kapacita
+      no_mailboxes: Zatím žádné poštovní schránky
+      assign_sender: Přiřadit odesílatele
+      unassign_sender: Zrušit přiřazení
+      no_agents: Žádný
+      warmup_complete: Kompletní
+      warmup_in_progress: Zahřívání
+      can_send: Připraveno
+      cannot_send: Není připraven
+      select_all: Vyberte vše
+      selected_count: 'Vybráno: %{count}'
+      bulk_assign: Přiřadit odesílateli
+      search_placeholder: Hledat domény nebo e-maily...
+      bulk_assign_title: Přiřadit odesílatele k %{count} poštovním schránkám
+      bulk_assign_description: Vyberte odesílatele, kterého chcete přiřadit k %{count}
+        vybraným poštovním schránkám.
+      mailbox_table:
+        email: E-mail
+        sender: Odesílatel
+        agents: Agents
+        status: Postavení
+        warmup: Zahřívání
+        capacity: Kapacita
+        actions: Akce
+      provider_types:
+        google: Google Workspace
+        microsoft: Microsoft 365
+      statuses:
+        active: Aktivní
+        inactive: Neaktivní
+        error: Chyba
+        deleted: Smazáno
+        undefined: Neznámý
+      filters:
+        title: Filtry
+        organization: Organizace
+        provider_type: Typ poskytovatele
+        all_types: Všechny typy
+        status: Postavení
+      credentials_status:
+        title: Stav globálních přihlašovacích údajů
+        google: Google
+        microsoft: Microsoft
+        configured: Nakonfigurováno
+        not_configured: Nenakonfigurováno
+        google_hint: Nastavit proměnnou prostředí GOOGLE_SERVICE_ACCOUNT_KEY
+        microsoft_hint: Nastavit proměnné prostředí MICROSOFT_CLIENT_ID a MICROSOFT_CLIENT_SECRET
+      table:
+        provider_type: Poskytovatel
+        provider: Poskytovatel
+        last_verified: Naposledy ověřeno
+        view: Pohled
+        edit: Upravit
+        never_verified: Nikdy
+      new:
+        title: Přidat e-mailovou doménu
+        subtitle: Nakonfigurujte doménu Google Workspace nebo Microsoft 365
+        organization_placeholder: Vyberte organizaci...
+        provider_type_label: Typ poskytovatele
+        provider_type_placeholder: Vyberte typ poskytovatele...
+        domain_label: Doména
+        domain_placeholder: example.com
+        domain_help: E-mailová doména, kterou chcete nakonfigurovat
+        domain_inferred: odvozeno z admin emailu
+        google_admin_email_label: E-mail správce
+        google_admin_email_help: Google Workspace e-mail správce pro přístup k API.
+          Doména bude extrahována z tohoto e-mailu.
+        google_client_id_label: ID klienta servisního účtu
+        google_scopes_label: Požadované rozsahy
+        microsoft_tenant_id_label: Microsoft Tenant ID
+        microsoft_tenant_id_placeholder: 12345678-1234-1234-1234-123456789012
+        microsoft_tenant_id_help: Vaše GUID tenanta Azure AD (požadováno pro Microsoft)
+        info_google: Pro Google Workspace se ujistěte, že je pro účet služby nakonfigurováno
+          delegování v rámci celé domény.
+        info_microsoft: Pro Microsoft 365 zajistěte udělení souhlasu správce pro aplikaci
+          Azure AD.
+        submit: Vytvořit doménu
+        submitting: Vytváření...
+      edit:
+        title: Upravit e-mailovou doménu
+        subtitle: Aktualizujte konfiguraci domény
+        domain_label: Doména
+        microsoft_tenant_id_label: Microsoft Tenant ID
+        delete_button: Smazat doménu
+      show:
+        title: Podrobnosti o e-mailové doméně
+        back_to_list: Zpět na E-mailové domény
+        organization: Organizace
+        provider_type: Typ poskytovatele
+        domain: Doména
+        microsoft_tenant_id: Microsoft Tenant ID
+        status: Postavení
+        last_verified: Naposledy ověřeno
+        verification_error: Chyba ověření
+        created_at: Vytvořeno
+        updated_at: Poslední aktualizace
+        mailboxes_title: Poštovní schránky
+        mailboxes_count: "%{count} poštovních schránek"
+        no_mailboxes: Pro tuto doménu nejsou nakonfigurovány žádné poštovní schránky
+        add_mailbox: Přidat poštovní schránku
+        test_connection: Test připojení
+        testing: Testování...
+        credentials_status_title: Stav pověření
+    senders:
+      title: Odesílatelé
+      subtitle: Spravujte lidi, kteří posílají informační zprávy
+      empty: Zatím nejsou nakonfigurováni žádní odesílatelé.
+      created: Odesílatel byl úspěšně vytvořen
+      updated: Odesílatel byl úspěšně aktualizován
+      deleted: Odesílatel byl úspěšně smazán
+      confirm_delete: Opravdu chcete tohoto odesílatele smazat? Jejich poštovní schránky
+        zůstanou, ale nebudou propojeny s odesílatelem.
+      add_sender: Přidat odesílatele
+      back_to_list: Zpět k Odesílatelům
+      statuses:
+        active: Aktivní
+        inactive: Neaktivní
+      filters:
+        organization: Organizace
+        status: Postavení
+        search: Hledat podle jména nebo emailu...
+      table:
+        job_title: Název práce
+        capacity: Denní kapacita
+        view: Pohled
+        edit: Upravit
+      new:
+        title: Přidat odesílatele
+        subtitle: Přidejte nového člověka, který bude posílat informační zprávy
+        organization_placeholder: Vyberte organizaci...
+        organization_help: Organizace, do které tento odesílatel patří
+        first_name_placeholder: Jan
+        last_name_placeholder: Kovář
+        nickname_label: Přezdívka (volitelné)
+        nickname_placeholder: Johnny
+        nickname_help: Neformální název použitý v proměnné podpisu {{sender_nickname}}
+        email_placeholder: john@company.com
+        email_help: Primární kontaktní e-mail tohoto odesílatele
+        job_title_placeholder: Vedoucí účtu
+        linkedin_url_label: LinkedIn URL (volitelné)
+        linkedin_url_placeholder: https://linkedin.com/in/username
+        linkedin_url_help: Pro budoucí automatizaci LinkedIn
+        calendly_url_label: Calendly URL (volitelné)
+        calendly_url_placeholder: https://calendly.com/username
+        calendly_url_help: Odkaz na plánování podpisů podle odesílatele
+        signature_template_label: Šablona podpisu
+        signature_template_placeholder: "<p>S pozdravem<br>{{sender_full_name}}<br>{{sender_job_title}}</p>"
+        signature_template_help: 'HTML podpis s proměnnými. Dostupné: {{sender_first_name}},
+          {{sender_last_name}}, {{sender_full_name}}, {{sender_nickname}}, {{sender_job_title}},
+          {{sender_email}}, {{sender_calendly_url}}, {{sender_linkedin_url}}, {{sender_company}},
+          {{lead_first_name}}, {{lead_last_name}}, {{lead_full_name}}, {{lead_company}},
+          {{lead_job_title}}, {{lead_email}}, {{lead_location}}, {{lead_linkedin_url}},
+          {{lead_company_website}}'
+        profile_photo_label: Profilová fotka (volitelné)
+        profile_photo_help: JPEG nebo PNG, max. 4 MB. Používá se pro synchronizaci
+          poskytovatele.
+        profile_photo_upload: Nahrajte fotografii
+        profile_photo_invalid_type: Neplatný typ souboru. Nahrajte prosím obrázek
+          JPEG nebo PNG.
+        profile_photo_too_large: Soubor je příliš velký. Maximální velikost je 4 MB.
+        submit: Vytvořit odesílatele
+        submitting: Vytváření...
+      edit:
+        title: Upravit odesílatele
+        subtitle: Aktualizujte profil odesílatele a podpis
+        delete_button: Smazat odesílatele
+        change_photo: Změnit fotku
+      signature_editor:
+        mode_richtext: RTF
+        mode_html: HTML
+        mode_preview: Náhled
+        help_richtext: Zkopírujte a vložte svůj podpis přímo z vašeho e-mailového
+          klienta. Formátování zůstane zachováno.
+        help_html: 'Upravte nezpracovaný kód HTML svého podpisu. Dostupné proměnné:
+          {{sender_first_name}}, {{sender_last_name}}, {{sender_full_name}}, {{sender_nickname}},
+          {{sender_job_title}}, {{sender_email}}, {{sender_calendly_url}}, {{sender_linkedin_url}},
+          {{sender_company}}, {{lead_first_name}}, {{lead_last_name}}, {{lead_full_name}},
+          {{lead_company}}, {{lead_job_title}}, {{lead_email}}, {{lead_location}},
+          {{lead_linkedin_url}}, {{lead_company_website}}'
+        help_preview: Tento podpis obsahuje složité HTML. Chcete-li jej upravit, přepněte
+          do režimu HTML.
+        html_warnings_title: Upozornění na ověření HTML
+        warning_unclosed_tag: 'Neuzavřená značka: <%{tag}>'
+        warning_unclosed_tags: 'Neuzavřené značky: %{tags}'
+        warning_script_tags: Značky skriptu nejsou v podpisech povoleny
+        complex_html_notice: Tento podpis obsahuje komplexní HTML (tabulky, stylizované
+          prvky). Použijte režim HTML k úpravám při zachování veškerého formátování.
+      show:
+        title: Podrobnosti o odesílateli
+        back_to_list: Zpět k Odesílatelům
+        profile_section: Profil
+        email: E-mail
+        job_title: Název práce
+        linkedin: LinkedIn
+        calendly: Calendly
+        organization: Organizace
+        status: Postavení
+        created_at: Vytvořeno
+        updated_at: Poslední aktualizace
+        capacity_section: Kapacita
+        mailboxes_count: Poštovní schránky
+        active_mailboxes: Aktivní poštovní schránky
+        total_daily_capacity: Celková denní kapacita
+        remaining_capacity: Zbývá dnes
+        signature_section: Podpis
+        signature_preview: Náhled podpisu
+        no_signature: Není nakonfigurována žádná šablona podpisu
+        signature_variables: Dostupné proměnné
+        mailboxes_section: Přidělené poštovní schránky
+        no_mailboxes: Tomuto odesílateli nejsou přiřazeny žádné poštovní schránky
+        edit_sender: Upravit odesílatele
+        select_mailbox: Vyberte poštovní schránku, kterou chcete přiřadit...
+        search_mailboxes: Prohledat poštovní schránky...
+        no_mailboxes_found: Vašemu hledání neodpovídají žádné poštovní schránky
+        assign_mailbox: Přiřadit
+        assign_selected: Přiřadit vybrané (%{count})
+        unassign_mailbox: Odebrat od odesílatele
+        calendly_section: Calendly Integrace
+        calendly_not_configured: Integrace Calendly není nakonfigurována. Chcete-li
+          to povolit, kontaktujte svého správce.
+        calendly_connected_badge: Připojeno
+        calendly_limited_badge: Připojeno (omezeno)
+        calendly_disconnected_badge: Nepřipojeno
+        calendly_error_badge: Chyba
+        calendly_scheduling_url: Odkaz na plánování
+        calendly_view_link: Zobrazit stránku plánování
+        calendly_event_type: Typ schůzky
+        calendly_select_event_type_placeholder: Vyberte typ události
+        calendly_event_type_required: Vyberte typ schůzky pro dokončení nastavení
+          Calendly.
+        calendly_connected_at: Připojeno
+        calendly_tracking_info: Schůzky rezervované prostřednictvím odkazu Calendly
+          tohoto odesílatele jsou automaticky sledovány a přiřazovány potenciálním
+          zákazníkům.
+        calendly_booking_links_enabled: Rezervační odkazy jsou aktuálně povoleny
+        calendly_limited_tracking_info: Odkazy na rezervaci jsou povoleny. Automatické
+          sledování schůzek vyžaduje Calendly Standard nebo vyšší.
+        calendly_help_text: Připojte Calendly k automatickému sledování schůzek rezervovaných
+          přes odkaz pro plánování tohoto odesílatele.
+        calendly_connect: Připojit Calendly
+        calendly_disconnect: Odpojit Calendly
+        calendly_confirm_disconnect: Odpojit
+        calendly_disconnect_warning: Tím přestanete sledovat schůzky tohoto odesílatele.
+          Budoucí rezervace nebudou automaticky připisovány potenciálním zákazníkům.
+        calendly_retry: Opakovat připojení
+        search_domains: Hledat domény...
+        select_all: Vyberte Vše
+        deselect_all: Zrušte výběr všech
+        warmup_complete: Připraveno k odeslání
+        warming_up: Zahřívání
+        capacity_remaining: zbývající
+      mailbox_assigned: Poštovní schránka %{email} přiřazená tomuto odesílateli
+      mailboxes_assigned: "%{count} poštovních schránek přiřazených tomuto odesílateli"
+      mailbox_unassigned: Poštovní schránka %{email} byla odebrána tomuto odesílateli
+      mailbox_different_org: Nelze přiřadit poštovní schránku z jiné organizace
+      no_mailboxes_selected: Nejsou vybrány žádné poštovní schránky
+      calendly:
+        title: Calendly Integrace
+        not_configured: Integrace Calendly není nakonfigurována. Kontaktujte prosím
+          svého správce.
+        not_connected: Tento odesílatel není připojen k Calendly.
+        connected: Calendly úspěšně připojeno! Schůzky rezervované přes odkaz tohoto
+          odesílatele budou nyní automaticky sledovány.
+        connected_limited: Calendly úspěšně připojeno. Odkazy na rezervaci jsou povoleny.
+        disconnected: Calendly bylo úspěšně odpojeno.
+        connection_failed: 'Nepodařilo se připojit Calendly: %{error}'
+        event_type_selected: Typ schůzky Calendly byl aktualizován.
+        event_type_selection_failed: 'Nepodařilo se aktualizovat typ schůzky Calendly:
+          %{error}'
+        oauth_denied: 'Plánovaná autorizace byla zamítnuta: %{error}'
+        invalid_state: Neplatný stav OAuth. Zkuste se připojit znovu.
+        sender_mismatch: Neshoda odesílatele zpětného volání OAuth. Zkuste se připojit
+          znovu.
+        session_expired: Relace OAuth vypršela. Zkuste se připojit znovu.
+        sender_not_found: Odesílatel nebyl nalezen. Zkuste se připojit znovu.
+    mailboxes:
+      title: Poštovní schránky
+      subtitle: Spravujte účty pro odesílání e-mailů pro doručování založené na API
+      empty: Zatím nejsou nakonfigurovány žádné poštovní schránky.
+      created: Poštovní schránka byla úspěšně vytvořena
+      updated: Poštovní schránka byla úspěšně aktualizována
+      deleted: Schránka byla úspěšně smazána
+      delete_failed: Smazání poštovní schránky se nezdařilo
+      has_sent_messages: Nelze smazat schránku s odeslanými zprávami. Místo toho archivujte
+        poštovní schránku.
+      test_send_queued: Testovací e-mail ve frontě k odeslání
+      test_send_success: Zkušební e-mail byl úspěšně odeslán na adresu %{recipient}
+      test_send_failed: 'Nepodařilo se odeslat zkušební e-mail: %{error}'
+      cannot_send: 'Nelze odeslat z této poštovní schránky: %{reasons}'
+      not_active: schránka není aktivní
+      no_capacity: denní limit odesílání dosažen
+      warmup_incomplete: zahřívací období není dokončeno
+      confirm_delete: Opravdu chcete smazat tuto poštovní schránku?
+      test_email:
+        subject: "[Amplifa Test] E-mail z %{mailbox}"
+        body: |-
+          Toto je testovací e-mail od společnosti Amplifa.
+
+          Poštovní schránka: %{mailbox}
+          Doména: %{domain}
+          Poskytovatel: %{provider}
+          Odesláno v: %{timestamp}
+
+          Pokud jste obdrželi tento e-mail, poštovní schránka je správně nakonfigurována a připravena k odeslání.
+      add_mailbox: Přidat poštovní schránku
+      back_to_list: Zpět k poštovním schránkám
+      statuses:
+        active: Aktivní
+        paused: Pozastaveno
+        suspended: Pozastaveno
+      warmup_status:
+        complete: Zahřívání dokončeno
+        in_progress: Zahřívání
+        not_started: Nezahájeno
+        days_remaining: Zbývá %{days} dní
+      filters:
+        organization: Organizace
+        email_domain: Doména
+        all_domains: Všechny domény
+        status: Postavení
+        warmup_status: Stav zahřívání
+        all_warmup: Vše
+        warmup_complete: Kompletní
+        warmup_in_progress: Probíhá
+      table:
+        display_name: Zobrazovaný název
+        provider: Poskytovatel
+        sender: Odesílatel
+        warmup: Zahřívání
+        daily_capacity: Denní kapacita
+        agents: Agents
+        view: Pohled
+        edit: Upravit
+      new:
+        title: Přidat poštovní schránku
+        subtitle: Přidejte nový účet pro odesílání e-mailů
+        email_domain_label: E-mailová doména
+        email_domain_placeholder: Vyberte doménu...
+        email_domain_help: E-mailová doména, do které tato schránka patří
+        organization_placeholder: Vyberte organizaci...
+        organization_help: Bude nastaveno automaticky podle poskytovatele
+        no_domains_for_org: Pro tuto organizaci nejsou k dispozici žádné aktivní e-mailové
+          domény. Nejprve vytvořte doménu.
+        email_placeholder: odesílatel@example.com
+        email_help: Musí odpovídat doméně poskytovatele
+        first_name_placeholder: Jan
+        last_name_placeholder: Kovář
+        display_name_placeholder: John Smith - Prodej
+        display_name_help: Jak příjemci uvidí jméno odesílatele (volitelné)
+        daily_send_limit_label: Denní limit odesílání
+        daily_send_limit_help: 'Maximální počet e-mailů za den (doporučeno: 50–200
+          pro zahřáté účty)'
+        warmup_started_at_label: Zahřívání zahájeno
+        warmup_started_at_help: Kdy začalo 21denní zahřívací období (pro nové poštovní
+          schránky ponechte prázdné)
+        start_warmup_label: Okamžitě spusťte zahřívání
+        start_warmup_help: Po vytvoření poštovní schránky začněte 21denní zahřívací
+          období
+        info_api_based: Tato poštovní schránka bude odesílat e-maily prostřednictvím
+          poskytovatele API (Gmail API nebo Microsoft Graph). Nejsou potřeba žádná
+          pověření SMTP.
+        info_message: Nové poštovní schránky musí před dosažením plné kapacity pro
+          odesílání absolvovat 21denní zahřívací období. Během zahřívání se hlasitost
+          odesílání postupně zvyšuje, aby se vybudovala reputace.
+        submit: Vytvořit poštovní schránku
+        submitting: Vytváření...
+      edit:
+        title: Upravit poštovní schránku
+        subtitle: Aktualizujte nastavení poštovní schránky
+        email_readonly: E-mailovou adresu nelze změnit
+        first_name_placeholder: Jan
+        last_name_placeholder: Kovář
+        display_name_placeholder: John Smith - Prodej
+        display_name_help: Jak příjemci uvidí jméno odesílatele (volitelné)
+        daily_send_limit_label: Denní limit odesílání
+        daily_send_limit_help: 'Maximální počet e-mailů za den (doporučeno: 50–200
+          pro zahřáté účty)'
+        warmup_started_at_label: Zahřívání zahájeno
+        warmup_started_at_help: Chcete-li změnit výpočet doby zahřívání, upravte datum
+          zahájení zahřívání
+        delete_button: Smazat poštovní schránku
+      show:
+        title: Podrobnosti o poštovní schránce
+        back_to_list: Zpět k poštovním schránkám
+        back_to_details: Zpět k poštovní schránce
+        email: E-mailová adresa
+        display_name: Zobrazovaný název
+        full_display_name: Celé zobrazované jméno
+        domain: Doména
+        provider: Poskytovatel
+        provider_type: Typ poskytovatele
+        organization: Organizace
+        status: Postavení
+        daily_send_limit: Denní limit odesílání
+        warmup_status: Stav zahřívání
+        warmup_progress: Průběh zahřívání
+        warmup_started: Zahřívání zahájeno
+        created_at: Vytvořeno
+        updated_at: Poslední aktualizace
+        capacity_title: Dnešní kapacita
+        sent_today: Odesláno dnes
+        remaining: Zbývající
+        can_send: Lze odeslat
+        agents_title: Přiděleno Agents
+        no_agents: K této poštovní schránce nejsou přiřazeni žádní agenti
+        recent_messages_title: Nedávné zprávy
+        no_recent_messages: Z této schránky zatím nebyly odeslány žádné zprávy
+        stats_title: Odesílání statistik
+        total_sent: Celkem odesláno
+        sent_this_week: Tento týden
+        sent_this_month: Tento měsíc
+        bounced: Odražený
+        replies_received: Přijaté odpovědi
+        test_send: Odeslat zkušební e-mail
+        test_send_help: Odesláním zkušebního e-mailu ověřte, že tato poštovní schránka
+          může odesílat
+        sender_persona: Osoba odesílatele
+        no_sender_assigned: K této poštovní schránce není přiřazena žádná osoba odesílatele
+      bulk_update:
+        title: Upravte denní limit odesílání
+        selected_count:
+          one: Je vybrána 1 poštovní schránka
+          other: 'Počet vybraných poštovních schránek: %{count}'
+          few: Vybráno %{count} poštovních schránek
+        adjust_limit: Upravit limit
+        description:
+          one: Nastavte nový denní limit odesílání pro vybranou schránku.
+          other: Nastavte nový denní limit odesílání pro všechny %{count} vybrané
+            poštovní schránky.
+          few: Nastavte nový denní limit pro odesílání pro všechny %{count} vybrané
+            poštovní schránky.
+        new_limit_label: Nový denní limit odesílání
+        limit_help: Zadejte hodnotu mezi 1 a 2000 e-maily za den
+        apply: Použít na vybrané
+        no_mailboxes_selected: Nejsou vybrány žádné poštovní schránky
+        invalid_limit: Denní limit odesílání musí být mezi 1 a 2000
+        success:
+          one: Denní limit odesílání byl aktualizován na %{limit} pro 1 poštovní schránku
+          other: Denní limit odesílání byl aktualizován na %{limit} pro %{count} poštovní
+            schránky
+          few: Denní limit odesílání byl aktualizován na %{limit} pro %{count} poštovní
+            schránky
+    replies:
+      title: Centrum odpovědí
+      subtitle: Zobrazení a správa příchozích e-mailových odpovědí
+      reply_now: Odpovězte nyní
+      marked_responded: Odpověď označena jako zodpovězená
+      marked_no_response_needed: Odpověď označena jako není potřeba odpověď
+      confirm_mark_responded: Označit tuto odpověď jako zodpovězenou?
+      confirm_no_response: Označit tuto odpověď jako nevyžadující odpověď?
+      sent_successfully: Odpověď byla úspěšně odeslána
+      send_failed: 'Nepodařilo se odeslat odpověď: %{error}'
+      forward_button: Vpřed…
+      forward_successfully: Konverzace byla úspěšně přeposlána
+      forward_invalid_email: Zadejte prosím platnou e-mailovou adresu
+      forward_failed: 'Konverzaci se nepodařilo přeposlat: %{error}'
+      forward_modal:
+        title: Předat konverzaci
+        description: Pošlete celé vlákno a podrobnosti o potenciálním zákazníkovi
+          na jakoukoli e-mailovou adresu
+        email_label: Předat dál
+        email_placeholder: name@company.com
+        add_comment: Přidat komentář
+        comment_placeholder: Přidejte kontext pro osobu, která obdrží tuto přeposlanou
+          konverzaci.
+        submit: Vpřed
+      conversation_closed: Konverzace uzavřena
+      conversation_reopened: Konverzace byla znovu otevřena
+      conversation_snoozed: Konverzace byla odložena do %{until}
+      lead_assigned: Odpověď přiřazena uživateli %{email}
+      reply_not_found: Odpověď nenalezena nebo již přiřazena
+      stats:
+        total: Celkem odpovědí
+        requires_attention: Vyžaduje pozornost
+        bounces: Odskoky
+        out_of_office: Mimo kancelář
+        responded: Odpověděli
+        unresponded: Bez odezvy
+      filters:
+        organization: Organizace
+        agent: Činidlo
+        all_agents: Vše Agents
+        mailbox: Poštovní schránka
+        all_mailboxes: Všechny poštovní schránky
+        reply_type: Typ odpovědi
+        all_types: Všechny typy
+        requires_attention: Vyžaduje pozornost
+        bounces: Odskoky
+        out_of_office: Mimo kancelář
+        responded: Odpověděli
+      table:
+        lead: Vést
+        from: Z
+        subject: Podrobit
+        mailbox: Přijato uživatelem
+        agent: Činidlo
+        type: Typ
+        received: Přijato
+        view: Pohled
+      types:
+        normal: Odpověď
+        bounce: Odskočit
+        hard_bounce: Hard Bounce
+        soft_bounce: Soft Bounce
+        out_of_office: Mimo kancelář
+      statuses:
+        needs_response: Potřebuje odezvu
+        responded: Odpověděli
+        no_response_needed: Není potřeba žádná odezva
+      show:
+        title: Podrobnosti odpovědi
+        back_to_list: Zpět na Odpovědi
+        from: Z
+        to: Komu (e-mailová schránka)
+        subject: Podrobit
+        received_at: Přijato
+        reply_type: Typ
+        status: Postavení
+        message_id: ID zprávy
+        api_message_id: API ID zprávy
+        responded_at: Odpověděl v
+        created_at: Vytvořeno
+        original_message_title: Původní zpráva odeslána
+        no_original_message: Žádná původní zpráva není připojena
+        original_subject: Podrobit
+        original_sent_at: Odesláno
+        original_agent: Činidlo
+        original_step: Krok sekvence
+        lead_title: Informace o zájemcích
+        lead_name: Jméno
+        lead_email: E-mail
+        lead_company: Společnost
+        lead_title_field: Titul
+        lead_location: Umístění
+        body_title: Obsah odpovědi
+        body_plain: Prostý text
+        body_html: HTML
+        related_replies_title: Další odpovědi od Lead
+        no_related_replies: Žádné další odpovědi od tohoto zájemce
+        actions_title: Akce
+        mark_responded: Označit jako odpovězené
+        mark_no_response: Není potřeba žádná odezva
+        view_lead: Zobrazit potenciálního zákazníka
+        view_mailbox: Zobrazit poštovní schránku
+    global_inbox:
+      title: Globální centrum odpovědí
+      subtitle: Všechny konverzace napříč všemi organizacemi
+      all_organizations: Všechny organizace
+      filter_organization: Organizace
+      check_mail: Kontrola pošty ve všech organizacích...
+      auto_reply:
+        button: Automatická odpověď
+        sending: Generování a odesílání automatické odpovědi...
+        sent: Automatická odpověď byla úspěšně odeslána
+        sent_successfully: Automatická odpověď byla úspěšně odeslána
+        failed: Odeslání automatické odpovědi se nezdařilo
+        invalid_status: Automatická odpověď je k dispozici pouze pro konverzace typu
+          „nezajímají mě“ nebo „špatná osoba“.
+    meetings:
+      title: Setkání
+      subtitle: Sledujte a spravujte naplánované schůzky s potenciálními zákazníky
+      empty: Nebyly nalezeny žádné schůzky
+      no_results: Vašim filtrům neodpovídají žádné schůzky
+      stats:
+        total: Celkový
+        scheduling: Plánování
+        scheduled: Naplánováno
+        completed: Dokončeno
+        positive: Pozitivní
+        neutral: Neutrální
+        no_show: No-show
+        cancelled: Zrušeno
+        rescheduled: Přeplánováno
+      filters:
+        title: Filtry
+        status: Postavení
+        meeting_type: Typ schůzky
+        all_types: Všechny typy
+        outcome: Výsledek
+        all_outcomes: Všechny výsledky
+        organization: Organizace
+      table:
+        lead: Vést
+        agent: Činidlo
+        type: Typ
+        scheduled: Naplánováno
+        duration: Trvání
+        outcome: Výsledek
+        view: Pohled
+      types:
+        discovery: Objev
+        demo: Demo
+        follow_up: Sledování
+        closing: Zavírání
+        other: Ostatní
+      statuses:
+        scheduled: Naplánováno
+        scheduling: Plánování
+        completed: Dokončeno
+        positive: Pozitivní
+        neutral: Neutrální
+        no_show: No-show
+        cancelled: Zrušeno
+        rescheduled: Přeplánováno
+        pending_removal: Čeká na odstranění
+      outcomes:
+        positive: Pozitivní
+        neutral: Neutrální
+        negative: Negativní
+        no_show: No-show
+      show:
+        title: Podrobnosti o schůzce
+        back_to_list: Zpět na Schůzky
+        type: Typ schůzky
+        scheduled_at: Naplánováno na
+        duration: Trvání
+        duration_minutes:
+          one: "%{count} minuta"
+          other: "%{count} minut"
+          few: "%{count} minut"
+        location: Umístění
+        status: Postavení
+        outcome: Výsledek
+        notes: Poznámky
+        outcome_notes: Poznámky k výsledku
+        source: Zdroj
+        source_manual: Manuál
+        source_calendly: Calendly
+        attributed_via: Přiřazeno Via
+        created_at: Vytvořeno
+        completed_at: Dokončeno
+        cancelled_at: Zrušeno
+        no_location: Není zadáno žádné umístění
+        no_notes: Žádné poznámky
+        lead_title: Informace o zájemcích
+        lead_name: Jméno
+        lead_email: E-mail
+        lead_company: Společnost
+        lead_job_title: Název práce
+        view_lead: Zobrazit potenciálního zákazníka
+        agent_title: Informace o agentovi
+        agent_name: Jméno
+        agent_status: Postavení
+        agent_organization: Organizace
+        view_agent: Zobrazit agenta
+        actions_title: Akce
+        mark_completed: Označit dokončeno
+        mark_no_show: Označit No-Show
+        cancel_meeting: Zrušit schůzku
+        reschedule: Přeplánovat
+        select_outcome: Vyberte výsledek...
+        outcome_notes_placeholder: Přidejte poznámky o výsledku schůzky...
+        new_time: Nový Čas
+        confirm_no_show: Označit tuto schůzku jako nezobrazenou?
+        confirm_cancel: Zrušit tuto schůzku?
+  replies:
+    ai_reply_agent: Agent odpovědí AI
+  meetings:
+    title: Zasedání
+    subtitle: Sledujte a spravujte své potenciální schůzky a výsledky
+    empty: Nebyly nalezeny žádné schůzky
+    search_placeholder: Vyhledejte schůzku podle jména nebo společnosti
+    request_removal: Odebrat schůzku
+    pending_removal_requested: Požadováno odstranění
+    confirm_request_removal: Tím se schůzka označí k odebrání správce. Pokračovat?
+    request_removal_failed: Nepodařilo se požádat o odstranění schůzky.
+    tabs:
+      all: Vše
+      positive: Pozitivní
+      neutral: Neutrální
+      negative: Negativní
+    table:
+      name: Jméno
+      title: Titul
+      company: Společnost
+      meeting_date: Datum schůzky
+      time: Čas
+      meeting_outcome: Výsledek setkání
+    outcomes:
+      positive: Pozitivní
+      neutral: Neutrální
+      negative: Negativní
+    pagination:
+      showing: Zobrazuje se %{start} až %{end} z %{total} schůzek
+      previous: Předchozí
+      next: Další
+  roi:
+    title: ROI
+    subtitle: Sledování dopadu vašeho automatického kanálu na tržby.
+    filter_all: Vše Agents
+    refresh: Obnovit
+    create_report: Vytvořit zprávu
+    tabs:
+      overview: Přehled ROI
+      funnels: Marketingové cesty
+    metrics:
+      amplifa_roi: Amplifa ROI
+      vs_last_quarter: vs. minulé čtvrtletí
+      positive_outcomes: Pozitivní výsledky
+      acv: Průměrná hodnota kontraktu (ACV)
+      meeting_value: Průměrná hodnota setkání
+      edit_acv: Upravit ACV
+      edit_meeting_value: Upravit hodnotu schůzky
+      pipeline_revenue: Řízené výnosy z potrubí
+      total_investment: Celková investice Amplifa
+      across_months: Během %{count} měsíců partnerství
+      emails_sent: E-maily odeslány
+      open_rate: Open Rate
+      reply_rate: Míra odpovědi
+      meeting_rate: Míra setkání
+    funnel:
+      title: 'Od kampaně ke smlouvě: Vaše cesta k hodnotě'
+      emails_sent: E-maily odeslány
+      opened: Otevřeno
+      replied: Odpovězeno
+      meetings: Setkání
+      revenue: Příjmy
+    funnels_tab:
+      coming_soon: Marketingové cesty již brzy.
+  playbooks:
+    title: Playbooks
+    subtitle: Zkontrolujte a schvalujte příručky pro vaši organizaci
+    empty: Zatím nejsou k dispozici žádné playbooky. Váš tým Amplifa pro vás vytvoří
+      příručky.
+    create:
+      button: Vytvořit Playbook
+      started: Generování příruček začalo. Váš nový koncept se brzy objeví.
+    back_to_list: Zpět na Playbooks
+    filters:
+      status: Postavení
+      all_statuses: Všechny stavy
+      product: Produkt
+      all_products: Všechny produkty
+      apply: Použít filtry
+      clear: Jasný
+    table:
+      product: Produkt
+      status: Postavení
+      language: Jazyk
+      content: Obsah
+      updated: Poslední aktualizace
+      actions: Akce
+      personae: personae
+      use_cases: případy použití
+      view: Pohled
+      review: Recenze
+    statuses:
+      draft: Návrh
+      changes_requested: Požadované změny
+      approved: Schválený
+      archived: Archivováno
+    show:
+      approve: Schválit Playbook
+      request_changes: Vyžádejte si změny
+      archive: Archiv
+      approved_by: Schváleno uživatelem
+      on_date: na
+      pending_approval: Tato příručka čeká na Vaše schválení
+      changes_pending: Pro tuto příručku byly požadovány změny
+      already_approved: Tato příručka byla schválena
+    actions:
+      approve_title: Schválit Playbook
+      approve_description: Schválením potvrzujete, že tato příručka přesně reprezentuje
+        Vaše produkty a cílové publikum.
+      approve_comment_label: Komentář (volitelné)
+      approve_comment_placeholder: Přidejte zpětnou vazbu nebo poznámky...
+      approve_button: Schvalovat
+      approving: Schvalování...
+      request_changes_title: Vyžádejte si změny
+      request_changes_description: Popište, jaké změny byste v této příručce rádi
+        viděli.
+      request_changes_comment_label: Jaké změny jsou potřeba?
+      request_changes_comment_placeholder: Popište prosím změny, které potřebujete...
+      request_changes_button: Vyžádejte si změny
+      requesting: Odesílání...
+      comment_required: Uveďte prosím komentář popisující potřebné změny
+      archive_title: Archivovat Playbook
+      archive_description: Archivované příručky se již nebudou používat pro kampaně.
+      archive_confirm: Opravdu chcete tuto příručku archivovat?
+      archive_button: Archiv
+      archiving: Archivace...
+    sections:
+      value_proposition: Návrh hodnoty
+      personae: Cílové osoby
+      use_cases: Případy použití
+      references: Referenční zákazníci
+      proof_points: Důkazové body
+      comments: Diskuse
+    knowledge_ui:
+      hero_badge: Vrstva playbooku poháněná AI
+      value_proposition_eyebrow: Hlavní signál
+      personae_eyebrow: Mapa publika
+      use_cases_eyebrow: Úhly sdělení
+      references_eyebrow: Důkaz od zákazníka
+      proof_points_eyebrow: Vrstva důvěryhodnosti
+      comments_eyebrow: Historie revizí
+      see_more: Zobrazit více...
+      see_less: Zobrazit méně
+    files:
+      download: Stáhnout
+      upload_failed: Nahrání se nezdařilo
+    aria:
+      close_feedback_modal: Zavřít modální okno zpětné vazby
+      close_approve_modal: Zavřít modální okno schválení
+      close_request_changes_modal: Zavřít modální okno žádosti o změny
+      close_archive_modal: Zavřít modální okno archivace
+    import_leads_ui:
+      lead_list_title: Máte seznamy leadů bez e-mailů? Nahrajte je sem
+      lead_list_description: Nahrajte soubor a my ho zpřístupníme administrátorskému
+        týmu.
+      uploading: Nahrávání...
+      upload_file: Nahrát soubor
+      uploaded_at: 'Nahráno: %{date}'
+      imported_at: 'Importováno: %{date}'
+      completed_at: 'Dokončeno: %{date}'
+      created_count: "%{count} vytvořeno"
+      updated_count: "%{count} aktualizováno"
+      blacklisted_count: "%{count} na blacklistu"
+      error_count: "%{count} chyb"
+      step_upload_csv: 1. Nahrát CSV
+      step_map_fields: 2. Mapovat pole
+      click_to_upload_csv: Klikněte pro nahrání CSV
+      max_file_size: Max 50 MB
+      selected_rows: "%{count} řádků"
+      next_map_fields: 'Další: Mapovat pole'
+      skip_column: Přeskočit tento sloupec
+      field_email: E-mail *
+      field_first_name: Jméno
+      field_last_name: Příjmení
+      field_full_name: Celé jméno
+      field_job_title: Pracovní pozice
+      field_company: Společnost
+      field_company_website: Web společnosti
+      field_linkedin_url: URL LinkedIn
+      field_location: Lokalita
+      example_value: např. %{value}
+      custom_field: 'Vlastní: %{field}'
+      import_analysis: Analýza importu
+      analyzing: Analyzuje se...
+      analysis_summary: "%{new_people} nových osob · %{new_leads} nových leadů · %{lead_updates}
+        aktualizací leadů · %{invalid} neplatných"
+      back: Zpět
+      starting_import: Spouštění importu...
+    persona:
+      pain_points: Body bolesti
+    comments:
+      title: Diskuse
+      empty: Zatím žádné komentáře
+      add_comment: Přidat komentář
+      comment_placeholder: Přidejte komentář nebo dotaz...
+      submit: Přidat komentář
+      posting: Odesílání...
+    comment_types:
+      general: Generál
+      request_changes: Žádost o změnu
+      approval: Schválení
+    domains:
+      blank: Zadejte název domény.
+      invalid_format: Zadejte platnou doménu (např. example.com).
+      limit_reached: Můžete mít maximálně %{max} domén.
+      already_exists: Tato doména je již nakonfigurována.
+      created: Byla požadována doména %{domain}. Nastavení dokončí správce.
+    tabs:
+      training_data: Údaje o školení
+      sample_leads_messages: Ukázka Leads a zprávy
+      knowledge_base: Znalostní báze
+      import_leads: Importujte potenciální zákazníky
+    knowledge_base:
+      hero_badge: Znalostní vrstva s podporou AI
+      title_prefix: Znalostní
+      title_accent: báze
+      hero_description: Přidejte dokumenty a platforma je extrahuje, shrne a strukturuje
+        do kolektivní znalostní vrstvy pro tento playbook.
+      add_knowledge: Přidat znalost
+      untitled: Nepojmenovaná znalost
+      ai_summary: Shrnutí AI
+      all_playbooks: Všechny playbooky
+      download: Stáhnout
+      search_placeholder: Hledat název, shrnutí nebo nahrávajícího...
+      no_matches_title: Nebyly nalezeny žádné odpovídající znalosti
+      no_matches_description: Zkuste jiný hledaný výraz nebo změňte aktivní filtr.
+      summary_pending: Shrnutí AI se připravuje. Tato karta se automaticky aktualizuje
+        po dokončení extrakce.
+      summary_failed: Generování shrnutí selhalo. Zkuste tento zdroj nahrát znovu.
+      empty_title: Zatím nebyly přidány žádné znalosti
+      empty_description: Nahrajte dokument a převeďte zákaznické reference, produktové
+        poznámky, briefy a výzkum na vyhledatelná shrnutí AI pro tento playbook.
+      upload_first_source: Nahrát první zdroj
+      stats:
+        total_entries: Celkem položek
+        websites: Weby
+        pdfs: PDF
+        docs: Dokumenty
+      filters:
+        all: Vše
+        pdfs: PDF
+        websites: Weby
+        docs: Dokumenty
+      types:
+        pdf: PDF
+        website: Web
+        document: Dokument
+      statuses:
+        extracting: Extrahuje se
+        summarizing: Shrnuje se
+        completed: Dokončeno
+        failed: Selhalo
+        unknown: "%{status}"
+      sort:
+        most_recent: Nejnovější
+        oldest_first: Nejstarší první
+        name_az: Název A-Z
+      errors:
+        invalid_response: Neplatná odpověď serveru
+        request_failed: Požadavek selhal (%{status})
+        upload_failed: Nahrání selhalo
+      relative_time:
+        minutes_ago: Před %{count} min
+        hours_ago: Před %{count} h
+        yesterday: Včera
+        days_ago: Před %{count} d
+      modal:
+        title: Přidat znalost
+        description: Nahrajte soubor nebo přidejte webovou URL pro tento playbook.
+        close: Zavřít okno přidání znalosti
+        file: Soubor
+        url: URL
+        dropzone_title: Klikněte pro výběr nebo sem přetáhněte soubor
+        dropzone_hint: PDF, DOCX, text, CSV, obrázek nebo webový dokument
+        source_url: Zdrojová URL
+        url_placeholder: https://example.com/resource
+        url_hint: Stránku nebo propojený soubor extrahujeme a shrneme.
+        cancel: Zrušit
+      slideover:
+        close: Zavřít detaily znalosti
+        extraction_running: Extrakce stále probíhá. Extrahovaný obsah se zde zobrazí
+          po dokončení zpracování.
+        no_extracted_content: Pro tento zdroj zatím není k dispozici žádný extrahovaný
+          obsah.
+        tags: Štítky
+        source: Zdroj
+        extracted_content: Extrahovaný obsah
+        download_source: Stáhnout zdroj
+    samples:
+      leads_column: Leads
+      lead_details_column: Podrobnosti o potenciálním zákazníkovi
+      messages_column: Zprávy
+      empty_no_agents: Žádní agenti zatím vzorky nevygenerovali
+      empty_no_samples: Nejsou k dispozici žádné vzorové zprávy
+      empty_select_lead: Chcete-li zobrazit zprávy, vyberte potenciálního zákazníka
+      linkedin_headline: LinkedIn Titulek
+      linkedin_summary: LinkedIn Shrnutí
+      company_info: Informace o společnosti
+      disc_profile: Profil DISKU
+      custom_fields: Vlastní pole
+      subject: Podrobit
+      agent_name: Činidlo
+      step: Krok %{number}
+    approval_strip:
+      share_feedback: Sdílejte zpětnou vazbu
+      message: Chcete-li pokračovat, schvalte příručku nebo poskytněte zpětnou vazbu.
+  customer:
+    agents:
+      title: Agenti
+      subtitle: Prohlédněte si potenciální zákazníky a přidělené agenty vaší organizace
+      empty:
+        title: Zatím žádní agenti
+        description: Nebyli nalezeni žádní odpovídající potenciální zákazníci
+      companies:
+        title: Agenti - zobrazení společností
+        view_companies: Zobrazení společností
+        back_to_leads: Zobrazení leadů
+        empty:
+          description: Nebyly nalezeny žádné odpovídající společnosti
+        filters:
+          search_placeholder: Hledat společnosti, leady nebo domény
+        table:
+          company: Společnost
+          last_activity: Poslední aktivita
+          leads: Leady
+          leads_suffix: leady
+          summary_available: Dostupné
+          no_summary: Žádné shrnutí
+        modal:
+          load_error: Podrobnosti o společnosti nelze načíst
+          company: Společnost
+          company_summary: Shrnutí společnosti
+          no_company_summary: Není k dispozici žádné shrnutí společnosti
+          leads_tab: Leady
+          buying_signals_tab: Nákupní signály
+          detail_tabs_label: Karty detailů společnosti
+          no_leads: V této společnosti nejsou žádné viditelné leady
+          no_buying_signals: Pro tohoto agenta nejsou dostupné žádné nákupní signály
+          view_linkedin: Zobrazit LinkedIn
+      statuses:
+        draft: Návrh
+        ready: Připraveno
+        active: Aktivní
+        paused: Pozastaveno
+        completed: Dokončeno
+      filters:
+        title: Filtry
+        agent: Činidlo
+        lead_status: Stav potenciálního zákazníka
+        all_agents: Vše Agents
+        search_placeholder: Hledejte potenciální zákazníky podle jména, e-mailu nebo
+          společnosti
+      campaign_controls:
+        approve_playbook_button: Schválit příručku...
+        pause_button: Pozastavit agenta
+        resume_button: Obnovit agenta
+        pause_success: Agent se odmlčel.
+        resume_success: Agent pokračoval.
+        cannot_pause: Tohoto agenta nyní nelze pozastavit.
+        cannot_resume: Tohoto agenta nyní nelze obnovit.
+      sent_today_badge: Dnes bylo odesláno %{count} e-mailů
+      delivery_statuses:
+        not_contacted: Nekontaktován
+        in_sequence: V pořadí
+        paused: Pozastaveno
+        replied: Odpovězeno
+        bounced: Odražený
+        completed: Dokončeno
+      interest_tags:
+        interested: Zájem
+        meeting_request: Žádost o schůzku
+        not_interested: Nemám zájem
+        wrong_person: Špatná osoba
+      buying_signals:
+        upgrade: Upgradujte svůj plán a získejte nákupní signály
+        notify_success: Váš account manager se brzy ozve.
+        notify_failed: Nepodařilo se upozornit tým Amplifa
+        highlights: Hlavní body
+        buying_signal_relevance: Relevance nákupních signálů
+        relevance_rating: Relevance
+        rating_value: "%{rating}/10"
+      table:
+        date_added: Datum přidání
+        last_sent: Naposledy odesláno
+        lead: Vést
+        agent: Činidlo
+        relevance: Relevance
+        relevance_tooltip_label: Vysvětlit hodnocení relevance
+        relevance_tooltip: Naše AI hodnocení toho, jak relevantní jsou nákupní signály
+          pro tohoto potenciálního zákazníka.
+        progress: Pokrok
+        messages_sent: odeslané zprávy
+      activity:
+        replied: Odpovězeno %{date}
+        last_sent: Naposledy odesláno %{date}
+        added: Přidáno %{date}
+      pagination:
+        previous: Předchozí
+        next: Další
+        showing: Zobrazuje se %{start} až %{end} z %{total} potenciálních zákazníků
+        page_of: Stránka %{current} z %{total}
+      modal:
+        load_error: Podrobnosti o potenciálním zákazníkovi nelze načíst
+        active: Aktivní
+        blacklisted: Na černé listině
+        assigned_agents: Přiděleno Agents
+        messages:
+          title: Časová osa zprávy
+          empty: Zatím žádné vygenerované zpráVy ani odpovědi na konverzaci
+          empty_body: Žádné tělo zprávy
+          no_subject: "(žádný předmět)"
+          generated_for: Vygenerováno pro %{agent}
+          generated_label: Vygenerováno (%{status})
+          conversation: Konverzace
+          bounce: Odskočit
+          ooo: Mimo kancelář
+      show:
+        title: Podrobnosti o agentovi
+        download_button: Stáhnout
+        download_modal:
+          title: Stáhnout Potenciální CSV
+          description: Vyberte zástupce, chcete-li stáhnout všechny kontaktní údaje
+            a údaje o identitě potenciálního zákazníka jako CSV.
+          agent_label: Agent
+          choose_agent: Vyberte agenta...
+          confirm_button: Stáhnout CSV
+        back_to_list: Zpět na Agents
+        description_title: Popis
+        no_description: Nebyl poskytnut žádný popis
+        playbook: Playbook
+        no_playbook: Není přiřazena žádná příručka
+        default_timezone: Výchozí časové pásmo
+        created_at: Vytvořeno
+        can_launch: Připraveno ke spuštění
+        cannot_launch: Není připraven
+        stats:
+          title: Statistiky agentů
+          total_leads: Celkem Leads
+          contacted: Kontaktováno
+          replied: Odpovězeno
+          meetings: Setkání
+          reply_rate: Míra odpovědi
+          meeting_rate: Míra setkání
+        leads:
+          title: Přiděleno Leads
+          empty: K tomuto agentovi zatím nejsou přiřazeni žádní potenciální zákazníci
+          email: E-mail
+          name: Jméno
+          company: Společnost
+          status: Postavení
+          created: Vytvořeno
+          active: Aktivní
+          blacklisted: Na černé listině
+        mailboxes:
+          title: Poštovní schránky
+          empty: Nejsou přiřazeny žádné poštovní schránky
+          warmup_complete: Připraveno
+          days_remaining: Zbývá %{days} dní
+          statuses:
+            pending: Čeká na vyřízení
+            warming: Zahřívání
+            active: Aktivní
+            paused: Pozastaveno
+            suspended: Pozastaveno
+        samples:
+          title: Vzorové zprávy
+          status:
+            approved: Schválený
+            pending_review: Připraveno ke kontrole
+          generated_at: Vygenerováno %{date}
+          approved_by: Schváleno %{name} dne %{date}
+          view_approved_samples: Zobrazit schválené vzorky
+          review_samples: Zkontrolovat vzorky
+          need_email_steps: Nebyly nalezeny žádné aktivní kroky e-mailu. Přidejte
+            kroky pro generování vzorků.
+          need_leads: Nebyli nalezeni žádní potenciální zákazníci. Přidáním potenciálních
+            zákazníků vytvoříte vzorky.
+      review_samples:
+        title: Zkontrolujte vzorové zprávy
+        intro: Přečtěte si prosím níže uvedené ukázkové zpráVy generované umělou inteligencí.
+          Toto jsou příklady toho, co bude odesláno vašim potenciálním zákazníkům.
+        not_ready: Vzorové zpráVy ještě nebyly vygenerovány.
+        no_messages: Žádné ukázkové zpráVy nejsou k dispozici ke kontrole.
+        lead_info: Informace o zájemcích
+        message_preview: Náhled zprávy
+        subject_label: Podrobit
+        body_label: Tělo
+        send_test: Pošlete mi test
+        test_sent: Test odeslán
+        expand_all: Rozbalit vše
+        collapse_all: Sbalit vše
+        back_to_agent: Zpět k agentovi
+      approve_samples:
+        button: Schvalujte zprávy
+        confirm: Opravdu chcete schválit tyto vzorové zprávy? To umožní Amplifa generovat
+          zpráVy pro všechny potenciální zákazníky.
+        success: ZpráVy schváleny! Amplifa nyní bude generovat zpráVy pro všechny
+          potenciální zákazníky.
+        not_ready: Nelze schválit. Počkejte prosím na vygenerování vzorků.
+      request_changes:
+        button: Vyžádejte si změny
+        feedback_label: Jaké změny byste si přáli?
+        feedback_placeholder: Popište prosím změny, které potřebujete...
+        feedback_required: Poskytněte nám zpětnou vazbu ohledně změn, které potřebujete.
+        success: Požadavek na změnu byl odeslán týmu Amplifa. Budou aktualizovat zpráVy
+          a upozorní vás.
+        submit_button: Odeslat žádost
+    generated_messages:
+      send_test:
+        success: Zkušební e-mail byl odeslán na vaši e-mailovou adresu.
+        failed: Odeslání zkušebního e-mailu se nezdařilo.
+  mailers:
+    admin_notification:
+      samples_approved:
+        subject: "[Amplifa] Vzorky schváleny – %{agent_name}"
+      samples_changes_requested:
+        subject: "[Amplifa] Požadované změny – %{agent_name}"
+      sample_messages_generated:
+        subject: "[Amplifa] Ukázkové vygenerované zprávy – %{agent_name}"
+      billing_interest:
+        subject: "[Amplifa] Fakturační úrok – %{organization_name} (%{action_name})"
+      integration_connected:
+        subject: "[Amplifa] Integrace připojena – %{organization_name} (%{integration_name})"
+      lead_list_file_uploaded:
+        subject: "[Amplifa] Nahrán soubor seznamu potenciálních zákazníků – %{organization_name}
+          (%{uploader_name})"
+  common:
+    save: Uložit
+    cancel: Zrušit
+    edit: Upravit
+    delete: Vymazat
+    confirm: Potvrdit
+    loading: Načítání...
+    error: Došlo k chybě
+    success: Úspěch
+    true: Ano
+    false: Žádný
+    back: Zadní
+    next: Další
+    submit: Předložit
+    search: Vyhledávání
+    filter: Filtr
+    clear: Jasný
+    close: Blízko
+    welcome: Vítejte
+    status: Postavení
+    organization: Organizace
+    created: Vytvořeno
+    name: Jméno
+    company: Společnost
+    email: E-mail
+    view: Pohled
+    apply_filters: Použít filtry
+    all_statuses: Všechny stavy
+  roles:
+    amplifa_admin: Správce Amplifa
+    customer_admin: Správce zákazníka
+    customer_user: Uživatel zákazníka
+  currencies:
+    eur: EUR - Euro
+    usd: USD – americký dolar
+    gbp: GBP - Britská libra
+    chf: CHF - švýcarský frank
+  languages:
+    en: Angličtina
+    de: Němčina
+    es: Španělština (EU)
+    pt-BR: Portugalština (Brazílie)
+    fr: Francouzština
+    pl: Polština
+    cs: Čeština
+    it: Italština
+  time:
+    just_now: Právě teď
+    formats:
+      long: "%B %d, %Y %I:%M %p"
+      short: "%d.%m.%Y %H:%M"
+      date_only: "%d.%m.%Y"
+  date:
+    formats:
+      long: "%B %d, %Y"
+      short: "%d.%m.%Y"
+  customer_home:
+    title: Domů
+    welcome_back: Vítejte zpět, %{name}!
+    subtitle: Zkontrolujte základní nastavení svého outreach pracovního prostoru,
+      včetně domén, profilů odesílatelů, e-mailových účtů a pokrytí seznamem blokací.
+    common:
+      not_set: Nenastaveno
+    company:
+      title: Společnost
+      description: Informace o profilu vaší společnosti
+      website: Web
+      industry: Odvětví
+    senders:
+      title: Odesílatelé
+      description: Lidé, kteří odesílají outreach e-maily jménem vaší organizace
+      empty: Nejsou nakonfigurováni žádní odesílatelé. Kontaktujte administrátora
+        Amplifa.
+    email_accounts:
+      title: E-mailové účty
+      description: Automaticky vytvořeno z domén a odesílatelů
+      empty: E-mailové účty se zde zobrazí po konfiguraci domén a odesílatelů.
+      ready: Připraveno
+    blacklist:
+      title: Seznam blokací
+      search_placeholder: Hledat v seznamu blokací...
+      remove_entry: Odebrat záznam
+  customer_settings:
+    title: Nastavení
+    subtitle: Spravujte svůj účet, integrace a předvolby
+    common:
+      actions: Akce
+      save_settings: Uložit nastavení
+      saving: Ukládání...
+    tabs:
+      billing: Fakturace
+      company: Společnost
+      team: Tým
+      profile: Profil
+      webhooks: Webhooky
+      blacklists: Seznam blokací
+      email: Odesílatelé a domény
+    email:
+      sections:
+        auto_forward: Automatické přeposílání
+        senders: Odesílatelé
+        domains: Domény
+        email_accounts: E-mailové účty
+      auto_forward:
+        title: Automaticky přeposílat zainteresované konverzace
+        description: Přeposílejte nové zainteresované konverzace nebo žádosti o schůzku
+          na jednu e-mailovou adresu. Každá konverzace bude přeposlána pouze jednou.
+        enable: Povolit automatické přeposílání
+        forward_to: Přeposlat na
+        comment_options: Možnosti komentáře
+        without_comment: Přeposlat bez komentáře
+        standard_comment: Přidat standardní komentář ke všem přeposlaným konverzacím
+        per_agent_comment: Přidat standardní komentář ke všem přeposlaným konverzacím
+          podle agenta
+        save: Uložit nastavení automatického přeposílání
+        table:
+          agent: Agent
+          forward_comment: Komentář k přeposlání
+      senders:
+        description: Nakonfigurované profily odesílatelů
+        empty: Zatím nejsou nakonfigurovány žádné profily odesílatelů.
+      domains:
+        description: Spravujte své odesílací domény
+        add: Přidat doménu
+        verified: Ověřeno
+        pending: Čeká na vyřízení
+        email_accounts_count: "%{count} e-mailových účtů"
+      accounts:
+        configured: "%{count} účtů nakonfigurováno"
+        sent_today: Odesláno dnes
+      statuses:
+        active: Aktivní
+        paused: Pozastaveno
+    blacklists:
+      sections:
+        email: Seznam blokovaných e-mailů
+        domain: Seznam blokovaných domén
+        import_export: Import/Export
+        import: Import
+        export: Export
+      email_title: Seznam blokovaných e-mailů
+      domain_title: Seznam blokovaných domén
+      search_emails: Hledat e-maily...
+      search_domains: Hledat domény...
+      remove_entry: Odebrat záznam
+      export:
+        title: Export
+        description: Stáhněte si seznam blokování této organizace
+        csv_title: Exportovat seznam blokování (CSV)
+        csv_description: Stáhněte všechny e-maily a domény blokované pro tuto organizaci jako CSV se sloupci hodnota, typ a důvod.
+        download: Stáhnout CSV
+      table:
+        email: E-mail
+        domain: Doména
+        added: Přidáno
+        reason: Důvod
+    webhooks:
+      remove_confirm: Odebrat tento webhook endpoint?
+      only_authorized: Toto nastavení mohou měnit pouze oprávnění uživatelé.
+      sections:
+        tracking: Sledování kliknutí
+        endpoints: Webhook endpointy
+        events: Historie kliknutí
+      click_tracking:
+        title: Sledování kliknutí
+        description: Přepisuje HTML odkazy v e-mailech na sledované přesměrovací URL
+          a vytváří události kliknutí.
+        example: 'Příklad - odkazy v HTML e-mailech budou přepsány:'
+        enable: Povolit sledování kliknutí + webhooky
+      endpoints:
+        title: Webhook endpointy
+      events:
+        title: Zaznamenané události kliknutí
+        description: Nejnovější sledovaná kliknutí pro tuto organizaci.
+        empty: Zatím nejsou zaznamenány žádné události kliknutí.
+        table:
+          clicked_at: Kliknuto v
+          lead: Lead
+          target_url: Cílová URL
+          referrer: Referrer
+    team:
+      title: Členové týmu
+      members_of: Členové %{organization}
+      sections:
+        members: Členové týmu
+        invitations: Pozvánky
+      roles:
+        customer_admin: Administrátor zákazníka
+        customer_user: Uživatel zákazníka
+      table:
+        name: Jméno
+        email: E-mail
+        role: Role
+        joined: Připojen
+    billing:
+      ai_intelligence: AI inteligence
+      day: Den %{day}
+      usage_alert: V tomto fakturačním cyklu jste využili %{used} z %{limit} schůzek
+      reset_on: AI agenti se resetují %{date}
+      reset_next_cycle: AI agenti se resetují v dalším fakturačním cyklu
+      need_more: Potřebujete nyní více schůzek?
+      get_more: Získat dalších 10 schůzek
+      upgrade_plan: Upgradovat plán
+      current_plan: Aktuální plán
+      active: Aktivní
+      current_plan_description: Spravujte předplatné a fakturační údaje
+      plan: Plán
+      per_month: "/měs."
+      upgrade_annual: Upgradovat na roční - ušetřete 20%
+      meetings_usage: Využití schůzek
+      meetings_usage_count: "%{used} / %{limit} schůzek v tomto fakturačním cyklu"
+      renews_on: Obnovuje se %{date}
+      renewal_unavailable: Datum obnovení není k dispozici
+      update_plan: Aktualizovat plán
+      update_plan_description: Vyberte správný plán pro svůj tým
+      plan_meetings: Až %{count} schůzek za fakturační cyklus
+      upgrade: Upgradovat
+  workspaces:
+    switcher:
+      label: Pracovní prostor
+    no_workspace:
+      page_title: Žádný pracovní prostor - Amplifa
+      heading: Žádný aktivní pracovní prostor
+      description: Váš účet momentálně není připojen k žádnému aktivnímu pracovnímu
+        prostoru. Obraťte se na svého administrátora nebo podporu Amplifa, abyste
+        znovu získali přístup.
+      logout: Odhlásit se
+  invitations:
+    flash:
+      invalid: Tento odkaz na pozvánku je neplatný nebo byl odstraněn.
+      expired: Platnost této pozvánky vypršela. Požádejte svého administrátora o novou
+        pozvánku.
+      already_used: Tato pozvánka již byla použita. Přihlaste se.
+      cancelled: Tato pozvánka byla zrušena. Obraťte se na svého administrátora.
+      no_longer_valid: Pozvánka již není platná
+      login_with_invited_email: Chcete-li tuto pozvánku přijmout, přihlaste se pomocí
+        pozvané e-mailové adresy.
+      password_required: Heslo je povinné
+      passwords_mismatch: Hesla se neshodují
+      password_too_short: Heslo musí mít alespoň 8 znaků
+      welcome: Vítejte v Amplifa, %{name}!
+      welcome_setup: Vítejte v Amplifa! Pojďme nastavit váš účet.
+      create_failed: 'Nepodařilo se vytvořit účet: %{message}'
+      accept_failed: 'Nepodařilo se přijmout pozvánku: %{message}'
+      unexpected_error: Došlo k neočekávané chybě. Zkuste to znovu nebo se obraťte
+        na podporu.
+
+  assistant:
+    nav: Asistent
+    page_title: Asistent
+    new_chat: Nový chat
+    chats: Chaty
+    show_chats: Zobrazit chaty
+    hide_chats: Skrýt chaty
+    untitled_chat: Nový chat
+    no_chats: Zatím žádné konverzace
+    no_chats_hint: Začněte nový chat.
+    delete_chat: Smazat chat
+    delete_chat_confirm: Smazat tento chat?
+    delete_chat_confirm_named: 'Smazat „%{title}“? Tuto akci nelze vzít zpět.'
+    pin_chat: Připnout chat
+    unpin_chat: Odepnout chat
+    load_more_chats: Načíst další
+    loading_more_chats: Načítání...
+    load_older: Načíst starší zprávy
+    loading_older: Načítání starších zpráv...
+    scroll_to_bottom: Posunout dolů
+    thinking: Přemýšlím...
+    you: Vy
+    assistant_label: Asistent
+    retry: Zkusit znovu
+    composer:
+      placeholder: Zeptejte se na cokoli ve svém pracovním prostoru...
+      send: Odeslat
+      hint: Enter odešle, Shift + Enter vloží nový řádek
+      stop: Zastavit
+      remove_reference: Odebrat citovaný text
+    selection:
+      ask: Zeptat se asistenta
+    welcome:
+      greeting: Ahoj %{name}
+      title: S čím vám mohu pomoci?
+      description: Zeptejte se na své playbooky, leady, odpovědi nebo výsledky. Odpovídám
+        srozumitelně a poradím, kde se v Amplifě podívat.
+      suggestions_label: Vyzkoušejte jednu z těchto otázek
+      suggestions:
+        inbox: Které konverzace čekají na moji odpověď?
+        interested: Kdo nedávno odpověděl, že má zájem?
+        stats: Jak si vede moje schránka? Ukažte mi čísla.
+        summarize: Shrňte mi moji nejnovější konverzaci
+    tools:
+      conversation_list:
+        running: Prohledávám vaši schránku...
+        done: Schránka prohledána
+        failed: Vyhledávání ve schránce není dostupné
+      conversation_stats:
+        running: Analyzuji vaši schránku...
+        done: Schránka zanalyzována
+        failed: Statistiky schránky nejsou dostupné
+      conversation_read:
+        running: Čtu konverzaci...
+        done: Konverzace přečtena
+        failed: Konverzaci se nepodařilo přečíst
+      conversation_update_interest_status:
+        running: Aktualizuji stav zájmu...
+        done: Stav zájmu aktualizován
+        failed: Stav zájmu se nepodařilo aktualizovat
+      meeting_create:
+        running: Rezervuji schůzku...
+        done: Schůzka rezervována
+        failed: Schůzku se nepodařilo rezervovat
+      meeting_reschedule:
+        running: Přesouvám schůzku...
+        done: Schůzka přesunuta
+        failed: Schůzku se nepodařilo přesunout
+      meeting_cancel:
+        running: Ruším schůzku...
+        done: Schůzka zrušena
+        failed: Schůzku se nepodařilo zrušit
+      meeting_list:
+        running: Načítám vaše schůzky...
+        done: Schůzky načteny
+        failed: Vyhledávání schůzek není k dispozici
+      meeting_read:
+        running: Načítám schůzku...
+        done: Schůzka načtena
+        failed: Schůzku se nepodařilo načíst
+      lead_search:
+        running: Searching leads...
+        done: Searched leads
+        failed: Lead search is unavailable
+      agent_list:
+        running: Looking up your agents...
+        done: Looked up your agents
+        failed: Agent lookup is unavailable
+      agent_stats:
+        running: Analyzing your campaigns...
+        done: Analyzed your campaigns
+        failed: Campaign statistics are unavailable
+      agent_lead_list:
+        running: Looking up campaign leads...
+        done: Looked up campaign leads
+        failed: Campaign lead lookup is unavailable
+      agent_pause_campaign:
+        running: Pausing the agent...
+        done: Agent paused
+        failed: Could not pause the agent
+      agent_resume_campaign:
+        running: Resuming the agent...
+        done: Agent resumed
+        failed: Could not resume the agent
+      generic:
+        running: Pracuji...
+        done: Hotovo
+        failed: Tento nástroj je dočasně nedostupný
+    flash:
+      chat_deleted: Chat smazán
+    errors:
+      create_chat: Nový chat se nepodařilo vytvořit. Zkuste to znovu.
+      delete_chat: Tento chat se nepodařilo smazat. Zkuste to znovu.
+      pin_chat: Tento chat se nepodařilo aktualizovat. Zkuste to znovu.
+      load_more_chats: Další chaty se nepodařilo načíst. Zkuste to znovu.
+      chat_not_found: Tento chat už není dostupný.
+      blank_prompt: Před odesláním napište zprávu.
+      prompt_too_long: Zpráva je příliš dlouhá. Vejděte se do %{count} znaků.
+      already_streaming: Než odešlete další zprávu, počkejte na dokončení aktuální odpovědi.
+      send_failed: Zprávu se nepodařilo odeslat. Zkuste to znovu.
+      load_older_failed: Starší zprávy se nepodařilo načíst. Zkuste to znovu.
+      llm_unavailable: Asistent je momentálně nedostupný. Zkuste to za chvíli znovu.
+      empty_completion: Asistent nevrátil žádnou odpověď. Zkuste to znovu.
+      unexpected: Při odpovídání se něco pokazilo. Zkuste to znovu.
+      connection_lost: Spojení bylo přerušeno. Obnovte stránku, aby se zobrazila celá
+        odpověď.

@@ -1,0 +1,90 @@
+---
+pt-BR:
+  mailers:
+    invitation:
+      subject: Você está convidado a participar de %{organization} no Amplifa
+      greeting: Olá %{name},
+      intro: "%{admin_name} convidou você para ingressar em %{organization} no Amplifa,
+        a plataforma de automação de saída com tecnologia de IA."
+      description: Clique no botão abaixo para aceitar seu convite e configurar sua
+        conta. Você poderá começar a gerar leads qualificados para o seu negócio.
+      cta: Aceitar convite
+      expiry: Este convite expira em %{date}.
+      help: Se tiver alguma dúvida, entre em contato com seu administrador.
+    playbook:
+      generated:
+        subject: Manual gerado para %{product} (%{organization})
+        greeting: Geração de playbook concluída
+        body: Um novo manual foi gerado para %{product} em %{organization}. A IA analisou
+          o site e criou %{persona_count} personae e %{use_case_count} casos de uso.
+          Gerado por %{initiated_by}.
+        cta: Revisar Playbook
+      generation_failed:
+        subject: Falha na geração do playbook para %{product} (%{organization})
+        greeting: Falha na geração do playbook
+        body: A geração de IA para %{product} em %{organization} falhou ao analisar
+          %{website}.
+        error_label: Erro
+        next_steps: Por favor, verifique a URL do site e tente novamente. Se o problema
+          persistir, entre em contato com o suporte.
+      changes_requested:
+        subject: Alterações solicitadas para o manual %{product} (%{organization})
+        greeting: Alterações solicitadas
+        body: "%{requester} de %{organization} solicitou alterações no manual %{product}.
+          O feedback deles está abaixo:"
+        cta: Revisar e fazer alterações
+      approved:
+        subject: Manual do %{product} aprovado por %{organization}
+        greeting: Playbook aprovado!
+        body: "%{approver} de %{organization} aprovou o manual %{product}. O manual
+          agora está pronto para ser usado no planejamento de campanha."
+        cta: Ver Playbook
+      moved_to_draft:
+        subject: Manual do %{product} atualizado e pronto para revisão
+        greeting: Playbook pronto para revisão
+        body: A equipe da Amplifa atualizou seu manual do %{product} com base em seus
+          comentários. Por favor, revise as alterações.
+        cta: Revisar Playbook
+      ready_for_review:
+        subject: 'Novo manual pronto para revisão: %{product}'
+        greeting: Novo playbook pronto
+        body: Sua equipe Amplifa criou um manual para %{product}. Por favor, revise
+          e aprove.
+        cta: Revisar e aprovar
+      archived:
+        subject: Manual do %{product} arquivado
+        greeting: Playbook arquivado
+        body: O manual %{product} foi arquivado por %{archiver}.
+        cta: Ver Playbook
+      new_comment:
+        subject: Novo comentário no manual do %{product}
+        greeting: Novo comentário adicionado
+        body: "%{commenter} adicionou um comentário ao manual %{product}."
+        cta: Ver comentário
+    admin_notification:
+      customer_lead_import_completed:
+        subject: Importação de lead de cliente concluída para %{organization_name}
+          (%{importer_name})
+      customer_lead_import_failed:
+        subject: Falha na importação do lead do cliente para %{organization_name}
+          (%{importer_name})
+      lead_list_file_uploaded:
+        subject: Arquivo de lista de leads enviado por %{uploader_name} (%{organization_name})
+    password_reset:
+      subject: Redefina sua senha do Amplifa
+      greeting: Redefinir sua senha
+      intro: Recebemos uma solicitação para redefinir a senha da sua conta.
+      instructions: Clique no botão abaixo para definir uma nova senha.
+      cta: Redefinir senha
+      ignore: Se você não solicitou isso, pode ignorar este e-mail com segurança.
+    verify_account:
+      subject: Ative sua conta do Amplifa
+      preheader: Conclua a configuração da sua conta do Amplifa.
+      greeting: Bem-vindo ao Amplifa
+      intro: Sua conta foi criada. Ative-a para concluir a configuração e começar
+        a usar o Amplifa.
+      cta: Ativar conta
+      ignore: Se você não criou esta conta, pode ignorar este e-mail com segurança.
+    conversation_forward:
+      lead_company: Empresa
+    signature: Atenciosamente,<br>A Equipe Amplifa

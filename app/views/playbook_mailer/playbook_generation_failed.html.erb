@@ -1,0 +1,14 @@
+<% content_for :preheader do %><%= t('mailers.playbook.generation_failed.body', product: @product_name, organization: @organization.name, website: @website_url) %><% end %>
+
+<h1 style="margin: 0 0 18px; color: #111827; font-size: 24px; line-height: 1.25; font-weight: 700;"><%= t('mailers.playbook.generation_failed.greeting') %></h1>
+
+<p style="margin: 0 0 16px; color: #374151; font-size: 16px; line-height: 1.6;">
+  <%= t('mailers.playbook.generation_failed.body', product: @product_name, organization: @organization.name, website: @website_url) %>
+</p>
+
+<div class="quote-box" style="margin: 22px 0; padding: 16px 18px; background-color: #fef2f2; border-left: 4px solid #ef4444; border-radius: 10px;">
+  <p style="margin: 0 0 8px; color: #111827; font-size: 15px; line-height: 1.5;"><strong><%= t('mailers.playbook.generation_failed.error_label') %>:</strong></p>
+  <pre style="margin: 0; white-space: pre-wrap; word-wrap: break-word; color: #991b1b; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13px; line-height: 1.5;"><%= @error_message %></pre>
+</div>
+
+<p style="margin: 0 0 16px; color: #374151; font-size: 16px; line-height: 1.6;"><%= t('mailers.playbook.generation_failed.next_steps') %></p>

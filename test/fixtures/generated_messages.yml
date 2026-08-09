@@ -1,0 +1,56 @@
+# GeneratedMessage fixtures for testing
+
+# Draft message for john in draft_agent
+john_step_one_draft:
+  agent_lead: john_in_draft
+  sequence_step: step_one_email
+  subject: "Quick question about ACME Corp"
+  body: "Hi John, I noticed ACME Corp is expanding and wanted to reach out about how we can help..."
+  status: draft
+  ai_model: "gemini-2.5-flash-lite"
+  generation_time_ms: 1500
+  input_tokens: 500
+  output_tokens: 150
+  manually_edited: false
+
+john_step_two_draft:
+  agent_lead: john_in_draft
+  sequence_step: step_two_email
+  subject: "Following up on my previous email"
+  body: "Hi John, just wanted to follow up on my previous email..."
+  status: draft
+  ai_model: "gemini-2.5-flash-lite"
+  generation_time_ms: 1200
+  input_tokens: 400
+  output_tokens: 100
+  manually_edited: false
+
+# Approved message for jane in draft_agent
+jane_step_one_approved:
+  agent_lead: jane_in_draft
+  sequence_step: step_one_email
+  subject: "Collaboration opportunity for Jane"
+  body: "Hi Jane, I noticed your work at TechCorp and wanted to discuss..."
+  status: approved
+  ai_model: "gemini-2.5-flash-lite"
+  generation_time_ms: 1400
+  input_tokens: 480
+  output_tokens: 140
+  manually_edited: false
+  test_sent_at: <%= 1.hour.ago %>
+  test_sent_to: "admin@example.com"
+
+# Manually edited message
+john_step_one_edited:
+  agent_lead: john_in_ready
+  sequence_step: ready_agent_step_one
+  subject: "Custom subject after edit"
+  body: "This is the edited body content..."
+  status: draft
+  ai_model: "gemini-2.5-flash-lite"
+  generation_time_ms: 1300
+  input_tokens: 450
+  output_tokens: 130
+  manually_edited: true
+  original_subject: "Original AI subject"
+  original_body: "Original AI generated body content..."

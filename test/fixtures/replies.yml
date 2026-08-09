@@ -1,0 +1,137 @@
+john_doe_reply:
+  generated_message: john_step_one_draft
+  lead: john_doe
+  mailbox: acme_mailbox_one
+  conversation: acme_john_conversation
+  api_message_id: "gmail-msg-001"
+  message_id: "<reply-001@example.com>"
+  from_address: john.doe@example.com
+  to_addresses:
+    - sales@acme.com
+    - ally@example.com
+  cc_addresses:
+    - observer@example.com
+  subject: "Re: Partnership Opportunity"
+  body_plain: "Thanks for reaching out! I'd love to learn more about what you offer."
+  body_html: ~
+  received_at: <%= 2.hours.ago %>
+  is_out_of_office: false
+  is_bounce: false
+  bounce_type: ~
+  requires_response: true
+  responded: false
+  responded_at: ~
+  is_warmup: false
+  warmup_service: ~
+  read_at: ~
+
+jane_ooo_reply:
+  generated_message: jane_step_one_approved
+  lead: jane_smith
+  mailbox: acme_mailbox_one
+  conversation: acme_jane_conversation
+  api_message_id: "gmail-msg-002"
+  message_id: "<ooo-001@testcorp.com>"
+  from_address: jane.smith@testcorp.com
+  subject: "Out of Office: Re: Quick Question"
+  body_plain: "I am currently out of the office until January 15th."
+  body_html: ~
+  received_at: <%= 1.day.ago %>
+  is_out_of_office: true
+  out_of_office_return_date: <%= Date.current + 7.days %>
+  is_bounce: false
+  bounce_type: ~
+  requires_response: false
+  responded: false
+  responded_at: ~
+  is_warmup: false
+  warmup_service: ~
+  read_at: <%= 12.hours.ago %>
+
+hard_bounce_reply:
+  generated_message: ~
+  lead: blacklisted_lead
+  mailbox: acme_mailbox_one
+  conversation: ~
+  api_message_id: "gmail-msg-003"
+  message_id: "<bounce-001@mailer-daemon.google.com>"
+  from_address: mailer-daemon@googlemail.com
+  subject: "Delivery Status Notification (Failure)"
+  body_plain: "The email account you tried to reach does not exist."
+  body_html: ~
+  received_at: <%= 3.hours.ago %>
+  is_out_of_office: false
+  is_bounce: true
+  bounce_type: hard
+  requires_response: false
+  responded: false
+  responded_at: ~
+  is_warmup: false
+  warmup_service: ~
+  read_at: ~
+
+bounce_conversation_reply:
+  generated_message: ~
+  lead: blacklisted_lead
+  mailbox: acme_mailbox_one
+  conversation: acme_bounce_conversation
+  api_message_id: "gmail-msg-006"
+  message_id: "<bounce-002@mailer-daemon.google.com>"
+  from_address: mailer-daemon@googlemail.com
+  subject: "Delivery Status Notification (Failure)"
+  body_plain: "The email account you tried to reach does not exist."
+  body_html: ~
+  received_at: <%= 3.hours.ago %>
+  is_out_of_office: false
+  is_bounce: true
+  bounce_type: hard
+  requires_response: false
+  responded: false
+  responded_at: ~
+  is_warmup: false
+  warmup_service: ~
+  read_at: ~
+
+responded_reply:
+  generated_message: ~
+  lead: growth_lab_lead
+  mailbox: growth_lab_mailbox
+  conversation: growth_lab_conversation
+  api_message_id: "gmail-msg-004"
+  message_id: "<response-001@growthprospect.com>"
+  from_address: prospect@growthprospect.com
+  subject: "Re: Your Webinar Follow-up"
+  body_plain: "Yes, let's schedule a call!"
+  body_html: ~
+  received_at: <%= 1.hour.ago %>
+  is_out_of_office: false
+  is_bounce: false
+  bounce_type: ~
+  requires_response: true
+  responded: true
+  responded_at: <%= 30.minutes.ago %>
+  is_warmup: false
+  warmup_service: ~
+  read_at: <%= 45.minutes.ago %>
+
+warmup_reply:
+  generated_message: ~
+  lead: john_doe
+  mailbox: acme_mailbox_one
+  conversation: ~
+  api_message_id: "gmail-msg-005"
+  message_id: "<warmup-001@warmy.io>"
+  from_address: warm123@warmy.io
+  subject: "[warmup] Test email deliverability"
+  body_plain: "This is a warmup email to improve deliverability."
+  body_html: ~
+  received_at: <%= 30.minutes.ago %>
+  is_out_of_office: false
+  is_bounce: false
+  bounce_type: ~
+  requires_response: false
+  responded: false
+  responded_at: ~
+  is_warmup: true
+  warmup_service: warmy
+  read_at: ~

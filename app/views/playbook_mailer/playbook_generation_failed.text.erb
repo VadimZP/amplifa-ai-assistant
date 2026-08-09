@@ -1,0 +1,14 @@
+<%= t('mailers.playbook.generation_failed.greeting') %>
+
+<%= t('mailers.playbook.generation_failed.body',
+      product: @product_name,
+      organization: @organization.name,
+      website: @website_url) %>
+
+<%= t('mailers.playbook.generation_failed.error_label') %>:
+<%= @error_message %>
+
+<%= t('mailers.playbook.generation_failed.next_steps') %>
+
+---
+<%= t('mailers.signature') %>

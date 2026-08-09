@@ -1,0 +1,155 @@
+---
+description: The one error-handling style for this repo (services, controllers, jobs, React) and the icon-pack rule
+globs: app/**/*.rb,app/javascript/**/*.tsx,app/javascript/**/*.ts,test/**/*.rb
+alwaysApply: true
+---
+
+# Error Handling — One Style Only
+
+This repo already has a consistent error-handling style. **Reuse it. Do not introduce a second one.**
+Never swallow a failure silently, and never let a raw exception message reach the user.
+
+## Services — return a `Result` struct, don't raise
+
+`app/services/` classes define a `Result` struct and return it from `#call`. The caller branches on
+`success?`. See [app/services/conversation_interest_status_updater.rb](app/services/conversation_interest_status_updater.rb).
+
+```ruby
+class SomethingUpdater
+  Result = Struct.new(:success?, :error, keyword_init: true)
+
+  def call
+    return failure('Human-readable reason.') unless valid?
+
+    ActiveRecord::Base.transaction { do_the_work! }
+    success
+  rescue ActiveRecord::RecordInvalid => e
+    failure(e.record.errors.full_messages.to_sentence.presence || e.message)
+  rescue StandardError => e
+    failure(e.message)
+  end
+
+  private
+
+  def success = Result.new(success?: true, error: nil)
+  def failure(message) = Result.new(success?: false, error: message)
+end
+```
+
+Services that produce data (not a mutation) may instead return a hash with an `:error` key —
+`app/services/file_text_extractor.rb` returns `{ text:, error: }`. Pick the shape that matches the
+neighbouring service; don't invent a third.
+
+## Controllers
+
+`ApplicationController` already handles authorization failures globally:
+
+```ruby
+rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
+```
+
+Never re-implement that. If a nested `rescue StandardError` would swallow it, re-raise explicitly
+(see [app/controllers/playbooks_controller.rb](app/controllers/playbooks_controller.rb)):
+
+```ruby
+rescue Pundit::NotAuthorizedError
+  # Re-raise so ApplicationController's rescue_from handles it
+  raise
+```
+
+**Inertia page actions** re-render the page with the errors hash and `:unprocessable_entity`:
+
+```ruby
+if organization.update(organization_params)
+  redirect_to roi_path(suppress_flash: true), notice: 'ROI values updated successfully'
+else
+  render inertia: 'Roi/Index', props: roi_props(organization, errors: organization.errors.messages),
+         status: :unprocessable_entity
+end
+```
+
+**JSON endpoints** return `{ error: ... }` (or `{ success: false, error: ... }` in
+`MeetingsController`) with a narrow, specific status:
+
+```ruby
+rescue ActiveRecord::RecordNotFound
+  render json: { error: 'Lead context not found' }, status: :not_found
+rescue ArgumentError => e
+  render json: { error: e.message }, status: :unprocessable_entity
+```
+
+Rules:
+- Rescue **narrow** classes. A bare `rescue`/`rescue Exception` is never acceptable.
+- A `rescue StandardError` is allowed only as the outermost net, and it must
+  `Rails.logger.error(...)` and return a **generic** message — never the raw exception:
+  ```ruby
+  rescue StandardError => e
+    Rails.logger.error("File upload error: #{e.message}")
+    render json: { error: 'An unexpected error occurred during upload' }, status: :internal_server_error
+  ```
+- A foreign/cross-organization ID must produce `:not_found`, never another org's data.
+
+## Jobs
+
+Follow [app/jobs/extract_file_text_job.rb](app/jobs/extract_file_text_job.rb): declare retry/discard
+policy, persist the failure so the UI can show it, log, then **re-raise** so ActiveJob's retry and
+error reporting still see the exception.
+
+```ruby
+class SomeJob < ApplicationJob
+  queue_as :default
+
+  discard_on ActiveRecord::RecordNotFound
+  retry_on StandardError, wait: :polynomially_longer, attempts: 3
+
+  def perform(id)
+    # ...
+  rescue StandardError => e
+    Rails.logger.error("SomeJob ##{id} failed: #{e.class}: #{e.message}")
+    record&.update_columns(status: 'failed', error: e.message.to_s.truncate(500))
+    raise
+  end
+end
+```
+
+If a user is waiting on the job's output, the rescue must also push a terminal state to the client
+(broadcast / status column) so the UI never hangs on a spinner forever.
+
+## Logging
+
+`Rails.logger.error` for failures, `Rails.logger.warn` for recoverable/degraded paths. Prefix with a
+bracketed tag and include the exception class:
+
+```ruby
+Rails.logger.warn("[LlmModelService] Model validation failed for #{model_id}: #{e.class}: #{e.message}")
+```
+
+## User-facing messages
+
+- Every message shown to a user comes from `t()` / `config/locales/*.yml` — never a hard-coded
+  string, and never a raw `e.message` or exception class name.
+- Messages say what happened and what to do next. "An error occurred" is a last resort;
+  `t('common.error')` exists for that case.
+
+## Frontend
+
+- **Field-level** errors render adjacent to the field via the `error` prop
+  (`<Input error={errors.email} />`, same on `Textarea`) — from Inertia's `useForm` `errors`.
+- **Transient / non-field** failures use the local Toaster wrapper, never `sonner` directly:
+  ```tsx
+  import { toast } from '../../components/ui/Toaster'
+  toast.error(t('assistant.errors.send_failed'))
+  ```
+- Inertia mutations handle `onError`; raw `fetch` calls must check `response.ok`, `catch`, and
+  surface a `toast.error` — an empty `catch {}` is never acceptable.
+- Preserve user input when a submit fails. Never clear the form on error.
+- Always restore the control's non-loading state in a `finally`, so a failure can't leave a button
+  spinning forever.
+
+# Icons — `lucide-react` only
+
+- Icons come from `lucide-react`. **Never** inline an `<svg>`, never add another icon pack, and never
+  use an emoji or icon font as an icon.
+- Size with classes: `size-4`, or `h-4 w-4`. Spinners are `<Loader2 className="size-4 animate-spin" />`
+  (this is what `Button`'s `loading` prop renders — prefer `loading` over a hand-rolled spinner).
+- Decorative icons get `aria-hidden`; icon-only buttons need an `aria-label`.

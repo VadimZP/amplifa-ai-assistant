@@ -1,0 +1,91 @@
+---
+cs:
+  mailers:
+    invitation:
+      subject: Jste pozváni, abyste se připojili k organizaci %{organization} na Amplifa
+      greeting: Ahoj %{name},
+      intro: "%{admin_name} vás pozval, abyste se připojili k organizaci %{organization}
+        na Amplifa, platformě pro odchozí automatizaci založenou na umělé inteligenci."
+      description: Klikněte na tlačítko níže, abyste přijali pozvání a nastavili svůj
+        účet. Budete moci začít generovat kvalifikované leady pro vaše podnikání.
+      cta: Přijmout pozvání
+      expiry: Platnost této pozvánky vyprší %{date}.
+      help: Pokud máte jakékoli dotazy, kontaktujte prosím svého správce.
+    playbook:
+      generated:
+        subject: Příručka vygenerována pro %{product} (%{organization})
+        greeting: Generování playbooku dokončeno
+        body: Byla vygenerována nová příručka pro %{product} na %{organization}. Umělá
+          inteligence analyzovala web a vytvořila %{persona_count} personae a %{use_case_count}
+          případů použití. Generováno %{initiated_by}.
+        cta: Zkontrolovat Playbook
+      generation_failed:
+        subject: Generování příručky pro %{product} (%{organization}) se nezdařilo
+        greeting: Generování playbooku selhalo
+        body: Generování umělé inteligence pro %{product} v %{organization} selhalo
+          při analýze webu %{website}.
+        error_label: Chyba
+        next_steps: Zkontrolujte prosím URL webové stránky a zkuste to znovu. Pokud
+          problém přetrvává, kontaktujte podporu.
+      changes_requested:
+        subject: Požadované změny pro %{product} playbook (%{organization})
+        greeting: Požadovány změny
+        body: "%{requester} z %{organization} požádal o změny v příručce %{product}.
+          Jejich zpětná vazba je níže:"
+        cta: Zkontrolovat a provést změny
+      approved:
+        subject: Příručka %{product} schválená organizací %{organization}
+        greeting: Playbook schválen!
+        body: "%{approver} z %{organization} schválil příručku %{product}. Příručka
+          je nyní připravena k použití pro plánování kampaní."
+        cta: Zobrazit Playbook
+      moved_to_draft:
+        subject: Příručka %{product} byla aktualizována a připravena ke kontrole
+        greeting: Playbook připraven ke kontrole
+        body: Tým Amplifa aktualizoval vaši příručku %{product} na základě vaší zpětné
+          vazby. Zkontrolujte změny.
+        cta: Zkontrolovat Playbook
+      ready_for_review:
+        subject: 'Nová příručka připravená ke kontrole: %{product}'
+        greeting: Nový playbook připraven
+        body: Váš tým Amplifa vytvořil příručku pro %{product}. Zkontrolujte jej a
+          schvalte.
+        cta: Zkontrolovat a schválit
+      archived:
+        subject: Příručka %{product} archivována
+        greeting: Playbook archivován
+        body: Příručku %{product} archivoval %{archiver}.
+        cta: Zobrazit Playbook
+      new_comment:
+        subject: Nový komentář k %{product} playbooku
+        greeting: Přidán nový komentář
+        body: "%{commenter} přidal komentář do příručky %{product}."
+        cta: Zobrazit komentář
+    admin_notification:
+      customer_lead_import_completed:
+        subject: Import potenciálního zákazníka pro organizaci %{organization_name}
+          byl dokončen (%{importer_name})
+      customer_lead_import_failed:
+        subject: Import potenciálního zákazníka pro organizaci %{organization_name}
+          (%{importer_name}) se nezdařil
+      lead_list_file_uploaded:
+        subject: Soubor se seznamem potenciálních zákazníků nahrál %{uploader_name}
+          (%{organization_name})
+    password_reset:
+      subject: Obnovte své heslo Amplifa
+      greeting: Obnovení hesla
+      intro: Obdrželi jsme žádost o obnovení hesla k vašemu účtu.
+      instructions: Klikněte na tlačítko níže a nastavte nové heslo.
+      cta: Obnovit heslo
+      ignore: Pokud jste tuto žádost nepodali, můžete tento e-mail bezpečně ignorovat.
+    verify_account:
+      subject: Aktivujte svůj účet Amplifa
+      preheader: Dokončete nastavení svého účtu Amplifa.
+      greeting: Vítejte v Amplifa
+      intro: Váš účet byl vytvořen. Aktivujte ho prosím, abyste dokončili nastavení
+        a mohli začít používat Amplifa.
+      cta: Aktivovat účet
+      ignore: Pokud jste tento účet nevytvořili, můžete tento e-mail bezpečně ignorovat.
+    conversation_forward:
+      lead_company: Společnost
+    signature: S pozdravem,<br>Tým Amplifa

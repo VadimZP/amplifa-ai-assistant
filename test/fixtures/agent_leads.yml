@@ -1,0 +1,17 @@
+# AgentLeads junction table fixtures
+
+john_in_draft:
+  agent: draft_agent
+  lead: john_doe
+
+jane_in_draft:
+  agent: draft_agent
+  lead: jane_smith
+
+john_in_ready:
+  agent: ready_agent
+  lead: john_doe
+
+beta_lead_in_beta_agent:
+  agent: other_org_agent
+  lead: beta_lead

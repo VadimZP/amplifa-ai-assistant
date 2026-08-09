@@ -1,0 +1,10 @@
+<%= t('mailers.playbook.ready_for_review.greeting') %>
+
+<%= t('mailers.playbook.ready_for_review.body',
+      product: @playbook.product_name) %>
+
+<%= t('mailers.playbook.ready_for_review.cta') %>:
+<%= playbook_url(@playbook) %>
+
+---
+<%= t('mailers.signature') %>

@@ -1,0 +1,94 @@
+---
+es:
+  mailers:
+    invitation:
+      subject: Estás invitado a unirte a %{organization} en Amplifa
+      greeting: Hola %{name},
+      intro: "%{admin_name} te ha invitado a unirte a %{organization} en Amplifa,
+        la plataforma de automatización saliente impulsada por IA."
+      description: Haz clic en el botón de abajo para aceptar tu invitación y configurar
+        tu cuenta. Podrás empezar a generar leads cualificados para tu negocio.
+      cta: Aceptar invitación
+      expiry: Esta invitación vence el %{date}.
+      help: Si tienes alguna pregunta, por favor contacta a tu administrador.
+    playbook:
+      generated:
+        subject: Libro de jugadas generado para %{product} (%{organization})
+        greeting: Generación de playbook completada
+        body: Se generó un nuevo libro de estrategias para %{product} en %{organization}.
+          La IA analizó el sitio web y creó %{persona_count} personas y %{use_case_count}
+          casos de uso. Generado por %{initiated_by}.
+        cta: Revisar Playbook
+      generation_failed:
+        subject: Error al generar el libro de jugadas para %{product} (%{organization})
+        greeting: Falló la generación del playbook
+        body: La generación de IA para %{product} en %{organization} falló al analizar
+          %{website}.
+        error_label: Error
+        next_steps: Por favor verifica la URL del sitio web e inténtalo de nuevo.
+          Si el problema persiste, contacta al soporte.
+      changes_requested:
+        subject: Cambios solicitados para %{product} libro de estrategias (%{organization})
+        greeting: Cambios solicitados
+        body: "%{requester} de %{organization} ha solicitado cambios en el manual
+          de estrategias de %{product}. Sus comentarios se encuentran a continuación:"
+        cta: Revisar y hacer cambios
+      approved:
+        subject: "%{product} libro de jugadas aprobado por %{organization}"
+        greeting: "¡Playbook aprobado!"
+        body: "%{approver} de %{organization} ha aprobado el manual de estrategias
+          de %{product}. El manual ya está listo para usarse en la planificación de
+          campañas."
+        cta: Ver Playbook
+      moved_to_draft:
+        subject: "%{product} libro de estrategias actualizado y listo para revisión"
+        greeting: Playbook listo para revisión
+        body: El equipo de Amplifa ha actualizado su manual de estrategias %{product}
+          basándose en sus comentarios. Por favor revise los cambios.
+        cta: Revisar Playbook
+      ready_for_review:
+        subject: 'Nuevo manual listo para revisión: %{product}'
+        greeting: Nuevo playbook listo
+        body: Su equipo de Amplifa ha creado un manual para %{product}. Por favor
+          revíselo y apruebe.
+        cta: Revisar y aprobar
+      archived:
+        subject: "%{product} libro de jugadas archivado"
+        greeting: Playbook archivado
+        body: El manual de estrategias de %{product} ha sido archivado por %{archiver}.
+        cta: Ver Playbook
+      new_comment:
+        subject: Nuevo comentario en el libro de jugadas %{product}
+        greeting: Nuevo comentario añadido
+        body: "%{commenter} agregó un comentario al libro de estrategias %{product}."
+        cta: Ver comentario
+    admin_notification:
+      customer_lead_import_completed:
+        subject: Importación de clientes potenciales completada para %{organization_name}
+          (%{importer_name})
+      customer_lead_import_failed:
+        subject: Error al importar clientes potenciales para %{organization_name}
+          (%{importer_name})
+      lead_list_file_uploaded:
+        subject: Archivo de lista de clientes potenciales subido por %{uploader_name}
+          (%{organization_name})
+    password_reset:
+      subject: Restablece tu contraseña de Amplifa
+      greeting: Restablecer tu contraseña
+      intro: Recibimos una solicitud para restablecer la contraseña de tu cuenta.
+      instructions: Haz clic en el botón de abajo para establecer una nueva contraseña.
+      cta: Restablecer contraseña
+      ignore: Si no solicitaste esto, puedes ignorar este correo electrónico de forma
+        segura.
+    verify_account:
+      subject: Activa tu cuenta de Amplifa
+      preheader: Termina de configurar tu cuenta de Amplifa.
+      greeting: Bienvenido a Amplifa
+      intro: Tu cuenta ha sido creada. Actívala para terminar la configuración y empezar
+        a usar Amplifa.
+      cta: Activar cuenta
+      ignore: Si no creaste esta cuenta, puedes ignorar este correo electrónico de
+        forma segura.
+    conversation_forward:
+      lead_company: Empresa
+    signature: Saludos,<br>El equipo de Amplifa

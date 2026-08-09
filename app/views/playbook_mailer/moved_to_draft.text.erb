@@ -1,0 +1,10 @@
+<%= t('mailers.playbook.moved_to_draft.greeting') %>
+
+<%= t('mailers.playbook.moved_to_draft.body',
+      product: @playbook.product_name) %>
+
+<%= t('mailers.playbook.moved_to_draft.cta') %>:
+<%= playbook_url(@playbook) %>
+
+---
+<%= t('mailers.signature') %>
